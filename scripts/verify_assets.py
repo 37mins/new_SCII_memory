@@ -16,7 +16,7 @@ SC2_FILES = {
     "Maps/Melee/Flat128.SC2Map": "3916dbd2bb662a6e9c9bd27089906630c8b0a42fdbab51fc4401cf1df7b9b212",
 }
 RUSH_BO = REPO / "data/rush_bo.json"
-RUSH_BO_SHA256 = "71add1cd091c309b1cb1a6b943f2476eb2b004124b3bd1d32dcd0b24cc1abc47"
+RUSH_BO_SHA256 = "e21c5a8518bc7c16a408ba7e245d0fd26c1a8aa6ab9d2410cb4c41c599d92f14"
 
 
 def digest(path: Path) -> str:
@@ -32,6 +32,8 @@ def model_files(model: Path, manifest: Path):
         if not line:
             continue
         expected, name = line.split(maxsplit=1)
+        if name.endswith("README.md"):
+            continue
         yield model / name, expected
 
 
