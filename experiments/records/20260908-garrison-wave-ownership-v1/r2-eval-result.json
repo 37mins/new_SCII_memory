@@ -1,0 +1,183 @@
+{
+  "run_id": "20260908-garrison-wave-ownership-v1-spb2-l6-g2-s2621640384-evalfinish-r2",
+  "runtime_commit": "e1e25ce1d14362b209e34ec73871ebaeb63538a6",
+  "orchestration_commit": "d13728fec1f3d1cfa98b421d074d97fadd378fbb",
+  "source_dirty": false,
+  "node": "sc2-a100-44",
+  "gpu": 1,
+  "wall_budget_seconds": 1800,
+  "term_grace_seconds": 30,
+  "automatic_retry": false,
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260908-garrison-wave-ownership-v1/runs/20260908-garrison-wave-ownership-v1-spb2-l6-g2-s2621640384-evalfinish-r2",
+  "local_artifacts": "/private/tmp/sc2-evalfinish-r2-results-20260908",
+  "startup": "2026-09-08T05:59:17.574597+00:00",
+  "result": {
+    "status": "completed",
+    "ended_at": "2026-09-08T06:05:09.673309+00:00",
+    "mode": "evaluation",
+    "process_exit_code": 0,
+    "training_updates": 0,
+    "metrics": {
+      "val/text/test_score": 20,
+      "val/text/tool_call_count/mean": 0,
+      "val/success_rate": 1,
+      "val/sc2_attack_ct": 0,
+      "val/sc2_action_valid": 1,
+      "val/sc2_semantic_action_valid": 1,
+      "val/sc2_semantic_action_evaluable": 0,
+      "val/sc2_projection_action_valid": 1,
+      "val/sc2_executor_action_valid": 1,
+      "val/sc2/episode_count": 1,
+      "val/sc2/no_policy_episode_count": 1,
+      "val/sc2/policy_decision_count": 0
+    },
+    "metrics_finite": true,
+    "response_record_count": 1,
+    "evaluable_action_count": 0,
+    "valid_evaluable_action_count": 0,
+    "replays": {
+      "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_06-00-56/replay.SC2Replay": "d2f0fdf216abe46bd98898657469a6e99fe12ab55c5ba5a667c0393bbe58fb9c"
+    },
+    "console_sha256": "c8ba8e8b137ab4253146d8f31154beaf27f3d67134bb43f3d49269d46ab4d7fd",
+    "episode_outcomes": {
+      "trajectories": 1,
+      "natural_games": 1,
+      "wins": 1,
+      "defeats": 0,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 1,
+      "outcomes": [
+        {
+          "reset_index": 0,
+          "env_index": 0,
+          "decision_count": 1,
+          "step_index": 0,
+          "policy_decision_count": 0,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        }
+      ]
+    },
+    "natural_match_completed": true,
+    "termination_evidence": "game_result"
+  },
+  "seeds": [
+    {
+      "base_seed": 1000,
+      "reset_index": 0,
+      "seeds": [
+        2621640384
+      ]
+    }
+  ],
+  "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+  "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+  "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+  "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+  "versions": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.55.2",
+    "ray": "2.48.0",
+    "gymnasium": "1.2.3",
+    "flash-attn": "2.6.3",
+    "flash-linear-attention": "0.4.0",
+    "moba": null
+  },
+  "source_files_sha256": {
+    "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+    "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+    "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "b6994c43da70ab21407e3ec20fb4538f1dbd2923172e8a5051a51e0e0944f305",
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "edbf08227eb325e01c6362f8c933d52bd2f1d520d93f7c4dc19c421b85ace5c1",
+    "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+    "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "6b5d474f90b1a3a9d7a641c92f3379b9d936e14aa7102d1f1717545093056704",
+    "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+  },
+  "config_comparison": {
+    "baseline_run": "20260908-garrison-wave-ownership-v1-spb2-l6-g2-s2621640384-r1",
+    "command_arguments": 148,
+    "remaining_differences_after_source_run_ray_path_normalization": [],
+    "model_bo_and_gameplay_source_hashes_equal": true
+  },
+  "cumulative_environment_reward": 20,
+  "consumed_model_answers": 0,
+  "action_valid_rate": null,
+  "action_valid_note": "N/A: zero evaluable model answers. Legacy val/sc2_*action_valid=1 flags are preserved environment flags, not a 100% model validity rate.",
+  "unused_terminal_answer": "Based on the provided game state, here's a breakdown and analysis to help you make strategic decisions:\n\n### **Current Situation Summary**\n\n* **Resources:**\n\t+ Minerals: 65\n\t+ Vespene Gas: 272\n\t+ Supply: 122 (76 allocated to army, 45 to workers, 52 unused)\n* **Forces:**\n\t+ **Marine:** 54\n\t+ **",
+  "unused_answer_equal": true,
+  "unused_policy_action_applied": false,
+  "equivalence": {
+    "game_seconds": 557.1428571428572,
+    "own_command_count": 491,
+    "all_own_commands_equal": true,
+    "tracker_stream_sha256": "985e26f907d1ce5d57838d3c36c17d8581589b21af3f98cbeefb9a4540cabb99",
+    "tracker_stream_bytes_equal": true,
+    "game_event_differences_only": [
+      "NNet.Game.SSetSyncLoadingTimeEvent",
+      "NNet.Game.SSetSyncPlayingTimeEvent"
+    ],
+    "waves": 9,
+    "waves_reached_attacking": 8,
+    "active_wave_garrison_conflicts": 0,
+    "unit_births": {
+      "BeaconArmy": 1,
+      "BeaconDefend": 1,
+      "BeaconAttack": 1,
+      "BeaconHarass": 1,
+      "BeaconIdle": 1,
+      "BeaconAuto": 1,
+      "BeaconDetect": 1,
+      "BeaconScout": 1,
+      "BeaconClaim": 1,
+      "BeaconExpand": 1,
+      "BeaconRally": 1,
+      "BeaconCustom1": 1,
+      "BeaconCustom2": 1,
+      "BeaconCustom3": 1,
+      "BeaconCustom4": 1,
+      "CommandCenter": 1,
+      "SCV": 46,
+      "Marine": 97,
+      "MULE": 14,
+      "SiegeTank": 3,
+      "Marauder": 3
+    },
+    "unit_deaths": {
+      "MULE": 11,
+      "SCV": 1,
+      "Marine": 43
+    },
+    "vikings_born": 0
+  },
+  "artifact_sha256": {
+    "manifest.json": "073fc1c446e288eb6241ab1238636ca264cfab51cfdfb8dad92cdb77b9141613",
+    "effective_config.json": "02bcdbf1f2a54e23c5063cdf7aabe83a3989b1ac88ff6730ed7f737d656f3e0c",
+    "result.json": "66e284b29d7ef15ac548b480e74964e19c709eae8dba7b8619a74be694de0253",
+    ".done": "66e284b29d7ef15ac548b480e74964e19c709eae8dba7b8619a74be694de0253",
+    "evaluation_seeds.jsonl": "aee94d25ef459decb70bf3f9657cf3a29e575a78b2e8641f8d501f8bdb462179",
+    "prompt_response.jsonl": "0fb3c73117d442dafb727e14e7dc0392163b3ed14d7f92527e570a6a0140458c",
+    "episode_outcomes.jsonl": "219c52dc444550599e697ca67bc7824545f41c100c3ffe17aa9b047a158cb411",
+    "console.log": "c8ba8e8b137ab4253146d8f31154beaf27f3d67134bb43f3d49269d46ab4d7fd",
+    "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_06-00-56/trace.json": "c47e979fa0525bb54af26f1e89f50508e92a31f386feb4b065e81d7f3348ca16",
+    "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_06-00-56/replay.SC2Replay": "d2f0fdf216abe46bd98898657469a6e99fe12ab55c5ba5a667c0393bbe58fb9c"
+  },
+  "old_failed_result_sha256": "242e93e3b774494307a7e11c5844939f73dbc718692511d28f6c14081bc509b6",
+  "postcheck": {
+    "checked_at": "2026-09-08T06:07:09+00:00",
+    "gpu1_no_compute_process": true,
+    "tmux_exited": true,
+    "frozen_tree_clean": true,
+    "orchestration_exit_code": 0,
+    "old_result_unchanged": true
+  },
+  "analysis_tools": [
+    "experiments/records/20260906-integrated-fixes-v1/audit_r4_reactor_pair.py",
+    "experiments/records/20260908-garrison-wave-ownership-v1/audit_wave_orders.py"
+  ],
+  "conclusion": "Standalone zero-policy SC2 evaluation finish accepted in one real game. No gameplay change in this seed. No PPO update or learning/architecture evidence; no Viking survival coverage. No additional run or mechanism authorized."
+}

@@ -1,0 +1,829 @@
+{
+  "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32",
+  "frozen_source": "b671bb4d3ff32fd4beae2d78ad2e9276fbae5d11",
+  "original_log": {
+    "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7/prompt_response.jsonl",
+    "sha256": "c5663553123aa7d8cbee107422492e2131d4da07d2e63b766b35d8c799d81043"
+  },
+  "artifacts": [
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/ppo_diagnostics/update-0001-rank-00.pt",
+      "sha256": "a1540db465f806827aa67b1a32d9b40a62345edccd112178731357a6f540600f"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/ppo_diagnostics/update-0001-rank-00.jsonl",
+      "sha256": "40ebc6f525e218b0c7d28d4ef8997d9358815cd35e3fab2ab9afae2edd4ea07e"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/post-each-rank-00.jsonl",
+      "sha256": "40363f77f0e3d2b5fcfcd768641eefdda8a496fd8c11fa57da6f932e90af1024"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/rank-00.jsonl",
+      "sha256": "f968d97d366e6da1b629e1f19f5b00d121a96d84f15d6a1696f585c28805027f"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/ppo_diagnostics/update-0001-rank-01.pt",
+      "sha256": "defc28482c3e72b939785db6ec04b837fe68184138e17a117425ddc234e595b0"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/ppo_diagnostics/update-0001-rank-01.jsonl",
+      "sha256": "7e285381b30d7d06cad83856fcc65d4e5f0dab71975d668a1e1cb6e46be50678"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/post-each-rank-01.jsonl",
+      "sha256": "57d205c7f6e3f5a6d6a4c92d573358d91c61d83fe2a92e0b32541e0979314a6b"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/rank-01.jsonl",
+      "sha256": "37c70433a214068aa1d6caf61d661aa7610103c359f0658412bc9ba4ffb3bfc6"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/ppo_diagnostics/update-0001-rank-02.pt",
+      "sha256": "fb5de231bca0f6af57842cabd4c7c06d6d205add40666f6c0c6aa5a2042bec99"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/ppo_diagnostics/update-0001-rank-02.jsonl",
+      "sha256": "68784543abb51a202524c94930e1f39033e31e048a4f115772693e39d5f2978a"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/post-each-rank-02.jsonl",
+      "sha256": "3ad0a82b32a010d52bb6542046e82fcb8cbd2d6c4632281a311f5d2147fa0c71"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/rank-02.jsonl",
+      "sha256": "a3b0a946c2202c43f69fbd4766aaa0f8dc8aa26d93f3bf6bf753095227e07458"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/ppo_diagnostics/update-0001-rank-03.pt",
+      "sha256": "b17d03dc7bf57daaac1eb21b936c6dec370f7e75aef026fd4ee98679783dfcfb"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/ppo_diagnostics/update-0001-rank-03.jsonl",
+      "sha256": "4032bbe05bd277fffad483cb530c02f9afa5dd2bde14cbb72563de9149ce7539"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/post-each-rank-03.jsonl",
+      "sha256": "52bb8ca80e663104d7f4f7c968f1dd95953776546b39741bbdff437898c1eb6a"
+    },
+    {
+      "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt35-r32/rank-03.jsonl",
+      "sha256": "a9077ed265507fa369aecccb38058ffed781e84368b7c333c4eb161146f815d3"
+    }
+  ],
+  "target": {
+    "rank": 0,
+    "sample": 63,
+    "response_index": 1,
+    "pre_logprob": -0.14267730712890625,
+    "post_logprob": -8.125297546386719,
+    "delta_logprob": -7.9826202392578125,
+    "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:05 in the game, and we are playing as Terran with 70 minerals and 248 vespene gas, while our current supply is 95, of which 43 is allocated to the army, 51 to workers, and 95 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 49 SCV, 1 marauder, 19 marine, 2 mule, 4 siegetank. In terms of the structures, we have 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with reactor, 5 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 2 refinery, 20 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 1 SCV, 1 raven. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 3 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 1 fusioncore, 2 missileturret, 5 refinery, 2 starport, 2 starport with techlab, 10 supplydepot.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 47\n- mule x 6\n- siegetank x 9\n- marauder x 3\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+    "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine  \n- siegetank<|im_end|>",
+    "response_token_ids": [
+      12,
+      28591,
+      2303,
+      12,
+      296,
+      1111,
+      2303,
+      12,
+      9911,
+      455,
+      1180,
+      2303,
+      12,
+      3594,
+      7880,
+      261,
+      2303,
+      12,
+      23205,
+      17611,
+      6367,
+      448,
+      220,
+      23,
+      28591,
+      2303,
+      12,
+      9911,
+      455,
+      1180,
+      151645
+    ],
+    "active_full_input_sha256": "7847a038450b579585b6d826490966b5045700af7c7fa006598ae7c245713358",
+    "raw_log_matches": [
+      {
+        "line": 16,
+        "time": "2026-09-06 06:34:57",
+        "step_index": 1,
+        "env_idx": 7,
+        "prompt": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:05 in the game, and we are playing as Terran with 70 minerals and 248 vespene gas, while our current supply is 95, of which 43 is allocated to the army, 51 to workers, and 95 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 49 SCV, 1 marauder, 19 marine, 2 mule, 4 siegetank. In terms of the structures, we have 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with reactor, 5 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 2 refinery, 20 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 1 SCV, 1 raven. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 3 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 1 fusioncore, 2 missileturret, 5 refinery, 2 starport, 2 starport with techlab, 10 supplydepot.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 47\n- mule x 6\n- siegetank x 9\n- marauder x 3\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+        "memory_context": "",
+        "llm_response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine  \n- siegetank",
+        "projected_action": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine  \n- siegetank",
+        "reward": 0.5,
+        "done": false,
+        "won": 0,
+        "is_action_valid": true,
+        "semantic_action_valid": true,
+        "semantic_action_evaluable": true,
+        "projection_action_valid": true,
+        "executor_action_valid": true,
+        "failure_reason": "",
+        "policy_action_applied": true,
+        "policy_action_id": 2,
+        "last_consumed_policy_action_id": 2
+      }
+    ],
+    "token_id": 28591,
+    "token": " marine",
+    "old_logprob": -0.14267730712890625,
+    "advantage": -0.017726732417941093,
+    "pre_probability": 0.8670338093872167,
+    "post_probability": 0.00029595665612081035
+  },
+  "first_update_samples": [
+    {
+      "rank": 0,
+      "sample": 0,
+      "tokens": 27,
+      "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:55 in the game, and we are playing as Terran with 3415 minerals and 740 vespene gas, while our current supply is 70, of which 23 is allocated to the army, 45 to workers, and 88 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 43 SCV, 9 marine, 2 mule, 1 siegetank. In terms of the structures, we have 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 2 refinery, 20 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 1 bases in the form of orbitalcommand.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 50\n- supplydepot x 1\n- mule x 6\n- siegetank x 9\n- marauder x 4\n- techlab barracks x 1\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+      "response": "- Launch OFFENSE with 8 marine\n- marine\n- siegetank\n- marauder\n- techlab barracks<|im_end|>",
+      "response_token_ids": [
+        12,
+        23205,
+        17611,
+        6367,
+        448,
+        220,
+        23,
+        28591,
+        198,
+        12,
+        28591,
+        198,
+        12,
+        9911,
+        455,
+        1180,
+        198,
+        12,
+        3594,
+        7880,
+        261,
+        198,
+        12,
+        13014,
+        14380,
+        94764,
+        151645
+      ],
+      "active_full_input_sha256": "bfc23e8edc700aa171ec23e8c66bde9ea6665ba1b8681d9f918dc41d9ef16563",
+      "raw_log_matches": [
+        {
+          "line": 1,
+          "time": "2026-09-06 06:34:36",
+          "step_index": 0,
+          "env_idx": 0,
+          "policy_action_id": 1
+        }
+      ],
+      "advantage": [
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853
+      ],
+      "token_loss_gradient": [
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103,
+        -0.0002892619522754103
+      ],
+      "ppo_gradient_formula_max_error": 7.545437527827631e-12,
+      "matches_target": false
+    },
+    {
+      "rank": 0,
+      "sample": 1,
+      "tokens": 26,
+      "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 11:15 in the game, and we are playing as Terran with 3720 minerals and 802 vespene gas, while our current supply is 80, of which 30 is allocated to the army, 48 to workers, and 110 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 46 SCV, 11 marine, 2 mule, 2 siegetank. In terms of the structures, we have 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 19 SCV, 3 battlecruiser, 1 marauder, 6 marine, 1 mule, 2 raven, 5 viking. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 missileturret, 1 refinery.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 48\n- mule x 6\n- siegetank x 9\n- marauder x 3\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+      "response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder<|im_end|>",
+      "response_token_ids": [
+        12,
+        23205,
+        17611,
+        6367,
+        448,
+        220,
+        23,
+        28591,
+        198,
+        12,
+        28591,
+        198,
+        12,
+        296,
+        1111,
+        198,
+        12,
+        9911,
+        455,
+        1180,
+        198,
+        12,
+        3594,
+        7880,
+        261,
+        151645
+      ],
+      "active_full_input_sha256": "3b4beae4dcb1a47b0dba692d280fdf4b37e2086a61d26f5cfcf475cae0c55f70",
+      "raw_log_matches": [
+        {
+          "line": 9,
+          "time": "2026-09-06 06:34:57",
+          "step_index": 1,
+          "env_idx": 0,
+          "policy_action_id": 2
+        }
+      ],
+      "advantage": [
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853
+      ],
+      "token_loss_gradient": [
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445
+      ],
+      "ppo_gradient_formula_max_error": 1.1193780928217545e-11,
+      "matches_target": false
+    },
+    {
+      "rank": 1,
+      "sample": 0,
+      "tokens": 12,
+      "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 11:20 in the game, and we are playing as Terran with 2525 minerals and 376 vespene gas, while our current supply is 76, of which 25 is allocated to the army, 49 to workers, and 122 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 47 SCV, 8 marine, 3 mule, 1 siegetank. In terms of the structures, we have 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 25 SCV, 3 battlecruiser, 1 marauder, 3 marine, 1 mule, 2 raven, 5 viking. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 2 missileturret, 2 refinery.\nThe remaining BO list in this phase:\n- marine x 36\n- mule x 2\n- siegetank x 6\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+      "response": "- marine  \n- mule  \n- siegetank<|im_end|>",
+      "response_token_ids": [
+        12,
+        28591,
+        2303,
+        12,
+        296,
+        1111,
+        2303,
+        12,
+        9911,
+        455,
+        1180,
+        151645
+      ],
+      "active_full_input_sha256": "8d2dd193dff07b3ec855d378bd41776761714d9dc5366d60715327d1646a77b4",
+      "raw_log_matches": [
+        {
+          "line": 41,
+          "time": "2026-09-06 06:37:17",
+          "step_index": 5,
+          "env_idx": 0,
+          "policy_action_id": 6
+        }
+      ],
+      "advantage": [
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853
+      ],
+      "token_loss_gradient": [
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546
+      ],
+      "ppo_gradient_formula_max_error": 3.8805107239504866e-11,
+      "matches_target": false
+    },
+    {
+      "rank": 1,
+      "sample": 1,
+      "tokens": 3,
+      "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 12:12 in the game, and we are playing as Terran with 2150 minerals and 34 vespene gas, while our current supply is 83, of which 28 is allocated to the army, 55 to workers, and 117 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 52 SCV, 1 marauder, 6 marine, 2 mule, 2 siegetank. In terms of the structures, we have 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 1 SCV, 4 battlecruiser. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 2 missileturret, 3 refinery.\nThe remaining BO list in this phase:\n- marine x 18\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+      "response": "- marine<|im_end|>",
+      "response_token_ids": [
+        12,
+        28591,
+        151645
+      ],
+      "active_full_input_sha256": "82a05608066f222baab1787a5bef93146ae1ac0a91a5b16e86596fa6d8422cbd",
+      "raw_log_matches": [
+        {
+          "line": 89,
+          "time": "2026-09-06 06:40:33",
+          "step_index": 11,
+          "env_idx": 0,
+          "policy_action_id": 12
+        }
+      ],
+      "advantage": [
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853
+      ],
+      "token_loss_gradient": [
+        -0.002603357657790184,
+        -0.002603357657790184,
+        -0.002603357657790184
+      ],
+      "ppo_gradient_formula_max_error": 1.5522042895801946e-10,
+      "matches_target": false
+    },
+    {
+      "rank": 2,
+      "sample": 0,
+      "tokens": 26,
+      "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 11:16 in the game, and we are playing as Terran with 3515 minerals and 785 vespene gas, while our current supply is 78, of which 27 is allocated to the army, 49 to workers, and 112 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 48 SCV, 8 marine, 2 mule, 2 siegetank. In terms of the structures, we have 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 23 SCV, 3 battlecruiser, 1 marauder, 4 marine, 1 mule, 2 raven, 3 viking. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 2 missileturret, 2 refinery.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 45\n- mule x 5\n- siegetank x 9\n- marauder x 2\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+      "response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder<|im_end|>",
+      "response_token_ids": [
+        12,
+        23205,
+        17611,
+        6367,
+        448,
+        220,
+        23,
+        28591,
+        198,
+        12,
+        28591,
+        198,
+        12,
+        296,
+        1111,
+        198,
+        12,
+        9911,
+        455,
+        1180,
+        198,
+        12,
+        3594,
+        7880,
+        261,
+        151645
+      ],
+      "active_full_input_sha256": "6ebfbe21f7b1ac77aa68e1a801abfd0bd2c342e80955888ffbd28e6f814f24cd",
+      "raw_log_matches": [
+        {
+          "line": 17,
+          "time": "2026-09-06 06:35:20",
+          "step_index": 2,
+          "env_idx": 0,
+          "policy_action_id": 3
+        }
+      ],
+      "advantage": [
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853
+      ],
+      "token_loss_gradient": [
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445,
+        -0.000300387415336445
+      ],
+      "ppo_gradient_formula_max_error": 1.1193780928217545e-11,
+      "matches_target": false
+    },
+    {
+      "rank": 2,
+      "sample": 1,
+      "tokens": 17,
+      "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 11:18 in the game, and we are playing as Terran with 3320 minerals and 760 vespene gas, while our current supply is 76, of which 25 is allocated to the army, 49 to workers, and 114 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 47 SCV, 6 marine, 2 mule, 2 siegetank. In terms of the structures, we have 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 24 SCV, 3 battlecruiser, 1 marauder, 4 marine, 1 mule, 2 raven, 4 viking. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 2 missileturret, 2 refinery.\nThe remaining BO list in this phase:\n- marine x 42\n- mule x 4\n- siegetank x 9\n- marauder x 1\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+      "response": "- marine  \n- mule  \n- siegetank  \n- marauder<|im_end|>",
+      "response_token_ids": [
+        12,
+        28591,
+        2303,
+        12,
+        296,
+        1111,
+        2303,
+        12,
+        9911,
+        455,
+        1180,
+        2303,
+        12,
+        3594,
+        7880,
+        261,
+        151645
+      ],
+      "active_full_input_sha256": "b19420d2b6c74f022255b9a35782a91e54bda45a437055e4d32b5e6cf07e1c41",
+      "raw_log_matches": [
+        {
+          "line": 25,
+          "time": "2026-09-06 06:35:44",
+          "step_index": 3,
+          "env_idx": 0,
+          "policy_action_id": 4
+        }
+      ],
+      "advantage": [
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853
+      ],
+      "token_loss_gradient": [
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106,
+        -0.00045941604184918106
+      ],
+      "ppo_gradient_formula_max_error": 1.198393017850033e-11,
+      "matches_target": false
+    },
+    {
+      "rank": 3,
+      "sample": 0,
+      "tokens": 12,
+      "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 11:21 in the game, and we are playing as Terran with 2095 minerals and 134 vespene gas, while our current supply is 74, of which 22 is allocated to the army, 50 to workers, and 124 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 47 SCV, 8 marine, 2 mule. In terms of the structures, we have 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 9 SCV, 3 battlecruiser, 1 marauder, 3 marine, 3 viking. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 autoturret, 2 missileturret, 2 refinery.\nThe remaining BO list in this phase:\n- marine x 33\n- mule x 1\n- siegetank x 4\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+      "response": "- marine  \n- mule  \n- siegetank<|im_end|>",
+      "response_token_ids": [
+        12,
+        28591,
+        2303,
+        12,
+        296,
+        1111,
+        2303,
+        12,
+        9911,
+        455,
+        1180,
+        151645
+      ],
+      "active_full_input_sha256": "faa2ad3c65cbf10d012600868b174d80d71cddabe6f86c487bd654e446dd94f6",
+      "raw_log_matches": [
+        {
+          "line": 49,
+          "time": "2026-09-06 06:38:06",
+          "step_index": 6,
+          "env_idx": 0,
+          "policy_action_id": 7
+        }
+      ],
+      "advantage": [
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853
+      ],
+      "token_loss_gradient": [
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546,
+        -0.000650839414447546
+      ],
+      "ppo_gradient_formula_max_error": 3.8805107239504866e-11,
+      "matches_target": false
+    },
+    {
+      "rank": 3,
+      "sample": 1,
+      "tokens": 3,
+      "prompt": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 12:13 in the game, and we are playing as Terran with 1745 minerals and 50 vespene gas, while our current supply is 87, of which 32 is allocated to the army, 55 to workers, and 113 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 53 SCV, 1 marauder, 9 marine, 2 mule, 2 siegetank. In terms of the structures, we have 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 2 missileturret, 3 refinery.\nThe remaining BO list in this phase:\n- marine x 9\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n",
+      "response": "- marine<|im_end|>",
+      "response_token_ids": [
+        12,
+        28591,
+        151645
+      ],
+      "active_full_input_sha256": "f64f491ef901f85476c193689205962aa27ec642e9481279ba7abb3caba7fe85",
+      "raw_log_matches": [
+        {
+          "line": 113,
+          "time": "2026-09-06 06:41:17",
+          "step_index": 14,
+          "env_idx": 0,
+          "policy_action_id": 15
+        }
+      ],
+      "advantage": [
+        0.01562014501541853,
+        0.01562014501541853,
+        0.01562014501541853
+      ],
+      "token_loss_gradient": [
+        -0.002603357657790184,
+        -0.002603357657790184,
+        -0.002603357657790184
+      ],
+      "ppo_gradient_formula_max_error": 1.5522042895801946e-10,
+      "matches_target": false
+    }
+  ],
+  "first_update_tokens": 126,
+  "first_eight_unique_full_inputs": 8,
+  "parameter_gradient_events": [
+    {
+      "rank": 0,
+      "event": "parameter_gradient_shards",
+      "time": "2026-09-06T13:50:39.642498+00:00",
+      "optimizer_updates_before": 0,
+      "shards": [
+        {
+          "parameter": "_fsdp_wrapped_module._flat_param",
+          "elements": 1005617024,
+          "l2": 0.05020231753587723,
+          "abs_max": 0.005899894051253796
+        }
+      ]
+    },
+    {
+      "rank": 0,
+      "event": "optimizer_update",
+      "time": "2026-09-06T13:50:39.725944+00:00",
+      "optimizer_updates": 1,
+      "global_grad_norm": 0.19306641817092896
+    },
+    {
+      "rank": 1,
+      "event": "parameter_gradient_shards",
+      "time": "2026-09-06T13:50:39.642492+00:00",
+      "optimizer_updates_before": 0,
+      "shards": [
+        {
+          "parameter": "_fsdp_wrapped_module._flat_param",
+          "elements": 1005617024,
+          "l2": 0.1364106386899948,
+          "abs_max": 0.006987687200307846
+        }
+      ]
+    },
+    {
+      "rank": 1,
+      "event": "optimizer_update",
+      "time": "2026-09-06T13:50:39.725630+00:00",
+      "optimizer_updates": 1,
+      "global_grad_norm": 0.19306641817092896
+    },
+    {
+      "rank": 2,
+      "event": "parameter_gradient_shards",
+      "time": "2026-09-06T13:50:39.642363+00:00",
+      "optimizer_updates_before": 0,
+      "shards": [
+        {
+          "parameter": "_fsdp_wrapped_module._flat_param",
+          "elements": 1005617024,
+          "l2": 0.12393587827682495,
+          "abs_max": 0.0044022854417562485
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "event": "optimizer_update",
+      "time": "2026-09-06T13:50:39.725669+00:00",
+      "optimizer_updates": 1,
+      "global_grad_norm": 0.19306641817092896
+    },
+    {
+      "rank": 3,
+      "event": "parameter_gradient_shards",
+      "time": "2026-09-06T13:50:39.641984+00:00",
+      "optimizer_updates_before": 0,
+      "shards": [
+        {
+          "parameter": "_fsdp_wrapped_module._flat_param",
+          "elements": 1005617024,
+          "l2": 0.028042862191796303,
+          "abs_max": 0.002535283099859953
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "event": "optimizer_update",
+      "time": "2026-09-06T13:50:39.725015+00:00",
+      "optimizer_updates": 1,
+      "global_grad_norm": 0.19306641817092896
+    }
+  ],
+  "norm_reconstructed_from_shards": 0.19306641105573336,
+  "full_batch": {
+    "responses": 276,
+    "valid_tokens": 3370,
+    "abs_quantiles": {
+      "p50": 0,
+      "p90": 0,
+      "p99": 0.10938537597656248,
+      "max": 7.9826202392578125
+    },
+    "abs_mean": 0.020529204235586285
+  },
+  "limitation": "Existing logs have no parameter-gradient tensors, parameter deltas or Adam moments. Direct logprob gradient excludes entropy. This audit cannot certify the parameter/optimizer chain."
+}

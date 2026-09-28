@@ -1,0 +1,98 @@
+--- launcher.sh
++++ launcher.sh
+@@ -13,6 +13,7 @@
+ TRAINING_SEED_PATCH_SHA=${TRAINING_SEED_PATCH_SHA:?TRAINING_SEED_PATCH_SHA is required}
+ HF_ROLLOUT_OFFLOAD_PATCH_SHA=${HF_ROLLOUT_OFFLOAD_PATCH_SHA:?HF_ROLLOUT_OFFLOAD_PATCH_SHA is required}
+ RL_REWARD_BALANCE_PATCH_SHA=${RL_REWARD_BALANCE_PATCH_SHA:?RL_REWARD_BALANCE_PATCH_SHA is required}
++QWEN_BASE_CHECKPOINT_PATCH_SHA=${QWEN_BASE_CHECKPOINT_PATCH_SHA:?QWEN_BASE_CHECKPOINT_PATCH_SHA is required}
+ MICRO=${MICRO:-old}
+ ENV_SEED=${ENV_SEED:?ENV_SEED is required}
+ VAL_ROLLOUT_N=${VAL_ROLLOUT_N:-1}
+@@ -38,13 +39,13 @@
+     ;;
+ esac
+
+-REV=level${DIFFICULTY_LEVEL}_qwen_sft1248verlfix_noskill_compact6_v7_newa100
++REV=level${DIFFICULTY_LEVEL}_qwen3_4b_base_nosft_noskill_compact6_v7_newa100
+ ROOT=${RUNTIME_ROOT_OVERRIDE:?RUNTIME_ROOT_OVERRIDE is required}
+ CODE=${ROOT}/code
+ PROJECT_ROOT=${PROJECT_ROOT_OVERRIDE:?PROJECT_ROOT_OVERRIDE is required}
+ SHARED=${PROJECT_ROOT}/runs
+ RESULT_ROOT=${RESULT_ROOT_OVERRIDE:-${SHARED}/20260807-qwen-tenlevel-compact-contract}
+-RUN_NAME=qwen3_4b_g2_${EXPERIMENT_TAG}_level${DIFFICULTY_LEVEL}_from_sft1248verlfix_${MICRO}micro_${NODE_TAG}_seed${ENV_SEED}_step${TARGET_STEP}_resp${MAX_RESPONSE_LENGTH}_${REV}_20260807
++RUN_NAME=qwen3_4b_g2_${EXPERIMENT_TAG}_level${DIFFICULTY_LEVEL}_from_base_${MICRO}micro_${NODE_TAG}_seed${ENV_SEED}_step${TARGET_STEP}_resp${MAX_RESPONSE_LENGTH}_${REV}_20260816
+ LOG_DIR=${RESULT_ROOT}/logs/${RUN_NAME}
+ CKPT_DIR=${RESULT_ROOT}/checkpoints/${RUN_NAME}
+ AUDIT_DIR=${RESULT_ROOT}/audit/${RUN_NAME}
+@@ -70,9 +71,11 @@
+ PATCH_MANAGER_SHA=1feeb6e7ab45b21d4daab9f46ee7c9466d1bc0faccfb943388acdc2c99d219c8
+ PYTHON_BIN=${PYTHON_BIN_OVERRIDE:-${PROJECT_ROOT}/envs/verl-agent-v7-exact/bin/python}
+ BASE_MODEL=${MODEL_ASSET_ROOT:-${PROJECT_ROOT}/assets/models/Qwen/checkpoint-1248_verlfix}
+-EXPECTED_BASE_CONFIG_SHA=c26e806188ff1d430c2358ae63c3e5b7d5b54275342223c19b63d6171619c7ed
++BASE_MODEL_MANIFEST=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/qwen3_4b_base_checkpoint.sha256
++EXPECTED_BASE_CONFIG_SHA=8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a
+ EXPECTED_BASE_TOKENIZER_CONFIG_SHA=d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101
+-EXPECTED_BASE_MODEL_SHA=a3810262ecc434647f6644f9421d6f9ffa7bb7f8cc6a32c62b742f18bf8f9b6b
++EXPECTED_BASE_MODEL_INDEX_SHA=6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2
++EXPECTED_BASE_MODEL_MANIFEST_SHA=82fdeae910670892e5c70b177ca5ec30d3d69090416e34480be6d63880f7a56c
+ DATA_ROOT=${V7_ASSETS}/frozen_inputs
+ FLA_ROOT=${V7_ASSETS}/source/extracted/flash-linear-attention_dev
+ MOBA_ROOT=${V7_ASSETS}/source/extracted/MoBA
+@@ -130,7 +133,8 @@
+ source_runner_sha=${EXPECTED_RUNNER_SHA}
+ base_model_config_sha=$(sha256sum "${BASE_MODEL}/config.json" 2>/dev/null | awk '{print $1}')
+ base_model_tokenizer_config_sha=$(sha256sum "${BASE_MODEL}/tokenizer_config.json" 2>/dev/null | awk '{print $1}')
+-base_model_sha=$(sha256sum "${BASE_MODEL}/model.safetensors" 2>/dev/null | awk '{print $1}')
++base_model_index_sha=$(sha256sum "${BASE_MODEL}/model.safetensors.index.json" 2>/dev/null | awk '{print $1}')
++base_model_manifest_sha=$(sha256sum "${BASE_MODEL_MANIFEST}" 2>/dev/null | awk '{print $1}')
+ base_model_layout_sha=$(find "${BASE_MODEL}" -maxdepth 1 -type f -printf '%f %s\n' 2>/dev/null | LC_ALL=C sort | sha256sum | awk '{print $1}')
+ train_data_sha=$(sha256sum "${DATA_ROOT}/train.parquet" 2>/dev/null | awk '{print $1}')
+ test_data_sha=$(sha256sum "${DATA_ROOT}/test.parquet" 2>/dev/null | awk '{print $1}')
+@@ -140,15 +144,18 @@
+       "${test_data_sha}" != "${EXPECTED_TEST_DATA_SHA}" || \
+       "${base_model_config_sha}" != "${EXPECTED_BASE_CONFIG_SHA}" || \
+       "${base_model_tokenizer_config_sha}" != "${EXPECTED_BASE_TOKENIZER_CONFIG_SHA}" || \
+-      "${base_model_sha}" != "${EXPECTED_BASE_MODEL_SHA}" || \
++      "${base_model_index_sha}" != "${EXPECTED_BASE_MODEL_INDEX_SHA}" || \
++      "${base_model_manifest_sha}" != "${EXPECTED_BASE_MODEL_MANIFEST_SHA}" || \
+       -z "${base_model_layout_sha}" || \
+-      -z "${train_data_sha}" || -z "${test_data_sha}" ]]; then
++      -z "${train_data_sha}" || -z "${test_data_sha}" ]] || \
++   ! (cd "${BASE_MODEL}" && sha256sum --status -c "${BASE_MODEL_MANIFEST}"); then
+   write_failure 2 source_hash_mismatch
+   exit 2
+ fi
+
+ if [[ ! -s "${BASE_MODEL}/config.json" || ! -s "${BASE_MODEL}/tokenizer_config.json" || \
+-      ! -s "${BASE_MODEL}/model.safetensors" || \
++      ! -s "${BASE_MODEL}/model.safetensors.index.json" || \
++      "$(find "${BASE_MODEL}" -maxdepth 1 -type f -name 'model-*.safetensors' | wc -l)" -ne 3 || \
+       ! -s "${DATA_ROOT}/train.parquet" || ! -s "${DATA_ROOT}/test.parquet" || \
+       ! -s "${SC2PATH}/maps/Melee/Flat128.SC2Map" ]]; then
+   write_failure 3 runtime_assets_incomplete
+@@ -302,6 +309,7 @@
+   echo "TRAINING_SEED_PATCH_SHA=${training_seed_patch_sha}"
+   echo "HF_ROLLOUT_OFFLOAD_PATCH_SHA=${hf_rollout_offload_patch_sha}"
+   echo "RL_REWARD_BALANCE_PATCH_SHA=${rl_reward_balance_patch_sha}"
++  echo "QWEN_BASE_CHECKPOINT_PATCH_SHA=${QWEN_BASE_CHECKPOINT_PATCH_SHA}"
+   echo "PROJECT_ROOT=${PROJECT_ROOT}"
+   echo "PYTHON_SITE_ROOT=${PYTHON_SITE_ROOT}"
+   echo "RUNTIME_ROOT=${ROOT}"
+@@ -312,12 +320,13 @@
+   echo "ENV_SEED=${ENV_SEED}"
+   echo "EXPERIMENT_TAG=${EXPERIMENT_TAG}"
+   echo "BASE_MODEL=${BASE_MODEL}"
+-  echo "BASE_MODEL_ID=qwen3_4b_sc2_sft_0401_repro_40ep_checkpoint_1248_verlfix"
+-  echo "HISTORICAL_CHECKPOINT_1240_BYTE_IDENTICAL=0"
+-  echo "MODEL_SOURCE_OLD_CLUSTER=/data1/yjy/LlamaFactory/output/Qwen3-4B-Instruct/0401_repro_40ep_20260628/checkpoint-1248_verlfix"
++  echo "BASE_MODEL_ID=Qwen/Qwen3-4B"
++  echo "BASE_MODEL_ARCHITECTURE=Qwen3ForCausalLM"
++  echo "BASE_MODEL_INITIALIZATION=public_base_snapshot_no_sft_no_rl"
+   echo "BASE_MODEL_CONFIG_SHA=${base_model_config_sha}"
+   echo "BASE_MODEL_TOKENIZER_CONFIG_SHA=${base_model_tokenizer_config_sha}"
+-  echo "BASE_MODEL_SAFETENSORS_SHA=${base_model_sha}"
++  echo "BASE_MODEL_INDEX_SHA=${base_model_index_sha}"
++  echo "BASE_MODEL_MANIFEST_SHA=${base_model_manifest_sha}"
+   echo "BASE_MODEL_LAYOUT_SHA=${base_model_layout_sha}"
+   echo "TRAIN_DATA_SHA=${train_data_sha}"
+   echo "TEST_DATA_SHA=${test_data_sha}"

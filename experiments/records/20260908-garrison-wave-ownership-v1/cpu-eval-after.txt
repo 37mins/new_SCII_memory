@@ -1,0 +1,39 @@
+COMMAND: /private/tmp/sc2-air-results.HBI61m/decoder/bin/python -B -m unittest discover -s tests -p test_sc2_evaluation_without_policy.py -v
+test_metadata_only_result_passes_actual_dataproto_consistency_check (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_mixed_games_count_once_not_once_per_answer (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_no_decision_victory_and_defeat_finish_without_policy_tensors (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_no_games_is_not_a_successful_evaluation (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_non_sc2_and_training_validation_do_not_gain_an_empty_batch_bypass (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+ok
+test_normal_single_game_keeps_whole_reward_and_real_answers (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_recorded_r1_outcome_closes_new_cpu_fixture_not_original_failed_run (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_reward_sources_remain_separate (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_training_empty_policy_still_fails_before_collation (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+ok
+test_training_mixed_batch_preserves_only_real_credit (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... SC2 policy credit: [{"traj_uid": "empty", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}, {"traj_uid": "game", "environment_reward": -49.0, "environment_interactions": 2, "policy_decisions": 1, "excluded_terminal_rows": 1}]
+ok
+test_unconsumed_nonterminal_still_fails_in_evaluation (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_unequal_validation_batches_use_game_weighting (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.123s
+
+OK
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+EXIT_CODE=0

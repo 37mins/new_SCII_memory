@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-09-12T00:48:25.520492+00:00",
+  "runtime_sha": "9ae8668c4c6045f5834d197c72f7495c175c1c73",
+  "node": "sc2-a100-43",
+  "gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "controller": "/root/new-scii-execution-feedback-20260911/temperature-pair-r1",
+  "controller_started_at": "2026-09-12T00:45:21Z",
+  "controller_stage": "T0.4",
+  "hard_deadline": "2026-09-12T01:30:21Z",
+  "total_gpu_hours_ceiling": 3,
+  "run_ids": [
+    "20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1",
+    "20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1"
+  ],
+  "run_root": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs",
+  "load": {
+    "checkpoint": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "loaded_global_step": 4,
+    "checkpoint_load_returned": true,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "1",
+    "temperature": 0.4,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      42613,
+      42613,
+      42613,
+      42613,
+      42613,
+      42613,
+      42613,
+      42613
+    ],
+    "answers": "online SpB; no replay or replacement",
+    "optimizer_loaded_by_existing_loader_but_not_updated": true
+  },
+  "evaluation_seeds": [
+    {
+      "base_seed": 1000,
+      "reset_index": 0,
+      "seeds": [
+        42613,
+        42613,
+        42613,
+        42613,
+        42613,
+        42613,
+        42613,
+        42613
+      ]
+    }
+  ],
+  "response_count": 0,
+  "response_examples": [],
+  "gpu_snapshot": "0, 12584 MiB, 5 %\n1, 12728 MiB, 56 %\n2, 12728 MiB, 1 %\n3, 12584 MiB, 0 %\n4, 0 MiB, 0 %\n5, 0 MiB, 0 %\n6, 0 MiB, 0 %\n7, 0 MiB, 0 %\n",
+  "manifest": {
+    "schema_version": 1,
+    "status": "running",
+    "started_at": "2026-09-12T00:45:44.756169+00:00",
+    "source_commit": "9ae8668c4c6045f5834d197c72f7495c175c1c73",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_source": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "bo_path": "/root/new-scii-execution-feedback-20260911/code-9ae8668/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "evaluation",
+    "source_files_sha256": {
+      "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+      "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+      "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "149bf51487319ceea7914858bc971594959c955117c7dacf507fae4f204eea24",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "cd5909d8060859f5b8c1cd8a6a6ed7edce5bc100c80ca126228c1956214c1c78",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "6b5d474f90b1a3a9d7a641c92f3379b9d936e14aa7102d1f1717545093056704",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "002249bfac1ade8487ff43672320ee38cb7e72453d2edeafffb1617fcc514a88"
+    },
+    "target_steps": 1,
+    "start_step": 0,
+    "sc2_checkpoint_resume": false,
+    "training_goal_global_steps": 96,
+    "resume_from_path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "host": "hpc",
+    "python": "3.12.3",
+    "gpu_selection": "0,1,2,3",
+    "world_size": 4,
+    "container_image_id": null,
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": "0.4.0",
+      "moba": null
+    }
+  },
+  "artifacts": {
+    "manifest.json": "8cb7d3f50167d98739f3955370fdbc7eb09429f4b4a563d3943d7fe8ac4ac9ee",
+    "effective_config.json": "94a1402cec138dbe24ac293f62de2855e704f12b9d5fdaa41c517a639b6766a7",
+    "checkpoint_evaluation.json": "347addab794444936928953c129a7aea2ce6442da8bd37f1b03f47f3983a0ff1",
+    "evaluation_seeds.jsonl": "70e253b2ad8eb6ed8aaae1106cd385cdebcbc90149acec25dea577fd3483a9f1",
+    "paired_seed_selection.json": "366f6917310cbee584156377d6d9da1c6c44ef306099d8692ec686eb3eb0cb94"
+  },
+  "cpu_tests": {
+    "local": "18 total,17 passed,1 skipped (no Torch),3.168s",
+    "server": "18/18 passed,CUDA hidden,5.055s"
+  },
+  "source_bundle": {
+    "path": "/root/new-scii-execution-feedback-20260911/source-9ae8668.bundle",
+    "sha256": "32b7bb3d817472ee2bc06505ef5a39437791be0f957fbcd9d60ca44d9c475403",
+    "requires": "4ad9a605cc6a91419fd2a2ef5d6e8a2af72aac32"
+  }
+}

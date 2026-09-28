@@ -1,0 +1,57 @@
+python -B -m unittest discover -s tests -p test_system_release.py -v
+shasum -a 256 -c configs/system-v1.sha256
+git diff --check
+
+test_checkpoint_evaluation_records_actual_eight_card_controls (test_system_release.LauncherTest) ... ok
+test_eight_gpu_long_budget_preserves_global_batch_and_rollouts (test_system_release.LauncherTest) ... ok
+test_evaluation_keeps_system_but_disables_updates (test_system_release.LauncherTest) ... ok
+test_explicit_stage8_overrides_keep_96_step_goal (test_system_release.LauncherTest) ... ok
+test_four_gpu_override_preserves_rollout_budget (test_system_release.LauncherTest) ... ok
+test_four_update_probe_saves_each_step_and_preserves_training_controls (test_system_release.LauncherTest) ... ok
+test_integrated_defaults_select_instruct_and_disable_call_shaping (test_system_release.LauncherTest) ... ok
+test_integrated_spb_default_disables_only_swa_dropout (test_system_release.LauncherTest) ... ok
+test_invalid_bo_profile_stops_before_creation (test_system_release.LauncherTest) ... ok
+test_natural_gate_requires_an_explicit_ray_directory (test_system_release.LauncherTest) ... ok
+test_qwen_spb_share_all_nonmodel_training_controls (test_system_release.LauncherTest) ... ok
+test_refuses_existing_run_without_overwriting (test_system_release.LauncherTest) ... ok
+test_rush_is_explicit_and_does_not_select_seed2 (test_system_release.LauncherTest) ... ok
+test_spb_dropout_override_only_changes_swa_config (test_system_release.LauncherTest) ... ok
+test_step_shaping_is_the_only_nonpath_ab_override (test_system_release.LauncherTest) ... ok
+test_two_gpu_kl_probe_preserves_global_training_controls (test_system_release.LauncherTest) ... ok
+test_unknown_shaping_mode_is_rejected_before_run_creation (test_system_release.LauncherTest) ... ok
+test_matches_historical_training_branch_only (test_system_release.ModelPreparationTest) ... ok
+test_preparation_does_not_modify_source_or_copy_weights (test_system_release.ModelPreparationTest) ... ok
+test_complete_and_incomplete_checkpoint (test_system_release.ResultAuditTest) ... ok
+test_eval_requires_result_and_replay_but_not_model_participation (test_system_release.ResultAuditTest) ... ok
+test_four_gpu_checkpoint_is_audited_against_four_ranks (test_system_release.ResultAuditTest) ... ok
+test_nonfinite_or_process_failure_is_not_completed (test_system_release.ResultAuditTest) ... ok
+test_step8_evaluation_requires_all_eight_natural_games (test_system_release.ResultAuditTest) ... ok
+test_frozen_system_source (test_system_release.SourceFreezeTest) ... ok
+test_rush_bo_is_exact_historical_input (test_system_release.SourceFreezeTest) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.619s
+
+OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py: OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/strategist.py: OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/base_player.py: OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py: OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py: OK
+agent_system/environments/env_package/sc2_online_restored/envSC2.py: OK
+agent_system/environments/strategic_sc2_env_manager_v2.py: OK
+agent_system/multi_turn_rollout/rollout_loop.py: OK
+agent_system/sc2_episode.py: OK
+configs/system-v1.env: OK
+agent_system/reward_manager/episode.py: OK
+gigpo/core_gigpo.py: OK
+verl/protocol.py: OK
+verl/trainer/ppo/core_algos.py: OK
+verl/trainer/ppo/ray_trainer.py: OK
+verl/workers/actor/dp_actor.py: OK
+verl/models/transformers/qwen3_rowwise_rms_norm.py: OK
+verl/workers/actor/ppo_diagnostics.py: OK
+verl/workers/fsdp_workers.py: OK
+verl/workers/rollout/hf_rollout.py: OK
+verl/workers/rollout/hf_diagnostics.py: OK
+EXIT_CODE=0

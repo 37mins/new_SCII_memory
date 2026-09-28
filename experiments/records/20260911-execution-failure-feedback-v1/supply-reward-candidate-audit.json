@@ -1,0 +1,915 @@
+{
+  "status": "design_review_only_no_runtime_reward",
+  "source_sha": "4d39d06658364689518d5d6f44a2af4bb5f73b49",
+  "snapshot": "/private/tmp/sc2-supply-reward-review.fw0MkW",
+  "artifact_sha256": {
+    "game-2155981-supply-events.jsonl": "22d6a3b6b7ae42443485c1068041ee4e5a9cdddbcaf96847c1d6e265096ea809",
+    "game-2155982-supply-events.jsonl": "5c6b73e3510be329a3a756bbc8560a8e59a8b98c2bf97f07fb4d3c5db018952e",
+    "game-2155983-supply-events.jsonl": "f63a75846c2a9368e082a6e9141670ab6459727df99adb937862c2a839f855e0",
+    "game-2155984-supply-events.jsonl": "ed9bb13172a7d722a4ee3c7faf6149743f817742c2d75c3d2ca7336d061abfa6",
+    "game-2155985-supply-events.jsonl": "98dadd7e3ed20a4878660b41091aa75d79d5d6cb48c2495b104fcfc50cf70ab5",
+    "game-2155986-supply-events.jsonl": "47e8ac412085479fae0d469093614fb6392c85905bd881033bd958704c72df05",
+    "game-2155987-supply-events.jsonl": "2fe7470c6b92eba0bf599cf55ed1aa9fef1dc0f7824956b34107eaa5a1162904",
+    "game-2155988-supply-events.jsonl": "96831cfb874f09b8a29f02093054b4403c5219f07eac3fc30863f6ca348fb42b",
+    "game_worker_mapping.jsonl": "77e5992459c5e795ef5fabf86ca70ff021e2f83d421a6f4433c23a8da5694826",
+    "interventions.jsonl": "264232e722dbc8ca5f949f19bceb32fccc4430dbdfd72191981623e768509474",
+    "manifest.json": "89e487a3bde6115dfe07569a76485d9037da2b7af742b37bb289b225705db536",
+    "result.json": "6b11d5d88ff71c71424dc794242f4d33c236541f41bfc0de03f48eb319353890"
+  },
+  "b4_audit_sha256": "3677b5a53afd6c502c387773fd5d95bf551f174ae021b5578d42e40ae1c1a397",
+  "games": [
+    {
+      "env": 0,
+      "arm": "A",
+      "game_pid": 2155981,
+      "intervention_line": 17,
+      "intervention_source": "historical_prefix_or_order_intervention_not_model_choice",
+      "depot_completions_after_0613": 1,
+      "marine_creations_after_0613": 0,
+      "depot_events": [
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155981,
+          "time": "07:18",
+          "supply_used": 47,
+          "supply_cap": 55,
+          "supply_left": 8,
+          "minerals": 945,
+          "policy_action_id": 4,
+          "tag": 4366532611,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            29.0
+          ],
+          "source_line": 61
+        }
+      ],
+      "marine_events": [],
+      "reward_eligibility": "no_marine_creation_after_intervention",
+      "missing_command_origin_links": true
+    },
+    {
+      "env": 1,
+      "arm": "B",
+      "game_pid": 2155982,
+      "intervention_line": 18,
+      "intervention_source": "historical_prefix_or_order_intervention_not_model_choice",
+      "depot_completions_after_0613": 8,
+      "marine_creations_after_0613": 2,
+      "depot_events": [
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155982,
+          "time": "06:37",
+          "supply_used": 47,
+          "supply_cap": 55,
+          "supply_left": 8,
+          "minerals": 55,
+          "policy_action_id": 3,
+          "tag": 4373872642,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            27.0
+          ],
+          "source_line": 64
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155982,
+          "time": "06:38",
+          "supply_used": 47,
+          "supply_cap": 63,
+          "supply_left": 16,
+          "minerals": 70,
+          "policy_action_id": 3,
+          "tag": 4371251202,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            29.0
+          ],
+          "source_line": 65
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155982,
+          "time": "06:39",
+          "supply_used": 47,
+          "supply_cap": 71,
+          "supply_left": 24,
+          "minerals": 75,
+          "policy_action_id": 3,
+          "tag": 4374659075,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            31.0,
+            25.0
+          ],
+          "source_line": 66
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155982,
+          "time": "06:40",
+          "supply_used": 47,
+          "supply_cap": 79,
+          "supply_left": 32,
+          "minerals": 75,
+          "policy_action_id": 3,
+          "tag": 4352114690,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            29.0
+          ],
+          "source_line": 67
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155982,
+          "time": "06:42",
+          "supply_used": 47,
+          "supply_cap": 87,
+          "supply_left": 40,
+          "minerals": 80,
+          "policy_action_id": 3,
+          "tag": 4369940482,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            31.0
+          ],
+          "source_line": 68
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155982,
+          "time": "06:46",
+          "supply_used": 47,
+          "supply_cap": 95,
+          "supply_left": 48,
+          "minerals": 5,
+          "policy_action_id": 3,
+          "tag": 4361027589,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            31.0,
+            27.0
+          ],
+          "source_line": 69
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155982,
+          "time": "06:47",
+          "supply_used": 47,
+          "supply_cap": 103,
+          "supply_left": 56,
+          "minerals": 10,
+          "policy_action_id": 3,
+          "tag": 4368891906,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            33.0,
+            25.0
+          ],
+          "source_line": 70
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155982,
+          "time": "07:12",
+          "supply_used": 51,
+          "supply_cap": 111,
+          "supply_left": 60,
+          "minerals": 35,
+          "policy_action_id": 3,
+          "tag": 4360503298,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            31.0
+          ],
+          "source_line": 73
+        }
+      ],
+      "marine_events": [
+        {
+          "event": "on_unit_created",
+          "game_pid": 2155982,
+          "time": "07:12",
+          "supply_used": 51,
+          "supply_cap": 103,
+          "supply_left": 52,
+          "minerals": 30,
+          "policy_action_id": 3,
+          "tag": 4365484035,
+          "unit": "MARINE",
+          "progress": 1.0,
+          "position": [
+            32.028076171875,
+            22.20068359375
+          ],
+          "source_line": 72
+        },
+        {
+          "event": "on_unit_created",
+          "game_pid": 2155982,
+          "time": "07:16",
+          "supply_used": 52,
+          "supply_cap": 111,
+          "supply_left": 59,
+          "minerals": 20,
+          "policy_action_id": 3,
+          "tag": 4354736130,
+          "unit": "MARINE",
+          "progress": 1.0,
+          "position": [
+            20.500732421875,
+            29.428955078125
+          ],
+          "source_line": 74
+        }
+      ],
+      "reward_eligibility": "excluded_human_intervention",
+      "missing_command_origin_links": true
+    },
+    {
+      "env": 2,
+      "arm": "A",
+      "game_pid": 2155984,
+      "intervention_line": 19,
+      "intervention_source": "historical_prefix_or_order_intervention_not_model_choice",
+      "depot_completions_after_0613": 0,
+      "marine_creations_after_0613": 0,
+      "depot_events": [],
+      "marine_events": [],
+      "reward_eligibility": "no_marine_creation_after_intervention",
+      "missing_command_origin_links": true
+    },
+    {
+      "env": 3,
+      "arm": "B",
+      "game_pid": 2155985,
+      "intervention_line": 20,
+      "intervention_source": "historical_prefix_or_order_intervention_not_model_choice",
+      "depot_completions_after_0613": 8,
+      "marine_creations_after_0613": 2,
+      "depot_events": [
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155985,
+          "time": "06:37",
+          "supply_used": 47,
+          "supply_cap": 55,
+          "supply_left": 8,
+          "minerals": 55,
+          "policy_action_id": 3,
+          "tag": 4373872642,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            27.0
+          ],
+          "source_line": 64
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155985,
+          "time": "06:38",
+          "supply_used": 47,
+          "supply_cap": 63,
+          "supply_left": 16,
+          "minerals": 70,
+          "policy_action_id": 3,
+          "tag": 4371251202,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            29.0
+          ],
+          "source_line": 65
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155985,
+          "time": "06:39",
+          "supply_used": 47,
+          "supply_cap": 71,
+          "supply_left": 24,
+          "minerals": 75,
+          "policy_action_id": 3,
+          "tag": 4374659075,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            31.0,
+            25.0
+          ],
+          "source_line": 66
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155985,
+          "time": "06:40",
+          "supply_used": 47,
+          "supply_cap": 79,
+          "supply_left": 32,
+          "minerals": 75,
+          "policy_action_id": 3,
+          "tag": 4352114690,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            29.0
+          ],
+          "source_line": 67
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155985,
+          "time": "06:42",
+          "supply_used": 47,
+          "supply_cap": 87,
+          "supply_left": 40,
+          "minerals": 80,
+          "policy_action_id": 3,
+          "tag": 4369940482,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            31.0
+          ],
+          "source_line": 68
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155985,
+          "time": "06:46",
+          "supply_used": 47,
+          "supply_cap": 95,
+          "supply_left": 48,
+          "minerals": 5,
+          "policy_action_id": 3,
+          "tag": 4361027589,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            31.0,
+            27.0
+          ],
+          "source_line": 69
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155985,
+          "time": "06:47",
+          "supply_used": 47,
+          "supply_cap": 103,
+          "supply_left": 56,
+          "minerals": 10,
+          "policy_action_id": 3,
+          "tag": 4368891906,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            33.0,
+            25.0
+          ],
+          "source_line": 70
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155985,
+          "time": "07:12",
+          "supply_used": 51,
+          "supply_cap": 111,
+          "supply_left": 60,
+          "minerals": 35,
+          "policy_action_id": 3,
+          "tag": 4360503298,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            31.0
+          ],
+          "source_line": 73
+        }
+      ],
+      "marine_events": [
+        {
+          "event": "on_unit_created",
+          "game_pid": 2155985,
+          "time": "07:12",
+          "supply_used": 51,
+          "supply_cap": 103,
+          "supply_left": 52,
+          "minerals": 30,
+          "policy_action_id": 3,
+          "tag": 4365484035,
+          "unit": "MARINE",
+          "progress": 1.0,
+          "position": [
+            32.028076171875,
+            22.20068359375
+          ],
+          "source_line": 72
+        },
+        {
+          "event": "on_unit_created",
+          "game_pid": 2155985,
+          "time": "07:16",
+          "supply_used": 52,
+          "supply_cap": 111,
+          "supply_left": 59,
+          "minerals": 20,
+          "policy_action_id": 3,
+          "tag": 4354736130,
+          "unit": "MARINE",
+          "progress": 1.0,
+          "position": [
+            20.500732421875,
+            29.428955078125
+          ],
+          "source_line": 74
+        }
+      ],
+      "reward_eligibility": "excluded_human_intervention",
+      "missing_command_origin_links": true
+    },
+    {
+      "env": 4,
+      "arm": "A",
+      "game_pid": 2155986,
+      "intervention_line": 21,
+      "intervention_source": "historical_prefix_or_order_intervention_not_model_choice",
+      "depot_completions_after_0613": 0,
+      "marine_creations_after_0613": 0,
+      "depot_events": [],
+      "marine_events": [],
+      "reward_eligibility": "no_marine_creation_after_intervention",
+      "missing_command_origin_links": true
+    },
+    {
+      "env": 5,
+      "arm": "B",
+      "game_pid": 2155987,
+      "intervention_line": 22,
+      "intervention_source": "historical_prefix_or_order_intervention_not_model_choice",
+      "depot_completions_after_0613": 8,
+      "marine_creations_after_0613": 2,
+      "depot_events": [
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155987,
+          "time": "06:37",
+          "supply_used": 47,
+          "supply_cap": 55,
+          "supply_left": 8,
+          "minerals": 55,
+          "policy_action_id": 3,
+          "tag": 4373872642,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            27.0
+          ],
+          "source_line": 64
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155987,
+          "time": "06:38",
+          "supply_used": 47,
+          "supply_cap": 63,
+          "supply_left": 16,
+          "minerals": 70,
+          "policy_action_id": 3,
+          "tag": 4371251202,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            29.0
+          ],
+          "source_line": 65
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155987,
+          "time": "06:39",
+          "supply_used": 47,
+          "supply_cap": 71,
+          "supply_left": 24,
+          "minerals": 75,
+          "policy_action_id": 3,
+          "tag": 4374659075,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            31.0,
+            25.0
+          ],
+          "source_line": 66
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155987,
+          "time": "06:40",
+          "supply_used": 47,
+          "supply_cap": 79,
+          "supply_left": 32,
+          "minerals": 75,
+          "policy_action_id": 3,
+          "tag": 4352114690,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            29.0
+          ],
+          "source_line": 67
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155987,
+          "time": "06:42",
+          "supply_used": 47,
+          "supply_cap": 87,
+          "supply_left": 40,
+          "minerals": 80,
+          "policy_action_id": 3,
+          "tag": 4369940482,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            31.0
+          ],
+          "source_line": 68
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155987,
+          "time": "06:46",
+          "supply_used": 47,
+          "supply_cap": 95,
+          "supply_left": 48,
+          "minerals": 5,
+          "policy_action_id": 3,
+          "tag": 4361027589,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            31.0,
+            27.0
+          ],
+          "source_line": 69
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155987,
+          "time": "06:47",
+          "supply_used": 47,
+          "supply_cap": 103,
+          "supply_left": 56,
+          "minerals": 10,
+          "policy_action_id": 3,
+          "tag": 4368891906,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            33.0,
+            25.0
+          ],
+          "source_line": 70
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155987,
+          "time": "07:12",
+          "supply_used": 51,
+          "supply_cap": 111,
+          "supply_left": 60,
+          "minerals": 35,
+          "policy_action_id": 3,
+          "tag": 4360503298,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            31.0
+          ],
+          "source_line": 73
+        }
+      ],
+      "marine_events": [
+        {
+          "event": "on_unit_created",
+          "game_pid": 2155987,
+          "time": "07:12",
+          "supply_used": 51,
+          "supply_cap": 103,
+          "supply_left": 52,
+          "minerals": 30,
+          "policy_action_id": 3,
+          "tag": 4365484035,
+          "unit": "MARINE",
+          "progress": 1.0,
+          "position": [
+            32.028076171875,
+            22.20068359375
+          ],
+          "source_line": 72
+        },
+        {
+          "event": "on_unit_created",
+          "game_pid": 2155987,
+          "time": "07:16",
+          "supply_used": 52,
+          "supply_cap": 111,
+          "supply_left": 59,
+          "minerals": 20,
+          "policy_action_id": 3,
+          "tag": 4354736130,
+          "unit": "MARINE",
+          "progress": 1.0,
+          "position": [
+            20.500732421875,
+            29.428955078125
+          ],
+          "source_line": 74
+        }
+      ],
+      "reward_eligibility": "excluded_human_intervention",
+      "missing_command_origin_links": true
+    },
+    {
+      "env": 6,
+      "arm": "A",
+      "game_pid": 2155983,
+      "intervention_line": 23,
+      "intervention_source": "historical_prefix_or_order_intervention_not_model_choice",
+      "depot_completions_after_0613": 0,
+      "marine_creations_after_0613": 0,
+      "depot_events": [],
+      "marine_events": [],
+      "reward_eligibility": "no_marine_creation_after_intervention",
+      "missing_command_origin_links": true
+    },
+    {
+      "env": 7,
+      "arm": "B",
+      "game_pid": 2155988,
+      "intervention_line": 24,
+      "intervention_source": "historical_prefix_or_order_intervention_not_model_choice",
+      "depot_completions_after_0613": 8,
+      "marine_creations_after_0613": 2,
+      "depot_events": [
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155988,
+          "time": "06:37",
+          "supply_used": 47,
+          "supply_cap": 55,
+          "supply_left": 8,
+          "minerals": 55,
+          "policy_action_id": 3,
+          "tag": 4373872642,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            27.0
+          ],
+          "source_line": 64
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155988,
+          "time": "06:38",
+          "supply_used": 47,
+          "supply_cap": 63,
+          "supply_left": 16,
+          "minerals": 70,
+          "policy_action_id": 3,
+          "tag": 4371251202,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            29.0
+          ],
+          "source_line": 65
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155988,
+          "time": "06:39",
+          "supply_used": 47,
+          "supply_cap": 71,
+          "supply_left": 24,
+          "minerals": 75,
+          "policy_action_id": 3,
+          "tag": 4374659075,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            31.0,
+            25.0
+          ],
+          "source_line": 66
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155988,
+          "time": "06:40",
+          "supply_used": 47,
+          "supply_cap": 79,
+          "supply_left": 32,
+          "minerals": 75,
+          "policy_action_id": 3,
+          "tag": 4352114690,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            29.0
+          ],
+          "source_line": 67
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155988,
+          "time": "06:42",
+          "supply_used": 47,
+          "supply_cap": 87,
+          "supply_left": 40,
+          "minerals": 80,
+          "policy_action_id": 3,
+          "tag": 4369940482,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            29.0,
+            31.0
+          ],
+          "source_line": 68
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155988,
+          "time": "06:46",
+          "supply_used": 47,
+          "supply_cap": 95,
+          "supply_left": 48,
+          "minerals": 5,
+          "policy_action_id": 3,
+          "tag": 4361027589,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            31.0,
+            27.0
+          ],
+          "source_line": 69
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155988,
+          "time": "06:47",
+          "supply_used": 47,
+          "supply_cap": 103,
+          "supply_left": 56,
+          "minerals": 10,
+          "policy_action_id": 3,
+          "tag": 4368891906,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            33.0,
+            25.0
+          ],
+          "source_line": 70
+        },
+        {
+          "event": "on_building_construction_complete",
+          "game_pid": 2155988,
+          "time": "07:12",
+          "supply_used": 51,
+          "supply_cap": 111,
+          "supply_left": 60,
+          "minerals": 35,
+          "policy_action_id": 3,
+          "tag": 4360503298,
+          "unit": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "position": [
+            27.0,
+            31.0
+          ],
+          "source_line": 73
+        }
+      ],
+      "marine_events": [
+        {
+          "event": "on_unit_created",
+          "game_pid": 2155988,
+          "time": "07:12",
+          "supply_used": 51,
+          "supply_cap": 103,
+          "supply_left": 52,
+          "minerals": 30,
+          "policy_action_id": 3,
+          "tag": 4365484035,
+          "unit": "MARINE",
+          "progress": 1.0,
+          "position": [
+            32.028076171875,
+            22.20068359375
+          ],
+          "source_line": 72
+        },
+        {
+          "event": "on_unit_created",
+          "game_pid": 2155988,
+          "time": "07:16",
+          "supply_used": 52,
+          "supply_cap": 111,
+          "supply_left": 59,
+          "minerals": 20,
+          "policy_action_id": 3,
+          "tag": 4354736130,
+          "unit": "MARINE",
+          "progress": 1.0,
+          "position": [
+            20.500732421875,
+            29.428955078125
+          ],
+          "source_line": 74
+        }
+      ],
+      "reward_eligibility": "excluded_human_intervention",
+      "missing_command_origin_links": true
+    }
+  ],
+  "callback_latest_id_changed_between_start_and_completion": [],
+  "historical_evidence_counts": {
+    "no_marine_creation_after_intervention": 4,
+    "excluded_human_intervention": 4
+  },
+  "b4_supply_feedback": [
+    {
+      "source_line": 78,
+      "answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+      "valid": true,
+      "depot_first": false,
+      "verdict": "insufficient_evidence_for_completed_model_owned_resolution"
+    },
+    {
+      "source_line": 86,
+      "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+      "valid": true,
+      "depot_first": false,
+      "verdict": "insufficient_evidence_for_completed_model_owned_resolution"
+    },
+    {
+      "source_line": 94,
+      "answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+      "valid": true,
+      "depot_first": false,
+      "verdict": "insufficient_evidence_for_completed_model_owned_resolution"
+    },
+    {
+      "source_line": 127,
+      "answer": "<answer>\n- supplydepot x 1\n- barracks x 1\n</answer>",
+      "valid": true,
+      "depot_first": true,
+      "verdict": "insufficient_evidence_for_completed_model_owned_resolution"
+    }
+  ],
+  "limitations": [
+    "Completion callback policy_action_id is latest ID, not a command origin.",
+    "Human interventions cannot be rewarded as model corrections.",
+    "B4 prompt logs prove choices, not completion of a uniquely attributable event.",
+    "One event per episode bounds repeat farming but does not remove incentive to create one blockage.",
+    "No candidate coefficient, production integration or GPU test has been approved."
+  ]
+}

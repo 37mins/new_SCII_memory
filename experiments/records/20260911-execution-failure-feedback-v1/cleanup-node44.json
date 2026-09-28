@@ -1,0 +1,22 @@
+{
+  "node": "44",
+  "started_utc": "2026-09-11T09:42:40Z",
+  "stopped": [],
+  "removed": [
+    {
+      "path": "/dev/shm/sc2_supply_order_0911_r1",
+      "allocated_bytes": 87212032,
+      "recoverable": "diagnostics archived; compilation caches regenerable"
+    }
+  ],
+  "archives": [
+    {
+      "path": "/root/new-scii-execution-feedback-20260911/cleanup-20260911-r1/sc2_supply_order_0911_r1-diagnostics.tar.gz",
+      "sha256": "cf4b0c7e9e74821e1cddacb420cf4ccba99963560fd4b9ba9bd18dc815d70b2d",
+      "bytes": 1338493,
+      "members": 572
+    }
+  ],
+  "finished_utc": "2026-09-11T09:42:40Z",
+  "all_targets_absent": true
+}

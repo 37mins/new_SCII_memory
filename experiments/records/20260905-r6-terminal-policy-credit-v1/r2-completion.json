@@ -1,0 +1,288 @@
+{
+  "verified_at_utc": "2026-09-05T13:46:40.370725+00:00",
+  "run_directory": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260905-r6-terminal-policy-credit-v1/runs/20260905-r6-terminal-policy-credit-v1-qwen-instruct2507-l5-legacy-4gpu-rl1-s0-r2",
+  "source_commit": "76180970d2e139ef2da052df659546621a84539d",
+  "gate": {
+    "status": "passed",
+    "natural_games": 8,
+    "wins": 6,
+    "policy_decisions": 14,
+    "excluded_terminal_rows": 4
+  },
+  "result": {
+    "status": "completed",
+    "ended_at": "2026-09-05T13:39:55.052399+00:00",
+    "process_exit_code": 0,
+    "completed_steps": 1,
+    "target_steps": 1,
+    "metrics_finite": true,
+    "checkpoint_complete": true,
+    "checkpoint_files": {
+      "checkpoints/global_step_1/data.pt": {
+        "bytes": 1947,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/model_world_size_4_rank_0.pt": {
+        "bytes": 4411642379,
+        "sha256": "cb3486e872008aa1c3c6c7572062c04331627fcac8738e526afc8806fcb067ff"
+      },
+      "checkpoints/global_step_1/actor/model_world_size_4_rank_1.pt": {
+        "bytes": 4411642379,
+        "sha256": "558d20dd644e010bc98b69c0d09b19805a462502f2ee4d462c20759e15a29536"
+      },
+      "checkpoints/global_step_1/actor/model_world_size_4_rank_2.pt": {
+        "bytes": 4411642379,
+        "sha256": "c2d84b2f927821d209597e6ba93a43e321e0a082ff85a87ce3bf857e0da1a58b"
+      },
+      "checkpoints/global_step_1/actor/model_world_size_4_rank_3.pt": {
+        "bytes": 4411642379,
+        "sha256": "0b71923e85df830ff228f97388549400fe5746d0da749afd0fddfb368444cbc2"
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_4_rank_0.pt": {
+        "bytes": 8044938915,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_4_rank_1.pt": {
+        "bytes": 8044938915,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_4_rank_2.pt": {
+        "bytes": 8044938915,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_4_rank_3.pt": {
+        "bytes": 8044938915,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_4_rank_0.pt": {
+        "bytes": 15077,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_4_rank_1.pt": {
+        "bytes": 15205,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_4_rank_2.pt": {
+        "bytes": 15141,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_4_rank_3.pt": {
+        "bytes": 15077,
+        "sha256": null
+      }
+    },
+    "console_sha256": "60588d8fb019710d08f8cc03e048fe130c58db0fa107d4c1ddef4e3df966fabc",
+    "episode_outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 6,
+      "defeats": 2,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.75,
+      "outcomes": [
+        {
+          "reset_index": 0,
+          "env_index": 1,
+          "decision_count": 1,
+          "step_index": 0,
+          "policy_decision_count": 0,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 2,
+          "decision_count": 1,
+          "step_index": 0,
+          "policy_decision_count": 0,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 5,
+          "decision_count": 1,
+          "step_index": 0,
+          "policy_decision_count": 0,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 6,
+          "decision_count": 1,
+          "step_index": 0,
+          "policy_decision_count": 0,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 4,
+          "decision_count": 2,
+          "step_index": 1,
+          "policy_decision_count": 2,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 3,
+          "decision_count": 3,
+          "step_index": 2,
+          "policy_decision_count": 3,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 0,
+          "decision_count": 4,
+          "step_index": 3,
+          "policy_decision_count": 4,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        },
+        {
+          "reset_index": 0,
+          "env_index": 7,
+          "decision_count": 5,
+          "step_index": 4,
+          "policy_decision_count": 5,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        }
+      ]
+    }
+  },
+  "metrics": [
+    {
+      "step": 1,
+      "global_seqlen/min": 4148,
+      "global_seqlen/max": 4335,
+      "global_seqlen/minmax_diff": 187,
+      "global_seqlen/balanced_min": 4200,
+      "global_seqlen/balanced_max": 4216,
+      "global_seqlen/mean": 4209.5,
+      "actor/entropy_loss": 0.041,
+      "episode/valid_action_ratio": 0,
+      "actor/kl_loss": 0.213,
+      "actor/kl_coef": 0.01,
+      "actor/pg_loss": 0.266,
+      "actor/pg_clipfrac": 0.044,
+      "actor/ppo_kl": -0.058,
+      "actor/pg_clipfrac_lower": 0.008,
+      "actor/grad_norm": 36.063,
+      "perf/mfu/actor": 0.033,
+      "perf/max_memory_allocated_gb": 41.225,
+      "perf/max_memory_reserved_gb": 70.902,
+      "perf/cpu_memory_used_gb": 51.351,
+      "actor/lr": 0,
+      "training/global_step": 1,
+      "training/epoch": 0,
+      "critic/score/mean": 23.087,
+      "critic/score/max": 24.4,
+      "critic/score/min": 21.4,
+      "critic/rewards/mean": 23.087,
+      "critic/rewards/max": 24.4,
+      "critic/rewards/min": 21.4,
+      "critic/advantages/mean": -0.01,
+      "critic/advantages/max": 0.325,
+      "critic/advantages/min": -0.688,
+      "critic/returns/mean": -0.01,
+      "critic/returns/max": 0.325,
+      "critic/returns/min": -0.688,
+      "response_length/mean": 91.562,
+      "response_length/max": 96,
+      "response_length/min": 56,
+      "response_length/clip_ratio": 0.875,
+      "prompt_length/mean": 960.812,
+      "prompt_length/max": 1016,
+      "prompt_length/min": 912,
+      "prompt_length/clip_ratio": 0,
+      "episode/reward/mean": 22.875,
+      "episode/reward/max": 24.5,
+      "episode/reward/min": 21.5,
+      "episode/length/mean": 3.5,
+      "episode/length/max": 5,
+      "episode/length/min": 2,
+      "episode/tool_call_count/mean": 0,
+      "episode/success_rate": 0.75,
+      "timing_s/gen": 420.885,
+      "timing_s/reward": 0.023,
+      "timing_s/old_log_prob": 4.162,
+      "timing_s/ref": 8.106,
+      "timing_s/adv": 0.015,
+      "timing_s/update_actor": 16.675,
+      "timing_s/save_checkpoint": 744.467,
+      "timing_s/step": 1194.347,
+      "timing_per_token_ms/gen": 287.293,
+      "timing_per_token_ms/adv": 0.001,
+      "timing_per_token_ms/update_actor": 0.99,
+      "timing_per_token_ms/ref": 0.481,
+      "perf/total_num_tokens": 16838,
+      "perf/time_per_step": 1194.347,
+      "perf/throughput": 3.525
+    }
+  ],
+  "artifact_hashes": {
+    "result.json": {
+      "bytes": 4947,
+      "sha256": "c97681c7a55a3fc64ff7d6158cd206c7ed8eba0b0fcf8f564c4f81e3fe6d55ed"
+    },
+    "metrics.json": {
+      "bytes": 2247,
+      "sha256": "8bc6d7f46e37bb9a15766785b4dfae163b5630a1c02e95219029b91dff024e61"
+    },
+    "manifest.json": {
+      "bytes": 2487,
+      "sha256": "680e5e420b15191071b79ab463c2210dbb3ba6f067f9f3eadfe7e06350a65cbb"
+    },
+    "effective_config.json": {
+      "bytes": 17192,
+      "sha256": "3b714bfc29285645cd9bd7c0533009910b46ca607b8f150f1972b107e9369fcf"
+    },
+    ".done": {
+      "bytes": 4947,
+      "sha256": "c97681c7a55a3fc64ff7d6158cd206c7ed8eba0b0fcf8f564c4f81e3fe6d55ed"
+    },
+    "prompt_response.jsonl": {
+      "bytes": 109350,
+      "sha256": "13df55a6e99fa9e88fb851bfe3022adf7e85881893847e83a03bcb6c17acfc86"
+    },
+    "episode_outcomes.jsonl": {
+      "bytes": 1824,
+      "sha256": "45dbc1a6e809117d286c9cee72dfa0716689847f4d920cecc0c7cf7049940e9d"
+    },
+    "console.log": {
+      "bytes": 1882248,
+      "sha256": "60588d8fb019710d08f8cc03e048fe130c58db0fa107d4c1ddef4e3df966fabc"
+    }
+  },
+  "scope": "completion and policy attribution; not learning improvement"
+}

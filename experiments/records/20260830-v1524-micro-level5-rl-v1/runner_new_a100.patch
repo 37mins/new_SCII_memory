@@ -1,0 +1,25 @@
+--- a/examples/gigpo_trainer/run_sc2_spb2_gigpo_0095_newmicro_skill_phase2_8gpu_100ep_20260724.sh
++++ b/examples/gigpo_trainer/run_sc2_spb2_gigpo_0095_newmicro_skill_phase2_8gpu_100ep_20260724.sh
+@@ -2,8 +2,8 @@
+ set -euo pipefail
+ set -x
+ 
+-source /etc/profile.d/sc2-conda.sh
+-conda activate /data1/envs/verl-agent
++: "${PYTHON_BIN:?PYTHON_BIN must name the frozen environment interpreter}"
++export PATH="$(dirname "${PYTHON_BIN}"):${PATH}"
+ SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+ REPO_DIR=${REPO_DIR:-$(cd "${SCRIPT_DIR}/../.." && pwd)}
+ cd "${REPO_DIR}"
+@@ -118,9 +118,9 @@
+ export RAY_USAGE_STATS_ENABLED=0
+ 
+ export SPB2_MODEL=${SPB2_MODEL:-/data1/yjy/model/Panyuqi/SpikingBrain2_0_instruct}
+-export SPB2_ROOT=/data1/wlx/SC2_scout_RL/SpikingBrain-2.0
++export SPB2_ROOT=${SPB2_ROOT:?SPB2_ROOT must name the frozen FLA/MoBA source root}
+ export PYTHONPATH=${REPO_DIR}:${SPB2_MODEL}:${SPB2_ROOT}/flash-linear-attention_dev:${SPB2_ROOT}/MoBA:${PYTHONPATH:-}
+-export SC2PATH=/data1/yjy/StarCraftII
++export SC2PATH=${SC2PATH:?SC2PATH must name the migrated StarCraftII runtime}
+ 
+ export SC2_SOCKET_TIMEOUT=900
+ export SC2_ACCEPT_TIMEOUT=60

@@ -1,0 +1,384 @@
+{
+  "run_id": "20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1",
+  "source_sha": "836460a8533b6f0429f9e9d401ac9715adc55f5b",
+  "started_at": "2026-09-07T13:44:07+00:00",
+  "ended_at": "2026-09-07T13:48:17+00:00",
+  "exit_code": 0,
+  "status": "reached_first_planner",
+  "planner_answers_sent": 0,
+  "boundary": {
+    "iteration": 3361,
+    "time_seconds": 600.1785714285714,
+    "time_formatted": "10:00",
+    "bo_index": 237,
+    "bo_length": 237,
+    "planner_ct": 1
+  },
+  "commands": [
+    {
+      "iteration": 2565,
+      "key": "llm_decision_final_action_123_2565",
+      "actions": [
+        {
+          "action": "BUILD_TECHLAB_FACTORY",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2571,
+      "key": "llm_decision_final_action_129_2571",
+      "actions": [
+        {
+          "action": "BUILD_TECHLAB_FACTORY",
+          "units": [
+            562
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2572,
+      "key": "llm_decision_final_action_130_2572",
+      "actions": [
+        {
+          "action": "BUILD_TECHLAB_FACTORY",
+          "units": [
+            554
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2673,
+      "key": "llm_decision_final_action_165_2673",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2674,
+      "key": "llm_decision_final_action_166_2674",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2675,
+      "key": "llm_decision_final_action_167_2675",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2709,
+      "key": "llm_decision_final_action_179_2709",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2882,
+      "key": "llm_decision_final_action_198_2882",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2955,
+      "key": "llm_decision_final_action_205_2955",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 3288,
+      "key": "llm_decision_final_action_230_3288",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 3311,
+      "key": "llm_decision_final_action_231_3311",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            235
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 3359,
+      "key": "llm_decision_final_action_235_3359",
+      "actions": [
+        {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            562
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "iteration": 2332,
+      "key": "bo_skipped_110",
+      "value": {
+        "reason": "timeout",
+        "action": "reactor barracks"
+      }
+    },
+    {
+      "iteration": 2556,
+      "key": "bo_skipped_114",
+      "value": {
+        "reason": "timeout",
+        "action": "reactor barracks"
+      }
+    }
+  ],
+  "first_observed_under_construction": [
+    {
+      "iteration": 2567,
+      "second": 458.39285714285717,
+      "display_id": 548,
+      "type": "FactoryTechLab",
+      "complete": false,
+      "observed_progress_percent": 1,
+      "raw": "[548]FactoryTechLab(building 1%)\nPosition: (26, 35)"
+    },
+    {
+      "iteration": 2572,
+      "second": 459.28571428571433,
+      "display_id": 267,
+      "type": "FactoryTechLab",
+      "complete": false,
+      "observed_progress_percent": 0,
+      "raw": "[267]FactoryTechLab(building 0%)\nPosition: (36, 49)"
+    },
+    {
+      "iteration": 2573,
+      "second": 459.4642857142857,
+      "display_id": 698,
+      "type": "FactoryTechLab",
+      "complete": false,
+      "observed_progress_percent": 0,
+      "raw": "[698]FactoryTechLab(building 0%)\nPosition: (20, 53)"
+    }
+  ],
+  "first_observed_completed": [
+    {
+      "iteration": 2673,
+      "second": 477.3214285714286,
+      "display_id": 548,
+      "type": "FactoryTechLab",
+      "complete": true,
+      "observed_progress_percent": 100,
+      "raw": "[548]FactoryTechLab\nPosition: (26, 35)\nHealth: 400/400 (100%)\nState: idle"
+    },
+    {
+      "iteration": 2673,
+      "second": 477.3214285714286,
+      "display_id": 267,
+      "type": "FactoryTechLab",
+      "complete": true,
+      "observed_progress_percent": 100,
+      "raw": "[267]FactoryTechLab\nPosition: (36, 49)\nHealth: 400/400 (100%)\nState: idle"
+    },
+    {
+      "iteration": 2673,
+      "second": 477.3214285714286,
+      "display_id": 698,
+      "type": "FactoryTechLab",
+      "complete": true,
+      "observed_progress_percent": 100,
+      "raw": "[698]FactoryTechLab\nPosition: (20, 53)\nHealth: 400/400 (100%)\nState: idle"
+    }
+  ],
+  "first_observed_tanks": [
+    {
+      "iteration": 2882,
+      "second": 514.6428571428572,
+      "display_id": 27,
+      "type": "SiegeTank",
+      "complete": true,
+      "observed_progress_percent": 100,
+      "raw": "[27]SiegeTank\nPosition: (37, 47)\nHealth: 175/175 (100%)\nState: moving to [(38, 52)]"
+    },
+    {
+      "iteration": 3073,
+      "second": 548.75,
+      "display_id": 579,
+      "type": "SiegeTank",
+      "complete": true,
+      "observed_progress_percent": 100,
+      "raw": "[579]SiegeTank\nPosition: (37, 49)\nHealth: 175/175 (100%)\nState: attacking [(30, 71)]"
+    },
+    {
+      "iteration": 3217,
+      "second": 574.4642857142858,
+      "display_id": 251,
+      "type": "SiegeTank",
+      "complete": true,
+      "observed_progress_percent": 100,
+      "raw": "[251]SiegeTank\nPosition: (28, 38)\nHealth: 175/175 (100%)\nState: moving to [(38, 52)]"
+    }
+  ],
+  "peak_simultaneous_observations": {
+    "labs_building": {
+      "iteration": 2573,
+      "second": 459.4642857142857,
+      "labs_building": [
+        548,
+        267,
+        698
+      ],
+      "labs_complete": [],
+      "tanks_on_map": []
+    },
+    "labs_complete": {
+      "iteration": 2673,
+      "second": 477.3214285714286,
+      "labs_building": [],
+      "labs_complete": [
+        548,
+        267,
+        698
+      ],
+      "tanks_on_map": []
+    },
+    "tanks_on_map": {
+      "iteration": 3217,
+      "second": 574.4642857142858,
+      "labs_building": [],
+      "labs_complete": [
+        548,
+        267,
+        698
+      ],
+      "tanks_on_map": [
+        251,
+        579
+      ]
+    }
+  },
+  "observation_production_gate": true,
+  "replay_available": false,
+  "limitation": "First-Planner diagnostic stop, not win/loss. Times are first recorded observations, not exact birth/done event times. Tank count is a simultaneous on-map lower bound, not cumulative births.",
+  "completion_evidence": "Frozen BasePlayer.unit_to_text emits a bare unit header only at build_progress == 1.0; otherwise it adds (building N%).",
+  "cleanup": [
+    {
+      "reason": "reset_or_close",
+      "environment_pid": 4115712,
+      "children": [
+        {
+          "pid": 4115713,
+          "created_at": 1788788648.87
+        }
+      ],
+      "alive_child_pids": [],
+      "environment_alive": false
+    }
+  ],
+  "artifact_hashes": {
+    ".done": "1ca4a13146b2891c0e462123ac0cb848f92e6221f18b870a1b78c232d1956c35",
+    "source_sha.txt": "39ced57eccf37aef79486181d7e3031bf98536fb599af4c53960b11dfe39e368",
+    "effective_config.json": "beaa672f58f719f07d1472ce72f4ea309f201b9c7121cf9c2b4dd9414e661a13",
+    "result.json": "6b3646f1e42de175e1ff00583afce263a3de99d0b65cf33eb299d4cdb3bb3d9a",
+    "started_at.txt": "10cdb107aedc3eeb2c1ffbfde9d288f54ad3c95e1b260d72577b6bd592e88c43",
+    "ended_at.txt": "635b1ca36dc4690bc387d9984b6537980f71ad7a1ea76d34876dc6c651b45eb3",
+    "driver.log": "34acd011f5a3ac5faf7062ec48f0506c6a97bed0b2bde4a6f25fa0c1b0902d60",
+    "boundary_trace.json": "21244846d9407211df54ff915f7173306d051e49229a7a26ea1a7100a9dca652",
+    "first_planner.json": "020cbcbd6cd0de83e31609049fd70ed51d6dbb8d85f526531c2192e3abb3a9ef",
+    "sc2-logs/cleanup.jsonl": "0ed14bc1ccd2cad90e828060bd4a2b4efb0e10593492ea79141331eb63937e31"
+  },
+  "config_comparison": {
+    "baseline": "20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat1-r1",
+    "candidate": "20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1",
+    "gameplay_config_equal": true,
+    "actual_differences": {
+      "SC2_BO_ADDRESS": [
+        "/root/new-scii-r4-python-rng-20260907/code-5b24db5/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+        "/root/new-scii-r4-python-rng-20260907/code-836460a/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json"
+      ],
+      "SC2_RNG_PREFIX_RUN_TAG": [
+        null,
+        "pending-addon-g2-l6"
+      ],
+      "SC2_RNG_PREFIX_REPEATS": [
+        null,
+        "1"
+      ],
+      "PYTHONPATH": [
+        "/root/new-scii-r4-python-rng-20260907/code-5b24db5:/root/new-scii-spb2-level5-control/python",
+        "/root/new-scii-r4-python-rng-20260907/code-836460a:/root/new-scii-spb2-level5-control/python"
+      ],
+      "SC2_RUNTIME_LOG_ROOT": [
+        "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat1-r1/sc2-logs",
+        "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1/sc2-logs"
+      ],
+      "SC2_EPISODE_OUTCOME_LOG": [
+        "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat1-r1/episode_outcomes.jsonl",
+        "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1/episode_outcomes.jsonl"
+      ]
+    },
+    "version": {
+      "python": "3.12.3",
+      "burnysc2": "7.1.3"
+    }
+  },
+  "source_backup": "e18fe515a173111edc8a1796c66b6c6d5c95344e",
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1",
+  "deployment": "/root/new-scii-r4-python-rng-20260907/code-836460a",
+  "runtime_fix_commit": "5871ab6063b23a1e9023d8c4e0243d41e9fbf338",
+  "node": "sc2-a100-44",
+  "gpu_count": 0,
+  "distinct_tanks_observed": 3,
+  "display_id_basis": "Frozen BasePlayer.tag_to_id retains the tag-to-ID mapping for the entire game; IDs are not reassigned.",
+  "remote_hash_verification": {
+    "verified_at": "2026-09-07T13:58:49+00:00",
+    "files": 10,
+    "all_match": true
+  }
+}

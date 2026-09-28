@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-09-06T02:37:11.183553+00:00",
+  "node": "sc2-a100-47",
+  "preflight": "/mnt/data0601/yangjinyue/new_SCII/deployments/spb-unitid-20260906/preflight-node47-r2",
+  "manifest": {
+    "schema_version": 1,
+    "status": "dry_run",
+    "started_at": "2026-09-06T02:35:52.401209+00:00",
+    "source_commit": "d3e707356cf177c71bab02ff1c7a90728f251759",
+    "dirty": false,
+    "formal": false,
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_source": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "bo_path": "/mnt/data0601/yangjinyue/new_SCII/deployments/spb-unitid-20260906/code-d3e7073/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "training",
+    "source_files_sha256": {
+      "configs/spikingbrain2-level5.env": "d9ed0fc8613b6f60345afa069b749bc11e71ba637ebe0729d7c1f1614171fc9c",
+      "configs/system-v1.env": "773047ba5eae417e3ab727b7371147fa506aa606a2322f548a582e911679644a",
+      "scripts/train_sc2.sh": "480216cd379f86c3f30bc9e4d80b16a82c474c0688535e8fdcfb8ebdfc070b79",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "54644b5d9176139e4a8c9650f3f5e99bd03651d53f3ad19bb6e01329808a9578",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+    },
+    "target_steps": 96,
+    "host": "hpc",
+    "python": "3.12.3",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "world_size": 8,
+    "container_image_id": null,
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": "0.4.0",
+      "moba": null
+    }
+  },
+  "raw_model_config": {
+    "swa_dropout": 0.5,
+    "attention_dropout": 0,
+    "use_cache": true,
+    "architectures": [
+      "SSESWAMoBAForCausalLM"
+    ]
+  },
+  "effective_swa_dropout": 0,
+  "normalized_difference_from_qwen_l6_four": {
+    "actor_rollout_ref.model.path": [
+      "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+      "<RUN>/model"
+    ],
+    "trainer.total_epochs": [
+      "4",
+      "96"
+    ],
+    "+actor_rollout_ref.model.override_config.swa_dropout": [
+      null,
+      "0.0"
+    ],
+    "+ray_init.runtime_env.env_vars.SC2_DIFFICULTY": [
+      "'Harder'",
+      "'Hard'"
+    ],
+    "trainer.save_freq": [
+      "1",
+      "8"
+    ],
+    "+ray_init.runtime_env.env_vars.SC2_EXPECTED_DIFFICULTY": [
+      "'Harder'",
+      "'Hard'"
+    ]
+  },
+  "cpu_tests": 69,
+  "asset_hashes_passed": true,
+  "python_archive_sha256": "9bf6f92c7ff129c33d0e3c509b7202af4c5148a6fb4d4a35dc5be12307acf6b6",
+  "headers_archive_sha256": "6fbdb8347ffac295052f2fea96fcd143f219fd34a22b37a946cdef80dbc718c3",
+  "kernel_sources": {
+    "flash-linear-attention_dev": {
+      "path": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/repro/stageguard_v7_legacy_contract_20260806/source/extracted/flash-linear-attention_dev",
+      "python_files": 437,
+      "tree_sha256": "319032457c3bf145647c6869c42640ed5e1bc1b7eaf967d2fef50f87e4605fed"
+    },
+    "MoBA": {
+      "path": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/repro/stageguard_v7_legacy_contract_20260806/source/extracted/MoBA",
+      "python_files": 8,
+      "tree_sha256": "a2641fed732fc1801c4c49baf8bba8aef9e6f92d6e0ae5357b43c44569428e82"
+    }
+  },
+  "training_code_unchanged_from": "f083ec58eeeb271c8abafaf98f917762898ce152"
+}

@@ -1,0 +1,15 @@
+{
+  "assistant_think_blocks_empty": true,
+  "assistant_think_close_count": 1,
+  "assistant_think_open_count": 1,
+  "default_render_sha256": "7333810dcf94e8fef4916fd8625cc9c6edfa7b1dd005020528d91cae4774f2d6",
+  "disabled_render_sha256": "f0251ad53d7f39cc9883cf02fdc7d62a9c15230732a45072645e6dea066b116a",
+  "disabled_token_count": 15,
+  "effect_observed": true,
+  "enable_thinking": false,
+  "model_path": "/data/yangjinyue/new-scii-qwen-level5-canonical/model",
+  "require_effect": true,
+  "schema_version": 1,
+  "status": "passed",
+  "tokenizer_class": "Qwen2TokenizerFast"
+}

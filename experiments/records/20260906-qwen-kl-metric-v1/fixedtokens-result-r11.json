@@ -1,0 +1,51 @@
+{
+  "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-paths-opt0-r11",
+  "status": "completed",
+  "exit_code": 0,
+  "node": "sc2-a100-44",
+  "gpus": [0, 1, 2, 3],
+  "source_commit": "33a2e8186f01a9e7d075e1f44e2a403cfbdd6037",
+  "started_at": "2026-09-06T11:24:46.580292+00:00",
+  "ended_at": "2026-09-06T11:25:39.890549+00:00",
+  "run_root": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "project_sft": false,
+  "optimizer_updates": 0,
+  "sc2_started": false,
+  "cache_enabled_in_generate": true,
+  "sample_selection": "Two saved r7 samples per rank, including selected historical outliers; not random population evaluation",
+  "responses": 8,
+  "active_tokens": 135,
+  "comparisons": {
+    "actor_vs_saved_old": {"abs_mean": 0.0, "abs_max": 0.0},
+    "bf16_temperature_ce_vs_fp32_normalization": {"abs_mean": 0.004511106277946487, "abs_max": 0.291806697845459},
+    "fsdp_full_vs_hf_full_same_fp32_normalization": {"abs_mean": 0.06571127516717963, "abs_max": 3.0192973613739014},
+    "hf_cached_vs_hf_full": {"abs_mean": 0.0076416924265371505, "abs_max": 0.8087818622589111},
+    "hf_cached_vs_historical_generate": {"abs_mean": 0.012977043508995381, "abs_max": 1.073228359222412},
+    "hf_cached_vs_actor": {"abs_mean": 0.05529620352025593, "abs_max": 2.9983041286468506}
+  },
+  "observed_embedding_dtypes": {
+    "actor_fsdp": {"weight": "bfloat16", "activation": "bfloat16"},
+    "hf_summoned_full_params": {"weight": "float32", "activation": "float32"}
+  },
+  "example": {
+    "rank": 0, "sample": 49, "response": "- marine x 2<|im_end|>", "token": "<|im_end|>",
+    "actor_logprob": -3.059112548828125,
+    "fsdp_fp32_normalization_logprob": -3.176783561706543,
+    "hf_full_logprob": -0.15748624503612518,
+    "hf_cached_logprob": -0.06080838292837143,
+    "historical_generate_logprob": -0.017803387716412544
+  },
+  "conclusion": "Zero-update generation/recompute discrepancies localize substantially to the different FSDP/HF precision paths on selected outliers. Actor saved old probabilities reproduce exactly. Not evidence that the full later optimizer drift is explained or fixed.",
+  "limitations": ["Only 8 deliberately selected responses", "Cached replay does not exactly reproduce all historical generation logits", "No win-rate or learning claim", "No production settings changed"],
+  "artifact_sha256": {
+    "manifest.json": "b12cd03cf9ac87f84dd18639f8a10b05b522a789ccc62e3c1e603d48a39209ba",
+    "result.json": "678a5ef7c6d9f2c1c3501c36522e1df3d3ef1256ac11a591863268c8fa2e1aa4",
+    "console.log": "fa142103b72880e6d058e86589f531379d3809f4897e668c4a679d0ebfbcfef1",
+    "rank-00.jsonl": "ffabd4aad02ccc07b43e3d8f3c96f2bf4a9982f28b0505807b579d64ec058224",
+    "rank-01.jsonl": "bf3cf45b8cae8da33cc8a6628203d32fc0916cec4c9dbc6a34a97cfdf5bc6204",
+    "rank-02.jsonl": "1f922c6bb4fc0323a462aa44e014debe779cbfcbcb2ba4891df9b510ff26c5e1",
+    "rank-03.jsonl": "cade15296fef3b16e899657d44a2e9ef66486e059b8cb401dbaf1766f6b6f9ee"
+  }
+}

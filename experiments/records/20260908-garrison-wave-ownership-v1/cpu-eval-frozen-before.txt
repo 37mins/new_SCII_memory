@@ -1,0 +1,40 @@
+test_no_decision_victory_and_defeat_finish_without_policy_tensors (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": -50.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+
+======================================================================
+ERROR: test_no_decision_victory_and_defeat_finish_without_policy_tensors (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) (reward=20)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/sc2-air-options-20260908/tests/test_sc2_evaluation_without_policy.py", line 103, in test_no_decision_victory_and_defeat_finish_without_policy_tensors
+    output = self.collect([[transition(reward,False,True)]], [reward], [won])
+  File "/private/tmp/sc2-air-options-20260908/tests/test_sc2_evaluation_without_policy.py", line 78, in collect
+    result = self.loop(collector, Batch(), None, None, is_train=is_train)
+  File "/private/tmp/sc2-empty-eval-frozen.Ec8841/agent_system/multi_turn_rollout/rollout_loop.py", line 670, in multi_turn_loop
+    gen_batch_output: DataProto = self.gather_rollout_data(
+  File "/private/tmp/sc2-air-options-20260908/tests/test_sc2_evaluation_without_policy.py", line 77, in <lambda>
+    collector.gather_rollout_data = lambda **kw: self.gather(collector, **kw)
+  File "/private/tmp/sc2-empty-eval-frozen.Ec8841/agent_system/multi_turn_rollout/rollout_loop.py", line 372, in gather_rollout_data
+    raise RuntimeError('No consumed policy actions in this batch; refusing a PPO update')
+RuntimeError: No consumed policy actions in this batch; refusing a PPO update
+
+======================================================================
+ERROR: test_no_decision_victory_and_defeat_finish_without_policy_tensors (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) (reward=-50)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/sc2-air-options-20260908/tests/test_sc2_evaluation_without_policy.py", line 103, in test_no_decision_victory_and_defeat_finish_without_policy_tensors
+    output = self.collect([[transition(reward,False,True)]], [reward], [won])
+  File "/private/tmp/sc2-air-options-20260908/tests/test_sc2_evaluation_without_policy.py", line 78, in collect
+    result = self.loop(collector, Batch(), None, None, is_train=is_train)
+  File "/private/tmp/sc2-empty-eval-frozen.Ec8841/agent_system/multi_turn_rollout/rollout_loop.py", line 670, in multi_turn_loop
+    gen_batch_output: DataProto = self.gather_rollout_data(
+  File "/private/tmp/sc2-air-options-20260908/tests/test_sc2_evaluation_without_policy.py", line 77, in <lambda>
+    collector.gather_rollout_data = lambda **kw: self.gather(collector, **kw)
+  File "/private/tmp/sc2-empty-eval-frozen.Ec8841/agent_system/multi_turn_rollout/rollout_loop.py", line 372, in gather_rollout_data
+    raise RuntimeError('No consumed policy actions in this batch; refusing a PPO update')
+RuntimeError: No consumed policy actions in this batch; refusing a PPO update
+
+----------------------------------------------------------------------
+Ran 1 test in 0.010s
+
+FAILED (errors=2)
+EXPECTED FROZEN FAILURES: victory and defeat both reach the existing empty-policy exception

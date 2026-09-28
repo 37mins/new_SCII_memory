@@ -1,0 +1,12 @@
+This project includes code from the verl project.
+
+Copyright 2023-2024 Bytedance Ltd. and/or its affiliates
+
+Additional modifications and contributions:
+
+Copyright 2025 Nanyang Technological University (NTU), Singapore and the verl-agent (GiGPO) team.
+
+The optional SpikingBrain runtime uses BICLab/SpikingBrain2.0
+(Apache-2.0), with its FLA and MoBA subprojects (MIT).
+The model preparation patch is derived from this project's validated
+SpB r7 runtime. Dependency provenance is recorded in docs/provenance.md.

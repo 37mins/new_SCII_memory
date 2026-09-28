@@ -1,0 +1,2573 @@
+{
+  "source_sha": "30b5949100dd963e5b0f4a18289b2827026d0946",
+  "mode": "offline-counterfactual-no-game-no-model",
+  "reports": [
+    {
+      "input_dir": "/private/tmp/sc2-valid-bo-inputs.KEPI42/qwen",
+      "hashes": {
+        "prompt_response.jsonl": "083fd4a3ed8ea44c0066cae5797f6f8d5964f90def999f552d1a4f1e2f924e26",
+        "console.log": "5c4590c1a949557fa0d30f1243db961c6a096abab72c4fb05f8c898a8ee7afcf",
+        "result.json": "0f5a15778412228aaa378ae2d90ba2b7883bc7804c04d4eb1471470655acc89e",
+        "effective_config.json": "8bb1fd5efc2528ea5143eb9b684bac8f043e7bc96d458c0755354b6ed1148874"
+      },
+      "summary": {
+        "answers": 54,
+        "valid": 49,
+        "invalid": 5,
+        "baseline_reproduced": 54,
+        "unchanged_queries": 54,
+        "valid_build_sequences_preserved": 49,
+        "changed_valid": 49,
+        "invalid_unchanged": 5,
+        "old_valid_build_counts": {
+          "supplydepot": 7,
+          "marine": 144,
+          "marauder": 15,
+          "mule": 21,
+          "siegetank": 27
+        },
+        "candidate_valid_build_counts": {
+          "marine": 52,
+          "supplydepot": 5,
+          "mule": 22,
+          "siegetank": 31,
+          "marauder": 24
+        }
+      },
+      "records": [
+        {
+          "step_index": 0,
+          "time": "10:11",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b7dfd3a02652d430310a0396ec1f2160663dc049fa14b835b3d7bb1fafe463a0",
+          "raw_answer": "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine",
+          "old_plan": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "supplydepot",
+            "mule",
+            "siegetank",
+            "marauder",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 14096,
+          "changed": true
+        },
+        {
+          "step_index": 1,
+          "time": "10:24",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "06de0065d3d88ebf04f694a92b7a8493c62d462a5268b570399378cbeb37db1e",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "siegetank",
+            "marauder"
+          ],
+          "console_line": 14417,
+          "changed": true
+        },
+        {
+          "step_index": 2,
+          "time": "10:37",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "93bb310fed904a046a32adece3909c05190dbfb8e475acc086b48319f3a864d3",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "siegetank",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 14750,
+          "changed": true
+        },
+        {
+          "step_index": 3,
+          "time": "10:46",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "dc9a20ec40ffd2a14c74d5dae115f308b4612c6cf1b453d36e38ca18a891838b",
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 14984,
+          "changed": true
+        },
+        {
+          "step_index": 4,
+          "time": "10:51",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "a818f809efcc60eb7267e70c68a7ebbc4c157ff6d958c38c9ade9af2d432c6fd",
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 15138,
+          "changed": true
+        },
+        {
+          "step_index": 5,
+          "time": "11:00",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b36fd71c52064d22ec4c7be3a9ea4ee1fbdb8aee8f3bb5af13c16ac4a7e80db1",
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 15390,
+          "changed": true
+        },
+        {
+          "step_index": 6,
+          "time": "11:13",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "0bac7b4ddc9eb54fd04d740e280120bb020acd2f292a7b5a97af2378fc4f3ec5",
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 15727,
+          "changed": true
+        },
+        {
+          "step_index": 7,
+          "time": "11:41",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b1989ee717281a7fc8492d61eae6bf21e9c703519d92c762b8aa6320926755de",
+          "raw_answer": "- marine  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "siegetank"
+          ],
+          "console_line": 16314,
+          "changed": true
+        },
+        {
+          "step_index": 8,
+          "time": "12:14",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "be856fddf1b624f8b8cf9df275ce422104e1d0dfa186f3ac0af4ca326bccd9c5",
+          "raw_answer": "- marine  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "siegetank"
+          ],
+          "console_line": 16857,
+          "changed": true
+        },
+        {
+          "step_index": 9,
+          "time": "12:26",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "df0473d97a2bb3cb5542d472f645d022e0e9fded4c8a336c4e02d237f0b55aef",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 17139,
+          "changed": true
+        },
+        {
+          "step_index": 10,
+          "time": "12:27",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: marine x 20",
+          "prompt_sha256": "ff71ed7680aa486d8ec0ef42b80cde94aeea0673cfea2a48fcc38b795c11a7d6",
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine x 20",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 17209,
+          "changed": false
+        },
+        {
+          "step_index": 11,
+          "time": "12:28",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b1c556bb5b300c0d4835d4cc7455de3b8c178b92de9fa007c4e69eee6e3a0f64",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 17288,
+          "changed": true
+        },
+        {
+          "step_index": 12,
+          "time": "12:32",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: marine x 14",
+          "prompt_sha256": "96ba0702c76188ad2dabd422554b138dcbfa814f17979fd08617da895510bef8",
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine x 14",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 17428,
+          "changed": false
+        },
+        {
+          "step_index": 13,
+          "time": "12:45",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "a740bf85ccb4e70d27589b7a3e861181e2ebbf950eaf7f7cc929cd887d380226",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 17774,
+          "changed": true
+        },
+        {
+          "step_index": 14,
+          "time": "12:45",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "088c2c7d67df9c926ced6da3854cfb4d915eee50227abdefea6c2d136c73665b",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 17848,
+          "changed": true
+        },
+        {
+          "step_index": 15,
+          "time": "12:46",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "5a4837455d0105ec3ed23b48c4791fb1f860cdc84fefab4314bac4930fd21913",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 17936,
+          "changed": true
+        },
+        {
+          "step_index": 16,
+          "time": "12:50",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: marine x 2",
+          "prompt_sha256": "fae071699545e5b2a76e61c748aef69484a6e27de5a07581b2af9aeb05f2349f",
+          "raw_answer": "- marine x 2",
+          "old_plan": [
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine"
+          ],
+          "console_line": 18074,
+          "changed": false
+        },
+        {
+          "step_index": 17,
+          "time": "13:02",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "589b5b0bd91a38241f6942c78a037d01a6cdccb9fab6c3713dee9c0975a1b06e",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "siegetank",
+            "marauder"
+          ],
+          "console_line": 18298,
+          "changed": true
+        },
+        {
+          "step_index": 18,
+          "time": "13:07",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "6d4e538972082b679b9714354c2fea2eb675f869e4eee6cbcc234abdbc2a3a2c",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "siegetank",
+            "marauder"
+          ],
+          "console_line": 18491,
+          "changed": true
+        },
+        {
+          "step_index": 19,
+          "time": "13:08",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "bedb92cd8d290c583c87b28f7b8114fae15ad80a34961682b72ebd623e8aa11a",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "siegetank",
+            "marauder"
+          ],
+          "console_line": 18616,
+          "changed": true
+        },
+        {
+          "step_index": 20,
+          "time": "13:25",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "2a16cd647f47ccad2d68ffa354a27e467c3ef22bfb1970661db358990545f28a",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder"
+          ],
+          "console_line": 18991,
+          "changed": true
+        },
+        {
+          "step_index": 21,
+          "time": "13:42",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "f54fb2a1e2814483fe5943ebc697d121275fc571986435d3d73cc64610bf6956",
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 19337,
+          "changed": true
+        },
+        {
+          "step_index": 22,
+          "time": "14:10",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "a092602678d1aaf0e36e10544d918fecdc410b9b0e1699fc906d16478a677ec9",
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 19964,
+          "changed": true
+        },
+        {
+          "step_index": 23,
+          "time": "14:43",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "e088c3cb7ca85a044a7c804e55a440eff05e156fe599272fb91ca20f211047cf",
+          "raw_answer": "- marine  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "siegetank"
+          ],
+          "console_line": 20617,
+          "changed": true
+        },
+        {
+          "step_index": 24,
+          "time": "14:59",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "0c266090b2f171de465693d8a29ffc9dbda5d8d841e3a077583e5e6103a5fef5",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 20917,
+          "changed": true
+        },
+        {
+          "step_index": 25,
+          "time": "15:00",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "dcf7e7ad67f4a9f77e292e86a9f5e088375a9a8ca287ff432d2767c92034590d",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 21005,
+          "changed": true
+        },
+        {
+          "step_index": 26,
+          "time": "15:00",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "5a14ad05320061480d93c4f04b9eb7181a2be679c97ec59f1a9caa46cd92aeef",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 21071,
+          "changed": true
+        },
+        {
+          "step_index": 27,
+          "time": "15:01",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "8dee8ae41dff03fd64fcdf4b973d1d12c1d2107574400bdb001584ae0d1ca851",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 21137,
+          "changed": true
+        },
+        {
+          "step_index": 28,
+          "time": "15:21",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b9d116d1bea9f7b0a61a87f9ec609b5f5a66fe36a316751c7c1e6915db53f799",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 21491,
+          "changed": true
+        },
+        {
+          "step_index": 29,
+          "time": "15:22",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "8a625b4bb8330793629194adf1760cafa0910f54624f3cccf0f35b7d695c8e72",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 21557,
+          "changed": true
+        },
+        {
+          "step_index": 30,
+          "time": "15:22",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "521b30b1825d79d1b525a4e42e50b6555d3dc88e75ba185bb5ebc85b461e1afd",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 21623,
+          "changed": true
+        },
+        {
+          "step_index": 31,
+          "time": "15:23",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "6ff0d0ded2e722b6657e4550814d8cda4670a9d13599e23f0de2828b7405512e",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 21711,
+          "changed": true
+        },
+        {
+          "step_index": 32,
+          "time": "15:43",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "efe879f14c0fb1665724f75a8a1aa38e3c3d0075e715520bad2fdb64622658e3",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 22095,
+          "changed": true
+        },
+        {
+          "step_index": 33,
+          "time": "15:43",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: marine x 2",
+          "prompt_sha256": "ab21de0f7222447602d029fb223ef0dcd014b1d6a79017f81f29e0584573e7c9",
+          "raw_answer": "- marine x 2",
+          "old_plan": [
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine"
+          ],
+          "console_line": 22162,
+          "changed": false
+        },
+        {
+          "step_index": 34,
+          "time": "15:44",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "a1299cfde14c12ce1d45cb3828640d791033e00688761797a281c0406fde910e",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "siegetank",
+            "marauder"
+          ],
+          "console_line": 22216,
+          "changed": true
+        },
+        {
+          "step_index": 35,
+          "time": "15:45",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "88ec4c157ada9d2c9a12745bdfc8f524099e8ba4a1cf778664b2aed66b275e23",
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 22355,
+          "changed": true
+        },
+        {
+          "step_index": 36,
+          "time": "16:02",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "e136dcd65218378a142767a5ac83588641bb03e72c3995ce57757ba617bca481",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "siegetank",
+            "marauder"
+          ],
+          "console_line": 22818,
+          "changed": true
+        },
+        {
+          "step_index": 37,
+          "time": "16:03",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b6079a585ae78f4e34af4b76cef6f5afad64b793fb8cbab14d705b60fc985a03",
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine  \n- marine",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marine",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 22978,
+          "changed": true
+        },
+        {
+          "step_index": 38,
+          "time": "16:04",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "c36b0763d5ea5e068a537a5c82aa65d4cb224fd98185a024a1f5990beaef9c88",
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 23126,
+          "changed": true
+        },
+        {
+          "step_index": 39,
+          "time": "16:21",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "6a3bba3dff1b5ed26d7d6de0bf545e49a4fcb5d332a01296607ba35c766c8f22",
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine\n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "siegetank",
+            "Attacking Instruction: Launch OFFENSE with 8 marine"
+          ],
+          "console_line": 23696,
+          "changed": true
+        },
+        {
+          "step_index": 40,
+          "time": "16:41",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "06b974227906c42fdd51533c2a317de9a08eb95f58fc9fb0ccdd99cad1c3d7e6",
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 24443,
+          "changed": true
+        },
+        {
+          "step_index": 41,
+          "time": "17:14",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "2f2071c0c75950e327c558e66436c2667cdcbf5286dfeaf439d72cb1e13cd188",
+          "raw_answer": "- marine  \n- siegetank",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "siegetank"
+          ],
+          "console_line": 25276,
+          "changed": true
+        },
+        {
+          "step_index": 42,
+          "time": "17:30",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "0e9e11b405521e4a2d5717556c8c5f0effed724163d41d13e39b5f42441b0213",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 25635,
+          "changed": true
+        },
+        {
+          "step_index": 43,
+          "time": "17:31",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "076a28e7eb7fe56a70fc7d034bfc8d4cbcd086337ff8ad94104d93850296d138",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 25703,
+          "changed": true
+        },
+        {
+          "step_index": 44,
+          "time": "17:31",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "e883e83da48f4a4ca8d4acd9c3b6c668a008f246eecc9a77f60239470d984d15",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 25791,
+          "changed": true
+        },
+        {
+          "step_index": 45,
+          "time": "17:32",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "77484e4ddbf643adffbf01f750c4054dc1dac7565ba3a48e3248a48546e1dc83",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 25869,
+          "changed": true
+        },
+        {
+          "step_index": 46,
+          "time": "17:52",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "5f922f2bea3c34bfbd0f3facfeb5ee2c562f036f272dfbf7a83f0c7d1a2a00a1",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 26240,
+          "changed": true
+        },
+        {
+          "step_index": 47,
+          "time": "17:53",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "92df1a0295a56f530fd00fe369658312140c4cb0076c5889d5cc030d8d7a1aa5",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 26306,
+          "changed": true
+        },
+        {
+          "step_index": 48,
+          "time": "17:53",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "cc3063ea38e492021c803c63c7d8ddeb15e1fbf1d68fe2536598fd328662b475",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 26394,
+          "changed": true
+        },
+        {
+          "step_index": 49,
+          "time": "18:13",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "daa9d493ed87ffe4bc7cecfb11de6af738eec0a37a8d627a4771cc5fa79e1cd9",
+          "raw_answer": "- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine"
+          ],
+          "console_line": 26741,
+          "changed": true
+        },
+        {
+          "step_index": 50,
+          "time": "18:14",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: marine x 2",
+          "prompt_sha256": "651af5d6af31b8bbbcdbce40354977b03a2b7f66dc814fe4c948b72e27f453d3",
+          "raw_answer": "- marine x 2",
+          "old_plan": [
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine"
+          ],
+          "console_line": 26810,
+          "changed": false
+        },
+        {
+          "step_index": 51,
+          "time": "18:14",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "9f2a65e4704ec56305dfbd5d0cd44420d62057afd3cab4510106d197953150d5",
+          "raw_answer": "- marine  \n- supplydepot  \n- mule  \n- marauder  \n- supplydepot  \n- marauder",
+          "old_plan": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "supplydepot",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "supplydepot",
+            "mule",
+            "marauder",
+            "supplydepot",
+            "marauder"
+          ],
+          "console_line": 26886,
+          "changed": true
+        },
+        {
+          "step_index": 52,
+          "time": "18:15",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b83f1d7c867a2f664439417364b100b13d6f9bf35a8178a6a1566b4527a4191e",
+          "raw_answer": "- marine  \n- supplydepot  \n- mule  \n- marauder  \n- marine  \n- marauder",
+          "old_plan": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "supplydepot",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "supplydepot",
+            "mule",
+            "marauder",
+            "marine",
+            "marauder"
+          ],
+          "console_line": 27017,
+          "changed": true
+        },
+        {
+          "step_index": 53,
+          "time": "18:36",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "aaaa67a2d7477a3bce650c85034ee82ccad257dae3899b6e72d790354d8e520e",
+          "raw_answer": "- marine  \n- supplydepot  \n- mule  \n- marauder  \n- marine  \n- marauder",
+          "old_plan": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "supplydepot",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "supplydepot",
+            "mule",
+            "marauder",
+            "marine",
+            "marauder"
+          ],
+          "console_line": 27470,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "input_dir": "/private/tmp/sc2-valid-bo-inputs.KEPI42/spb",
+      "hashes": {
+        "prompt_response.jsonl": "219523e994df1e8198d0198cba217d78575b21ac4fa40fc5f4ab9bf39c143a45",
+        "console.log": "2a78af6525954fe68bc91848a0ba86b6b3c871ce63f3d6870cdf3c437d8f6eab",
+        "result.json": "1fc76ea60d35224351f853dcc6de104d07c027851da99cc116b407db283186a8",
+        "effective_config.json": "97f9b1fe69181c4ddfb405800aa9ec2a7d4c1bf18dc241216bfd8dee8dbb1717"
+      },
+      "summary": {
+        "answers": 56,
+        "valid": 43,
+        "invalid": 13,
+        "baseline_reproduced": 56,
+        "unchanged_queries": 56,
+        "valid_build_sequences_preserved": 43,
+        "changed_valid": 43,
+        "invalid_unchanged": 13,
+        "old_valid_build_counts": {
+          "marine": 129,
+          "marauder": 10,
+          "mule": 18,
+          "siegetank": 29
+        },
+        "candidate_valid_build_counts": {
+          "marine": 219,
+          "mule": 11,
+          "siegetank": 10,
+          "marauder": 18
+        }
+      },
+      "records": [
+        {
+          "step_index": 0,
+          "time": "10:11",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: siege tank",
+          "prompt_sha256": "b7dfd3a02652d430310a0396ec1f2160663dc049fa14b835b3d7bb1fafe463a0",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot\n- mule\n- marauder\n- siege tank\n- marauder\n- marauder",
+          "old_plan": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "mule",
+            "marauder"
+          ],
+          "candidate_plan": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "mule",
+            "marauder"
+          ],
+          "console_line": 14139,
+          "changed": false
+        },
+        {
+          "step_index": 1,
+          "time": "10:24",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "579c14ac86e32f111557a1efe0417ee695fa7eadd4e4cd8c802263d79d60153d",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marine",
+            "marine"
+          ],
+          "console_line": 14459,
+          "changed": true
+        },
+        {
+          "step_index": 2,
+          "time": "10:37",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "daa90acf96c62916bfecbcef6172c804555e8d09863aacebf230e0a86781994f",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marine",
+            "marine"
+          ],
+          "console_line": 14792,
+          "changed": true
+        },
+        {
+          "step_index": 3,
+          "time": "10:50",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "3c7673414cc0f98ecf5fe29683720960130f70bff877541457eed4c94726d498",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 15081,
+          "changed": true
+        },
+        {
+          "step_index": 4,
+          "time": "11:11",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "5deb4e329e6b78da3c9a107ecef593c7e9dd5fd9728fe4ee0d007d29dae9dcb1",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 15492,
+          "changed": true
+        },
+        {
+          "step_index": 5,
+          "time": "11:43",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "ad503873370b5f39d49f3de89153b7f6a1f33890bda4d61e4d3536df814bf0f4",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 16106,
+          "changed": true
+        },
+        {
+          "step_index": 6,
+          "time": "12:12",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "8453d3e2613ea7ae260eeebc8c5224340b88bfc76845f9441efcd4092047c515",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 16692,
+          "changed": true
+        },
+        {
+          "step_index": 7,
+          "time": "12:28",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "30767eb6843785b6ccea3a691ce29b8fa8fac8b078e9310d70c5d685ba4f1978",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 17015,
+          "changed": true
+        },
+        {
+          "step_index": 8,
+          "time": "12:29",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "f8321048c560be190be1a66b393948cdbd3579721f67e2ac1a354dc3adc025e7",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 17085,
+          "changed": true
+        },
+        {
+          "step_index": 9,
+          "time": "12:29",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "dbbdf01caa0bed81edf20ba1ef81775a5d51f8f41f32e3f4adf5ba723d8febc1",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 17155,
+          "changed": true
+        },
+        {
+          "step_index": 10,
+          "time": "12:30",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b7e733f7b329e4bd75ac8e072679f18a6ec350cba81fdb135aaca7ba3140313d",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 17250,
+          "changed": true
+        },
+        {
+          "step_index": 11,
+          "time": "12:50",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "cba75c7e198c825aac0a0be93049600041c46e29a92fc5d2481168e04e4c2798",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 17674,
+          "changed": true
+        },
+        {
+          "step_index": 12,
+          "time": "12:51",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "412dc57eb2e01ee249fb0e587e86156264253c5b5199ce5879bd19cbf47838bc",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 17747,
+          "changed": true
+        },
+        {
+          "step_index": 13,
+          "time": "12:51",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "2dcdf6ade9ea191cb7e7b0c7f652badfb9dea9c62df81e8f018f2054a37d70bd",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 17842,
+          "changed": true
+        },
+        {
+          "step_index": 14,
+          "time": "12:52",
+          "valid": false,
+          "reason": "selected bullet count exceeds response line limit",
+          "prompt_sha256": "a647664e133b5b095e0df71772feb401e155aa7dda2a24915851154b52aeb304",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 17939,
+          "changed": false
+        },
+        {
+          "step_index": 15,
+          "time": "13:12",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "7a7ce7ef2089189a15a3c4db75cabc22755386c73c816861b4e2c041f5ec3377",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 18298,
+          "changed": true
+        },
+        {
+          "step_index": 16,
+          "time": "13:12",
+          "valid": false,
+          "reason": "action count exceeds current BO remainder: marine",
+          "prompt_sha256": "96668612f447510633eed2a20a2313ab4cd9906a553f4f32249fd6c6c8c491fd",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 18401,
+          "changed": false
+        },
+        {
+          "step_index": 17,
+          "time": "13:13",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "f64cf7244a659be324999f1677824b1a87baa956d0f5cd04d3723fb483a1756d",
+          "raw_answer": "- marine\n- mule\n- siegetank\n- marauder\n- marauder\n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marauder",
+            "marauder"
+          ],
+          "console_line": 18480,
+          "changed": true
+        },
+        {
+          "step_index": 18,
+          "time": "13:14",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "8c8411a60c89a930f9f389fa598cbc0ab6837ee3c3c6453f32861aa252fb8221",
+          "raw_answer": "- marine\n- mule\n- siegetank\n- marauder\n- marauder\n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marauder",
+            "marauder"
+          ],
+          "console_line": 18610,
+          "changed": true
+        },
+        {
+          "step_index": 19,
+          "time": "13:31",
+          "valid": false,
+          "reason": "action count exceeds current BO remainder: marauder",
+          "prompt_sha256": "a4d7673d348e45c1242e39c2e30e7db4b05f016450a1f1705107aa7b03ebafb9",
+          "raw_answer": "- marine\n- mule\n- siegetank\n- marauder\n- marauder\n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 19190,
+          "changed": false
+        },
+        {
+          "step_index": 20,
+          "time": "13:32",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "42355b0e93e8c72a67b7e7dafdd7c4cc8a765e8db2991c12d626d02ffba98d0b",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marine",
+            "marine"
+          ],
+          "console_line": 19337,
+          "changed": true
+        },
+        {
+          "step_index": 21,
+          "time": "13:41",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "e67dd272f74524d1ee6758079bbaf1635223d716d081eb4745aa5c6c958e9cea",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 19615,
+          "changed": true
+        },
+        {
+          "step_index": 22,
+          "time": "14:13",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "c5bc4023f1f2df7bbc63e4c5b88831ce105b9e32ab4c5d88932b341d82cf05fb",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 20579,
+          "changed": true
+        },
+        {
+          "step_index": 23,
+          "time": "14:42",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "10366c1c14364c86cf031d3c07dfb2cd654bfc2b026259ef0918b49e0ca356c8",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 21308,
+          "changed": true
+        },
+        {
+          "step_index": 24,
+          "time": "14:58",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "692ac42ddf66101085a78c0f81a59f65b5f60810f8a089cb206d17a66ecc12bd",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 21698,
+          "changed": true
+        },
+        {
+          "step_index": 25,
+          "time": "14:59",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "25778692e31afdb4a7b2a631dcb81a4386d4990f7325d118988d070f5462a545",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 21770,
+          "changed": true
+        },
+        {
+          "step_index": 26,
+          "time": "14:59",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "60637609a0f336fa5c405f05c4763727481712d196c1b181cd1b9145598ca745",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 21840,
+          "changed": true
+        },
+        {
+          "step_index": 27,
+          "time": "15:00",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "a33964301c6f24c48c7216f3c465fec0d5935a5abf3ba87ff586abe4fbbf7b8c",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 21937,
+          "changed": true
+        },
+        {
+          "step_index": 28,
+          "time": "15:20",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "588f3bcf24d5096585ee7c6e4e8435c8bfb2da57b04f468796201322c82be180",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 22402,
+          "changed": true
+        },
+        {
+          "step_index": 29,
+          "time": "15:21",
+          "valid": false,
+          "reason": "selected bullet count exceeds response line limit",
+          "prompt_sha256": "6791e84e3137fdc5e0c54e81b1a6c65a329d8cee967c040ddaa17e73085325fe",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 22501,
+          "changed": false
+        },
+        {
+          "step_index": 30,
+          "time": "15:21",
+          "valid": false,
+          "reason": "selected bullet count exceeds response line limit",
+          "prompt_sha256": "a98350aef29e6cccc34bf72e4c75fdb1769446c12c50c9aedf986c75c55c76ba",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 22619,
+          "changed": false
+        },
+        {
+          "step_index": 31,
+          "time": "15:22",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "ba0192447feaf22babdf81f758aac7ff01c2fb78e73599018d975c5183b37a04",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 22689,
+          "changed": true
+        },
+        {
+          "step_index": 32,
+          "time": "15:42",
+          "valid": false,
+          "reason": "action count exceeds current BO remainder: marine",
+          "prompt_sha256": "ab69e1ef4115b016d1e6bd3b05eabd44c44eee4082aea99f510906a82cfb9006",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 23096,
+          "changed": false
+        },
+        {
+          "step_index": 33,
+          "time": "15:42",
+          "valid": false,
+          "reason": "action count exceeds current BO remainder: marine",
+          "prompt_sha256": "1f9ee5ebe9f32125db9e2fe99c0e6aeb8cb1af239a4662dfa10489398c53189a",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine"
+          ],
+          "console_line": 23188,
+          "changed": false
+        },
+        {
+          "step_index": 34,
+          "time": "15:43",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "0f9099c4be3bf37efff9cdc43b00fb7e06617b06792cacc57e0e27da124df277",
+          "raw_answer": "- marine\n- mule\n- siegetank\n- marauder\n- marauder\n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marauder",
+            "marauder"
+          ],
+          "console_line": 23241,
+          "changed": true
+        },
+        {
+          "step_index": 35,
+          "time": "15:44",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "274194f4d4b1932a668907be8fbbe04866d0ff94f3b1feda2ff6c7ec13df9cd2",
+          "raw_answer": "- marine\n- mule\n- siegetank\n- marauder\n- marine\n- mule",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marine",
+            "mule"
+          ],
+          "console_line": 23357,
+          "changed": true
+        },
+        {
+          "step_index": 36,
+          "time": "16:01",
+          "valid": false,
+          "reason": "action count exceeds current BO remainder: marauder",
+          "prompt_sha256": "38d18dcbc2c6fe25f66de20cd2fab48661539511b9fe824938b9451456c6b72b",
+          "raw_answer": "- marine\n- mule\n- siegetank\n- marauder\n- marauder\n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 23773,
+          "changed": false
+        },
+        {
+          "step_index": 37,
+          "time": "16:02",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "129526ea19d6e6bf67cc0298702680ff0e968a454e74511772d5962a975d9aab",
+          "raw_answer": "- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marine",
+            "marine"
+          ],
+          "console_line": 23901,
+          "changed": true
+        },
+        {
+          "step_index": 38,
+          "time": "16:03",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "57d8e37dfd8e874644b429869dc9a73c28acdce49f835b09fb2d382dd771aa9c",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 24045,
+          "changed": true
+        },
+        {
+          "step_index": 39,
+          "time": "16:27",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "36b0ba90b92e43a1bcfab8f5ba043f02f9edf5885a17d26c529066c0b6e11603",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 24591,
+          "changed": true
+        },
+        {
+          "step_index": 40,
+          "time": "17:00",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "0ba8895d0bdd302ce566914d88e5b4fd0a636affec01f656f488ccf3ede145e6",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 25285,
+          "changed": true
+        },
+        {
+          "step_index": 41,
+          "time": "17:28",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "ca3a215cbbb4492709e341e8da760c5f7a016564b50eae40cf7b0a5ed74d185c",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 25912,
+          "changed": true
+        },
+        {
+          "step_index": 42,
+          "time": "17:29",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "3b2cd26a7cbafd6492ce44ca7fd6f5aa9209c63df217d73d73209f7f7d8afe90",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 25984,
+          "changed": true
+        },
+        {
+          "step_index": 43,
+          "time": "17:29",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "60615ebc4032dcab1ad1fc5d7fce503d4d6c0f61d149fc0c782e2e763209e1ce",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 26056,
+          "changed": true
+        },
+        {
+          "step_index": 44,
+          "time": "17:30",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "076563522b5ee26dc2530ee0d581c2d39cc271c85aac7b96a55401b014cd61fb",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 26152,
+          "changed": true
+        },
+        {
+          "step_index": 45,
+          "time": "17:50",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "ae55a3aab59a75539b1f8b9b0246ba7dda3d594fc678adb13a6f7a3171888549",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 26556,
+          "changed": true
+        },
+        {
+          "step_index": 46,
+          "time": "17:50",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "b06f5234e9d35ebd4dc27400af2f5448b8712c6000ff500737f61a8df2349ec7",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 26626,
+          "changed": true
+        },
+        {
+          "step_index": 47,
+          "time": "17:51",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "f213777232dc5c64ec3680df9452dfe869d46f21720f2317f51fe8eed6d17bc2",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 26723,
+          "changed": true
+        },
+        {
+          "step_index": 48,
+          "time": "17:51",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "35db70023786eb76c00e28d1f35a55cc2b6be5f42d2904b389b2f028636aca51",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 26793,
+          "changed": true
+        },
+        {
+          "step_index": 49,
+          "time": "18:12",
+          "valid": false,
+          "reason": "action count exceeds current BO remainder: marine",
+          "prompt_sha256": "35925e7593192466cd7de368f316d58a6e5368539fa662a297e5d4e19e86787a",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 27286,
+          "changed": false
+        },
+        {
+          "step_index": 50,
+          "time": "18:12",
+          "valid": false,
+          "reason": "action count exceeds current BO remainder: marine",
+          "prompt_sha256": "845bcbb253f21c9b6844aa4b75b938782e4b71155353b6bc004dbddede1c479b",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine"
+          ],
+          "console_line": 27357,
+          "changed": false
+        },
+        {
+          "step_index": 51,
+          "time": "18:13",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "4864ce54b22fe7900a4d8c1b646ae6cd2efe8b89148ca3d7971476ccd0b6b22f",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marauder\n- marauder",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marauder",
+            "marauder"
+          ],
+          "console_line": 27435,
+          "changed": true
+        },
+        {
+          "step_index": 52,
+          "time": "18:14",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: siege tank",
+          "prompt_sha256": "19c597037d3ca47ca51a30cee2323a2360ceb2c3b1d25daa258a7cc5f90deabb",
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- siege tank",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "console_line": 27558,
+          "changed": false
+        },
+        {
+          "step_index": 53,
+          "time": "18:58",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "991663ec9250554bc3ab904a42ef955e0fcfaea4be4252c86a20bba31174419b",
+          "raw_answer": "- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "mule",
+            "siegetank",
+            "marauder",
+            "marine",
+            "marine"
+          ],
+          "console_line": 28564,
+          "changed": true
+        },
+        {
+          "step_index": 54,
+          "time": "19:46",
+          "valid": false,
+          "reason": "action count exceeds current BO remainder: marauder",
+          "prompt_sha256": "d3be6fc25cba5b0b23631747a823ca8679e70239387afd2dc7bd41004e1e82b8",
+          "raw_answer": "- marine\n- marauder\n- siegetank\n- marauder\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank"
+          ],
+          "console_line": 29344,
+          "changed": false
+        },
+        {
+          "step_index": 55,
+          "time": "20:42",
+          "valid": true,
+          "reason": "",
+          "prompt_sha256": "1562aaca2b12101eb1d49033ab73c4b9851d7ee5245326362e4850c414784d33",
+          "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+          "old_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank",
+            "mule"
+          ],
+          "candidate_plan": [
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "console_line": 30519,
+          "changed": true
+        }
+      ]
+    }
+  ],
+  "run_id": "20260908-valid-bo-passthrough-v1-cpu-qwen-spb-110-r2",
+  "status": "completed",
+  "exit_code": 0,
+  "config": {
+    "SC2_PLANNER_PROTOCOL": "legacy",
+    "SC2_PLAN_SEGMENT_MAX": 6,
+    "SC2_PLAN_BULLET_MAX": 6,
+    "SC2_MAX_FORCED_ATTACKS": 0,
+    "SC2_ATTACK_OPTION_ACCOUNT_ISSUED": 1,
+    "SC2_ATTACK_ORDER_POSITION": "after_build",
+    "SC2_STEP_SHAPING_MODE": "off",
+    "A": {
+      "SC2_PRESERVE_VALID_BO": 0
+    },
+    "B": {
+      "SC2_PRESERVE_VALID_BO": 1
+    },
+    "model_loaded": false,
+    "new_games": 0,
+    "ppo_updates": 0
+  }
+}

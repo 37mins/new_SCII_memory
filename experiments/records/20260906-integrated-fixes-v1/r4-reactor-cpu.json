@@ -1,0 +1,120 @@
+{
+  "checked_at_utc": "2026-09-07T14:25:32Z",
+  "scope": "CPU regression only; no GPU/model/game or server filesystem writes. Tests read source supplied in tar/stdin into memory.",
+  "backup_sha": "bbcccfea07f4ed8427c9ed96237c7c308150867d",
+  "source_and_test_hashes": {
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "edbf08227eb325e01c6362f8c933d52bd2f1d520d93f7c4dc19c421b85ace5c1",
+    "tests/test_barracks_production_slots.py": "d033cde3209bc1fa4cbcd714395f884a321955c71ec1cc568110eaf3b64c0be1",
+    "tests/test_empty_bo_frame.py": "2e7a2d06bda9d7dcbc329b850b0aa26b80459b64ba9fa6fc09162bbabfaca4b4",
+    "experiments/records/20260906-integrated-fixes-v1/r4-reactor-conflict.json": "cd329f954ce2d63628343a6208b65a39b4f10abb2d9f8b8fe15b3d7824ad2b1c",
+    "experiments/records/20260906-integrated-fixes-v1/audit_r4_reactor_conflict.py": "1d5e23be8425d330ad79a1c02e5c77d33e19826e953b2419b13af4647dbcf2bc"
+  },
+  "node44": {
+    "python": "3.12.3",
+    "burnysc2": "7.1.3",
+    "exit_code": 0,
+    "wall_timeout_seconds": 20,
+    "baseline_runtime_sha": "836460a8533b6f0429f9e9d401ac9715adc55f5b",
+    "baseline_player_sha256": "8dd13723f38687ea3e35a282b9a3f2f190a257190974501e59f6cbc51f0d1c11",
+    "reference_bot_ai_sha256": "4bad34ee8b365100551cec905844231b5d6f8f5f99e8efcac477f61cc1243503",
+    "reference_wheel_sha256": "2f68d689c9c5be8b1d2dac9ef3d5dc83326205b5aa94234bb4de6a803060c35c",
+    "candidate": {
+      "tests": 8,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "test_seconds": 0.429
+    },
+    "frozen_baseline": {
+      "tests": 8,
+      "errors": 0,
+      "failed_methods": 5,
+      "failed_assertions_including_subtests": 8,
+      "skipped": 0,
+      "test_seconds": 0.436
+    },
+    "same_snapshot_selections": [
+      {
+        "frame": 2095,
+        "old": 849,
+        "new": 170
+      },
+      {
+        "frame": 2109,
+        "old": 170,
+        "new": 17
+      },
+      {
+        "frame": 2333,
+        "old": 849,
+        "new": 387
+      },
+      {
+        "frame": 2334,
+        "old": 849,
+        "new": 387
+      }
+    ],
+    "command": "COPYFILE_DISABLE=1 tar -cf - tests/test_empty_bo_frame.py tests/test_barracks_production_slots.py agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py experiments/records/20260906-integrated-fixes-v1/r4-reactor-conflict.json | ssh -o ConnectTimeout=10 sc2-a100-44 'CUDA_VISIBLE_DEVICES='\\'''\\'' PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/root/new-scii-spb2-level5-control/python timeout 20s /usr/bin/python3 -B -c '\\''import contextlib, hashlib, importlib.metadata, io, json, sys, tarfile, types, unittest\nfrom pathlib import Path\nfrom unittest.mock import patch\nroot = Path(\"/root/new-scii-r4-python-rng-20260907/code-836460a\")\nsys.path[:0] = [str(root), str(root/\"tests\")]\nwith tarfile.open(fileobj=sys.stdin.buffer, mode=\"r|\") as archive:\n    files = {m.name: archive.extractfile(m).read().decode() for m in archive if m.isfile()}\nplayer = \"agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py\"\noriginal = (root/player).read_text()\nassert hashlib.sha256(original.encode()).hexdigest() == \"8dd13723f38687ea3e35a282b9a3f2f190a257190974501e59f6cbc51f0d1c11\"\nread_text = Path.read_text\ndef read(path, *args, **kwargs):\n    try: key = str(path.relative_to(root))\n    except ValueError: return read_text(path, *args, **kwargs)\n    return files[key] if key in files else read_text(path, *args, **kwargs)\nresults = {}\nwith patch.object(Path, \"read_text\", read):\n    for name in (\"test_empty_bo_frame\", \"test_barracks_production_slots\"):\n        mod = types.ModuleType(name)\n        mod.__file__ = str(root/\"tests\"/(name+\".py\"))\n        sys.modules[name] = mod\n        exec(compile(files[\"tests/\"+name+\".py\"], mod.__file__, \"exec\"), mod.__dict__)\n    for label in (\"candidate\", \"frozen_baseline\"):\n        if label == \"frozen_baseline\": files[player] = original\n        suite = unittest.defaultTestLoader.loadTestsFromTestCase(sys.modules[\"test_barracks_production_slots\"].BarracksSlotsTest)\n        output = io.StringIO()\n        result = unittest.TextTestRunner(stream=output, verbosity=2).run(suite)\n        results[label] = dict(tests=result.testsRun, errors=len(result.errors), failures=len(result.failures), skipped=len(result.skipped), log=output.getvalue())\nassert results[\"candidate\"][\"errors\"] == results[\"candidate\"][\"failures\"] == 0\nassert results[\"frozen_baseline\"][\"errors\"] == 0 and results[\"frozen_baseline\"][\"failures\"] > 0\nprint(json.dumps(dict(node=\"sc2-a100-44\", runtime_python=sys.version, burnysc2=importlib.metadata.version(\"burnysc2\"), baseline_sha=\"836460a8533b6f0429f9e9d401ac9715adc55f5b\", baseline_player_sha256=hashlib.sha256(original.encode()).hexdigest(), reference_bot_ai_sha256=hashlib.sha256(Path(\"/root/new-scii-spb2-level5-control/python/sc2/bot_ai.py\").read_bytes()).hexdigest(), results=results), indent=2))\n'\\'''"
+  },
+  "local_initial_fixture_failure": "No live worker in synthetic fixture caused real on_step to return before running. Test fixture corrected; no production change for that failure.",
+  "limitations": "The game engine, submission and future observations are stubbed. CPU regression verifies selection/BO control flow, not Reactor construction or win rate. No failure counts are independent bug counts.",
+  "local": {
+    "python": "3.9",
+    "burnysc2": "7.3.0",
+    "exit_code": 0,
+    "results": {
+      "test_barracks_production_slots.py": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "log": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.216s\n\nOK\n"
+      },
+      "test_pending_addon_placement.py": {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "log": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.020s\n\nOK\n"
+      },
+      "test_empty_bo_frame.py": {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "log": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.085s\n\nOK\n"
+      },
+      "test_system_release.py": {
+        "tests": 26,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "log": "..........................\n----------------------------------------------------------------------\nRan 26 tests in 1.543s\n\nOK\n"
+      },
+      "test_r4_replay_loss_record.py": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "log": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.003s\n\nOK\n"
+      },
+      "test_sc2_child_seed.py": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "log": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.018s\n\nOK\n"
+      },
+      "test_sc2_prefix_boundary.py": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "log": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK\n"
+      }
+    },
+    "total_tests": 60,
+    "command": "/private/tmp/sc2-planner-executor-venv/bin/python -B -m unittest discover -s tests -p <pattern> -v; seven patterns listed in results, executed through unittest loader"
+  }
+}

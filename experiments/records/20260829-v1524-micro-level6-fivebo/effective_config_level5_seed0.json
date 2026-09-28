@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260829-v1524-micro-level6-fivebo",
+  "run_id": "20260830-v1524-micro-level5-fivebo-qwen-base-s0-r2",
+  "status": "completed",
+  "supersedes_run_id": "20260830-v1524-micro-level5-fivebo-qwen-base-r1",
+  "model": "Qwen/Qwen3-4B",
+  "project_sft": false,
+  "prior_project_rl": false,
+  "map": "Flat128",
+  "difficulty": "Hard",
+  "difficulty_level": 5,
+  "ai_build": "Air",
+  "bo_keys": ["g1", "g2", "g3", "g4", "g5"],
+  "common_environment_seed": 0,
+  "rollouts_per_bo": 1,
+  "training_updates": 0,
+  "micro": "v1524",
+  "script_player_sha256": "76354ff908b47f8c400e2cf279a3af5f49e98a3da6afb53018143b579f28c6da",
+  "host": "sc2-a100-44",
+  "gpu_ids": [0, 1, 2, 3, 4],
+  "completed_at": "2026-08-30T12:18:43+08:00",
+  "exit_status": 0,
+  "results": {
+    "victories": 4,
+    "defeats": 1,
+    "ties": 0,
+    "win_rate": 0.8,
+    "per_bo": {
+      "g1": {"result": "Defeat", "validation_score": -49.599, "replay_sha256": "9c841af04231e455eaed38c67a6a939372875c0d3083ff8fb4d9b54eb610102a"},
+      "g2": {"result": "Victory", "validation_score": 20.0, "replay_sha256": "77fed67ac7f0ae613af1de7562d363b8b3e6d8d0a3cb540305871add041d2642"},
+      "g3": {"result": "Victory", "validation_score": 23.486, "replay_sha256": "c45cc301e0733b697467546116365975b6817a8f065e08d2e217ec768e916606"},
+      "g4": {"result": "Victory", "validation_score": 20.0, "replay_sha256": "ccec8e90881090904619d8685d6b3871623b22ef8684fb082a9a9d6fedc3ed0d"},
+      "g5": {"result": "Victory", "validation_score": 20.0, "replay_sha256": "e221bb719e2c4dec72e7cbba46aa04c4511d57b6fb52a15e716e7a01a9b37364"}
+    }
+  }
+}

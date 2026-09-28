@@ -1,0 +1,18 @@
+{
+  "run_id": "20260905-r6-terminal-policy-credit-v1-qwen-instruct2507-l5-legacy-4gpu-rl1-s0-r1",
+  "source_commit": "89424474e739fca9bed76cdf5f092df8e99c35d8",
+  "status": "failed",
+  "ended_at": "2026-09-05T13:11:31.694742+00:00",
+  "process_exit_code": 1,
+  "logged_steps": 0,
+  "checkpoint_complete": true,
+  "sha256": {
+    "result.json": "88edd2b7722a594bae4020e48f376adf82de184b1e4683aa4bc26c58676f65c2",
+    "metrics.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "prompt_response.jsonl": "adf45df6e35155a7c23e9fd74c4c66401ba6c797a9d50b96bf75621faed56348",
+    "episode_outcomes.jsonl": "0acbd98c64e534e9c7cbc21497b98198363404349afaf10223ab1b592a515bc1",
+    "manifest.json": "94ece4663dcaf2372e0347bca834c5b4f29f45089a3e573709a90379ee91ed3f",
+    "effective_config.json": "7af3723d2d0764ab2d3a4f66806380c81990760c22a808fb1fca69f53e435d7d",
+    "console.log": "09d20db8cce5118c5764dd2f64da11360c9f6b4222bc53549cf18f8fbca0a6a1"
+  }
+}

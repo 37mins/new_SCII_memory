@@ -1,0 +1,1037 @@
+{
+  "at_utc": "2026-09-07T08:38:48.262354+00:00",
+  "reports": {
+    "initial-eval": {
+      "source": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-initial-eval",
+      "done": {
+        "status": "completed",
+        "ended_at": "2026-09-07T01:49:05.714720+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": -46.165,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0
+        },
+        "metrics_finite": true,
+        "response_record_count": 464,
+        "evaluable_action_count": 306,
+        "valid_evaluable_action_count": 286,
+        "replays": {
+          "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_01-24-17/replay.SC2Replay": "8d3b3ce532a4ba2f704ed670de75de06647cc5ad31eb8bcebeb053094e6bc869"
+        },
+        "console_sha256": "a44cbb25937c22764b3d589db2477bad64329c1488bf450555f471b1807b033e",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 0,
+          "defeats": 8,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0,
+          "outcomes": [
+            {
+              "reset_index": 0,
+              "env_index": 1,
+              "decision_count": 1,
+              "step_index": 0,
+              "policy_decision_count": 0,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 0,
+              "decision_count": 8,
+              "step_index": 7,
+              "policy_decision_count": 8,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 2,
+              "decision_count": 18,
+              "step_index": 17,
+              "policy_decision_count": 18,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 4,
+              "decision_count": 55,
+              "step_index": 54,
+              "policy_decision_count": 55,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 6,
+              "decision_count": 55,
+              "step_index": 54,
+              "policy_decision_count": 55,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 5,
+              "decision_count": 56,
+              "step_index": 55,
+              "policy_decision_count": 56,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 7,
+              "decision_count": 56,
+              "step_index": 55,
+              "policy_decision_count": 56,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 3,
+              "decision_count": 58,
+              "step_index": 57,
+              "policy_decision_count": 58,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            }
+          ]
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "episodes": [
+        {
+          "env_index": 0,
+          "game_seed": 2807211443,
+          "result": "Defeat",
+          "cumulative_reward": -49,
+          "consumed_planner_decisions": 8,
+          "evaluable": 8,
+          "valid": 8,
+          "top_answers": [
+            [
+              "- marine  \n- mule  \n- siegetank",
+              3
+            ],
+            [
+              "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine",
+              1
+            ],
+            [
+              "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- marauder",
+              1
+            ]
+          ],
+          "answer_character_lengths": [
+            93,
+            73,
+            71,
+            44,
+            31,
+            31,
+            31,
+            8
+          ]
+        },
+        {
+          "env_index": 1,
+          "game_seed": 882774615,
+          "result": "Defeat",
+          "cumulative_reward": -50,
+          "consumed_planner_decisions": 0,
+          "evaluable": 0,
+          "valid": 0,
+          "top_answers": [],
+          "answer_character_lengths": []
+        },
+        {
+          "env_index": 2,
+          "game_seed": 494016583,
+          "result": "Defeat",
+          "cumulative_reward": -48,
+          "consumed_planner_decisions": 18,
+          "evaluable": 18,
+          "valid": 17,
+          "top_answers": [
+            [
+              "- marine",
+              9
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank",
+              3
+            ],
+            [
+              "- marine  \n- siegetank  \n- marauder  \n- supplydepot  \n- mule  \n- Launch OFFENSE with 8 marine",
+              1
+            ]
+          ],
+          "answer_character_lengths": [
+            93,
+            91,
+            90,
+            71,
+            31,
+            31,
+            31,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            75
+          ]
+        },
+        {
+          "env_index": 3,
+          "game_seed": 2621640384,
+          "result": "Defeat",
+          "cumulative_reward": -45.961,
+          "consumed_planner_decisions": 58,
+          "evaluable": 58,
+          "valid": 55,
+          "top_answers": [
+            [
+              "- marine",
+              25
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+              8
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank",
+              7
+            ]
+          ],
+          "answer_character_lengths": [
+            93,
+            69,
+            91,
+            71,
+            31,
+            58,
+            31,
+            22,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            71,
+            71,
+            69,
+            44,
+            31,
+            31,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            12,
+            71,
+            71,
+            91,
+            69,
+            58,
+            31,
+            22,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            12,
+            71,
+            71,
+            71,
+            44,
+            31,
+            31,
+            21
+          ]
+        },
+        {
+          "env_index": 4,
+          "game_seed": 4081499387,
+          "result": "Defeat",
+          "cumulative_reward": -46.5,
+          "consumed_planner_decisions": 55,
+          "evaluable": 55,
+          "valid": 50,
+          "top_answers": [
+            [
+              "- marine",
+              22
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+              9
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank",
+              5
+            ]
+          ],
+          "answer_character_lengths": [
+            93,
+            71,
+            91,
+            71,
+            31,
+            31,
+            58,
+            22,
+            8,
+            8,
+            19,
+            19,
+            44,
+            8,
+            8,
+            8,
+            12,
+            71,
+            71,
+            69,
+            44,
+            31,
+            58,
+            22,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            87,
+            71,
+            71,
+            71,
+            69,
+            31,
+            31,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            12,
+            44,
+            71,
+            71,
+            78
+          ]
+        },
+        {
+          "env_index": 5,
+          "game_seed": 44124510,
+          "result": "Defeat",
+          "cumulative_reward": -44.174,
+          "consumed_planner_decisions": 56,
+          "evaluable": 56,
+          "valid": 50,
+          "top_answers": [
+            [
+              "- marine",
+              22
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+              10
+            ],
+            [
+              "- marine  \n- siegetank",
+              5
+            ]
+          ],
+          "answer_character_lengths": [
+            93,
+            91,
+            71,
+            44,
+            31,
+            31,
+            58,
+            22,
+            44,
+            44,
+            8,
+            8,
+            8,
+            44,
+            8,
+            8,
+            12,
+            71,
+            69,
+            71,
+            91,
+            58,
+            58,
+            22,
+            22,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            71,
+            71,
+            71,
+            71,
+            31,
+            31,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            12,
+            71,
+            71,
+            71,
+            69,
+            74
+          ]
+        },
+        {
+          "env_index": 6,
+          "game_seed": 2071061852,
+          "result": "Defeat",
+          "cumulative_reward": -47,
+          "consumed_planner_decisions": 55,
+          "evaluable": 55,
+          "valid": 53,
+          "top_answers": [
+            [
+              "- marine",
+              27
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+              6
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank",
+              6
+            ]
+          ],
+          "answer_character_lengths": [
+            62,
+            69,
+            69,
+            71,
+            31,
+            58,
+            31,
+            22,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            12,
+            71,
+            69,
+            71,
+            69,
+            31,
+            31,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            71,
+            71,
+            71,
+            69,
+            31,
+            31,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            74,
+            73,
+            76,
+            76
+          ]
+        },
+        {
+          "env_index": 7,
+          "game_seed": 1549697793,
+          "result": "Defeat",
+          "cumulative_reward": -46.224,
+          "consumed_planner_decisions": 56,
+          "evaluable": 56,
+          "valid": 53,
+          "top_answers": [
+            [
+              "- marine",
+              25
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+              8
+            ],
+            [
+              "- marine  \n- mule  \n- siegetank",
+              7
+            ]
+          ],
+          "answer_character_lengths": [
+            93,
+            69,
+            91,
+            69,
+            31,
+            58,
+            31,
+            22,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            12,
+            71,
+            71,
+            69,
+            69,
+            31,
+            31,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            12,
+            71,
+            71,
+            71,
+            69,
+            31,
+            31,
+            22,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            12,
+            71,
+            71,
+            71,
+            44,
+            31
+          ]
+        }
+      ],
+      "mean_reward_all8": -47.107375,
+      "data_hashes": {
+        ".done": "9664c5ed4dc0fb39bafc4e1ec0c7cf14ef38080e5d314783c084d9cedf3b1080",
+        "episode_outcomes.jsonl": "b7a20d790ca0a5197fe417aab4837d23ae1c4bdfe98f838f371b7a8ded5deafd",
+        "prompt_response.jsonl": "61111674c3a6bab9d2978b12f3156646dde30c8e0af837c3ae5e1f39af3daa71",
+        "evaluation_seeds.jsonl": "fe29009e02d3c378175699b96f6e9cffcc36d43e55c99550fcd4a4fc9e83b487",
+        "effective_config.json": "c29679c46dc885dfe7cae40ac36e335bb0479f5ac118e91127649fadd4daf39c"
+      }
+    },
+    "step8-eval": {
+      "source": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-step8-eval",
+      "done": {
+        "status": "completed",
+        "ended_at": "2026-09-07T08:30:21.261246+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": -49.498,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0
+        },
+        "metrics_finite": true,
+        "response_record_count": 328,
+        "evaluable_action_count": 96,
+        "valid_evaluable_action_count": 96,
+        "replays": {
+          "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_08-10-29/replay.SC2Replay": "7e339156cf165206deea7f1d2ec524d84b77c59a2d64df620eb1835a88ac9de7"
+        },
+        "console_sha256": "fcc414188347b78c86a290a7909a8c50c671d2e4f4f35533ef3ad3e3f09dcf12",
+        "episode_outcomes": {
+          "trajectories": 8,
+          "natural_games": 8,
+          "wins": 0,
+          "defeats": 8,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0,
+          "outcomes": [
+            {
+              "reset_index": 0,
+              "env_index": 1,
+              "decision_count": 1,
+              "step_index": 0,
+              "policy_decision_count": 0,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 2,
+              "decision_count": 1,
+              "step_index": 0,
+              "policy_decision_count": 0,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 3,
+              "decision_count": 3,
+              "step_index": 2,
+              "policy_decision_count": 3,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 0,
+              "decision_count": 4,
+              "step_index": 3,
+              "policy_decision_count": 4,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 6,
+              "decision_count": 4,
+              "step_index": 3,
+              "policy_decision_count": 4,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 4,
+              "decision_count": 14,
+              "step_index": 13,
+              "policy_decision_count": 14,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 7,
+              "decision_count": 30,
+              "step_index": 29,
+              "policy_decision_count": 30,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 5,
+              "decision_count": 41,
+              "step_index": 40,
+              "policy_decision_count": 41,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            }
+          ]
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "episodes": [
+        {
+          "env_index": 0,
+          "game_seed": 2807211443,
+          "result": "Defeat",
+          "cumulative_reward": -49.5,
+          "consumed_planner_decisions": 4,
+          "evaluable": 4,
+          "valid": 4,
+          "top_answers": [
+            [
+              "- marine\n- mule\n- siegetank\n- marauder",
+              3
+            ],
+            [
+              "- marine\n- supplydepot\n- mule\n- siegetank\n- marauder",
+              1
+            ]
+          ],
+          "answer_character_lengths": [
+            52,
+            38,
+            38,
+            38
+          ]
+        },
+        {
+          "env_index": 1,
+          "game_seed": 882774615,
+          "result": "Defeat",
+          "cumulative_reward": -50,
+          "consumed_planner_decisions": 0,
+          "evaluable": 0,
+          "valid": 0,
+          "top_answers": [],
+          "answer_character_lengths": []
+        },
+        {
+          "env_index": 2,
+          "game_seed": 494016583,
+          "result": "Defeat",
+          "cumulative_reward": -50,
+          "consumed_planner_decisions": 0,
+          "evaluable": 0,
+          "valid": 0,
+          "top_answers": [],
+          "answer_character_lengths": []
+        },
+        {
+          "env_index": 3,
+          "game_seed": 2621640384,
+          "result": "Defeat",
+          "cumulative_reward": -49.45,
+          "consumed_planner_decisions": 3,
+          "evaluable": 3,
+          "valid": 3,
+          "top_answers": [
+            [
+              "- marine\n- supplydepot\n- mule\n- siegetank\n- marauder",
+              2
+            ],
+            [
+              "- marine\n- supplydepot\n- mule\n- marauder\n- barracks\n- techlab barracks",
+              1
+            ]
+          ],
+          "answer_character_lengths": [
+            52,
+            52,
+            70
+          ]
+        },
+        {
+          "env_index": 4,
+          "game_seed": 4081499387,
+          "result": "Defeat",
+          "cumulative_reward": -49.5,
+          "consumed_planner_decisions": 14,
+          "evaluable": 14,
+          "valid": 14,
+          "top_answers": [
+            [
+              "- marine",
+              7
+            ],
+            [
+              "- marine\n- mule\n- siegetank\n- marauder",
+              3
+            ],
+            [
+              "- marine\n- mule\n- siegetank",
+              2
+            ]
+          ],
+          "answer_character_lengths": [
+            52,
+            38,
+            38,
+            38,
+            27,
+            27,
+            20,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "env_index": 5,
+          "game_seed": 44124510,
+          "result": "Defeat",
+          "cumulative_reward": -49.5,
+          "consumed_planner_decisions": 41,
+          "evaluable": 41,
+          "valid": 41,
+          "top_answers": [
+            [
+              "- marine",
+              20
+            ],
+            [
+              "- marine\n- mule\n- siegetank\n- marauder",
+              9
+            ],
+            [
+              "- marine\n- mule\n- siegetank",
+              7
+            ]
+          ],
+          "answer_character_lengths": [
+            52,
+            38,
+            38,
+            38,
+            27,
+            27,
+            20,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            38,
+            38,
+            38,
+            38,
+            27,
+            27,
+            20,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            52,
+            52,
+            38,
+            38,
+            27,
+            27,
+            27
+          ]
+        },
+        {
+          "env_index": 6,
+          "game_seed": 2071061852,
+          "result": "Defeat",
+          "cumulative_reward": -49.5,
+          "consumed_planner_decisions": 4,
+          "evaluable": 4,
+          "valid": 4,
+          "top_answers": [
+            [
+              "- marine\n- mule\n- siegetank\n- marauder",
+              3
+            ],
+            [
+              "- marine\n- supplydepot\n- mule\n- siegetank\n- marauder",
+              1
+            ]
+          ],
+          "answer_character_lengths": [
+            52,
+            38,
+            38,
+            38
+          ]
+        },
+        {
+          "env_index": 7,
+          "game_seed": 1549697793,
+          "result": "Defeat",
+          "cumulative_reward": -49.5,
+          "consumed_planner_decisions": 30,
+          "evaluable": 30,
+          "valid": 30,
+          "top_answers": [
+            [
+              "- marine",
+              16
+            ],
+            [
+              "- marine\n- mule\n- siegetank\n- marauder",
+              7
+            ],
+            [
+              "- marine\n- mule\n- siegetank",
+              5
+            ]
+          ],
+          "answer_character_lengths": [
+            52,
+            38,
+            38,
+            38,
+            27,
+            27,
+            27,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            38,
+            38,
+            38,
+            38,
+            27,
+            27,
+            20,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "mean_reward_all8": -49.61875,
+      "data_hashes": {
+        ".done": "44b3dfdfe0d42e54040d64c7eaa66666354c2b31e094eea9b110b194f8012f30",
+        "episode_outcomes.jsonl": "81f1fa2f5fecc4ecff1b2613721089eda98ba150d14e0de146c211fde0a41df5",
+        "prompt_response.jsonl": "225ee0593efd73cbbfc5792fb76ca8d28bdaa2aa8ba76f92cdb6c99b31cc05db",
+        "evaluation_seeds.jsonl": "fe29009e02d3c378175699b96f6e9cffcc36d43e55c99550fcd4a4fc9e83b487",
+        "effective_config.json": "cc2183099c169400bb8df757c7f6abcd0dfe1a5fe55a3fc6df0047ed540ba15e"
+      }
+    }
+  }
+}

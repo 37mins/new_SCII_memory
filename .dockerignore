@@ -1,0 +1,10 @@
+.git
+assets
+runs
+logs
+outputs
+checkpoints
+replays
+__pycache__
+*.pyc
+.DS_Store

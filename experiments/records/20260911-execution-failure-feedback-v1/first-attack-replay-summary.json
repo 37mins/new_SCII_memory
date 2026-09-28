@@ -1,0 +1,1260 @@
+{
+  "source_sha": "e3c0695adf0a2e36c97afba838ec3b508f000e34",
+  "snapshot": "/private/tmp/sc2-first-attack-audit.kur2Zs",
+  "full_audit": "/private/tmp/sc2-first-attack-audit.kur2Zs/analysis.json",
+  "full_audit_sha256": "c82b1bc7542c4128475790173667793f433b05445f280e9bd0c58986b096493b",
+  "all_eight_prefixes_equal": true,
+  "cpu_only": true,
+  "games": [
+    {
+      "threshold": 20,
+      "env": 0,
+      "seconds": 641.0714285714287,
+      "hashes": {
+        "sc2-logs/game-4004383/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/default_player_Qwen3-30B_20260912.log": "47e1f23546c942dff638d6565dd469df3845b7a7d8ff4ba6fd82bcb3fa2d8377",
+        "sc2-logs/game-4004383/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/replay.SC2Replay": "8b8f08d3fa067684dcec15f39d9855f3239117f7057cb94fab116d122ced8592",
+        "sc2-logs/game-4004383/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/trace.json": "8c4fdeb4c73b77cf944bf926912a5458a3c51622af6737e9943e3e2829fff969"
+      },
+      "peak_marine": {
+        "loop": 6072,
+        "second": 271.0714285714286,
+        "count": 25
+      },
+      "total_marine_born": 66,
+      "marine_deaths": 65,
+      "own_noncosmetic_upgrades": [],
+      "new_depots": [
+        {
+          "start": 470.4017857142857,
+          "complete": 491.83035714285717
+        },
+        {
+          "start": 471.9196428571429,
+          "complete": 493.34821428571433
+        },
+        {
+          "start": 472.8571428571429,
+          "complete": 494.28571428571433
+        },
+        {
+          "start": 485.49107142857144,
+          "complete": 506.9196428571429
+        },
+        {
+          "start": 496.47321428571433,
+          "complete": 517.9017857142858
+        },
+        {
+          "start": 512.0535714285714,
+          "complete": 533.4821428571429
+        },
+        {
+          "start": 524.1964285714286,
+          "complete": 545.625
+        },
+        {
+          "start": 536.5625,
+          "complete": 557.9910714285714
+        }
+      ],
+      "trace_samples": [
+        {
+          "iteration": 1840,
+          "second": 328.5714285714286,
+          "minerals": 220,
+          "vespene": 0,
+          "supply_army": 19,
+          "supply_workers": 11,
+          "supply_left": 17
+        },
+        {
+          "iteration": 2020,
+          "second": 360.7142857142857,
+          "minerals": 255,
+          "vespene": 0,
+          "supply_army": 14,
+          "supply_workers": 11,
+          "supply_left": 22
+        },
+        {
+          "iteration": 2520,
+          "second": 450.00000000000006,
+          "minerals": 280,
+          "vespene": 0,
+          "supply_army": 22,
+          "supply_workers": 11,
+          "supply_left": 14
+        },
+        {
+          "iteration": 2690,
+          "second": 480.3571428571429,
+          "minerals": 115,
+          "vespene": 0,
+          "supply_army": 14,
+          "supply_workers": 11,
+          "supply_left": 22
+        },
+        {
+          "iteration": 2860,
+          "second": 510.7142857142857,
+          "minerals": 40,
+          "vespene": 0,
+          "supply_army": 3,
+          "supply_workers": 11,
+          "supply_left": 65
+        }
+      ],
+      "first_wave": {
+        "unit_count": 20,
+        "units": "Marine only",
+        "gathering_second": 250.71428571428572,
+        "attack_second": 270.89285714285717,
+        "last_death_second": 300.8482142857143,
+        "all_tags_dead": true,
+        "killers_last_hit": {
+          "Banshee": 19,
+          "SCV": 1
+        },
+        "kills_last_hit": {
+          "SCV": 8,
+          "Marine": 5,
+          "StarportTechLab": 1
+        },
+        "killed_commandcenters_all_incomplete": true,
+        "move_commands_after_launch": 0,
+        "enemy_at_attack": {
+          "complete_alive": {
+            "OrbitalCommand": 1,
+            "SCV": 27,
+            "SupplyDepotLowered": 4,
+            "Refinery": 2,
+            "Barracks": 1,
+            "Factory": 1,
+            "Marine": 5,
+            "Starport": 2,
+            "StarportTechLab": 2,
+            "Banshee": 2,
+            "MULE": 1
+          },
+          "incomplete_alive": {
+            "CommandCenter": 1
+          }
+        },
+        "deaths_xy_bounds": [
+          [
+            32,
+            47
+          ],
+          [
+            119,
+            125
+          ]
+        ]
+      },
+      "subsequent_plans": []
+    },
+    {
+      "threshold": 20,
+      "env": 1,
+      "seconds": 641.0714285714287,
+      "hashes": {
+        "sc2-logs/game-4004384/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/default_player_Qwen3-30B_20260912.log": "6068382099963566554df19415e4525b471b228aa31a8ddaf81d2329e628a004",
+        "sc2-logs/game-4004384/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/replay.SC2Replay": "d64329e58d422cce9af9a0658a7a89a8a2c2dbc80ab5a5fbd74feb1ca8cfffea",
+        "sc2-logs/game-4004384/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/trace.json": "3a6f32123383575ee3937deef34652f45689f374b83f470b9dc434edd9edd331"
+      },
+      "peak_marine": {
+        "loop": 6072,
+        "second": 271.0714285714286,
+        "count": 25
+      },
+      "total_marine_born": 66,
+      "marine_deaths": 65,
+      "own_noncosmetic_upgrades": [],
+      "new_depots": [
+        {
+          "start": 470.4017857142857,
+          "complete": 491.83035714285717
+        },
+        {
+          "start": 471.9196428571429,
+          "complete": 493.34821428571433
+        },
+        {
+          "start": 472.8571428571429,
+          "complete": 494.28571428571433
+        },
+        {
+          "start": 485.49107142857144,
+          "complete": 506.9196428571429
+        },
+        {
+          "start": 496.47321428571433,
+          "complete": 517.9017857142858
+        },
+        {
+          "start": 512.0535714285714,
+          "complete": 533.4821428571429
+        },
+        {
+          "start": 524.1964285714286,
+          "complete": 545.625
+        },
+        {
+          "start": 536.5625,
+          "complete": 557.9910714285714
+        }
+      ],
+      "trace_samples": [
+        {
+          "iteration": 1840,
+          "second": 328.5714285714286,
+          "minerals": 220,
+          "vespene": 0,
+          "supply_army": 19,
+          "supply_workers": 11,
+          "supply_left": 17
+        },
+        {
+          "iteration": 2020,
+          "second": 360.7142857142857,
+          "minerals": 255,
+          "vespene": 0,
+          "supply_army": 14,
+          "supply_workers": 11,
+          "supply_left": 22
+        },
+        {
+          "iteration": 2520,
+          "second": 450.00000000000006,
+          "minerals": 280,
+          "vespene": 0,
+          "supply_army": 22,
+          "supply_workers": 11,
+          "supply_left": 14
+        },
+        {
+          "iteration": 2690,
+          "second": 480.3571428571429,
+          "minerals": 115,
+          "vespene": 0,
+          "supply_army": 14,
+          "supply_workers": 11,
+          "supply_left": 22
+        },
+        {
+          "iteration": 2860,
+          "second": 510.7142857142857,
+          "minerals": 40,
+          "vespene": 0,
+          "supply_army": 3,
+          "supply_workers": 11,
+          "supply_left": 65
+        }
+      ],
+      "first_wave": {
+        "unit_count": 20,
+        "units": "Marine only",
+        "gathering_second": 250.71428571428572,
+        "attack_second": 270.89285714285717,
+        "last_death_second": 300.8482142857143,
+        "all_tags_dead": true,
+        "killers_last_hit": {
+          "Banshee": 19,
+          "SCV": 1
+        },
+        "kills_last_hit": {
+          "SCV": 8,
+          "Marine": 5,
+          "StarportTechLab": 1
+        },
+        "killed_commandcenters_all_incomplete": true,
+        "move_commands_after_launch": 0,
+        "enemy_at_attack": {
+          "complete_alive": {
+            "OrbitalCommand": 1,
+            "SCV": 27,
+            "SupplyDepotLowered": 4,
+            "Refinery": 2,
+            "Barracks": 1,
+            "Factory": 1,
+            "Marine": 5,
+            "Starport": 2,
+            "StarportTechLab": 2,
+            "Banshee": 2,
+            "MULE": 1
+          },
+          "incomplete_alive": {
+            "CommandCenter": 1
+          }
+        },
+        "deaths_xy_bounds": [
+          [
+            32,
+            47
+          ],
+          [
+            119,
+            125
+          ]
+        ]
+      },
+      "subsequent_plans": []
+    },
+    {
+      "threshold": 20,
+      "env": 2,
+      "seconds": 641.0714285714287,
+      "hashes": {
+        "sc2-logs/game-4004382/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/default_player_Qwen3-30B_20260912.log": "ae50dcfa752c3e7921e64a0309edf2884c07b5c97ea5ca62da13635257f8d7c6",
+        "sc2-logs/game-4004382/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/replay.SC2Replay": "f6c774819e23c2040f9561c3a15b00954e41be5751f01fe48518e696749c1892",
+        "sc2-logs/game-4004382/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/trace.json": "2780c5f5334ad99cfc214e3f20cf0e9af29e134fa23af441022d853b188af413"
+      },
+      "peak_marine": {
+        "loop": 6072,
+        "second": 271.0714285714286,
+        "count": 25
+      },
+      "total_marine_born": 66,
+      "marine_deaths": 65,
+      "own_noncosmetic_upgrades": [],
+      "new_depots": [
+        {
+          "start": 470.4017857142857,
+          "complete": 491.83035714285717
+        },
+        {
+          "start": 471.9196428571429,
+          "complete": 493.34821428571433
+        },
+        {
+          "start": 472.8571428571429,
+          "complete": 494.28571428571433
+        },
+        {
+          "start": 485.49107142857144,
+          "complete": 506.9196428571429
+        },
+        {
+          "start": 496.47321428571433,
+          "complete": 517.9017857142858
+        },
+        {
+          "start": 512.0535714285714,
+          "complete": 533.4821428571429
+        },
+        {
+          "start": 524.1964285714286,
+          "complete": 545.625
+        },
+        {
+          "start": 536.5625,
+          "complete": 557.9910714285714
+        }
+      ],
+      "trace_samples": [
+        {
+          "iteration": 1840,
+          "second": 328.5714285714286,
+          "minerals": 220,
+          "vespene": 0,
+          "supply_army": 19,
+          "supply_workers": 11,
+          "supply_left": 17
+        },
+        {
+          "iteration": 2020,
+          "second": 360.7142857142857,
+          "minerals": 255,
+          "vespene": 0,
+          "supply_army": 14,
+          "supply_workers": 11,
+          "supply_left": 22
+        },
+        {
+          "iteration": 2520,
+          "second": 450.00000000000006,
+          "minerals": 280,
+          "vespene": 0,
+          "supply_army": 22,
+          "supply_workers": 11,
+          "supply_left": 14
+        },
+        {
+          "iteration": 2690,
+          "second": 480.3571428571429,
+          "minerals": 115,
+          "vespene": 0,
+          "supply_army": 14,
+          "supply_workers": 11,
+          "supply_left": 22
+        },
+        {
+          "iteration": 2860,
+          "second": 510.7142857142857,
+          "minerals": 40,
+          "vespene": 0,
+          "supply_army": 3,
+          "supply_workers": 11,
+          "supply_left": 65
+        }
+      ],
+      "first_wave": {
+        "unit_count": 20,
+        "units": "Marine only",
+        "gathering_second": 250.71428571428572,
+        "attack_second": 270.89285714285717,
+        "last_death_second": 300.8482142857143,
+        "all_tags_dead": true,
+        "killers_last_hit": {
+          "Banshee": 19,
+          "SCV": 1
+        },
+        "kills_last_hit": {
+          "SCV": 8,
+          "Marine": 5,
+          "StarportTechLab": 1
+        },
+        "killed_commandcenters_all_incomplete": true,
+        "move_commands_after_launch": 0,
+        "enemy_at_attack": {
+          "complete_alive": {
+            "OrbitalCommand": 1,
+            "SCV": 27,
+            "SupplyDepotLowered": 4,
+            "Refinery": 2,
+            "Barracks": 1,
+            "Factory": 1,
+            "Marine": 5,
+            "Starport": 2,
+            "StarportTechLab": 2,
+            "Banshee": 2,
+            "MULE": 1
+          },
+          "incomplete_alive": {
+            "CommandCenter": 1
+          }
+        },
+        "deaths_xy_bounds": [
+          [
+            32,
+            47
+          ],
+          [
+            119,
+            125
+          ]
+        ]
+      },
+      "subsequent_plans": []
+    },
+    {
+      "threshold": 20,
+      "env": 3,
+      "seconds": 641.0714285714287,
+      "hashes": {
+        "sc2-logs/game-4004381/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/default_player_Qwen3-30B_20260912.log": "17c55b21a3169ea1a6205aaae3ce6af6e41d75b43e7eeb9655a32fe58ec801d0",
+        "sc2-logs/game-4004381/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/replay.SC2Replay": "a455123d5ae6dadacbbff3111bf31a5affbd8b40f7af761f0a24a299ff2b85e1",
+        "sc2-logs/game-4004381/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-11-00/trace.json": "36a7b065dfb4f64f911a238d80eb36e1ad1893a5b89e42e5b6b9647642f1ecfb"
+      },
+      "peak_marine": {
+        "loop": 6072,
+        "second": 271.0714285714286,
+        "count": 25
+      },
+      "total_marine_born": 66,
+      "marine_deaths": 65,
+      "own_noncosmetic_upgrades": [],
+      "new_depots": [
+        {
+          "start": 470.4017857142857,
+          "complete": 491.83035714285717
+        },
+        {
+          "start": 471.9196428571429,
+          "complete": 493.34821428571433
+        },
+        {
+          "start": 472.8571428571429,
+          "complete": 494.28571428571433
+        },
+        {
+          "start": 485.49107142857144,
+          "complete": 506.9196428571429
+        },
+        {
+          "start": 496.47321428571433,
+          "complete": 517.9017857142858
+        },
+        {
+          "start": 512.0535714285714,
+          "complete": 533.4821428571429
+        },
+        {
+          "start": 524.1964285714286,
+          "complete": 545.625
+        },
+        {
+          "start": 536.5625,
+          "complete": 557.9910714285714
+        }
+      ],
+      "trace_samples": [
+        {
+          "iteration": 1840,
+          "second": 328.5714285714286,
+          "minerals": 220,
+          "vespene": 0,
+          "supply_army": 19,
+          "supply_workers": 11,
+          "supply_left": 17
+        },
+        {
+          "iteration": 2020,
+          "second": 360.7142857142857,
+          "minerals": 255,
+          "vespene": 0,
+          "supply_army": 14,
+          "supply_workers": 11,
+          "supply_left": 22
+        },
+        {
+          "iteration": 2520,
+          "second": 450.00000000000006,
+          "minerals": 280,
+          "vespene": 0,
+          "supply_army": 22,
+          "supply_workers": 11,
+          "supply_left": 14
+        },
+        {
+          "iteration": 2690,
+          "second": 480.3571428571429,
+          "minerals": 115,
+          "vespene": 0,
+          "supply_army": 14,
+          "supply_workers": 11,
+          "supply_left": 22
+        },
+        {
+          "iteration": 2860,
+          "second": 510.7142857142857,
+          "minerals": 40,
+          "vespene": 0,
+          "supply_army": 3,
+          "supply_workers": 11,
+          "supply_left": 65
+        }
+      ],
+      "first_wave": {
+        "unit_count": 20,
+        "units": "Marine only",
+        "gathering_second": 250.71428571428572,
+        "attack_second": 270.89285714285717,
+        "last_death_second": 300.8482142857143,
+        "all_tags_dead": true,
+        "killers_last_hit": {
+          "Banshee": 19,
+          "SCV": 1
+        },
+        "kills_last_hit": {
+          "SCV": 8,
+          "Marine": 5,
+          "StarportTechLab": 1
+        },
+        "killed_commandcenters_all_incomplete": true,
+        "move_commands_after_launch": 0,
+        "enemy_at_attack": {
+          "complete_alive": {
+            "OrbitalCommand": 1,
+            "SCV": 27,
+            "SupplyDepotLowered": 4,
+            "Refinery": 2,
+            "Barracks": 1,
+            "Factory": 1,
+            "Marine": 5,
+            "Starport": 2,
+            "StarportTechLab": 2,
+            "Banshee": 2,
+            "MULE": 1
+          },
+          "incomplete_alive": {
+            "CommandCenter": 1
+          }
+        },
+        "deaths_xy_bounds": [
+          [
+            32,
+            47
+          ],
+          [
+            119,
+            125
+          ]
+        ]
+      },
+      "subsequent_plans": []
+    },
+    {
+      "threshold": 40,
+      "env": 0,
+      "seconds": 635.1785714285714,
+      "hashes": {
+        "sc2-logs/game-4015389/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/default_player_Qwen3-30B_20260912.log": "e84e56cefa6cab739cf6ed94649159231bcd0aa6dc1a6d46a934fb40886f969c",
+        "sc2-logs/game-4015389/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/replay.SC2Replay": "5104c6ab83c18322421ca7f10bbc6f54464eb1e2f1893b02fe67b979006805b0",
+        "sc2-logs/game-4015389/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/trace.json": "828f62653f19225ade1a88951c9c4983decc935f5497b6c47ad2ffaacfa5d336"
+      },
+      "peak_marine": {
+        "loop": 7348,
+        "second": 328.03571428571433,
+        "count": 36
+      },
+      "total_marine_born": 41,
+      "marine_deaths": 41,
+      "own_noncosmetic_upgrades": [],
+      "new_depots": [
+        {
+          "start": 577.1428571428572,
+          "complete": 598.5714285714286
+        },
+        {
+          "start": 579.2857142857143,
+          "complete": 600.7142857142858
+        },
+        {
+          "start": 579.7321428571429,
+          "complete": 601.1607142857143
+        }
+      ],
+      "trace_samples": [
+        {
+          "iteration": 1840,
+          "second": 328.5714285714286,
+          "minerals": 370,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2020,
+          "second": 360.7142857142857,
+          "minerals": 705,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2520,
+          "second": 450.00000000000006,
+          "minerals": 1530,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2690,
+          "second": 480.3571428571429,
+          "minerals": 1855,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2860,
+          "second": 510.7142857142857,
+          "minerals": 2120,
+          "vespene": 0,
+          "supply_army": 35,
+          "supply_workers": 11,
+          "supply_left": 0
+        }
+      ],
+      "first_wave": null,
+      "subsequent_plans": [
+        {
+          "game_time": "05:49",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 3\n- supplydepot x 3\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "marine",
+            "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "07:40",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 28\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "marine",
+            "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "08:19",
+          "answer": "<answer>\n- scv x 3\n- marine x 28\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "marine",
+            "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "09:07",
+          "answer": "<answer>\n- scv x 2\n- marine x 2\n- supplydepot x 2\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "scv",
+            "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "09:35",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 4\n- commandcenter x 2\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- techlab barracks x 1\n- factory x 1\n- refinery x 1\n- techlab x 1\n</answer>",
+          "valid": false,
+          "feedback_failed": null
+        }
+      ]
+    },
+    {
+      "threshold": 40,
+      "env": 1,
+      "seconds": 665.5357142857143,
+      "hashes": {
+        "sc2-logs/game-4015392/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/default_player_Qwen3-30B_20260912.log": "c63dc7930a235d789103ff80409f3d4188cea5f896e8f436a282ddb21eefe560",
+        "sc2-logs/game-4015392/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/replay.SC2Replay": "c14ea97dcc02acc534a204c39a64cf1a034b8b79e98b17e080748927bf8d5690",
+        "sc2-logs/game-4015392/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/trace.json": "d987f6f866dfcee0cf73d81704b09a80917c022eb3e01032a32e7d26102ed1f9"
+      },
+      "peak_marine": {
+        "loop": 11488,
+        "second": 512.8571428571429,
+        "count": 51
+      },
+      "total_marine_born": 73,
+      "marine_deaths": 73,
+      "own_noncosmetic_upgrades": [],
+      "new_depots": [
+        {
+          "start": 423.125,
+          "complete": 444.55357142857144
+        },
+        {
+          "start": 424.1517857142857,
+          "complete": 445.58035714285717
+        },
+        {
+          "start": 573.2589285714286,
+          "complete": 594.6875
+        },
+        {
+          "start": 574.0625,
+          "complete": 595.4910714285714
+        },
+        {
+          "start": 574.4642857142858,
+          "complete": 595.8928571428572
+        },
+        {
+          "start": 574.7321428571429,
+          "complete": 596.1607142857143
+        },
+        {
+          "start": 588.0803571428572,
+          "complete": 609.5089285714286
+        },
+        {
+          "start": 605.1339285714286,
+          "complete": 626.5625
+        }
+      ],
+      "trace_samples": [
+        {
+          "iteration": 1840,
+          "second": 328.5714285714286,
+          "minerals": 370,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2020,
+          "second": 360.7142857142857,
+          "minerals": 705,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2520,
+          "second": 450.00000000000006,
+          "minerals": 730,
+          "vespene": 0,
+          "supply_army": 40,
+          "supply_workers": 11,
+          "supply_left": 12
+        },
+        {
+          "iteration": 2690,
+          "second": 480.3571428571429,
+          "minerals": 695,
+          "vespene": 0,
+          "supply_army": 46,
+          "supply_workers": 11,
+          "supply_left": 6
+        },
+        {
+          "iteration": 2860,
+          "second": 510.7142857142857,
+          "minerals": 675,
+          "vespene": 0,
+          "supply_army": 52,
+          "supply_workers": 11,
+          "supply_left": 0
+        }
+      ],
+      "first_wave": {
+        "unit_count": 40,
+        "units": "Marine only",
+        "gathering_second": 483.39285714285717,
+        "attack_second": 504.8214285714286,
+        "last_death_second": 543.2142857142858,
+        "all_tags_dead": true,
+        "killers_last_hit": {
+          "Banshee": 5,
+          "Marine": 11,
+          "VikingAssault": 23,
+          "Battlecruiser": 1
+        },
+        "kills_last_hit": {
+          "SCV": 6,
+          "CommandCenter": 1,
+          "FactoryTechLab": 3,
+          "Marine": 8,
+          "StarportTechLab": 1,
+          "VikingAssault": 2
+        },
+        "killed_commandcenters_all_incomplete": true,
+        "move_commands_after_launch": 0,
+        "enemy_at_attack": {
+          "complete_alive": {
+            "OrbitalCommand": 2,
+            "SCV": 48,
+            "SupplyDepotLowered": 10,
+            "Refinery": 4,
+            "Barracks": 2,
+            "Factory": 1,
+            "Marine": 12,
+            "Starport": 2,
+            "StarportTechLab": 2,
+            "Banshee": 3,
+            "VikingFighter": 10,
+            "BarracksTechLab": 1,
+            "FusionCore": 1,
+            "EngineeringBay": 1
+          },
+          "incomplete_alive": {
+            "EngineeringBay": 1,
+            "MissileTurret": 2,
+            "SupplyDepot": 1
+          }
+        },
+        "deaths_xy_bounds": [
+          [
+            33,
+            40
+          ],
+          [
+            115,
+            129
+          ]
+        ]
+      },
+      "subsequent_plans": [
+        {
+          "game_time": "05:49",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "marine",
+            "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "07:01",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 35\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+          "valid": true,
+          "feedback_failed": null
+        }
+      ]
+    },
+    {
+      "threshold": 40,
+      "env": 2,
+      "seconds": 655.3571428571429,
+      "hashes": {
+        "sc2-logs/game-4015391/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/default_player_Qwen3-30B_20260912.log": "0926a1dfc4d870198c07b835df855a4a0a5d004cb140dbe886d7aeebbeff9801",
+        "sc2-logs/game-4015391/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/replay.SC2Replay": "f6838e1841f3ca679ae889d718dc8b19c5442a139c2d301d487f25981206b131",
+        "sc2-logs/game-4015391/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/trace.json": "39cd18067537944b801c9c192fc6e1cd8de8bcf4b5052c7805c46e5496319f04"
+      },
+      "peak_marine": {
+        "loop": 7348,
+        "second": 328.03571428571433,
+        "count": 36
+      },
+      "total_marine_born": 38,
+      "marine_deaths": 38,
+      "own_noncosmetic_upgrades": [],
+      "new_depots": [
+        {
+          "start": 423.125,
+          "complete": 444.55357142857144
+        },
+        {
+          "start": 423.8839285714286,
+          "complete": 445.3125
+        },
+        {
+          "start": 424.5089285714286,
+          "complete": 445.9375
+        },
+        {
+          "start": 424.95535714285717,
+          "complete": 446.3839285714286
+        },
+        {
+          "start": 425.53571428571433,
+          "complete": 446.9642857142857
+        },
+        {
+          "start": 426.3839285714286,
+          "complete": 447.8125
+        },
+        {
+          "start": 426.875,
+          "complete": 448.30357142857144
+        },
+        {
+          "start": 427.05357142857144,
+          "complete": 448.4821428571429
+        },
+        {
+          "start": 427.8571428571429,
+          "complete": 449.28571428571433
+        },
+        {
+          "start": 475.0446428571429,
+          "complete": 496.47321428571433
+        },
+        {
+          "start": 490.93750000000006,
+          "complete": 512.3660714285714
+        }
+      ],
+      "trace_samples": [
+        {
+          "iteration": 1840,
+          "second": 328.5714285714286,
+          "minerals": 370,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2020,
+          "second": 360.7142857142857,
+          "minerals": 705,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2520,
+          "second": 450.00000000000006,
+          "minerals": 45,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 72
+        },
+        {
+          "iteration": 2690,
+          "second": 480.3571428571429,
+          "minerals": 80,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 72
+        },
+        {
+          "iteration": 2860,
+          "second": 510.7142857142857,
+          "minerals": 185,
+          "vespene": 60,
+          "supply_army": 35,
+          "supply_workers": 11,
+          "supply_left": 81
+        }
+      ],
+      "first_wave": null,
+      "subsequent_plans": [
+        {
+          "game_time": "05:49",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "marine",
+            "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "07:01",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 9\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- mule x 6\n- scv x 15\n- marine x 50\n- Launch OFFENSE with 8 marine\n</answer>",
+          "valid": true,
+          "feedback_failed": null
+        },
+        {
+          "game_time": "07:42",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- refinery x 1\n- supplydepot x 2\n- marauder x 4\n- commandcenter x 2\n- mule x 6\n- scv x 15\n- marine x 50\n- techlab barracks x 1\n- factory x 1\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "supplydepot",
+            "reason": "timeout: **Action Failed**: Insufficient Minerals (95/100).\n**Suggestion**: Wait for resources.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": true
+          }
+        },
+        {
+          "game_time": "08:45",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- commandcenter x 1\n- marauder x 2\n- mule x 6\n- scv x 15\n- marine x 50\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "09:41",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 2\n- commandcenter x 1\n- mule x 2\n- scv x 15\n- marine x 50\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        }
+      ]
+    },
+    {
+      "threshold": 40,
+      "env": 3,
+      "seconds": 699.6428571428572,
+      "hashes": {
+        "sc2-logs/game-4015390/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/default_player_Qwen3-30B_20260912.log": "804b04ee8e63cc00dd472c0fe709e8fec2e68e82a61bf7fc8b2b338fa664b319",
+        "sc2-logs/game-4015390/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/replay.SC2Replay": "29d0ed3951af5b0111eb901a451662a00ef2d2e0b1b712836c694b9036b51940",
+        "sc2-logs/game-4015390/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_02-18-49/trace.json": "4ea31e23da871fec2f49b1f07431c1f615bb15d713d75d7c59eb2d28121d7914"
+      },
+      "peak_marine": {
+        "loop": 11668,
+        "second": 520.8928571428572,
+        "count": 49
+      },
+      "total_marine_born": 66,
+      "marine_deaths": 66,
+      "own_noncosmetic_upgrades": [],
+      "new_depots": [
+        {
+          "start": 423.125,
+          "complete": 444.55357142857144
+        },
+        {
+          "start": 424.1517857142857,
+          "complete": 445.58035714285717
+        },
+        {
+          "start": 548.7946428571429,
+          "complete": 570.2232142857143
+        },
+        {
+          "start": 549.8660714285714,
+          "complete": 571.2946428571429
+        },
+        {
+          "start": 549.9107142857143,
+          "complete": 571.3392857142858
+        },
+        {
+          "start": 550.4910714285714,
+          "complete": 571.9196428571429
+        },
+        {
+          "start": 552.1428571428572,
+          "complete": 573.5714285714286
+        },
+        {
+          "start": 568.2589285714286,
+          "complete": 589.6875
+        },
+        {
+          "start": 600.7142857142858,
+          "complete": null
+        }
+      ],
+      "trace_samples": [
+        {
+          "iteration": 1840,
+          "second": 328.5714285714286,
+          "minerals": 370,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2020,
+          "second": 360.7142857142857,
+          "minerals": 705,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 0
+        },
+        {
+          "iteration": 2520,
+          "second": 450.00000000000006,
+          "minerals": 930,
+          "vespene": 0,
+          "supply_army": 36,
+          "supply_workers": 11,
+          "supply_left": 16
+        },
+        {
+          "iteration": 2690,
+          "second": 480.3571428571429,
+          "minerals": 895,
+          "vespene": 0,
+          "supply_army": 42,
+          "supply_workers": 11,
+          "supply_left": 10
+        },
+        {
+          "iteration": 2860,
+          "second": 510.7142857142857,
+          "minerals": 730,
+          "vespene": 0,
+          "supply_army": 51,
+          "supply_workers": 11,
+          "supply_left": 1
+        }
+      ],
+      "first_wave": {
+        "unit_count": 40,
+        "units": "Marine only",
+        "gathering_second": 491.42857142857144,
+        "attack_second": 511.78571428571433,
+        "last_death_second": 551.875,
+        "all_tags_dead": true,
+        "killers_last_hit": {
+          "Banshee": 15,
+          "Marine": 3,
+          "VikingAssault": 13,
+          "Battlecruiser": 9
+        },
+        "kills_last_hit": {
+          "SCV": 12,
+          "VikingAssault": 8,
+          "Marine": 14,
+          "CommandCenter": 1
+        },
+        "killed_commandcenters_all_incomplete": true,
+        "move_commands_after_launch": 0,
+        "enemy_at_attack": {
+          "complete_alive": {
+            "OrbitalCommand": 2,
+            "SCV": 48,
+            "SupplyDepotLowered": 10,
+            "Refinery": 4,
+            "Barracks": 2,
+            "Factory": 1,
+            "Marine": 12,
+            "Starport": 2,
+            "StarportTechLab": 2,
+            "Banshee": 3,
+            "VikingFighter": 4,
+            "BarracksTechLab": 1,
+            "VikingAssault": 6,
+            "FusionCore": 1,
+            "EngineeringBay": 1,
+            "MissileTurret": 2
+          },
+          "incomplete_alive": {
+            "EngineeringBay": 1,
+            "SupplyDepot": 1,
+            "CommandCenter": 1
+          }
+        },
+        "deaths_xy_bounds": [
+          [
+            34,
+            59
+          ],
+          [
+            113,
+            128
+          ]
+        ]
+      },
+      "subsequent_plans": [
+        {
+          "game_time": "05:49",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "marine",
+            "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "07:41",
+          "answer": "<answer>\n- marine x 28\n- supplydepot x 6\n- barracks x 1\n</answer>",
+          "valid": true,
+          "feedback_failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          }
+        },
+        {
+          "game_time": "09:45",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 9\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- mule x 6\n- scv x 15\n- marine x 50\n</answer>",
+          "valid": false,
+          "feedback_failed": null
+        }
+      ]
+    }
+  ],
+  "limitations": "One game seed. Replayed first two answers are not online choices. Tracker killer is last-hit, not total damage; no per-frame HP/cloak/detection evidence."
+}

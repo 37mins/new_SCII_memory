@@ -1,0 +1,95 @@
+--- a/agent_system/environments/strategic_sc2_env_manager_v2.py
++++ b/agent_system/environments/strategic_sc2_env_manager_v2.py
+@@ -163,0 +164 @@
++        self._strict_legacy_plan_contract = _as_bool(config.env.get("strict_legacy_plan_contract", False))
+@@ -776,0 +778,23 @@
++
++    @staticmethod
++    def _strict_legacy_bo_candidate_counts(text_obs: Any) -> Counter:
++        text = str(text_obs or "")
++        marker = "The remaining BO list in this phase:"
++        if marker not in text:
++            return Counter()
++        remaining = text.split(marker, 1)[1]
++        allowed_counts = Counter()
++        for line in remaining.splitlines():
++            numbered = re.match(r"^\s*(\d+)\.\s*(.+?)\s*$", line)
++            legacy = re.match(r"^\s*[-*]\s+(.+?)\s*$", line)
++            match = numbered or legacy
++            if not match:
++                if allowed_counts:
++                    break
++                continue
++            raw_value = numbered.group(2) if numbered else legacy.group(1)
++            count_match = re.match(r"(.+?)\s+x\s*(\d+)\s*$", raw_value, re.IGNORECASE)
++            canonical = (count_match.group(1) if count_match else raw_value).strip()
++            count = int(count_match.group(2)) if count_match else 1
++            allowed_counts[canonical] += max(1, count)
++        return allowed_counts
+@@ -795 +819,7 @@
+-        if not allowed_counts:
++        strict_legacy = self._strict_legacy_plan_contract
++        candidate_counts = (
++            self._strict_legacy_bo_candidate_counts(text_prompt)
++            if strict_legacy
++            else allowed_counts
++        )
++        if not candidate_counts:
+@@ -808,2 +837,0 @@
+-            if not line.startswith(("-", "*")):
+-                return False, "non-build-order text in final response"
+@@ -811,13 +839,7 @@
+-            item = line[1:].strip()
+-            choice_match = re.match(
+-                r"#?\s*(\d+)(?:\s*[.)])?(?:\s+x\s*(\d+))?\s*$",
+-                item,
+-                re.IGNORECASE,
+-            )
+-            if choice_match and indexed:
+-                canonical = indexed.get(choice_match.group(1))
+-                if canonical is None:
+-                    return False, "choice index outside current BO candidates"
+-                count = int(choice_match.group(2) or 1)
+-            elif choice_match:
+-                return False, "choice index is not valid in legacy-name protocol"
++            if strict_legacy:
++                if not line.startswith("- "):
++                    return False, "canonical legacy response requires `- exactname`"
++                canonical = line[2:].strip()
++                count = 1
++                if canonical not in candidate_counts:
++                    return False, f"action outside current canonical BO candidates: {canonical}"
+@@ -825,7 +847,23 @@
+-                count_match = re.match(r"(.+?)\s+x\s*(\d+)\s*$", item, re.IGNORECASE)
+-                item_text = count_match.group(1) if count_match else item
+-                count = int(count_match.group(2)) if count_match else 1
+-                actions = extract_legal_sc2_actions(item_text, max_actions=4)
+-                canonical = str(actions[0] if actions else item_text).strip().lower()
+-                if canonical not in allowed_counts:
+-                    return False, f"action outside current BO candidates: {canonical}"
++                if not line.startswith(("-", "*")):
++                    return False, "non-build-order text in final response"
++                item = line[1:].strip()
++                choice_match = re.match(
++                    r"#?\s*(\d+)(?:\s*[.)])?(?:\s+x\s*(\d+))?\s*$",
++                    item,
++                    re.IGNORECASE,
++                )
++                if choice_match and indexed:
++                    canonical = indexed.get(choice_match.group(1))
++                    if canonical is None:
++                        return False, "choice index outside current BO candidates"
++                    count = int(choice_match.group(2) or 1)
++                elif choice_match:
++                    return False, "choice index is not valid in legacy-name protocol"
++                else:
++                    count_match = re.match(r"(.+?)\s+x\s*(\d+)\s*$", item, re.IGNORECASE)
++                    item_text = count_match.group(1) if count_match else item
++                    count = int(count_match.group(2)) if count_match else 1
++                    actions = extract_legal_sc2_actions(item_text, max_actions=4)
++                    canonical = str(actions[0] if actions else item_text).strip().lower()
++                    if canonical not in allowed_counts:
++                        return False, f"action outside current BO candidates: {canonical}"
+@@ -849 +887 @@
+-            if count > allowed_counts[canonical]:
++            if count > candidate_counts[canonical]:

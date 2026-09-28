@@ -1,0 +1,3322 @@
+{
+  "replay_sha256": "064f78a3ea896c9bf590999d17343fd0b0d735c712c65e2dd495b22157d083ab",
+  "console_sha256": "f81b1a80eadc029928894d1f07bb102d8a02e07d95940a6986dc3499900ada6a",
+  "source_sha": "3adaaf70ac879a7f4d7bdecbfb8be60b75bf4fa6",
+  "tracker_events": 2072,
+  "game_events": 3956,
+  "command_sequences": 1133,
+  "selection_errors": 0,
+  "starports": [
+    {
+      "tag": 65536002,
+      "type": "Starport",
+      "owner": 1,
+      "born_loop": 14240,
+      "born_time": "10:35.7",
+      "born_xy": [
+        14,
+        20
+      ],
+      "death_loop": 23570
+    }
+  ],
+  "wave_logs": [
+    {
+      "console_line": 6104,
+      "iteration": 1689,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:48:47 [default_player_Qwen3-30B] [INFO]: (1689) launch_total_attack: 已创建总攻波次 1，状态: GATHERING，集结点: (29, 74)，最低出击: 5。"
+    },
+    {
+      "console_line": 7695,
+      "iteration": 2072,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:49:22 [default_player_Qwen3-30B] [INFO]: (2072) launch_total_attack: 已创建总攻波次 2，状态: GATHERING，集结点: (28, 70)，最低出击: 5。"
+    },
+    {
+      "console_line": 8710,
+      "iteration": 2266,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:49:44 [default_player_Qwen3-30B] [INFO]: (2266) launch_total_attack: 已创建总攻波次 3，状态: GATHERING，集结点: (28, 72)，最低出击: 5。"
+    },
+    {
+      "console_line": 9524,
+      "iteration": 2416,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:50:00 [default_player_Qwen3-30B] [INFO]: (2416) launch_total_attack: 已创建总攻波次 4，状态: GATHERING，集结点: (29, 70)，最低出击: 5。"
+    },
+    {
+      "console_line": 9973,
+      "iteration": 2497,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:50:09 [default_player_Qwen3-30B] [INFO]: (2497) launch_total_attack: 已创建总攻波次 5，状态: GATHERING，集结点: (28, 73)，最低出击: 5。"
+    },
+    {
+      "console_line": 10361,
+      "iteration": 2592,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:50:18 [default_player_Qwen3-30B] [INFO]: (2592) launch_total_attack: 已创建总攻波次 6，状态: GATHERING，集结点: (29, 70)，最低出击: 5。"
+    },
+    {
+      "console_line": 11587,
+      "iteration": 2879,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:50:47 [default_player_Qwen3-30B] [INFO]: (2879) launch_total_attack: 已创建总攻波次 7，状态: GATHERING，集结点: (28, 71)，最低出击: 5。"
+    },
+    {
+      "console_line": 12142,
+      "iteration": 2998,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:50:59 [default_player_Qwen3-30B] [INFO]: (2998) launch_total_attack: 已创建总攻波次 8，状态: GATHERING，集结点: (30, 72)，最低出击: 5。"
+    },
+    {
+      "console_line": 12799,
+      "iteration": 3126,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:51:15 [default_player_Qwen3-30B] [INFO]: (3126) launch_total_attack: 已创建总攻波次 9，状态: GATHERING，集结点: (31, 69)，最低出击: 5。"
+    },
+    {
+      "console_line": 15111,
+      "iteration": 3670,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:53:17 [default_player_Qwen3-30B] [INFO]: (3670) launch_total_attack: 已创建总攻波次 10，状态: GATHERING，集结点: (29, 73)，最低出击: 5。"
+    },
+    {
+      "console_line": 16573,
+      "iteration": 4082,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:54:39 [default_player_Qwen3-30B] [INFO]: (4082) launch_total_attack: 已创建总攻波次 11，状态: GATHERING，集结点: (29, 73)，最低出击: 5。",
+      "selected_types": [
+        "VikingFighter",
+        "SiegeTank",
+        "Marauder",
+        "SiegeTank",
+        "Marauder",
+        "Marine",
+        "Marine",
+        "SiegeTank",
+        "Marine",
+        "Marauder"
+      ]
+    },
+    {
+      "console_line": 17525,
+      "iteration": 4357,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:55:19 [default_player_Qwen3-30B] [INFO]: (4357) launch_total_attack: 已创建总攻波次 12，状态: GATHERING，集结点: (29, 72)，最低出击: 5。",
+      "selected_types": [
+        "SiegeTank",
+        "VikingFighter",
+        "Marine",
+        "Marine",
+        "Marine",
+        "VikingFighter",
+        "SiegeTank",
+        "Marine",
+        "Marine",
+        "Marine"
+      ]
+    },
+    {
+      "console_line": 18055,
+      "iteration": 4476,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:55:43 [default_player_Qwen3-30B] [INFO]: (4476) launch_total_attack: 已创建总攻波次 13，状态: GATHERING，集结点: (30, 74)，最低出击: 5。",
+      "selected_types": [
+        "VikingFighter",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine"
+      ]
+    },
+    {
+      "console_line": 18082,
+      "iteration": 4486,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:55:43 [default_player_Qwen3-30B] [INFO]: (4486) launch_total_attack: 已创建总攻波次 14，状态: GATHERING，集结点: (26, 66)，最低出击: 5。"
+    },
+    {
+      "console_line": 18856,
+      "iteration": 4605,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:56:23 [default_player_Qwen3-30B] [INFO]: (4605) launch_total_attack: 已创建总攻波次 15，状态: GATHERING，集结点: (26, 66)，最低出击: 5。"
+    },
+    {
+      "console_line": 19665,
+      "iteration": 4853,
+      "text": "(SC2Worker pid=2431676) 2026-09-08 02:57:01 [default_player_Qwen3-30B] [INFO]: (4853) launch_total_attack: 已创建总攻波次 16，状态: GATHERING，集结点: (30, 74)，最低出击: 5。",
+      "selected_types": [
+        "SiegeTank",
+        "SiegeTank",
+        "Marine",
+        "VikingFighter",
+        "Marine",
+        "Marine",
+        "Marine",
+        "VikingFighter",
+        "Marine",
+        "Marine"
+      ]
+    }
+  ],
+  "vikings": [
+    {
+      "tag": 17301515,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 15764,
+      "born_time": "11:43.8",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 1,
+      "positions": [],
+      "commands": [
+        {
+          "loop": 16076,
+          "time": "11:57.7",
+          "game_event_index": 2711,
+          "sequence": 806,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 230437,
+              "y": 142912,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 16076,
+          "time": "11:57.7",
+          "game_event_index": 2719,
+          "sequence": 808,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 101004,
+              "y": 254973,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 16328,
+          "time": "12:08.9",
+          "game_event_index": 2752,
+          "sequence": 818,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            17301515,
+            78643226,
+            98828297,
+            106954758,
+            107216899,
+            108003331,
+            109576194,
+            110624770,
+            110886913,
+            111673345
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 119663,
+              "y": 301603,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 16612,
+          "time": "12:21.6",
+          "game_event_index": 2785,
+          "sequence": 827,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 101004,
+              "y": 254973,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 16696,
+          "time": "12:25.4",
+          "game_event_index": 2805,
+          "sequence": 833,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 119663,
+              "y": 301603,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 16880,
+          "time": "12:33.6",
+          "game_event_index": 2860,
+          "sequence": 847,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 101004,
+              "y": 254973,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 16964,
+          "time": "12:37.3",
+          "game_event_index": 2879,
+          "sequence": 852,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 119663,
+              "y": 301603,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17148,
+          "time": "12:45.5",
+          "game_event_index": 2937,
+          "sequence": 870,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 101004,
+              "y": 254973,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17232,
+          "time": "12:49.3",
+          "game_event_index": 2962,
+          "sequence": 877,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 119663,
+              "y": 301603,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17416,
+          "time": "12:57.5",
+          "game_event_index": 3001,
+          "sequence": 887,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 101004,
+              "y": 254973,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17500,
+          "time": "13:01.2",
+          "game_event_index": 3012,
+          "sequence": 890,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 119663,
+              "y": 301603,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17684,
+          "time": "13:09.5",
+          "game_event_index": 3160,
+          "sequence": 931,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 161398,
+              "y": 147959,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17932,
+          "time": "13:20.5",
+          "game_event_index": 3207,
+          "sequence": 943,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            17301515
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 119663,
+              "y": 301603,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        }
+      ],
+      "scout_logs": [],
+      "death_loop": 18163,
+      "death_time": "13:30.8",
+      "lifetime_seconds": 107.1,
+      "death_xy": [
+        31,
+        63
+      ],
+      "killer_tag": 80740374,
+      "killer_type": "VikingFighter",
+      "killer_last_position": [
+        15120,
+        30,
+        81
+      ],
+      "trace_observations": [
+        {
+          "iteration": 3981,
+          "loop": 15924,
+          "time": "11:50.9",
+          "trace_id": 814,
+          "text": "Position: (35, 33)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 3982,
+          "loop": 15928,
+          "time": "11:51.1",
+          "trace_id": 814,
+          "text": "Position: (35, 33)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4072,
+          "loop": 16288,
+          "time": "12:07.1",
+          "trace_id": 814,
+          "text": "Position: (24, 62)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4073,
+          "loop": 16292,
+          "time": "12:07.3",
+          "trace_id": 814,
+          "text": "Position: (24, 62)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4074,
+          "loop": 16296,
+          "time": "12:07.5",
+          "trace_id": 814,
+          "text": "Position: (24, 62)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4075,
+          "loop": 16300,
+          "time": "12:07.7",
+          "trace_id": 814,
+          "text": "Position: (24, 62)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4120,
+          "loop": 16480,
+          "time": "12:15.7",
+          "trace_id": 814,
+          "text": "Position: (29, 73)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4165,
+          "loop": 16660,
+          "time": "12:23.8",
+          "trace_id": 814,
+          "text": "Position: (26, 67)\nHealth: 135/135 (100%)\nState: moving to [(24, 62)]|flying"
+        },
+        {
+          "iteration": 4254,
+          "loop": 17016,
+          "time": "12:39.6",
+          "trace_id": 814,
+          "text": "Position: (27, 69)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4255,
+          "loop": 17020,
+          "time": "12:39.8",
+          "trace_id": 814,
+          "text": "Position: (27, 69)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4256,
+          "loop": 17024,
+          "time": "12:40.0",
+          "trace_id": 814,
+          "text": "Position: (27, 70)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4257,
+          "loop": 17028,
+          "time": "12:40.2",
+          "trace_id": 814,
+          "text": "Position: (28, 71)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4258,
+          "loop": 17032,
+          "time": "12:40.4",
+          "trace_id": 814,
+          "text": "Position: (28, 71)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4259,
+          "loop": 17036,
+          "time": "12:40.5",
+          "trace_id": 814,
+          "text": "Position: (28, 72)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4260,
+          "loop": 17040,
+          "time": "12:40.7",
+          "trace_id": 814,
+          "text": "Position: (28, 72)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4261,
+          "loop": 17044,
+          "time": "12:40.9",
+          "trace_id": 814,
+          "text": "Position: (29, 73)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4262,
+          "loop": 17048,
+          "time": "12:41.1",
+          "trace_id": 814,
+          "text": "Position: (29, 73)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4263,
+          "loop": 17052,
+          "time": "12:41.2",
+          "trace_id": 814,
+          "text": "Position: (29, 73)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4264,
+          "loop": 17056,
+          "time": "12:41.4",
+          "trace_id": 814,
+          "text": "Position: (29, 73)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4265,
+          "loop": 17060,
+          "time": "12:41.6",
+          "trace_id": 814,
+          "text": "Position: (29, 73)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4376,
+          "loop": 17504,
+          "time": "13:01.4",
+          "trace_id": 814,
+          "text": "Position: (24, 62)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4377,
+          "loop": 17508,
+          "time": "13:01.6",
+          "trace_id": 814,
+          "text": "Position: (24, 62)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4378,
+          "loop": 17512,
+          "time": "13:01.8",
+          "trace_id": 814,
+          "text": "Position: (24, 62)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4379,
+          "loop": 17516,
+          "time": "13:02.0",
+          "trace_id": 814,
+          "text": "Position: (25, 63)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4380,
+          "loop": 17520,
+          "time": "13:02.1",
+          "trace_id": 814,
+          "text": "Position: (25, 64)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4381,
+          "loop": 17524,
+          "time": "13:02.3",
+          "trace_id": 814,
+          "text": "Position: (25, 64)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4382,
+          "loop": 17528,
+          "time": "13:02.5",
+          "trace_id": 814,
+          "text": "Position: (25, 65)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4383,
+          "loop": 17532,
+          "time": "13:02.7",
+          "trace_id": 814,
+          "text": "Position: (26, 66)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4384,
+          "loop": 17536,
+          "time": "13:02.9",
+          "trace_id": 814,
+          "text": "Position: (26, 66)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4385,
+          "loop": 17540,
+          "time": "13:03.0",
+          "trace_id": 814,
+          "text": "Position: (26, 67)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4386,
+          "loop": 17544,
+          "time": "13:03.2",
+          "trace_id": 814,
+          "text": "Position: (26, 67)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4497,
+          "loop": 17988,
+          "time": "13:23.0",
+          "trace_id": 814,
+          "text": "Position: (37, 44)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4498,
+          "loop": 17992,
+          "time": "13:23.2",
+          "trace_id": 814,
+          "text": "Position: (37, 44)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4499,
+          "loop": 17996,
+          "time": "13:23.4",
+          "trace_id": 814,
+          "text": "Position: (36, 45)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4500,
+          "loop": 18000,
+          "time": "13:23.6",
+          "trace_id": 814,
+          "text": "Position: (36, 46)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4501,
+          "loop": 18004,
+          "time": "13:23.8",
+          "trace_id": 814,
+          "text": "Position: (36, 46)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4502,
+          "loop": 18008,
+          "time": "13:23.9",
+          "trace_id": 814,
+          "text": "Position: (36, 47)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4503,
+          "loop": 18012,
+          "time": "13:24.1",
+          "trace_id": 814,
+          "text": "Position: (36, 48)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4504,
+          "loop": 18016,
+          "time": "13:24.3",
+          "trace_id": 814,
+          "text": "Position: (35, 48)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4505,
+          "loop": 18020,
+          "time": "13:24.5",
+          "trace_id": 814,
+          "text": "Position: (35, 49)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4506,
+          "loop": 18024,
+          "time": "13:24.6",
+          "trace_id": 814,
+          "text": "Position: (35, 50)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4507,
+          "loop": 18028,
+          "time": "13:24.8",
+          "trace_id": 814,
+          "text": "Position: (35, 50)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4508,
+          "loop": 18032,
+          "time": "13:25.0",
+          "trace_id": 814,
+          "text": "Position: (35, 51)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        },
+        {
+          "iteration": 4509,
+          "loop": 18036,
+          "time": "13:25.2",
+          "trace_id": 814,
+          "text": "Position: (35, 52)\nHealth: 135/135 (100%)\nState: attacking [(29, 73)]|flying"
+        }
+      ],
+      "automatic_wave": 11,
+      "wave_join_loop": 16328,
+      "garrison_commands": [
+        {
+          "sequence": 806,
+          "time": "11:57.7",
+          "base": [
+            49.5,
+            21.5
+          ],
+          "point": 1,
+          "xy": [
+            56.259033203125,
+            34.890625
+          ],
+          "after_wave_join": false
+        },
+        {
+          "sequence": 808,
+          "time": "11:57.7",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 3,
+          "xy": [
+            24.6591796875,
+            62.249267578125
+          ],
+          "after_wave_join": false
+        },
+        {
+          "sequence": 827,
+          "time": "12:21.6",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 3,
+          "xy": [
+            24.6591796875,
+            62.249267578125
+          ],
+          "after_wave_join": true
+        },
+        {
+          "sequence": 847,
+          "time": "12:33.6",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 3,
+          "xy": [
+            24.6591796875,
+            62.249267578125
+          ],
+          "after_wave_join": true
+        },
+        {
+          "sequence": 870,
+          "time": "12:45.5",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 3,
+          "xy": [
+            24.6591796875,
+            62.249267578125
+          ],
+          "after_wave_join": true
+        },
+        {
+          "sequence": 887,
+          "time": "12:57.5",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 3,
+          "xy": [
+            24.6591796875,
+            62.249267578125
+          ],
+          "after_wave_join": true
+        },
+        {
+          "sequence": 931,
+          "time": "13:09.5",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 4,
+          "xy": [
+            39.40380859375,
+            36.122802734375
+          ],
+          "after_wave_join": true
+        }
+      ]
+    },
+    {
+      "tag": 112984065,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 16435,
+      "born_time": "12:13.7",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 2,
+      "positions": [],
+      "commands": [
+        {
+          "loop": 16612,
+          "time": "12:21.6",
+          "game_event_index": 2761,
+          "sequence": 821,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            112984065
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 230437,
+              "y": 142912,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 16612,
+          "time": "12:21.6",
+          "game_event_index": 2765,
+          "sequence": 822,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            112984065
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 157955,
+              "y": 216565,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17428,
+          "time": "12:58.0",
+          "game_event_index": 3008,
+          "sequence": 889,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            108527619,
+            112984065,
+            114556929,
+            114819073,
+            115081217,
+            115343361,
+            115867649,
+            116129793,
+            116391937,
+            116654081
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 120742,
+              "y": 295450,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17684,
+          "time": "13:09.5",
+          "game_event_index": 3140,
+          "sequence": 926,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            112984065
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 101004,
+              "y": 254973,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17764,
+          "time": "13:13.0",
+          "game_event_index": 3163,
+          "sequence": 932,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            112984065
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 120742,
+              "y": 295450,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17952,
+          "time": "13:21.4",
+          "game_event_index": 3234,
+          "sequence": 950,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            112984065
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 157955,
+              "y": 216565,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 18092,
+          "time": "13:27.7",
+          "game_event_index": 3319,
+          "sequence": 975,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            112984065
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 120742,
+              "y": 295450,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        }
+      ],
+      "scout_logs": [],
+      "death_loop": 18231,
+      "death_time": "13:33.9",
+      "lifetime_seconds": 80.18,
+      "death_xy": [
+        36,
+        56
+      ],
+      "killer_tag": 80740374,
+      "killer_type": "VikingFighter",
+      "killer_last_position": [
+        15120,
+        30,
+        81
+      ],
+      "trace_observations": [
+        {
+          "iteration": 4120,
+          "loop": 16480,
+          "time": "12:15.7",
+          "trace_id": 363,
+          "text": "Position: (22, 25)\nHealth: 135/135 (100%)\nState: moving to [(35, 33)]|flying"
+        },
+        {
+          "iteration": 4165,
+          "loop": 16660,
+          "time": "12:23.8",
+          "trace_id": 363,
+          "text": "Position: (36, 39)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4254,
+          "loop": 17016,
+          "time": "12:39.6",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4255,
+          "loop": 17020,
+          "time": "12:39.8",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4256,
+          "loop": 17024,
+          "time": "12:40.0",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4257,
+          "loop": 17028,
+          "time": "12:40.2",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4258,
+          "loop": 17032,
+          "time": "12:40.4",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4259,
+          "loop": 17036,
+          "time": "12:40.5",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4260,
+          "loop": 17040,
+          "time": "12:40.7",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4261,
+          "loop": 17044,
+          "time": "12:40.9",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4262,
+          "loop": 17048,
+          "time": "12:41.1",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4263,
+          "loop": 17052,
+          "time": "12:41.2",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4264,
+          "loop": 17056,
+          "time": "12:41.4",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4265,
+          "loop": 17060,
+          "time": "12:41.6",
+          "trace_id": 363,
+          "text": "Position: (38, 52)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4376,
+          "loop": 17504,
+          "time": "13:01.4",
+          "trace_id": 363,
+          "text": "Position: (33, 63)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4377,
+          "loop": 17508,
+          "time": "13:01.6",
+          "trace_id": 363,
+          "text": "Position: (33, 64)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4378,
+          "loop": 17512,
+          "time": "13:01.8",
+          "trace_id": 363,
+          "text": "Position: (32, 64)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4379,
+          "loop": 17516,
+          "time": "13:02.0",
+          "trace_id": 363,
+          "text": "Position: (32, 65)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4380,
+          "loop": 17520,
+          "time": "13:02.1",
+          "trace_id": 363,
+          "text": "Position: (32, 65)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4381,
+          "loop": 17524,
+          "time": "13:02.3",
+          "trace_id": 363,
+          "text": "Position: (32, 66)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4382,
+          "loop": 17528,
+          "time": "13:02.5",
+          "trace_id": 363,
+          "text": "Position: (31, 67)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4383,
+          "loop": 17532,
+          "time": "13:02.7",
+          "trace_id": 363,
+          "text": "Position: (31, 67)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4384,
+          "loop": 17536,
+          "time": "13:02.9",
+          "trace_id": 363,
+          "text": "Position: (31, 68)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4385,
+          "loop": 17540,
+          "time": "13:03.0",
+          "trace_id": 363,
+          "text": "Position: (30, 69)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4386,
+          "loop": 17544,
+          "time": "13:03.2",
+          "trace_id": 363,
+          "text": "Position: (30, 69)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4497,
+          "loop": 17988,
+          "time": "13:23.0",
+          "trace_id": 363,
+          "text": "Position: (31, 67)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4498,
+          "loop": 17992,
+          "time": "13:23.2",
+          "trace_id": 363,
+          "text": "Position: (31, 67)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4499,
+          "loop": 17996,
+          "time": "13:23.4",
+          "trace_id": 363,
+          "text": "Position: (32, 66)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4500,
+          "loop": 18000,
+          "time": "13:23.6",
+          "trace_id": 363,
+          "text": "Position: (32, 65)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4501,
+          "loop": 18004,
+          "time": "13:23.8",
+          "trace_id": 363,
+          "text": "Position: (32, 65)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4502,
+          "loop": 18008,
+          "time": "13:23.9",
+          "trace_id": 363,
+          "text": "Position: (32, 64)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4503,
+          "loop": 18012,
+          "time": "13:24.1",
+          "trace_id": 363,
+          "text": "Position: (33, 64)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4504,
+          "loop": 18016,
+          "time": "13:24.3",
+          "trace_id": 363,
+          "text": "Position: (33, 63)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4505,
+          "loop": 18020,
+          "time": "13:24.5",
+          "trace_id": 363,
+          "text": "Position: (33, 62)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4506,
+          "loop": 18024,
+          "time": "13:24.6",
+          "trace_id": 363,
+          "text": "Position: (34, 62)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4507,
+          "loop": 18028,
+          "time": "13:24.8",
+          "trace_id": 363,
+          "text": "Position: (34, 61)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4508,
+          "loop": 18032,
+          "time": "13:25.0",
+          "trace_id": 363,
+          "text": "Position: (34, 60)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        },
+        {
+          "iteration": 4509,
+          "loop": 18036,
+          "time": "13:25.2",
+          "trace_id": 363,
+          "text": "Position: (35, 60)\nHealth: 135/135 (100%)\nState: moving to [(38, 52)]|flying"
+        }
+      ],
+      "automatic_wave": 12,
+      "wave_join_loop": 17428,
+      "garrison_commands": [
+        {
+          "sequence": 821,
+          "time": "12:21.6",
+          "base": [
+            49.5,
+            21.5
+          ],
+          "point": 1,
+          "xy": [
+            56.259033203125,
+            34.890625
+          ],
+          "after_wave_join": false
+        },
+        {
+          "sequence": 822,
+          "time": "12:21.6",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 1,
+          "xy": [
+            38.563232421875,
+            52.872314453125
+          ],
+          "after_wave_join": false
+        },
+        {
+          "sequence": 926,
+          "time": "13:09.5",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 3,
+          "xy": [
+            24.6591796875,
+            62.249267578125
+          ],
+          "after_wave_join": true
+        },
+        {
+          "sequence": 950,
+          "time": "13:21.4",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 1,
+          "xy": [
+            38.563232421875,
+            52.872314453125
+          ],
+          "after_wave_join": true
+        }
+      ]
+    },
+    {
+      "tag": 115343361,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 17106,
+      "born_time": "12:43.7",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 3,
+      "positions": [
+        [
+          18240,
+          29,
+          72
+        ]
+      ],
+      "commands": [
+        {
+          "loop": 17416,
+          "time": "12:57.5",
+          "game_event_index": 2981,
+          "sequence": 882,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            115343361
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 230437,
+              "y": 142912,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17416,
+          "time": "12:57.5",
+          "game_event_index": 2985,
+          "sequence": 883,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            115343361
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 157955,
+              "y": 216565,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17428,
+          "time": "12:58.0",
+          "game_event_index": 3008,
+          "sequence": 889,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            108527619,
+            112984065,
+            114556929,
+            114819073,
+            115081217,
+            115343361,
+            115867649,
+            116129793,
+            116391937,
+            116654081
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 120742,
+              "y": 295450,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17684,
+          "time": "13:09.5",
+          "game_event_index": 3112,
+          "sequence": 919,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            115343361
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 157955,
+              "y": 216565,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 17820,
+          "time": "13:15.5",
+          "game_event_index": 3183,
+          "sequence": 937,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            115343361
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 120742,
+              "y": 295450,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        }
+      ],
+      "scout_logs": [],
+      "death_loop": 18506,
+      "death_time": "13:46.2",
+      "lifetime_seconds": 62.5,
+      "death_xy": [
+        29,
+        72
+      ],
+      "killer_tag": 112459777,
+      "killer_type": "VikingFighter",
+      "killer_last_position": [
+        18480,
+        38,
+        71
+      ],
+      "trace_observations": [
+        {
+          "iteration": 4376,
+          "loop": 17504,
+          "time": "13:01.4",
+          "trace_id": 660,
+          "text": "Position: (33, 46)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4377,
+          "loop": 17508,
+          "time": "13:01.6",
+          "trace_id": 660,
+          "text": "Position: (33, 47)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4378,
+          "loop": 17512,
+          "time": "13:01.8",
+          "trace_id": 660,
+          "text": "Position: (33, 48)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4379,
+          "loop": 17516,
+          "time": "13:02.0",
+          "trace_id": 660,
+          "text": "Position: (33, 48)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4380,
+          "loop": 17520,
+          "time": "13:02.1",
+          "trace_id": 660,
+          "text": "Position: (32, 49)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4381,
+          "loop": 17524,
+          "time": "13:02.3",
+          "trace_id": 660,
+          "text": "Position: (32, 50)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4382,
+          "loop": 17528,
+          "time": "13:02.5",
+          "trace_id": 660,
+          "text": "Position: (32, 50)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4383,
+          "loop": 17532,
+          "time": "13:02.7",
+          "trace_id": 660,
+          "text": "Position: (32, 51)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4384,
+          "loop": 17536,
+          "time": "13:02.9",
+          "trace_id": 660,
+          "text": "Position: (32, 52)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4385,
+          "loop": 17540,
+          "time": "13:03.0",
+          "trace_id": 660,
+          "text": "Position: (32, 52)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4386,
+          "loop": 17544,
+          "time": "13:03.2",
+          "trace_id": 660,
+          "text": "Position: (32, 53)\nHealth: 135/135 (100%)\nState: attacking [(29, 72)]|flying"
+        },
+        {
+          "iteration": 4497,
+          "loop": 17988,
+          "time": "13:23.0",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4498,
+          "loop": 17992,
+          "time": "13:23.2",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4499,
+          "loop": 17996,
+          "time": "13:23.4",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4500,
+          "loop": 18000,
+          "time": "13:23.6",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4501,
+          "loop": 18004,
+          "time": "13:23.8",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4502,
+          "loop": 18008,
+          "time": "13:23.9",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4503,
+          "loop": 18012,
+          "time": "13:24.1",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4504,
+          "loop": 18016,
+          "time": "13:24.3",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4505,
+          "loop": 18020,
+          "time": "13:24.5",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4506,
+          "loop": 18024,
+          "time": "13:24.6",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4507,
+          "loop": 18028,
+          "time": "13:24.8",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4508,
+          "loop": 18032,
+          "time": "13:25.0",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4509,
+          "loop": 18036,
+          "time": "13:25.2",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4599,
+          "loop": 18396,
+          "time": "13:41.2",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: attacking [635]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4600,
+          "loop": 18400,
+          "time": "13:41.4",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: attacking [635]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4601,
+          "loop": 18404,
+          "time": "13:41.6",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: attacking [635]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4602,
+          "loop": 18408,
+          "time": "13:41.8",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 135/135 (100%)\nState: attacking [635]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4603,
+          "loop": 18412,
+          "time": "13:42.0",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 130/135 (96%)\nState: attacking [635]Battlecruiser|flying|under attack"
+        },
+        {
+          "iteration": 4604,
+          "loop": 18416,
+          "time": "13:42.1",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 125/135 (92%)\nState: attacking [635]Battlecruiser|flying|under attack"
+        },
+        {
+          "iteration": 4605,
+          "loop": 18420,
+          "time": "13:42.3",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 120/135 (88%)\nState: attacking [635]Battlecruiser|flying|under attack"
+        },
+        {
+          "iteration": 4606,
+          "loop": 18424,
+          "time": "13:42.5",
+          "trace_id": 660,
+          "text": "Position: (29, 72)\nHealth: 115/135 (85%)\nState: attacking [635]Battlecruiser|flying|under attack"
+        }
+      ],
+      "automatic_wave": 12,
+      "wave_join_loop": 17428,
+      "garrison_commands": [
+        {
+          "sequence": 882,
+          "time": "12:57.5",
+          "base": [
+            49.5,
+            21.5
+          ],
+          "point": 1,
+          "xy": [
+            56.259033203125,
+            34.890625
+          ],
+          "after_wave_join": false
+        },
+        {
+          "sequence": 883,
+          "time": "12:57.5",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 1,
+          "xy": [
+            38.563232421875,
+            52.872314453125
+          ],
+          "after_wave_join": false
+        },
+        {
+          "sequence": 919,
+          "time": "13:09.5",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 1,
+          "xy": [
+            38.563232421875,
+            52.872314453125
+          ],
+          "after_wave_join": true
+        }
+      ]
+    },
+    {
+      "tag": 111935490,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 17777,
+      "born_time": "13:13.6",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 4,
+      "positions": [
+        [
+          18240,
+          31,
+          65
+        ]
+      ],
+      "commands": [
+        {
+          "loop": 17904,
+          "time": "13:19.3",
+          "game_event_index": 3203,
+          "sequence": 942,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            111935490,
+            116916225,
+            117178369,
+            117440513,
+            117702657,
+            117964801,
+            118226945,
+            118489089,
+            118751233,
+            119799809
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 123861,
+              "y": 304990,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        }
+      ],
+      "scout_logs": [],
+      "death_loop": 18559,
+      "death_time": "13:48.5",
+      "lifetime_seconds": 34.91,
+      "death_xy": [
+        31,
+        65
+      ],
+      "killer_tag": 107479048,
+      "killer_type": "Battlecruiser",
+      "killer_last_position": [
+        18480,
+        38,
+        68
+      ],
+      "trace_observations": [
+        {
+          "iteration": 4497,
+          "loop": 17988,
+          "time": "13:23.0",
+          "trace_id": 789,
+          "text": "Position: (33, 46)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4498,
+          "loop": 17992,
+          "time": "13:23.2",
+          "trace_id": 789,
+          "text": "Position: (33, 47)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4499,
+          "loop": 17996,
+          "time": "13:23.4",
+          "trace_id": 789,
+          "text": "Position: (32, 48)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4500,
+          "loop": 18000,
+          "time": "13:23.6",
+          "trace_id": 789,
+          "text": "Position: (32, 48)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4501,
+          "loop": 18004,
+          "time": "13:23.8",
+          "trace_id": 789,
+          "text": "Position: (32, 49)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4502,
+          "loop": 18008,
+          "time": "13:23.9",
+          "trace_id": 789,
+          "text": "Position: (32, 50)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4503,
+          "loop": 18012,
+          "time": "13:24.1",
+          "trace_id": 789,
+          "text": "Position: (32, 50)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4504,
+          "loop": 18016,
+          "time": "13:24.3",
+          "trace_id": 789,
+          "text": "Position: (32, 51)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4505,
+          "loop": 18020,
+          "time": "13:24.5",
+          "trace_id": 789,
+          "text": "Position: (32, 52)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4506,
+          "loop": 18024,
+          "time": "13:24.6",
+          "trace_id": 789,
+          "text": "Position: (32, 53)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4507,
+          "loop": 18028,
+          "time": "13:24.8",
+          "trace_id": 789,
+          "text": "Position: (32, 53)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4508,
+          "loop": 18032,
+          "time": "13:25.0",
+          "trace_id": 789,
+          "text": "Position: (32, 54)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4509,
+          "loop": 18036,
+          "time": "13:25.2",
+          "trace_id": 789,
+          "text": "Position: (32, 55)\nHealth: 135/135 (100%)\nState: attacking [(30, 74)]|flying"
+        },
+        {
+          "iteration": 4599,
+          "loop": 18396,
+          "time": "13:41.2",
+          "trace_id": 789,
+          "text": "Position: (31, 65)\nHealth: 107/135 (79%)\nState: attacking [344]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4600,
+          "loop": 18400,
+          "time": "13:41.4",
+          "trace_id": 789,
+          "text": "Position: (31, 65)\nHealth: 107/135 (79%)\nState: attacking [344]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4601,
+          "loop": 18404,
+          "time": "13:41.6",
+          "trace_id": 789,
+          "text": "Position: (31, 65)\nHealth: 107/135 (79%)\nState: attacking [344]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4602,
+          "loop": 18408,
+          "time": "13:41.8",
+          "trace_id": 789,
+          "text": "Position: (31, 65)\nHealth: 107/135 (79%)\nState: attacking [344]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4603,
+          "loop": 18412,
+          "time": "13:42.0",
+          "trace_id": 789,
+          "text": "Position: (31, 65)\nHealth: 107/135 (79%)\nState: attacking [344]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4604,
+          "loop": 18416,
+          "time": "13:42.1",
+          "trace_id": 789,
+          "text": "Position: (31, 65)\nHealth: 107/135 (79%)\nState: attacking [344]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4605,
+          "loop": 18420,
+          "time": "13:42.3",
+          "trace_id": 789,
+          "text": "Position: (31, 65)\nHealth: 107/135 (79%)\nState: attacking [344]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4606,
+          "loop": 18424,
+          "time": "13:42.5",
+          "trace_id": 789,
+          "text": "Position: (31, 65)\nHealth: 107/135 (79%)\nState: attacking [344]Battlecruiser|flying"
+        }
+      ],
+      "automatic_wave": 13,
+      "wave_join_loop": 17904,
+      "garrison_commands": []
+    },
+    {
+      "tag": 115867651,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 18448,
+      "born_time": "13:43.6",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 5,
+      "positions": [],
+      "commands": [
+        {
+          "loop": 18880,
+          "time": "14:02.9",
+          "game_event_index": 3541,
+          "sequence": 1031,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            109576199,
+            110886935,
+            115867651,
+            118489100,
+            121896972
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetUnit": {
+              "m_targetUnitFlags": 111,
+              "m_timer": 0,
+              "m_tag": 71827462,
+              "m_snapshotUnitLink": 67,
+              "m_snapshotControlPlayerId": 2,
+              "m_snapshotUpkeepPlayerId": 2,
+              "m_snapshotPoint": {
+                "x": 84510,
+                "y": 235934,
+                "z": 32768
+              }
+            }
+          },
+          "flags": 33554688,
+          "target_tracker_type": "SCV"
+        },
+        {
+          "loop": 19292,
+          "time": "14:21.2",
+          "game_event_index": 3586,
+          "sequence": 1043,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            115867651
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 101004,
+              "y": 254973,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 19412,
+          "time": "14:26.6",
+          "game_event_index": 3608,
+          "sequence": 1049,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            22282243,
+            66322481,
+            73138205,
+            108527641,
+            109576199,
+            110886935,
+            111673359,
+            115867651,
+            118489100,
+            121896972
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 124850,
+              "y": 306121,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        }
+      ],
+      "scout_logs": [],
+      "death_loop": 19589,
+      "death_time": "14:34.5",
+      "lifetime_seconds": 50.94,
+      "death_xy": [
+        30,
+        74
+      ],
+      "killer_tag": 115605505,
+      "killer_type": "Battlecruiser",
+      "killer_last_position": [
+        18960,
+        35,
+        78
+      ],
+      "trace_observations": [
+        {
+          "iteration": 4673,
+          "loop": 18692,
+          "time": "13:54.5",
+          "trace_id": 949,
+          "text": "Position: (35, 33)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4674,
+          "loop": 18696,
+          "time": "13:54.6",
+          "trace_id": 949,
+          "text": "Position: (35, 33)\nHealth: 135/135 (100%)\nState: idle|flying"
+        },
+        {
+          "iteration": 4764,
+          "loop": 19056,
+          "time": "14:10.7",
+          "trace_id": 949,
+          "text": "Position: (16, 54)\nHealth: 135/135 (100%)\nState: moving to [(15, 58)]|flying"
+        },
+        {
+          "iteration": 4765,
+          "loop": 19060,
+          "time": "14:10.9",
+          "trace_id": 949,
+          "text": "Position: (16, 54)\nHealth: 135/135 (100%)\nState: moving to [(15, 58)]|flying"
+        },
+        {
+          "iteration": 4832,
+          "loop": 19328,
+          "time": "14:22.9",
+          "trace_id": 949,
+          "text": "Position: (19, 60)\nHealth: 135/135 (100%)\nState: moving to [(24, 62)]|flying"
+        },
+        {
+          "iteration": 4877,
+          "loop": 19508,
+          "time": "14:30.9",
+          "trace_id": 949,
+          "text": "Position: (30, 74)\nHealth: 135/135 (100%)\nState: attacking [608]VikingFighter|flying"
+        },
+        {
+          "iteration": 4878,
+          "loop": 19512,
+          "time": "14:31.1",
+          "trace_id": 949,
+          "text": "Position: (30, 74)\nHealth: 135/135 (100%)\nState: attacking [608]VikingFighter|flying"
+        }
+      ],
+      "automatic_wave": 16,
+      "wave_join_loop": 19412,
+      "garrison_commands": [
+        {
+          "sequence": 1043,
+          "time": "14:21.2",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 3,
+          "xy": [
+            24.6591796875,
+            62.249267578125
+          ],
+          "after_wave_join": false
+        }
+      ]
+    },
+    {
+      "tag": 108527641,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 19119,
+      "born_time": "14:13.5",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 6,
+      "positions": [],
+      "commands": [
+        {
+          "loop": 19292,
+          "time": "14:21.2",
+          "game_event_index": 3574,
+          "sequence": 1040,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            108527641
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 157955,
+              "y": 216565,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 19292,
+          "time": "14:21.2",
+          "game_event_index": 3598,
+          "sequence": 1046,
+          "event_kind": "SCommandManagerStateEvent",
+          "selected": [
+            108527641
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 230437,
+              "y": 142912,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 19412,
+          "time": "14:26.6",
+          "game_event_index": 3608,
+          "sequence": 1049,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            22282243,
+            66322481,
+            73138205,
+            108527641,
+            109576199,
+            110886935,
+            111673359,
+            115867651,
+            118489100,
+            121896972
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 124850,
+              "y": 306121,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        }
+      ],
+      "scout_logs": [],
+      "death_loop": 19629,
+      "death_time": "14:36.3",
+      "lifetime_seconds": 22.77,
+      "death_xy": [
+        49,
+        44
+      ],
+      "killer_tag": 12582914,
+      "killer_type": "Battlecruiser",
+      "killer_last_position": [
+        18960,
+        41,
+        74
+      ],
+      "trace_observations": [
+        {
+          "iteration": 4832,
+          "loop": 19328,
+          "time": "14:22.9",
+          "trace_id": 939,
+          "text": "Position: (39, 33)\nHealth: 135/135 (100%)\nState: moving to [(56, 34)]|flying"
+        },
+        {
+          "iteration": 4877,
+          "loop": 19508,
+          "time": "14:30.9",
+          "trace_id": 939,
+          "text": "Position: (49, 44)\nHealth: 135/135 (100%)\nState: attacking [476]Raven|flying"
+        },
+        {
+          "iteration": 4878,
+          "loop": 19512,
+          "time": "14:31.1",
+          "trace_id": 939,
+          "text": "Position: (49, 44)\nHealth: 135/135 (100%)\nState: attacking [476]Raven|flying"
+        }
+      ],
+      "automatic_wave": 16,
+      "wave_join_loop": 19412,
+      "garrison_commands": [
+        {
+          "sequence": 1040,
+          "time": "14:21.2",
+          "base": [
+            25.5,
+            45.5
+          ],
+          "point": 1,
+          "xy": [
+            38.563232421875,
+            52.872314453125
+          ],
+          "after_wave_join": false
+        },
+        {
+          "sequence": 1046,
+          "time": "14:21.2",
+          "base": [
+            49.5,
+            21.5
+          ],
+          "point": 1,
+          "xy": [
+            56.259033203125,
+            34.890625
+          ],
+          "after_wave_join": false
+        }
+      ]
+    },
+    {
+      "tag": 121110568,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 19790,
+      "born_time": "14:43.5",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 7,
+      "positions": [],
+      "commands": [
+        {
+          "loop": 19824,
+          "time": "14:45.0",
+          "game_event_index": 3624,
+          "sequence": 1053,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            121110568
+          ],
+          "ability": [
+            45,
+            0
+          ],
+          "target": {
+            "TargetUnit": {
+              "m_targetUnitFlags": 111,
+              "m_timer": 0,
+              "m_tag": 12582914,
+              "m_snapshotUnitLink": 79,
+              "m_snapshotControlPlayerId": 2,
+              "m_snapshotUpkeepPlayerId": 2,
+              "m_snapshotPoint": {
+                "x": 148295,
+                "y": 194400,
+                "z": 48128
+              }
+            }
+          },
+          "flags": 33554688,
+          "target_tracker_type": "Battlecruiser"
+        }
+      ],
+      "scout_logs": [],
+      "death_loop": 20104,
+      "death_time": "14:57.5",
+      "lifetime_seconds": 14.02,
+      "death_xy": [
+        40,
+        45
+      ],
+      "killer_tag": 107479048,
+      "killer_type": "Battlecruiser",
+      "killer_last_position": [
+        19920,
+        37,
+        51
+      ],
+      "trace_observations": [
+        {
+          "iteration": 4968,
+          "loop": 19872,
+          "time": "14:47.1",
+          "trace_id": 868,
+          "text": "Position: (25, 31)\nHealth: 135/135 (100%)\nState: attacking [213]Battlecruiser|flying"
+        },
+        {
+          "iteration": 4991,
+          "loop": 19964,
+          "time": "14:51.2",
+          "trace_id": 868,
+          "text": "Position: (34, 42)\nHealth: 135/135 (100%)\nState: attacking [213]Battlecruiser|flying"
+        }
+      ],
+      "garrison_commands": []
+    },
+    {
+      "tag": 121896995,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 20461,
+      "born_time": "15:13.4",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 8,
+      "positions": [],
+      "commands": [
+        {
+          "loop": 20604,
+          "time": "15:19.8",
+          "game_event_index": 3695,
+          "sequence": 1070,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            121896995
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 202752,
+              "y": 518144,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        }
+      ],
+      "scout_logs": [
+        {
+          "console_line": 20686,
+          "api_tag": 4416864291,
+          "iteration": 5151,
+          "target": [
+            49,
+            126
+          ]
+        }
+      ],
+      "death_loop": 20902,
+      "death_time": "15:33.1",
+      "lifetime_seconds": 19.69,
+      "death_xy": [
+        42,
+        82
+      ],
+      "killer_tag": 23855125,
+      "killer_type": "VikingFighter",
+      "killer_last_position": [
+        19920,
+        49,
+        88
+      ],
+      "trace_observations": [
+        {
+          "iteration": 5128,
+          "loop": 20512,
+          "time": "15:15.7",
+          "trace_id": 291,
+          "text": "Position: (23, 25)\nHealth: 135/135 (100%)\nState: moving to [(35, 33)]|flying"
+        },
+        {
+          "iteration": 5129,
+          "loop": 20516,
+          "time": "15:15.9",
+          "trace_id": 291,
+          "text": "Position: (23, 26)\nHealth: 135/135 (100%)\nState: moving to [(35, 33)]|flying"
+        },
+        {
+          "iteration": 5196,
+          "loop": 20784,
+          "time": "15:27.9",
+          "trace_id": 291,
+          "text": "Position: (39, 62)\nHealth: 135/135 (100%)\nState: moving to [(49, 126)]|flying"
+        }
+      ],
+      "garrison_commands": []
+    },
+    {
+      "tag": 109314051,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 21132,
+      "born_time": "15:43.4",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 9,
+      "positions": [],
+      "commands": [
+        {
+          "loop": 21272,
+          "time": "15:49.6",
+          "game_event_index": 3742,
+          "sequence": 1083,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            109314051
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 100352,
+              "y": 92160,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        },
+        {
+          "loop": 21372,
+          "time": "15:54.1",
+          "game_event_index": 3751,
+          "sequence": 1086,
+          "event_kind": "SCmdEvent",
+          "selected": [
+            109314051
+          ],
+          "ability": [
+            42,
+            0
+          ],
+          "target": {
+            "TargetPoint": {
+              "x": 104448,
+              "y": 186368,
+              "z": 32768
+            }
+          },
+          "flags": 33554688
+        }
+      ],
+      "scout_logs": [
+        {
+          "console_line": 21237,
+          "api_tag": 4404281347,
+          "iteration": 5318,
+          "target": [
+            24,
+            22
+          ]
+        },
+        {
+          "console_line": 21331,
+          "api_tag": 4404281347,
+          "iteration": 5343,
+          "target": [
+            25,
+            45
+          ]
+        }
+      ],
+      "death_loop": 21510,
+      "death_time": "16:00.3",
+      "lifetime_seconds": 16.88,
+      "death_xy": [
+        25,
+        44
+      ],
+      "killer_tag": 107479048,
+      "killer_type": "Battlecruiser",
+      "killer_last_position": [
+        20400,
+        47,
+        71
+      ],
+      "trace_observations": [
+        {
+          "iteration": 5332,
+          "loop": 21328,
+          "time": "15:52.1",
+          "trace_id": 351,
+          "text": "Position: (29, 27)\nHealth: 135/135 (100%)\nState: moving to [(24, 22)]|flying"
+        },
+        {
+          "iteration": 5355,
+          "loop": 21420,
+          "time": "15:56.3",
+          "trace_id": 351,
+          "text": "Position: (24, 29)\nHealth: 135/135 (100%)\nState: moving to [(25, 45)]|flying"
+        }
+      ],
+      "garrison_commands": []
+    },
+    {
+      "tag": 125829154,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 21803,
+      "born_time": "16:13.3",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 10,
+      "positions": [],
+      "commands": [],
+      "scout_logs": [],
+      "death_loop": 21976,
+      "death_time": "16:21.1",
+      "lifetime_seconds": 7.72,
+      "death_xy": [
+        35,
+        33
+      ],
+      "killer_tag": 35127298,
+      "killer_type": "Battlecruiser",
+      "killer_last_position": [
+        21840,
+        20,
+        35
+      ],
+      "trace_observations": [
+        {
+          "iteration": 5480,
+          "loop": 21920,
+          "time": "16:18.6",
+          "trace_id": 454,
+          "text": "Position: (32, 31)\nHealth: 39/135 (28%)\nState: moving to [(35, 33)]|flying|under attack"
+        }
+      ],
+      "garrison_commands": []
+    },
+    {
+      "tag": 125829174,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 22474,
+      "born_time": "16:43.3",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 11,
+      "positions": [],
+      "commands": [],
+      "scout_logs": [],
+      "death_loop": 22595,
+      "death_time": "16:48.7",
+      "lifetime_seconds": 5.4,
+      "death_xy": [
+        35,
+        27
+      ],
+      "killer_tag": 107479048,
+      "killer_type": "Battlecruiser",
+      "killer_last_position": [
+        22560,
+        40,
+        28
+      ],
+      "trace_observations": [
+        {
+          "iteration": 5642,
+          "loop": 22568,
+          "time": "16:47.5",
+          "trace_id": 471,
+          "text": "Position: (30, 26)\nHealth: 135/135 (100%)\nState: moving to [(56, 34)]|flying"
+        }
+      ],
+      "garrison_commands": []
+    },
+    {
+      "tag": 52691003,
+      "type": "VikingFighter",
+      "owner": 1,
+      "born_loop": 23145,
+      "born_time": "17:13.3",
+      "born_xy": [
+        16,
+        21
+      ],
+      "ordinal": 12,
+      "positions": [],
+      "commands": [],
+      "scout_logs": [],
+      "death_loop": 23258,
+      "death_time": "17:18.3",
+      "lifetime_seconds": 5.04,
+      "death_xy": [
+        33,
+        27
+      ],
+      "killer_tag": 107479048,
+      "killer_type": "Battlecruiser",
+      "killer_last_position": [
+        23040,
+        48,
+        30
+      ],
+      "garrison_commands": []
+    }
+  ],
+  "starport_commands": [
+    {
+      "loop": 15040,
+      "time": "11:11.4",
+      "game_event_index": 2619,
+      "sequence": 779,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        102,
+        0
+      ],
+      "target": {
+        "TargetPoint": {
+          "x": 143796,
+          "y": 135604,
+          "z": 32768
+        }
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 15092,
+      "time": "11:13.8",
+      "game_event_index": 2625,
+      "sequence": 781,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 15380,
+      "time": "11:26.6",
+      "game_event_index": 2654,
+      "sequence": 790,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 15560,
+      "time": "11:34.6",
+      "game_event_index": 2664,
+      "sequence": 793,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 16480,
+      "time": "12:15.7",
+      "game_event_index": 2758,
+      "sequence": 820,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 16660,
+      "time": "12:23.8",
+      "game_event_index": 2796,
+      "sequence": 830,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 18032,
+      "time": "13:25.0",
+      "game_event_index": 3305,
+      "sequence": 971,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 18036,
+      "time": "13:25.2",
+      "game_event_index": 3308,
+      "sequence": 972,
+      "event_kind": "SCommandManagerStateEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 18408,
+      "time": "13:41.8",
+      "game_event_index": 3439,
+      "sequence": 1003,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 19328,
+      "time": "14:22.9",
+      "game_event_index": 3605,
+      "sequence": 1048,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 19508,
+      "time": "14:30.9",
+      "game_event_index": 3611,
+      "sequence": 1050,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 20144,
+      "time": "14:59.3",
+      "game_event_index": 3659,
+      "sequence": 1060,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 20784,
+      "time": "15:27.9",
+      "game_event_index": 3714,
+      "sequence": 1075,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 20964,
+      "time": "15:35.9",
+      "game_event_index": 3724,
+      "sequence": 1078,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 21688,
+      "time": "16:08.2",
+      "game_event_index": 3780,
+      "sequence": 1094,
+      "event_kind": "SCmdEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        161,
+        4
+      ],
+      "target": {
+        "None": null
+      },
+      "flags": 33554688
+    },
+    {
+      "loop": 22264,
+      "time": "16:33.9",
+      "game_event_index": 3897,
+      "sequence": 1128,
+      "event_kind": "SCommandManagerStateEvent",
+      "selected": [
+        65536002
+      ],
+      "ability": [
+        102,
+        0
+      ],
+      "target": {
+        "TargetPoint": {
+          "x": 230437,
+          "y": 142912,
+          "z": 32768
+        }
+      },
+      "flags": 33554688
+    }
+  ],
+  "production_crosscheck": {
+    "trace_loops": [
+      15092,
+      15380,
+      15560,
+      16480,
+      16660,
+      18032,
+      18036,
+      18408,
+      19328,
+      19508,
+      20144,
+      20784,
+      20964,
+      21688
+    ],
+    "replay_loops": [
+      15092,
+      15380,
+      15560,
+      16480,
+      16660,
+      18032,
+      18036,
+      18408,
+      19328,
+      19508,
+      20144,
+      20784,
+      20964,
+      21688
+    ]
+  },
+  "trace_id_mapping": {
+    "814": 17301515,
+    "363": 112984065,
+    "660": 115343361,
+    "789": 111935490,
+    "949": 115867651,
+    "939": 108527641,
+    "868": 121110568,
+    "291": 121896995,
+    "351": 109314051,
+    "454": 125829154,
+    "471": 125829174
+  },
+  "trace_sha256": "518047262c3cd5122e86a3a1f37a5248dfcefd8abe47515856d0bf77be8a0574",
+  "wave_lifecycle_logs": [
+    "(SC2Worker pid=2431676) 2026-09-08 02:54:39 [default_player_Qwen3-30B] [INFO]: (4082) launch_total_attack: 已创建总攻波次 11，状态: GATHERING，集结点: (29, 73)，最低出击: 5。",
+    "(SC2Worker pid=2431676) 2026-09-08 02:55:19 [default_player_Qwen3-30B] [INFO]: (4357) launch_total_attack: 已创建总攻波次 12，状态: GATHERING，集结点: (29, 72)，最低出击: 5。",
+    "(SC2Worker pid=2431676) 2026-09-08 02:55:43 [default_player_Qwen3-30B] [INFO]: (4476) launch_total_attack: 已创建总攻波次 13，状态: GATHERING，集结点: (30, 74)，最低出击: 5。",
+    "(SC2Worker pid=2431676) 2026-09-08 02:56:31 [default_player_Qwen3-30B] [INFO]: (4627) manage_total_attack_groups: 总攻波次 12 已全灭。",
+    "(SC2Worker pid=2431676) 2026-09-08 02:56:32 [default_player_Qwen3-30B] [WARNING]: (4637) manage_total_attack_groups: 总攻波次 11: 集结后仅剩 1 单位，低于最低出击 5，取消本波等待补兵。",
+    "(SC2Worker pid=2431676) 2026-09-08 02:56:32 [default_player_Qwen3-30B] [INFO]: (4640) manage_total_attack_groups: 总攻波次 13 已全灭。",
+    "(SC2Worker pid=2431676) 2026-09-08 02:57:01 [default_player_Qwen3-30B] [INFO]: (4853) launch_total_attack: 已创建总攻波次 16，状态: GATHERING，集结点: (30, 74)，最低出击: 5。",
+    "(SC2Worker pid=2431676) 2026-09-08 02:57:23 [default_player_Qwen3-30B] [WARNING]: (4921) manage_total_attack_groups: 总攻波次 16: 集结后仅剩 1 单位，低于最低出击 5，取消本波等待补兵。"
+  ],
+  "defense_logs": [
+    "(SC2Worker pid=2431676) 2026-09-08 02:56:47 [default_player_Qwen3-30B] [INFO]: (4720) Automatic Defense: Assigned 5 new units to defend.",
+    "(SC2Worker pid=2431676) 2026-09-08 02:57:26 [default_player_Qwen3-30B] [INFO]: (4956) Automatic Defense: Assigned 1 new units to defend."
+  ],
+  "automatic_trigger_context": [
+    [
+      "(SC2Worker pid=2431676) [Auto-Attack] 后续波次触发！当前积累 10 >= 10",
+      "(SC2Worker pid=2431676) 2026-09-08 02:54:39 [default_player_Qwen3-30B] [INFO]: (4082) launch_total_attack: 收到总攻发起指令！...",
+      "(SC2Worker pid=2431676) 2026-09-08 02:54:39 [default_player_Qwen3-30B] [INFO]: (4082) launch_total_attack: 已创建总攻波次 11，状态: GATHERING，集结点: (29, 73)，最低出击: 5。"
+    ],
+    [
+      "(SC2Worker pid=2431676) [Auto-Attack] 后续波次触发！当前积累 10 >= 10",
+      "(SC2Worker pid=2431676) 2026-09-08 02:55:19 [default_player_Qwen3-30B] [INFO]: (4357) launch_total_attack: 收到总攻发起指令！...",
+      "(SC2Worker pid=2431676) 2026-09-08 02:55:19 [default_player_Qwen3-30B] [INFO]: (4357) launch_total_attack: 已创建总攻波次 12，状态: GATHERING，集结点: (29, 72)，最低出击: 5。"
+    ],
+    [
+      "(SC2Worker pid=2431676) [Auto-Attack] 后续波次触发！当前积累 10 >= 10",
+      "(SC2Worker pid=2431676) 2026-09-08 02:55:43 [default_player_Qwen3-30B] [INFO]: (4476) launch_total_attack: 收到总攻发起指令！...",
+      "(SC2Worker pid=2431676) 2026-09-08 02:55:43 [default_player_Qwen3-30B] [INFO]: (4476) launch_total_attack: 已创建总攻波次 13，状态: GATHERING，集结点: (30, 74)，最低出击: 5。"
+    ],
+    [
+      "(SC2Worker pid=2431676) [Auto-Attack] 后续波次触发！当前积累 10 >= 10",
+      "(SC2Worker pid=2431676) 2026-09-08 02:57:01 [default_player_Qwen3-30B] [INFO]: (4853) launch_total_attack: 收到总攻发起指令！...",
+      "(SC2Worker pid=2431676) 2026-09-08 02:57:01 [default_player_Qwen3-30B] [INFO]: (4853) launch_total_attack: 已创建总攻波次 16，状态: GATHERING，集结点: (30, 74)，最低出击: 5。"
+    ]
+  ],
+  "garrison_geometry": {
+    "centre_from_two_rallies": [
+      75.99965025954424,
+      73.99965025954424
+    ],
+    "points": [
+      {
+        "base": [
+          24.5,
+          22.5
+        ],
+        "point": 1,
+        "xy": [
+          35.10660171779821,
+          33.10660171779821
+        ]
+      },
+      {
+        "base": [
+          24.5,
+          22.5
+        ],
+        "point": 2,
+        "xy": [
+          28.035533905932738,
+          26.035533905932738
+        ]
+      },
+      {
+        "base": [
+          24.5,
+          22.5
+        ],
+        "point": 3,
+        "xy": [
+          19.196699141100893,
+          38.40990257669732
+        ]
+      },
+      {
+        "base": [
+          24.5,
+          22.5
+        ],
+        "point": 4,
+        "xy": [
+          40.40990257669732,
+          17.196699141100893
+        ]
+      },
+      {
+        "base": [
+          25.5,
+          45.5
+        ],
+        "point": 1,
+        "xy": [
+          38.56325759084457,
+          52.872333491862776
+        ]
+      },
+      {
+        "base": [
+          25.5,
+          45.5
+        ],
+        "point": 2,
+        "xy": [
+          29.854419196948193,
+          47.9574444972876
+        ]
+      },
+      {
+        "base": [
+          25.5,
+          45.5
+        ],
+        "point": 3,
+        "xy": [
+          24.65929530355951,
+          62.24942433677597
+        ]
+      },
+      {
+        "base": [
+          25.5,
+          45.5
+        ],
+        "point": 4,
+        "xy": [
+          39.40396228728507,
+          36.122909155086816
+        ]
+      },
+      {
+        "base": [
+          49.5,
+          21.5
+        ],
+        "point": 1,
+        "xy": [
+          56.2591680305302,
+          34.89080458878624
+        ]
+      },
+      {
+        "base": [
+          49.5,
+          21.5
+        ],
+        "point": 2,
+        "xy": [
+          51.753056010176735,
+          25.96360152959541
+        ]
+      },
+      {
+        "base": [
+          49.5,
+          21.5
+        ],
+        "point": 3,
+        "xy": [
+          39.488779426478864,
+          34.95457032492331
+        ]
+      },
+      {
+        "base": [
+          49.5,
+          21.5
+        ],
+        "point": 4,
+        "xy": [
+          66.27038860405133,
+          21.43623426386292
+        ]
+      }
+    ]
+  },
+  "decoder_versions": {
+    "s2protocol": "5.0.16.97563.0",
+    "mpyq": "0.2.5",
+    "sc2reader": "1.9.0"
+  },
+  "limitations": [
+    "Tracker death events identify the last killer, not every attacker or damage share.",
+    "Sparse positions and trace snapshots do not provide continuous damage/path history.",
+    "Commands are submitted actions; trace observations independently confirm sampled engine states.",
+    "Viking 12 has no live trace snapshot; its lifetime/death and production rally are recorded.",
+    "No intervention or win-rate causal estimate; runtime unchanged."
+  ]
+}

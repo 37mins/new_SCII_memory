@@ -1,0 +1,257 @@
+{
+  "run_id": "20260908-garrison-wave-ownership-v1-spb2-l6-g2-s2621640384-r1",
+  "manifest": {
+    "schema_version": 1,
+    "status": "running",
+    "started_at": "2026-09-08T04:53:56.210326+00:00",
+    "source_commit": "bba87e3a2e6d136d0c9facd031f827f06867faac",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_source": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "bo_path": "/root/new-scii-garrison-wave-20260908/code-bba87e3/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "evaluation",
+    "source_files_sha256": {
+      "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+      "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+      "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "b6994c43da70ab21407e3ec20fb4538f1dbd2923172e8a5051a51e0e0944f305",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "edbf08227eb325e01c6362f8c933d52bd2f1d520d93f7c4dc19c421b85ace5c1",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "6b5d474f90b1a3a9d7a641c92f3379b9d936e14aa7102d1f1717545093056704",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+    },
+    "target_steps": 1,
+    "training_goal_global_steps": 1,
+    "resume_from_path": null,
+    "host": "hpc",
+    "python": "3.12.3",
+    "gpu_selection": "1",
+    "world_size": 1,
+    "container_image_id": null,
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": "0.4.0",
+      "moba": null
+    }
+  },
+  "result": {
+    "status": "failed",
+    "ended_at": "2026-09-08T04:59:53.693523+00:00",
+    "mode": "evaluation",
+    "process_exit_code": 1,
+    "training_updates": 0,
+    "metrics": {},
+    "metrics_finite": false,
+    "response_record_count": 1,
+    "evaluable_action_count": 0,
+    "valid_evaluable_action_count": 0,
+    "replays": {
+      "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_04-55-35/replay.SC2Replay": "5b173118a7d2b0cc1a567854e048a511a859de4ff3e345737ac19c945534037b"
+    },
+    "console_sha256": "1456c3154b47d61c68ce8460c16235c28f2d2881f6172b788d8686084197527c",
+    "episode_outcomes": {
+      "trajectories": 1,
+      "natural_games": 1,
+      "wins": 1,
+      "defeats": 0,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 1.0,
+      "outcomes": [
+        {
+          "reset_index": 0,
+          "env_index": 0,
+          "decision_count": 1,
+          "step_index": 0,
+          "policy_decision_count": 0,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20.0
+        }
+      ]
+    },
+    "natural_match_completed": true,
+    "termination_evidence": "game_result"
+  },
+  "seeds": [
+    {
+      "base_seed": 1000,
+      "reset_index": 0,
+      "seeds": [
+        2621640384
+      ]
+    }
+  ],
+  "consumed_model_answers": 0,
+  "cumulative_environment_reward": 20.0,
+  "valid_evaluable_answers": 0,
+  "evaluable_answers": 0,
+  "raw_response_frequency": {},
+  "first_answers": [],
+  "skipped": [],
+  "executor_action_records": {
+    "COMMANDCENTERTRAIN_SCV": 36,
+    "TERRANBUILD_SUPPLYDEPOT": 10,
+    "TERRANBUILD_COMMANDCENTER": 1,
+    "TERRANBUILD_BARRACKS": 7,
+    "UPGRADETOORBITAL_ORBITALCOMMAND": 2,
+    "BARRACKSTRAIN_MARINE": 99,
+    "TERRANBUILD_BUNKER": 1,
+    "TERRANBUILD_REFINERY": 2,
+    "TERRANBUILD_ENGINEERINGBAY": 1,
+    "BUILD_TECHLAB_BARRACKS": 5,
+    "BUILD_REACTOR_BARRACKS": 3,
+    "TERRANBUILD_FACTORY": 1,
+    "TERRANBUILD_MISSILETURRET": 1,
+    "BUILD_TECHLAB_FACTORY": 3,
+    "FACTORYTRAIN_SIEGETANK": 6,
+    "BARRACKSTRAIN_MARAUDER": 4
+  },
+  "replay": {
+    "build": 75689,
+    "game_seconds": 557.1428571428572,
+    "own_born_including_initial": {
+      "BeaconArmy": 1,
+      "BeaconDefend": 1,
+      "BeaconAttack": 1,
+      "BeaconHarass": 1,
+      "BeaconIdle": 1,
+      "BeaconAuto": 1,
+      "BeaconDetect": 1,
+      "BeaconScout": 1,
+      "BeaconClaim": 1,
+      "BeaconExpand": 1,
+      "BeaconRally": 1,
+      "BeaconCustom1": 1,
+      "BeaconCustom2": 1,
+      "BeaconCustom3": 1,
+      "BeaconCustom4": 1,
+      "CommandCenter": 1,
+      "SCV": 46,
+      "Marine": 97,
+      "MULE": 14,
+      "SiegeTank": 3,
+      "Marauder": 3
+    },
+    "own_construction_started": {
+      "SupplyDepot": 18,
+      "CommandCenter": 1,
+      "Barracks": 8,
+      "Bunker": 1,
+      "Refinery": 2,
+      "EngineeringBay": 1,
+      "BarracksTechLab": 5,
+      "BarracksReactor": 3,
+      "Factory": 3,
+      "MissileTurret": 2,
+      "FactoryTechLab": 3
+    },
+    "own_construction_completed": {
+      "SupplyDepot": 18,
+      "Barracks": 8,
+      "CommandCenter": 1,
+      "Bunker": 1,
+      "Refinery": 2,
+      "EngineeringBay": 1,
+      "BarracksTechLab": 5,
+      "BarracksReactor": 3,
+      "Factory": 3,
+      "MissileTurret": 2,
+      "FactoryTechLab": 3
+    },
+    "own_deaths": {
+      "MULE": 11,
+      "SCV": 1,
+      "Marine": 43
+    },
+    "killers_by_victim_type": {
+      "MULE": {
+        "OrbitalCommand": 11
+      },
+      "SCV": {
+        "Marine": 1
+      },
+      "Marine": {
+        "Marine": 9,
+        "VikingAssault": 32,
+        "SCV": 2
+      }
+    },
+    "upgrades": [
+      "SprayTerran",
+      "SprayTerran",
+      "SprayTerran",
+      "SprayTerran"
+    ],
+    "final_stats": {
+      "game_seconds": 557.0089285714286,
+      "m_scoreValueMineralsCurrent": 65,
+      "m_scoreValueVespeneCurrent": 272,
+      "m_scoreValueMineralsCollectionRate": 1959,
+      "m_scoreValueVespeneCollectionRate": 313,
+      "m_scoreValueWorkersActiveCount": 45,
+      "m_scoreValueMineralsUsedInProgressArmy": 350,
+      "m_scoreValueMineralsUsedInProgressEconomy": 50,
+      "m_scoreValueMineralsUsedInProgressTechnology": 0,
+      "m_scoreValueVespeneUsedInProgressArmy": 150,
+      "m_scoreValueVespeneUsedInProgressEconomy": 0,
+      "m_scoreValueVespeneUsedInProgressTechnology": 0,
+      "m_scoreValueMineralsUsedCurrentArmy": 3450,
+      "m_scoreValueMineralsUsedCurrentEconomy": 5300,
+      "m_scoreValueMineralsUsedCurrentTechnology": 2625,
+      "m_scoreValueVespeneUsedCurrentArmy": 450,
+      "m_scoreValueVespeneUsedCurrentEconomy": 0,
+      "m_scoreValueVespeneUsedCurrentTechnology": 650,
+      "m_scoreValueMineralsLostArmy": 2150,
+      "m_scoreValueMineralsLostEconomy": 50,
+      "m_scoreValueMineralsLostTechnology": 0,
+      "m_scoreValueVespeneLostArmy": 0,
+      "m_scoreValueVespeneLostEconomy": 0,
+      "m_scoreValueVespeneLostTechnology": 0,
+      "m_scoreValueMineralsKilledArmy": 3300,
+      "m_scoreValueMineralsKilledEconomy": 4050,
+      "m_scoreValueMineralsKilledTechnology": 850,
+      "m_scoreValueVespeneKilledArmy": 1425,
+      "m_scoreValueVespeneKilledEconomy": 0,
+      "m_scoreValueVespeneKilledTechnology": 350,
+      "m_scoreValueFoodUsed": 499712,
+      "m_scoreValueFoodMade": 712704,
+      "m_scoreValueMineralsUsedActiveForces": 3450,
+      "m_scoreValueVespeneUsedActiveForces": 450,
+      "m_scoreValueMineralsFriendlyFireArmy": 0,
+      "m_scoreValueMineralsFriendlyFireEconomy": 0,
+      "m_scoreValueMineralsFriendlyFireTechnology": 0,
+      "m_scoreValueVespeneFriendlyFireArmy": 0,
+      "m_scoreValueVespeneFriendlyFireEconomy": 0,
+      "m_scoreValueVespeneFriendlyFireTechnology": 0
+    }
+  },
+  "artifact_sha256": {
+    "manifest.json": "0c25ebdae7bc4d0728f4db8c92a6e44b27818880e7c41bd855a9c5286ea85a6b",
+    "effective_config.json": "e7170e2b12b2b6114bc572cc77942c9a5ec8c25899bd805f9076382a8600f3da",
+    "result.json": "242e93e3b774494307a7e11c5844939f73dbc718692511d28f6c14081bc509b6",
+    ".done": "242e93e3b774494307a7e11c5844939f73dbc718692511d28f6c14081bc509b6",
+    "evaluation_seeds.jsonl": "aee94d25ef459decb70bf3f9657cf3a29e575a78b2e8641f8d501f8bdb462179",
+    "prompt_response.jsonl": "80993bf1e464ee2f76eaf6a8f0a22a8d2bda01973d1734f4e65ad4fcec1622f6",
+    "episode_outcomes.jsonl": "219c52dc444550599e697ca67bc7824545f41c100c3ffe17aa9b047a158cb411",
+    "console.log": "1456c3154b47d61c68ce8460c16235c28f2d2881f6172b788d8686084197527c",
+    "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_04-55-35/trace.json": "41d7853c30e6026764719e0b59373402764bdc8f1ea88ced5cd0369ae084b361",
+    "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_04-55-35/replay.SC2Replay": "5b173118a7d2b0cc1a567854e048a511a859de4ff3e345737ac19c945534037b"
+  },
+  "caveats": "One seed, one game per arm; replay owner 1 is our first player. Born SCVs include the initial 12. Executor records are commands, not production. Reward sums all environment interactions including the terminal poll; no-policy games must not be excluded.",
+  "authoritative_server_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260908-garrison-wave-ownership-v1/runs/20260908-garrison-wave-ownership-v1-spb2-l6-g2-s2621640384-r1",
+  "node": "sc2-a100-44"
+}

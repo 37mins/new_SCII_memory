@@ -1,0 +1,181 @@
+{
+  "node": "43",
+  "started_utc": "2026-09-11T09:42:44Z",
+  "stopped": [
+    {
+      "pid": 3732416,
+      "ppid": 1,
+      "state": "S",
+      "start_ticks": "630237098",
+      "args": [
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII/Versions/Base75689/SC2_x64",
+        "-listen",
+        "127.0.0.1",
+        "-port",
+        "41549",
+        "-dataDir",
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII",
+        "-tempDir",
+        "/dev/shm/sc2_feedback_rl4_B_0911_r1/SC2_zah9o17m",
+        "-displayMode",
+        "0",
+        "-verbose",
+        ""
+      ]
+    },
+    {
+      "pid": 3732419,
+      "ppid": 1,
+      "state": "S",
+      "start_ticks": "630237100",
+      "args": [
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII/Versions/Base75689/SC2_x64",
+        "-listen",
+        "127.0.0.1",
+        "-port",
+        "44333",
+        "-dataDir",
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII",
+        "-tempDir",
+        "/dev/shm/sc2_feedback_rl4_B_0911_r1/SC2_puoceq6o",
+        "-displayMode",
+        "0",
+        "-verbose",
+        ""
+      ]
+    },
+    {
+      "pid": 3732420,
+      "ppid": 1,
+      "state": "S",
+      "start_ticks": "630237101",
+      "args": [
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII/Versions/Base75689/SC2_x64",
+        "-listen",
+        "127.0.0.1",
+        "-port",
+        "45687",
+        "-dataDir",
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII",
+        "-tempDir",
+        "/dev/shm/sc2_feedback_rl4_B_0911_r1/SC2_vnbid5aa",
+        "-displayMode",
+        "0",
+        "-verbose",
+        ""
+      ]
+    },
+    {
+      "pid": 3732421,
+      "ppid": 1,
+      "state": "S",
+      "start_ticks": "630237101",
+      "args": [
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII/Versions/Base75689/SC2_x64",
+        "-listen",
+        "127.0.0.1",
+        "-port",
+        "35633",
+        "-dataDir",
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII",
+        "-tempDir",
+        "/dev/shm/sc2_feedback_rl4_B_0911_r1/SC2_1a1qskdu",
+        "-displayMode",
+        "0",
+        "-verbose",
+        ""
+      ]
+    },
+    {
+      "pid": 3732422,
+      "ppid": 1,
+      "state": "S",
+      "start_ticks": "630237101",
+      "args": [
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII/Versions/Base75689/SC2_x64",
+        "-listen",
+        "127.0.0.1",
+        "-port",
+        "39959",
+        "-dataDir",
+        "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/sc2/StarCraftII",
+        "-tempDir",
+        "/dev/shm/sc2_feedback_rl4_B_0911_r1/SC2_f46lglqp",
+        "-displayMode",
+        "0",
+        "-verbose",
+        ""
+      ]
+    }
+  ],
+  "removed": [
+    {
+      "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r1/checkpoints/global_step_4/actor/model_world_size_4_rank_0.pt",
+      "bytes": 3736491227,
+      "allocated_bytes": 3736498176,
+      "recoverable": false
+    },
+    {
+      "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r1/checkpoints/global_step_4/actor/model_world_size_4_rank_1.pt",
+      "bytes": 3676188507,
+      "allocated_bytes": 3676192768,
+      "recoverable": false
+    },
+    {
+      "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r1/checkpoints/global_step_4/actor/model_world_size_4_rank_2.pt",
+      "bytes": 3246120960,
+      "allocated_bytes": 3246125056,
+      "recoverable": false
+    },
+    {
+      "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r1/checkpoints/global_step_4/actor/model_world_size_4_rank_3.pt",
+      "bytes": 3465727531,
+      "allocated_bytes": 3465732096,
+      "recoverable": false
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_A_0911_r1",
+      "allocated_bytes": 861143040,
+      "recoverable": "diagnostics archived; compilation caches regenerable"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_B_0911_r1",
+      "allocated_bytes": 1108283392,
+      "recoverable": "diagnostics archived; compilation caches regenerable"
+    }
+  ],
+  "archives": [
+    {
+      "path": "/root/new-scii-execution-feedback-20260911/cleanup-20260911-r1/sc2_feedback_rl4_A_0911_r1-diagnostics.tar.gz",
+      "sha256": "82449291e1672e5906c1dfef499d8d28aa1a88e1452463d8698456bb9f2a09d8",
+      "bytes": 5549033,
+      "members": 338
+    },
+    {
+      "path": "/root/new-scii-execution-feedback-20260911/cleanup-20260911-r1/sc2_feedback_rl4_B_0911_r1-diagnostics.tar.gz",
+      "sha256": "ede064d0b5931f96629eb3863faeeeda680f9ae55151165e130208e172aab972",
+      "bytes": 5379937,
+      "members": 475
+    }
+  ],
+  "verified_unusable_checkpoint": {
+    "checkpoints/global_step_4/actor/model_world_size_4_rank_0.pt": {
+      "bytes": 3736491227,
+      "sha256": "1b75a6ec19c639be64aa2aee92669decdccd1cf6f6c1087b931e060694da5704"
+    },
+    "checkpoints/global_step_4/actor/model_world_size_4_rank_1.pt": {
+      "bytes": 3676188507,
+      "sha256": "aa878bf82c7d95bf50669a3c4a5dae43b626b25d607944d6291da1d7c61acda5"
+    },
+    "checkpoints/global_step_4/actor/model_world_size_4_rank_2.pt": {
+      "bytes": 3246120960,
+      "sha256": "4fdce50189132249a1cb16b0fb904fd8a1d9c129da1f41bbeb4e20e69cde59c0"
+    },
+    "checkpoints/global_step_4/actor/model_world_size_4_rank_3.pt": {
+      "bytes": 3465727531,
+      "sha256": "1de40a783076e76cd0274c0b8c3588fd749ea3db3d2a31ad730c844fe1bb4f23"
+    }
+  },
+  "finished_utc": "2026-09-11T09:43:05Z",
+  "all_targets_absent": true
+}

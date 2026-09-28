@@ -1,0 +1,1034 @@
+{
+  "audited_at": "2026-09-16T02:23:24.995123+00:00",
+  "scope": "Existing log/source audit, no model/GPU; reused credited_episode and excluded completed-game placeholders",
+  "run_id": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r2",
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r2",
+  "runtime_sha": "2e2cf8b4bda86edb46d92f84026ee3a924ab7f11",
+  "source_sha256": {
+    "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+    "gigpo/core_gigpo.py": "f135bd272518b49a58762da3474e2d4bc90906b053f1ae820d8fb05c2064148b",
+    "verl/workers/actor/dp_actor.py": "ae7f74e8d388b3f3fc582d17b26a10e31712b5757ceb941bee4dd205ed7d09b1",
+    "verl/trainer/ppo/sc2_task_signal.py": "b81deb2c289fbb4473cdec1c8876d3c0059b6b9aee44c512caeb6909b4e65bb7",
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/base_player.py": "9dceceb8b97a0c129d69a6f5558379002954db3aa05bf2d36ff013402edb8f8b"
+  },
+  "config": {
+    "actor_rollout_ref.actor.optim.lr": "1e-6",
+    "actor_rollout_ref.actor.kl_loss_coef": "0.01",
+    "actor_rollout_ref.actor.entropy_coeff": "0.001",
+    "algorithm.gamma": "0.95",
+    "algorithm.gigpo.step_advantage_w": "1.0",
+    "algorithm.gigpo.mode": "mean_norm",
+    "env.history_length": "0",
+    "trainer.sc2_skip_zero_signal": "False"
+  },
+  "result": {
+    "status": "failed",
+    "ended_at": "2026-09-15T16:34:17.243828+00:00",
+    "process_exit_code": 1,
+    "completed_steps": 3,
+    "last_global_step": 7,
+    "metrics_finite": true,
+    "checkpoint_complete": false
+  },
+  "model_optimizer_restore": true,
+  "batches": [
+    {
+      "global_step": 5,
+      "seed": 1098341402,
+      "wins": 6,
+      "mean_reward": 2.9437499999999996,
+      "unique_queries_by_call": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+      },
+      "answer_variants": [
+        {
+          "call": 1,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "envs": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "outcomes": [
+            "Defeat",
+            "Victory",
+            "Victory",
+            "Victory",
+            "Victory",
+            "Defeat",
+            "Victory",
+            "Victory"
+          ]
+        },
+        {
+          "call": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "envs": [
+            0
+          ],
+          "outcomes": [
+            "Defeat"
+          ]
+        },
+        {
+          "call": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "envs": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "outcomes": [
+            "Victory",
+            "Victory",
+            "Victory",
+            "Victory",
+            "Victory",
+            "Victory"
+          ]
+        },
+        {
+          "call": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "envs": [
+            5
+          ],
+          "outcomes": [
+            "Defeat"
+          ]
+        },
+        {
+          "call": 3,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 1\n- marauder x 4\n- commandcenter x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 50\n- mule x 6\n</answer>",
+          "envs": [
+            5
+          ],
+          "outcomes": [
+            "Defeat"
+          ]
+        }
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 1098341402,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 1,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 9,
+              "query_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+              "answer_sha256": "f7460b26621faaa30d7aad20dac1d2a3de02b70a15106e79b695c504b7fcd972",
+              "time": "04:21",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 1,
+          "seed": 1098341402,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "source_line": 2,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 10,
+              "query_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+              "answer_sha256": "37b841ac6744318796fb352e17bee1351c66926e70be125e5633ce9c3aff4d90",
+              "time": "04:21",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 2,
+          "seed": 1098341402,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "source_line": 3,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 11,
+              "query_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+              "answer_sha256": "37b841ac6744318796fb352e17bee1351c66926e70be125e5633ce9c3aff4d90",
+              "time": "04:21",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 3,
+          "seed": 1098341402,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "source_line": 4,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 12,
+              "query_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+              "answer_sha256": "37b841ac6744318796fb352e17bee1351c66926e70be125e5633ce9c3aff4d90",
+              "time": "04:21",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 4,
+          "seed": 1098341402,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "source_line": 5,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 13,
+              "query_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+              "answer_sha256": "37b841ac6744318796fb352e17bee1351c66926e70be125e5633ce9c3aff4d90",
+              "time": "04:21",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 5,
+          "seed": 1098341402,
+          "outcome": "Defeat",
+          "reward": -50,
+          "calls": [
+            {
+              "source_line": 6,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 14,
+              "query_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+              "answer_sha256": "32f11794def092b6b9c0f3543e93808a3e783c194f41f1cc3a3ef5f523e00d88",
+              "time": "04:21",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 22,
+              "query_sha256": "f35abb23d26a92f75b095e17005e4b6ed71d74f94f607624836d8e6b9785acf7",
+              "answer_sha256": "a41ba3bec7c3ae6e265b0a9a70272e276e5945d0a8fda5cf2b249940ff4f344e",
+              "time": "08:04",
+              "valid": false,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 6,
+          "seed": 1098341402,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "source_line": 7,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 15,
+              "query_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+              "answer_sha256": "37b841ac6744318796fb352e17bee1351c66926e70be125e5633ce9c3aff4d90",
+              "time": "04:21",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 7,
+          "seed": 1098341402,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "source_line": 8,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 16,
+              "query_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+              "answer_sha256": "37b841ac6744318796fb352e17bee1351c66926e70be125e5633ce9c3aff4d90",
+              "time": "04:21",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        }
+      ],
+      "signal": {
+        "has_task_signal": true,
+        "signal_kind": "episode_score_difference",
+        "episode_return_varies": true,
+        "episode_score_varies": true,
+        "step_groups_with_score_variation": 2,
+        "max_abs_task_advantage": 78.90312194824219,
+        "real_responses": 17,
+        "effective_tokens": 824,
+        "episode_returns": {
+          "e449fe88-89e9-4b3c-8e31-8575a41cba95": -49.45000076293945,
+          "b32da23b-9ae8-4637-a881-8c4698d91f9b": 20.5,
+          "d46cbcbf-dae6-486c-aece-0ae7a02f2944": 20.5,
+          "e3190ce9-eae5-4206-bc10-2997b4c7602f": 20.5,
+          "a109d324-d6f7-4f8c-8e84-7e583b37e0cd": 20.5,
+          "0138c0bf-debd-4b89-adc3-a33739af636e": -50,
+          "f4cd20b0-b7a9-4ac8-acbb-f9c95f866ccf": 20.5,
+          "64e71fd2-3148-45fc-92d3-461d8812cdce": 20.5
+        },
+        "criterion": "grouped_score_variation_and_nonzero_GiGPO_before_padding_v2",
+        "collection_index": 1,
+        "attempt": 1,
+        "pending_global_step": 5,
+        "reset_index": 0,
+        "sampled_games": 8,
+        "action": "accept",
+        "attempt_limit_reached": true,
+        "total_limit_reached": false,
+        "source_line": 1
+      },
+      "metrics": {
+        "actor/grad_norm": 107.756,
+        "actor/pg_loss": -0.041,
+        "actor/kl_loss": 0.01,
+        "actor/entropy_loss": 0.034,
+        "response_length/clip_ratio": 0
+      }
+    },
+    {
+      "global_step": 6,
+      "seed": 42613,
+      "wins": 0,
+      "mean_reward": -49.382,
+      "unique_queries_by_call": {
+        "1": 1,
+        "2": 1
+      },
+      "answer_variants": [
+        {
+          "call": 1,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "envs": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "outcomes": [
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat"
+          ]
+        },
+        {
+          "call": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "envs": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "outcomes": [
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat"
+          ]
+        }
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 42613,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": [
+            {
+              "source_line": 25,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 33,
+              "query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 1,
+          "seed": 42613,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": [
+            {
+              "source_line": 26,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 34,
+              "query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 2,
+          "seed": 42613,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": [
+            {
+              "source_line": 27,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 35,
+              "query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 3,
+          "seed": 42613,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": [
+            {
+              "source_line": 28,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 36,
+              "query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 4,
+          "seed": 42613,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": [
+            {
+              "source_line": 29,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 37,
+              "query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 5,
+          "seed": 42613,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": [
+            {
+              "source_line": 30,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 38,
+              "query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 6,
+          "seed": 42613,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": [
+            {
+              "source_line": 31,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 39,
+              "query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 7,
+          "seed": 42613,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": [
+            {
+              "source_line": 32,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 40,
+              "query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        }
+      ],
+      "signal": {
+        "has_task_signal": false,
+        "signal_kind": "reduction_residual_only",
+        "episode_return_varies": false,
+        "episode_score_varies": false,
+        "step_groups_with_score_variation": 0,
+        "max_abs_task_advantage": 0.0000057220458984375,
+        "real_responses": 16,
+        "effective_tokens": 752,
+        "episode_returns": {
+          "8a079cf3-92b8-4866-9336-41ac3ecd9e9a": -49.38199996948242,
+          "a25c3699-0d31-4535-bb5b-e1e922369d8a": -49.38199996948242,
+          "4effe82f-afe1-4361-b7e2-813495cb1eb9": -49.38199996948242,
+          "23346e4e-9a2b-4cea-bd00-6c38c6784d38": -49.38199996948242,
+          "686e1b59-d1db-401c-acf2-fa350e86afca": -49.38199996948242,
+          "0d9632e2-4b2d-414d-952f-d2c56256b3b9": -49.38199996948242,
+          "ef25cbf6-6d91-49b8-a1b1-b213d948228a": -49.38199996948242,
+          "e2d6c13b-0a52-43bd-b1dd-d44b44f85b3e": -49.38199996948242
+        },
+        "criterion": "grouped_score_variation_and_nonzero_GiGPO_before_padding_v2",
+        "collection_index": 2,
+        "attempt": 1,
+        "pending_global_step": 6,
+        "reset_index": 1,
+        "sampled_games": 16,
+        "action": "accept",
+        "attempt_limit_reached": true,
+        "total_limit_reached": false,
+        "source_line": 2
+      },
+      "metrics": {
+        "actor/grad_norm": 0.005,
+        "actor/pg_loss": 0,
+        "actor/kl_loss": 0.012,
+        "actor/entropy_loss": 0.01,
+        "response_length/clip_ratio": 0
+      }
+    },
+    {
+      "global_step": 7,
+      "seed": 17089,
+      "wins": 0,
+      "mean_reward": -49.45,
+      "unique_queries_by_call": {
+        "1": 1,
+        "2": 1
+      },
+      "answer_variants": [
+        {
+          "call": 1,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "envs": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "outcomes": [
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat"
+          ]
+        },
+        {
+          "call": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "envs": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "outcomes": [
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat",
+            "Defeat"
+          ]
+        }
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 17089,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 41,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 49,
+              "query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 1,
+          "seed": 17089,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 42,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 50,
+              "query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 2,
+          "seed": 17089,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 43,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 51,
+              "query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 3,
+          "seed": 17089,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 44,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 52,
+              "query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 4,
+          "seed": 17089,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 45,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 53,
+              "query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 5,
+          "seed": 17089,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 46,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 54,
+              "query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 6,
+          "seed": 17089,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 47,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 55,
+              "query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        },
+        {
+          "env": 7,
+          "seed": 17089,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "source_line": 48,
+              "query_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "answer_sha256": "74ebd44c58998107b6142d2c791128e392c91ec74fe81f61e846a8b5f3ed4426",
+              "time": "00:00",
+              "valid": true,
+              "projected_equals_raw": true
+            },
+            {
+              "source_line": 56,
+              "query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+              "answer_sha256": "448c4f48bf0f255f39036d14f31e7b1c39d738492170cfcc76dc17a744594fac",
+              "time": "04:09",
+              "valid": true,
+              "projected_equals_raw": true
+            }
+          ]
+        }
+      ],
+      "signal": {
+        "has_task_signal": false,
+        "signal_kind": "reduction_residual_only",
+        "episode_return_varies": false,
+        "episode_score_varies": false,
+        "step_groups_with_score_variation": 0,
+        "max_abs_task_advantage": 0.0000057220458984375,
+        "real_responses": 16,
+        "effective_tokens": 752,
+        "episode_returns": {
+          "8fad18e9-0d65-4aa2-bd1b-22ce118729a5": -49.45000076293945,
+          "02bdc3be-0a74-4b7e-9fcc-5d4cb35f7529": -49.45000076293945,
+          "207ec649-f45c-42ec-a885-c9c4f58d6a49": -49.45000076293945,
+          "4f8a524a-94d8-41b6-8023-3a79aa12b3ac": -49.45000076293945,
+          "8ff12d8c-cc94-42e5-8d10-58559024f020": -49.45000076293945,
+          "03f4bd54-c4c4-40ed-85f0-38d2bca5f153": -49.45000076293945,
+          "4b22b795-549f-49ef-8313-c87b3df84491": -49.45000076293945,
+          "10cfc834-d5c1-415c-92dc-21c82895e83a": -49.45000076293945
+        },
+        "criterion": "grouped_score_variation_and_nonzero_GiGPO_before_padding_v2",
+        "collection_index": 3,
+        "attempt": 1,
+        "pending_global_step": 7,
+        "reset_index": 2,
+        "sampled_games": 24,
+        "action": "accept",
+        "attempt_limit_reached": true,
+        "total_limit_reached": false,
+        "source_line": 3
+      },
+      "metrics": {
+        "actor/grad_norm": 0.003,
+        "actor/pg_loss": 0,
+        "actor/kl_loss": 0.009,
+        "actor/entropy_loss": 0.007,
+        "response_length/clip_ratio": 0
+      }
+    }
+  ],
+  "excluded_placeholder_rows": 7,
+  "incomplete_reset": 3,
+  "incomplete_seed": 3236598124,
+  "historical_same_seed_runs": [
+    {
+      "run_id": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1",
+      "sha": "0cccaa90ea8e7852e7601391c404b656b82889c0",
+      "batches": [
+        {
+          "seed": 1098341402,
+          "games": 8,
+          "wins": 7
+        },
+        {
+          "seed": 42613,
+          "games": 8,
+          "wins": 0
+        },
+        {
+          "seed": 17089,
+          "games": 8,
+          "wins": 0
+        },
+        {
+          "seed": 3236598124,
+          "games": 8,
+          "wins": 0
+        }
+      ],
+      "hashes": {
+        "episode_outcomes.jsonl": "aeebf7b5c40d2c4e838f7b3243bfa5f230b5e4ebb1433fb4c1a50fd6d99d55ea",
+        "training_seeds.jsonl": "8e8c1675159da20400f269d1ea6e2d5d2b56856ab6af8c9becf92935d69b327b",
+        "result.json": "b6edf4b9abbd8b86dd2277907176a94a313841b133d35d886b71fa9ae7c0e530"
+      }
+    },
+    {
+      "run_id": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1",
+      "sha": "0cccaa90ea8e7852e7601391c404b656b82889c0",
+      "batches": [
+        {
+          "seed": 1098341402,
+          "games": 8,
+          "wins": 7
+        },
+        {
+          "seed": 42613,
+          "games": 8,
+          "wins": 0
+        },
+        {
+          "seed": 17089,
+          "games": 8,
+          "wins": 0
+        },
+        {
+          "seed": 3236598124,
+          "games": 8,
+          "wins": 0
+        }
+      ],
+      "hashes": {
+        "episode_outcomes.jsonl": "aeebf7b5c40d2c4e838f7b3243bfa5f230b5e4ebb1433fb4c1a50fd6d99d55ea",
+        "training_seeds.jsonl": "8e8c1675159da20400f269d1ea6e2d5d2b56856ab6af8c9becf92935d69b327b",
+        "result.json": "f722f64faa3c463472d5f9254f9a26a0ab13957c8a308d2f688b573810ea858e"
+      }
+    }
+  ],
+  "artifacts": {
+    "manifest.json": "f5aec829417fa6e98414dbb9375a60b33072ba130a380142f23b72d571640944",
+    "effective_config.json": "04951391862638d5a9baf5ec286e4c440cea7ed2195c59cf5b77d3c12686d620",
+    "prompt_response.jsonl": "3ac9fe041a03a92ed4982592264f2a3e74afbd9da38473e4cbee5cc23ea5dd20",
+    "episode_outcomes.jsonl": "13e29ed57047cc50237b22b3684dd195fa7155911f2efcf8e2f18bff2e077f46",
+    "training_seeds.jsonl": "8e8c1675159da20400f269d1ea6e2d5d2b56856ab6af8c9becf92935d69b327b",
+    "metrics.json": "e7dcf8e53bef6ecca93be90fc8991a5bcaa1a51f168117bb69cdba650f6e00df",
+    "result.json": "ed3839218ce83abceff5dfc1fc9f96d972653e7e932fa45d4e221d844bb818bd",
+    "checkpoints/signal_sampling.jsonl": "897968b0227cb09b5072f531c8d2db5cf53595be08a0f45f5a4f30d7a47188d7"
+  },
+  "conclusion": {
+    "confirmed": [
+      "Steps 6/7 have identical within-group inputs and plans at each of two real calls, all valid with no response clipping; all eight natural games lost per seed.",
+      "Within each group raw returns and pre-centering scores are identical; task advantage contains only the logged FP32 reduction residual.",
+      "Historical r1 A/B also lost all eight games for both seeds; these were not newly observed failures in r2.",
+      "The empty-ability crash occurred in the subsequent incomplete fourth batch, not in the 16 completed losses."
+    ],
+    "limits": [
+      "No fresh same-seed before/after checkpoint evaluation for this r2; training degradation not excluded by historical comparison.",
+      "Regularization and optimizer state can still update the model without discriminating task advantage; their per-update contributions were not saved.",
+      "Filter-off A failed before B; this run does not validate v2 filtering, continuous training or learning improvement."
+    ]
+  }
+}

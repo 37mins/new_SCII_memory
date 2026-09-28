@@ -1,0 +1,301 @@
+{
+  "status": "completed",
+  "runtime_sha": "907dbe8cccc49960a86ce89890a4afc5981516e8",
+  "run_id": "20260916-combat-result-reward-v1-spb2-original-A4-fixed3x8-4gpu-r1",
+  "node": "sc2-a100-47",
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "exit_code": 0,
+  "started_at": "2026-09-16T03:49:52Z",
+  "ended_at": "2026-09-16T03:57:13.039502+00:00",
+  "done_at": "2026-09-16T03:57:25Z",
+  "games": 0,
+  "optimizer_updates": 0,
+  "answers": 48,
+  "local_snapshot": "/private/tmp/sc2-combat-panel-results.Qrf8FX",
+  "artifact_sha256": {
+    ".done": "b929390b603c24957d02fb64d534c58e8db1651860edbad0a6fe6e8885a52c57",
+    "deadline_unix.txt": "ecb87eee242148ba8a6aa5f888ed6859d224cae73d291271136f07dde85b6d3c",
+    "effective_config.json": "7251d6d1fab6a0ccdb1bdacdbc8ce58e498d355291436877023bfc1fcfa583f0",
+    "failure-panel.json": "5c2721213b06314492c6e582dfaca77eb221d1b94f5672eaa7cee0234a151e0b",
+    "manifest.json": "1e37c934e87e7833f284c4a37a45a39646e35b1b75f5f865e8c49c79c1666641",
+    "rank-0.jsonl": "4108e9b5917dd63c5b27c6e80d41903f3e449ebb57ad71f72ae632fde7115826",
+    "rank-1.jsonl": "9777906daf393bee2874bf415d35ed1a9f9e8e269ab4b4fa24475f202381c0aa",
+    "rank-2.jsonl": "8b4a7ef74e7f17c9c6b992d67547473d0bfad43c5254a4671de578f812980e00",
+    "rank-3.jsonl": "da77107c6fe21054f08c762084cf17c53ac09afdece13f1105315b7abd17289f",
+    "result.json": "f31967bff21bf71d7ede02cf8e9b659a51254b41b70b56d4dfe204d0c68b6b46",
+    "started_at.txt": "9ff028c5c5e4156d62e8117741be72252205c6cdb8f9a90e8f7d879c1e2cc991"
+  },
+  "paired_inputs_and_sampling_rng": true,
+  "all_answers_revalidated": true,
+  "a4_loaded_all_ranks": true,
+  "a4_adam_counter": 15,
+  "model_ready": [
+    {
+      "event": "model_ready",
+      "rank": 0,
+      "time": "2026-09-16T03:50:45.250285+00:00",
+      "arm": "original",
+      "checkpoint_load_returned": false,
+      "optimizer_counters": [],
+      "swa_dropout": 0,
+      "dtype": "fp32",
+      "cache": true
+    },
+    {
+      "event": "model_ready",
+      "rank": 0,
+      "time": "2026-09-16T03:55:34.473195+00:00",
+      "arm": "A4",
+      "checkpoint_load_returned": true,
+      "optimizer_counters": [
+        15
+      ],
+      "swa_dropout": 0,
+      "dtype": "fp32",
+      "cache": true
+    },
+    {
+      "event": "model_ready",
+      "rank": 1,
+      "time": "2026-09-16T03:50:45.254825+00:00",
+      "arm": "original",
+      "checkpoint_load_returned": false,
+      "optimizer_counters": [],
+      "swa_dropout": 0,
+      "dtype": "fp32",
+      "cache": true
+    },
+    {
+      "event": "model_ready",
+      "rank": 1,
+      "time": "2026-09-16T03:55:34.079605+00:00",
+      "arm": "A4",
+      "checkpoint_load_returned": true,
+      "optimizer_counters": [
+        15
+      ],
+      "swa_dropout": 0,
+      "dtype": "fp32",
+      "cache": true
+    },
+    {
+      "event": "model_ready",
+      "rank": 2,
+      "time": "2026-09-16T03:50:45.251242+00:00",
+      "arm": "original",
+      "checkpoint_load_returned": false,
+      "optimizer_counters": [],
+      "swa_dropout": 0,
+      "dtype": "fp32",
+      "cache": true
+    },
+    {
+      "event": "model_ready",
+      "rank": 2,
+      "time": "2026-09-16T03:55:33.809749+00:00",
+      "arm": "A4",
+      "checkpoint_load_returned": true,
+      "optimizer_counters": [
+        15
+      ],
+      "swa_dropout": 0,
+      "dtype": "fp32",
+      "cache": true
+    },
+    {
+      "event": "model_ready",
+      "rank": 3,
+      "time": "2026-09-16T03:50:45.272289+00:00",
+      "arm": "original",
+      "checkpoint_load_returned": false,
+      "optimizer_counters": [],
+      "swa_dropout": 0,
+      "dtype": "fp32",
+      "cache": true
+    },
+    {
+      "event": "model_ready",
+      "rank": 3,
+      "time": "2026-09-16T03:55:36.062114+00:00",
+      "arm": "A4",
+      "checkpoint_load_returned": true,
+      "optimizer_counters": [
+        15
+      ],
+      "swa_dropout": 0,
+      "dtype": "fp32",
+      "cache": true
+    }
+  ],
+  "totals": {
+    "original": {
+      "valid": 20,
+      "depot_before_supply_consumer": 0,
+      "depot_first": 0,
+      "eos_seen": 23,
+      "answers": 24
+    },
+    "A4": {
+      "valid": 24,
+      "depot_before_supply_consumer": 0,
+      "depot_first": 0,
+      "eos_seen": 24,
+      "answers": 24
+    }
+  },
+  "contexts": [
+    {
+      "case": 0,
+      "game_seed": 1436145665,
+      "arms": {
+        "original": {
+          "answers": 8,
+          "valid": 6,
+          "legal_plan_kinds": 5,
+          "marine42": 0,
+          "no_eos": 0,
+          "no_closing_tag": 0,
+          "valid_marine_counts": {
+            "2": 2,
+            "4": 4
+          }
+        },
+        "A4": {
+          "answers": 8,
+          "valid": 8,
+          "legal_plan_kinds": 4,
+          "marine42": 4,
+          "no_eos": 0,
+          "no_closing_tag": 0,
+          "valid_marine_counts": {
+            "8": 4,
+            "42": 4
+          }
+        }
+      }
+    },
+    {
+      "case": 1,
+      "game_seed": 363527354,
+      "arms": {
+        "original": {
+          "answers": 8,
+          "valid": 7,
+          "legal_plan_kinds": 5,
+          "marine42": 0,
+          "no_eos": 0,
+          "no_closing_tag": 0,
+          "valid_marine_counts": {
+            "2": 5,
+            "4": 2
+          }
+        },
+        "A4": {
+          "answers": 8,
+          "valid": 8,
+          "legal_plan_kinds": 5,
+          "marine42": 4,
+          "no_eos": 0,
+          "no_closing_tag": 0,
+          "valid_marine_counts": {
+            "8": 4,
+            "42": 4
+          }
+        }
+      }
+    },
+    {
+      "case": 2,
+      "game_seed": 3434611143,
+      "arms": {
+        "original": {
+          "answers": 8,
+          "valid": 7,
+          "legal_plan_kinds": 6,
+          "marine42": 0,
+          "no_eos": 1,
+          "no_closing_tag": 1,
+          "valid_marine_counts": {
+            "2": 3,
+            "4": 4
+          }
+        },
+        "A4": {
+          "answers": 8,
+          "valid": 8,
+          "legal_plan_kinds": 3,
+          "marine42": 7,
+          "no_eos": 0,
+          "no_closing_tag": 0,
+          "valid_marine_counts": {
+            "8": 1,
+            "42": 7
+          }
+        }
+      }
+    }
+  ],
+  "examples": [
+    {
+      "arm": "original",
+      "case": 0,
+      "seed": 12000,
+      "raw_answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+      "valid": false,
+      "reason": "action count exceeds current BO remainder: barracks",
+      "token_count": 67
+    },
+    {
+      "arm": "original",
+      "case": 1,
+      "seed": 12008,
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+      "valid": true,
+      "reason": "",
+      "token_count": 65
+    },
+    {
+      "arm": "original",
+      "case": 2,
+      "seed": 12016,
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "token_count": 56
+    },
+    {
+      "arm": "A4",
+      "case": 0,
+      "seed": 12000,
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "token_count": 56
+    },
+    {
+      "arm": "A4",
+      "case": 1,
+      "seed": 12008,
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "token_count": 57
+    },
+    {
+      "arm": "A4",
+      "case": 2,
+      "seed": 12016,
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "token_count": 57
+    }
+  ],
+  "conclusion": "A4 shifts these three identical-input distributions toward Marine8/42, with improved validity; concentration differs by scene. Not proof of PPO implementation error or game improvement.",
+  "learning_improvement_validated": false
+}

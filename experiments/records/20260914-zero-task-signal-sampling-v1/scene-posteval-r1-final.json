@@ -1,0 +1,77 @@
+{
+  "status": "completed",
+  "runtime_sha": "8069b4fd6a8a8bb1b5308642fcf499e29a4bece1",
+  "node": "sc2-a100-47",
+  "started_at": "2026-09-15T03:41:56Z",
+  "ended_at": "2026-09-15T04:05:09Z",
+  "budget_minutes": 60,
+  "suite_exit_code": 0,
+  "games": 24,
+  "optimizer_updates": 0,
+  "checkpoint_created": false,
+  "common_initial_cpu_cuda_sampling_states": true,
+  "suite_acceptance": "/dev/shm/sc2-scene-posteval-20260915-r1/control/suite-acceptance.json",
+  "run_root": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs",
+  "run_id_template": "20260914-zero-task-signal-sampling-v1-spb2-{label}-l6-panel-eval8-4gpu-r1",
+  "game_seeds": [2259791793, 1436145665, 363527354, 462000319, 3434611143, 1968356657, 4276540916, 2065928601],
+  "all_groups_results_in_seed_order": ["Victory", "Defeat", "Defeat", "Victory", "Defeat", "Victory", "Victory", "Victory"],
+  "all_groups_calls_per_game": [2, 2, 2, 2, 2, 2, 2, 2],
+  "all_groups_valid_consumed_answers": 16,
+  "all_groups_consumed_answers": 16,
+  "all_groups_no_policy_games": 0,
+  "all_groups_natural_games": 8,
+  "all_groups_truncated_games": 0,
+  "reward_method": "Sum raw reward through each environment's first terminal row, inclusive; valid answers only among policy_action_applied rows before that boundary.",
+  "groups": {
+    "A4": {
+      "restored_global_step": 4,
+      "ended_at": "2026-09-15T03:53:36.967325+00:00",
+      "exit_code": 0,
+      "wins": 5,
+      "mean_episode_reward": -5.72275,
+      "episode_rewards": [20.5, -49.401, -49.431, 20.5, -49.45, 20.5, 20.5, 20.5],
+      "input_sha256": {
+        "result.json": "91b247dca9707bcf279c8d183677c09e86b9d128db1c22e5f31bb3d897de7323",
+        "episode_outcomes.jsonl": "648db5809dd448f56b1f56c728e95bcf6156ed06e810facb34562cba82fe131e",
+        "prompt_response.jsonl": "50cc82dd6c99516313033f612e7c5b87095c14e7f50655dd6e5cef2943db78e5"
+      }
+    },
+    "SceneA8": {
+      "restored_global_step": 8,
+      "ended_at": "2026-09-15T03:54:26.675015+00:00",
+      "exit_code": 0,
+      "wins": 5,
+      "mean_episode_reward": -5.728875,
+      "episode_rewards": [20.5, -49.45, -49.431, 20.5, -49.45, 20.5, 20.5, 20.5],
+      "vs_A4": {"paired_decisions": 16, "identical_prompts": 16, "identical_raw_answers": 14, "identical_projected_answers": 14},
+      "input_sha256": {
+        "result.json": "22492f16d677312616c281be473858ee730719804e2618ae0d1b196369aa390b",
+        "episode_outcomes.jsonl": "648db5809dd448f56b1f56c728e95bcf6156ed06e810facb34562cba82fe131e",
+        "prompt_response.jsonl": "afab00aa3e70867132a0b745a1df67057831821d89bac94771bbad326bdc29e9"
+      }
+    },
+    "SceneB8": {
+      "restored_global_step": 8,
+      "ended_at": "2026-09-15T04:05:08.971848+00:00",
+      "exit_code": 0,
+      "wins": 5,
+      "mean_episode_reward": -5.728875,
+      "episode_rewards": [20.5, -49.45, -49.431, 20.5, -49.45, 20.5, 20.5, 20.5],
+      "vs_A4": {"paired_decisions": 16, "identical_prompts": 16, "identical_raw_answers": 14, "identical_projected_answers": 14},
+      "input_sha256": {
+        "result.json": "6c43fb078821e161fec361b34fb85cf33271bf51b1a94b7f77326fe7a008d991",
+        "episode_outcomes.jsonl": "648db5809dd448f56b1f56c728e95bcf6156ed06e810facb34562cba82fe131e",
+        "prompt_response.jsonl": "a36d37ef26ef058d0dc25525acc74c7fc99c583783e24348f40d28e519f6aa64"
+      }
+    }
+  },
+  "conclusion": "Completed paired evaluation; neither scene-training arm improved wins on this panel. All three previously failed seeds still fail. No demonstrated learning repair; do not promote to 96 steps on this evidence.",
+  "limitations": [
+    "Eight previously used evaluation seeds, one game per model per seed; not a new blind test or a statistically established generalization result.",
+    "Identical sampled answers do not establish identical probabilities or parameters.",
+    "Projected answers are not evidence that all requested SC2 actions completed.",
+    "This evaluation does not identify a new PPO implementation bug or prove learning is impossible."
+  ],
+  "gpu_snapshot": {"at": "2026-09-15T04:08:06Z", "gpu_0_to_7_memory_mib": [0, 0, 0, 0, 0, 0, 0, 0]},
+  "next": "Read retained training batches for advantage allocation to changed versus unchanged decisions; no new mechanism, GPU run or long training authorized by this closure."
+}

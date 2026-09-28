@@ -1,0 +1,320 @@
+{
+  "status": "completed",
+  "source_commit": "97495f4027ac0699ba45353d52a8c65f9606d79c",
+  "sole_variable": "actor.fp32_normalization; both starts recomputed from same original checkpoint",
+  "configuration_single_variable_all_ranks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "cpu_tests_passed": 89,
+  "cpu_tests_seconds": 8.289,
+  "original_tokens_and_advantages": true,
+  "reference": "original actor probability snapshot under each candidate, not a separate ref worker",
+  "on_policy_rl": false,
+  "production_defaults_changed": false,
+  "long_training_cleared": false,
+  "runs": [
+    {
+      "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-legacy-opt4-r18",
+      "manifest": {
+        "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-legacy-opt4-r18",
+        "mode": "drift-legacy",
+        "status": "preflight",
+        "started_at": "2026-09-06T12:13:21.754549+00:00",
+        "source_commit": "97495f4027ac0699ba45353d52a8c65f9606d79c",
+        "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+        "gpu_selection": "0,1,2,3",
+        "world_size": 4,
+        "max_optimizer_updates": 4,
+        "max_gpu_seconds": 1800,
+        "param_dtype": "fp32",
+        "fp32_normalization": false,
+        "recompute_start": true,
+        "user_authorization": "2026-09-06: approved temperature precision A/B and bounded drift diagnosis",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_path": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "project_sft": false,
+        "resumed_checkpoint": false,
+        "sc2_started": false
+      },
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-03.jsonl": "completed",
+          "rank-02.jsonl": "completed",
+          "rank-00.jsonl": "completed",
+          "rank-01.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T12:14:55.271506+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "phases": {
+        "pre_update": {
+          "tokens": 413,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "worst": {
+            "sample": 0,
+            "response_index": 0,
+            "token_id": 12,
+            "old": 0,
+            "new": 0,
+            "advantage": 0.01562014501541853,
+            "rank": 0
+          },
+          "finite": true
+        },
+        "update": {
+          "tokens": 413,
+          "abs_mean": 0.00017126420508285412,
+          "abs_max": 0.0294189453125,
+          "worst": {
+            "sample": 7,
+            "response_index": 18,
+            "token_id": 9911,
+            "old": -0.029754638671875,
+            "new": -0.000335693359375,
+            "advantage": 0.01562014501541853,
+            "rank": 2
+          },
+          "finite": true
+        },
+        "post_update": {
+          "tokens": 413,
+          "abs_mean": 0.033812552906987745,
+          "abs_max": 13.495918273925781,
+          "worst": {
+            "sample": 3,
+            "response_index": 1,
+            "token_id": 28591,
+            "old": -0.00408172607421875,
+            "new": -13.5,
+            "advantage": 0.01562014501541853,
+            "rank": 0
+          },
+          "finite": true
+        }
+      },
+      "metrics_micro_equal_all_ranks": {
+        "actor/ppo_kl": -0.00001673195553753004,
+        "actor/kl_loss": 0.000001140904648422314,
+        "actor/pg_clipfrac": 0
+      },
+      "grad_norm": [
+        0.234385147690773,
+        0.040309838950634,
+        0.0001874847657745704,
+        0.012518230825662613
+      ],
+      "start": [
+        {
+          "event": "rebased_start",
+          "rank": 0,
+          "time": "2026-09-06T12:14:13.365578+00:00",
+          "max_train_eval_gap_all_ranks": 0,
+          "tolerance": 0.00001,
+          "reference": "original actor evaluated by candidate path; not a separate ref worker"
+        },
+        {
+          "event": "rebased_start",
+          "rank": 1,
+          "time": "2026-09-06T12:14:13.365639+00:00",
+          "max_train_eval_gap_all_ranks": 0,
+          "tolerance": 0.00001,
+          "reference": "original actor evaluated by candidate path; not a separate ref worker"
+        },
+        {
+          "event": "rebased_start",
+          "rank": 2,
+          "time": "2026-09-06T12:14:13.365588+00:00",
+          "max_train_eval_gap_all_ranks": 0,
+          "tolerance": 0.00001,
+          "reference": "original actor evaluated by candidate path; not a separate ref worker"
+        },
+        {
+          "event": "rebased_start",
+          "rank": 3,
+          "time": "2026-09-06T12:14:13.365578+00:00",
+          "max_train_eval_gap_all_ranks": 0,
+          "tolerance": 0.00001,
+          "reference": "original actor evaluated by candidate path; not a separate ref worker"
+        }
+      ],
+      "input_sha256": [
+        "1a902ff0261290a19ba0d3fe975856a1e464a2e1587652df89deffe63bd99a85",
+        "3a29f838da6a54afd5aea0a9d20e8a286a79c852dbedabc0acb34db926ce3152",
+        "227de0dbf65677add116e95d31c1248762d1bb912b3274e428df476219ded552",
+        "36ba1c1fceedc6dc6d6aa60bc2e7a8bbac9cd3644bd2ce3537e563a5132928e9"
+      ],
+      "artifact_sha256": {
+        "rank-00.jsonl": "3b9d394df1c028843abeb646b41542cae0c78cc66ea641405687da61490a8f31",
+        "rank-01.jsonl": "cbba8250fdb8e1d2e9b7066521b2e0b715c18d5effed9f9a7f7eb229b8904e61",
+        "rank-02.jsonl": "0ac1b3356788a9ad88f805c6964d2f4a4d63cc90873247b5e6a4354e6d8eb9b3",
+        "rank-03.jsonl": "025d27e1be6b2a25338ccea02c06797a7200695d1fae326929fafd5794b60015",
+        "ppo_diagnostics/update-0001-rank-00.jsonl": "4703e57503a7d34694e54e570f62cf6ff7edc391e4c713bc16a92e3403b4f822",
+        "ppo_diagnostics/update-0001-rank-00.pt": "a6694cbe845d6ffb6823803051837f0597856eeacc096ec3a65ab856c56cd3d7",
+        "ppo_diagnostics/update-0001-rank-01.jsonl": "26e8f5c78fda13b594ce58dc57cb1b95403b29f701084e52117318f04339832a",
+        "ppo_diagnostics/update-0001-rank-01.pt": "52f525245fe9f2220f1be416f8b2982bd09f2e0d3d6594f38b9b773ac019555b",
+        "ppo_diagnostics/update-0001-rank-02.jsonl": "69c4109579adb914344c71c04e6a7265994a82099280165e5fb68266a126a493",
+        "ppo_diagnostics/update-0001-rank-02.pt": "9358d86b51fb5529cd177d318090dc77c68ca7513372cd382dccd20671acfc12",
+        "ppo_diagnostics/update-0001-rank-03.jsonl": "ebd029754c13742f517499986e73831135805a0deb4ea859c825c33d950789e9",
+        "ppo_diagnostics/update-0001-rank-03.pt": "8f8776f9195d3d82548c11cb3817124aa4a7aa19ddb779c57aeefe707f06f458"
+      }
+    },
+    {
+      "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt4-r19",
+      "manifest": {
+        "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt4-r19",
+        "mode": "drift-fp32",
+        "status": "preflight",
+        "started_at": "2026-09-06T12:13:21.770910+00:00",
+        "source_commit": "97495f4027ac0699ba45353d52a8c65f9606d79c",
+        "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+        "gpu_selection": "4,5,6,7",
+        "world_size": 4,
+        "max_optimizer_updates": 4,
+        "max_gpu_seconds": 1800,
+        "param_dtype": "fp32",
+        "fp32_normalization": true,
+        "recompute_start": true,
+        "user_authorization": "2026-09-06: approved temperature precision A/B and bounded drift diagnosis",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_path": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "project_sft": false,
+        "resumed_checkpoint": false,
+        "sc2_started": false
+      },
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-01.jsonl": "completed",
+          "rank-00.jsonl": "completed",
+          "rank-03.jsonl": "completed",
+          "rank-02.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T12:14:53.060164+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "phases": {
+        "pre_update": {
+          "tokens": 413,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "worst": {
+            "sample": 0,
+            "response_index": 0,
+            "token_id": 12,
+            "old": 0,
+            "new": 0,
+            "advantage": 0.01562014501541853,
+            "rank": 0
+          },
+          "finite": true
+        },
+        "update": {
+          "tokens": 413,
+          "abs_mean": 0.0007586167453276332,
+          "abs_max": 0.24832916259765625,
+          "worst": {
+            "sample": 3,
+            "response_index": 1,
+            "token_id": 28591,
+            "old": -0.00360107421875,
+            "new": -0.25193023681640625,
+            "advantage": 0.01562014501541853,
+            "rank": 0
+          },
+          "finite": true
+        },
+        "post_update": {
+          "tokens": 413,
+          "abs_mean": 0.0009994876298142403,
+          "abs_max": 0.2286834716796875,
+          "worst": {
+            "sample": 0,
+            "response_index": 1,
+            "token_id": 23205,
+            "old": -0.25193023681640625,
+            "new": -0.02324676513671875,
+            "advantage": 0.01562014501541853,
+            "rank": 0
+          },
+          "finite": true
+        }
+      },
+      "metrics_micro_equal_all_ranks": {
+        "actor/ppo_kl": 0.0010095259185813887,
+        "actor/kl_loss": 0.000132106025305459,
+        "actor/pg_clipfrac": 0
+      },
+      "grad_norm": [
+        0.19306641817092896,
+        0.6052443385124207,
+        0.00004902242653770372,
+        0.04322342202067375
+      ],
+      "start": [
+        {
+          "event": "rebased_start",
+          "rank": 0,
+          "time": "2026-09-06T12:14:12.821161+00:00",
+          "max_train_eval_gap_all_ranks": 0,
+          "tolerance": 0.00001,
+          "reference": "original actor evaluated by candidate path; not a separate ref worker"
+        },
+        {
+          "event": "rebased_start",
+          "rank": 1,
+          "time": "2026-09-06T12:14:12.821129+00:00",
+          "max_train_eval_gap_all_ranks": 0,
+          "tolerance": 0.00001,
+          "reference": "original actor evaluated by candidate path; not a separate ref worker"
+        },
+        {
+          "event": "rebased_start",
+          "rank": 2,
+          "time": "2026-09-06T12:14:12.821132+00:00",
+          "max_train_eval_gap_all_ranks": 0,
+          "tolerance": 0.00001,
+          "reference": "original actor evaluated by candidate path; not a separate ref worker"
+        },
+        {
+          "event": "rebased_start",
+          "rank": 3,
+          "time": "2026-09-06T12:14:12.821124+00:00",
+          "max_train_eval_gap_all_ranks": 0,
+          "tolerance": 0.00001,
+          "reference": "original actor evaluated by candidate path; not a separate ref worker"
+        }
+      ],
+      "input_sha256": [
+        "1a902ff0261290a19ba0d3fe975856a1e464a2e1587652df89deffe63bd99a85",
+        "3a29f838da6a54afd5aea0a9d20e8a286a79c852dbedabc0acb34db926ce3152",
+        "227de0dbf65677add116e95d31c1248762d1bb912b3274e428df476219ded552",
+        "36ba1c1fceedc6dc6d6aa60bc2e7a8bbac9cd3644bd2ce3537e563a5132928e9"
+      ],
+      "artifact_sha256": {
+        "rank-00.jsonl": "992a6baf9b3a48f269fdd83a46db6080e0c09f8577d951bd23b1d28ed6b80c85",
+        "rank-01.jsonl": "55ae3ac510275657968972cdeff5d0a4342ad00013f27e5a3ae1f962a65e0fb0",
+        "rank-02.jsonl": "4c6c632e6551bdbd46ede2befa03d5c5e5b63b0131d2890cbb5bc9a8815466ce",
+        "rank-03.jsonl": "fa98e8d37096b93d4ae9e3da9c919dc5b8b994db83169f0d97a9ecd2917f09a6",
+        "ppo_diagnostics/update-0001-rank-00.jsonl": "dd36aff5c98a3f9c7b515df9622159ff7b4cba5af7e5b049aeba3819a72739f1",
+        "ppo_diagnostics/update-0001-rank-00.pt": "99e2c46ba84e3e8839bf33adb340bb9a7916dde7f7b15f0821ee0973711339ed",
+        "ppo_diagnostics/update-0001-rank-01.jsonl": "5e7b8888dc70df75eb147e6c7ffd109ca11cf349176a5c675ec07856072c5ac5",
+        "ppo_diagnostics/update-0001-rank-01.pt": "1a310cc8ec0681a6dd777e0fe2908f4c2c4df45d4f54add03fe284325309dafc",
+        "ppo_diagnostics/update-0001-rank-02.jsonl": "1540f4985136ab0f82e88498de68428a2e6d34c77c90272bd571e62fae5e0f45",
+        "ppo_diagnostics/update-0001-rank-02.pt": "10d01bad3241345244a38994cc61331c39ad4e076e09ff60a76c2e74926829dd",
+        "ppo_diagnostics/update-0001-rank-03.jsonl": "35466f3ebf8a355d67d96711b6d531a98213754210d69da259ed085a77d55614",
+        "ppo_diagnostics/update-0001-rank-03.pt": "c8771c6cf4629fa2e74bfc3d473f87ed25f47016b2079877ef7f78ffb0ef8ee4"
+      }
+    }
+  ]
+}

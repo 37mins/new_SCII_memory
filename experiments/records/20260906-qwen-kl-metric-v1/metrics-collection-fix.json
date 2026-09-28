@@ -1,0 +1,21 @@
+{
+  "status": "cpu_validated",
+  "date": "2026-09-06",
+  "parent_commit": "2624f27c951e2b1cb188cfbe397765310b79e238",
+  "historical_run": "20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+  "change": "DataProto.concat collects all worker metrics; nonmetric metadata, tensor batches, loss and optimizer remain unchanged",
+  "upstream_reference": "https://github.com/volcengine/verl/blob/3af734b6145bc84903ed33f228ecab5e6c93cb00/verl/protocol.py#L829",
+  "new_protocol_sha256": "56979c2aa7cc9d1b5728e0a80100287c88eb303dcbdc058450487b3375194d26",
+  "cpu_regression": {"command": "python3 -B -m unittest discover -s tests -p test_cross_rank_metrics.py -v", "passed": 4, "skipped": 0, "seconds": 3.656},
+  "real_r7_trace_reaggregation": {
+    "path": "DataProto -> collect_dp_compute_data_proto -> DataProto.concat -> reduce_metrics",
+    "values_per_metric": 276,
+    "rank0_old_reporting": {"actor/ppo_kl": 4.866162254091829, "actor/kl_loss": 0.5859253313742524},
+    "all_rank_reporting": {"actor/ppo_kl": 5.993242257772237, "actor/kl_loss": 0.776749421053424},
+    "reduction": "equal micro-batch arithmetic mean, not token weighted"
+  },
+  "initial_full_suite": {"tests": 83, "failures": 12, "reason": "Tar-only staging had no .git; 12 dry-run provenance checks failed. Repeated all tests from a clean Git checkout below."},
+  "full_suite": {"command": "python3 -B -m unittest discover -s tests -q", "source_commit": "0d79d2d2d851dcfad8ed55968e2e219a621519e7", "deployment": "/root/new-scii-kl-integrated-20260906/code-0d79d2d", "passed": 83, "skipped": 0, "seconds": 7.788},
+  "runtime": {"node": "sc2-a100-44", "python_dependencies": "/root/new-scii-spb2-level5-control/python", "torch": "2.7.1+cu128", "gpu_used": false},
+  "scope": "No historical logs overwritten, no model or SC2 run, no loss or parameter updates; does not resolve probability drift"
+}

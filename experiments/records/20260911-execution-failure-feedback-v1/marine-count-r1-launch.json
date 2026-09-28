@@ -1,0 +1,342 @@
+{
+  "checked_at": "2026-09-11T14:50:52.191007+00:00",
+  "run_id": "20260911-execution-failure-feedback-v1-spb2-B4-l6-marine-count-ab8-4gpu-s1098341402-r1",
+  "run_path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-B4-l6-marine-count-ab8-4gpu-s1098341402-r1",
+  "source_commit": "e25ce325bf61e86f5934bbea7969da7b8bea639a",
+  "node": "sc2-a100-43",
+  "gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "started_at": "2026-09-11T14:46:14Z",
+  "budget_seconds": 2700,
+  "hard_deadline_bj": "2026-09-11 23:31:14",
+  "checkpoint_evaluation": {
+    "checkpoint": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-B-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "loaded_global_step": 4,
+    "checkpoint_load_returned": true,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "1",
+    "temperature": 0.4,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402
+    ],
+    "answers": "First answer: common historical prefix; second: historical B answer versus that answer with Marine 8->42 only; both not model choices. From third answer: online B4.",
+    "optimizer_loaded_by_existing_loader_but_not_updated": true
+  },
+  "seeds": {
+    "base_seed": 1000,
+    "reset_index": 0,
+    "seeds": [
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402
+    ]
+  },
+  "boundaries": [
+    {
+      "file": "game-3899602-boundaries.jsonl",
+      "records": 1,
+      "last": {
+        "game_pid": 3899602,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      }
+    },
+    {
+      "file": "game-3899605-boundaries.jsonl",
+      "records": 1,
+      "last": {
+        "game_pid": 3899605,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      }
+    },
+    {
+      "file": "game-3899606-boundaries.jsonl",
+      "records": 1,
+      "last": {
+        "game_pid": 3899606,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      }
+    },
+    {
+      "file": "game-3899603-boundaries.jsonl",
+      "records": 1,
+      "last": {
+        "game_pid": 3899603,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      }
+    },
+    {
+      "file": "game-3899604-boundaries.jsonl",
+      "records": 1,
+      "last": {
+        "game_pid": 3899604,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      }
+    },
+    {
+      "file": "game-3899601-boundaries.jsonl",
+      "records": 1,
+      "last": {
+        "game_pid": 3899601,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      }
+    },
+    {
+      "file": "game-3899599-boundaries.jsonl",
+      "records": 1,
+      "last": {
+        "game_pid": 3899599,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      }
+    },
+    {
+      "file": "game-3899600-boundaries.jsonl",
+      "records": 1,
+      "last": {
+        "game_pid": 3899600,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      }
+    }
+  ],
+  "intervention_counts": {
+    "0": 8
+  },
+  "intervention_rows": [
+    {
+      "env": 0,
+      "arm": "control_B_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_intervention_not_model_choice"
+    },
+    {
+      "env": 1,
+      "arm": "marine_42_only",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_intervention_not_model_choice"
+    },
+    {
+      "env": 2,
+      "arm": "control_B_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_intervention_not_model_choice"
+    },
+    {
+      "env": 3,
+      "arm": "marine_42_only",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_intervention_not_model_choice"
+    },
+    {
+      "env": 4,
+      "arm": "control_B_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_intervention_not_model_choice"
+    },
+    {
+      "env": 5,
+      "arm": "marine_42_only",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_intervention_not_model_choice"
+    },
+    {
+      "env": 6,
+      "arm": "control_B_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_intervention_not_model_choice"
+    },
+    {
+      "env": 7,
+      "arm": "marine_42_only",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_intervention_not_model_choice"
+    }
+  ],
+  "gpu_snapshot": "0, 8070 MiB, 0 %\n1, 8214 MiB, 0 %\n2, 8214 MiB, 0 %\n3, 8070 MiB, 0 %\n4, 0 MiB, 0 %\n5, 0 MiB, 0 %\n6, 0 MiB, 0 %\n7, 0 MiB, 0 %",
+  "hashes": {
+    "manifest.json": "ead0594fa1edf5c679f41d89654aef97679f3bf882692de47e216923c815cb93",
+    "effective_config.json": "5bce3f99c8602a49a124e1662150a21186e406d3131d725f50c7ed74cedd0b4c",
+    "checkpoint_evaluation.json": "3cb6edb37aa238ca9a73fa58379b127830b31bf3d6567974cde57134196e83c6",
+    "evaluation_seeds.jsonl": "f7f3b92d3e54886cd3b520e0e3956388244e0f089ebfbe2fff5db9ef5f15b7b2",
+    "model_preparation.json": "54d93cdfe3fca7980ead0d3ac3f6521ce2801f2c65ef60047efdbbf67e23f3d8"
+  },
+  "cpu_log_sha256": "152cf555f6208095276a6abe5b473ab6d0e99ce0569392f45c8980764d7ec9b1",
+  "completed": false
+}

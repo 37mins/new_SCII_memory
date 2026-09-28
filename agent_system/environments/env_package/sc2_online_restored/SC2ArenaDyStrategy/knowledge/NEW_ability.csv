@@ -1,0 +1,158 @@
+enabled,ability,description
+0,SCANNERSWEEP_SCAN,
+0,HARVEST_RETURN_SCV,
+0,RALLY_COMMANDCENTER,
+0,CANCEL_BARRACKSADDON,
+0,CANCEL_FACTORYADDON,
+0,CANCEL_STARPORTADDON,
+0,CANCEL_MORPHPLANETARYFORTRESS,
+0,CANCEL_MORPHORBITAL,
+0,CANCEL_NUKE,
+0,HALT_TERRANBUILD,
+0,LIFT_COMMANDCENTER,
+0,LIFT_BARRACKS,
+0,LIFT_FACTORY,
+0,LIFT_STARPORT,
+0,LIFT_ORBITALCOMMAND,
+0,LIFT,
+0,LAND_COMMANDCENTER,
+0,LAND_FACTORY,
+0,LAND_STARPORT,
+0,LAND_BARRACKS,
+0,LAND_ORBITALCOMMAND,
+0,LAND,
+0,SALVAGEEFFECT_SALVAGE,
+1,ARMORYRESEARCH_TERRANSHIPPLATINGLEVEL1,"Increase the armor of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser)."
+1,ARMORYRESEARCH_TERRANSHIPPLATINGLEVEL2,"Increase the armor of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser)."
+1,ARMORYRESEARCH_TERRANSHIPPLATINGLEVEL3,"Increase the armor of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser)."
+1,ARMORYRESEARCH_TERRANSHIPWEAPONSLEVEL1,"Increase the damage of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser)."
+1,ARMORYRESEARCH_TERRANSHIPWEAPONSLEVEL2,"Increase the damage of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser)."
+1,ARMORYRESEARCH_TERRANSHIPWEAPONSLEVEL3,"Increase the damage of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser)."
+1,ARMORYRESEARCH_TERRANVEHICLEPLATINGLEVEL1,"Increase the armor of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor)."
+1,ARMORYRESEARCH_TERRANVEHICLEPLATINGLEVEL2,"Increase the armor of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor)."
+1,ARMORYRESEARCH_TERRANVEHICLEPLATINGLEVEL3,"Increase the armor of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor)."
+1,ARMORYRESEARCH_TERRANVEHICLEWEAPONSLEVEL1,"Increase the damage of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor)."
+1,ARMORYRESEARCH_TERRANVEHICLEWEAPONSLEVEL2,"Increase the damage of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor)."
+1,ARMORYRESEARCH_TERRANVEHICLEWEAPONSLEVEL3,"Increase the damage of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor)."
+1,ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL1,Increases the armor of Terran Factory and Starport units.
+1,ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL2,Increases the armor of Terran Factory and Starport units.
+1,ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL3,Increases the armor of Terran Factory and Starport units.
+1,BARRACKSTECHLABRESEARCH_STIMPACK,Every Marine and Marauder gain the Stimpack ability.
+1,BARRACKSTRAIN_GHOST,"Train a Ghost, a stealthy special forces unit that can snipe high-value targets, deploy tactical nukes, and use cloaking for strategic advantage."
+1,BARRACKSTRAIN_MARAUDER,"Train a Marauder, a heavily armored infantry unit that excels against armored targets with its concussive grenades, complementing Marine forces."
+1,BARRACKSTRAIN_MARINE,"Train a Marine, a versatile, low-cost infantry unit that provides reliable ranged damage and forms the backbone of most Terran armies."
+1,BARRACKSTRAIN_REAPER,"Train a Reaper, a fast, mobile infantry unit designed for early-game harassment and scouting, capable of jumping cliffs with its jetpack."
+1,ATTACK_BATTLECRUISER,Command Battlecruiser to attack.
+1,BATTLECRUISERATTACK_ATTACKTOWARDS,Conduct mobile attacks on the target.
+1,BATTLECRUISERATTACK_ATTACKBARRAGE,Launch artillery attacks on the target.
+1,MOVE_BATTLECRUISER,Command Battlecruiser to move.
+0,PATROL_BATTLECRUISER,
+0,HOLDPOSITION_BATTLECRUISER,
+0,BATTLECRUISERMOVE_ACQUIREMOVE,"Refines movement capabilities, enhancing maneuverability in combat scenarios."
+0,BATTLECRUISERMOVE_TURN,"Adjusts the turning radius of the Battlecruiser, improving its ability to engage targets effectively."
+0,STOP_BATTLECRUISER,Immediately halts all movement and actions of the Battlecruiser.
+0,BATTLECRUISERSTOP_HOLDFIRE,
+0,BATTLECRUISERSTOP_CHEER,
+0,BATTLECRUISERSTOP_DANCE,
+1,BEHAVIOR_CLOAKON_BANSHEE,The Benshee becomes invisible until it runs out of energy or the player cancels Cloak.
+1,BEHAVIOR_CLOAKON_GHOST,The Ghost becomes invisible until it runs out of energy or the player cancels Cloak.
+1,BEHAVIOR_HOLDFIREON_GHOST,Do not actively attack the enemy.
+1,BUILDAUTOTURRET_AUTOTURRET,"Build an Auto-Turret, a temporary and immobile defense structure."
+1,BUILD_NUKE,Build a nuke.
+1,BUILD_REACTOR_BARRACKS,Allows structure create 2 units simultaneously.
+1,BUILD_REACTOR_FACTORY,Allows structure create 2 units simultaneously.
+1,BUILD_REACTOR_STARPORT,Allows structure create 2 units simultaneously.
+1,BUILD_TECHLAB_BARRACKS,Unlocks Marauder and is a requirement for Ghost.
+1,BUILD_TECHLAB_FACTORY,Unlocks Siege Tank and is a requirement for Thor.
+1,BUILD_TECHLAB_STARPORT,Unlocks Raven and Banshee and is a requirement for Battlecruiser.
+1,CALLDOWNMULE_CALLDOWNMULE,"Calls down a MULE, a temporary unit with a timed life of 64 seconds that can mine minerals and repair for the Terran forces. It requires 50 energy from Orbital Command"
+1,COMMANDCENTERTRAIN_SCV,"Train a SCV, a Terran worker."
+1,EFFECT_ANTIARMORMISSILE,"Deploys a Missile which pursues the target unit, and, upon contact, reduces the armor and shield armor of affected units by 2 for 21 seconds."
+1,EFFECT_GHOSTSNIPE,Deal 25 damage to enemy biological units (50 for Psionic).
+1,EFFECT_INTERFERENCEMATRIX,Disables a target unit rendering it unable to attack or use abilities for 11 seconds. Reveals Cloaked units. Can only target mechanical and psionic units.
+1,EFFECT_MEDIVACIGNITEAFTERBURNERS,Speed boost that increases Medivac's movement speed to 5.95 and acceleration to 1400 for 4.3 seconds.
+0,EFFECT_REPAIR_MULE,Repair some unit or strcture.
+0,EFFECT_REPAIR_SCV,Repair some unit or strcture.
+1,EFFECT_SALVAGE,"Destroy a Bunker, returning 75 minerals."
+0,EFFECT_SPRAY_TERRAN,Spray a marker.
+1,EFFECT_STIM_MARAUDER,Increases the movement speed and firing rate by 50% at the cost of 20 HP.
+1,EFFECT_STIM_MARINE,Increases the movement speed and firing rate by 50% at the cost of 10 HP.
+1,EFFECT_STIM_MARINE_REDIRECT,Increases inner Marine movement speed and firing rate by 50% at the cost of 10 HP.
+1,EFFECT_STIM_MARAUDER_REDIRECT,Increases inner Marauder movement speed and firing rate by 50% at the cost of 20 HP.
+1,EFFECT_TACTICALJUMP,"After 4 seconds, warps to the target location. Battlecruiser is invincible while warping. Stuns and puts the Battlecruiser into a 1 second vulnerability phase before it teleports. In this state, the Battlecruiser can be damaged, but Tactical Jump may not be canceled."
+1,EMP_EMP,The Ghost fires an EMP Round that removes up to 100 shields and energy from every unit and building within the AoE. Also reveals cloaked units.
+1,ENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL1,"Increase the armor of Terran infantry units (Ghost, Marauder, Reaper, Marine, SCV)."
+1,ENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL2,"Increase the armor of Terran infantry units (Ghost, Marauder, Reaper, Marine, SCV)."
+1,ENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL3,"Increase the armor of Terran infantry units (Ghost, Marauder, Reaper, Marine, SCV)."
+1,ENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL1,"Increase the damage of Terran infantry units (Ghost, Marauder, Reaper, Marine)."
+1,ENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL2,"Increase the damage of Terran infantry units (Ghost, Marauder, Reaper, Marine)."
+1,ENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL3,"Increase the damage of Terran infantry units (Ghost, Marauder, Reaper, Marine)."
+1,FACTORYTRAIN_HELLION,"Train a Hellion, a fast harassment vehicle that incinerates light ground units in a line."
+1,FACTORYTRAIN_SIEGETANK,"Train a Siege Tank, a transforming artillery unit that bombards ground targets from long range with devastating area-of-effect damage."
+1,FACTORYTRAIN_THOR,"Train a Thor, a heavily-armored combat walker that excels against massive ground units and light air fleets."
+1,FACTORYTRAIN_WIDOWMINE,"Train a Widow Mine, a burrowing trap that launches a devastating missile at the first enemy ground or air unit to cross its path."
+0,HARVEST_GATHER_MULE,
+0,HARVEST_GATHER_SCV,
+0,HARVEST_RETURN_MULE,
+1,KD8CHARGE_KD8CHARGE,"Explodes after a short delay, dealing 5 damage and knocking back nearby units."
+0,LOAD_BUNKER,Load a unit into a Bunker.
+0,LOAD_MEDIVAC,Load a unit into a Medivac.
+1,LOCKON_LOCKON,"Locks the Cyclone's weapons on the target unit, increasing the Cyclone's range to 9 and allowing it to move while firing. Canceled if the target moves out of range (9) or vision."
+1,MEDIVACHEAL_HEAL,Enables a Medivac to heal nearby injured units.
+1,MORPH_HELLBAT,"Transforms the Hellion into its Hellbat form, short-range defense mode."
+1,MORPH_HELLION,"Transforms the Hellbat into its Hellion form, remote support mode."
+1,MORPH_LIBERATORAAMODE,"Reverts to Fighter Mode. In this mode, Liberators can move, but they can only target air units."
+1,MORPH_LIBERATORAGMODE,"Deploys into Defender Mode. In this mode, Liberators inflict single target damage to ground units. Liberators in this mode cannot move."
+0,MORPH_SUPPLYDEPOT_LOWER,
+0,MORPH_SUPPLYDEPOT_RAISE,
+1,MORPH_THOREXPLOSIVEMODE,"Arms the Thor's Javelin missile launchers, which deal splash damage to nearby air units and additional damage to Light units."
+1,MORPH_THORHIGHIMPACTMODE,"Activates the Thor's 250mm Punisher Cannons, which strike a single air target for heavy damage."
+1,MORPH_VIKINGASSAULTMODE,Transforms the Viking into Assault Mode where it becomes a Ground unit with a ground attack.
+1,MORPH_VIKINGFIGHTERMODE,Transforms the Viking into Fighter Mode where it becomes an Air unit with an anti-air attack.
+1,RESEARCH_SMARTSERVOS,"Allows Hellions, Hellbats, Vikings, and Thors to transform quickly between combat modes."
+1,RESEARCH_CYCLONELOCKONDAMAGE,Increases Cyclone Lock On damage. Deals 600 damage over 14 seconds to ground and flying targets.
+1,RESEARCH_BANSHEECLOAKINGFIELD,Allows Banshees to use the Cloak ability.
+1,RESEARCH_BANSHEEHYPERFLIGHTROTORS,Increases the movement speed of Banshees from 3.85 to 5.25.
+1,RESEARCH_BATTLECRUISERWEAPONREFIT,Allows Battlecruisers to use the Yamato Cannon ability.
+1,RESEARCH_COMBATSHIELD,Every Marine gains a Combat Shield that gives 10 hitpoints.
+1,RESEARCH_CONCUSSIVESHELLS,Marauders gain the Concussive Shells ability.
+1,RESEARCH_DRILLINGCLAWS,"Allows Widow Mines to burrow, unborrow and activate two times as fast. Additionally this grants invisibility while reloading."
+1,RESEARCH_HISECAUTOTRACKING,"Adds +1 attack range to Auto-Turrets, Missile Turrets, and Planetary Fortresses."
+1,RESEARCH_INFERNALPREIGNITER,Improves the Hellion's bonus against Light units by +5 damage and the Hellbat's bonus against Light units by +12 damage.
+1,RESEARCH_PERSONALCLOAKING,Enables Ghosts to use the Cloak ability. Cloak renders a unit invisible to enemies unless it's revealed by detectors or effects.
+1,RESEARCH_RAVENCORVIDREACTOR,Increases the Raven's starting energy by 25.
+1,RESEARCH_TERRANSTRUCTUREARMORUPGRADE,"Increases the armor of the Point Defense Drone, Auto-Turret, Missile Turret, Planetary Fortress, and all other Terran structures by 2."
+1,SIEGEMODE_SIEGEMODE,"Transforms a Siege Tank into Siege Mode, increasing its attack range and damage but preventing movement."
+1,STARPORTTECHLABRESEARCH_RESEARCHDURABLEMATERIALS,"Increases the duration of Auto-Turrets and Point Defense Drones from 180 to 240 seconds, and increases the duration of the Seeker Missile from 15 to 20 Seconds."
+1,STARPORTTECHLABRESEARCH_RESEARCHMEDIVACENERGYUPGRADE,Double the energy regeneration rate of Medivac.
+1,STARPORTTRAIN_BANSHEE,"Train a Banshee, a cloaked air unit that excels at surprise attacks against ground targets."
+1,STARPORTTRAIN_BATTLECRUISER,"Train a Battle Cruiser, a powerful capital ship that can teleport across the map and unleash a devastating single-target blast."
+1,STARPORTTRAIN_LIBERATOR,"Train a Liberator, an air unit that transforms into a stationary platform to lockdown and destroy ground targets in a designated area."
+1,STARPORTTRAIN_MEDIVAC,"Train a Medivac, a flying support unit that heals biological forces and transports them across the battlefield."
+1,STARPORTTRAIN_RAVEN,"Train a Raven, a flying spellcaster that disrupts enemy armies with debilitating abilities and provides detection."
+1,STARPORTTRAIN_VIKINGFIGHTER,"Train a Viking Fighter, a transforming fighter that dominates the skies in air mode and provides ground support in assault mode."
+0,RESEARCH_HIGHCAPACITYFUELTANKS,"Do not care."
+0,SUPPLYDROP_SUPPLYDROP,
+1,TERRANBUILD_ARMORY,"Build a Armory to unlock the Hellbat, Thor and higher-level infantry upgrades."
+1,TERRANBUILD_BARRACKS,"Build a Barracks to produce infantry units (Marine, Reaper, Marauder, Ghost)."
+1,TERRANBUILD_BUNKER,"Build a Bunker, a static defense building."
+1,TERRANBUILD_COMMANDCENTER,"Build a Command Center, the Terran base."
+1,TERRANBUILD_ENGINEERINGBAY,"Build an Engineer Bay to unlock Missile Turret, Sensor Tower and Planetary Fortress."
+1,TERRANBUILD_FACTORY,"Build a Factory to produce mechanical ground units (Hellion, Widow Mine, Siege Tank, Hellbat, Thor) and unlock the Starport and Armory."
+1,TERRANBUILD_FUSIONCORE,"Build a Fusion Core to unlock Battlecruiser."
+1,TERRANBUILD_GHOSTACADEMY,"Build a Ghost Academy to unlock the Ghost unit."
+1,TERRANBUILD_MISSILETURRET,"Build a Missile Turret to attack flying units."
+1,TERRANBUILD_REFINERY,"Build a Refinery on a Vespene Geyser."
+1,TERRANBUILD_SENSORTOWER,"Build a Sensor Tower, which senses any approaching uncloaked, unburrowed enemy units."
+1,TERRANBUILD_STARPORT,"Build a Starport to produce air units (Viking, Medivac, Banshee, Raven, Battlecruiser)."
+1,TERRANBUILD_SUPPLYDEPOT,"Build a Supply Depot to increase 8 supplies and unlock Barracks."
+1,TRAIN_CYCLONE,"Train a Cyclone, locking onto a single air or ground target to deal immense damage while moving to stay at range."
+1,TRAIN_HELLBAT,"Train a Hellbat, a tough, short-ranged walker that incinerates masses of light units with its wide flame attack."
+1,UNSIEGE_UNSIEGE,Converts a Siege Tank back from Siege Mode to its regular mode.
+1,UPGRADETOORBITAL_ORBITALCOMMAND,"Unlocks MULE (Faster Mineral Income), Extra Supplies (Doubles Supply Depot food), and use Scanner Sweep (Reveal any part of the map). You need to have a barraks first to update to orbital command."
+1,UPGRADETOPLANETARYFORTRESS_PLANETARYFORTRESS, "Enhance the defense capability of Command Center".
+1,WIDOWMINEATTACK_WIDOWMINEATTACK,Command Widow Mine to attack.
+1,YAMATO_YAMATOGUN,"Blasts a target with a devastating plasma cannon, causing 240 damage."
+1,STARPORTTECHLABRESEARCH_RESEARCHRAVENINTERFERENCEMATRIX, "Allows Ravens to use the Interference Matrix ability."
+0,UNLOADALL_BUNKER,Unload all units from a Bunker.
+1,BURROWUP_WIDOWMINE,Enables the Widow Mine to emerge from the ground and regain mobility.

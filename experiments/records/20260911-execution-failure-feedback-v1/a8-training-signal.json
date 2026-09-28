@@ -1,0 +1,1403 @@
+{
+  "source_sha": "4ad9a605cc6a91419fd2a2ef5d6e8a2af72aac32",
+  "source_file_hashes": {
+    "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+    "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+    "scripts/train_sc2.sh": "c9df070916cb3be0e5732520491bc84ffe09dfe5e0c478cc0a3f74526f27f104",
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "149bf51487319ceea7914858bc971594959c955117c7dacf507fae4f204eea24",
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "cd5909d8060859f5b8c1cd8a6a6ed7edce5bc100c80ca126228c1956214c1c78",
+    "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+    "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "6b5d474f90b1a3a9d7a641c92f3379b9d936e14aa7102d1f1717545093056704",
+    "agent_system/environments/strategic_sc2_env_manager_v2.py": "002249bfac1ade8487ff43672320ee38cb7e72453d2edeafffb1617fcc514a88",
+    "gigpo/core_gigpo.py": "f135bd272518b49a58762da3474e2d4bc90906b053f1ae820d8fb05c2064148b",
+    "verl/trainer/ppo/ray_trainer.py": "97b3795548b53bc081918719dceb397a16315ba5ef64b4c621ce17555ca0a26f",
+    "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/commander.py": "795f8bf172c92ca28f7203b50dbf409b56cdd84d557bd0df3aa564d9651166de",
+    "agent_system/multi_turn_rollout/rollout_loop.py": "cb80b5a08331838f81aa39f868e3dbcba7a64c5ae0fe856aab1137adbfaa1d57",
+    "agent_system/multi_turn_rollout/utils.py": "83e43da3108cc9d06e38f990758e0c559c2d807325a32dea1a94fc9bf78c462d",
+    "agent_system/reward_manager/episode.py": "f9a71d8ccba625f2dc218594a3f9edaa2894306a1accc62cd19832ef4c521428"
+  },
+  "snapshot": "/private/tmp/sc2-a8-signal-audit.EcQWxs",
+  "artifact_hashes": {
+    "metrics.json": "799abd25815d9589847fcc941bd1435c09e3b8c76b6336719ba0cc5f8aa72a3a",
+    "episode_outcomes.jsonl": "4a7e22b62a25a14af4e7d24da7fbfbbd03e37434762dad483f4c381490559b2e",
+    "result.json": "beac886bd9864ae28f259d70c717e5d13ba0518df62f0773d788693f00c86275",
+    "console.log": "0478aa1c78b3adf7e67f168c0aca4f6c7c706dd77a7ecf918f099fd99bde04da",
+    "training_seeds.jsonl": "bcb4ca5f8d03eeccb894f1496138c231ce73e2461ae3cfc2335385e71d20887a",
+    "effective_config.json": "e3c22d7a5cfa3e1d4434707343e903fb16d4d46f117a3fad017b6b80a81d55b3",
+    "prompt_response.jsonl": "fa2cd8d601e16c2f4858bfa21850f9dca400febc1eb6b8b01ab59d2a80fb68a0",
+    "manifest.json": "65332948fa47ba3361e33f72c3b2ed8a0dd9f3c779454624927c3f0b497f61d2"
+  },
+  "batches": [
+    {
+      "global_step": 5,
+      "seed": 45891,
+      "wins": 8,
+      "decisions": 18,
+      "valid": 17,
+      "copied_rows": 2,
+      "prompt_group_sizes": [
+        1,
+        1,
+        8,
+        8
+      ],
+      "trajectory_bullet_variants": 2,
+      "first_two_unique_answers": [
+        1,
+        2
+      ],
+      "logged_advantage": [
+        -1.245,
+        0.148
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 45891,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 1,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 9,
+              "prompt_sha256": "c64f73642031bd6ebda7e6c434034d8a2c681db26eed7777b2ba36e7035a58a8",
+              "game_time": "04:52",
+              "observation": "It is now 04:52 in the game, and we are playing as Terran with 580 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 22 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 3 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 2 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 1,
+          "seed": 45891,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 2,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 10,
+              "prompt_sha256": "c64f73642031bd6ebda7e6c434034d8a2c681db26eed7777b2ba36e7035a58a8",
+              "game_time": "04:52",
+              "observation": "It is now 04:52 in the game, and we are playing as Terran with 580 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 22 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 3 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 2 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 2,
+          "seed": 45891,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 3,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 11,
+              "prompt_sha256": "c64f73642031bd6ebda7e6c434034d8a2c681db26eed7777b2ba36e7035a58a8",
+              "game_time": "04:52",
+              "observation": "It is now 04:52 in the game, and we are playing as Terran with 580 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 22 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 3 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 2 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 3,
+          "seed": 45891,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 4,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 12,
+              "prompt_sha256": "c64f73642031bd6ebda7e6c434034d8a2c681db26eed7777b2ba36e7035a58a8",
+              "game_time": "04:52",
+              "observation": "It is now 04:52 in the game, and we are playing as Terran with 580 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 22 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 3 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 2 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 4,
+          "seed": 45891,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 5,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 13,
+              "prompt_sha256": "c64f73642031bd6ebda7e6c434034d8a2c681db26eed7777b2ba36e7035a58a8",
+              "game_time": "04:52",
+              "observation": "It is now 04:52 in the game, and we are playing as Terran with 580 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 22 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 3 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 2 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 5,
+          "seed": 45891,
+          "result": "Victory",
+          "reward": 21.0,
+          "answers": [
+            {
+              "source_line": 6,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 14,
+              "prompt_sha256": "c64f73642031bd6ebda7e6c434034d8a2c681db26eed7777b2ba36e7035a58a8",
+              "game_time": "04:52",
+              "observation": "It is now 04:52 in the game, and we are playing as Terran with 580 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 22 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 3 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 2 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 22,
+              "prompt_sha256": "0214f23d5f44575ef3de8f00b7b890f60432888e5d1cf4d46881089a8ab86d30",
+              "game_time": "08:56",
+              "observation": "It is now 08:56 in the game, and we are playing as Terran with 955 minerals and 0 vespene gas, while our current supply is 25, of which 12 is allocated to the army, 12 to workers, and 86 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 12 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 6 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 5 SCV. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 refinery, 1 starport.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 50\n- launch OFFENSE with 8 marine\n</answer>",
+              "valid": false,
+              "failure_reason": "action outside current canonical BO candidates: techlab",
+              "credited_reward": 0.5
+            },
+            {
+              "source_line": 30,
+              "prompt_sha256": "27d2152337eb72b083202abd7b385c73090d88d59e686e6b9d121b9d699863d4",
+              "game_time": "09:48",
+              "observation": "It is now 09:48 in the game, and we are playing as Terran with 945 minerals and 90 vespene gas, while our current supply is 29, of which 15 is allocated to the army, 14 to workers, and 90 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 13 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 6 barracks, 1 barracks with techlab, 2 refinery, 13 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 starport, 1 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 3\n- commandcenter x 2\n- factory x 1\n- supplydepot x 8\n- mule x 6\n- scv x 15\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 6,
+          "seed": 45891,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 7,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 15,
+              "prompt_sha256": "c64f73642031bd6ebda7e6c434034d8a2c681db26eed7777b2ba36e7035a58a8",
+              "game_time": "04:52",
+              "observation": "It is now 04:52 in the game, and we are playing as Terran with 580 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 22 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 3 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 2 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 7,
+          "seed": 45891,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 8,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 16,
+              "prompt_sha256": "c64f73642031bd6ebda7e6c434034d8a2c681db26eed7777b2ba36e7035a58a8",
+              "game_time": "04:52",
+              "observation": "It is now 04:52 in the game, and we are playing as Terran with 580 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 22 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 3 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 2 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "global_step": 6,
+      "seed": 21243,
+      "wins": 8,
+      "decisions": 16,
+      "valid": 16,
+      "copied_rows": 0,
+      "prompt_group_sizes": [
+        8,
+        8
+      ],
+      "trajectory_bullet_variants": 1,
+      "first_two_unique_answers": [
+        1,
+        1
+      ],
+      "logged_advantage": [
+        0.0,
+        0.0
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 21243,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 33,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 41,
+              "prompt_sha256": "c1eb6aa0377300c0265a2c42ea692feafcdfaf2ea356e7aba60b6a19c02e7e47",
+              "game_time": "04:13",
+              "observation": "It is now 04:13 in the game, and we are playing as Terran with 140 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 1,
+          "seed": 21243,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 34,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 42,
+              "prompt_sha256": "c1eb6aa0377300c0265a2c42ea692feafcdfaf2ea356e7aba60b6a19c02e7e47",
+              "game_time": "04:13",
+              "observation": "It is now 04:13 in the game, and we are playing as Terran with 140 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 2,
+          "seed": 21243,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 35,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 43,
+              "prompt_sha256": "c1eb6aa0377300c0265a2c42ea692feafcdfaf2ea356e7aba60b6a19c02e7e47",
+              "game_time": "04:13",
+              "observation": "It is now 04:13 in the game, and we are playing as Terran with 140 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 3,
+          "seed": 21243,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 36,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 44,
+              "prompt_sha256": "c1eb6aa0377300c0265a2c42ea692feafcdfaf2ea356e7aba60b6a19c02e7e47",
+              "game_time": "04:13",
+              "observation": "It is now 04:13 in the game, and we are playing as Terran with 140 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 4,
+          "seed": 21243,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 37,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 45,
+              "prompt_sha256": "c1eb6aa0377300c0265a2c42ea692feafcdfaf2ea356e7aba60b6a19c02e7e47",
+              "game_time": "04:13",
+              "observation": "It is now 04:13 in the game, and we are playing as Terran with 140 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 5,
+          "seed": 21243,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 38,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 46,
+              "prompt_sha256": "c1eb6aa0377300c0265a2c42ea692feafcdfaf2ea356e7aba60b6a19c02e7e47",
+              "game_time": "04:13",
+              "observation": "It is now 04:13 in the game, and we are playing as Terran with 140 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 6,
+          "seed": 21243,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 39,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 47,
+              "prompt_sha256": "c1eb6aa0377300c0265a2c42ea692feafcdfaf2ea356e7aba60b6a19c02e7e47",
+              "game_time": "04:13",
+              "observation": "It is now 04:13 in the game, and we are playing as Terran with 140 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        },
+        {
+          "env": 7,
+          "seed": 21243,
+          "result": "Victory",
+          "reward": 20.5,
+          "answers": [
+            {
+              "source_line": 40,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 48,
+              "prompt_sha256": "c1eb6aa0377300c0265a2c42ea692feafcdfaf2ea356e7aba60b6a19c02e7e47",
+              "game_time": "04:13",
+              "observation": "It is now 04:13 in the game, and we are playing as Terran with 140 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 20.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "global_step": 7,
+      "seed": 30403,
+      "wins": 0,
+      "decisions": 24,
+      "valid": 21,
+      "copied_rows": 0,
+      "prompt_group_sizes": [
+        8,
+        8,
+        8
+      ],
+      "trajectory_bullet_variants": 8,
+      "first_two_unique_answers": [
+        1,
+        1
+      ],
+      "logged_advantage": [
+        -0.54,
+        0.46
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 30403,
+          "result": "Defeat",
+          "reward": -50.0,
+          "answers": [
+            {
+              "source_line": 49,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 57,
+              "prompt_sha256": "801f5a01fdcdca273d0178e140efcb9df9f5e8b5e757f10b19226801fe954262",
+              "game_time": "04:25",
+              "observation": "It is now 04:25 in the game, and we are playing as Terran with 120 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 65,
+              "prompt_sha256": "e97cda6eefb7749928f603f2724a00f8d5247b2cda06f71b8bb751455f373961",
+              "game_time": "12:03",
+              "observation": "It is now 12:03 in the game, and we are playing as Terran with 905 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 11 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 4 missileturret, 4 refinery, 2 starport, 2 starport with techlab, 8 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 1\n- commandcenter x 1\n- factory x 1\n- techlab barracks x 1\n- marines x 50\n</answer>",
+              "valid": false,
+              "failure_reason": "action outside current canonical BO candidates: marines",
+              "credited_reward": -50.0
+            }
+          ]
+        },
+        {
+          "env": 1,
+          "seed": 30403,
+          "result": "Defeat",
+          "reward": -50.0,
+          "answers": [
+            {
+              "source_line": 50,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 58,
+              "prompt_sha256": "801f5a01fdcdca273d0178e140efcb9df9f5e8b5e757f10b19226801fe954262",
+              "game_time": "04:25",
+              "observation": "It is now 04:25 in the game, and we are playing as Terran with 120 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 66,
+              "prompt_sha256": "e97cda6eefb7749928f603f2724a00f8d5247b2cda06f71b8bb751455f373961",
+              "game_time": "12:03",
+              "observation": "It is now 12:03 in the game, and we are playing as Terran with 905 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 11 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 4 missileturret, 4 refinery, 2 starport, 2 starport with techlab, 8 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 4\n- commandcenter x 2\n- supplydepot x 9\n- barracks x 1\n- factory x 1\n- techlab barracks x 1\n- refinery x 1\n- starport x 2\n- starport with techlab x 2\n</answer>",
+              "valid": false,
+              "failure_reason": "action outside current canonical BO candidates: barracks",
+              "credited_reward": -50.0
+            }
+          ]
+        },
+        {
+          "env": 2,
+          "seed": 30403,
+          "result": "Defeat",
+          "reward": -49.4,
+          "answers": [
+            {
+              "source_line": 51,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 59,
+              "prompt_sha256": "801f5a01fdcdca273d0178e140efcb9df9f5e8b5e757f10b19226801fe954262",
+              "game_time": "04:25",
+              "observation": "It is now 04:25 in the game, and we are playing as Terran with 120 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 67,
+              "prompt_sha256": "e97cda6eefb7749928f603f2724a00f8d5247b2cda06f71b8bb751455f373961",
+              "game_time": "12:03",
+              "observation": "It is now 12:03 in the game, and we are playing as Terran with 905 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 11 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 4 missileturret, 4 refinery, 2 starport, 2 starport with techlab, 8 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- mule x 1\n- commandcenter x 1\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n- marauder x 1\n- scv x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- supplydepot x 1",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.4
+            }
+          ]
+        },
+        {
+          "env": 3,
+          "seed": 30403,
+          "result": "Defeat",
+          "reward": -49.45,
+          "answers": [
+            {
+              "source_line": 52,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 60,
+              "prompt_sha256": "801f5a01fdcdca273d0178e140efcb9df9f5e8b5e757f10b19226801fe954262",
+              "game_time": "04:25",
+              "observation": "It is now 04:25 in the game, and we are playing as Terran with 120 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 68,
+              "prompt_sha256": "e97cda6eefb7749928f603f2724a00f8d5247b2cda06f71b8bb751455f373961",
+              "game_time": "12:03",
+              "observation": "It is now 12:03 in the game, and we are playing as Terran with 905 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 11 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 4 missileturret, 4 refinery, 2 starport, 2 starport with techlab, 8 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 10\n- supplydepot x 1\n- mule x 1\n- commandcenter x 1\n- factory x 1\n- marauder x 4\n- techlab barracks x 1\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.45
+            }
+          ]
+        },
+        {
+          "env": 4,
+          "seed": 30403,
+          "result": "Defeat",
+          "reward": -49.48,
+          "answers": [
+            {
+              "source_line": 53,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 61,
+              "prompt_sha256": "801f5a01fdcdca273d0178e140efcb9df9f5e8b5e757f10b19226801fe954262",
+              "game_time": "04:25",
+              "observation": "It is now 04:25 in the game, and we are playing as Terran with 120 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 69,
+              "prompt_sha256": "e97cda6eefb7749928f603f2724a00f8d5247b2cda06f71b8bb751455f373961",
+              "game_time": "12:03",
+              "observation": "It is now 12:03 in the game, and we are playing as Terran with 905 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 11 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 4 missileturret, 4 refinery, 2 starport, 2 starport with techlab, 8 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 4\n- supplydepot x 9\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.48
+            }
+          ]
+        },
+        {
+          "env": 5,
+          "seed": 30403,
+          "result": "Defeat",
+          "reward": -49.325,
+          "answers": [
+            {
+              "source_line": 54,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 62,
+              "prompt_sha256": "801f5a01fdcdca273d0178e140efcb9df9f5e8b5e757f10b19226801fe954262",
+              "game_time": "04:25",
+              "observation": "It is now 04:25 in the game, and we are playing as Terran with 120 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 70,
+              "prompt_sha256": "e97cda6eefb7749928f603f2724a00f8d5247b2cda06f71b8bb751455f373961",
+              "game_time": "12:03",
+              "observation": "It is now 12:03 in the game, and we are playing as Terran with 905 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 11 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 4 missileturret, 4 refinery, 2 starport, 2 starport with techlab, 8 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 50\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.325
+            }
+          ]
+        },
+        {
+          "env": 6,
+          "seed": 30403,
+          "result": "Defeat",
+          "reward": -50.0,
+          "answers": [
+            {
+              "source_line": 55,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 63,
+              "prompt_sha256": "801f5a01fdcdca273d0178e140efcb9df9f5e8b5e757f10b19226801fe954262",
+              "game_time": "04:25",
+              "observation": "It is now 04:25 in the game, and we are playing as Terran with 120 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 71,
+              "prompt_sha256": "e97cda6eefb7749928f603f2724a00f8d5247b2cda06f71b8bb751455f373961",
+              "game_time": "12:03",
+              "observation": "It is now 12:03 in the game, and we are playing as Terran with 905 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 11 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 4 missileturret, 4 refinery, 2 starport, 2 starport with techlab, 8 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 4\n- commandcenter x 2\n- supplydepot x 9\n- techlab barracks x 1\n- factory x 1\n- marines x 50\n</answer>",
+              "valid": false,
+              "failure_reason": "action outside current canonical BO candidates: marines",
+              "credited_reward": -50.0
+            }
+          ]
+        },
+        {
+          "env": 7,
+          "seed": 30403,
+          "result": "Defeat",
+          "reward": -49.48,
+          "answers": [
+            {
+              "source_line": 56,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 64,
+              "prompt_sha256": "801f5a01fdcdca273d0178e140efcb9df9f5e8b5e757f10b19226801fe954262",
+              "game_time": "04:25",
+              "observation": "It is now 04:25 in the game, and we are playing as Terran with 120 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 1 starport, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 72,
+              "prompt_sha256": "e97cda6eefb7749928f603f2724a00f8d5247b2cda06f71b8bb751455f373961",
+              "game_time": "12:03",
+              "observation": "It is now 12:03 in the game, and we are playing as Terran with 905 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 11 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 4 missileturret, 4 refinery, 2 starport, 2 starport with techlab, 8 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- commandcenter x 1\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.48
+            }
+          ]
+        }
+      ],
+      "decomposition": {
+        "reconstructed_range": [
+          -0.539999999999992,
+          0.46000000000000796
+        ],
+        "component_absolute_sums": {
+          "terminal_format": 7.223437500000001,
+          "terminal_state": 1.4495031249999615,
+          "invalid_penalty": 0.375
+        },
+        "legality_component_fraction": 0.8397974539095775,
+        "metric_definition": "Sum |scalar component| per response, NOT token weighting, gradient share or learning gain",
+        "representative_inference": "Only unpenalized episode representatives match both logged extrema to .001; balancing permutation not saved",
+        "per_episode": [
+          {
+            "env": 0,
+            "terminal_format": 0.0,
+            "terminal_state_residual": 0.0,
+            "advantage_by_call": [
+              -0.44258281249999953,
+              -0.45959375000000335,
+              -0.539999999999992
+            ]
+          },
+          {
+            "env": 1,
+            "terminal_format": 0.0,
+            "terminal_state_residual": 0.0,
+            "advantage_by_call": [
+              -0.44258281249999953,
+              -0.45959375000000335,
+              -0.539999999999992
+            ]
+          },
+          {
+            "env": 2,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.10000000000000142,
+            "advantage_by_call": [
+              0.2989171875000096,
+              0.3104062499999998,
+              0.36000000000001364
+            ]
+          },
+          {
+            "env": 3,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.04999999999999716,
+            "advantage_by_call": [
+              0.23712552083333094,
+              0.24623958333332752,
+              0.29333333333333655
+            ]
+          },
+          {
+            "env": 4,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.020000000000003126,
+            "advantage_by_call": [
+              0.20005052083333652,
+              0.20773958333333553,
+              0.2533333333333445
+            ]
+          },
+          {
+            "env": 5,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.17499999999999716,
+            "advantage_by_call": [
+              0.3916046874999992,
+              0.4066562499999975,
+              0.46000000000000796
+            ]
+          },
+          {
+            "env": 6,
+            "terminal_format": 0.0,
+            "terminal_state_residual": 0.0,
+            "advantage_by_call": [
+              -0.44258281249999953,
+              -0.45959375000000335,
+              -0.539999999999992
+            ]
+          },
+          {
+            "env": 7,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.020000000000003126,
+            "advantage_by_call": [
+              0.20005052083333652,
+              0.20773958333333553,
+              0.2533333333333445
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "global_step": 8,
+      "seed": 32103,
+      "wins": 0,
+      "decisions": 24,
+      "valid": 20,
+      "copied_rows": 0,
+      "prompt_group_sizes": [
+        8,
+        8,
+        8
+      ],
+      "trajectory_bullet_variants": 7,
+      "first_two_unique_answers": [
+        1,
+        1
+      ],
+      "logged_advantage": [
+        -0.479,
+        0.553
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 32103,
+          "result": "Defeat",
+          "reward": -49.98,
+          "answers": [
+            {
+              "source_line": 73,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 81,
+              "prompt_sha256": "53b790c56757e3894c9c8bda9230f0aaf6c72f3066bfd41e9dac85c440115f8b",
+              "game_time": "04:09",
+              "observation": "It is now 04:09 in the game, and we are playing as Terran with 110 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 2 starport with techlab, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 89,
+              "prompt_sha256": "2ba34ad91b4196f87dd22dca15547b4133bcf3f746660ca6a1289a0b79201c61",
+              "game_time": "11:47",
+              "observation": "It is now 11:47 in the game, and we are playing as Terran with 970 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 96 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 30\n- supplydepot x 10\n- mule x 6\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "valid": false,
+              "failure_reason": "action count exceeds current BO remainder: supplydepot",
+              "credited_reward": -49.98
+            }
+          ]
+        },
+        {
+          "env": 1,
+          "seed": 32103,
+          "result": "Defeat",
+          "reward": -49.98,
+          "answers": [
+            {
+              "source_line": 74,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 82,
+              "prompt_sha256": "53b790c56757e3894c9c8bda9230f0aaf6c72f3066bfd41e9dac85c440115f8b",
+              "game_time": "04:09",
+              "observation": "It is now 04:09 in the game, and we are playing as Terran with 110 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 2 starport with techlab, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 90,
+              "prompt_sha256": "2ba34ad91b4196f87dd22dca15547b4133bcf3f746660ca6a1289a0b79201c61",
+              "game_time": "11:47",
+              "observation": "It is now 11:47 in the game, and we are playing as Terran with 970 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 96 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- factory x 1\n- techlab barracks x 1\n- commandcenter x 2\n- refinery x 1\n- techlab x 1\n- marauder x 4\n- marine x 50\n</answer>",
+              "valid": false,
+              "failure_reason": "action outside current canonical BO candidates: techlab",
+              "credited_reward": -49.98
+            }
+          ]
+        },
+        {
+          "env": 2,
+          "seed": 32103,
+          "result": "Defeat",
+          "reward": -49.98,
+          "answers": [
+            {
+              "source_line": 75,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 83,
+              "prompt_sha256": "53b790c56757e3894c9c8bda9230f0aaf6c72f3066bfd41e9dac85c440115f8b",
+              "game_time": "04:09",
+              "observation": "It is now 04:09 in the game, and we are playing as Terran with 110 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 2 starport with techlab, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 91,
+              "prompt_sha256": "2ba34ad91b4196f87dd22dca15547b4133bcf3f746660ca6a1289a0b79201c61",
+              "game_time": "11:47",
+              "observation": "It is now 11:47 in the game, and we are playing as Terran with 970 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 96 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 50\n- supplydepot x 9\n- mule x 6\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n- techlab x 1\n</answer>",
+              "valid": false,
+              "failure_reason": "action outside current canonical BO candidates: techlab",
+              "credited_reward": -49.98
+            }
+          ]
+        },
+        {
+          "env": 3,
+          "seed": 32103,
+          "result": "Defeat",
+          "reward": -49.281,
+          "answers": [
+            {
+              "source_line": 76,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 84,
+              "prompt_sha256": "53b790c56757e3894c9c8bda9230f0aaf6c72f3066bfd41e9dac85c440115f8b",
+              "game_time": "04:09",
+              "observation": "It is now 04:09 in the game, and we are playing as Terran with 110 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 2 starport with techlab, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 92,
+              "prompt_sha256": "2ba34ad91b4196f87dd22dca15547b4133bcf3f746660ca6a1289a0b79201c61",
+              "game_time": "11:47",
+              "observation": "It is now 11:47 in the game, and we are playing as Terran with 970 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 96 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 50\n- supplydepot x 9\n- mule x 6\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.281
+            }
+          ]
+        },
+        {
+          "env": 4,
+          "seed": 32103,
+          "result": "Defeat",
+          "reward": -49.98,
+          "answers": [
+            {
+              "source_line": 77,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 85,
+              "prompt_sha256": "53b790c56757e3894c9c8bda9230f0aaf6c72f3066bfd41e9dac85c440115f8b",
+              "game_time": "04:09",
+              "observation": "It is now 04:09 in the game, and we are playing as Terran with 110 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 2 starport with techlab, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 93,
+              "prompt_sha256": "2ba34ad91b4196f87dd22dca15547b4133bcf3f746660ca6a1289a0b79201c61",
+              "game_time": "11:47",
+              "observation": "It is now 11:47 in the game, and we are playing as Terran with 970 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 96 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 9\n- mule x 6\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- refinery x 1\n- orbitalcommand x 2\n- barracks x 1\n- barracks with techlab x 1\n- starport x 2\n- starport with techlab x 2\n- fusioncore x 1\n- reactor barracks x 1\n- reactor starport x 1\n- reactor x 1\n- reactor x 1\n</answer>",
+              "valid": false,
+              "failure_reason": "action outside current canonical BO candidates: techlab",
+              "credited_reward": -49.98
+            }
+          ]
+        },
+        {
+          "env": 5,
+          "seed": 32103,
+          "result": "Defeat",
+          "reward": -49.281,
+          "answers": [
+            {
+              "source_line": 78,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 86,
+              "prompt_sha256": "53b790c56757e3894c9c8bda9230f0aaf6c72f3066bfd41e9dac85c440115f8b",
+              "game_time": "04:09",
+              "observation": "It is now 04:09 in the game, and we are playing as Terran with 110 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 2 starport with techlab, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 94,
+              "prompt_sha256": "2ba34ad91b4196f87dd22dca15547b4133bcf3f746660ca6a1289a0b79201c61",
+              "game_time": "11:47",
+              "observation": "It is now 11:47 in the game, and we are playing as Terran with 970 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 96 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 50\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.281
+            }
+          ]
+        },
+        {
+          "env": 6,
+          "seed": 32103,
+          "result": "Defeat",
+          "reward": -49.281,
+          "answers": [
+            {
+              "source_line": 79,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 87,
+              "prompt_sha256": "53b790c56757e3894c9c8bda9230f0aaf6c72f3066bfd41e9dac85c440115f8b",
+              "game_time": "04:09",
+              "observation": "It is now 04:09 in the game, and we are playing as Terran with 110 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 2 starport with techlab, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 95,
+              "prompt_sha256": "2ba34ad91b4196f87dd22dca15547b4133bcf3f746660ca6a1289a0b79201c61",
+              "game_time": "11:47",
+              "observation": "It is now 11:47 in the game, and we are playing as Terran with 970 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 96 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 50\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.281
+            }
+          ]
+        },
+        {
+          "env": 7,
+          "seed": 32103,
+          "result": "Defeat",
+          "reward": -49.5,
+          "answers": [
+            {
+              "source_line": 80,
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "game_time": "00:00",
+              "observation": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 88,
+              "prompt_sha256": "53b790c56757e3894c9c8bda9230f0aaf6c72f3066bfd41e9dac85c440115f8b",
+              "game_time": "04:09",
+              "observation": "It is now 04:09 in the game, and we are playing as Terran with 110 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 2 starport with techlab, 4 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": 0.0
+            },
+            {
+              "source_line": 96,
+              "prompt_sha256": "2ba34ad91b4196f87dd22dca15547b4133bcf3f746660ca6a1289a0b79201c61",
+              "game_time": "11:47",
+              "observation": "It is now 11:47 in the game, and we are playing as Terran with 970 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 96 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 12 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- commandcenter x 1\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "valid": true,
+              "failure_reason": "",
+              "credited_reward": -49.5
+            }
+          ]
+        }
+      ],
+      "decomposition": {
+        "reconstructed_range": [
+          -0.4794999999999945,
+          0.552500000000002
+        ],
+        "component_absolute_sums": {
+          "terminal_format": 7.7049999999999965,
+          "terminal_state": 2.9327156249999806,
+          "invalid_penalty": 0.39999999999999997
+        },
+        "legality_component_fraction": 0.7343004907322038,
+        "metric_definition": "Sum |scalar component| per response, NOT token weighting, gradient share or learning gain",
+        "representative_inference": "Only unpenalized episode representatives match both logged extrema to .001; balancing permutation not saved",
+        "per_episode": [
+          {
+            "env": 0,
+            "terminal_format": 0.0,
+            "terminal_state_residual": 0.020000000000003126,
+            "advantage_by_call": [
+              -0.3980928124999963,
+              -0.41339374999999734,
+              -0.4794999999999945
+            ]
+          },
+          {
+            "env": 1,
+            "terminal_format": 0.0,
+            "terminal_state_residual": 0.020000000000003126,
+            "advantage_by_call": [
+              -0.3980928124999963,
+              -0.41339374999999734,
+              -0.4794999999999945
+            ]
+          },
+          {
+            "env": 2,
+            "terminal_format": 0.0,
+            "terminal_state_residual": 0.020000000000003126,
+            "advantage_by_call": [
+              -0.3980928124999963,
+              -0.41339374999999734,
+              -0.4794999999999945
+            ]
+          },
+          {
+            "env": 3,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.2190000000000012,
+            "advantage_by_call": [
+              0.46575468750000226,
+              0.4836562499999957,
+              0.552500000000002
+            ]
+          },
+          {
+            "env": 4,
+            "terminal_format": 0.0,
+            "terminal_state_residual": 0.020000000000003126,
+            "advantage_by_call": [
+              -0.3980928124999963,
+              -0.41339374999999734,
+              -0.4794999999999945
+            ]
+          },
+          {
+            "env": 5,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.2190000000000012,
+            "advantage_by_call": [
+              0.46575468750000226,
+              0.4836562499999957,
+              0.552500000000002
+            ]
+          },
+          {
+            "env": 6,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.2190000000000012,
+            "advantage_by_call": [
+              0.46575468750000226,
+              0.4836562499999957,
+              0.552500000000002
+            ]
+          },
+          {
+            "env": 7,
+            "terminal_format": 0.5,
+            "terminal_state_residual": 0.0,
+            "advantage_by_call": [
+              0.19510718749999967,
+              0.2026062499999952,
+              0.2605000000000004
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "No model/checkpoint/GPU loaded; no parameter-gradient attribution",
+    "Step5 exact padded advantage not reconstructed: copied IDs and balancing order absent",
+    "Step7/8 scalar reconstruction matches rounded extrema; original PPO tensor files absent",
+    "Terminal state residual uses game_end formula; does not establish causal execution quality"
+  ]
+}

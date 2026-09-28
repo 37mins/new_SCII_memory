@@ -1,0 +1,75 @@
+{
+  "checked_utc": "2026-09-13T08:15:00.571930+00:00",
+  "run_id": "20260911-execution-failure-feedback-v1-spb2-A4-l6-scene1098341402-rl1-4gpu-r1",
+  "output_dir": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-scene1098341402-rl1-4gpu-r1",
+  "source_commit": "1689ba46f6307b8a4d0a7825d78b3fda40e587ea",
+  "dirty": false,
+  "mode": "training",
+  "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+  "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+  "world_size": 4,
+  "gpu_selection": "0,1,2,3",
+  "start_step": 4,
+  "target_steps": 5,
+  "started_utc": "2026-09-13T08:12:21Z",
+  "deadline_unix": 1789289841,
+  "cpu_tests": {
+    "passed": 31,
+    "skipped": 0,
+    "cuda_visible_devices": ""
+  },
+  "actual_overrides": {
+    "trainer.total_epochs": "1",
+    "trainer.total_training_steps": "96",
+    "trainer.save_freq": "1",
+    "trainer.resume_mode": "resume_path",
+    "trainer.resume_from_path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "trainer.val_before_train": "False",
+    "trainer.test_freq": "-1",
+    "env.rollout.n": "8",
+    "env.history_length": "0",
+    "+env.sc2_memory_mode": "off",
+    "data.max_response_length": "192",
+    "actor_rollout_ref.rollout.temperature": "0.4",
+    "actor_rollout_ref.rollout.top_p": "0.9",
+    "actor_rollout_ref.actor.optim.lr": "1e-6",
+    "algorithm.gamma": "0.95",
+    "algorithm.gigpo.mode": "mean_norm",
+    "+ray_init.runtime_env.worker_process_setup_hook": "continue_a4.install_scene",
+    "+ray_init.runtime_env.env_vars.SC2_EXECUTION_FAILURE_FEEDBACK": "'0'",
+    "+ray_init.runtime_env.env_vars.SC2_STEP_SHAPING_MODE": "'off'",
+    "+actor_rollout_ref.model.override_config.swa_dropout": "0.0"
+  },
+  "effective_config_sha256": "fdb917e8f330caeb58d0b175ef804602b3243f14d3fd0a5af277e9ca651baaa0",
+  "budget": {
+    "gpus": 4,
+    "games": 8,
+    "max_seconds": 2700,
+    "new_global_steps": 1,
+    "auto_retry": false,
+    "evaluation": false
+  },
+  "actual_training_seed_record": {"base_seed":0,"reset_index":0,"seeds":[1098341402,1098341402,1098341402,1098341402,1098341402,1098341402,1098341402,1098341402]},
+  "started_sc2_processes": [4187552,4187553,4187554,4187555,4187556,4187557,4187558,4187559],
+  "stage": "global5 rollout; no new optimizer completion claimed",
+  "actual_load": {
+    "loaded_global_step": 4,
+    "checkpoint": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "model_optimizer_load_returned": true,
+    "sc2_state_restored": false,
+    "exhausted_saved_epoch_closed_without_new_sample": true,
+    "driver_seed": 0,
+    "game_reset_index": 0,
+    "game_seed_per_new_step": [
+      1098341402
+    ],
+    "note": "Original model/optimizer/per-rank RNG restored; fresh games, declared driver seed0. Not bitwise SC2 resume; no answer intervention.",
+    "game_seed_sequence_offset": null,
+    "seed_selection": "explicit diagnostic scene",
+    "parent_source_commit": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+    "parent_run": "20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2",
+    "new_run_global_steps": [
+      5
+    ]
+  }
+}

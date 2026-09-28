@@ -1,0 +1,1424 @@
+[
+  {
+    "supply": "13",
+    "time": "00:00",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "13",
+    "time": "00:12",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "14",
+    "time": "00:16",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "14",
+    "time": "00:24",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "15",
+    "time": "00:37",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "16",
+    "time": "00:49",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "16",
+    "time": "00:58",
+    "action": "commandcenter",
+    "intent": "Build Command Center"
+  },
+  {
+    "supply": "17",
+    "time": "01:09",
+    "action": "barracks",
+    "intent": "Build Barracks"
+  },
+  {
+    "supply": "17",
+    "time": "01:12",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "18",
+    "time": "01:23",
+    "action": "barracks",
+    "intent": "Build Barracks"
+  },
+  {
+    "supply": "18",
+    "time": "01:27",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "19",
+    "time": "01:39",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "19",
+    "time": "01:55",
+    "action": "orbitalcommand",
+    "intent": "Upgrade Orbital Command"
+  },
+  {
+    "supply": "20",
+    "time": "01:55",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "20",
+    "time": "01:55",
+    "action": "bunker",
+    "intent": "Build Bunker"
+  },
+  {
+    "supply": "20",
+    "time": "02:10",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "20",
+    "time": "02:10",
+    "action": "orbitalcommand",
+    "intent": "Upgrade Orbital Command"
+  },
+  {
+    "supply": "20",
+    "time": "02:13",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "21",
+    "time": "02:18",
+    "action": "barracks",
+    "intent": "Build Barracks"
+  },
+  {
+    "supply": "21",
+    "time": "02:20",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "21",
+    "time": "02:21",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "21",
+    "time": "02:30",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "22",
+    "time": "02:30",
+    "action": "barracks",
+    "intent": "Build Barracks"
+  },
+  {
+    "supply": "22",
+    "time": "02:31",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "23",
+    "time": "02:34",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "23",
+    "time": "02:35",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "24",
+    "time": "02:37",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "25",
+    "time": "02:46",
+    "action": "barracks",
+    "intent": "Build Barracks"
+  },
+  {
+    "supply": "25",
+    "time": "02:46",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "25",
+    "time": "02:48",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "26",
+    "time": "02:50",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "26",
+    "time": "02:55",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "27",
+    "time": "02:56",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "27",
+    "time": "02:58",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "28",
+    "time": "03:00",
+    "action": "refinery",
+    "intent": "Build Refinery"
+  },
+  {
+    "supply": "28",
+    "time": "03:02",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "29",
+    "time": "03:06",
+    "action": "refinery",
+    "intent": "Build Refinery"
+  },
+  {
+    "supply": "29",
+    "time": "03:06",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "30",
+    "time": "03:10",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "31",
+    "time": "03:11",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "31",
+    "time": "03:13",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "32",
+    "time": "03:18",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "33",
+    "time": "03:23",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "33",
+    "time": "03:23",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "33",
+    "time": "03:24",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "33",
+    "time": "03:24",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "34",
+    "time": "03:27",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "35",
+    "time": "03:30",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "35",
+    "time": "03:31",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "36",
+    "time": "03:32",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "36",
+    "time": "03:39",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "37",
+    "time": "03:41",
+    "action": "barracks",
+    "intent": "Build Barracks"
+  },
+  {
+    "supply": "38",
+    "time": "03:43",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "39",
+    "time": "03:45",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "40",
+    "time": "03:45",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "40",
+    "time": "03:46",
+    "action": "Attacking Instruction: Attack with 4 marines to pressure worker lines and force defensive investments",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "40",
+    "time": "03:47",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "40",
+    "time": "03:48",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "41",
+    "time": "03:55",
+    "action": "engineeringbay",
+    "intent": "Build Engineering Bay"
+  },
+  {
+    "supply": "41",
+    "time": "03:55",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "42",
+    "time": "03:57",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "43",
+    "time": "04:00",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "44",
+    "time": "04:05",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "44",
+    "time": "04:05",
+    "action": "Attacking Instruction: Attack with marine squad to identify tech structures and army composition",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "44",
+    "time": "04:05",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "44",
+    "time": "04:06",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "45",
+    "time": "04:08",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "46",
+    "time": "04:09",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "47",
+    "time": "04:12",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "47",
+    "time": "04:13",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "47",
+    "time": "04:15",
+    "action": "Attacking Instruction: Attack with 21 marines to punish exposed expansions or tech transitions",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "47",
+    "time": "04:15",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "48",
+    "time": "04:21",
+    "action": "barracks",
+    "intent": "Build Barracks"
+  },
+  {
+    "supply": "48",
+    "time": "04:21",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "49",
+    "time": "04:24",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "50",
+    "time": "04:25",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "50",
+    "time": "04:27",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "50",
+    "time": "04:27",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "50",
+    "time": "04:28",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "51",
+    "time": "04:29",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "51",
+    "time": "04:30",
+    "action": "techlab barracks",
+    "intent": "Build Tech Lab Barracks"
+  },
+  {
+    "supply": "51",
+    "time": "04:32",
+    "action": "techlab barracks",
+    "intent": "Build Tech Lab Barracks"
+  },
+  {
+    "supply": "52",
+    "time": "04:34",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "52",
+    "time": "04:35",
+    "action": "techlab barracks",
+    "intent": "Build Tech Lab Barracks"
+  },
+  {
+    "supply": "53",
+    "time": "04:37",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "53",
+    "time": "04:42",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "53",
+    "time": "04:42",
+    "action": "Attacking Instruction: Attack with 7 marines to intercept reinforcements or harass secondary bases",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "53",
+    "time": "04:44",
+    "action": "techlab barracks",
+    "intent": "Build Tech Lab Barracks"
+  },
+  {
+    "supply": "54",
+    "time": "04:45",
+    "action": "barracks",
+    "intent": "Build Barracks"
+  },
+  {
+    "supply": "54",
+    "time": "04:47",
+    "action": "techlab barracks",
+    "intent": "Build Tech Lab Barracks"
+  },
+  {
+    "supply": "55",
+    "time": "04:47",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "55",
+    "time": "04:49",
+    "action": "reactor barracks",
+    "intent": "Build Reactor Barracks"
+  },
+  {
+    "supply": "55",
+    "time": "04:51",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "56",
+    "time": "04:51",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "56",
+    "time": "04:53",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "57",
+    "time": "05:01",
+    "action": "factory",
+    "intent": "Build Factory"
+  },
+  {
+    "supply": "57",
+    "time": "05:02",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "58",
+    "time": "05:03",
+    "action": "factory",
+    "intent": "Build Factory"
+  },
+  {
+    "supply": "58",
+    "time": "05:05",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "59",
+    "time": "05:09",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "60",
+    "time": "05:11",
+    "action": "factory",
+    "intent": "Build Factory"
+  },
+  {
+    "supply": "60",
+    "time": "05:11",
+    "action": "Attacking Instruction: Attack with 13 marines to clear forward positions and create map control",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "60",
+    "time": "05:12",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "61",
+    "time": "05:16",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "62",
+    "time": "05:17",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "62",
+    "time": "05:20",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "63",
+    "time": "05:23",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "63",
+    "time": "05:24",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "63",
+    "time": "05:25",
+    "action": "missileturret",
+    "intent": "Build Missile Turret"
+  },
+  {
+    "supply": "64",
+    "time": "05:25",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "64",
+    "time": "05:27",
+    "action": "reactor barracks",
+    "intent": "Build Reactor Barracks"
+  },
+  {
+    "supply": "65",
+    "time": "05:29",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "65",
+    "time": "05:30",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "65",
+    "time": "05:31",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "65",
+    "time": "05:33",
+    "action": "reactor barracks",
+    "intent": "Build Reactor Barracks"
+  },
+  {
+    "supply": "66",
+    "time": "05:34",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "66",
+    "time": "05:34",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "67",
+    "time": "05:39",
+    "action": "missileturret",
+    "intent": "Build Missile Turret"
+  },
+  {
+    "supply": "67",
+    "time": "05:40",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "68",
+    "time": "05:41",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "68",
+    "time": "05:42",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "68",
+    "time": "05:43",
+    "action": "Attacking Instruction: Attack with 11 marines as follow-up pressure during tech unit transition",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "68",
+    "time": "05:44",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "68",
+    "time": "05:45",
+    "action": "techlab factory",
+    "intent": "Build Tech Lab Factory"
+  },
+  {
+    "supply": "68",
+    "time": "05:46",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "69",
+    "time": "05:49",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "69",
+    "time": "05:50",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "70",
+    "time": "05:52",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "70",
+    "time": "05:52",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "70",
+    "time": "05:53",
+    "action": "techlab factory",
+    "intent": "Build Tech Lab Factory"
+  },
+  {
+    "supply": "70",
+    "time": "05:55",
+    "action": "techlab factory",
+    "intent": "Build Tech Lab Factory"
+  },
+  {
+    "supply": "70",
+    "time": "06:00",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "71",
+    "time": "06:00",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "72",
+    "time": "06:01",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "72",
+    "time": "06:02",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "72",
+    "time": "06:03",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "73",
+    "time": "06:04",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "73",
+    "time": "06:06",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "74",
+    "time": "06:07",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "74",
+    "time": "06:07",
+    "action": "Attacking Instruction: Attack with 89 marines, 4 marauders, 1 sieged tank and 17 SCVs for repairs/forward bunkers to break main defenses",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "74",
+    "time": "06:11",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "75",
+    "time": "06:13",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "76",
+    "time": "06:13",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "76",
+    "time": "06:15",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "76",
+    "time": "06:16",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "77",
+    "time": "06:17",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "77",
+    "time": "06:18",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "78",
+    "time": "06:20",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "78",
+    "time": "06:22",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "79",
+    "time": "06:23",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "79",
+    "time": "06:27",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "80",
+    "time": "06:27",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "80",
+    "time": "06:29",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "80",
+    "time": "06:30",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "81",
+    "time": "06:31",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "81",
+    "time": "06:32",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "82",
+    "time": "06:34",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "82",
+    "time": "06:35",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "82",
+    "time": "06:35",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "83",
+    "time": "06:37",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "83",
+    "time": "06:42",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "84",
+    "time": "06:43",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "84",
+    "time": "06:44",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "85",
+    "time": "06:45",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "85",
+    "time": "06:49",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "87",
+    "time": "06:50",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "89",
+    "time": "06:54",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "91",
+    "time": "06:58",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "92",
+    "time": "06:59",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "93",
+    "time": "07:01",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "93",
+    "time": "07:06",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "93",
+    "time": "07:06",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "94",
+    "time": "07:07",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "94",
+    "time": "07:08",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "95",
+    "time": "07:09",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "96",
+    "time": "07:11",
+    "action": "marauder",
+    "intent": "Train Marauder"
+  },
+  {
+    "supply": "97",
+    "time": "07:14",
+    "action": "marauder",
+    "intent": "Train Marauder"
+  },
+  {
+    "supply": "98",
+    "time": "07:18",
+    "action": "marauder",
+    "intent": "Train Marauder"
+  },
+  {
+    "supply": "99",
+    "time": "07:20",
+    "action": "marauder",
+    "intent": "Train Marauder"
+  },
+  {
+    "supply": "101",
+    "time": "07:25",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "101",
+    "time": "07:26",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "102",
+    "time": "07:28",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "102",
+    "time": "07:31",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "103",
+    "time": "07:32",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "103",
+    "time": "07:34",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "104",
+    "time": "07:35",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "104",
+    "time": "07:36",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "105",
+    "time": "07:37",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "105",
+    "time": "07:38",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "105",
+    "time": "07:39",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "106",
+    "time": "07:41",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "106",
+    "time": "07:43",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "107",
+    "time": "07:44",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "108",
+    "time": "07:45",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "109",
+    "time": "07:46",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "109",
+    "time": "07:50",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "110",
+    "time": "07:51",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "110",
+    "time": "07:53",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "112",
+    "time": "07:56",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "112",
+    "time": "08:00",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "113",
+    "time": "08:02",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "113",
+    "time": "08:03",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "114",
+    "time": "08:05",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "115",
+    "time": "08:09",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "115",
+    "time": "08:10",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "117",
+    "time": "08:13",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "117",
+    "time": "08:16",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "118",
+    "time": "08:17",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "119",
+    "time": "08:18",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "119",
+    "time": "08:30",
+    "action": "Attacking Instruction: Attack with 47 marines, 2 marauders and 20 SCVs to target production structures during reinforcements",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "119",
+    "time": "08:32",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "120",
+    "time": "08:35",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "121",
+    "time": "08:36",
+    "action": "commandcenter",
+    "intent": "Build Command Center"
+  },
+  {
+    "supply": "122",
+    "time": "08:37",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "123",
+    "time": "08:37",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "123",
+    "time": "08:41",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "124",
+    "time": "08:43",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "125",
+    "time": "08:49",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "126",
+    "time": "08:50",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "126",
+    "time": "08:56",
+    "action": "mule",
+    "intent": "Call Down MULE"
+  },
+  {
+    "supply": "127",
+    "time": "09:02",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "128",
+    "time": "09:04",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "128",
+    "time": "09:05",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "129",
+    "time": "09:07",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "130",
+    "time": "09:08",
+    "action": "commandcenter",
+    "intent": "Build Command Center"
+  },
+  {
+    "supply": "130",
+    "time": "09:13",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "131",
+    "time": "09:13",
+    "action": "marine",
+    "intent": "Train Marine"
+  },
+  {
+    "supply": "132",
+    "time": "09:15",
+    "action": "supplydepot",
+    "intent": "Build Supply Depot"
+  },
+  {
+    "supply": "133",
+    "time": "09:16",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "134",
+    "time": "09:18",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "136",
+    "time": "09:24",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "138",
+    "time": "09:28",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "139",
+    "time": "09:30",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "140",
+    "time": "09:32",
+    "action": "SCV",
+    "intent": "Train SCV"
+  },
+  {
+    "supply": "140",
+    "time": "09:33",
+    "action": "Attacking Instruction: Attack with 21 marines and 2 SCVs to clear defensive structures for final push",
+    "intent": "Attacking Instruction"
+  },
+  {
+    "supply": "142",
+    "time": "09:37",
+    "action": "siegetank",
+    "intent": "Train Siege Tank"
+  },
+  {
+    "supply": "143",
+    "time": "09:41",
+    "action": "refinery",
+    "intent": "Build Refinery"
+  }
+]

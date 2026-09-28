@@ -1,0 +1,175 @@
+{
+  "observed_at": "2026-09-11T14:00:15.206436+00:00",
+  "node": "sc2-a100-43",
+  "gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "run_id": "20260911-execution-failure-feedback-v1-spb2-B4-l6-second-plan-ab8-4gpu-s1098341402-r1",
+  "run_dir": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-B4-l6-second-plan-ab8-4gpu-s1098341402-r1",
+  "runtime_sha": "a0e5425b2b9ff09db28d0c017f7c6dc7c0d1ba58",
+  "started_at": "2026-09-11T13:56:08Z",
+  "hard_deadline_bj": "2026-09-11 22:41:08",
+  "wall_seconds_limit": 2700,
+  "completed": false,
+  "manifest.json_sha256": "b17b7e98343ceab48427e73062cfff9753d41755e168a000694dbf2ca6b5d37a",
+  "effective_config.json_sha256": "b4ac4d68b8475fff2bef6d009ede656507da51ee29cc23870228b423b3fc586b",
+  "checkpoint_evaluation.json_sha256": "165ed1290c108f12c805090b91347bfe66b786b6361480834d0a98a4f41e6bf6",
+  "checkpoint_evaluation.json": {
+    "checkpoint": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-B-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "loaded_global_step": 4,
+    "checkpoint_load_returned": true,
+    "val_only": true,
+    "optimizer_updates": 0,
+    "feedback": "1",
+    "temperature": 0.4,
+    "do_sample": true,
+    "games": 8,
+    "game_seeds": [
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402
+    ],
+    "answers": "First answer: common historical prefix; second: recorded B/A intervention; both not model choices. From third answer: online B4.",
+    "optimizer_loaded_by_existing_loader_but_not_updated": true
+  },
+  "evaluation_seeds.jsonl_sha256": "f7f3b92d3e54886cd3b520e0e3956388244e0f089ebfbe2fff5db9ef5f15b7b2",
+  "evaluation_seeds.jsonl": {
+    "base_seed": 1000,
+    "reset_index": 0,
+    "seeds": [
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402,
+      1098341402
+    ]
+  },
+  "paired_seed_selection.json_sha256": "ab07cb435d1d32b9d25ed61839811219587f1d138f400d27c96e3ba4aaff70be",
+  "game_boundaries": [
+    {
+      "file": "game-3883493-boundaries.jsonl",
+      "last": "00:00",
+      "records": 1
+    },
+    {
+      "file": "game-3883491-boundaries.jsonl",
+      "last": "00:00",
+      "records": 1
+    },
+    {
+      "file": "game-3883494-boundaries.jsonl",
+      "last": "00:00",
+      "records": 1
+    },
+    {
+      "file": "game-3883490-boundaries.jsonl",
+      "last": "00:00",
+      "records": 1
+    },
+    {
+      "file": "game-3883496-boundaries.jsonl",
+      "last": "00:00",
+      "records": 1
+    },
+    {
+      "file": "game-3883489-boundaries.jsonl",
+      "last": "00:00",
+      "records": 1
+    },
+    {
+      "file": "game-3883495-boundaries.jsonl",
+      "last": "00:00",
+      "records": 1
+    },
+    {
+      "file": "game-3883492-boundaries.jsonl",
+      "last": "00:00",
+      "records": 1
+    }
+  ],
+  "interventions": [
+    {
+      "env": 0,
+      "arm": "control_B_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>"
+    },
+    {
+      "env": 1,
+      "arm": "replace_with_A_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>"
+    },
+    {
+      "env": 2,
+      "arm": "control_B_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>"
+    },
+    {
+      "env": 3,
+      "arm": "replace_with_A_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>"
+    },
+    {
+      "env": 4,
+      "arm": "control_B_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>"
+    },
+    {
+      "env": 5,
+      "arm": "replace_with_A_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>"
+    },
+    {
+      "env": 6,
+      "arm": "control_B_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>"
+    },
+    {
+      "env": 7,
+      "arm": "replace_with_A_answer",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>"
+    }
+  ],
+  "model_preparation": {
+    "source": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+    "runtime_model": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-B4-l6-second-plan-ab8-4gpu-s1098341402-r1/model",
+    "manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "patched_files": {
+      "sse.py": {
+        "source_sha256": "2b9780fb80ed714becaa7ce20fe5012f59ea5c93bf648538d64c4b9be6691528",
+        "runtime_sha256": "7c3d47f2c665b0c33e2ade9acd7c18a37953eca8b692fb5058512a0aa7f6dca1"
+      },
+      "sse_swa.py": {
+        "source_sha256": "15cca1f0b024cd7e5d413dd87ff5395639cb20a65401c6b487150203f399e316",
+        "runtime_sha256": "33e3f10606a739e3447acc244a360223a203ded53c1aa9add8f4e628e2bc6fbb"
+      }
+    },
+    "provenance": "20260818-qwen-canonical-plan-rl-v1-spb-generic-l5-full96-s0-r7"
+  }
+}

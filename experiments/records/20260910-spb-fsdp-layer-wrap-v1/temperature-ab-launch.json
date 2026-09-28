@@ -1,0 +1,71 @@
+{
+  "snapshot_at": "2026-09-10T13:01:12.760942+00:00",
+  "source_sha": "939c4ca956adabf1728e0cdd4a87c879593d7cbe",
+  "node": "sc2-a100-44",
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "deployment": "/root/new-scii-spb-fsdp-20260910/code-939c4ca",
+  "bundle": {
+    "path": "/root/new-scii-spb-fsdp-20260910/source-939c4ca.bundle",
+    "sha256": "751909b60793063975f254157c3e610b78e987c30ce9c3c95ef6ba635c4c7a99",
+    "requires": "90b3fdc2fb7fadc1230861306b20c27540d9b736",
+    "private_server_backup": true,
+    "github_pushed": false
+  },
+  "control_started_at": "2026-09-10T12:53:20Z",
+  "hard_deadline": "2026-09-10T13:53:20Z",
+  "A": {
+    "run_id": "20260910-spb-fsdp-layer-wrap-v1-spb2-l7s24-l6-g2-temp0.4-eval8-4gpu-r1",
+    "started_at": "2026-09-10T12:53:57.326544+00:00",
+    "mode": "evaluation",
+    "checkpoint_load_returned": true,
+    "checkpoint_global_step": 24,
+    "do_sample": true,
+    "temperature": 0.4,
+    "top_p": 0.9,
+    "actual_seeds": [
+      52620,
+      52620,
+      52620,
+      52620,
+      17089,
+      17089,
+      17089,
+      17089
+    ],
+    "planner_answers_observed": 8,
+    "first_answers_all_valid_and_applied": true,
+    "first_answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+    "artifact_sha256": {
+      "manifest.json": "20b617d639f227952160d9d57b903cceac519c1a21844f95f46b24f7d1b2a0ba",
+      "effective_config.json": "0351dc588516c3cd33867bfb681a6f92a8bc2b670bd0738e027f16eaa8f653a8",
+      "checkpoint_evaluation.json": "bc94f5a55092484e51007cc8d4e05c8d6413ab5728ce503c66fcb8b168b92434",
+      "paired_seed_selection.json": "7d4cec2155642f1124cae7bcac76a815a91e23fb6711a3433acd62c4f25fed20",
+      "evaluation_seeds.jsonl": "d04645a9698271d2ddf9c9ab7d7d47a968bdf0954b4f2c427df31657cbe055ae"
+    }
+  },
+  "B": {
+    "run_id": "20260910-spb-fsdp-layer-wrap-v1-spb2-l7s24-l6-g2-temp1.0-eval8-4gpu-r1",
+    "status": "queued_after_A_success_and_gpu_release",
+    "same_checkpoint": true
+  },
+  "level7_stop": {
+    "last_global_step": 31,
+    "last_complete_checkpoint": 24,
+    "process_exit_code": 130,
+    "operator_status": "aborted",
+    "original_failed_record_preserved": true,
+    "artifacts_deleted": 0
+  },
+  "tests": {
+    "local": "7 passed 1.116s",
+    "remote_cpu": "7 passed 1.407s",
+    "production_diff_from_90b3fdc": [],
+    "bash_syntax": "passed",
+    "system_manifest": "all matched"
+  }
+}

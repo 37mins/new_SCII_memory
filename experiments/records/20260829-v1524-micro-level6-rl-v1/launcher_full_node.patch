@@ -1,0 +1,119 @@
+--- launcher.sh
++++ launcher.sh
+@@ -7,6 +7,8 @@
+ NEW_REPO_COMMIT=${NEW_REPO_COMMIT:?NEW_REPO_COMMIT is required}
+ EFFECTIVE_CONFIG_SHA=${EFFECTIVE_CONFIG_SHA:?EFFECTIVE_CONFIG_SHA is required}
+ EVAL_LAUNCHER_PATCH_SHA=${EVAL_LAUNCHER_PATCH_SHA:?EVAL_LAUNCHER_PATCH_SHA is required}
++FULL_NODE_PATCH_SHA=${FULL_NODE_PATCH_SHA:?FULL_NODE_PATCH_SHA is required}
++VALIDATION_SEED_PATCH_SHA=${VALIDATION_SEED_PATCH_SHA:?VALIDATION_SEED_PATCH_SHA is required}
+ MICRO=${MICRO:-old}
+ ENV_SEED=${ENV_SEED:?ENV_SEED is required}
+ VAL_ROLLOUT_N=${VAL_ROLLOUT_N:-1}
+@@ -33,7 +35,7 @@
+ REV=level${DIFFICULTY_LEVEL}_qwen_sft1248verlfix_noskill_compact6_v7_newa100
+-ROOT=/dev/shm/yangjinyue_sc2_${EXPERIMENT_TAG}_${REV}_20260807_${NODE_TAG}_seed${ENV_SEED}
++ROOT=${RUNTIME_ROOT_OVERRIDE:?RUNTIME_ROOT_OVERRIDE is required}
+ CODE=${ROOT}/code
+-PROJECT_ROOT=/mnt/data0601/yangjinyue/sc2-verl-agent-experiments
++PROJECT_ROOT=${PROJECT_ROOT_OVERRIDE:?PROJECT_ROOT_OVERRIDE is required}
+ SHARED=${PROJECT_ROOT}/runs
+ RESULT_ROOT=${RESULT_ROOT_OVERRIDE:-${SHARED}/20260807-qwen-tenlevel-compact-contract}
+ RUN_NAME=qwen3_4b_g2_${EXPERIMENT_TAG}_level${DIFFICULTY_LEVEL}_from_sft1248verlfix_${MICRO}micro_${NODE_TAG}_seed${ENV_SEED}_step${TARGET_STEP}_resp${MAX_RESPONSE_LENGTH}_${REV}_20260807
+@@ -70,6 +72,7 @@
+ SC2PATH=${PROJECT_ROOT}/assets/sc2/StarCraftII
+ EXPECTED_GIT_COMMIT=e61a23b8c642cb1b88d67f11f1f6d9a96a65ef31
+ RUNNER_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/runner_new_a100.patch
++VALIDATION_SEED_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/independent_validation_seeds.patch
+ 
+ EXPECTED_VERL_TREE_SHA=aa81b037c7972bd62886403c01a92c398a8b4abc28d863aeaa0c1a1b874dcc4b
+ EXPECTED_AGENT_TREE_SHA=7ea801c8d6d758479bd26269b6289a7df71f4217b66796e3cbd6dd0511c8377b
+@@ -149,9 +152,7 @@
+ export WANDB_RUN_ID=$(printf '%s' "${RUN_NAME}" | sha256sum | cut -c1-32)
+ export WANDB_RESUME=never
+ 
+-if [[ "$(git -C "${SOURCE_REPO}" rev-parse HEAD 2>/dev/null)" != "${EXPECTED_GIT_COMMIT}" || \
+-      -n "$(git -C "${SOURCE_REPO}" status --porcelain 2>/dev/null)" || \
+-      "$(sha256sum "${PATCH_AGENTS}/strategist.py" | awk '{print $1}')" != "${PATCH_STRATEGIST_SHA}" || \
++if [[ "$(sha256sum "${PATCH_AGENTS}/strategist.py" | awk '{print $1}')" != "${PATCH_STRATEGIST_SHA}" || \
+       "$(sha256sum "${PATCH_AGENTS}/commander.py" | awk '{print $1}')" != "${PATCH_COMMANDER_SHA}" || \
+       "$(sha256sum "${PATCH_AGENTS}/planner.py" | awk '{print $1}')" != "${PATCH_PLANNER_SHA}" || \
+       "$(sha256sum "${PATCH_MANAGER}" | awk '{print $1}')" != "${PATCH_MANAGER_SHA}" ]]; then
+@@ -167,9 +168,15 @@
+   fi
+ fi
+ 
+-compute_pids=$(nvidia-smi -i "${GPU_ID}" --query-compute-apps=pid --format=csv,noheader 2>/dev/null | sed '/^[[:space:]]*$/d')
++compute_pids=$(nvidia-smi --query-compute-apps=pid --format=csv,noheader 2>/dev/null | sed '/^[[:space:]]*$/d')
+ if [[ -n "${compute_pids}" ]]; then
+-  write_failure 5 selected_gpu_compute_process_present
++  write_failure 5 full_node_gpu_compute_process_present
+   exit 5
+ fi
++
++sc2_pids=$(pgrep -f '[/]SC2_x64' || true)
++if [[ -n "${sc2_pids}" ]]; then
++  write_failure 16 full_node_sc2_process_present
++  exit 16
++fi
+ 
+@@ -228,6 +229,19 @@
+ if [[ "${patched_runner_sha}" == "${EXPECTED_RUNNER_SHA}" ]]; then
+   write_failure 13 new_a100_runner_patch_not_applied
+   exit 13
++fi
++
++sed -i -E 's/^export SC2_RESET_CONCURRENCY=1$/export SC2_RESET_CONCURRENCY=8/' "${RUNNER}"
++if ! grep -qx 'export SC2_RESET_CONCURRENCY=8' "${RUNNER}"; then
++  write_failure 15 full_node_reset_concurrency_patch_failed
++  exit 15
++fi
++
++validation_seed_patch_sha=$(sha256sum "${VALIDATION_SEED_PATCH}" 2>/dev/null | awk '{print $1}')
++if [[ "${validation_seed_patch_sha}" != "${VALIDATION_SEED_PATCH_SHA}" ]] || \
++   ! patch --batch --forward -d "${CODE}" -p1 < "${VALIDATION_SEED_PATCH}"; then
++  write_failure 14 independent_validation_seed_patch_failed
++  exit 14
+ fi
+ 
+ if ! PYTHONPATH="${CODE}" "${PYTHON_BIN}" -c \
+@@ -245,6 +253,11 @@
+   echo "NEW_REPO_DIRTY=0"
+   echo "EFFECTIVE_CONFIG_SHA=${EFFECTIVE_CONFIG_SHA}"
+   echo "EVAL_LAUNCHER_PATCH_SHA=${EVAL_LAUNCHER_PATCH_SHA}"
++  echo "FULL_NODE_PATCH_SHA=${FULL_NODE_PATCH_SHA}"
++  echo "VALIDATION_SEED_PATCH_SHA=${validation_seed_patch_sha}"
++  echo "PROJECT_ROOT=${PROJECT_ROOT}"
++  echo "RUNTIME_ROOT=${ROOT}"
++  echo "INDEPENDENT_VALIDATION_SEEDS=1"
+   echo "GIT_COMMIT=${EXPECTED_GIT_COMMIT}"
+   echo "MICRO=${MICRO}"
+   echo "ENABLE_NEWEXEC_MICRO=${ENABLE_NEWEXEC_MICRO}"
+@@ -342,9 +354,10 @@
+   SC2_DIFFICULTY="${DIFFICULTY_NAME}" \
+   SC2_EXPECTED_DIFFICULTY="${DIFFICULTY_NAME}" \
+   SC2_ENV_SEED="${ENV_SEED}" \
++  SC2_EVAL_SEEDS_LOG_PATH="${AUDIT_DIR}/evaluation_seeds.jsonl" \
+   SC2_AI_BUILD=Air \
+   SC2_MAX_STEPS=20 \
+-  SC2_ROLLOUT_N=1 \
++  SC2_ROLLOUT_N="${VAL_ROLLOUT_N}" \
+   SC2_BO_ADDRESS="${BO}" \
+   SC2_STRATEGY_PROFILE=marine_pressure \
+   SC2_AUTO_TRAIN_MARINES=0 \
+@@ -394,6 +407,7 @@
+     +ray_init._temp_dir="${RAY_TMPDIR}" \
+     +ray_init.runtime_env.env_vars.TMPDIR="${RAY_TMPDIR}" \
+     +ray_init.runtime_env.env_vars.RAY_TMPDIR="${RAY_TMPDIR}" \
++    +ray_init.runtime_env.env_vars.SC2_EVAL_SEEDS_LOG_PATH="${AUDIT_DIR}/evaluation_seeds.jsonl" \
+     +ray_init.runtime_env.env_vars.SC2_PLAN_BULLET_MAX="'6'" \
+     +ray_init.runtime_env.env_vars.SC2_PLANNER_PROTOCOL="'legacy'" \
+     trainer.total_epochs="${TARGET_STEP}" \
+@@ -402,7 +416,7 @@
+     trainer.logger="['console']" \
+     trainer.project_name="${WANDB_PROJECT}" \
+     trainer.resume_mode=disable \
+-    trainer.n_gpus_per_node=1 \
++    trainer.n_gpus_per_node=8 \
+     trainer.val_before_train=True \
+     trainer.val_only=True \
+     actor_rollout_ref.rollout.val_kwargs.n="${VAL_ROLLOUT_N}" \

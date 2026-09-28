@@ -1,0 +1,62 @@
+{
+  "status": "A_global_step5_sampling_B_pending_after_A_acceptance",
+  "verified_at": "2026-09-11T01:01:01Z",
+  "source_commit": "5ba3f2111dc5bd576d1e67c7da5fdeaffba9f24f",
+  "branch": "codex/fix-sc2-checkpoint-resume",
+  "deployment": "/root/new-scii-spb-fsdp-20260910/code-5ba3f21",
+  "node": "sc2-a100-44",
+  "gpu_selection": "0,1,2,3,4,5,6,7",
+  "tmux_session": "sc2_gamma_ab_r2",
+  "controller": "/root/new-scii-spb-fsdp-20260910/gamma-retry-r2",
+  "pair_controller": "/root/new-scii-spb-fsdp-20260910/gamma-ab-r2",
+  "started_at": "2026-09-11T00:50:29Z",
+  "startup_probe_passed_at": "2026-09-11T00:50:43Z",
+  "A_started_at": "2026-09-11T00:50:43Z",
+  "A_manifest_started_at": "2026-09-11T00:51:07.476457+00:00",
+  "hard_deadline_including_termination_grace": "2026-09-11T08:50:29Z",
+  "budget_seconds_including_probe": 28800,
+  "automatic_retry": false,
+  "run_ids": [
+    "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2",
+    "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2"
+  ],
+  "comparison": {
+    "A_gamma": 0.95,
+    "B_gamma": 1.0,
+    "parent_checkpoint": "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_4",
+    "new_global_steps_per_arm": 8,
+    "global_step_range": [5, 12],
+    "games_per_global_step": 8,
+    "save_global_steps": [8, 12],
+    "schedule": "A then B, B only after A completion and actual seed-ledger acceptance",
+    "sc2_resume": false,
+    "note": "Same step4 model/optimizer; fresh paired game sequence, not uninterrupted parent continuation."
+  },
+  "tests": {
+    "node44_cpu": "4/4 passed, 3.037s; CUDA hidden, pinned Torch 2.7.1+cu128 / Ray 2.48.0 / Transformers 4.55.2",
+    "local_cpu": "1 passed, 3 skipped because Torch unavailable; bash syntax and git diff checks passed",
+    "eight_gpu_probe": "passed: eight distinct CUDA UUIDs, scalar all-reduce sum=28 on all ranks, no model/game/optimizer",
+    "device_probe_results": "/root/new-scii-spb-fsdp-20260910/gamma-retry-r2/devices/results.json",
+    "device_probe_results_sha256": "41c06e7f778a1ef7a00ddfca6a111902a7a3dfb3eac0d4662244ae2a1c212a9e",
+    "resource_check": "All eight GPUs idle before start; shared storage free 4.509 TiB"
+  },
+  "backups": {
+    "source_bundle": "/root/new-scii-spb-fsdp-20260910/source-5ba3f21.bundle",
+    "source_bundle_sha256": "87ed96e658ea66145b342ce93a5b5e807519aea2780e777302b698fdf94c0aaf",
+    "controller_launcher": "/root/new-scii-spb-fsdp-20260910/gamma-retry-r2/launcher.sh",
+    "controller_launcher_sha256": "d2bf0db3f9036941838d70bb910ce80351377e0e4ee37359ac4a7e6cfcb5dacd"
+  },
+  "preserved": ["r1 failed run and logs", "r1 deployment", "parent checkpoints and results"],
+  "actual_start_evidence": {
+    "model_optimizer_load_returned": true,
+    "gamma_pairing_sha256": "3fa2678455e688920b94f810641186e40fa9f0828743b75ca56bd02b29a0a63e",
+    "loaded_global_step": 4,
+    "saved_exhausted_epoch_closed": true,
+    "fresh_environment_reset_index": 0,
+    "recorded_first_game_seeds": [2732, 2732, 2732, 2732, 2732, 2732, 2732, 2732],
+    "SC2": "All eight workers emitted Generate new plan [0]; subsequent Planner calls already observed",
+    "new_completed_updates_at_verification": 0,
+    "note": "First eight-game sampling batch is global_step5, not eight already completed training steps. Slow optimizer-shard reads progressed and completed without restart."
+  },
+  "limitations": "Startup acceptance is not proof of learning improvement; no extra eval or longtrain restart authorized by this launch."
+}

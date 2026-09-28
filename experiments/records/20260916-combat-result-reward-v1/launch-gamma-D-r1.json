@@ -1,0 +1,117 @@
+{
+  "status": "running-first-rollout",
+  "checked_at": "2026-09-16T08:59:10.723384+00:00",
+  "runtime_sha": "2ad7fb0a8cd67b8d349e2caa0cd4561599596c4c",
+  "node": "sc2-a100-46",
+  "gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "run_id": "20260916-combat-result-reward-v1-spb2-A4-l6-D-temp08-gamma1-rl4-4gpu-r1",
+  "source": "/dev/shm/sc2-combat-gamma-20260916-r1/code-2ad7fb0",
+  "control": "/dev/shm/sc2-combat-gamma-20260916-r1/control",
+  "tmux_socket": "/dev/shm/sc2-combat-gamma-20260916-r1/tmux.sock",
+  "tmux_session": "sc2_combat_gamma_D_r1",
+  "started_at": "2026-09-16T08:55:08Z",
+  "deadline_unix": 1789554308,
+  "manifest": {
+    "source_commit": "2ad7fb0a8cd67b8d349e2caa0cd4561599596c4c",
+    "dirty": false,
+    "world_size": 4,
+    "start_step": 4,
+    "target_steps": 8
+  },
+  "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+  "a4_restore": {
+    "loaded_global_step": 4,
+    "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/staging/20260915-scene-B-r2/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "model_optimizer_load_returned": true,
+    "sc2_state_restored": false,
+    "exhausted_saved_epoch_closed_without_new_sample": true,
+    "driver_seed": 0,
+    "game_reset_index": 0,
+    "note": "Original model/optimizer/per-rank RNG restored; fresh games, declared driver seed0. Not bitwise SC2 resume; no answer intervention. Zero-task skipping is disabled; all four groups are retained.",
+    "game_seed_sequence_offset": null,
+    "seed_selection": "explicit coverage table",
+    "parent_source_commit": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+    "parent_run": "20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2",
+    "game_seed_per_collection": [
+      1098341402,
+      42613,
+      17089,
+      3236598124
+    ],
+    "planned_max_new_global_steps": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "training_seeds": [
+    {
+      "base_seed": 0,
+      "reset_index": 0,
+      "seeds": [
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402
+      ]
+    }
+  ],
+  "raw_answer_rows": 0,
+  "branch": "codex/feature-combat-result-reward",
+  "budget_seconds": 5400,
+  "control_run_id": "20260916-combat-result-reward-v1-spb2-A4-l6-C-temp08-rl4-4gpu-r1",
+  "control_runtime_sha": "cf3ff4c26c9cb3f4f744b6cf4eeae909ccf92565",
+  "private_git_backup": "/mnt/data0601/yangjinyue/new_SCII/staging/20260916-combat-gamma-D-r1/source.bundle",
+  "bundle_sha256": "db8187305b7def31b908f4910215ec4fdaa9b3fac3b62b19f8399fc4e09f049b",
+  "bundle_complete_history_verified": true,
+  "github_pushed": false,
+  "github_note": "Earlier outbound GitHub push was denied; not retried or bypassed. Complete Git history privately backed up on the approved server.",
+  "production_source_identical_to_C": true,
+  "local_cpu_tests_passed": 26,
+  "server_cpu_tests_passed": 26,
+  "effective_config_comparison": {
+    "normalizations": [
+      "source path",
+      "run path/name",
+      "Ray/cache path",
+      "existing Python overlay location"
+    ],
+    "differences": {
+      "algorithm.gamma": [
+        "0.95",
+        "1.0"
+      ]
+    },
+    "actual_matches_checked_dry_run": true
+  },
+  "dependencies": {
+    "python": "3.12.3",
+    "torch": "2.7.1+cu128",
+    "transformers": "4.55.2",
+    "ray": "2.48.0",
+    "triton": "3.3.1",
+    "tensordict": "0.10.0",
+    "burnysc2": "7.1.3",
+    "python_overlay": "/root/new-scii-spb-unitid-20260906/python",
+    "headers": "/usr/include"
+  },
+  "environment_difference": "C ran on node47 GPUs0–3. D runs on node46 GPUs0–3 after node47 SSH timed out. Existing node46 dependency versions matched; no model/dependency migration, no claim of bitwise trajectory identity.",
+  "actual_game_started_at_from_log": "2026-09-16T08:57:16Z",
+  "first_planner_call_at_from_log": "2026-09-16T08:57:21Z",
+  "game_start_evidence": "SC2Worker logged Flat128, Computer Harder(Terran, Air), initial observation and Generate new plan... [0].",
+  "completed_new_global_steps_at_check": 0,
+  "automatic_retry": false,
+  "automatic_96_step_continuation": false,
+  "independent_post_training_evaluation_authorized": false,
+  "learning_signal_repair_validated": false
+}

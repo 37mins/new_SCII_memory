@@ -1,0 +1,7 @@
+{
+  "g1": ["replay_observations_Flat128_d4_TvT_Macro_g1_Result.Victory_t.json", "5e83321f7f0859bae9848c3787c0a1b29dbf21237ab970c784627d51167163a0"],
+  "g2": ["replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_t.json", "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494"],
+  "g3": ["replay_observations_Flat128_d4_TvT_Macro_g3_Result.Victory_n.json", "b3ba854f5083a9dc9aa43bc9a025bfb3c66a9518c634e31bc74500a21009569c"],
+  "g4": ["replay_observations_Flat128_d4_TvT_Macro_g4_Result.Victory_s.json", "22058ecc1026284ab76630a611d4dac01fe787cb625578189437455fc39cb0a8"],
+  "g5": ["replay_observations_Flat128_d4_TvT_Macro_g5_Result.Victory_n.json", "e964de6e3ba92b809cab978b78e04067ab63eb1da7d8a6e8518fe7a6d2040e5a"]
+}

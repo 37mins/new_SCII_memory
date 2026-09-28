@@ -1,0 +1,466 @@
+{
+  "at_utc": "2026-09-06T16:46:40.216883+00:00",
+  "frozen_sha": "aa1d20dbe87ddaf67213e8fa67e15e4eb2e56835",
+  "run_id": "20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r3-initial-eval",
+  "result": {
+    "status": "completed",
+    "ended_at": "2026-09-06T16:44:55.050063+00:00",
+    "mode": "evaluation",
+    "process_exit_code": 0,
+    "training_updates": 0,
+    "metrics": {
+      "val/text/test_score": -29.501,
+      "val/text/tool_call_count/mean": 0,
+      "val/success_rate": 0.125
+    },
+    "metrics_finite": true,
+    "response_record_count": 568,
+    "evaluable_action_count": 302,
+    "valid_evaluable_action_count": 284,
+    "replays": {
+      "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-06_16-18-00/replay.SC2Replay": "349041e35b508e0f36c2b637af16ac13deaba2d4d889f0f883ddeef85baa881e"
+    },
+    "console_sha256": "9be32d5b9256ccb574a7336f2689960adebe3fa88e72e35d2306ba8b38e56ea8",
+    "episode_outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 1,
+      "defeats": 7,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0.125,
+      "outcomes": [
+        {
+          "reset_index": 0,
+          "env_index": 2,
+          "decision_count": 1,
+          "step_index": 0,
+          "policy_decision_count": 0,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 4,
+          "decision_count": 15,
+          "step_index": 14,
+          "policy_decision_count": 15,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 7,
+          "decision_count": 22,
+          "step_index": 21,
+          "policy_decision_count": 22,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 1,
+          "decision_count": 24,
+          "step_index": 23,
+          "policy_decision_count": 24,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 0,
+          "decision_count": 56,
+          "step_index": 55,
+          "policy_decision_count": 56,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 3,
+          "decision_count": 57,
+          "step_index": 56,
+          "policy_decision_count": 57,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 5,
+          "decision_count": 57,
+          "step_index": 56,
+          "policy_decision_count": 57,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 6,
+          "decision_count": 71,
+          "step_index": 70,
+          "policy_decision_count": 71,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Victory",
+          "termination_reason": "game_result",
+          "outcome_reward": 20
+        }
+      ]
+    },
+    "natural_match_completed": true,
+    "termination_evidence": "game_result"
+  },
+  "artifact_sha256": {
+    "manifest.json": "a3ccd8c12557f48079313a6506a87b9f3cc472dff480a3c5c42e569df6df3c65",
+    "effective_config.json": "ab8092efae259c4fabaf73faaa816874e5b82711b662d190c8dfc7b4a5cccb12",
+    "result.json": "0ab51829866560bb171dae85b51ef281478bee7c2b7d7b050272170bf47c3f94",
+    ".done": "0ab51829866560bb171dae85b51ef281478bee7c2b7d7b050272170bf47c3f94",
+    "episode_outcomes.jsonl": "0817e39f4c9abd9f5b67a17e33100ee40ed6552e131436bdc6362cae0ed19d60",
+    "evaluation_seeds.jsonl": "fe29009e02d3c378175699b96f6e9cffcc36d43e55c99550fcd4a4fc9e83b487",
+    "prompt_response.jsonl": "d16368e39b655dfef957e13a2136cdc2b64878b21e4cdd0aa3a7fb377e49596e"
+  },
+  "policy_credit_ledgers": [
+    [
+      {
+        "traj_uid": "b1b03052-bf07-4eeb-8808-6042dbce1d59",
+        "environment_reward": -46.5,
+        "environment_interactions": 56,
+        "policy_decisions": 56,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "2b861bc1-0f08-43eb-8d78-05629c7a271e",
+        "environment_reward": -48,
+        "environment_interactions": 24,
+        "policy_decisions": 24,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "93e78e21-e8d4-48d8-970e-67e159a04cfc",
+        "environment_reward": -50,
+        "environment_interactions": 1,
+        "policy_decisions": 0,
+        "excluded_terminal_rows": 1
+      },
+      {
+        "traj_uid": "f2ef6fe3-a81e-4dee-8c32-7f16b7cc5c72",
+        "environment_reward": -44.505001068115234,
+        "environment_interactions": 57,
+        "policy_decisions": 57,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "dcc0420a-7f32-4cba-8c97-9d808f06e284",
+        "environment_reward": -49,
+        "environment_interactions": 15,
+        "policy_decisions": 15,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "01cee1e4-117d-41bc-ba5d-f3d5a95b5fdf",
+        "environment_reward": -45,
+        "environment_interactions": 57,
+        "policy_decisions": 57,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "1e97c06a-a9c8-4c10-b104-a6011bb5753a",
+        "environment_reward": 24.5,
+        "environment_interactions": 71,
+        "policy_decisions": 71,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "f98c2877-6844-4c02-942f-9956238a3e10",
+        "environment_reward": -48,
+        "environment_interactions": 22,
+        "policy_decisions": 22,
+        "excluded_terminal_rows": 0
+      }
+    ]
+  ],
+  "per_environment": [
+    {
+      "reset_index": 0,
+      "env_index": 0,
+      "decision_count": 56,
+      "step_index": 55,
+      "policy_decision_count": 56,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Defeat",
+      "termination_reason": "game_result",
+      "outcome_reward": -50,
+      "evaluable_responses": 56,
+      "valid_evaluable_responses": 54
+    },
+    {
+      "reset_index": 0,
+      "env_index": 1,
+      "decision_count": 24,
+      "step_index": 23,
+      "policy_decision_count": 24,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Defeat",
+      "termination_reason": "game_result",
+      "outcome_reward": -50,
+      "evaluable_responses": 24,
+      "valid_evaluable_responses": 22
+    },
+    {
+      "reset_index": 0,
+      "env_index": 2,
+      "decision_count": 1,
+      "step_index": 0,
+      "policy_decision_count": 0,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Defeat",
+      "termination_reason": "game_result",
+      "outcome_reward": -50,
+      "evaluable_responses": 0,
+      "valid_evaluable_responses": 0
+    },
+    {
+      "reset_index": 0,
+      "env_index": 3,
+      "decision_count": 57,
+      "step_index": 56,
+      "policy_decision_count": 57,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Defeat",
+      "termination_reason": "game_result",
+      "outcome_reward": -50,
+      "evaluable_responses": 57,
+      "valid_evaluable_responses": 53
+    },
+    {
+      "reset_index": 0,
+      "env_index": 4,
+      "decision_count": 15,
+      "step_index": 14,
+      "policy_decision_count": 15,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Defeat",
+      "termination_reason": "game_result",
+      "outcome_reward": -50,
+      "evaluable_responses": 15,
+      "valid_evaluable_responses": 15
+    },
+    {
+      "reset_index": 0,
+      "env_index": 5,
+      "decision_count": 57,
+      "step_index": 56,
+      "policy_decision_count": 57,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Defeat",
+      "termination_reason": "game_result",
+      "outcome_reward": -50,
+      "evaluable_responses": 57,
+      "valid_evaluable_responses": 52
+    },
+    {
+      "reset_index": 0,
+      "env_index": 6,
+      "decision_count": 71,
+      "step_index": 70,
+      "policy_decision_count": 71,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20,
+      "evaluable_responses": 71,
+      "valid_evaluable_responses": 67
+    },
+    {
+      "reset_index": 0,
+      "env_index": 7,
+      "decision_count": 22,
+      "step_index": 21,
+      "policy_decision_count": 22,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Defeat",
+      "termination_reason": "game_result",
+      "outcome_reward": -50,
+      "evaluable_responses": 22,
+      "valid_evaluable_responses": 21
+    }
+  ],
+  "failure_reasons": {
+    "action count exceeds current BO remainder: marauder": 1,
+    "action outside current canonical BO candidates: marine x 23": 1,
+    "action outside current canonical BO candidates: marine x 14": 1,
+    "action outside current canonical BO candidates: marine x 11": 1,
+    "action outside current canonical BO candidates: marine x 5": 1,
+    "action outside current canonical BO candidates: marine x 2": 11,
+    "action outside current canonical BO candidates: marine x 29": 1,
+    "action outside current canonical BO candidates: marine x 20": 1
+  },
+  "validation_seeds": [
+    {
+      "base_seed": 1000,
+      "reset_index": 0,
+      "seeds": [
+        2807211443,
+        882774615,
+        494016583,
+        2621640384,
+        4081499387,
+        44124510,
+        2071061852,
+        1549697793
+      ]
+    }
+  ],
+  "training_manifest": {
+    "schema_version": 1,
+    "status": "running",
+    "started_at": "2026-09-06T16:45:21.249092+00:00",
+    "source_commit": "aa1d20dbe87ddaf67213e8fa67e15e4eb2e56835",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "model_source": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+    "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "bo_path": "/root/new-scii-real-rl-20260906/code-aa1d20d/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "training",
+    "source_files_sha256": {
+      "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+      "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+      "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "54644b5d9176139e4a8c9650f3f5e99bd03651d53f3ad19bb6e01329808a9578",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+    },
+    "target_steps": 8,
+    "training_goal_global_steps": 96,
+    "resume_from_path": null,
+    "host": "hpc",
+    "python": "3.12.3",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "world_size": 8,
+    "container_image_id": null,
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": null,
+      "moba": null
+    }
+  },
+  "training_effective_sha256": "8d09784f7210d44d9665e93a8f9a042b4eee704bc0d5a00684ae16a946f4559b",
+  "training_live": "3596575 bash",
+  "uniform_game_reward_mean": -38.313125133514404,
+  "decision_weighted_episode_reward": -29.50094391020718,
+  "example_invalid": [
+    {
+      "time": "2026-09-06 16:24:13",
+      "step_index": 3,
+      "env_idx": 1,
+      "llm_response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+      "failure_reason": "action count exceeds current BO remainder: marauder",
+      "policy_action_id": 4
+    },
+    {
+      "time": "2026-09-06 16:26:33",
+      "step_index": 9,
+      "env_idx": 6,
+      "llm_response": "- Launch OFFENSE with 8 marine\n- marine x 23",
+      "failure_reason": "action outside current canonical BO candidates: marine x 23",
+      "policy_action_id": 10
+    },
+    {
+      "time": "2026-09-06 16:27:09",
+      "step_index": 12,
+      "env_idx": 5,
+      "llm_response": "- Launch OFFENSE with 8 marine\n- marine x 14",
+      "failure_reason": "action outside current canonical BO candidates: marine x 14",
+      "policy_action_id": 13
+    },
+    {
+      "time": "2026-09-06 16:27:24",
+      "step_index": 13,
+      "env_idx": 5,
+      "llm_response": "- Launch OFFENSE with 8 marine\n- marine x 11",
+      "failure_reason": "action outside current canonical BO candidates: marine x 11",
+      "policy_action_id": 14
+    }
+  ],
+  "reporting_notes": {
+    "win_rate": "Use 8 unique episode_outcomes terminated=True,truncated=False, not per-answer rows.",
+    "reward": "Report uniform mean of 8 environment_reward values in the final SC2 policy credit array; val/sc2/test_score is computed over expanded policy-response rows (EpisodeRewardManager gives each response the episode reward by default), not automatically an equal-game mean. Preserve existing val metric separately, do not change reward/loss.",
+    "response_validity": "Denominator requires semantic_action_evaluable && policy_action_applied. Exclude terminal/finished-env placeholder rows. Report games with zero policy decisions separately.",
+    "observed_sources": [
+      "verl/trainer/ppo/ray_trainer.py:_validate, data_source_reward mean",
+      "agent_system/reward_manager/episode.py:EpisodeRewardManager.__call__",
+      "agent_system/multi_turn_rollout/rollout_loop.py:collect_trajectories, SC2 policy credit",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py:_write_prompt_response_log"
+    ],
+    "raw_token_limit_note": "Plain decoded prompt_response logs do not preserve exact sampled token IDs/EOS; do not claim precise generation clipping from re-tokenized text alone."
+  },
+  "replay_completeness": {
+    "expected_games": 8,
+    "retained_replay_files": 1,
+    "verified_source": "BasePlayer.__init__ uses timestamp to second without env index; envSC2.py writes <log_path>/replay.SC2Replay. All eight workers logged the same 2026-09-06_16-18-00 directory.",
+    "impact": "Eight natural outcomes and all model-response records remain separately indexed, but eight independent replays were not retained; no claim of complete replay audit.",
+    "action": "No running code or configuration changed; record as unresolved artifact limitation."
+  },
+  "training_first_game_snapshot": {
+    "exists": true,
+    "manifest": {
+      "started_at": "2026-09-06T16:45:21.249092+00:00",
+      "source_commit": "aa1d20dbe87ddaf67213e8fa67e15e4eb2e56835",
+      "dirty": false,
+      "formal": true,
+      "mode": "training",
+      "world_size": 8,
+      "target_steps": 8,
+      "training_goal_global_steps": 96,
+      "resume_from_path": null
+    },
+    "log_bytes": 222752,
+    "log_modified_utc": "2026-09-06T16:47:37.560704+00:00",
+    "errors_in_tail": [],
+    "tail": "ted 21x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=3618495)\u001b[0m     -> Parsed Ability: COMMANDCENTERTRAIN_SCV\u001b[32m [repeated 21x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=3618492)\u001b[0m \u001b[92m2026-09-06 16:47:37 [default_player_Qwen3-30B] [INFO]: (1258) llm_decision_final_action_26_1258: [{'action': 'COMMANDCENTERTRAIN_SCV', 'units': [657]}]\u001b[0m\u001b[32m [repeated 15x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=3618492)\u001b[0m [03:44] >>> BO #SCV action condition <<<\u001b[32m [repeated 15x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=3618492)\u001b[0m     \"action\": \"COMMANDCENTERTRAIN_SCV\",\u001b[32m [repeated 15x across cluster]\u001b[0m\n\u001b[36m(SC2Worker pid=3618494)\u001b[0m \n\u001b[36m(SC2Worker pid=3618494)\u001b[0m         657\n\u001b[36m(SC2Worker pid=3618494)\u001b[0m \n\u001b[36m(SC2Worker pid=3618494)\u001b[0m \n\u001b[36m(SC2Worker pid=3618494)\u001b[0m \n\u001b[36m(SC2Worker pid=3618494)\u001b[0m \n\u001b[36m(SC2Worker pid=3618497)\u001b[0m \n\u001b[36m(SC2Worker pid=3618497)\u001b[0m         657\n\u001b[36m(SC2Worker pid=3618497)\u001b[0m \n\u001b[36m(SC2Worker pid=3618492)\u001b[0m [03:44] >>> Start Processing BO #27: barracks <<<\n\u001b[36m(SC2Worker pid=3618492)\u001b[0m Local BO ability fallback: barracks -> TERRANBUILD_BARRACKS\n\u001b[36m(SC2Worker pid=3618492)\u001b[0m     -> Parsed Ability: TERRANBUILD_BARRACKS\n\u001b[36m(SC2Worker pid=3618499)\u001b[0m \n\u001b[36m(SC2Worker pid=3618499)\u001b[0m         657\n\u001b[36m(SC2Worker pid=3618499)\u001b[0m \n\u001b[36m(SC2Worker pid=3618497)\u001b[0m \n\u001b[36m(SC2Worker pid=3618497)\u001b[0m \n\u001b[36m(SC2Worker pid=3618497)\u001b[0m \n\u001b[36m(SC2Worker pid=3618499)\u001b[0m \n\u001b[36m(SC2Worker pid=3618499)\u001b[0m [03:36] >>> Start Processing BO #27: barracks <<<\n\u001b[36m(SC2Worker pid=3618499)\u001b[0m Local BO ability fallback: barracks -> TERRANBUILD_BARRACKS\n\u001b[36m(SC2Worker pid=3618499)\u001b[0m     -> Parsed Ability: TERRANBUILD_BARRACKS\n\u001b[36m(SC2Worker pid=3618497)\u001b[0m \n\u001b[36m(SC2Worker pid=3618497)\u001b[0m         705\n\u001b[36m(SC2Worker pid=3618497)\u001b[0m \n",
+    "checkpoint_steps": [],
+    "checked_at_utc": "2026-09-06T16:47:37.594751+00:00",
+    "live_handle": "3596575 bash"
+  }
+}

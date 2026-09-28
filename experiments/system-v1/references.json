@@ -1,0 +1,61 @@
+{
+  "audited_at": "2026-08-31",
+  "new_integration_experiment": false,
+  "metric_source": "historical trainer console logs and .done / driver.exit artifacts",
+  "models": {
+    "qwen": {
+      "id": "Qwen/Qwen3-4B",
+      "project_sft": false,
+      "prior_project_rl": false,
+      "snapshot_manifest_sha256": "82fdeae910670892e5c70b177ca5ec30d3d69090416e34480be6d63880f7a56c"
+    },
+    "spb": {
+      "id": "Panyuqi/SpikingBrain-2.0-instruct",
+      "project_sft": false,
+      "prior_project_rl": false,
+      "snapshot_sha256": "de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5"
+    }
+  },
+  "runs": [
+    {
+      "run_id": "20260818-qwen-canonical-plan-rl-v1-qwen-base-l5-full96-s0-r6",
+      "source_commit": "cbf7424b1ec764d2b059fbd2ffe410f98469f9c7",
+      "host": "sc2-a100-197",
+      "root": "/data/yangjinyue/new-scii-qwen-level5-canonical/runs",
+      "wins": 625,
+      "reward": 9.903677083333333,
+      "steps": 96,
+      "exit_code": 0
+    },
+    {
+      "run_id": "20260818-qwen-canonical-plan-rl-v1-spb-generic-l5-full96-s0-r7",
+      "source_commit": "5363d671e40e2aca652dc44a05249dde84bba8d6",
+      "host": "sc2-a100-197",
+      "root": "/data/yangjinyue/new-scii-qwen-level5-canonical/runs",
+      "wins": 652,
+      "reward": 11.211083333333333,
+      "steps": 96,
+      "exit_code": 0
+    },
+    {
+      "run_id": "20260823-level6-rush-opening-v1-spb-level5-onebase-marine-96step-s1-r4",
+      "source_commit": "8d80d7cc3561229360642117e842d27e4b55c658",
+      "host": "sc2-a100-42",
+      "root": "/root/new-scii-level5-rush-96/runs",
+      "wins": 667,
+      "reward": 15.40997,
+      "steps": 96,
+      "exit_code": 0
+    },
+    {
+      "run_id": "20260823-level6-rush-opening-v1-spb-level5-onebase-marine-96step-s2-r8",
+      "source_commit": "bf4a640e7493866f193e7a164b256de8ad53176d",
+      "host": "sc2-a100-42",
+      "root": "/root/new-scii-level5-rush-96/runs",
+      "wins": 674,
+      "reward": 16.26066,
+      "steps": 96,
+      "exit_code": 0
+    }
+  ]
+}

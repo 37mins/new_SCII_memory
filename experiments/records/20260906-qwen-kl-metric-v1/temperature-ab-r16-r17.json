@@ -1,0 +1,277 @@
+{
+  "status": "completed",
+  "source_commit": "1f624913c0bcbbf4c350a2ace0eb109a056eb4c5",
+  "sole_variable": "actor.fp32_normalization; FSDP param_dtype remains fp32",
+  "production_defaults_changed": false,
+  "cpu_tests_passed": 88,
+  "cpu_tests_seconds": 8.266,
+  "configuration_single_variable_all_ranks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "identical_historical_inputs": true,
+  "unchanged_full_hf_and_cached": true,
+  "normalization_gate_1e_minus_5_passed": true,
+  "runs": [
+    {
+      "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-legacy-opt0-r16",
+      "manifest": {
+        "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-legacy-opt0-r16",
+        "mode": "norm-legacy",
+        "status": "preflight",
+        "started_at": "2026-09-06T12:06:46.668160+00:00",
+        "source_commit": "1f624913c0bcbbf4c350a2ace0eb109a056eb4c5",
+        "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+        "gpu_selection": "0,1,2,3",
+        "world_size": 4,
+        "max_optimizer_updates": 0,
+        "max_gpu_seconds": 1800,
+        "param_dtype": "fp32",
+        "fp32_normalization": false,
+        "user_authorization": "2026-09-06: approved temperature precision A/B and bounded drift diagnosis",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_path": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "project_sft": false,
+        "resumed_checkpoint": false,
+        "sc2_started": false
+      },
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-03.jsonl": "completed",
+          "rank-00.jsonl": "completed",
+          "rank-02.jsonl": "completed",
+          "rank-01.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T12:07:42.197545+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "aggregate": {
+        "actor_vs_old": {
+          "tokens": 135,
+          "abs_mean": 0.06243642347765764,
+          "abs_max": 2.9161758422851562,
+          "finite": true
+        },
+        "normalization": {
+          "tokens": 135,
+          "abs_mean": 0.0013263454404618938,
+          "abs_max": 0.14907658100128174,
+          "finite": true
+        },
+        "parameter_precision_path": {
+          "tokens": 135,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "finite": true
+        },
+        "cached_vs_full": {
+          "tokens": 135,
+          "abs_mean": 0.0076416924265371505,
+          "abs_max": 0.8087818622589111,
+          "finite": true
+        },
+        "cached_vs_recorded_generate": {
+          "tokens": 135,
+          "abs_mean": 0.012977043508995381,
+          "abs_max": 1.073228359222412,
+          "finite": true
+        },
+        "cached_vs_actor": {
+          "tokens": 135,
+          "abs_mean": 0.008559641440472922,
+          "abs_max": 0.8087832927703857,
+          "finite": true
+        }
+      },
+      "input_sha256": [
+        "1a902ff0261290a19ba0d3fe975856a1e464a2e1587652df89deffe63bd99a85",
+        "3a29f838da6a54afd5aea0a9d20e8a286a79c852dbedabc0acb34db926ce3152",
+        "227de0dbf65677add116e95d31c1248762d1bb912b3274e428df476219ded552",
+        "36ba1c1fceedc6dc6d6aa60bc2e7a8bbac9cd3644bd2ce3537e563a5132928e9"
+      ],
+      "artifact_sha256": {
+        "rank-00.jsonl": "08d0116aeb5923a83f4d9fff1ec45f4530359de19e2c0cecdf8ba5e8ff838e8d",
+        "rank-01.jsonl": "767c815839fd8e6a6012b67d10822a5194a251f8ea1a987a812d81883e09576a",
+        "rank-02.jsonl": "08fd065316d87a0745ed66e0e51bd4c4f2fdd2c62c490f9c9984d91febf91260",
+        "rank-03.jsonl": "81918065364754b05fad2fb91ceca241c72c486d01224dfbf3742dfe9b2f4a1e"
+      },
+      "examples": [
+        {
+          "rank": 0,
+          "sample": 7,
+          "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder<|im_end|>"
+        },
+        {
+          "rank": 0,
+          "sample": 49,
+          "response": "- marine x 2<|im_end|>"
+        },
+        {
+          "rank": 1,
+          "sample": 7,
+          "response": "- marine<|im_end|>"
+        },
+        {
+          "rank": 1,
+          "sample": 0,
+          "response": "- marine  \n- mule  \n- siegetank<|im_end|>"
+        },
+        {
+          "rank": 2,
+          "sample": 7,
+          "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder<|im_end|>"
+        },
+        {
+          "rank": 2,
+          "sample": 44,
+          "response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder<|im_end|>"
+        },
+        {
+          "rank": 3,
+          "sample": 7,
+          "response": "- marine<|im_end|>"
+        },
+        {
+          "rank": 3,
+          "sample": 62,
+          "response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder\n- siegetank<|im_end|>"
+        }
+      ]
+    },
+    {
+      "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt0-r17",
+      "manifest": {
+        "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-norm-fp32-opt0-r17",
+        "mode": "norm-fp32",
+        "status": "preflight",
+        "started_at": "2026-09-06T12:06:46.677962+00:00",
+        "source_commit": "1f624913c0bcbbf4c350a2ace0eb109a056eb4c5",
+        "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+        "gpu_selection": "4,5,6,7",
+        "world_size": 4,
+        "max_optimizer_updates": 0,
+        "max_gpu_seconds": 1800,
+        "param_dtype": "fp32",
+        "fp32_normalization": true,
+        "user_authorization": "2026-09-06: approved temperature precision A/B and bounded drift diagnosis",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_path": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "project_sft": false,
+        "resumed_checkpoint": false,
+        "sc2_started": false
+      },
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-00.jsonl": "completed",
+          "rank-02.jsonl": "completed",
+          "rank-01.jsonl": "completed",
+          "rank-03.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T12:07:40.048586+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "aggregate": {
+        "actor_vs_old": {
+          "tokens": 135,
+          "abs_mean": 0.06120718469481171,
+          "abs_max": 2.9016265869140625,
+          "finite": true
+        },
+        "normalization": {
+          "tokens": 135,
+          "abs_mean": 1.2790841236875605e-7,
+          "abs_max": 0.0000028043286874890327,
+          "finite": true
+        },
+        "parameter_precision_path": {
+          "tokens": 135,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "finite": true
+        },
+        "cached_vs_full": {
+          "tokens": 135,
+          "abs_mean": 0.0076416924265371505,
+          "abs_max": 0.8087818622589111,
+          "finite": true
+        },
+        "cached_vs_recorded_generate": {
+          "tokens": 135,
+          "abs_mean": 0.012977043508995381,
+          "abs_max": 1.073228359222412,
+          "finite": true
+        },
+        "cached_vs_actor": {
+          "tokens": 135,
+          "abs_mean": 0.007641704646004899,
+          "abs_max": 0.8087832927703857,
+          "finite": true
+        }
+      },
+      "input_sha256": [
+        "1a902ff0261290a19ba0d3fe975856a1e464a2e1587652df89deffe63bd99a85",
+        "3a29f838da6a54afd5aea0a9d20e8a286a79c852dbedabc0acb34db926ce3152",
+        "227de0dbf65677add116e95d31c1248762d1bb912b3274e428df476219ded552",
+        "36ba1c1fceedc6dc6d6aa60bc2e7a8bbac9cd3644bd2ce3537e563a5132928e9"
+      ],
+      "artifact_sha256": {
+        "rank-00.jsonl": "bab42eae64c5c8eec60092540ce684a80528b160fa2269db9732b6d6cc879040",
+        "rank-01.jsonl": "8935c73674a1a416847a58410a60e0a1a52fdb9c9623a39c1093cc78d71e51ad",
+        "rank-02.jsonl": "02fd64c3197999ba7d41fa94c3b5dd8899aa593f4411c2dd31f2a4f9b1618229",
+        "rank-03.jsonl": "b2b7865228e2121e1ec9e37652c2699c1fc28e374c0ed6f057c17ae550f8800d"
+      },
+      "examples": [
+        {
+          "rank": 0,
+          "sample": 7,
+          "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder<|im_end|>"
+        },
+        {
+          "rank": 0,
+          "sample": 49,
+          "response": "- marine x 2<|im_end|>"
+        },
+        {
+          "rank": 1,
+          "sample": 7,
+          "response": "- marine<|im_end|>"
+        },
+        {
+          "rank": 1,
+          "sample": 0,
+          "response": "- marine  \n- mule  \n- siegetank<|im_end|>"
+        },
+        {
+          "rank": 2,
+          "sample": 7,
+          "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder<|im_end|>"
+        },
+        {
+          "rank": 2,
+          "sample": 44,
+          "response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder<|im_end|>"
+        },
+        {
+          "rank": 3,
+          "sample": 7,
+          "response": "- marine<|im_end|>"
+        },
+        {
+          "rank": 3,
+          "sample": 62,
+          "response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder\n- siegetank<|im_end|>"
+        }
+      ]
+    }
+  ]
+}

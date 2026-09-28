@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-09-06T02:08:22.687183+00:00",
+  "node": "sc2-a100-44",
+  "source_commit": "44a6e9deb1e18ae42dcaf0c8da47ceec2ee04433",
+  "cpu_tests": 68,
+  "normalized_override_differences": {
+    "trainer.total_epochs": [
+      "1",
+      "4"
+    ],
+    "trainer.n_gpus_per_node": [
+      "4",
+      "8"
+    ]
+  },
+  "all_other_overrides_equal": true,
+  "production_directories_unchanged_from": "f083ec58eeeb271c8abafaf98f917762898ce152",
+  "save_frequency": 1,
+  "expected_checkpoint_files_per_step": 25,
+  "keep_checkpoints": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "preflight_path": "/root/new-scii-unit-id-exhaustion-20260906/preflight-four8-r1",
+  "source": "/root/new-scii-unit-id-exhaustion-20260906/code-44a6e9d",
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-unit-id-exhaustion-v1/runs/20260906-unit-id-exhaustion-v1-qwen-instruct2507-l6-8gpu-rl4-s0-r1",
+  "manifest": {
+    "schema_version": 1,
+    "status": "dry_run",
+    "started_at": "2026-09-06T02:07:31.533023+00:00",
+    "source_commit": "44a6e9deb1e18ae42dcaf0c8da47ceec2ee04433",
+    "dirty": false,
+    "formal": false,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "model_source": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+    "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "bo_path": "/root/new-scii-unit-id-exhaustion-20260906/code-44a6e9d/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "training",
+    "source_files_sha256": {
+      "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+      "configs/system-v1.env": "773047ba5eae417e3ab727b7371147fa506aa606a2322f548a582e911679644a",
+      "scripts/train_sc2.sh": "89e793e4e6ecfd801e4749742fd339ce7aafad0353c0b5e8e89457848b823294",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "54644b5d9176139e4a8c9650f3f5e99bd03651d53f3ad19bb6e01329808a9578",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+    },
+    "target_steps": 4,
+    "host": "hpc",
+    "python": "3.12.3",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "world_size": 8,
+    "container_image_id": null,
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": null,
+      "moba": null
+    }
+  },
+  "gpu_processes": "",
+  "asset_verification": "passed"
+}

@@ -1,0 +1,929 @@
+{
+  "source_sha": "e8d8de164ed5312c33f9905613176503a9d1832c",
+  "prompt_response_sha256": "6223ae35495666b2200483760c5322a73c8ea919a7e04e568161bdb5ba5fc6fb",
+  "model_generations": 0,
+  "games_started": 0,
+  "ppo_updates": 0,
+  "cases": [
+    {
+      "env": 0,
+      "source_line": 9,
+      "answer_kind": "historical_second_answer",
+      "observation_sha256": "491cab9f376ebf5af714f6ff86f577563ee3b5d282aa2ae6f78da4e26a843cb9",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 60,
+          "executor_queue_count": 60,
+          "executor_queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 3,
+            "refinery": 1
+          },
+          "executor_queue_sha256": "3199ba9291b4125011642b96b1b3df3f76144cb47a9cd16350c6574bedd5c154",
+          "generated_query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 60,
+          "executor_queue_count": 60,
+          "executor_queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 3,
+            "refinery": 1
+          },
+          "executor_queue_sha256": "3199ba9291b4125011642b96b1b3df3f76144cb47a9cd16350c6574bedd5c154",
+          "generated_query_sha256": "174e0a6181102f195cd089aee2da03e7ed6ba66098671b1167eee48e616363fe",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 0,
+      "source_line": 9,
+      "answer_kind": "synthetic_refinery",
+      "observation_sha256": "491cab9f376ebf5af714f6ff86f577563ee3b5d282aa2ae6f78da4e26a843cb9",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "refinery": 1
+          },
+          "executor_queue_sha256": "b171f4438f9d1593e925f58479a312d33a44c675c34f5cf4caf42773facb20d8",
+          "generated_query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "refinery": 1
+          },
+          "executor_queue_sha256": "b171f4438f9d1593e925f58479a312d33a44c675c34f5cf4caf42773facb20d8",
+          "generated_query_sha256": "174e0a6181102f195cd089aee2da03e7ed6ba66098671b1167eee48e616363fe",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 0,
+      "source_line": 9,
+      "answer_kind": "synthetic_factory",
+      "observation_sha256": "491cab9f376ebf5af714f6ff86f577563ee3b5d282aa2ae6f78da4e26a843cb9",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: factory",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "factory": 1
+          },
+          "executor_queue_sha256": "b000bc8870c5e22221ab22e7a37f5a20435b98fa6478475e82b81efdad671127",
+          "generated_query_sha256": "174e0a6181102f195cd089aee2da03e7ed6ba66098671b1167eee48e616363fe",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 0,
+      "source_line": 9,
+      "answer_kind": "synthetic_starport",
+      "observation_sha256": "491cab9f376ebf5af714f6ff86f577563ee3b5d282aa2ae6f78da4e26a843cb9",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: starport",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: starport",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "174e0a6181102f195cd089aee2da03e7ed6ba66098671b1167eee48e616363fe",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 0,
+      "source_line": 9,
+      "answer_kind": "synthetic_viking",
+      "observation_sha256": "491cab9f376ebf5af714f6ff86f577563ee3b5d282aa2ae6f78da4e26a843cb9",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: vikingfighter",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: vikingfighter",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "174e0a6181102f195cd089aee2da03e7ed6ba66098671b1167eee48e616363fe",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 2,
+      "source_line": 11,
+      "answer_kind": "historical_second_answer",
+      "observation_sha256": "949c5dc280ac8ba5b9957fadbea2fbcdd6d2763478e4c536aae6d491ad2667c1",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 60,
+          "executor_queue_count": 60,
+          "executor_queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 3,
+            "refinery": 1
+          },
+          "executor_queue_sha256": "3199ba9291b4125011642b96b1b3df3f76144cb47a9cd16350c6574bedd5c154",
+          "generated_query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 60,
+          "executor_queue_count": 60,
+          "executor_queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 3,
+            "refinery": 1
+          },
+          "executor_queue_sha256": "3199ba9291b4125011642b96b1b3df3f76144cb47a9cd16350c6574bedd5c154",
+          "generated_query_sha256": "38c5c9d984dac663c5154e5c8e524108805c955e5dbf14d286440d5af3635d78",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 2,
+      "source_line": 11,
+      "answer_kind": "synthetic_refinery",
+      "observation_sha256": "949c5dc280ac8ba5b9957fadbea2fbcdd6d2763478e4c536aae6d491ad2667c1",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "refinery": 1
+          },
+          "executor_queue_sha256": "b171f4438f9d1593e925f58479a312d33a44c675c34f5cf4caf42773facb20d8",
+          "generated_query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "refinery": 1
+          },
+          "executor_queue_sha256": "b171f4438f9d1593e925f58479a312d33a44c675c34f5cf4caf42773facb20d8",
+          "generated_query_sha256": "38c5c9d984dac663c5154e5c8e524108805c955e5dbf14d286440d5af3635d78",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 2,
+      "source_line": 11,
+      "answer_kind": "synthetic_factory",
+      "observation_sha256": "949c5dc280ac8ba5b9957fadbea2fbcdd6d2763478e4c536aae6d491ad2667c1",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: factory",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "factory": 1
+          },
+          "executor_queue_sha256": "b000bc8870c5e22221ab22e7a37f5a20435b98fa6478475e82b81efdad671127",
+          "generated_query_sha256": "38c5c9d984dac663c5154e5c8e524108805c955e5dbf14d286440d5af3635d78",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 2,
+      "source_line": 11,
+      "answer_kind": "synthetic_starport",
+      "observation_sha256": "949c5dc280ac8ba5b9957fadbea2fbcdd6d2763478e4c536aae6d491ad2667c1",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: starport",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: starport",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "38c5c9d984dac663c5154e5c8e524108805c955e5dbf14d286440d5af3635d78",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 2,
+      "source_line": 11,
+      "answer_kind": "synthetic_viking",
+      "observation_sha256": "949c5dc280ac8ba5b9957fadbea2fbcdd6d2763478e4c536aae6d491ad2667c1",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: vikingfighter",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: vikingfighter",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "38c5c9d984dac663c5154e5c8e524108805c955e5dbf14d286440d5af3635d78",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 4,
+      "source_line": 13,
+      "answer_kind": "historical_second_answer",
+      "observation_sha256": "96f689674d6ca29ac3f0716f39cfdaba89a1a1712257b8ceab761f7881dfcfb4",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 60,
+          "executor_queue_count": 60,
+          "executor_queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 3,
+            "refinery": 1
+          },
+          "executor_queue_sha256": "3199ba9291b4125011642b96b1b3df3f76144cb47a9cd16350c6574bedd5c154",
+          "generated_query_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 60,
+          "executor_queue_count": 60,
+          "executor_queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 3,
+            "refinery": 1
+          },
+          "executor_queue_sha256": "3199ba9291b4125011642b96b1b3df3f76144cb47a9cd16350c6574bedd5c154",
+          "generated_query_sha256": "c3fcf4a70b59f9d57c40386eac047481b199a0a412aa06281db77bc50e01d23a",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 4,
+      "source_line": 13,
+      "answer_kind": "synthetic_refinery",
+      "observation_sha256": "96f689674d6ca29ac3f0716f39cfdaba89a1a1712257b8ceab761f7881dfcfb4",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "refinery": 1
+          },
+          "executor_queue_sha256": "b171f4438f9d1593e925f58479a312d33a44c675c34f5cf4caf42773facb20d8",
+          "generated_query_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "refinery": 1
+          },
+          "executor_queue_sha256": "b171f4438f9d1593e925f58479a312d33a44c675c34f5cf4caf42773facb20d8",
+          "generated_query_sha256": "c3fcf4a70b59f9d57c40386eac047481b199a0a412aa06281db77bc50e01d23a",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 4,
+      "source_line": 13,
+      "answer_kind": "synthetic_factory",
+      "observation_sha256": "96f689674d6ca29ac3f0716f39cfdaba89a1a1712257b8ceab761f7881dfcfb4",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: factory",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "factory": 1
+          },
+          "executor_queue_sha256": "b000bc8870c5e22221ab22e7a37f5a20435b98fa6478475e82b81efdad671127",
+          "generated_query_sha256": "c3fcf4a70b59f9d57c40386eac047481b199a0a412aa06281db77bc50e01d23a",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 4,
+      "source_line": 13,
+      "answer_kind": "synthetic_starport",
+      "observation_sha256": "96f689674d6ca29ac3f0716f39cfdaba89a1a1712257b8ceab761f7881dfcfb4",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: starport",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: starport",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "c3fcf4a70b59f9d57c40386eac047481b199a0a412aa06281db77bc50e01d23a",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 4,
+      "source_line": 13,
+      "answer_kind": "synthetic_viking",
+      "observation_sha256": "96f689674d6ca29ac3f0716f39cfdaba89a1a1712257b8ceab761f7881dfcfb4",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: vikingfighter",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: vikingfighter",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "c3fcf4a70b59f9d57c40386eac047481b199a0a412aa06281db77bc50e01d23a",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 3,
+      "source_line": 12,
+      "answer_kind": "historical_second_answer",
+      "observation_sha256": "5e95354aa1b106af5124dde322da2179b6cf939d72969c115fcadfffae6e0f18",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 60,
+          "executor_queue_count": 60,
+          "executor_queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 3,
+            "refinery": 1
+          },
+          "executor_queue_sha256": "3199ba9291b4125011642b96b1b3df3f76144cb47a9cd16350c6574bedd5c154",
+          "generated_query_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 60,
+          "executor_queue_count": 60,
+          "executor_queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 3,
+            "refinery": 1
+          },
+          "executor_queue_sha256": "3199ba9291b4125011642b96b1b3df3f76144cb47a9cd16350c6574bedd5c154",
+          "generated_query_sha256": "490af1e0bd41248397d7fcf60807fbe948f2b758e49a2e14129aed86154acbda",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 3,
+      "source_line": 12,
+      "answer_kind": "synthetic_refinery",
+      "observation_sha256": "5e95354aa1b106af5124dde322da2179b6cf939d72969c115fcadfffae6e0f18",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "refinery": 1
+          },
+          "executor_queue_sha256": "b171f4438f9d1593e925f58479a312d33a44c675c34f5cf4caf42773facb20d8",
+          "generated_query_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "refinery": 1
+          },
+          "executor_queue_sha256": "b171f4438f9d1593e925f58479a312d33a44c675c34f5cf4caf42773facb20d8",
+          "generated_query_sha256": "490af1e0bd41248397d7fcf60807fbe948f2b758e49a2e14129aed86154acbda",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 3,
+      "source_line": 12,
+      "answer_kind": "synthetic_factory",
+      "observation_sha256": "5e95354aa1b106af5124dde322da2179b6cf939d72969c115fcadfffae6e0f18",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: factory",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": true,
+          "reason": "",
+          "parsed_count": 1,
+          "executor_queue_count": 1,
+          "executor_queue_counts": {
+            "factory": 1
+          },
+          "executor_queue_sha256": "b000bc8870c5e22221ab22e7a37f5a20435b98fa6478475e82b81efdad671127",
+          "generated_query_sha256": "490af1e0bd41248397d7fcf60807fbe948f2b758e49a2e14129aed86154acbda",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 3,
+      "source_line": 12,
+      "answer_kind": "synthetic_starport",
+      "observation_sha256": "5e95354aa1b106af5124dde322da2179b6cf939d72969c115fcadfffae6e0f18",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: starport",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: starport",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "490af1e0bd41248397d7fcf60807fbe948f2b758e49a2e14129aed86154acbda",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    },
+    {
+      "env": 3,
+      "source_line": 12,
+      "answer_kind": "synthetic_viking",
+      "observation_sha256": "5e95354aa1b106af5124dde322da2179b6cf939d72969c115fcadfffae6e0f18",
+      "variants": [
+        {
+          "arm": "A",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: vikingfighter",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+          "raw_strategy_air": {
+            "starport": 0,
+            "vikingfighter": 0
+          }
+        },
+        {
+          "arm": "B",
+          "valid": false,
+          "reason": "action outside current canonical BO candidates: vikingfighter",
+          "parsed_count": 0,
+          "executor_queue_count": 6,
+          "executor_queue_counts": {
+            "supplydepot": 1,
+            "barracks": 2,
+            "refinery": 1,
+            "marine": 1,
+            "reactor barracks": 1
+          },
+          "executor_queue_sha256": "8b8eedeaad957040e10ef85be27234dddfa17e571365d28d50d933db9045a01d",
+          "generated_query_sha256": "490af1e0bd41248397d7fcf60807fbe948f2b758e49a2e14129aed86154acbda",
+          "raw_strategy_air": {
+            "starport": 1,
+            "vikingfighter": 8
+          }
+        }
+      ]
+    }
+  ]
+}

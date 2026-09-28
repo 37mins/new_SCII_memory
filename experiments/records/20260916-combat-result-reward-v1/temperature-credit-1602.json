@@ -1,0 +1,568 @@
+{
+  "runtime_sha": "cf3ff4c26c9cb3f4f744b6cf4eeae909ccf92565",
+  "source_hashes": {
+    "gigpo/core_gigpo.py": "f135bd272518b49a58762da3474e2d4bc90906b053f1ae820d8fb05c2064148b",
+    "verl/trainer/ppo/ray_trainer.py": "492dce6d222a222ab36031984f3d020a04621003515b1e9755bed03c4a2ddeb9",
+    "verl/trainer/ppo/sc2_task_signal.py": "b81deb2c289fbb4473cdec1c8876d3c0059b6b9aee44c512caeb6909b4e65bb7",
+    "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+    "agent_system/multi_turn_rollout/utils.py": "83e43da3108cc9d06e38f990758e0c559c2d807325a32dea1a94fc9bf78c462d",
+    "agent_system/multi_turn_rollout/rollout_loop.py": "cb80b5a08331838f81aa39f868e3dbcba7a64c5ae0fe856aab1137adbfaa1d57",
+    "agent_system/environments/strategic_sc2_env_manager_v2.py": "002249bfac1ade8487ff43672320ee38cb7e72453d2edeafffb1617fcc514a88",
+    "agent_system/reward_manager/episode.py": "f9a71d8ccba625f2dc218594a3f9edaa2894306a1accc62cd19832ef4c521428",
+    "verl/trainer/main_ppo.py": "cb5547674b8af03da4555af63887ce13a93054e5d1026a0138b79c46f77e012b"
+  },
+  "artifacts": {
+    "episode_outcomes.jsonl": "dcd9c7733d8a3798ff2c842c9d9a1234ac380cd07bed7dd4d8ce81927603ac82",
+    "signal_sampling.jsonl": "f7914d99a48419821dc743f85f012d6edf03390c898974118bea4d0bb774dda0",
+    "console.log": "c52729c3de25a2fbddf15575e7742bf0faa1cd1deff6cfcdb393358410681f84",
+    "training_seeds.jsonl": "8e8c1675159da20400f269d1ea6e2d5d2b56856ab6af8c9becf92935d69b327b",
+    "effective_config.json": "da88bd12889cd71c58deecf1396627cbcc38ccb66e88dcbc9d0d75795839fd73",
+    "prompt_response.jsonl": "12555fad6ca5fb041bda6d56c7b84213c2a554c8f88d54cabc323861067e3227",
+    "manifest.json": "deacfdb72d44afe90fa074ebfc113f59b1eb792d24df74521285c03f088669c6"
+  },
+  "full_analysis_path": "/private/tmp/sc2-combat-C-audit-20260916-1602-credit.json",
+  "full_analysis_sha256": "61eb2fa7f419096439948e193aaa594d85450734aa894b94ffc354afdb3e2e65",
+  "batches": [
+    {
+      "global_step": 5,
+      "seed": 1098341402,
+      "wins": 4,
+      "decisions": 20,
+      "valid": 18,
+      "copied_rows": 0,
+      "logged_pre_copy_max_abs": 60.257843017578125,
+      "reconstructed_pre_copy_max_abs": 60.257845,
+      "logged_post_copy_range": [
+        -60.252,
+        57.911
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "reward": -52.225,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 1,
+          "reward": 26.55,
+          "decisions": 2,
+          "result": "Victory"
+        },
+        {
+          "env": 2,
+          "reward": -52.025,
+          "decisions": 3,
+          "result": "Defeat"
+        },
+        {
+          "env": 3,
+          "reward": 26.55,
+          "decisions": 2,
+          "result": "Victory"
+        },
+        {
+          "env": 4,
+          "reward": 26.55,
+          "decisions": 2,
+          "result": "Victory"
+        },
+        {
+          "env": 5,
+          "reward": -52.830999999999996,
+          "decisions": 3,
+          "result": "Defeat"
+        },
+        {
+          "env": 6,
+          "reward": 26.55,
+          "decisions": 2,
+          "result": "Victory"
+        },
+        {
+          "env": 7,
+          "reward": -52.506,
+          "decisions": 4,
+          "result": "Defeat"
+        }
+      ],
+      "second_answers": []
+    },
+    {
+      "global_step": 6,
+      "seed": 42613,
+      "wins": 0,
+      "decisions": 23,
+      "valid": 18,
+      "copied_rows": 1,
+      "logged_pre_copy_max_abs": 6.68787956237793,
+      "reconstructed_pre_copy_max_abs": 6.687885043489588,
+      "logged_post_copy_range": [
+        -1.91,
+        6.673
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "reward": -53.257,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 1,
+          "reward": -53.257,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 2,
+          "reward": -53.82,
+          "decisions": 4,
+          "result": "Defeat"
+        },
+        {
+          "env": 3,
+          "reward": -53.256,
+          "decisions": 3,
+          "result": "Defeat"
+        },
+        {
+          "env": 4,
+          "reward": -53.257,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 5,
+          "reward": -53.257,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 6,
+          "reward": -54.462999999999994,
+          "decisions": 6,
+          "result": "Defeat"
+        },
+        {
+          "env": 7,
+          "reward": -53.257,
+          "decisions": 2,
+          "result": "Defeat"
+        }
+      ],
+      "second_answers": [
+        {
+          "source_line": 41,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -53.257,
+          "env": 0,
+          "call": 2,
+          "episode_reward": -53.257,
+          "step_return": -53.257,
+          "step_score": -53.257,
+          "episode_component_before_copy": 0.11050000000000182,
+          "step_component_before_copy": -1.9881859585937534,
+          "joint_before_copy": -1.8776859585937515,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -2.675858370833346,
+            -1.6380264076388968
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.35649999999999693
+        },
+        {
+          "source_line": 42,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- Launch OFFENSE with 8 marine\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -53.257,
+          "env": 1,
+          "call": 2,
+          "episode_reward": -53.257,
+          "step_return": -53.257,
+          "step_score": -53.257,
+          "episode_component_before_copy": 0.11050000000000182,
+          "step_component_before_copy": -1.9881859585937534,
+          "joint_before_copy": -1.8776859585937515,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -2.675858370833346,
+            -1.6380264076388968
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.35649999999999693
+        },
+        {
+          "source_line": 43,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- marine x 42\n</answer>",
+          "valid": false,
+          "credited_reward": -0.45,
+          "env": 2,
+          "call": 2,
+          "episode_reward": -53.82,
+          "step_return": -48.63305,
+          "step_score": -48.73305,
+          "episode_component_before_copy": -0.08549999999999969,
+          "step_component_before_copy": 2.535764041406246,
+          "joint_before_copy": 2.450264041406246,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            1.6670499624999877,
+            2.693273592361102
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": -0.5025000000000084
+        },
+        {
+          "source_line": 44,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- techlab x 1\n</answer>",
+          "valid": false,
+          "credited_reward": -0.45,
+          "env": 3,
+          "call": 2,
+          "episode_reward": -53.256,
+          "step_return": -50.6157,
+          "step_score": -50.7157,
+          "episode_component_before_copy": 0.07400000000000044,
+          "step_component_before_copy": 0.5531140414062463,
+          "joint_before_copy": 0.6271140414062467,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -0.17460003750001363,
+            0.8563569256944348
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.22099999999999181
+        },
+        {
+          "source_line": 45,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -53.257,
+          "env": 4,
+          "call": 2,
+          "episode_reward": -53.257,
+          "step_return": -53.257,
+          "step_score": -53.257,
+          "episode_component_before_copy": 0.11050000000000182,
+          "step_component_before_copy": -1.9881859585937534,
+          "joint_before_copy": -1.8776859585937515,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -2.675858370833346,
+            -1.6380264076388968
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.35649999999999693
+        },
+        {
+          "source_line": 46,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- Launch OFFENSE with 8 marine\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -53.257,
+          "env": 5,
+          "call": 2,
+          "episode_reward": -53.257,
+          "step_return": -53.257,
+          "step_score": -53.257,
+          "episode_component_before_copy": 0.11050000000000182,
+          "step_component_before_copy": -1.9881859585937534,
+          "joint_before_copy": -1.8776859585937515,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -2.675858370833346,
+            -1.6380264076388968
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.35649999999999693
+        },
+        {
+          "source_line": 47,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -0.5,
+          "env": 6,
+          "call": 2,
+          "episode_reward": -54.462999999999994,
+          "step_return": -44.41676233124999,
+          "step_score": -44.41676233124999,
+          "episode_component_before_copy": -0.16416666666666538,
+          "step_component_before_copy": 6.852051710156253,
+          "joint_before_copy": 6.687885043489588,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            5.911962631249992,
+            6.9358184039682556
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": -1.1241666666666663
+        },
+        {
+          "source_line": 48,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -53.257,
+          "env": 7,
+          "call": 2,
+          "episode_reward": -53.257,
+          "step_return": -53.257,
+          "step_score": -53.257,
+          "episode_component_before_copy": 0.11050000000000182,
+          "step_component_before_copy": -1.9881859585937534,
+          "joint_before_copy": -1.8776859585937515,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -2.675858370833346,
+            -1.6380264076388968
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.35649999999999693
+        }
+      ]
+    },
+    {
+      "global_step": 7,
+      "seed": 17089,
+      "wins": 0,
+      "decisions": 27,
+      "valid": 23,
+      "copied_rows": 1,
+      "logged_pre_copy_max_abs": 7.729115962982178,
+      "reconstructed_pre_copy_max_abs": 7.7291169563281334,
+      "logged_post_copy_range": [
+        -2.649,
+        7.729
+      ],
+      "episodes": [
+        {
+          "env": 0,
+          "reward": -54.075,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 1,
+          "reward": -54.075,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 2,
+          "reward": -55.550999999999995,
+          "decisions": 4,
+          "result": "Defeat"
+        },
+        {
+          "env": 3,
+          "reward": -54.075,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 4,
+          "reward": -55.551,
+          "decisions": 7,
+          "result": "Defeat"
+        },
+        {
+          "env": 5,
+          "reward": -54.125,
+          "decisions": 3,
+          "result": "Defeat"
+        },
+        {
+          "env": 6,
+          "reward": -54.175,
+          "decisions": 2,
+          "result": "Defeat"
+        },
+        {
+          "env": 7,
+          "reward": -56.131,
+          "decisions": 5,
+          "result": "Defeat"
+        }
+      ],
+      "second_answers": [
+        {
+          "source_line": 89,
+          "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -54.025000000000006,
+          "env": 0,
+          "call": 2,
+          "episode_reward": -54.075,
+          "step_return": -54.025000000000006,
+          "step_score": -54.025000000000006,
+          "episode_component_before_copy": 0.32237500000000097,
+          "step_component_before_copy": -2.8214970830468857,
+          "joint_before_copy": -2.4991220830468848,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -3.4785656337500157,
+            -2.1557612960416748
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.9796249999999986
+        },
+        {
+          "source_line": 90,
+          "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -54.025000000000006,
+          "env": 1,
+          "call": 2,
+          "episode_reward": -54.075,
+          "step_return": -54.025000000000006,
+          "step_score": -54.025000000000006,
+          "episode_component_before_copy": 0.32237500000000097,
+          "step_component_before_copy": -2.8214970830468857,
+          "joint_before_copy": -2.4991220830468848,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -3.4785656337500157,
+            -2.1557612960416748
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.9796249999999986
+        },
+        {
+          "source_line": 91,
+          "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -0.4,
+          "env": 2,
+          "call": 2,
+          "episode_reward": -55.550999999999995,
+          "step_return": -50.19277749999999,
+          "step_score": -50.19277749999999,
+          "episode_component_before_copy": -0.2078124999999975,
+          "step_component_before_copy": 1.0107254169531288,
+          "joint_before_copy": 0.8029129169531313,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -0.06907230041666423,
+            1.1765862039583368
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": -1.0265624999999918
+        },
+        {
+          "source_line": 92,
+          "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -54.025000000000006,
+          "env": 3,
+          "call": 2,
+          "episode_reward": -54.075,
+          "step_return": -54.025000000000006,
+          "step_score": -54.025000000000006,
+          "episode_component_before_copy": 0.32237500000000097,
+          "step_component_before_copy": -2.8214970830468857,
+          "joint_before_copy": -2.4991220830468848,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -3.4785656337500157,
+            -2.1557612960416748
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.9796249999999986
+        },
+        {
+          "source_line": 93,
+          "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- marine x 42\n- refinery x 1\n</answer>",
+          "valid": true,
+          "credited_reward": -1.425,
+          "env": 4,
+          "call": 2,
+          "episode_reward": -55.551,
+          "step_return": -43.35563596062499,
+          "step_score": -43.35563596062499,
+          "episode_component_before_copy": -0.11874999999999959,
+          "step_component_before_copy": 7.847866956328133,
+          "joint_before_copy": 7.7291169563281334,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            6.844631738958334,
+            8.071696493333341
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": -0.937500000000001
+        },
+        {
+          "source_line": 94,
+          "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- attack OFFENSE with 8 marine\n</answer>",
+          "valid": false,
+          "credited_reward": -0.47500000000000003,
+          "env": 5,
+          "call": 2,
+          "episode_reward": -54.125,
+          "step_return": -51.395,
+          "step_score": -51.495000000000005,
+          "episode_component_before_copy": 0.1982500000000016,
+          "step_component_before_copy": -0.2914970830468846,
+          "joint_before_copy": -0.093247083046883,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -1.036669800416682,
+            0.2396970372916556
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.7055000000000007
+        },
+        {
+          "source_line": 95,
+          "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- marine x 42\n- Launch OFFENSE with 8 marine\n</answer>",
+          "valid": true,
+          "credited_reward": -54.125,
+          "env": 6,
+          "call": 2,
+          "episode_reward": -54.175,
+          "step_return": -54.125,
+          "step_score": -54.125,
+          "episode_component_before_copy": 0.2723750000000038,
+          "step_component_before_copy": -2.92149708304688,
+          "joint_before_copy": -2.6491220830468762,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            -3.6118989670833415,
+            -2.3057612960416662
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": 0.8296250000000072
+        },
+        {
+          "source_line": 96,
+          "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- reactor barracks x 3\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n</answer>",
+          "valid": true,
+          "credited_reward": -1.925,
+          "env": 7,
+          "call": 2,
+          "episode_reward": -56.131,
+          "step_return": -48.38460987499999,
+          "step_score": -48.38460987499999,
+          "episode_component_before_copy": -0.2822499999999991,
+          "step_component_before_copy": 2.8188930419531317,
+          "joint_before_copy": 2.5366430419531327,
+          "anchor_size_before_copy": 8,
+          "joint_conservative_bounds_after_copy": [
+            1.6471578245833314,
+            2.912462162291675
+          ],
+          "gamma1_scalar_counterfactual_not_experiment": -1.6809999999999916
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Only completed batches in this non-atomic read-only snapshot are analyzed.",
+    "Frozen memory-off prompt identity supplies anchor groups; no full-token tensors recovered.",
+    "Pre-copy maxima agree within 1e-4; scalar arithmetic is float64, not bitwise FP32 replay.",
+    "Post-copy bounds include unknown duplicate IDs and penalized representatives after balancing.",
+    "Gamma1 is arithmetic attribution on identical logs, not a new experiment or approved change.",
+    "Positive response advantage is not proof that each token probability rose or that gameplay improved."
+  ]
+}

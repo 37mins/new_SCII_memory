@@ -1,0 +1,611 @@
+{
+  "checked_at_utc": "2026-09-15 13:23:03 UTC",
+  "scope": "Read-only standard-library CPU inspection on sc2-a100-46. No torch import, GPU, game, model load, training, checkpoint conversion or remote write.",
+  "method": {
+    "optimizer": "Restricted metadata unpickler; only FloatStorage tensor descriptors/OrderedDict accepted; all 37 step scalars read from ZIP tensor payloads on all four ranks. Moment sample prefixes read, not full tensors.",
+    "model": "Restricted metadata unpickler extracts DTensor _local_tensor descriptors. Ignore mesh metadata without constructing DTensor. Rank0 layers 0/17/35 q_proj and k_proj, first1024 FP32 values each; offset=0, contiguous layout and finite samples checked. Not whole-model norm or parameter update correctness proof.",
+    "read_scope": "12 optimizer metadata entries, 444 four-byte Adam counters, four moment-prefix pairs per rank (only rank0 results retained), 3 model metadata entries, 73728 model tensor bytes.",
+    "failure_preserved": "First model metadata attempt exited1 because the reader assumed dict state, but DTensor uses tuple state. The read-only extractor was adjusted to handle tuple state and rerun; this is analysis tooling, not a project bug fix."
+  },
+  "optimizer": {
+    "A4": {
+      "source_sha": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+      "ranks": [
+        {
+          "rank": 0,
+          "parameter_states": 37,
+          "adam_steps": [
+            15
+          ],
+          "groups": [
+            {
+              "lr": 0.000001,
+              "betas": [
+                0.9,
+                0.999
+              ],
+              "eps": 1e-8,
+              "weight_decay": 0.01,
+              "amsgrad": false,
+              "maximize": false,
+              "foreach": null,
+              "capturable": false,
+              "differentiable": false,
+              "fused": null,
+              "decoupled_weight_decay": true,
+              "initial_lr": 0.000001
+            }
+          ],
+          "moment_samples": [
+            {
+              "flat_param_id": 0,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.2324745275727172e-14,
+                "sample_sha256": "aeb31424b6bf7eb92a9f214ef1853cf3b0619963f97350f7d14f8b5e3d597e38"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.096387081690548e-26,
+                "sample_sha256": "e23c8a2fa89e5eb4e3674f83fd64115f709dbde12cf9ce63fe196f629472a9e1"
+              }
+            },
+            {
+              "flat_param_id": 1,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.0010606128489598632,
+                "sample_sha256": "e947dd687311b54bf26f50c9a7c1179eefaada2ea30ef7e88f63bb5555cce252"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.7870226542981982e-7,
+                "sample_sha256": "71835ccbc5f6d5e700bb18acc16dbfc39399f37d26ea9636efba020fe0e0889a"
+              }
+            },
+            {
+              "flat_param_id": 18,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.00010020402260124683,
+                "sample_sha256": "b259958d911b28c079954d060dd0d6063f4abb4291235845385bc9783d4e2cd3"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.3302834389605778e-8,
+                "sample_sha256": "ec11075ee2b37e21badfb61c20c4e86c314a202cf83617ec7211e50fef64109a"
+              }
+            },
+            {
+              "flat_param_id": 36,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.00003182775981258601,
+                "sample_sha256": "68a59756a624a5e1bf849f58f871cb762224cc8e14e689ebf4069a2e3835fec6"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 6.845431999025209e-10,
+                "sample_sha256": "05bd608c9a53deb8fde3114b3c3bc63c4c3711ea3bac317c9400536bf3c7bcdd"
+              }
+            }
+          ],
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 1,
+          "parameter_states": 37,
+          "adam_steps": [
+            15
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 2,
+          "parameter_states": 37,
+          "adam_steps": [
+            15
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 3,
+          "parameter_states": 37,
+          "adam_steps": [
+            15
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        }
+      ]
+    },
+    "A8": {
+      "source_sha": "75a6b5dc3621e9d670fbfb440ae917bfacd5e360",
+      "ranks": [
+        {
+          "rank": 0,
+          "parameter_states": 37,
+          "adam_steps": [
+            24
+          ],
+          "groups": [
+            {
+              "lr": 0.000001,
+              "betas": [
+                0.9,
+                0.999
+              ],
+              "eps": 1e-8,
+              "weight_decay": 0.01,
+              "amsgrad": false,
+              "maximize": false,
+              "foreach": null,
+              "capturable": false,
+              "differentiable": false,
+              "fused": null,
+              "decoupled_weight_decay": true,
+              "initial_lr": 0.000001
+            }
+          ],
+          "moment_samples": [
+            {
+              "flat_param_id": 0,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.1865192632392035e-14,
+                "sample_sha256": "e4f3ba450acbe6fcb7c0d56033f1f3ed4cb1ae781b6fbab75efd0fb4ab5d5225"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.0983654739666204e-26,
+                "sample_sha256": "10be4410cec5755544d2475cb31ac243b7eb09102b275c956ce93896ebc61136"
+              }
+            },
+            {
+              "flat_param_id": 1,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.0009978344896808267,
+                "sample_sha256": "27c410acce2c6acd67668b54a6144138012ced954a21829fc81af8e92deabea0"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 2.974695405555394e-7,
+                "sample_sha256": "06bab02cf4e4c6879bc307ae3e5ac93e13caab7570180f3cd2c0e456094a5e39"
+              }
+            },
+            {
+              "flat_param_id": 18,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.00012768800661433488,
+                "sample_sha256": "d3b6c00aeff6ae5c196ce42a5927505e11e26425e2ef16f15084abe80219cd1e"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.3676059396061646e-8,
+                "sample_sha256": "a630e094313154ce02abdc6ba16e276a6acdc888fcda610a570d22798db531e9"
+              }
+            },
+            {
+              "flat_param_id": 36,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.000016521045836270787,
+                "sample_sha256": "52ce13c4e5ae668abaf640ce297cff7eb27414c25cf15a11a22a3bd4ab516277"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 7.810411761788316e-10,
+                "sample_sha256": "a16aa0b697cd99c4d68aee2548d2194d8e101c9531982676bcc7455413577fbc"
+              }
+            }
+          ],
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 1,
+          "parameter_states": 37,
+          "adam_steps": [
+            24
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 2,
+          "parameter_states": 37,
+          "adam_steps": [
+            24
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 3,
+          "parameter_states": 37,
+          "adam_steps": [
+            24
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        }
+      ]
+    },
+    "B8": {
+      "source_sha": "8c2f0f8b103dab054a612ce95a041e4dde9c7c8c",
+      "ranks": [
+        {
+          "rank": 0,
+          "parameter_states": 37,
+          "adam_steps": [
+            24
+          ],
+          "groups": [
+            {
+              "lr": 0.000001,
+              "betas": [
+                0.9,
+                0.999
+              ],
+              "eps": 1e-8,
+              "weight_decay": 0.01,
+              "amsgrad": false,
+              "maximize": false,
+              "foreach": null,
+              "capturable": false,
+              "differentiable": false,
+              "fused": null,
+              "decoupled_weight_decay": true,
+              "initial_lr": 0.000001
+            }
+          ],
+          "moment_samples": [
+            {
+              "flat_param_id": 0,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 2.228718003606609e-14,
+                "sample_sha256": "f79a209f542a00cb3c02ee21af6c25e7ad4f2ddf6b3aa4914719427d542268c3"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.0993627975290219e-26,
+                "sample_sha256": "dc88dfdb2f1fcbea5e7726a6ec638e63436cb0eb43c9d242c4465db9c17f3062"
+              }
+            },
+            {
+              "flat_param_id": 1,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.0011944705620408058,
+                "sample_sha256": "e239e1b232f47ba24cafc057e90ed1054b43a19130390fe023cf7161742e5868"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 3.4667360182538687e-7,
+                "sample_sha256": "683bbef3d26792a5fd7da30a3e3cdef9ce12012967f7fb2f9db7f419d336be71"
+              }
+            },
+            {
+              "flat_param_id": 18,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.00014005540288053453,
+                "sample_sha256": "6d3b1f85bd6a5951d6dd778162c85fdc9378295695283d0342c314ece3a16441"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 1.437770524859161e-8,
+                "sample_sha256": "fce74b7fac040903f239c46f505e306b29883cb64d2eb80b903f602527ab58f3"
+              }
+            },
+            {
+              "flat_param_id": 36,
+              "exp_avg": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 0.000009086187674256507,
+                "sample_sha256": "8a9ed937eb0c30a062a75548fcfe654014f8f8fb4b997512097c4304c1e50de4"
+              },
+              "exp_avg_sq": {
+                "elements_sampled": 1024,
+                "nonzero": 1024,
+                "max_abs": 6.963007948002087e-10,
+                "sample_sha256": "5d21885d442a4f9e7d787906fbc506f185199063238fab96032753dc1f94e2ec"
+              }
+            }
+          ],
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 1,
+          "parameter_states": 37,
+          "adam_steps": [
+            24
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 2,
+          "parameter_states": 37,
+          "adam_steps": [
+            24
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        },
+        {
+          "rank": 3,
+          "parameter_states": 37,
+          "adam_steps": [
+            24
+          ],
+          "groups": null,
+          "moment_samples": null,
+          "metadata_bytes": 8251
+        }
+      ]
+    }
+  },
+  "weights": {
+    "A4": {
+      "rank": 0,
+      "metadata_bytes": 285310,
+      "sampled_tensor_bytes": 24576,
+      "samples": [
+        {
+          "key": "model.layers.0.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "2b5b4ae054785833a0b372df12b07c4cfc70776f44610170cd00b7a4fd3c7b20"
+        },
+        {
+          "key": "model.layers.0.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "a6ee6939e214e3f1676329278cd0646e7be70f70fa0bb2178fc82ce944acdd73"
+        },
+        {
+          "key": "model.layers.17.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "ff8a450742c5b16bffef2c99a1c0936670c9c2c285d4762061c9615f7abc4e3a"
+        },
+        {
+          "key": "model.layers.17.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "83c9cf7716106ac4326f9cbe63e77a988c77bc2b7456f6999adc745ac8e126d3"
+        },
+        {
+          "key": "model.layers.35.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "b502c67dc8e44ff9c12f70257daf4e0c7de852c43de502093d07aa04fbc9c25f"
+        },
+        {
+          "key": "model.layers.35.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "11f7eb50101ebc41c68c74d317d7055d35ce1d2584c0b3b57bca18f02a81bd28"
+        }
+      ]
+    },
+    "A8": {
+      "rank": 0,
+      "metadata_bytes": 285310,
+      "sampled_tensor_bytes": 24576,
+      "samples": [
+        {
+          "key": "model.layers.0.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "20d482c1eceff00ec2061bb1e7c4a3245504aae4b69292d08e7f16964b153b98",
+          "changed": 1024,
+          "max_abs_delta": 0.000005058012902736664,
+          "rms_delta": 0.000001560237920921919
+        },
+        {
+          "key": "model.layers.0.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "e8e9a1d1b569e21ebf6a3d6a4632f396d13c6b9764f486bfa35c28bfef9beb95",
+          "changed": 1023,
+          "max_abs_delta": 0.000004827044904232025,
+          "rms_delta": 0.0000016061939315190974
+        },
+        {
+          "key": "model.layers.17.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "dfc7a1648d32c4948dc121fcf729ffde3892154372d1d84f649d2a2e38629774",
+          "changed": 1024,
+          "max_abs_delta": 0.000003823544830083847,
+          "rms_delta": 0.0000013500780725029341
+        },
+        {
+          "key": "model.layers.17.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "032ba043cb00ab3b5989b2079129d92ad71f76af5a33832dca440761ec5f5aee",
+          "changed": 1024,
+          "max_abs_delta": 0.00000500993337482214,
+          "rms_delta": 0.0000015493909784254846
+        },
+        {
+          "key": "model.layers.35.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "63c00eabf51f1b52b10632715101ba33779791413887970f117a0002612b55a0",
+          "changed": 1022,
+          "max_abs_delta": 0.000002898275852203369,
+          "rms_delta": 7.450905935183148e-7
+        },
+        {
+          "key": "model.layers.35.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "a0025c3cb8f005ec4d52d834bef8273d2eb8ea2c786fef5818806ce5cef716f0",
+          "changed": 1024,
+          "max_abs_delta": 0.0000036973506212234497,
+          "rms_delta": 0.0000017154015518718742
+        }
+      ]
+    },
+    "B8": {
+      "rank": 0,
+      "metadata_bytes": 285310,
+      "sampled_tensor_bytes": 24576,
+      "samples": [
+        {
+          "key": "model.layers.0.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "b914a09e3f9b0043b3ae5c7a4b8405b0e75a5f22aa9701503520c3e7ad9bc5df",
+          "changed": 1024,
+          "max_abs_delta": 0.000006015412509441376,
+          "rms_delta": 0.0000026528753589250635
+        },
+        {
+          "key": "model.layers.0.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "11bdc2cb7dac618b20fbaca707cb94cc0aef143d816dc2e2e51ee405c17e084e",
+          "changed": 1024,
+          "max_abs_delta": 0.00000568293035030365,
+          "rms_delta": 0.000002643854525785378
+        },
+        {
+          "key": "model.layers.17.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "346d22c48446701122d014bba0fbfc9c4552f58819da9b1d43272a96fc9ce9c9",
+          "changed": 1024,
+          "max_abs_delta": 0.0000052889809012413025,
+          "rms_delta": 0.0000023021565802276602
+        },
+        {
+          "key": "model.layers.17.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "d0aac41dda14508d3b801e60b0aaf819a14fe54d82b6df548ab7dc8d40c9546f",
+          "changed": 1023,
+          "max_abs_delta": 0.000005662019248120487,
+          "rms_delta": 0.000002199103827171425
+        },
+        {
+          "key": "model.layers.35.attn.q_proj.weight",
+          "local_shape": [
+            1024,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "92f8121cc9dd0b3d32b0271f8aed545e3af6db451927af1f96f7d119cb7790bb",
+          "changed": 1023,
+          "max_abs_delta": 0.000004148110747337341,
+          "rms_delta": 9.197362030139741e-7
+        },
+        {
+          "key": "model.layers.35.attn.k_proj.weight",
+          "local_shape": [
+            256,
+            2560
+          ],
+          "sample_count": 1024,
+          "sample_sha256": "89dc18025fbebfa64d8c8ef1c95e94b80a1c6fddf69cefad4d2a0b041488ad0b",
+          "changed": 1024,
+          "max_abs_delta": 0.000004941597580909729,
+          "rms_delta": 0.000002323729468332887
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "No per-update model gradients, clipping tensors, or intermediate Adam history recovered.",
+    "Endpoints cannot attribute parameter change among policy loss, KL, entropy and historical momentum.",
+    "Same sampled answers do not imply same probabilities; six sampled parameter matrices do not audit the complete model.",
+    "Current GPU availability is not needed for these checks; no GPU authorization consumed."
+  ]
+}

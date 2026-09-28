@@ -1,0 +1,412 @@
+{
+  "arms": [
+    {
+      "run_id": "20260909-bo-segment-protocol-v1-spb2-l6-g2-opening-quota-A-eval4-s0-r1",
+      "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260909-bo-segment-protocol-v1/runs/20260909-bo-segment-protocol-v1-spb2-l6-g2-opening-quota-A-eval4-s0-r1",
+      "source_sha": "2f7c5dcbcd8d51e866d31769a7d38617d1fce510",
+      "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+      "gpu_selection": "4,5,6,7",
+      "result_status": "completed",
+      "started_at": "2026-09-09T15:29:23.715187+00:00",
+      "ended_at": "2026-09-09T15:42:12.015319+00:00",
+      "process_exit_code": 0,
+      "training_updates": 0,
+      "wins": 2,
+      "games": [
+        {
+          "env_index": 0,
+          "seed": 2732,
+          "won": false,
+          "cumulative_reward": -48.95,
+          "policy_decisions": 9,
+          "valid_decisions": 5,
+          "request_game_seconds": [
+            0,
+            111,
+            131,
+            159,
+            171,
+            253,
+            313,
+            373,
+            441
+          ],
+          "median_interval_seconds": 60
+        },
+        {
+          "env_index": 1,
+          "seed": 2732,
+          "won": false,
+          "cumulative_reward": -48.95,
+          "policy_decisions": 11,
+          "valid_decisions": 6,
+          "request_game_seconds": [
+            0,
+            111,
+            131,
+            151,
+            171,
+            184,
+            253,
+            313,
+            369,
+            421,
+            496
+          ],
+          "median_interval_seconds": 54
+        },
+        {
+          "env_index": 2,
+          "seed": 43567,
+          "won": true,
+          "cumulative_reward": 20.5,
+          "policy_decisions": 9,
+          "valid_decisions": 5,
+          "request_game_seconds": [
+            0,
+            107,
+            159,
+            175,
+            180,
+            257,
+            328,
+            381,
+            480
+          ],
+          "median_interval_seconds": 62
+        },
+        {
+          "env_index": 3,
+          "seed": 43567,
+          "won": true,
+          "cumulative_reward": 21,
+          "policy_decisions": 9,
+          "valid_decisions": 4,
+          "request_game_seconds": [
+            0,
+            107,
+            135,
+            159,
+            168,
+            245,
+            317,
+            373,
+            445
+          ],
+          "median_interval_seconds": 64
+        }
+      ],
+      "no_policy_games": 0,
+      "mean_cumulative_reward": -14.100000000000001,
+      "consumed_answers": 38,
+      "format_valid": 20,
+      "semantic_valid": 20,
+      "failure_reasons": {
+        "action outside current canonical BO candidates: Launch OFFENSE when 12 marine are available": 1,
+        "action outside current canonical BO candidates: Launch OFFENSE ...": 1,
+        "action outside current canonical BO candidates: supplydep": 1,
+        "action outside current canonical BO candidates: marine x": 7,
+        "action outside current canonical BO candidates: supplydepot": 1,
+        "action count exceeds current BO remainder: supplydepot": 2,
+        "canonical legacy response requires `- exactname`": 2,
+        "action outside current canonical BO candidates: factory x": 1,
+        "action outside current canonical BO candidates: techlab": 1,
+        "action outside current canonical BO candidates: supplydepot x": 1
+      },
+      "decoded_text_token_length_histogram": {
+        "5": 2,
+        "6": 1,
+        "14": 3,
+        "15": 1,
+        "21": 3,
+        "28": 4,
+        "29": 1,
+        "34": 1,
+        "35": 1,
+        "37": 1,
+        "38": 1,
+        "41": 1,
+        "57": 1,
+        "74": 1,
+        "192": 16
+      },
+      "response_budget": 192,
+      "decoded_text_at_budget": 16,
+      "decoded_text_at_budget_invalid": 15,
+      "token_length_method": "Retokenize consumed decoded text without special tokens; proxy only. Original generation token IDs/EOS flags were not saved here; not an exact truncation rate.",
+      "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "replay_paths": {
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-09_15-30-48/replay.SC2Replay": "cb35274e7bd8fc1d540876e76d6e30f0ff24b7949502ba77406f8e4a8877e8e6"
+      },
+      "artifact_sha256": {
+        "manifest.json": "fa545fb93ccef5921c8734e05ff6c346b2873928342e84f23f15e0dfc7a2d105",
+        "effective_config.json": "a8d8bee908dc269ecb39c029e2d07332d9dbc5bd9f2d1c921b8d7387bcef8313",
+        "result.json": "17aa2c762eb6c73a32a22e9212d8464bb0129724e4898715b8025117f8fbc09b",
+        ".done": "17aa2c762eb6c73a32a22e9212d8464bb0129724e4898715b8025117f8fbc09b",
+        "episode_outcomes.jsonl": "6cb6eb7cd461fdb03daf7ea05e9d0aec3fcddeeb21f124170674eb7882dd9f61",
+        "prompt_response.jsonl": "524de6876c04ae220b1d0a08585062468c04a56d946dfe773bfafba09147fedc",
+        "evaluation_seeds.jsonl": "2a2fbfb073f0c2c9e220b29122219e6946a1c32164e9824db08763d37cc8606f",
+        "console.log": "21950a3f82d4dc4c5740735adbeeb769408cc161aae265050982c140a8636a2a"
+      },
+      "clarified_prompts": 0,
+      "over_quota_answers": 15,
+      "invalid_examples": [
+        {
+          "env": 0,
+          "id": 2,
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n- Launch OFFENSE when 12 marine are available",
+          "reason": "action outside current canonical BO candidates: Launch OFFENSE when 12 marine are available"
+        },
+        {
+          "env": 1,
+          "id": 2,
+          "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n- Launch OFFENSE ...",
+          "reason": "action outside current canonical BO candidates: Launch OFFENSE ..."
+        }
+      ],
+      "valid_nonattack_action_counts": [
+        6,
+        6,
+        6,
+        6,
+        8,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        15,
+        14,
+        15,
+        13,
+        5,
+        5,
+        30,
+        5,
+        9
+      ],
+      "sampling_seeds": [
+        {
+          "rank": 0,
+          "seed": 0,
+          "pid": 1456065,
+          "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+          "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        {
+          "rank": 1,
+          "seed": 1,
+          "pid": 1456258,
+          "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+          "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+        },
+        {
+          "rank": 2,
+          "seed": 2,
+          "pid": 1456259,
+          "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+          "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+        },
+        {
+          "rank": 3,
+          "seed": 3,
+          "pid": 1456260,
+          "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+          "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+        }
+      ]
+    },
+    {
+      "run_id": "20260909-bo-segment-protocol-v1-spb2-l6-g2-opening-quota-B-eval4-s0-r1",
+      "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260909-bo-segment-protocol-v1/runs/20260909-bo-segment-protocol-v1-spb2-l6-g2-opening-quota-B-eval4-s0-r1",
+      "source_sha": "2f7c5dcbcd8d51e866d31769a7d38617d1fce510",
+      "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+      "gpu_selection": "4,5,6,7",
+      "result_status": "completed",
+      "started_at": "2026-09-09T15:42:35.001982+00:00",
+      "ended_at": "2026-09-09T15:54:01.119262+00:00",
+      "process_exit_code": 0,
+      "training_updates": 0,
+      "wins": 4,
+      "games": [
+        {
+          "env_index": 0,
+          "seed": 2732,
+          "won": true,
+          "cumulative_reward": 20.5,
+          "policy_decisions": 9,
+          "valid_decisions": 6,
+          "request_game_seconds": [
+            0,
+            111,
+            131,
+            151,
+            233,
+            376,
+            378,
+            430,
+            510
+          ],
+          "median_interval_seconds": 66
+        },
+        {
+          "env_index": 1,
+          "seed": 2732,
+          "won": true,
+          "cumulative_reward": 20.5,
+          "policy_decisions": 5,
+          "valid_decisions": 4,
+          "request_game_seconds": [
+            0,
+            253,
+            329,
+            397,
+            437
+          ],
+          "median_interval_seconds": 72
+        },
+        {
+          "env_index": 2,
+          "seed": 43567,
+          "won": true,
+          "cumulative_reward": 20,
+          "policy_decisions": 3,
+          "valid_decisions": 2,
+          "request_game_seconds": [
+            0,
+            253,
+            392
+          ],
+          "median_interval_seconds": 196
+        },
+        {
+          "env_index": 3,
+          "seed": 43567,
+          "won": true,
+          "cumulative_reward": 20.5,
+          "policy_decisions": 3,
+          "valid_decisions": 3,
+          "request_game_seconds": [
+            0,
+            253,
+            301
+          ],
+          "median_interval_seconds": 150.5
+        }
+      ],
+      "no_policy_games": 0,
+      "mean_cumulative_reward": 20.375,
+      "consumed_answers": 20,
+      "format_valid": 15,
+      "semantic_valid": 15,
+      "failure_reasons": {
+        "action count exceeds current BO remainder: supplydepot": 2,
+        "action outside current canonical BO candidates: techlab": 2,
+        "action outside current canonical BO candidates: siege tank": 1
+      },
+      "decoded_text_token_length_histogram": {
+        "10": 1,
+        "21": 1,
+        "26": 3,
+        "27": 2,
+        "35": 1,
+        "36": 2,
+        "43": 2,
+        "49": 1,
+        "55": 1,
+        "56": 1,
+        "64": 1,
+        "76": 1,
+        "192": 3
+      },
+      "response_budget": 192,
+      "decoded_text_at_budget": 3,
+      "decoded_text_at_budget_invalid": 3,
+      "token_length_method": "Retokenize consumed decoded text without special tokens; proxy only. Original generation token IDs/EOS flags were not saved here; not an exact truncation rate.",
+      "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "replay_paths": {
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-09_15-43-51/replay.SC2Replay": "b0415720ada0e62fd67fb6a64e8bb88572a6d5a1e5d377bbf5150d40093e3cf5"
+      },
+      "artifact_sha256": {
+        "manifest.json": "ae54b3a723bd414888b3ac2517e2265cb1df6dcda19ba98e5cfad0fa8eb2ebe6",
+        "effective_config.json": "5bb8dd49ff7766c6c6672945c7879508d918a904eb89670c692a70f748bc5526",
+        "result.json": "0944211296ceaaf88934d2293f69b5596078e438b9223e240a51682ec30f8829",
+        ".done": "0944211296ceaaf88934d2293f69b5596078e438b9223e240a51682ec30f8829",
+        "episode_outcomes.jsonl": "bcc57e23cecc3c74963e6dc7c4dee60cc135f02fd68c03a237345ad097b209b6",
+        "prompt_response.jsonl": "56313761d4fc2892defa1037d06bf98aae8064495ce92708ac05b5f44679c07a",
+        "evaluation_seeds.jsonl": "2a2fbfb073f0c2c9e220b29122219e6946a1c32164e9824db08763d37cc8606f",
+        "console.log": "814689eb7518eca769226edf0cfa0e06e47caa2ba2763de604b0903819cd766a"
+      },
+      "clarified_prompts": 20,
+      "over_quota_answers": 3,
+      "invalid_examples": [
+        {
+          "env": 1,
+          "id": 3,
+          "raw_answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n",
+          "reason": "action count exceeds current BO remainder: supplydepot"
+        },
+        {
+          "env": 2,
+          "id": 3,
+          "raw_answer": "<answer>\n- supplydepot x 3\n- mule x 3\n- marauder x 2\n- commandcenter x 1\n- factory x 1\n- techlab barracks x 1\n- marine x 2\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1",
+          "reason": "action count exceeds current BO remainder: supplydepot"
+        }
+      ],
+      "valid_nonattack_action_counts": [
+        6,
+        32,
+        32,
+        32,
+        6,
+        9,
+        12,
+        6,
+        2,
+        50,
+        16,
+        5,
+        11,
+        9,
+        9
+      ],
+      "sampling_seeds": [
+        {
+          "rank": 0,
+          "seed": 0,
+          "pid": 1461780,
+          "cpu_rng_sha256": "1ccf17250133dec5e96478acd63e13d728d0dbbabb30389415a302c6f872f81f",
+          "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        {
+          "rank": 1,
+          "seed": 1,
+          "pid": 1461975,
+          "cpu_rng_sha256": "f5defda135ec2e0d1513e6979390f58397d31a904d5f6540f8b88ae64d1decc1",
+          "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+        },
+        {
+          "rank": 2,
+          "seed": 2,
+          "pid": 1461976,
+          "cpu_rng_sha256": "0f9cd7b642a3f8f641c5e992f17138b2d094db4d56cc2329b3be2c794ddc79ad",
+          "cuda_rng_sha256": "b1535c7783ea8829b6b0cf67704539798b4d16c39bf0bfe09494c5d9f12eee30"
+        },
+        {
+          "rank": 3,
+          "seed": 3,
+          "pid": 1461977,
+          "cpu_rng_sha256": "76fe321e2dc1dfdec62a274bcedbeea2727be2e2972f97e728e07e0345c21ede",
+          "cuda_rng_sha256": "59d5966c96af7ecad5c9d2918d6582d102b2c67f6b765ea28ac24371ab4f93be"
+        }
+      ]
+    }
+  ],
+  "effective_config_differences": {
+    "+ray_init.runtime_env.env_vars.SC2_CLARIFY_BO_QUOTA": [
+      "'0'",
+      "'1'"
+    ]
+  }
+}

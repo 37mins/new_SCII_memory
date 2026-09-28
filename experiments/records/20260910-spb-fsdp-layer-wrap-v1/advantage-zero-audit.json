@@ -1,0 +1,862 @@
+{
+  "audit": "zero advantage, existing ledgers and frozen scalar functions, CPU only",
+  "date": "2026-09-10",
+  "runtime_shas": {
+    "level6": "6a1657f7e045dcf998495a3d0adfb331572bf60d",
+    "level7": "90b3fdc2fb7fadc1230861306b20c27540d9b736"
+  },
+  "batch_results": [
+    {
+      "level": 6,
+      "step": 15,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "n": 40,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            16.697378158569336
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            17.576187133789062
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            18.501249313354492
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 4,
+      "reward_sequences": null
+    },
+    {
+      "level": 6,
+      "step": 16,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "n": 40,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            16.697378158569336
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            17.576187133789062
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            18.501249313354492
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 4,
+      "reward_sequences": null
+    },
+    {
+      "level": 6,
+      "step": 18,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": [
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ]
+      ]
+    },
+    {
+      "level": 6,
+      "step": 19,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": null
+    },
+    {
+      "level": 6,
+      "step": 20,
+      "episode_rewards": [
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0.0000019073486328125,
+      "step_absmax": 0.000003814697265625,
+      "joint_absmax": 0.0000057220458984375,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            -46.977500915527344
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            -49.45000076293945
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": [
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ]
+      ]
+    },
+    {
+      "level": 7,
+      "step": 6,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 4,
+      "reward_sequences": null
+    },
+    {
+      "level": 7,
+      "step": 9,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 3,
+      "reward_sequences": null
+    },
+    {
+      "level": 7,
+      "step": 13,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": null
+    },
+    {
+      "level": 7,
+      "step": 15,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 3,
+      "reward_sequences": null
+    },
+    {
+      "level": 7,
+      "step": 16,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": null
+    },
+    {
+      "level": 7,
+      "step": 18,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": [
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ],
+        [
+          0,
+          20.5
+        ]
+      ]
+    },
+    {
+      "level": 7,
+      "step": 19,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": null
+    },
+    {
+      "level": 7,
+      "step": 20,
+      "episode_rewards": [
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945,
+        -49.45000076293945
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0.0000019073486328125,
+      "step_absmax": 0.000003814697265625,
+      "joint_absmax": 0.0000057220458984375,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            -46.977500915527344
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            -49.45000076293945
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": [
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ],
+        [
+          0,
+          -49.45000076293945
+        ]
+      ]
+    },
+    {
+      "level": 7,
+      "step": 21,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 2,
+      "reward_sequences": null
+    },
+    {
+      "level": 7,
+      "step": 22,
+      "episode_rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "policy_lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "n": 16,
+      "copies": 0,
+      "ep_absmax": 0,
+      "step_absmax": 0,
+      "joint_absmax": 0,
+      "groups": [
+        {
+          "size": 8,
+          "returns": [
+            19.475000381469727
+          ]
+        },
+        {
+          "size": 8,
+          "returns": [
+            20.5
+          ]
+        }
+      ],
+      "unique_answers": 3,
+      "reward_sequences": null
+    }
+  ],
+  "execution": {
+    "node": "sc2-a100-44",
+    "cuda_initialized": false,
+    "timeout_seconds": 30,
+    "exit_code": 0,
+    "source_changes": false,
+    "game_or_gpu_work": false
+  },
+  "limitation": "Reconstructed scalar rewards/group advantages from logs; one active token per response represents broadcast scalar. Not saved full PPO tensors or parameter update replay."
+}

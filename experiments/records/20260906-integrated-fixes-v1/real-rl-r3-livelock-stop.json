@@ -1,0 +1,247 @@
+{
+  "source_commit": "aa1d20dbe87ddaf67213e8fa67e15e4eb2e56835",
+  "node": "sc2-a100-44",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "run_id": "20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r3-train8",
+  "verified_at_utc": "2026-09-07T00:18:54.594943+00:00",
+  "classification": "aborted after confirmed SC2 empty-candidate/empty-BO same-frame livelock; original run result retained as failed",
+  "run_result": {
+    "status": "failed",
+    "ended_at": "2026-09-07T00:13:09.699227+00:00",
+    "process_exit_code": 1,
+    "completed_steps": 5,
+    "target_steps": 8,
+    "metrics_finite": true,
+    "checkpoint_complete": false,
+    "checkpoint_files": {},
+    "console_sha256": "8c58b8d783ac55c0f0614a04a1e67d556583b7b2b6c5a2ceceaaba8659af5186"
+  },
+  "outcome_summary": {
+    "trajectories": 47,
+    "natural_games": 47,
+    "wins": 2,
+    "defeats": 45,
+    "ties": 0,
+    "truncated": 0,
+    "natural_win_rate": 0.0425531914893617
+  },
+  "completed_global_steps": 5,
+  "optimizer_updates_completed": 145,
+  "unfinished_global_step": 6,
+  "step6_optimizer_updates": 0,
+  "step8_evaluation_started": false,
+  "long96_continuation_started": false,
+  "stop_signal": {
+    "at_utc": "2026-09-07T00:12:59.129572+00:00",
+    "action": "SIGINT to verified r3 main training driver",
+    "pid": 3610400,
+    "pgid": 3610344,
+    "session": 3596575,
+    "reason": "Confirmed repeated empty BO refresh at SC2 frame6123 for over3h; stop condition, not KL threshold.",
+    "preserve": "All five complete checkpoints and original run artifacts; no code/config change."
+  },
+  "cleanup": {
+    "tmux_absent": true,
+    "gpu_compute_apps": "",
+    "orphan_sc2_pid_exists": false,
+    "orphan_termination": "SIGTERM to verified r3 SC2 PID3637160 at2026-09-07T00:16:49.848350Z",
+    "files_deleted": false
+  },
+  "livelock": {
+    "environment_index": 4,
+    "sc2_frame": 6123,
+    "active_observation_game_time": "18:13",
+    "mixed_log_game_time_caveat": "Previously reported20:19 was the latest mixed-worker log time, not this active environment.",
+    "waiting_bo_before_filter": {
+      "siegetank": 3
+    },
+    "first_refresh_utc": [
+      "(SC2Worker pid=3618496) 2026-09-06 20:26:46 [default_player_Qwen3-30B] [INFO]: (6123) refresh build order: "
+    ],
+    "identical_empty_response_rows": 1891,
+    "unique_prompt_count": 1,
+    "response_counts": {
+      "<answer>\nHere are the Build Orders with attack instructions:\n\n</answer>": 1891
+    },
+    "first_row": {
+      "time": "2026-09-06 20:26:53",
+      "step_index": 342,
+      "env_idx": 4,
+      "prompt": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 18:13 in the game, and we are playing as Terran with 9540 minerals and 841 vespene gas, while our current supply is 34, of which 8 is allocated to the army, 26 to workers, and 139 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 26 SCV, 2 marine, 2 mule. In terms of the structures, we have 2 bases in the form of commandcenter, 1 bases in the form of orbitalcommand, 2  with techlab, 5 barracks, 1 barracks with reactor, 3 barracks with techlab, 1 bunker, 1 engineeringbay, 1 missileturret, 2 refinery, 16 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 1 SCV, 9 battlecruiser, 2 liberator, 1 marauder, 8 marine, 3 medivac, 4 raven, 12 viking. As for the visible enemy structures, there are 4 bases in the form of commandcenter, 1 bases in the form of orbitalcommand, 1 armory, 2 autoturret, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 2 missileturret, 2 refinery, 3 starport, 1 starport with techlab, 6 supplydepot.\nThe remaining BO list in this phase:\nnone\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+      "memory_context": "",
+      "llm_response": "<answer>\nHere are the Build Orders with attack instructions:\n\n</answer>",
+      "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n\n</answer>",
+      "reward": 0,
+      "done": false,
+      "won": 0,
+      "is_action_valid": false,
+      "semantic_action_valid": false,
+      "semantic_action_evaluable": false,
+      "projection_action_valid": true,
+      "executor_action_valid": true,
+      "failure_reason": "current BO candidate list is empty",
+      "policy_action_applied": true,
+      "policy_action_id": 52,
+      "last_consumed_policy_action_id": 52
+    },
+    "last_row": {
+      "time": "2026-09-07 00:12:54",
+      "step_index": 2232,
+      "env_idx": 4,
+      "memory_context": "",
+      "llm_response": "<answer>\nHere are the Build Orders with attack instructions:\n\n</answer>",
+      "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n\n</answer>",
+      "reward": 0,
+      "done": false,
+      "won": 0,
+      "is_action_valid": false,
+      "semantic_action_valid": false,
+      "semantic_action_evaluable": false,
+      "projection_action_valid": true,
+      "executor_action_valid": true,
+      "failure_reason": "current BO candidate list is empty",
+      "policy_action_applied": true,
+      "policy_action_id": 1942,
+      "last_consumed_policy_action_id": 1942,
+      "prompt_note": "Prompt was byte-identical to first_row.prompt; full JSONL artifact hash is recorded separately.",
+      "prompt_same_as": "livelock.first_row.prompt"
+    }
+  },
+  "code_evidence": [
+    {
+      "path": "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py",
+      "lines": [
+        803,
+        819,
+        879,
+        1147
+      ],
+      "fact": "Own text has no recognized factory. Existing prerequisite filter removes siegetank when factory_count<=0, so remaining siegetank3 becomes empty. It does not remove the Strategist waiting_bo object."
+    },
+    {
+      "path": "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py",
+      "lines": [
+        1168,
+        1170,
+        1182
+      ],
+      "fact": "Empty filtered candidates render remainingBO=none and an empty one-shot, matching the model's repeated empty response."
+    },
+    {
+      "path": "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py",
+      "lines": [
+        660,
+        661,
+        662
+      ],
+      "fact": "While current index>=len(queue), renew_bo is called again. Returning[] resetsindex0 and preserves0>=0, preventing the currentSC2 frame from completing."
+    },
+    {
+      "path": "agent_system/environments/strategic_sc2_env_manager_v2.py",
+      "lines": [
+        856,
+        875,
+        1452
+      ],
+      "fact": "These applied responses are non-evaluable and invalid because candidate list is empty; high evaluable-only action ratios do not reveal this loop."
+    }
+  ],
+  "observation_caveat": "The text '2  with techlab' is produced by regular_unit_name for bare TechLab names; it is not proof of two Factory buildings being omitted. Actual reason the factory is absent from this observation is not established from text alone. No observation or filter patch made.",
+  "interpretation": "This run did not reach step8 and cannot validate the96-step route or learning improvement. Five full steps and all five checkpoints remain. Step6 partial games are not an eighth-step evaluation; no fabricated outcome was added for the interrupted48thgame. Stop was for proven livelock, not KL or a single token change.",
+  "next_candidate_not_implemented": "Seek approval to change only empty-BO same-frame refresh control flow: at most one renew perSC2 frame, preserving downstream execution/micro paths. First useCPU reproduction/regression; do not change prompt/prerequisite filtering/reward/cache/precision/loss or startGPU reruns without confirmed scope/budget.",
+  "artifact_hashes": {
+    "manifest.json": "ecef5ce074adf0798adae6bc18ee8683122a0cc3c53132e131fe7711ae27f033",
+    "effective_config.json": "8d09784f7210d44d9665e93a8f9a042b4eee704bc0d5a00684ae16a946f4559b",
+    ".done": "3508ec7d21a95e2906003e83cf9eec04698d8ea4ed45d5eacd9f387270152958",
+    "result.json": "3508ec7d21a95e2906003e83cf9eec04698d8ea4ed45d5eacd9f387270152958",
+    "console.log": "8c58b8d783ac55c0f0614a04a1e67d556583b7b2b6c5a2ceceaaba8659af5186",
+    "episode_outcomes.jsonl": "4f6d2dcddc56a158b1dac735450238d217d945a6c1f985a98d9c598dc0b3b1e0",
+    "prompt_response.jsonl": "f9592a285556d4f10bb978fa1484070519ca40700b06cc63558248f1003b35a0"
+  },
+  "checkpoint_directories": [
+    "global_step_1",
+    "global_step_2",
+    "global_step_3",
+    "global_step_4",
+    "global_step_5"
+  ],
+  "status": "failed",
+  "run_directory": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r3-train8",
+  "completed_batch_outcomes": {
+    "batches": 5,
+    "games": 40,
+    "wins": 2,
+    "defeats": 38,
+    "note": "Training rollouts, not independent step-8 evaluation."
+  },
+  "partial_batch_outcomes": {
+    "global_step": 6,
+    "natural_games": 7,
+    "wins": 0,
+    "defeats": 7,
+    "unfinished_environments": [
+      4
+    ],
+    "note": "Do not count the interrupted environment as a natural defeat."
+  },
+  "checkpoint_integrity": {
+    "required_files_per_step": 25,
+    "completed_steps": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "total_required_files": 125,
+    "bytes_per_step": 49827330547,
+    "model_shards_hashed": 40,
+    "scope": "ZIP directories readable, model SHA-256 and small-state hashes recorded. No full tensor reload or full optimizer-file hashing.",
+    "evidence": [
+      "real-rl-r3-step1.json",
+      "real-rl-r3-training-progress.json"
+    ],
+    "target_checkpoint_complete_field": "The original result's checkpoint_complete=false refers to missing target step 8, not damaged steps 1–5."
+  },
+  "historical_r6_read_only_comparison": {
+    "verified_at_utc": "2026-09-07T00:41:17.816966+00:00",
+    "historical_run_id": "20260818-qwen-canonical-plan-rl-v1-qwen-base-l5-full96-s0-r6",
+    "source_archive": "/data/yangjinyue/new-scii-qwen-level5-canonical/runs/20260818-qwen-canonical-plan-rl-v1-qwen-base-l5-full96-s0-r6/results/audit/qwen3_4b_g2_qwen_base_rl_level5_canonical_plan_v2_full96_a100198_level5_from_base_oldmicro_sc2-a100-198_seed0_step96_resp96_level5_qwen3_4b_base_nosft_noskill_compact6_v7_newa100_20260816/frozen_runtime_source.tar.gz",
+    "source_archive_sha256": "cad52ff43ebefb0c0d7eb1cb809f2144f14c799db928467a755b8899e399ce32",
+    "historical_llm_player_sha256": "3fc541a0359bbbc33764fe329dba79453af383281ec93ec5f30f50d7c6171b6a",
+    "historical_planner_sha256": "25cd70413db0d5846a5823093545f793092bc850d9eac1091a7d7d018f1bf3e5",
+    "r3_llm_player_sha256": "54644b5d9176139e4a8c9650f3f5e99bd03651d53f3ad19bb6e01329808a9578",
+    "r3_planner_sha256": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+    "compared_scope": {
+      "r3_commit": "aa1d20dbe87ddaf67213e8fa67e15e4eb2e56835",
+      "r6_archive_sha256": "cad52ff43ebefb0c0d7eb1cb809f2144f14c799db928467a755b8899e399ce32",
+      "refresh_loop_byte_equal": true,
+      "prerequisite_filter_byte_equal": true
+    },
+    "original_queue_refresh_line": 660,
+    "original_prerequisite_filter_lines": [
+      820,
+      887
+    ],
+    "old_call_limit": {
+      "line": 1109,
+      "source": "if self.ct >= 20:\n    done = True\n    reward += DEFEAT_PENALTY",
+      "interpretation": "An artificial terminal signal was present in r6. It changes how long a trajectory is collected, not the correctness of the empty-queue loop. No claim that r6 experienced this exact stuck state."
+    },
+    "current_call_order": {
+      "maintenance": "llm_player.py:596 invokes run_maintenance_tasks before queue refresh; script_player.py:4331–4364 includes worker management, rally, auto-defense, auto-attack and micro paths.",
+      "return_to_engine": "base_player.py:162 awaits run; the loop must return before on_step can finish.",
+      "execution_guard": "llm_player.py:665 only executes a BO if current_bo_index < len(bo_data)."
+    },
+    "conclusion": "The queue-refresh loop and prerequisite filter already existed in the actual successful r6 archive and are byte-identical in r3. The r3 startup fix env.rollout.n=8 did not introduce them. Removing the old call limit exposed a longer-running integration path, but the exact historical triggering circumstances are unproven. Source inspection supports the narrow control-flow candidate; no patch or CPU behavioral test has been run."
+  }
+}

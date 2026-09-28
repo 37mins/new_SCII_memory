@@ -1,0 +1,2382 @@
+{
+  "as_of": "2026-09-10T20:24:24+08:00",
+  "scope": "Read-only existing frozen runtime/logs; CPU scalar reward reconstruction; no GPU/game/parameter replay.",
+  "runs": [
+    {
+      "level": 6,
+      "source_sha": "6a1657f7e045dcf998495a3d0adfb331572bf60d",
+      "run_id": "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "through_global_step": 23
+    },
+    {
+      "level": 7,
+      "source_sha": "cfdd3b468cf9bbe3a1f85ce8dc9a5a9ea530ffbd",
+      "run_id": "20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-rl4-4gpu-s0-r1",
+      "through_global_step": 4
+    },
+    {
+      "level": 7,
+      "source_sha": "90b3fdc2fb7fadc1230861306b20c27540d9b736",
+      "run_id": "20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-resume4to96-4gpu-s0-r1",
+      "through_global_step": 25
+    }
+  ],
+  "configuration": {
+    "do_sample": true,
+    "temperature": 0.4,
+    "top_p": 0.9,
+    "top_k": 0,
+    "gamma": 0.95,
+    "swa_dropout": 0,
+    "history_length": 0,
+    "sc2_memory_mode": "off",
+    "max_response_length": 192,
+    "gigpo_mode": "mean_norm"
+  },
+  "stats": [
+    {
+      "level": 6,
+      "step": 1,
+      "seed": 2732,
+      "wins": 7,
+      "rewards": [
+        21,
+        20,
+        20.5,
+        20.5,
+        20.5,
+        -49.451,
+        21,
+        20
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 4
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 3
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 2,
+      "trajectory_unique": 8,
+      "lens": [
+        5,
+        3,
+        2,
+        6,
+        3,
+        8,
+        6,
+        3
+      ],
+      "entropy": 0.103,
+      "adv_min": -53.198,
+      "adv_max": 16.621,
+      "response_mean": 52.275
+    },
+    {
+      "level": 6,
+      "step": 2,
+      "seed": 43567,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        21,
+        20,
+        20.5,
+        20.5,
+        20.5,
+        20
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 3
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 2
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 2
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 2,
+      "trajectory_unique": 8,
+      "lens": [
+        8,
+        5,
+        6,
+        4,
+        4,
+        3,
+        5,
+        3
+      ],
+      "entropy": 0.084,
+      "adv_min": -2.582,
+      "adv_max": 1.613,
+      "response_mean": 41.425
+    },
+    {
+      "level": 6,
+      "step": 3,
+      "seed": 42613,
+      "wins": 0,
+      "rewards": [
+        -49.5,
+        -49.481,
+        -49.401,
+        -49.475,
+        -49.382,
+        -49.5,
+        -49.432,
+        -49.425
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 3
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 3
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 2
+        }
+      ],
+      "opening_bullet_unique": 2,
+      "trajectory_unique": 8,
+      "lens": [
+        5,
+        7,
+        8,
+        6,
+        8,
+        5,
+        9,
+        4
+      ],
+      "entropy": 0.108,
+      "adv_min": -7.13,
+      "adv_max": 4.423,
+      "response_mean": 55.821
+    },
+    {
+      "level": 6,
+      "step": 4,
+      "seed": 52416,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        21,
+        20,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 6
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 1
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 2,
+      "trajectory_unique": 8,
+      "lens": [
+        5,
+        7,
+        4,
+        9,
+        4,
+        3,
+        8,
+        7
+      ],
+      "entropy": 0.094,
+      "adv_min": -2.708,
+      "adv_max": 2.468,
+      "response_mean": 53.583
+    },
+    {
+      "level": 6,
+      "step": 5,
+      "seed": 45891,
+      "wins": 6,
+      "rewards": [
+        -49.45,
+        20.5,
+        20.5,
+        20.5,
+        20,
+        20.5,
+        -49.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 4
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 3
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 2,
+      "trajectory_unique": 8,
+      "lens": [
+        4,
+        9,
+        3,
+        2,
+        5,
+        4,
+        3,
+        4
+      ],
+      "entropy": 0.102,
+      "adv_min": -64.148,
+      "adv_max": 42.198,
+      "response_mean": 35.025
+    },
+    {
+      "level": 6,
+      "step": 6,
+      "seed": 21243,
+      "wins": 7,
+      "rewards": [
+        20,
+        20.5,
+        20.5,
+        20.5,
+        -49.349,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 6
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 1
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 24\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 2,
+      "trajectory_unique": 8,
+      "lens": [
+        4,
+        4,
+        6,
+        6,
+        2,
+        5,
+        6,
+        5
+      ],
+      "entropy": 0.098,
+      "adv_min": -86.905,
+      "adv_max": 10.275,
+      "response_mean": 37.125
+    },
+    {
+      "level": 6,
+      "step": 7,
+      "seed": 30403,
+      "wins": 1,
+      "rewards": [
+        -49.481,
+        -49.481,
+        -49.401,
+        20.5,
+        -49.481,
+        -49.462,
+        -49.901,
+        -49.481
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        6,
+        11,
+        10,
+        8,
+        7,
+        8,
+        10,
+        6
+      ],
+      "entropy": 0.095,
+      "adv_min": -23.299,
+      "adv_max": 58.624,
+      "response_mean": 29.347
+    },
+    {
+      "level": 6,
+      "step": 8,
+      "seed": 32103,
+      "wins": 0,
+      "rewards": [
+        -49.981,
+        -49.5,
+        -49.5,
+        -49.95,
+        -49.431,
+        -49.5,
+        -49.45,
+        -50
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        12,
+        13,
+        11,
+        13,
+        15,
+        17,
+        14,
+        17
+      ],
+      "entropy": 0.095,
+      "adv_min": -4.659,
+      "adv_max": 4.501,
+      "response_mean": 35.393
+    },
+    {
+      "level": 6,
+      "step": 9,
+      "seed": 41993,
+      "wins": 8,
+      "rewards": [
+        20,
+        20,
+        20,
+        20.5,
+        20,
+        20,
+        20.5,
+        20
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        7,
+        15,
+        10,
+        7,
+        15,
+        11,
+        7,
+        11
+      ],
+      "entropy": 0.043,
+      "adv_min": -3.261,
+      "adv_max": 3.002,
+      "response_mean": 40.034
+    },
+    {
+      "level": 6,
+      "step": 10,
+      "seed": 57043,
+      "wins": 8,
+      "rewards": [
+        20,
+        20.5,
+        20,
+        20,
+        20.5,
+        20,
+        20,
+        20
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 7,
+      "lens": [
+        7,
+        7,
+        8,
+        11,
+        7,
+        8,
+        14,
+        8
+      ],
+      "entropy": 0.024,
+      "adv_min": -3.922,
+      "adv_max": 1.743,
+      "response_mean": 36.389
+    },
+    {
+      "level": 6,
+      "step": 11,
+      "seed": 20757,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 5,
+      "lens": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        8
+      ],
+      "entropy": 0.022,
+      "adv_min": -0.852,
+      "adv_max": 0.228,
+      "response_mean": 23.578
+    },
+    {
+      "level": 6,
+      "step": 12,
+      "seed": 55026,
+      "wins": 8,
+      "rewards": [
+        20,
+        20.5,
+        20.5,
+        20,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 6,
+      "lens": [
+        9,
+        5,
+        7,
+        10,
+        7,
+        6,
+        6,
+        7
+      ],
+      "entropy": 0.038,
+      "adv_min": -2.924,
+      "adv_max": 2.17,
+      "response_mean": 25.844
+    },
+    {
+      "level": 6,
+      "step": 13,
+      "seed": 46884,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 4,
+      "lens": [
+        5,
+        5,
+        5,
+        7,
+        5,
+        5,
+        6,
+        5
+      ],
+      "entropy": 0.017,
+      "adv_min": -1.621,
+      "adv_max": 0.513,
+      "response_mean": 23.688
+    },
+    {
+      "level": 6,
+      "step": 14,
+      "seed": 14935,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 4,
+      "lens": [
+        5,
+        6,
+        5,
+        5,
+        5,
+        7,
+        6,
+        6
+      ],
+      "entropy": 0.014,
+      "adv_min": -1.365,
+      "adv_max": 0.634,
+      "response_mean": 23.146
+    },
+    {
+      "level": 6,
+      "step": 15,
+      "seed": 15430,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "entropy": 0.004,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 23.2
+    },
+    {
+      "level": 6,
+      "step": 16,
+      "seed": 48600,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "entropy": 0.005,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 23.2
+    },
+    {
+      "level": 6,
+      "step": 17,
+      "seed": 39512,
+      "wins": 1,
+      "rewards": [
+        -49.5,
+        20.5,
+        -49.5,
+        -49.5,
+        -50,
+        -49.5,
+        -49.5,
+        -49.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 7
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 2,
+      "trajectory_unique": 8,
+      "lens": [
+        7,
+        2,
+        6,
+        8,
+        6,
+        8,
+        6,
+        7
+      ],
+      "entropy": 0.031,
+      "adv_min": -9.332,
+      "adv_max": 80.801,
+      "response_mean": 26.018
+    },
+    {
+      "level": 6,
+      "step": 18,
+      "seed": 52620,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.005,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 31.5
+    },
+    {
+      "level": 6,
+      "step": 19,
+      "seed": 14650,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.003,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 31.5
+    },
+    {
+      "level": 6,
+      "step": 20,
+      "seed": 17089,
+      "wins": 0,
+      "rewards": [
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.003,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 31.5
+    },
+    {
+      "level": 6,
+      "step": 21,
+      "seed": 32230,
+      "wins": 0,
+      "rewards": [
+        -49.5,
+        -49.5,
+        -49.401,
+        -49.455,
+        -49.5,
+        -49.401,
+        -49.45,
+        -49.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 4,
+      "lens": [
+        3,
+        3,
+        3,
+        4,
+        3,
+        3,
+        5,
+        3
+      ],
+      "entropy": 0.028,
+      "adv_min": -0.944,
+      "adv_max": 3.949,
+      "response_mean": 32.469
+    },
+    {
+      "level": 6,
+      "step": 22,
+      "seed": 18983,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.003,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 31.5
+    },
+    {
+      "level": 6,
+      "step": 23,
+      "seed": 43095,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.002,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 31.5
+    },
+    {
+      "level": 7,
+      "step": 1,
+      "seed": 2732,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20,
+        20,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 3
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 2
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 2
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 2,
+      "trajectory_unique": 8,
+      "lens": [
+        6,
+        4,
+        4,
+        6,
+        6,
+        2,
+        6,
+        6
+      ],
+      "entropy": 0.085,
+      "adv_min": -1.275,
+      "adv_max": 2.904,
+      "response_mean": 77.575
+    },
+    {
+      "level": 7,
+      "step": 2,
+      "seed": 43567,
+      "wins": 7,
+      "rewards": [
+        20.5,
+        21,
+        20.5,
+        20.5,
+        -49.45,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 5
+        },
+        {
+          "answer": "- supplydepot x 4\n- barracks x 4\n- marine x 24",
+          "n": 2
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        4,
+        4,
+        3,
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "entropy": 0.104,
+      "adv_min": -71.186,
+      "adv_max": 11.229,
+      "response_mean": 47.25
+    },
+    {
+      "level": 7,
+      "step": 3,
+      "seed": 42613,
+      "wins": 0,
+      "rewards": [
+        -49.382,
+        -49.45,
+        -49.431,
+        -49.45,
+        -49.481,
+        -49.5,
+        -49.451,
+        -49.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 7
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 1
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        3,
+        3,
+        4,
+        3,
+        9,
+        4,
+        10,
+        5
+      ],
+      "entropy": 0.097,
+      "adv_min": -4.501,
+      "adv_max": 9.816,
+      "response_mean": 45.727
+    },
+    {
+      "level": 7,
+      "step": 4,
+      "seed": 52416,
+      "wins": 7,
+      "rewards": [
+        20.5,
+        20.5,
+        -49.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 6
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 2
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 6,
+      "lens": [
+        5,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.084,
+      "adv_min": -73.903,
+      "adv_max": 13.309,
+      "response_mean": 58.833
+    },
+    {
+      "level": 7,
+      "step": 5,
+      "seed": 45891,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 3,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.045,
+      "adv_min": -1.799,
+      "adv_max": 0.237,
+      "response_mean": 46.95
+    },
+    {
+      "level": 7,
+      "step": 6,
+      "seed": 21243,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 5
+        },
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 3
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 3,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.029,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 42.5
+    },
+    {
+      "level": 7,
+      "step": 7,
+      "seed": 30403,
+      "wins": 1,
+      "rewards": [
+        -49.481,
+        -49.481,
+        -49.481,
+        -49.481,
+        -49.481,
+        -49.481,
+        20.5,
+        -49.481
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 5
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 3
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 5,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2
+      ],
+      "entropy": 0.045,
+      "adv_min": -11.927,
+      "adv_max": 75.737,
+      "response_mean": 43.55
+    },
+    {
+      "level": 7,
+      "step": 8,
+      "seed": 32103,
+      "wins": 0,
+      "rewards": [
+        -49.5,
+        -49.48,
+        -49.481,
+        -49.5,
+        -49.431,
+        -49.5,
+        -49.45,
+        -49.45
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 6
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 2
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        4,
+        3,
+        7,
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "entropy": 0.091,
+      "adv_min": -2.56,
+      "adv_max": 6.273,
+      "response_mean": 43.083
+    },
+    {
+      "level": 7,
+      "step": 9,
+      "seed": 41993,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 6
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 2
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 2,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.022,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 39.125
+    },
+    {
+      "level": 7,
+      "step": 10,
+      "seed": 57043,
+      "wins": 0,
+      "rewards": [
+        -49.431,
+        -49.431,
+        -48.95,
+        -49.431,
+        -49.431,
+        -49.95,
+        -49.431,
+        -49.431
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 6
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 2
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 4,
+      "lens": [
+        2,
+        2,
+        7,
+        2,
+        2,
+        3,
+        2,
+        2
+      ],
+      "entropy": 0.068,
+      "adv_min": -2.67,
+      "adv_max": 10.016,
+      "response_mean": 38.458
+    },
+    {
+      "level": 7,
+      "step": 11,
+      "seed": 20757,
+      "wins": 3,
+      "rewards": [
+        20.5,
+        20.5,
+        -48.95,
+        -49,
+        -49.431,
+        -48.931,
+        -48.951,
+        21
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        2,
+        3,
+        5,
+        8,
+        5,
+        6,
+        7,
+        6
+      ],
+      "entropy": 0.105,
+      "adv_min": -28.357,
+      "adv_max": 62.555,
+      "response_mean": 46.227
+    },
+    {
+      "level": 7,
+      "step": 12,
+      "seed": 55026,
+      "wins": 5,
+      "rewards": [
+        -49.413,
+        20.5,
+        -48.925,
+        20.5,
+        20.5,
+        20.5,
+        -49.95,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 4,
+      "lens": [
+        5,
+        2,
+        8,
+        2,
+        2,
+        2,
+        10,
+        2
+      ],
+      "entropy": 0.072,
+      "adv_min": -49.999,
+      "adv_max": 34.883,
+      "response_mean": 34.639
+    },
+    {
+      "level": 7,
+      "step": 13,
+      "seed": 46884,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.007,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38
+    },
+    {
+      "level": 7,
+      "step": 14,
+      "seed": 14935,
+      "wins": 0,
+      "rewards": [
+        -49.481,
+        -49.481,
+        -49.481,
+        -49.95,
+        -50,
+        -49.481,
+        -48.981,
+        -50
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        3,
+        3,
+        3,
+        5,
+        4,
+        3,
+        3,
+        4
+      ],
+      "entropy": 0.077,
+      "adv_min": -1.124,
+      "adv_max": 3.166,
+      "response_mean": 40.821
+    },
+    {
+      "level": 7,
+      "step": 15,
+      "seed": 15430,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 2,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.008,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 39.125
+    },
+    {
+      "level": 7,
+      "step": 16,
+      "seed": 48600,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.007,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38
+    },
+    {
+      "level": 7,
+      "step": 17,
+      "seed": 39512,
+      "wins": 0,
+      "rewards": [
+        -49.45,
+        -49.95,
+        -49.95,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.95
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 8,
+      "lens": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        9
+      ],
+      "entropy": 0.086,
+      "adv_min": -1.052,
+      "adv_max": 2.092,
+      "response_mean": 58.632
+    },
+    {
+      "level": 7,
+      "step": 18,
+      "seed": 52620,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.004,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38
+    },
+    {
+      "level": 7,
+      "step": 19,
+      "seed": 14650,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.006,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38
+    },
+    {
+      "level": 7,
+      "step": 20,
+      "seed": 17089,
+      "wins": 0,
+      "rewards": [
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45,
+        -49.45
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.006,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38
+    },
+    {
+      "level": 7,
+      "step": 21,
+      "seed": 32230,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 1,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.006,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38
+    },
+    {
+      "level": 7,
+      "step": 22,
+      "seed": 18983,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 2,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.01,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38.562
+    },
+    {
+      "level": 7,
+      "step": 23,
+      "seed": 43095,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 2,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.008,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38.562
+    },
+    {
+      "level": 7,
+      "step": 24,
+      "seed": 51374,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 2,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.008,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 39.125
+    },
+    {
+      "level": 7,
+      "step": 25,
+      "seed": 24152,
+      "wins": 8,
+      "rewards": [
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5,
+        20.5
+      ],
+      "opening_prompt_hashes": {
+        "95f4e1650fe0": 8
+      },
+      "opening_answer_counts": [
+        {
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "n": 8
+        }
+      ],
+      "opening_bullet_unique": 1,
+      "trajectory_unique": 2,
+      "lens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "entropy": 0.006,
+      "adv_min": 0,
+      "adv_max": 0,
+      "response_mean": 38.562
+    }
+  ],
+  "paired_existing_trajectories": [
+    {
+      "level": 7,
+      "step": 5,
+      "examples": [
+        {
+          "env": 0,
+          "reward": 20.5,
+          "result": "Victory",
+          "plans": [
+            {
+              "prompt_sha": "95f4e1650fe0",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 0,
+              "time": "2026-09-10 08:36:43"
+            },
+            {
+              "prompt_sha": "c64f73642031",
+              "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 20.5,
+              "time": "2026-09-10 08:38:38"
+            }
+          ]
+        },
+        {
+          "env": 4,
+          "reward": 20.5,
+          "result": "Victory",
+          "plans": [
+            {
+              "prompt_sha": "95f4e1650fe0",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 0,
+              "time": "2026-09-10 08:36:43"
+            },
+            {
+              "prompt_sha": "c64f73642031",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 0,
+              "time": "2026-09-10 08:38:38"
+            },
+            {
+              "prompt_sha": "6970a3e43b2c",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 1\n- mule x 1\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 0,
+              "time": "2026-09-10 08:39:47"
+            },
+            {
+              "prompt_sha": "5269d97f5bdd",
+              "answer": "<answer>\n- marine x 8\n- supplydepot x 8\n- mule x 5\n- scv x 15\n- marauder x 3\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 20.5,
+              "time": "2026-09-10 08:41:11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "step": 7,
+      "examples": [
+        {
+          "env": 0,
+          "reward": -49.481,
+          "result": "Defeat",
+          "plans": [
+            {
+              "prompt_sha": "95f4e1650fe0",
+              "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 0,
+              "time": "2026-09-10 08:48:15"
+            },
+            {
+              "prompt_sha": "801f5a01fdcd",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": -49.481,
+              "time": "2026-09-10 08:51:48"
+            }
+          ]
+        },
+        {
+          "env": 6,
+          "reward": 20.5,
+          "result": "Victory",
+          "plans": [
+            {
+              "prompt_sha": "95f4e1650fe0",
+              "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 0,
+              "time": "2026-09-10 08:48:15"
+            },
+            {
+              "prompt_sha": "801f5a01fdcd",
+              "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 0,
+              "time": "2026-09-10 08:51:48"
+            },
+            {
+              "prompt_sha": "20dd789760fd",
+              "answer": "<answer>\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- techlab starport x 1\n</answer>",
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: techlab starport",
+              "reward": 0,
+              "time": "2026-09-10 08:53:04"
+            },
+            {
+              "prompt_sha": "37319a40b877",
+              "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- mule x 2\n- marauder x 3\n- commandcenter x 2\n- factory x 1\n- scv x 15\n</answer>",
+              "valid": true,
+              "failure": "",
+              "reward": 20.5,
+              "time": "2026-09-10 08:54:14"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "level6_step17": [
+    {
+      "env": 0,
+      "result": "Defeat",
+      "reward": -49.5,
+      "answers": [
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>"
+      ],
+      "first_prompt_sha": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "calls": 7
+    },
+    {
+      "env": 1,
+      "result": "Victory",
+      "reward": 20.5,
+      "answers": [
+        "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+        "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>"
+      ],
+      "first_prompt_sha": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "calls": 2
+    },
+    {
+      "env": 2,
+      "result": "Defeat",
+      "reward": -49.5,
+      "answers": [
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>"
+      ],
+      "first_prompt_sha": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "calls": 6
+    },
+    {
+      "env": 3,
+      "result": "Defeat",
+      "reward": -49.5,
+      "answers": [
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>"
+      ],
+      "first_prompt_sha": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "calls": 8
+    },
+    {
+      "env": 4,
+      "result": "Defeat",
+      "reward": -50,
+      "answers": [
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>"
+      ],
+      "first_prompt_sha": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "calls": 6
+    },
+    {
+      "env": 5,
+      "result": "Defeat",
+      "reward": -49.5,
+      "answers": [
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>"
+      ],
+      "first_prompt_sha": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "calls": 8
+    },
+    {
+      "env": 6,
+      "result": "Defeat",
+      "reward": -49.5,
+      "answers": [
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>"
+      ],
+      "first_prompt_sha": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "calls": 6
+    },
+    {
+      "env": 7,
+      "result": "Defeat",
+      "reward": -49.5,
+      "answers": [
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>"
+      ],
+      "first_prompt_sha": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "calls": 7
+    }
+  ],
+  "cpu_discount_counterfactual": [
+    {
+      "gamma": 0.95,
+      "source": "L7 step5 real rewards, same prompt, all153 legal 2-copy fillings",
+      "large_return": 20.5,
+      "small_return": 18.501249313354492,
+      "large_joint_range": [
+        0.1998748779296875,
+        0.4441661834716797
+      ],
+      "small_joint_range": [
+        -1.7988758087158203,
+        -1.5545845031738281
+      ],
+      "global_joint_absmax": 1.7988758087158203,
+      "fillings": 153
+    },
+    {
+      "gamma": 1,
+      "source": "L7 step5 real rewards, same prompt, all153 legal 2-copy fillings",
+      "large_return": 20.5,
+      "small_return": 20.5,
+      "large_joint_range": [
+        0,
+        0
+      ],
+      "small_joint_range": [
+        0,
+        0
+      ],
+      "global_joint_absmax": 0,
+      "fillings": 153
+    }
+  ],
+  "cpu_exit_code": 0,
+  "cpu_only": true,
+  "sampling_rng_audit": "HASH verl/workers/rollout/hf_rollout.py 90b72ab82e0f6ffd4574a4cc98eb8f2969ecc9c68713248abc82704d153bb2fa\nHASH verl/workers/fsdp_workers.py c35a702561e187c810deafef3a27c07a091a74dce00785943ec643845e56433f\nHASH verl/trainer/ppo/ray_trainer.py 97b3795548b53bc081918719dceb397a16315ba5ef64b4c621ce17555ca0a26f\nHASH verl/trainer/config/ppo_trainer.yaml 61e8ae253eb92211827054abf798673ccfad710f62f84b1183c752e1accce721\nHASH agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py bf7e88583e746c28331eb32118cf0c3abd535c9856436805fd60584f38bdcac8\nHASH agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/commander.py 537077b5da5f28cc9b013341f473e15f571392da198a20c889dd408a60ec42ee\nRUN 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1\nCONFIG_LINES do_sample []\nCONFIG_LINES capture_log_probs []\nCONFIG_LINES entropy_coeff []\nCONFIG_LINES temperature []\nCONFIG_LINES top_p []\nCONFIG_LINES gamma []\nCONFIG_LINES sc2_disable_step_shaping []\nCONFIG_LINES enable_similarity []\nMODEL_PY [('__init__.py', 516), ('attn.py', 6934), ('configuration_sse_swa_moba.py', 4533), ('flash_moba_attn.py', 9687), ('moba_attn.py', 9403), ('modeling_sse_swa_moba.py', 21072), ('sse.py', 42539), ('sse_swa.py', 53010)]\nMODEL_CONFIG {'architectures': ['SSESWAMoBAForCausalLM'], 'model_type': 'sse_swa_moba', 'auto_map': {'AutoConfig': 'configuration_sse_swa_moba.SSESWAMoBAConfig', 'AutoModelForCausalLM': 'modeling_sse_swa_moba.SSESWAMoBAForCausalLM'}, 'attention_dropout': 0, 'swa_dropout': 0.5, 'use_cache': True}\nSAMPLE_PROGRESS 24\nRUN 20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-resume4to96-4gpu-s0-r1\nCONFIG_LINES do_sample []\nCONFIG_LINES capture_log_probs []\nCONFIG_LINES entropy_coeff []\nCONFIG_LINES temperature []\nCONFIG_LINES top_p []\nCONFIG_LINES gamma []\nCONFIG_LINES sc2_disable_step_shaping []\nCONFIG_LINES enable_similarity []\nMODEL_PY [('__init__.py', 516), ('attn.py', 6934), ('configuration_sse_swa_moba.py', 4533), ('flash_moba_attn.py', 9687), ('moba_attn.py', 9403), ('modeling_sse_swa_moba.py', 21072), ('sse.py', 42539), ('sse_swa.py', 53010)]\nMODEL_CONFIG {'architectures': ['SSESWAMoBAForCausalLM'], 'model_type': 'sse_swa_moba', 'auto_map': {'AutoConfig': 'configuration_sse_swa_moba.SSESWAMoBAConfig', 'AutoModelForCausalLM': 'modeling_sse_swa_moba.SSESWAMoBAForCausalLM'}, 'attention_dropout': 0, 'swa_dropout': 0.5, 'use_cache': True}\nSAMPLE_PROGRESS 23\nEXTRA_KEYS 4 ['lr_scheduler', 'rng'] [('lr_scheduler', ['base_lrs', 'last_epoch', '_step_count', '_get_lr_called_within_step', '_last_lr', 'lr_lambdas']), ('rng', ['cpu', 'numpy', 'random', 'cuda'])]\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 4 0 {'.rng.cpu': '02390c14bf069055', '.rng.cuda': '9d4a0c3cc5fecc26'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 4 1 {'.rng.cpu': '06fdbcb66dd33b79', '.rng.cuda': '1939698bf41fa061'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 4 2 {'.rng.cpu': '2a52cdb0ff13aded', '.rng.cuda': '3bc9e83324b20734'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 4 3 {'.rng.cpu': 'b851a4cd162c5665', '.rng.cuda': 'ea5dfa572735f747'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 4 4 {'.rng.cpu': 'f92a5b0eb302ff39', '.rng.cuda': '60a537556adaaf06'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 4 5 {'.rng.cpu': 'f3f86b3b2c4a5e5e', '.rng.cuda': 'cb1fcd71390aebe0'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 4 6 {'.rng.cpu': '1e565de52cf09e87', '.rng.cuda': 'e6ad0fdbaa30fbe2'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 4 7 {'.rng.cpu': '0b97e54240b1d6ec', '.rng.cuda': 'c11f124ce97b46b7'}\nEXTRA_KEYS 20 ['lr_scheduler', 'rng'] [('lr_scheduler', ['base_lrs', 'last_epoch', '_step_count', '_get_lr_called_within_step', '_last_lr', 'lr_lambdas']), ('rng', ['cpu', 'numpy', 'random', 'cuda'])]\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 20 0 {'.rng.cpu': '031791984424f7d0', '.rng.cuda': 'fc24f1ee5ff750e7'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 20 1 {'.rng.cpu': '46360d417456002d', '.rng.cuda': '14d367f5a6768c6d'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 20 2 {'.rng.cpu': 'c8e92eb79c573170', '.rng.cuda': 'aae6ad2da4a4002e'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 20 3 {'.rng.cpu': 'a92d18622b0efb70', '.rng.cuda': '13ff9e67b2694616'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 20 4 {'.rng.cpu': '782e7e776f5d6234', '.rng.cuda': '620b6ee8671b5854'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 20 5 {'.rng.cpu': '48789cf8bd0d08cb', '.rng.cuda': 'd8e6fd359e89789d'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 20 6 {'.rng.cpu': '67405093ea00d8b2', '.rng.cuda': '2a609607ef76da7a'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1 20 7 {'.rng.cpu': '157c88495fea8a96', '.rng.cuda': 'bb5fd9c8e7ec8898'}\nEXTRA_KEYS 16 ['lr_scheduler', 'rng'] [('lr_scheduler', ['base_lrs', 'last_epoch', '_step_count', '_get_lr_called_within_step', '_last_lr', 'lr_lambdas']), ('rng', ['cpu', 'numpy', 'random', 'cuda'])]\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-resume4to96-4gpu-s0-r1 16 0 {'.rng.cpu': '8ee2e914fc03595a', '.rng.cuda': 'f7faeb5d9d7497b6'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-resume4to96-4gpu-s0-r1 16 1 {'.rng.cpu': 'f3518017d06e0d9a', '.rng.cuda': '3a6614dc2d677f22'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-resume4to96-4gpu-s0-r1 16 2 {'.rng.cpu': '5433788fea955854', '.rng.cuda': 'eeb4cafeca399545'}\nRNG_HASH 20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-resume4to96-4gpu-s0-r1 16 3 {'.rng.cpu': '2fc9e36d72930255', '.rng.cuda': 'b4c3f45bdb7906cf'}\nCPU_ONLY True\n",
+  "limitations": [
+    "No captured sampling logits; no parameter-gradient/Adam replay.",
+    "Real L7 step5 copy indices were not saved; all 153 possible distinct two-item fillings enumerated.",
+    "Raw answer uniqueness is not semantic uniqueness; headings can differ while action counts match.",
+    "Existing same-input trajectories are not interventions isolating a single action; downstream responses/fallbacks may also differ.",
+    "Changing gamma to 1 occurred only in CPU counterfactual, not in a run."
+  ]
+}

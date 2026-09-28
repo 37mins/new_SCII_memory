@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "decision": "evidence_insufficient_do_not_adopt",
+  "run_id": "20260911-execution-failure-feedback-v1-spb2-A4-exampleorder-fixed1x8-4gpu-r1",
+  "source_commit": "0ac4c73afacf94914a1ddfa1015b152cc764e5fe",
+  "source_runtime": "e3c0695adf0a2e36c97afba838ec3b508f000e34",
+  "checkpoint_training_commit": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+  "model": "SpB A4, SSESWAMoBAForCausalLM",
+  "node": "sc2-a100-43",
+  "gpus": [0, 1, 2, 3],
+  "started_at": "2026-09-12T10:25:47+00:00",
+  "ended_at": "2026-09-12T10:30:23+00:00",
+  "exit_code": 0,
+  "wall_seconds": 276,
+  "max_wall_seconds": 1200,
+  "games": 0,
+  "optimizer_updates": 0,
+  "new_checkpoints": 0,
+  "independent_game_contexts": 1,
+  "historical_game_seed": 42613,
+  "historical_query": "firstattack40 env0 step_index2 policy_action_id3 at 05:49",
+  "input_tokens_both_arms": 1478,
+  "generation": {"temperature": 0.4, "top_p": 0.9, "top_k": 0, "response_length": 192},
+  "checks": {
+    "source_and_case_hashes": true,
+    "only_two_example_lines_swapped": true,
+    "same_paired_cuda_rng": true,
+    "all_rank_checkpoint_loading_returned": true,
+    "adam_counters_before_and_after_all_ranks": [15],
+    "recomputed_validator_and_parser_agree": true,
+    "input_not_truncated": true,
+    "gpu_memory_zero_after_completion": true
+  },
+  "arms": {
+    "A": {"answers": 8, "validator_accepted": 8, "valid_depot_first": 5, "eos_and_close_tag": 8, "valid_depot_first_and_complete": 5, "no_eos_at_budget": 0},
+    "B": {"answers": 8, "validator_accepted": 7, "valid_depot_first": 7, "eos_and_close_tag": 6, "valid_depot_first_and_complete": 5, "no_eos_at_budget": 2}
+  },
+  "pairs": [
+    {"seed": 12000, "A_valid_depot_first": false, "B_valid_depot_first": true, "A_complete_correction": false, "B_complete_correction": false, "B_issue": "192 tokens, no EOS/close tag, repeated Marine; validator accepts"},
+    {"seed": 12001, "A_valid_depot_first": false, "B_valid_depot_first": true, "A_complete_correction": false, "B_complete_correction": true},
+    {"seed": 12002, "A_valid_depot_first": true, "B_valid_depot_first": false, "A_complete_correction": true, "B_complete_correction": false, "B_issue": "Barracks cumulative 4 exceeds remainder 3"},
+    {"seed": 12003, "A_valid_depot_first": true, "B_valid_depot_first": true, "A_complete_correction": true, "B_complete_correction": true},
+    {"seed": 12004, "A_valid_depot_first": true, "B_valid_depot_first": true, "A_complete_correction": true, "B_complete_correction": true},
+    {"seed": 12005, "A_valid_depot_first": true, "B_valid_depot_first": true, "A_complete_correction": true, "B_complete_correction": true},
+    {"seed": 12006, "A_valid_depot_first": false, "B_valid_depot_first": true, "A_complete_correction": false, "B_complete_correction": true},
+    {"seed": 12007, "A_valid_depot_first": true, "B_valid_depot_first": true, "A_complete_correction": true, "B_complete_correction": false, "B_issue": "192 tokens, no EOS/close tag, repeated Marine; validator accepts"}
+  ],
+  "local_snapshot": "/private/tmp/sc2-example-order-results.UvLUuA",
+  "artifact_sha256": {
+    ".done": "658fa673b32c1d0195d56138203354c4f40a50159e9c01e67f1a7ae36a69b00a",
+    "cases.json": "c42295db8fac6c3bdfc0ae322607524512099b7840df01091d1c02df23c5bee2",
+    "console.log": "d3ca33006404ebb886461c49df028197cd57590a51deba97b9c5b127a2707c65",
+    "effective_config.json": "6402d02245abdf5f6689a63cf6377f90dc89541e0de732533d4a6741837dd1b7",
+    "manifest.json": "71c1964baf12e0fc1fb87192dbb500c8c5a93882e884f84a863850b8884fe67a",
+    "rank-0.jsonl": "150f75713804bb1d3f6f5e517df8d8e1059e2fc19ff9c9614d66a1086ef39bee",
+    "rank-1.jsonl": "b154c8453b4fb96b05fe6042e2addf49971a649dd81538b134eb4d6c2c7369e1",
+    "rank-2.jsonl": "d54acb98455ac884f0ae8f998462728ebf0dd953633e43a5b4ca64cc9283e9cd",
+    "rank-3.jsonl": "a9cbdc1be94ed79607cefef9e07278da4b860350806a12a1bf4231610d11638b",
+    "result.json": "82e9c501af9d9c4f013b4f18b8338bdf5f1dd47995144c717d9794ac36087ba9"
+  }
+}

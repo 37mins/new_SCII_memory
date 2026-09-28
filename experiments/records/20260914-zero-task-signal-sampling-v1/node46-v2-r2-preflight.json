@@ -1,0 +1,39 @@
+{
+  "status": "resource-blocked-before-launch",
+  "source_sha": "2e2cf8b4bda86edb46d92f84026ee3a924ab7f11",
+  "node": "sc2-a100-46",
+  "authorized_gpus": [0, 1, 2, 3],
+  "deployment_started_at": "2026-09-15T14:17:15Z",
+  "deadline_unix": 1789492635,
+  "budget_seconds": 10800,
+  "deadline_extended": false,
+  "source_directory": "/dev/shm/sc2-v2-pair-node46-20260915-r1/code",
+  "shared_source_backup": "/mnt/data0601/yangjinyue/new_SCII/staging/sc2-v2-pair-node46-20260915-r1/source-full.bundle",
+  "full_bundle_sha256": "0d04d9fbb2c083fb871ec252662964c41cbc78fc0c8321991606c623fa26907c",
+  "github_pushed": false,
+  "github_blocker": "outbound push rejected by permission review; not bypassed",
+  "local_entry_tests_passed": 11,
+  "node46_cpu_signal_tests_passed": 28,
+  "system_hashes_passed": true,
+  "effective_config_difference_after_run_path_normalization": {
+    "trainer.sc2_skip_zero_signal": ["False", "True"]
+  },
+  "parent_metadata_and_12_shard_sizes_passed": true,
+  "actual_checkpoint_load_verified": false,
+  "prelaunch_command_exit_code": 1,
+  "tmux_started": false,
+  "pair_control_created": false,
+  "planned_run_ids": [
+    "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r2",
+    "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r2"
+  ],
+  "run_directories_created": false,
+  "games_started": 0,
+  "optimizer_updates": 0,
+  "new_checkpoints": 0,
+  "resource_checked_at": "2026-09-15T14:22:46Z",
+  "blocking_gpu": 1,
+  "blocking_pid": 4157709,
+  "blocking_process_cwd": "/mnt/data0601/cjy/lineargroup",
+  "automatic_retry": false
+}

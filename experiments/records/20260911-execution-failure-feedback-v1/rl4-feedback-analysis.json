@@ -1,0 +1,58 @@
+{
+  "scope": "Completed RL4 r2; log counts plus CPU validator probes, not new games or independent learning evaluation",
+  "runtime_sha": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+  "source_audit": "rl4-reward-audit-final.json",
+  "B_raw_log_snapshot": "/private/tmp/sc2-feedback-r2-final.hrjkuX/B/prompt_response.jsonl",
+  "A": {"games": 32, "wins": 24, "policy_answers": 108, "valid_answers": 94, "feedback_answers": 0},
+  "B": {"games": 32, "wins": 23, "policy_answers": 198, "valid_answers": 178, "feedback_answers": 74, "valid_feedback_answers": 70},
+  "B_failure_classes": {
+    "reactor barracks: insufficient gas": 63,
+    "techlab barracks: insufficient gas": 1,
+    "marauder: tech lab required": 6,
+    "marine: supply blocked": 4
+  },
+  "B_adjacent_feedback_pairs": {
+    "count": 47,
+    "same_action_and_normalized_reason": 41,
+    "reactor_gas": 38,
+    "marine_supply": 2,
+    "marauder_techlab": 1,
+    "definition": "Within each episode, compare consecutive feedback-bearing answers, normalizing digits in the first reason line. Ordinary answers may intervene; not a per-command failure probability or correction success rate."
+  },
+  "B_gas_choice_probes": {
+    "queries": 64,
+    "counterfactual_answer": "<answer>\n- refinery x 1\n</answer>",
+    "frozen_validator_accepts": 59,
+    "rejected_source_lines": [57, 34, 44, 235, 214],
+    "all_five_rejected_observations_have_one_refinery": true,
+    "rejected_observation_gas_values": [44, 48, 36, 36, 36],
+    "actual_raw_answers_include_refinery": 16,
+    "actual_valid_answers_include_refinery": 14,
+    "valid_refinery_answers_put_gas_addon_before_it": 11,
+    "valid_after_addon_source_lines": [142, 158, 119, 178, 186, 218, 182, 190, 183, 191, 231],
+    "refinery_is_first_bullet": 0,
+    "validator_probe_method": "test_original_bo_segment.frozen_source(runtime_sha) + test_r6_format_reward.strict_validator; SC2_ORIGINAL_BO_SEGMENT=1, legacy, segment/bullet env values6; no runtime mutation",
+    "limits": "Membership acceptance is not actual construction. No claim that every gas-short observation requires an additional refinery or that refinery must always be the first action."
+  },
+  "example": {
+    "global_step": 4,
+    "env_index": 0,
+    "seed": 52416,
+    "source_line": 273,
+    "game_time": "05:36",
+    "observed_minerals": 345,
+    "observed_gas": 0,
+    "observed_own_refineries": 0,
+    "remaining_refinery_quota": 1,
+    "reason": "reactor barracks insufficient gas0/50; suggestion Build a Refinery",
+    "raw_answer": "<answer>\n- marine x 8\n- supplydepot x 7\n- barracks x 2\n- reactor barracks x 3\n</answer>",
+    "raw_answer_valid": true,
+    "counterfactual_refinery_answer_valid": true,
+    "later_observation_time": "08:21",
+    "later_observed_gas": 0,
+    "later_observed_own_refineries": 0,
+    "later_answer": "<answer>\n- marine x 30\n- scv x 2\n- reactor barracks x 2\n</answer>",
+    "game_result": "Defeat",
+    "causal_limit": "Repeated unmet prerequisite is visible; this one loss is not proven to be caused solely by refinery omission."
+  }
+}

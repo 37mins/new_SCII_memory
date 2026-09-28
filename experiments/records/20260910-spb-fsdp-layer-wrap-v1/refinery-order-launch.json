@@ -1,0 +1,200 @@
+{
+  "checked_at_utc": "2026-09-10T14:28:56Z",
+  "run_directory": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l7s24-l6-g2-refinery-order-ab4-4gpu-r1",
+  "control_directory": "/root/new-scii-spb-fsdp-20260910/refinery-order-r1",
+  "started_at_utc": "2026-09-10T14:24:45Z",
+  "checkpoint": {
+    "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-resume4to96-4gpu-s0-r1/checkpoints/global_step_24",
+    "loaded_global_step": 24,
+    "checkpoint_load_returned": true,
+    "val_only": true,
+    "games": 4,
+    "game_seeds": [
+      17089,
+      17089,
+      17089,
+      17089
+    ],
+    "arms": [
+      "A",
+      "B",
+      "A",
+      "B"
+    ],
+    "optimizer_updates": 0,
+    "first_two_answers": "frozen intervention; not model decisions",
+    "subsequent_answers": "online SpB, unchanged temperature1.0/top_p0.9/192tokens"
+  },
+  "artifact_sha256": {
+    "manifest.json": "409a7355e46b1fe939574501d8b923b0982cf37af5eaf0a1314179829f6e1df5",
+    "effective_config.json": "40d3e4b1fb9570c751bced2e6ca70cdadf4f23977c70af2f4026fbb75d04297e",
+    "checkpoint_evaluation.json": "e9b45224ecb4ce10e79feef31f8eabfa74a149be42480284f0dd92d5c3382951",
+    "evaluation_seeds.jsonl": "fd9add287350e7e2b1a57302d7a8359af1b27295cc52845faef4a285d4e06bfc"
+  },
+  "games": [
+    {
+      "file": "game-1988607-boundaries.jsonl",
+      "count": 1,
+      "first": {
+        "game_pid": 1988607,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      },
+      "latest_time": "00:00"
+    },
+    {
+      "file": "game-1988608-boundaries.jsonl",
+      "count": 1,
+      "first": {
+        "game_pid": 1988608,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      },
+      "latest_time": "00:00"
+    },
+    {
+      "file": "game-1988609-boundaries.jsonl",
+      "count": 1,
+      "first": {
+        "game_pid": 1988609,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      },
+      "latest_time": "00:00"
+    },
+    {
+      "file": "game-1988610-boundaries.jsonl",
+      "count": 1,
+      "first": {
+        "game_pid": 1988610,
+        "time": "00:00",
+        "minerals": 50,
+        "vespene": 0,
+        "units": {
+          "SCV": 12
+        },
+        "structures": [
+          {
+            "tag": 4344774657,
+            "name": "COMMANDCENTER",
+            "progress": 1,
+            "add_on_tag": 0
+          }
+        ],
+        "bo_index": 0,
+        "bo_queue": [],
+        "done": false,
+        "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424"
+      },
+      "latest_time": "00:00"
+    }
+  ],
+  "sampling": [
+    {
+      "rank": 0,
+      "seed": 0,
+      "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+    },
+    {
+      "rank": 1,
+      "seed": 0,
+      "cuda_rng_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+    },
+    {
+      "rank": 2,
+      "seed": 1,
+      "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+    },
+    {
+      "rank": 3,
+      "seed": 1,
+      "cuda_rng_sha256": "4cbbd8ca5215b8d161aec181a74b694f4e24b001d5b081dc0030ed797a8973e0"
+    }
+  ],
+  "interventions": [
+    {
+      "env": 0,
+      "arm": "A",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_answer_replay_not_model_choice"
+    },
+    {
+      "env": 1,
+      "arm": "B",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_answer_replay_not_model_choice"
+    },
+    {
+      "env": 2,
+      "arm": "A",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_answer_replay_not_model_choice"
+    },
+    {
+      "env": 3,
+      "arm": "B",
+      "call_index": 0,
+      "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+      "raw_generated": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "source": "historical_answer_replay_not_model_choice"
+    }
+  ]
+}

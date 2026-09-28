@@ -1,0 +1,102 @@
+{
+  "experiment_id": "20260914-zero-task-signal-sampling-v1",
+  "status_checked_at": "2026-09-15T00:17:16+08:00",
+  "status": "running",
+  "arm_status": {"A": "first rollout collection, A4 load returned", "B": "queued after A completion/checkpoint and GPU release"},
+  "source_sha": "75a6b5dc3621e9d670fbfb440ae917bfacd5e360",
+  "dirty": false,
+  "branch": "codex/feature-zero-signal-sampling",
+  "node": "sc2-a100-43",
+  "gpus": [0, 1, 2, 3],
+  "tmux": "sc2_scene_train_r1",
+  "started_at": "2026-09-15T00:13:51+08:00",
+  "deadline": "2026-09-15T03:13:51+08:00",
+  "budget_seconds_total": 10800,
+  "game_budget_per_arm": 32,
+  "additional_global_steps_per_arm": 4,
+  "automatic_retry": false,
+  "automatic_long_training": false,
+  "independent_evaluation_authorized": false,
+  "source_directory": "/root/new-scii-zero-signal-20260914/code-75a6b5d",
+  "control_directory": "/root/new-scii-zero-signal-20260914/scene-train-r1",
+  "controller_log": "/root/new-scii-zero-signal-20260914/scene-train-controller-r1.log",
+  "private_git_bundle": "/root/new-scii-zero-signal-20260914/sc2-scene-training-20260915-r1.bundle",
+  "private_git_bundle_sha256": "49fab91c84532391f12963f03f61f9a1ba27e84056688d278db50c89ce97b984",
+  "private_bundle_verified": true,
+  "github_pushed": false,
+  "run_root": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs",
+  "runs": {
+    "A": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-scene-A-rl4-4gpu-r1",
+    "B": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-scene-B-rl4-4gpu-r1"
+  },
+  "parent_run": "20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2",
+  "parent_source_sha": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+  "parent_global_step": 4,
+  "A_model_optimizer_load_returned": true,
+  "A_first_games_started": true,
+  "A_planner_generation_requested": true,
+  "A_new_updates_observed_at_check": 0,
+  "A_first_actual_game_seeds": [3974528993, 3974528993, 3974528993, 3974528993, 3974528993, 3974528993, 3974528993, 3974528993],
+  "A_manifest_sha256": "f9080fc3290d4412c59be14cd87067225e86ab78efd923136a0f5a2d12f6d7b4",
+  "A_effective_config_sha256": "465d77c65c02bda6bf4a2c03ebdb74cccd4791586098ec99b45b544ea9fda071",
+  "game_seed_per_collection": {
+    "A": [3974528993, 1183530000, 3446496864, 2996859384],
+    "B": [1098341402, 3446496864, 1098341402, 3446496864]
+  },
+  "game_state_bitwise_resumed": false,
+  "model": "SpikingBrain-2.0-instruct A4, complete model/optimizer continuation",
+  "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+  "same_config": {
+    "level": 6,
+    "opponent": "Harder Terran Air",
+    "map": "Flat128",
+    "bo": "g2 with opening Planner",
+    "rollout_n": 8,
+    "signal_max_batches": 4,
+    "signal_max_attempts": 3,
+    "skip_zero_signal": false,
+    "val_only": false,
+    "val_before_train": false,
+    "save_freq": 4,
+    "scheduler_total_training_steps": 96,
+    "swa_dropout": 0,
+    "model_generation_cache": true,
+    "fsdp_param_dtype": "fp32",
+    "fp32_normalization": true,
+    "autocast": "bf16",
+    "learning_rate": 0.000001,
+    "gamma": 0.95,
+    "response_tokens": 192,
+    "temperature": 0.4,
+    "top_p": 0.9,
+    "history_length": 0,
+    "memory_mode": "off",
+    "failure_feedback": false
+  },
+  "only_ab_effective_config_difference_excluding_paths": {
+    "+ray_init.runtime_env.worker_process_setup_hook": {
+      "A": "continue_a4.install_signal_A",
+      "B": "continue_a4.install_signal_B"
+    }
+  },
+  "cpu_tests": {
+    "runtime": "43 existing pinned Python overlay, CUDA_VISIBLE_DEVICES empty, OMP/MKL=1",
+    "commands": [
+      "/usr/bin/python3 -B -m unittest discover -s tests -p test_a4_continuation.py -v",
+      "/usr/bin/python3 -B -m unittest discover -s tests -p test_signal_sampling_record.py -v",
+      "sha256sum -c configs/system-v1.sha256"
+    ],
+    "tests_passed": 16,
+    "tests_skipped": 0,
+    "exit_codes": [0, 0, 0],
+    "local_shell_syntax_and_diff_check_passed": true,
+    "production_directories_changed": false
+  },
+  "resource_preflight": {
+    "all_eight_gpus_free_before_launch": true,
+    "shared_free_space_reported": "2.5 TiB",
+    "parent_shard_size_and_done_check_passed": true,
+    "shared_1MiB_fsync_probe_passed": true
+  },
+  "interpretation": "Startup only, not learning acceptance. A is the first four predeclared screening scenes; B is a selected mixed-scene curriculum. Compare task-signal persistence first; training win-rate differences alone do not measure improvement or generalization."
+}

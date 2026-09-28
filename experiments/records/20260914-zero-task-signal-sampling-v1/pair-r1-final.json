@@ -1,0 +1,60 @@
+{
+  "audited_at": "2026-09-14T21:37:00+08:00",
+  "runtime_sha": "0cccaa90ea8e7852e7601391c404b656b82889c0",
+  "node": "sc2-a100-43",
+  "gpus": [0, 1, 2, 3],
+  "controller_exit_code": 0,
+  "game_seeds_by_collection_both": [1098341402, 42613, 17089, 3236598124],
+  "actual_games_per_collection": 8,
+  "wins_per_collection_both": [7, 0, 0, 0],
+  "max_abs_task_advantage_both": [80.0625, 0.0000057220458984375, 0.0000057220458984375, 2.1066064834594727],
+  "A": {
+    "run_id": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1",
+    "status": "completed",
+    "ended_at": "2026-09-14T20:54:30.875943+08:00",
+    "exit_code": 0,
+    "new_global_steps": 4,
+    "last_global_step": 8,
+    "natural_games": 32,
+    "wins": 7,
+    "skipped_batches": 0,
+    "checkpoint_complete": true,
+    "all_recorded_checkpoint_sizes_match": true,
+    "metrics_finite": true,
+    "result_done_equal": true,
+    "hashes": {
+      "result.json": "b6edf4b9abbd8b86dd2277907176a94a313841b133d35d886b71fa9ae7c0e530",
+      "manifest.json": "cad72df7e6f11dd9d57cd7a0c6c86810f73da9bd7646eef99f0c5d405f084ed1",
+      "effective_config.json": "73366167282c06406880e1bf037e0892d80f4d4557d83eff4a1aab29c103e745",
+      "training_seeds.jsonl": "8e8c1675159da20400f269d1ea6e2d5d2b56856ab6af8c9becf92935d69b327b",
+      "checkpoints/signal_sampling.jsonl": "44311d8478506ba4a80f1e917893affae967b5c1576e5ebba4db0c8e988ead14"
+    }
+  },
+  "B": {
+    "run_id": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1",
+    "status": "completed",
+    "ended_at": "2026-09-14T21:31:57.361900+08:00",
+    "exit_code": 0,
+    "new_global_steps": 4,
+    "last_global_step": 8,
+    "natural_games": 32,
+    "wins": 7,
+    "skipped_batches": 0,
+    "checkpoint_complete": true,
+    "all_recorded_checkpoint_sizes_match": true,
+    "metrics_finite": true,
+    "result_done_equal": true,
+    "hashes": {
+      "result.json": "f722f64faa3c463472d5f9254f9a26a0ab13957c8a308d2f688b573810ea858e",
+      "manifest.json": "bbb170c74bc34b28228d1dee4787a04910cb04dc36fde7ba74d84266c80238de",
+      "effective_config.json": "b413d29d9c3ee40b29afc37c3daf70a52720d611936f33b7cbf25426cf9aa3a1",
+      "training_seeds.jsonl": "8e8c1675159da20400f269d1ea6e2d5d2b56856ab6af8c9becf92935d69b327b",
+      "checkpoints/signal_sampling.jsonl": "2f36577e535e32cf0e6ca44602fbddc5fdb0c2a656b51dc0d40b03d5f25a9980"
+    }
+  },
+  "conclusion": "Do not adopt the current exact-zero-only candidate as an effective task-signal filter: all four groups were accepted, including the two identical-return groups. Successful execution and equal training outcomes do not establish learning improvement or equivalence of the resulting weights.",
+  "independent_post_training_evaluation": false,
+  "new_threshold_or_mechanism_added": false,
+  "long_training_started": false,
+  "next_authorized_task": "A4-only new-scene screening, not evaluation or continuation of these A8/B8 checkpoints"
+}

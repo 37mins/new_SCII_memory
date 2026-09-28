@@ -1,0 +1,68 @@
+--- launcher.sh
++++ launcher.sh
+@@ -16,6 +16,9 @@
+ CHAT_TEMPLATE_CANARY_SHA=${CHAT_TEMPLATE_CANARY_SHA:?CHAT_TEMPLATE_CANARY_SHA is required}
+ RL_REWARD_BALANCE_PATCH_SHA=${RL_REWARD_BALANCE_PATCH_SHA:?RL_REWARD_BALANCE_PATCH_SHA is required}
+ QWEN_BASE_CHECKPOINT_PATCH_SHA=${QWEN_BASE_CHECKPOINT_PATCH_SHA:?QWEN_BASE_CHECKPOINT_PATCH_SHA is required}
++CANONICAL_LAUNCHER_PATCH_SHA=${CANONICAL_LAUNCHER_PATCH_SHA:?CANONICAL_LAUNCHER_PATCH_SHA is required}
++CANONICAL_PLANNER_SHA=${CANONICAL_PLANNER_SHA:?CANONICAL_PLANNER_SHA is required}
++STRICT_MANAGER_PATCH_SHA=${STRICT_MANAGER_PATCH_SHA:?STRICT_MANAGER_PATCH_SHA is required}
+ MICRO=${MICRO:-old}
+ ENV_SEED=${ENV_SEED:?ENV_SEED is required}
+ VAL_ROLLOUT_N=${VAL_ROLLOUT_N:-1}
+@@ -88,6 +91,8 @@
+ TRAINING_SEED_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/training_seed_ledger.patch
+ HF_ROLLOUT_OFFLOAD_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/verl_hf_rollout_offload.patch
+ RL_REWARD_BALANCE_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/rl_reward_balance.patch
++CANONICAL_PLANNER=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/canonical_planner.py
++STRICT_MANAGER_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/strict_legacy_plan_validator.patch
+ 
+ EXPECTED_VERL_TREE_SHA=aa81b037c7972bd62886403c01a92c398a8b4abc28d863aeaa0c1a1b874dcc4b
+ EXPECTED_AGENT_TREE_SHA=7ea801c8d6d758479bd26269b6289a7df71f4217b66796e3cbd6dd0511c8377b
+@@ -288,7 +293,26 @@
+    ! patch --ignore-whitespace --batch --forward -d "${CODE}" -p1 < "${RL_REWARD_BALANCE_PATCH}"; then
+   write_failure 21 rl_reward_balance_patch_failed
+   exit 21
++fi
++
++strict_manager_patch_sha=$(sha256sum "${STRICT_MANAGER_PATCH}" 2>/dev/null | awk '{print $1}')
++if [[ "${strict_manager_patch_sha}" != "${STRICT_MANAGER_PATCH_SHA}" ]] || \
++   ! patch --batch --forward -d "${CODE}" -p1 < "${STRICT_MANAGER_PATCH}"; then
++  write_failure 22 strict_legacy_plan_validator_patch_failed
++  exit 22
++fi
++
++canonical_planner_sha=$(sha256sum "${CANONICAL_PLANNER}" 2>/dev/null | awk '{print $1}')
++if [[ "${canonical_planner_sha}" != "${CANONICAL_PLANNER_SHA}" ]] || \
++   ! cp "${CANONICAL_PLANNER}" "${AGENTS_DIR}/planner.py"; then
++  write_failure 23 canonical_planner_install_failed
++  exit 23
+ fi
++final_planner_sha=$(sha256sum "${AGENTS_DIR}/planner.py" 2>/dev/null | awk '{print $1}')
++if [[ "${final_planner_sha}" != "${CANONICAL_PLANNER_SHA}" ]]; then
++  write_failure 23 canonical_planner_install_failed
++  exit 23
++fi
+ 
+ if ! PYTHONPATH="${CODE}:${PYTHON_SITE_ROOT}" "${PYTHON_BIN}" -c \
+   'from gigpo import core_gigpo; from verl.trainer.ppo.ray_trainer import RayPPOTrainer'; then
+@@ -316,6 +340,11 @@
+   echo "FORBID_THINKING_OUTPUT=1"
+   echo "RL_REWARD_BALANCE_PATCH_SHA=${rl_reward_balance_patch_sha}"
+   echo "QWEN_BASE_CHECKPOINT_PATCH_SHA=${QWEN_BASE_CHECKPOINT_PATCH_SHA}"
++  echo "CANONICAL_LAUNCHER_PATCH_SHA=${CANONICAL_LAUNCHER_PATCH_SHA}"
++  echo "CANONICAL_PLANNER_SHA=${canonical_planner_sha}"
++  echo "STRICT_MANAGER_PATCH_SHA=${strict_manager_patch_sha}"
++  echo "FINAL_PLANNER_SHA=${final_planner_sha}"
++  echo "STRICT_LEGACY_PLAN_CONTRACT=1"
+   echo "PROJECT_ROOT=${PROJECT_ROOT}"
+   echo "PYTHON_SITE_ROOT=${PYTHON_SITE_ROOT}"
+   echo "RUNTIME_ROOT=${ROOT}"
+@@ -490,6 +519,7 @@
+     data.max_prompt_length="${MAX_PROMPT_LENGTH}" \
+     +data.apply_chat_template_kwargs.enable_thinking=False \
+     +env.forbid_thinking_output=True \
++    +env.strict_legacy_plan_contract=True \
+     actor_rollout_ref.actor.fsdp_config.param_offload=True \
+     actor_rollout_ref.actor.fsdp_config.optimizer_offload=True \
+     actor_rollout_ref.ref.fsdp_config.param_offload=True \

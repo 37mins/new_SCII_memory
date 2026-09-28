@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260828-qwen3-4b-instruct-2507-level5-v1",
+  "status": "running",
+  "question": "Does the official Qwen3-4B-Instruct-2507 initialization improve the released Level 5 Qwen control under the same system and RL method?",
+  "hypothesis": "The updated official non-thinking instruction checkpoint should produce healthier canonical Planner outputs and retain or improve the positive training-rollout trend of the released Qwen3-4B control.",
+  "baseline": {
+    "run_id": "20260818-qwen-canonical-plan-rl-v1-qwen-base-l5-full96-s0-r6",
+    "model": "Qwen/Qwen3-4B@1cfa9a7208912126459214e8b04321603b3df60c",
+    "successes": 625,
+    "rollouts": 768,
+    "success_rate": 0.8138020833333334,
+    "mean_episode_reward": 9.903677083333333,
+    "first_16_success_rate": 0.734375,
+    "last_16_success_rate": 0.8984375,
+    "first_16_mean_episode_reward": 6.2185625,
+    "last_16_mean_episode_reward": 14.8295625
+  },
+  "single_planned_change": "Replace the complete official Qwen/Qwen3-4B model package, including its tokenizer and chat template, with Qwen/Qwen3-4B-Instruct-2507; keep every project-controlled method component fixed.",
+  "source": {
+    "repository": "https://github.com/CeraveNew/new_SCII",
+    "branch": "main",
+    "commit": "f34d09b08d99a8570f1d19c22bffbc4c4d059ae5",
+    "dirty": false,
+    "deployment": "/data/yangjinyue/new-scii-qwen-instruct2507-level5-v1/deployments/qwen-instruct2507-level5-v1-f34d09b"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "architecture": "Qwen3ForCausalLM",
+    "parameters": "4.0B",
+    "project_sft": false,
+    "prior_project_rl": false,
+    "thinking": false,
+    "asset_path": "/tmp/yangjinyue-qwen-instruct2507-level5/Qwen3-4B-Instruct-2507-cdbee75",
+    "manifest": "../../configs/qwen3-4b-instruct-2507.sha256",
+    "manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7"
+  },
+  "runtime": {
+    "container_image": "sha256:108b845f0aff4b852e7e451a9ca5b8e8f85080c9c27f6de1142879440b7a7af1",
+    "base_image": "spikingbrain@sha256:3a773ade07540703574ec33410e31f46799814daa65a23ade9510589546c54f9",
+    "runtime_lock": "runtime/sc2-qwen-r6-runtime-actual.txt",
+    "runtime_lock_sha256": "d136d4b6d25ed02a4eeed97637c06e1bc8e3ce9e277a87bf53809d37d38388f0",
+    "runtime_dockerfile_sha256": "8b147bbe774abe6f593a240b0e37ed949bb4d791f6c2064209bcf84638f8a957",
+    "declared_repository_requirements_sha256": "3b2eee37f082a6575bd616a445cd241a4a3f08d149b9dd8c9c5a263448f663ce",
+    "python": "3.12.11",
+    "pytorch": "2.7.1+cu128",
+    "transformers": "4.55.2",
+    "ray": "2.48.0",
+    "runtime_note": "The repository requirements file does not match the published image in numpy and wandb and is not resolvable with burnysc2 under Python 3.12. This lock records the versions measured from the released image and installs them on the historical r6 base image.",
+    "run_storage": "Node-local ext4 under /tmp/yangjinyue-qwen-instruct2507-level5/runs during execution; archive to the experiment root on /data after a completed run because new large JuiceFS writes stalled during setup."
+  },
+  "immutable_inputs": {
+    "train_data_sha256": "7c8f6b07eacef5e06963b475c3c36e90196da870fae095b12c2ea0f7faf10912",
+    "validation_data_sha256": "4dbe5e3ff68df3fbf76e91284b28b06c52bf7495193013a4bf4ed7ca417a0cd7",
+    "sc2_build": "Base75689",
+    "sc2_binary_sha256": "115f65a49191c504f6336f7d5b7818b23dbba3d7a45cacf9142c86c959abaa41",
+    "map": "Flat128",
+    "map_sha256": "3916dbd2bb662a6e9c9bd27089906630c8b0a42fdbab51fc4401cf1df7b9b212",
+    "build_order_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494"
+  },
+  "component_hashes": {
+    "planner_prompt_and_parser": "8511f904d4e461ef59ff03b2fc2f29e5bb2cc28040d49160bc8f449b451a6189",
+    "system_v1_executor": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+    "episode_reward": "f9a71d8ccba625f2dc218594a3f9edaa2894306a1accc62cd19832ef4c521428",
+    "ppo_reward_and_penalty_path": "5b2f92d92b28ae46a44f574d31e6c9f3188b58910ea1bcb8229c40ea97f376d4",
+    "advantage_algorithm": "0cdb676fb9eba599e495a214e0f9af5690935caf9eb864fdffedac0fd156e0f2",
+    "effective_config": "b56c8a49eea7d999077ff0d94f2880491a5e8fb5de0695432fd3e7208d8a45f5",
+    "launcher": "4497d87e7bb9eee017f7f7bff57cccb0a21ff737a60abb231ffd9c6bc495a1f8",
+    "shared_training_launcher": "fb64adede8d58f21430c47cb5f45b5032412d859a4006ae28d8f4e6d2736a5ca",
+    "sc2_environment_entrypoint": "841a0f4f8060136bcf2dc8b74052f8a4938f9b9c5f1e1d72e1d7111fd4560f03"
+  },
+  "controls": {
+    "environment": "Flat128, Hard/Level 5, Air opponent, Terran versus Terran",
+    "seed": 0,
+    "planner_steps": 20,
+    "rollouts_per_update": 8,
+    "planner": "released canonical Planner and strict legacy action contract",
+    "executor": "System-v1 old_micro marine_pressure",
+    "reward": "released shaped reward and invalid-action penalty",
+    "algorithm": "GiGPO/PPO mean_norm",
+    "learning_rate": 1e-6,
+    "gradient_clip": 1.0,
+    "temperature": 0.4,
+    "top_p": 0.9,
+    "top_k": 0,
+    "max_response_tokens": 96,
+    "memory": "off",
+    "external_tools": false
+  },
+  "runs": [
+    {
+      "run_id": "20260828-qwen3-4b-instruct-2507-level5-v1-smoke1-s0-r1",
+      "status": "failed_infrastructure",
+      "updates": 1,
+      "rollouts": 8,
+      "gpus": 8,
+      "node": "sc2-a100-42",
+      "started_at_utc": "2026-08-28T06:44:36Z",
+      "completed_at_utc": "2026-08-28T06:44:37Z",
+      "exit_code": 125,
+      "completed_updates": 0,
+      "failure": "Docker on node 42 has no NVIDIA runtime; container creation rejected --gpus all before model or SC2 startup."
+    },
+    {
+      "run_id": "20260828-qwen3-4b-instruct-2507-level5-v1-smoke2-s0-r2",
+      "status": "failed_infrastructure",
+      "updates": 1,
+      "rollouts": 8,
+      "gpus": 8,
+      "node": "sc2-a100-197",
+      "started_at_utc": "2026-08-28T07:51:29Z",
+      "completed_at_utc": "2026-08-28T07:51:30Z",
+      "exit_code": 126,
+      "completed_updates": 0,
+      "failure": "The derived image inherited a bash entrypoint and the outer launcher passed bash as an argument; the container exited before model or SC2 startup."
+    },
+    {
+      "run_id": "20260828-qwen3-4b-instruct-2507-level5-v1-smoke3-s0-r3",
+      "status": "failed_infrastructure",
+      "updates": 1,
+      "rollouts": 8,
+      "gpus": 8,
+      "node": "sc2-a100-197",
+      "started_at_utc": "2026-08-28T07:56:53Z",
+      "completed_at_utc": "2026-08-28T07:57:11Z",
+      "exit_code": 1,
+      "completed_updates": 0,
+      "failure": "Hydra attempted to create its default outputs directory under the read-only source deployment; the launcher exited before model loading."
+    },
+    {
+      "run_id": "20260828-qwen3-4b-instruct-2507-level5-v1-smoke4-s0-r4",
+      "status": "failed_infrastructure",
+      "updates": 1,
+      "rollouts": 8,
+      "gpus": 8,
+      "node": "sc2-a100-197",
+      "started_at_utc": "2026-08-28T08:06:25Z",
+      "completed_at_utc": "2026-08-28T08:10:27Z",
+      "exit_code": 1,
+      "completed_updates": 0,
+      "failure": "SC2 BasePlayer wrote observation logs to a relative logs directory under the read-only deployment; all eight environment workers failed before rollout."
+    },
+    {
+      "run_id": "20260828-qwen3-4b-instruct-2507-level5-v1-smoke5-s0-r5",
+      "status": "completed",
+      "updates": 1,
+      "rollouts": 8,
+      "gpus": 8,
+      "node": "sc2-a100-197",
+      "started_at_utc": "2026-08-28T08:22:59Z",
+      "completed_at_utc": "2026-08-28T08:31:27Z",
+      "exit_code": 0,
+      "completed_updates": 1,
+      "successes": 7,
+      "success_rate": 0.875,
+      "mean_episode_reward": 16.375,
+      "valid_action_ratio": 0.179,
+      "response_clip_ratio": 0.375,
+      "pre_clip_gradient_norm": 197.281,
+      "thinking_markers": 0,
+      "checkpoint": "global_step_1",
+      "gate": "passed",
+      "audit": "smoke5-audit.json"
+    },
+    {
+      "run_id": "20260828-qwen3-4b-instruct-2507-level5-v1-full96-s0-r6",
+      "status": "running",
+      "updates": 96,
+      "rollouts": 768,
+      "gpus": 8,
+      "node": "sc2-a100-197",
+      "started_at_utc": "2026-08-28T08:37:54Z",
+      "source_commit": "f34d09b08d99a8570f1d19c22bffbc4c4d059ae5",
+      "experiment_record_commit_at_launch": "7212421c1acece745a7ca31b7ec49fae9b86d0a7",
+      "run_manifest_sha256": "0d9a71cbf264606b3813d393b3cf0bd9a221cd8e69f630ab7711fe037d72033d",
+      "outer_launcher_sha256": "170f1a16b11503b38d0c05c71cd20c8faccb3e9309a1fa7a7ff901865f171099",
+      "maximum_gpu_hours": 160
+    }
+  ],
+  "smoke_gate": [
+    "model files, SC2 binary, map, data and build order pass SHA-256 verification",
+    "chat template renders the registered prompt without a thinking block",
+    "one GiGPO/PPO update produces exactly eight terminal rollouts",
+    "all logged losses, gradients and metrics are finite",
+    "generated output contains no thinking marker",
+    "global_step_1 checkpoint is complete"
+  ],
+  "primary_metrics": [
+    "training-rollout success rate and mean episode reward over 768 rollouts",
+    "first-16 versus last-16 success rate and mean episode reward",
+    "strict Planner valid-action ratio over updates"
+  ],
+  "secondary_metrics": [
+    "response-length clip ratio",
+    "pre-clip gradient norm, PPO KL and policy clip fraction",
+    "wall time and throughput"
+  ],
+  "stop_conditions": [
+    "any model or runtime provenance mismatch",
+    "any non-finite training value or thinking marker",
+    "SC2 infrastructure failure or incomplete seed ledger",
+    "do not promote a failed smoke and do not reuse a run directory"
+  ],
+  "artifacts": {
+    "config": "../../configs/qwen3-4b-instruct-2507-level5.env",
+    "launcher": "../../scripts/train_qwen_instruct2507_level5.sh",
+    "model_interface_gate": "../../scripts/check_qwen_instruct2507.py",
+    "run_root": "/tmp/yangjinyue-qwen-instruct2507-level5/runs/<RUN_ID>",
+    "archive_root": "/data/yangjinyue/new-scii-qwen-instruct2507-level5-v1/experiments/20260828-qwen3-4b-instruct-2507-level5-v1/runs/<RUN_ID>"
+  },
+  "limitations": "This is a system-level checkpoint substitution. Different official post-training and tokenizer histories remain confounded with model capability, and training rollouts are not held-out evaluation."
+}

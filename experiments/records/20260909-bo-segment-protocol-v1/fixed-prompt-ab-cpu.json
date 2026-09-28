@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "cpu_tests": 28,
+  "cpu_tests_seconds": 1.868,
+  "process_exit_code": 0,
+  "actual_node44_preflight": {
+    "cases": 41,
+    "historical_valid": 22,
+    "source_sha": "71fae36ccc112d4c9cd303ab084c1e0a0c7eebec",
+    "source_log_sha256": "5067499ab9efd79f88bb5c11a333780dea003417bb6d53a89fdc6a7ba8ecdebf",
+    "prompt_ranges": {
+      "A": [
+        844,
+        982
+      ],
+      "B": [
+        977,
+        1115
+      ]
+    },
+    "generation_config": {
+      "name": "hf",
+      "mode": "sync",
+      "chat_scheduler": null,
+      "temperature": 0.4,
+      "top_k": 0,
+      "top_p": 0.9,
+      "use_fire_sampling": false,
+      "prompt_length": 4096,
+      "response_length": 192,
+      "dtype": "bfloat16",
+      "gpu_memory_utilization": 0.6,
+      "ignore_eos": false,
+      "enforce_eager": true,
+      "free_cache_engine": true,
+      "load_format": "dummy_dtensor",
+      "layered_summon": false,
+      "tensor_model_parallel_size": 1,
+      "max_num_batched_tokens": 8192,
+      "max_model_len": null,
+      "max_num_seqs": 1024,
+      "log_prob_micro_batch_size": null,
+      "log_prob_micro_batch_size_per_gpu": 1,
+      "log_prob_use_dynamic_bsz": false,
+      "log_prob_max_token_len_per_gpu": 16384,
+      "disable_log_stats": true,
+      "enable_chunked_prefill": false,
+      "do_sample": true,
+      "n": 1,
+      "engine_kwargs": {
+        "vllm": {
+          "swap_space": null
+        },
+        "sglang": {
+          "attention_backend": null
+        }
+      },
+      "val_kwargs": {
+        "top_k": 0,
+        "top_p": 0.9,
+        "temperature": 0.4,
+        "n": 4,
+        "do_sample": true
+      },
+      "multi_turn": {
+        "enable": false,
+        "max_turns": null,
+        "tool_config_path": null,
+        "format": "chatml"
+      }
+    },
+    "candidate_example": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nProvide the next segment's BO list, approximately 15 entries in length. This refers to list lines/entries, NOT the total count of units or expanded actions. A single attack instruction is one entry.\nEvery build bullet must be exactly `- canonicalname` or `- canonicalname x N`, where `canonicalname` is copied verbatim from the current remaining BO list and N is a positive integer within its remaining count.\nFor repeated actions, you may repeat the complete bullet line or use `x N`. The parser expands each `x N` entry into N actions, preserving list order; it still counts as one list entry. There is no hard limit of 15 expanded actions.\nDo not add timing, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple action names to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Fast Marine Pressure Opening (00:00-03:30)\n- Detailed Instruction: Skip natural expansion, refineries, bunkers, and economy tech until the first attack wave is ready. Keep workers near the starting count, add supply depots and 3-4 Barracks, then spend minerals on continuous Marine production.\n- Attacking Instruction: Prepare a first marine pressure wave immediately and launch offense as soon as 12 combat units are available, then keep rallying reinforcements forward.\n\nCurrent observations are:\nIt is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are no structure currently.\nThe remaining BO list in this phase:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\nUse only exact canonical names that occur in the remaining BO list above.\nFor each action name, add its quantities across ALL lines in your answer: a line without `x N` counts as 1. This cumulative total must not exceed that action's count in the remaining BO list.\nThe example below demonstrates output format only; it is not an additional task or an extra quota. Do not append the remaining list to a copied example and count both separately.\nAim for approximately 15 list entries, but do not repeat actions just to fill that target. Once this near-term segment is complete, close </answer> and stop; do not restart the list. Repeated names and `x N` remain allowed within the cumulative quota.\nThe example below is generated from that same current list. Follow its format:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n"
+  }
+}

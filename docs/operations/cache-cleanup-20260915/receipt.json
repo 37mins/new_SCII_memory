@@ -1,0 +1,1005 @@
+{
+  "node_alias": "sc2-a100-43",
+  "started_at": "2026-09-15T01:33:27.937748+00:00",
+  "manifest_sha256": "d443210112b3a85de4cb82dfa1b9b624e9995c19ef2b4e71753e646057370740",
+  "references_before": [
+    {
+      "pid": 592720,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592720,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592721,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592721,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592722,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592722,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592723,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592723,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592724,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592724,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592725,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592725,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592726,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592726,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592727,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592727,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 3581177,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581177,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581178,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581178,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581179,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581179,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581180,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581180,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581181,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581181,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581182,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581182,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581183,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581183,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581184,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581184,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3608382,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608382,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608383,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608383,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608384,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608384,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608385,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608385,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608386,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608386,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608387,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608387,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608388,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608388,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608389,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608389,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    }
+  ],
+  "free_bytes_before": 445319282688,
+  "deleted": [
+    {
+      "path": "/dev/shm/a4s_0913_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:27.940145+00:00"
+    },
+    {
+      "path": "/dev/shm/a4s_0913_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:27.940363+00:00"
+    },
+    {
+      "path": "/dev/shm/a4s_0913_r1/triton",
+      "allocated_bytes": 216551424,
+      "files": 5206,
+      "at": "2026-09-15T01:33:28.262904+00:00"
+    },
+    {
+      "path": "/dev/shm/a4t_0911_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:28.266044+00:00"
+    },
+    {
+      "path": "/dev/shm/a4t_0911_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:28.266194+00:00"
+    },
+    {
+      "path": "/dev/shm/a4t_0911_r1/triton",
+      "allocated_bytes": 348893184,
+      "files": 9287,
+      "at": "2026-09-15T01:33:28.836563+00:00"
+    },
+    {
+      "path": "/dev/shm/a8e_0911_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:28.839451+00:00"
+    },
+    {
+      "path": "/dev/shm/a8e_0911_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:28.839605+00:00"
+    },
+    {
+      "path": "/dev/shm/a8e_0911_r1/triton",
+      "allocated_bytes": 140496896,
+      "files": 4249,
+      "at": "2026-09-15T01:33:29.096526+00:00"
+    },
+    {
+      "path": "/dev/shm/me_A4_0913_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:29.099542+00:00"
+    },
+    {
+      "path": "/dev/shm/me_A4_0913_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:29.099685+00:00"
+    },
+    {
+      "path": "/dev/shm/me_A4_0913_r1/triton",
+      "allocated_bytes": 113147904,
+      "files": 3346,
+      "at": "2026-09-15T01:33:29.307199+00:00"
+    },
+    {
+      "path": "/dev/shm/me_A5scene_0913_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:29.309466+00:00"
+    },
+    {
+      "path": "/dev/shm/me_A5scene_0913_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:29.309611+00:00"
+    },
+    {
+      "path": "/dev/shm/me_A5scene_0913_r1/triton",
+      "allocated_bytes": 113053696,
+      "files": 3339,
+      "at": "2026-09-15T01:33:29.511856+00:00"
+    },
+    {
+      "path": "/dev/shm/oc_0913_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:29.514082+00:00"
+    },
+    {
+      "path": "/dev/shm/oc_0913_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:29.514220+00:00"
+    },
+    {
+      "path": "/dev/shm/oc_0913_r1/triton",
+      "allocated_bytes": 96329728,
+      "files": 2793,
+      "at": "2026-09-15T01:33:29.684686+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_coverage_b5_update3_0914_r2/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:29.684894+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_coverage_b5_update3_0914_r2/triton",
+      "allocated_bytes": 142438400,
+      "files": 3026,
+      "at": "2026-09-15T01:33:29.875454+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_example_order_0912_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:29.875658+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_example_order_0912_r1/triton",
+      "allocated_bytes": 56410112,
+      "files": 1463,
+      "at": "2026-09-15T01:33:29.965950+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_A_0911_r3/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:29.968150+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_A_0911_r3/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:29.968291+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_A_0911_r3/triton",
+      "allocated_bytes": 66695168,
+      "files": 1834,
+      "at": "2026-09-15T01:33:30.080411+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_B_0911_r3/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:30.082595+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_B_0911_r3/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:30.082738+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_B_0911_r3/triton",
+      "allocated_bytes": 103743488,
+      "files": 3031,
+      "at": "2026-09-15T01:33:30.266328+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_A_0911_r2/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:30.268545+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_A_0911_r2/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:30.268682+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_A_0911_r2/triton",
+      "allocated_bytes": 676548608,
+      "files": 19752,
+      "at": "2026-09-15T01:33:31.479125+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_B_0911_r2/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:31.482012+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_B_0911_r2/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:31.482173+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_B_0911_r2/triton",
+      "allocated_bytes": 1215721472,
+      "files": 37035,
+      "at": "2026-09-15T01:33:33.747900+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_fixed_feedback_0911_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:33.748174+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_fixed_feedback_0911_r1/triton",
+      "allocated_bytes": 61386752,
+      "files": 1638,
+      "at": "2026-09-15T01:33:33.849639+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_original_a4_0912_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:33.849842+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_original_a4_0912_r1/triton",
+      "allocated_bytes": 56598528,
+      "files": 1477,
+      "at": "2026-09-15T01:33:33.944121+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_phase_deadline_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:33.946371+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_phase_deadline_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:33.946514+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_phase_deadline_0914_r1/triton",
+      "allocated_bytes": 88399872,
+      "files": 2520,
+      "at": "2026-09-15T01:33:34.100494+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_prereq_context_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.100681+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_prereq_context_0914_r1/triton",
+      "allocated_bytes": 63901696,
+      "files": 1708,
+      "at": "2026-09-15T01:33:34.205057+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_spb_l5_96_0908_r5/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.205254+00:00"
+    },
+    {
+      "path": "/dev/shm/sc2_spb_l5_empty_0908_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.205382+00:00"
+    },
+    {
+      "path": "/dev/shm/se_A4_0913_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:34.207925+00:00"
+    },
+    {
+      "path": "/dev/shm/se_A4_0913_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.208064+00:00"
+    },
+    {
+      "path": "/dev/shm/se_A4_0913_r1/triton",
+      "allocated_bytes": 63746048,
+      "files": 1701,
+      "at": "2026-09-15T01:33:34.311011+00:00"
+    },
+    {
+      "path": "/dev/shm/se_A5scene_0913_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:34.313696+00:00"
+    },
+    {
+      "path": "/dev/shm/se_A5scene_0913_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.313847+00:00"
+    },
+    {
+      "path": "/dev/shm/se_A5scene_0913_r1/triton",
+      "allocated_bytes": 63934464,
+      "files": 1715,
+      "at": "2026-09-15T01:33:34.419206+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_0_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:34.421754+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_0_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.421902+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_0_0914_r1/triton",
+      "allocated_bytes": 63746048,
+      "files": 1701,
+      "at": "2026-09-15T01:33:34.525879+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_1_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:34.528065+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_1_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.528209+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_1_0914_r1/triton",
+      "allocated_bytes": 63840256,
+      "files": 1708,
+      "at": "2026-09-15T01:33:34.633367+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_2_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:34.635620+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_2_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.635764+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_2_0914_r1/triton",
+      "allocated_bytes": 63746048,
+      "files": 1701,
+      "at": "2026-09-15T01:33:34.738594+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_3_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:34.741195+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_3_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.741337+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_3_0914_r1/triton",
+      "allocated_bytes": 63651840,
+      "files": 1694,
+      "at": "2026-09-15T01:33:34.844250+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_4_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:34.846755+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_4_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.846899+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_4_0914_r1/triton",
+      "allocated_bytes": 63746048,
+      "files": 1701,
+      "at": "2026-09-15T01:33:34.951068+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_5_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:34.953254+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_5_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:34.953392+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_5_0914_r1/triton",
+      "allocated_bytes": 105869312,
+      "files": 3115,
+      "at": "2026-09-15T01:33:35.217696+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_6_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:35.220845+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_6_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:35.221006+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_6_0914_r1/triton",
+      "allocated_bytes": 63557632,
+      "files": 1687,
+      "at": "2026-09-15T01:33:35.324299+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_7_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:35.326900+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_7_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:35.327045+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_7_0914_r1/triton",
+      "allocated_bytes": 83542016,
+      "files": 2352,
+      "at": "2026-09-15T01:33:35.474193+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_A_0915_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:35.476486+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_A_0915_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:35.476635+00:00"
+    },
+    {
+      "path": "/dev/shm/ss_A_0915_r1/triton",
+      "allocated_bytes": 250556416,
+      "files": 6340,
+      "at": "2026-09-15T01:33:35.868818+00:00"
+    },
+    {
+      "path": "/dev/shm/zs_A_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:35.872072+00:00"
+    },
+    {
+      "path": "/dev/shm/zs_A_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:35.872212+00:00"
+    },
+    {
+      "path": "/dev/shm/zs_A_0914_r1/triton",
+      "allocated_bytes": 272027648,
+      "files": 7005,
+      "at": "2026-09-15T01:33:36.302713+00:00"
+    },
+    {
+      "path": "/dev/shm/zs_B_0914_r1/hf",
+      "allocated_bytes": 176128,
+      "files": 21,
+      "at": "2026-09-15T01:33:36.305677+00:00"
+    },
+    {
+      "path": "/dev/shm/zs_B_0914_r1/torchinductor_root",
+      "allocated_bytes": 0,
+      "files": 0,
+      "at": "2026-09-15T01:33:36.305818+00:00"
+    },
+    {
+      "path": "/dev/shm/zs_B_0914_r1/triton",
+      "allocated_bytes": 271106048,
+      "files": 6977,
+      "at": "2026-09-15T01:33:36.733381+00:00"
+    }
+  ],
+  "skipped": [],
+  "processes_stopped": 0,
+  "backup": "None; only regenerable C1 caches",
+  "finished_at": "2026-09-15T01:33:36.733460+00:00",
+  "free_bytes_after": 450376896512,
+  "references_after": [
+    {
+      "pid": 592720,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592720,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592721,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592721,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592722,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592722,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592723,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592723,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592724,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592724,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592725,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592725,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592726,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592726,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592727,
+      "source": "cmdline",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 592727,
+      "source": "fd",
+      "parent": "/dev/shm/ss_B_0915_r1"
+    },
+    {
+      "pid": 3581177,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581177,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581178,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581178,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581179,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581179,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581180,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581180,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581181,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581181,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581182,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581182,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581183,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581183,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581184,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3581184,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_fsdp_rl96_0910_r1"
+    },
+    {
+      "pid": 3608382,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608382,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608383,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608383,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608384,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608384,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608385,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608385,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608386,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608386,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608387,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608387,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608388,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608388,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608389,
+      "source": "cmdline",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    },
+    {
+      "pid": 3608389,
+      "source": "fd",
+      "parent": "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+    }
+  ],
+  "excluded_directories_preserved": true,
+  "non_cache_siblings_preserved": true,
+  "remaining_targets": [],
+  "allocated_bytes_removed": 5057613824
+}

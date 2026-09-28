@@ -1,0 +1,189 @@
+{
+  "runtime_sha": "0ff77c939a88b794e98c708eccd830333fb2b7d5",
+  "state": "failed_before_game",
+  "gpu_retry_started": false,
+  "arms": {
+    "A": {
+      "node": "44",
+      "gpus": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-g2-A-eval4-s0-r1",
+      "launch": {
+        "node": "44",
+        "arm": "A",
+        "source": "/root/new-scii-g2-planner-handoff-20260908/code-0ff77c9",
+        "rid": "20260908-g2-planner-handoff-v1-spb2-l6-g2-A-eval4-s0-r1",
+        "out": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260908-g2-planner-handoff-v1/runs/20260908-g2-planner-handoff-v1-spb2-l6-g2-A-eval4-s0-r1",
+        "body": "env SOURCE_SHA=0ff77c939a88b794e98c708eccd830333fb2b7d5 CUDA_VISIBLE_DEVICES=4,5,6,7 SC2_PYTHON_OVERLAY=/root/new-scii-spb2-level5-control/python CPATH=/usr/include/python3.12 RUN_ID=20260908-g2-planner-handoff-v1-spb2-l6-g2-A-eval4-s0-r1 OUTPUT_DIR=/mnt/data0601/yangjinyue/new_SCII/experiments/20260908-g2-planner-handoff-v1/runs/20260908-g2-planner-handoff-v1-spb2-l6-g2-A-eval4-s0-r1 RAY_TMPDIR=/dev/shm/g2handoff_A_r1 PAIR_DEADLINE=1788882882 ARM_STATUS_PATH=/root/new-scii-g2-planner-handoff-20260908/A-r1.done bash /root/new-scii-g2-planner-handoff-20260908/code-0ff77c9/experiments/records/20260908-g2-planner-handoff-v1/run_timed_arm.sh A > /root/new-scii-g2-planner-handoff-20260908/A-r1.log 2>&1",
+        "deadline": 1788882882
+      },
+      "manifest": {
+        "schema_version": 1,
+        "status": "running",
+        "started_at": "2026-09-08T14:55:58.700528+00:00",
+        "source_commit": "0ff77c939a88b794e98c708eccd830333fb2b7d5",
+        "dirty": false,
+        "formal": true,
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+        "model_source": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+        "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+        "bo_profile": "canonical",
+        "episode_api": "gymnasium-v0.26",
+        "bo_path": "/root/new-scii-g2-planner-handoff-20260908/code-0ff77c9/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+        "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+        "mode": "evaluation",
+        "source_files_sha256": {
+          "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+          "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+          "scripts/train_sc2.sh": "297105b0b736df9573748b70be69a4982dd4ef3faf42c688f4f30d81d9bbcf33",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "b6994c43da70ab21407e3ec20fb4538f1dbd2923172e8a5051a51e0e0944f305",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "4943119f134e088d600bac3d056c7f49eb731ffeb467f4f861d8e82fc3822285",
+          "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+          "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "6b5d474f90b1a3a9d7a641c92f3379b9d936e14aa7102d1f1717545093056704",
+          "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+        },
+        "target_steps": 1,
+        "training_goal_global_steps": 1,
+        "resume_from_path": null,
+        "host": "hpc",
+        "python": "3.12.3",
+        "gpu_selection": "4,5,6,7",
+        "world_size": 4,
+        "container_image_id": null,
+        "versions": {
+          "torch": "2.7.1+cu128",
+          "transformers": "4.55.2",
+          "ray": "2.48.0",
+          "gymnasium": "1.2.3",
+          "flash-attn": "2.6.3",
+          "flash-linear-attention": "0.4.0",
+          "moba": null
+        }
+      },
+      "result": {
+        "status": "failed",
+        "ended_at": "2026-09-08T14:56:55.388135+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 1,
+        "training_updates": 0,
+        "metrics": {},
+        "metrics_finite": false,
+        "response_record_count": 0,
+        "evaluable_action_count": 0,
+        "valid_evaluable_action_count": 0,
+        "replays": {},
+        "console_sha256": "cdbc27ffdba59507b8b222bfc62d5fa64fc0b350801a81eb00b820c98419109a",
+        "episode_outcomes": {
+          "trajectories": 0,
+          "natural_games": 0,
+          "wins": 0,
+          "defeats": 0,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": null,
+          "outcomes": []
+        },
+        "natural_match_completed": false,
+        "termination_evidence": null
+      },
+      "failure": "NCCL duplicate GPU: rank2 and rank0 on CUDA device89000"
+    },
+    "B": {
+      "node": "42",
+      "gpus": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-g2-B-eval4-s0-r1",
+      "launch": {
+        "node": "42",
+        "arm": "B",
+        "source": "/root/new-scii-g2-planner-handoff-20260908/code-0ff77c9",
+        "rid": "20260908-g2-planner-handoff-v1-spb2-l6-g2-B-eval4-s0-r1",
+        "out": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260908-g2-planner-handoff-v1/runs/20260908-g2-planner-handoff-v1-spb2-l6-g2-B-eval4-s0-r1",
+        "body": "env SOURCE_SHA=0ff77c939a88b794e98c708eccd830333fb2b7d5 CUDA_VISIBLE_DEVICES=4,5,6,7 SC2_PYTHON_OVERLAY=/root/new-scii-spb-level6-96-20260908/python CPATH=/root/new-scii-spb-level6-96-20260908/include/python3.12:/root/new-scii-spb-level6-96-20260908/include RUN_ID=20260908-g2-planner-handoff-v1-spb2-l6-g2-B-eval4-s0-r1 OUTPUT_DIR=/mnt/data0601/yangjinyue/new_SCII/experiments/20260908-g2-planner-handoff-v1/runs/20260908-g2-planner-handoff-v1-spb2-l6-g2-B-eval4-s0-r1 RAY_TMPDIR=/dev/shm/g2handoff_B_r1 PAIR_DEADLINE=1788882882 ARM_STATUS_PATH=/root/new-scii-g2-planner-handoff-20260908/B-r1.done bash /root/new-scii-g2-planner-handoff-20260908/code-0ff77c9/experiments/records/20260908-g2-planner-handoff-v1/run_timed_arm.sh B > /root/new-scii-g2-planner-handoff-20260908/B-r1.log 2>&1",
+        "deadline": 1788882882
+      },
+      "manifest": {
+        "schema_version": 1,
+        "status": "running",
+        "started_at": "2026-09-08T14:58:17.687714+00:00",
+        "source_commit": "0ff77c939a88b794e98c708eccd830333fb2b7d5",
+        "dirty": false,
+        "formal": true,
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+        "model_source": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+        "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+        "bo_profile": "canonical",
+        "episode_api": "gymnasium-v0.26",
+        "bo_path": "/root/new-scii-g2-planner-handoff-20260908/code-0ff77c9/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+        "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+        "mode": "evaluation",
+        "source_files_sha256": {
+          "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+          "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+          "scripts/train_sc2.sh": "297105b0b736df9573748b70be69a4982dd4ef3faf42c688f4f30d81d9bbcf33",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "b6994c43da70ab21407e3ec20fb4538f1dbd2923172e8a5051a51e0e0944f305",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "4943119f134e088d600bac3d056c7f49eb731ffeb467f4f861d8e82fc3822285",
+          "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+          "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "6b5d474f90b1a3a9d7a641c92f3379b9d936e14aa7102d1f1717545093056704",
+          "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+        },
+        "target_steps": 1,
+        "training_goal_global_steps": 1,
+        "resume_from_path": null,
+        "host": "hpc",
+        "python": "3.12.3",
+        "gpu_selection": "4,5,6,7",
+        "world_size": 4,
+        "container_image_id": null,
+        "versions": {
+          "torch": "2.7.1+cu128",
+          "transformers": "4.55.2",
+          "ray": "2.48.0",
+          "gymnasium": "1.2.3",
+          "flash-attn": "2.6.3",
+          "flash-linear-attention": "0.4.0",
+          "moba": null
+        }
+      },
+      "result": {
+        "status": "failed",
+        "ended_at": "2026-09-08T14:59:10.838692+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 1,
+        "training_updates": 0,
+        "metrics": {},
+        "metrics_finite": false,
+        "response_record_count": 0,
+        "evaluable_action_count": 0,
+        "valid_evaluable_action_count": 0,
+        "replays": {},
+        "console_sha256": "94a1737bb561f749e98a763ced5944874cb58af76876851b043c30971785a861",
+        "episode_outcomes": {
+          "trajectories": 0,
+          "natural_games": 0,
+          "wins": 0,
+          "defeats": 0,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": null,
+          "outcomes": []
+        },
+        "natural_match_completed": false,
+        "termination_evidence": null
+      },
+      "failure": "Ray OutOfMemoryError: node host memory threshold"
+    }
+  }
+}

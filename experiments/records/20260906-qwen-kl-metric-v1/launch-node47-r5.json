@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-09-06T03:59:27.444941+00:00",
+  "node": "sc2-a100-47",
+  "status": "running",
+  "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-8gpu-trace-rl1-s0-r5",
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-8gpu-trace-rl1-s0-r5",
+  "source_commit": "1e38a6ab97f03fa76ffe4b5abc96c5e72f990e69",
+  "formal": true,
+  "dirty": false,
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+  "world_size": 8,
+  "gpu_selection": "0,1,2,3,4,5,6,7",
+  "target_steps": 1,
+  "started_at": "2026-09-06T03:51:23.132358+00:00",
+  "versions": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.55.2",
+    "ray": "2.48.0",
+    "gymnasium": "1.2.3",
+    "flash-attn": "2.6.3",
+    "flash-linear-attention": null,
+    "moba": null
+  },
+  "nonpath_override_changes": {
+    "trainer.total_epochs": [
+      "4",
+      "1"
+    ],
+    "+actor_rollout_ref.actor.ppo_diagnostics_dir": [
+      null,
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-8gpu-trace-rl1-s0-r5/ppo_diagnostics"
+    ]
+  },
+  "effective_config_sha256": "5ac630564734f2f98a012709c8cc18a7902b15476318ff3ca1950c3fba041cb4",
+  "cpu_test_count": 74,
+  "cpu_test_skipped": 0,
+  "cpu_log_sha256": "be3a7e25d133c363107ebd45595ca3b3fd813b31b8e5fcff6036ce894419ecac",
+  "bundle_sha256": "5a8a0a8c4c05a784ad7456da770ba1e1b7ae6b0e8e37c03003e3d298b13321a1",
+  "has_done": false
+}

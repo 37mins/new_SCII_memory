@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "source_commit": "ea00ac4f6ad7d6ba327da6364638f9bfb5c13de2",
+  "node": "sc2-a100-44",
+  "runs": [
+    {"run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-paths-opt0-r9", "started_at": "2026-09-06T11:16:22.399566+00:00", "ended_at": "2026-09-06T11:16:34.548020+00:00", "exit_code": 2},
+    {"run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-updates-opt4-r10", "started_at": "2026-09-06T11:16:22.413767+00:00", "ended_at": "2026-09-06T11:16:34.599922+00:00", "exit_code": 2}
+  ],
+  "asset_hashes_passed": true,
+  "worker_processes_started": false,
+  "optimizer_updates": 0,
+  "failure": "run.py: error: ambiguous option: --run could match --run-path, --run_path",
+  "layer": "diagnostic launcher argument parsing, before GPU/model initialization",
+  "fix": "Insert -- before training script; preserve model, optimizer and all diagnostic settings",
+  "next_runs": ["paths-opt0-r11", "updates-opt4-r12"],
+  "old_artifacts_preserved": true
+}

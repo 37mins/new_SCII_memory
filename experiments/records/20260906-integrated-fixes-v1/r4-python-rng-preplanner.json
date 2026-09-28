@@ -1,0 +1,293 @@
+{
+  "scope": "Same-seed full fixed-BO repeatability only; no model answers or RL",
+  "reports": [
+    {
+      "run_id": "20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat1-r1",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat1-r1",
+      "source_sha": "5b24db566007b514686f61242ad999b5d296725b",
+      "started_at": "2026-09-07T12:18:49+00:00",
+      "ended_at": "2026-09-07T12:23:09+00:00",
+      "exit_code": 0,
+      "status": "ended_before_first_planner",
+      "trace_frames": 529,
+      "snapshot_frames": 328,
+      "observation_frames": 149,
+      "command_count": 149,
+      "prefix120_overlap_frames": 86,
+      "prefix120_overlap_equal": true,
+      "bo_start_count": 173,
+      "bo_end_or_skip_count": 172,
+      "skipped": {
+        "2310": {
+          "bo_skipped_110": {
+            "reason": "timeout",
+            "action": "reactor barracks"
+          }
+        },
+        "2783": {
+          "bo_skipped_165": {
+            "reason": "timeout",
+            "action": "siegetank"
+          }
+        },
+        "3004": {
+          "bo_skipped_166": {
+            "reason": "timeout",
+            "action": "siegetank"
+          }
+        },
+        "3225": {
+          "bo_skipped_167": {
+            "reason": "timeout",
+            "action": "siegetank"
+          }
+        }
+      },
+      "attack_events": [
+        {
+          "last_logged_iteration": 2010,
+          "text": "[Auto-Attack] 首次总攻触发！当前兵力 20 >= 20"
+        },
+        {
+          "last_logged_iteration": 2480,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "last_logged_iteration": 2650,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "last_logged_iteration": 2770,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 11 >= 10"
+        }
+      ],
+      "last_bo_start": [
+        "09:36",
+        "172",
+        "supplydepot"
+      ],
+      "last_bo_end": [
+        "09:36",
+        "171"
+      ],
+      "boundary": null,
+      "first_query": null,
+      "terminal": {
+        "obs": "It is now 11:26 in the game, and we are playing as Terran with 4000 minerals and 1207 vespene gas, while our current supply is 0, of which 0 is allocated to the army, 0 to workers, and 0 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have no units currently. In terms of the structures, we have 1  with techlab. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 2 battlecruiser, 2 marauder, 7 marine, 8 viking. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 2 refinery, 2 starport, 1 starport with reactor, 6 supplydepot.",
+        "reward": -50,
+        "done": true,
+        "success": false,
+        "attack_ct": 0,
+        "correct_format": false,
+        "exceed": false,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Defeat",
+        "termination_reason": "game_result",
+        "outcome_reward": -50,
+        "last_consumed_policy_action_id": null
+      },
+      "last_snapshot": {
+        "iteration": 3270,
+        "time_seconds": 583,
+        "time_formatted": "09:43",
+        "minerals": 3800,
+        "vespene": 1207,
+        "cumulative_minerals_collected": 13775,
+        "cumulative_vespene_collected": 1732,
+        "unit_mineral_value": 50,
+        "unit_vespene_value": 0,
+        "structure_mineral_value": 4225,
+        "structure_vespene_value": 525,
+        "cumulative_unit_value": 5750,
+        "cumulative_structure_value": 5300,
+        "supply_army": 1,
+        "supply_workers": 0,
+        "supply_left": 117,
+        "n_structures": 36,
+        "n_visible_enemy_units": 14,
+        "n_visible_enemy_structures": 18,
+        "n_unit_types": 1,
+        "n_structure_types": 9
+      },
+      "cleanup": [
+        {
+          "reason": "reset_or_close",
+          "environment_pid": 4073850,
+          "children": [],
+          "alive_child_pids": [],
+          "environment_alive": false
+        }
+      ],
+      "artifact_hashes": {
+        "driver.log": "7363120f2e4c10760ad17021066774047004ce57b36e22dc1c75cba902c6c972",
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_12-18-51/trace.json": "5983cca3198149eb2fbf0c164ad76a6c4ca6b574d32edd291803af33eb31598d",
+        "result.json": "462cccafaf407f143689babad99d7ce51fd1f4fab94beebceedc30e40adbc9d0",
+        "effective_config.json": "3df442f22969ac58c576897ef07af9271411106b83281951adf627e252954b48",
+        "sc2-logs/cleanup.jsonl": "d9ea408d0ac2881f94531ba9aa608a3e2bdb5a2dbedb73817d530cf1fc4c6dc3",
+        "terminal.json": "748d89b4584d687c5a2d48a4142e22a8c663f095b2d85775031ef5738c9e38ce",
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_12-18-51/replay.SC2Replay": "de0d49eabb650765a10a4b6e2553962b5d7eac2cae9a3bac3acc36fc318c1005"
+      }
+    },
+    {
+      "run_id": "20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat2-r1",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat2-r1",
+      "source_sha": "5b24db566007b514686f61242ad999b5d296725b",
+      "started_at": "2026-09-07T12:23:09+00:00",
+      "ended_at": "2026-09-07T12:27:35+00:00",
+      "exit_code": 0,
+      "status": "ended_before_first_planner",
+      "trace_frames": 529,
+      "snapshot_frames": 328,
+      "observation_frames": 149,
+      "command_count": 149,
+      "prefix120_overlap_frames": 86,
+      "prefix120_overlap_equal": true,
+      "bo_start_count": 173,
+      "bo_end_or_skip_count": 172,
+      "skipped": {
+        "2310": {
+          "bo_skipped_110": {
+            "reason": "timeout",
+            "action": "reactor barracks"
+          }
+        },
+        "2783": {
+          "bo_skipped_165": {
+            "reason": "timeout",
+            "action": "siegetank"
+          }
+        },
+        "3004": {
+          "bo_skipped_166": {
+            "reason": "timeout",
+            "action": "siegetank"
+          }
+        },
+        "3225": {
+          "bo_skipped_167": {
+            "reason": "timeout",
+            "action": "siegetank"
+          }
+        }
+      },
+      "attack_events": [
+        {
+          "last_logged_iteration": 2010,
+          "text": "[Auto-Attack] 首次总攻触发！当前兵力 20 >= 20"
+        },
+        {
+          "last_logged_iteration": 2480,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "last_logged_iteration": 2650,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "last_logged_iteration": 2770,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 11 >= 10"
+        }
+      ],
+      "last_bo_start": [
+        "09:36",
+        "172",
+        "supplydepot"
+      ],
+      "last_bo_end": [
+        "09:36",
+        "171"
+      ],
+      "boundary": null,
+      "first_query": null,
+      "terminal": {
+        "obs": "It is now 11:26 in the game, and we are playing as Terran with 4000 minerals and 1207 vespene gas, while our current supply is 0, of which 0 is allocated to the army, 0 to workers, and 0 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have no units currently. In terms of the structures, we have 1  with techlab. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 2 battlecruiser, 2 marauder, 7 marine, 8 viking. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 2 refinery, 2 starport, 1 starport with reactor, 6 supplydepot.",
+        "reward": -50,
+        "done": true,
+        "success": false,
+        "attack_ct": 0,
+        "correct_format": false,
+        "exceed": false,
+        "terminated": true,
+        "truncated": false,
+        "game_result": "Defeat",
+        "termination_reason": "game_result",
+        "outcome_reward": -50,
+        "last_consumed_policy_action_id": null
+      },
+      "last_snapshot": {
+        "iteration": 3270,
+        "time_seconds": 583,
+        "time_formatted": "09:43",
+        "minerals": 3800,
+        "vespene": 1207,
+        "cumulative_minerals_collected": 13775,
+        "cumulative_vespene_collected": 1732,
+        "unit_mineral_value": 50,
+        "unit_vespene_value": 0,
+        "structure_mineral_value": 4225,
+        "structure_vespene_value": 525,
+        "cumulative_unit_value": 5750,
+        "cumulative_structure_value": 5300,
+        "supply_army": 1,
+        "supply_workers": 0,
+        "supply_left": 117,
+        "n_structures": 36,
+        "n_visible_enemy_units": 14,
+        "n_visible_enemy_structures": 18,
+        "n_unit_types": 1,
+        "n_structure_types": 9
+      },
+      "cleanup": [
+        {
+          "reason": "reset_or_close",
+          "environment_pid": 4076031,
+          "children": [],
+          "alive_child_pids": [],
+          "environment_alive": false
+        }
+      ],
+      "artifact_hashes": {
+        "driver.log": "9e55555b387f479aed9bc4466660c1638f7bdf6aaa0b213e5066faaf5bb96b43",
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_12-23-11/trace.json": "9c331f5692c672509c1c6bee68d679a58977eb6511336bd4194ecbdcf7672a8c",
+        "result.json": "462cccafaf407f143689babad99d7ce51fd1f4fab94beebceedc30e40adbc9d0",
+        "effective_config.json": "009afbc8c420cea545f4b03073c50ba65a051b2513ac40782ba5847a23e34e28",
+        "sc2-logs/cleanup.jsonl": "8b395fd6686b9f9871e0c29e156f0091625c6729fc59078a95f6100b78a79684",
+        "terminal.json": "748d89b4584d687c5a2d48a4142e22a8c663f095b2d85775031ef5738c9e38ce",
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_12-23-11/replay.SC2Replay": "2f09795e41e92eae7ef447787a41f26a1d5ff0d2c5b060c766f454b3a530c19c"
+      }
+    }
+  ],
+  "full_trace_equal": false,
+  "compared_trace_frames": 529,
+  "differing_trace_frames": 52,
+  "first_trace_difference": {
+    "frame": "2311",
+    "changes": {
+      "obs": {
+        "Visible enemy structures": [
+          "[747]OrbitalCommand\nPosition: (24, 101)\n[827]Starport\nPosition: (23, 117)\n[291]SupplyDepotLowered\nPosition: (21, 119)\n[600]SupplyDepotLowered\nPosition: (21, 121)\n[899]Barracks\nPosition: (23, 120)\n[43]BarracksTechLab\nPosition: (26, 120)\n[364]SupplyDepotLowered\nPosition: (28, 121)\n[789]SupplyDepotLowered\nPosition: (28, 119)\n[397]Barracks\nPosition: (30, 119)\n[218]Starport\nPosition: (30, 122)\n[506]StarportReactor\nPosition: (33, 122)\n[70]Factory\nPosition: (30, 125)\n[562]SupplyDepotLowered\nPosition: (30, 128)\n[434]Refinery\nPosition: (28, 132)\n[251]OrbitalCommand\nPosition: (24, 125)\n[757]Refinery\nPosition: (17, 122)",
+          "[101]OrbitalCommand\nPosition: (24, 101)\n[827]Starport\nPosition: (23, 117)\n[291]SupplyDepotLowered\nPosition: (21, 119)\n[600]SupplyDepotLowered\nPosition: (21, 121)\n[899]Barracks\nPosition: (23, 120)\n[43]BarracksTechLab\nPosition: (26, 120)\n[364]SupplyDepotLowered\nPosition: (28, 121)\n[396]SupplyDepotLowered\nPosition: (28, 119)\n[933]Barracks\nPosition: (30, 119)\n[218]Starport\nPosition: (30, 122)\n[506]StarportReactor\nPosition: (33, 122)\n[70]Factory\nPosition: (30, 125)\n[562]SupplyDepotLowered\nPosition: (30, 128)\n[434]Refinery\nPosition: (28, 132)\n[389]OrbitalCommand\nPosition: (24, 125)\n[757]Refinery\nPosition: (17, 122)"
+        ]
+      }
+    }
+  },
+  "raw_difference_fields": {
+    "obs.Visible enemy structures": 52
+  },
+  "trace_equal_ignoring_display_unit_labels": true,
+  "all_resource_snapshots_equal": true,
+  "both_reached_first_planner": false,
+  "boundary_equal": null,
+  "timelines_equal": true,
+  "config_differences": {
+    "SC2_RUNTIME_LOG_ROOT": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat1-r1/sc2-logs",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat2-r1/sc2-logs"
+    ],
+    "SC2_EPISODE_OUTCOME_LOG": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat1-r1/episode_outcomes.jsonl",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat2-r1/episode_outcomes.jsonl"
+    ]
+  }
+}

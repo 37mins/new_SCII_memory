@@ -1,0 +1,1767 @@
+{
+  "checked_at_utc": "2026-09-15 13:43:11 UTC",
+  "scope": "Read-only existing training, independent-evaluation and SC2 traces; CPU standard library only, no GPU/game/PPO/production edits.",
+  "frozen_sources": {
+    "TrainA": "75a6b5dc3621e9d670fbfb440ae917bfacd5e360",
+    "TrainB": "8c2f0f8b103dab054a612ce95a041e4dde9c7c8c",
+    "Evaluation": "8069b4fd6a8a8bb1b5308642fcf499e29a4bece1"
+  },
+  "second_answer_counts": {
+    "TrainA": {
+      "games": 32,
+      "marine_first": 32,
+      "marine42": 25,
+      "marine8": 7
+    },
+    "TrainB": {
+      "games": 32,
+      "marine_first": 32,
+      "marine42": 31,
+      "marine8": 1
+    }
+  },
+  "trajectory_summary": {
+    "train": [
+      {
+        "label": "TrainA",
+        "global_step": 5,
+        "seed": 3974528993,
+        "call": 1,
+        "groups": [
+          {
+            "query": "95f4e1650fe0",
+            "answer": "74ebd44c5899",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 5,
+        "seed": 3974528993,
+        "call": 2,
+        "groups": [
+          {
+            "query": "4acb8affa97e",
+            "answer": "448c4f48bf0f",
+            "projection_changed": false,
+            "games": 7,
+            "wins": 7,
+            "reward_values": [
+              20.5
+            ]
+          },
+          {
+            "query": "4acb8affa97e",
+            "answer": "ea524fdcb550",
+            "projection_changed": false,
+            "games": 1,
+            "wins": 1,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 6,
+        "seed": 1183530000,
+        "call": 1,
+        "groups": [
+          {
+            "query": "95f4e1650fe0",
+            "answer": "74ebd44c5899",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 6,
+        "seed": 1183530000,
+        "call": 2,
+        "groups": [
+          {
+            "query": "f0b6c5277e09",
+            "answer": "f7460b26621f",
+            "projection_changed": false,
+            "games": 2,
+            "wins": 2,
+            "reward_values": [
+              20.5
+            ]
+          },
+          {
+            "query": "f0b6c5277e09",
+            "answer": "37b841ac6744",
+            "projection_changed": false,
+            "games": 5,
+            "wins": 5,
+            "reward_values": [
+              20.5
+            ]
+          },
+          {
+            "query": "f0b6c5277e09",
+            "answer": "5d8b3b7b64e6",
+            "projection_changed": false,
+            "games": 1,
+            "wins": 1,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 6,
+        "seed": 1183530000,
+        "call": 3,
+        "groups": [
+          {
+            "query": "b4e46167a6d5",
+            "answer": "956a3545082e",
+            "projection_changed": false,
+            "games": 1,
+            "wins": 1,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 6,
+        "seed": 1183530000,
+        "call": 4,
+        "groups": [
+          {
+            "query": "d32383028f71",
+            "answer": "9813be180089",
+            "projection_changed": false,
+            "games": 1,
+            "wins": 1,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 7,
+        "seed": 3446496864,
+        "call": 1,
+        "groups": [
+          {
+            "query": "95f4e1650fe0",
+            "answer": "74ebd44c5899",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 5,
+            "reward_values": [
+              -49.481,
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 7,
+        "seed": 3446496864,
+        "call": 2,
+        "groups": [
+          {
+            "query": "7f8faf4cc10c",
+            "answer": "37b841ac6744",
+            "projection_changed": false,
+            "games": 5,
+            "wins": 5,
+            "reward_values": [
+              20.5
+            ]
+          },
+          {
+            "query": "7f8faf4cc10c",
+            "answer": "f7460b26621f",
+            "projection_changed": false,
+            "games": 3,
+            "wins": 0,
+            "reward_values": [
+              -49.481
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 8,
+        "seed": 2996859384,
+        "call": 1,
+        "groups": [
+          {
+            "query": "95f4e1650fe0",
+            "answer": "74ebd44c5899",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainA",
+        "global_step": 8,
+        "seed": 2996859384,
+        "call": 2,
+        "groups": [
+          {
+            "query": "8359f6e70f07",
+            "answer": "37b841ac6744",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 5,
+        "seed": 1098341402,
+        "call": 1,
+        "groups": [
+          {
+            "query": "95f4e1650fe0",
+            "answer": "74ebd44c5899",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 7,
+            "reward_values": [
+              -50,
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 5,
+        "seed": 1098341402,
+        "call": 2,
+        "groups": [
+          {
+            "query": "4c3972dca2ed",
+            "answer": "37b841ac6744",
+            "projection_changed": false,
+            "games": 7,
+            "wins": 7,
+            "reward_values": [
+              20.5
+            ]
+          },
+          {
+            "query": "4c3972dca2ed",
+            "answer": "32f11794def0",
+            "projection_changed": false,
+            "games": 1,
+            "wins": 0,
+            "reward_values": [
+              -50
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 5,
+        "seed": 1098341402,
+        "call": 3,
+        "groups": [
+          {
+            "query": "f35abb23d26a",
+            "answer": "a41ba3bec7c3",
+            "projection_changed": false,
+            "games": 1,
+            "wins": 0,
+            "reward_values": [
+              -50
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 6,
+        "seed": 3446496864,
+        "call": 1,
+        "groups": [
+          {
+            "query": "95f4e1650fe0",
+            "answer": "74ebd44c5899",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 6,
+        "seed": 3446496864,
+        "call": 2,
+        "groups": [
+          {
+            "query": "7f8faf4cc10c",
+            "answer": "37b841ac6744",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 7,
+        "seed": 1098341402,
+        "call": 1,
+        "groups": [
+          {
+            "query": "95f4e1650fe0",
+            "answer": "74ebd44c5899",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 7,
+        "seed": 1098341402,
+        "call": 2,
+        "groups": [
+          {
+            "query": "4c3972dca2ed",
+            "answer": "37b841ac6744",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 8,
+        "seed": 3446496864,
+        "call": 1,
+        "groups": [
+          {
+            "query": "95f4e1650fe0",
+            "answer": "74ebd44c5899",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      },
+      {
+        "label": "TrainB",
+        "global_step": 8,
+        "seed": 3446496864,
+        "call": 2,
+        "groups": [
+          {
+            "query": "7f8faf4cc10c",
+            "answer": "37b841ac6744",
+            "projection_changed": false,
+            "games": 8,
+            "wins": 8,
+            "reward_values": [
+              20.5
+            ]
+          }
+        ]
+      }
+    ],
+    "evals": {
+      "EvalA4": [
+        {
+          "seed": 2259791793,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "7ae845f55668",
+              "answer": "37b841ac6744",
+              "time": "04:13",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 1436145665,
+          "outcome": "Defeat",
+          "reward": -49.401,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "6d23e978164d",
+              "answer": "f7460b26621f",
+              "time": "04:09",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 363527354,
+          "outcome": "Defeat",
+          "reward": -49.431,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "372671e4ff49",
+              "answer": "37b841ac6744",
+              "time": "04:44",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 462000319,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "c66052060629",
+              "answer": "448c4f48bf0f",
+              "time": "04:09",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 3434611143,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "de1313a69c1c",
+              "answer": "37b841ac6744",
+              "time": "04:13",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 1968356657,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "cf057c19a0fa",
+              "answer": "c361c13b788c",
+              "time": "04:40",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 4276540916,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "d0e5750c17f3",
+              "answer": "37b841ac6744",
+              "time": "04:25",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 2065928601,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "8055baf0cd2d",
+              "answer": "37b841ac6744",
+              "time": "04:44",
+              "projection_changed": false
+            }
+          ]
+        }
+      ],
+      "EvalA8": [
+        {
+          "seed": 2259791793,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "7ae845f55668",
+              "answer": "37b841ac6744",
+              "time": "04:13",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 1436145665,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "6d23e978164d",
+              "answer": "37b841ac6744",
+              "time": "04:09",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 363527354,
+          "outcome": "Defeat",
+          "reward": -49.431,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "372671e4ff49",
+              "answer": "37b841ac6744",
+              "time": "04:44",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 462000319,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "c66052060629",
+              "answer": "448c4f48bf0f",
+              "time": "04:09",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 3434611143,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "de1313a69c1c",
+              "answer": "37b841ac6744",
+              "time": "04:13",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 1968356657,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "cf057c19a0fa",
+              "answer": "37b841ac6744",
+              "time": "04:40",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 4276540916,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "d0e5750c17f3",
+              "answer": "37b841ac6744",
+              "time": "04:25",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 2065928601,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "8055baf0cd2d",
+              "answer": "37b841ac6744",
+              "time": "04:44",
+              "projection_changed": false
+            }
+          ]
+        }
+      ],
+      "EvalB8": [
+        {
+          "seed": 2259791793,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "7ae845f55668",
+              "answer": "37b841ac6744",
+              "time": "04:13",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 1436145665,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "6d23e978164d",
+              "answer": "37b841ac6744",
+              "time": "04:09",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 363527354,
+          "outcome": "Defeat",
+          "reward": -49.431,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "372671e4ff49",
+              "answer": "37b841ac6744",
+              "time": "04:44",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 462000319,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "c66052060629",
+              "answer": "448c4f48bf0f",
+              "time": "04:09",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 3434611143,
+          "outcome": "Defeat",
+          "reward": -49.45,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "de1313a69c1c",
+              "answer": "37b841ac6744",
+              "time": "04:13",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 1968356657,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "cf057c19a0fa",
+              "answer": "37b841ac6744",
+              "time": "04:40",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 4276540916,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "d0e5750c17f3",
+              "answer": "37b841ac6744",
+              "time": "04:25",
+              "projection_changed": false
+            }
+          ]
+        },
+        {
+          "seed": 2065928601,
+          "outcome": "Victory",
+          "reward": 20.5,
+          "calls": [
+            {
+              "query": "95f4e1650fe0",
+              "answer": "74ebd44c5899",
+              "time": "00:00",
+              "projection_changed": false
+            },
+            {
+              "query": "8055baf0cd2d",
+              "answer": "37b841ac6744",
+              "time": "04:44",
+              "projection_changed": false
+            }
+          ]
+        }
+      ]
+    },
+    "forms": {
+      "74ebd44c5899": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+      "448c4f48bf0f": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+      "ea524fdcb550": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+      "f7460b26621f": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "37b841ac6744": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "5d8b3b7b64e6": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 1\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "956a3545082e": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- commandcenter x 1\n- refinery x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x",
+      "9813be180089": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 3\n- commandcenter x 2\n- factory x 1\n- supplydepot x 8\n- scv x 15\n- marine x 48\n- mule x 6\n</answer>",
+      "32f11794def0": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "a41ba3bec7c3": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 1\n- marauder x 4\n- commandcenter x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 50\n- mule x 6\n</answer>",
+      "c361c13b788c": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>"
+    },
+    "prompt_overlap": {
+      "EvalA4": {
+        "exact_prompt_seen_in_training": 8,
+        "calls": 16
+      },
+      "EvalA8": {
+        "exact_prompt_seen_in_training": 8,
+        "calls": 16
+      },
+      "EvalB8": {
+        "exact_prompt_seen_in_training": 8,
+        "calls": 16
+      }
+    },
+    "failed_second_queries": {
+      "363527354": {
+        "query": "372671e4ff49",
+        "observation": "\nIt is now 04:44 in the game, and we are playing as Terran with 35 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 2 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 4 supplydepot.\n",
+        "remaining": "\n- Launch OFFENSE with 8 marine\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n"
+      },
+      "1436145665": {
+        "query": "6d23e978164d",
+        "observation": "\nIt is now 04:09 in the game, and we are playing as Terran with 170 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 starport with techlab.\n",
+        "remaining": "\n- Launch OFFENSE with 8 marine\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n"
+      },
+      "3434611143": {
+        "query": "de1313a69c1c",
+        "observation": "\nIt is now 04:13 in the game, and we are playing as Terran with 100 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of orbitalcommand, 1 barracks, 1 factory, 2 refinery, 2 starport, 3 supplydepot.\n",
+        "remaining": "\n- Launch OFFENSE with 8 marine\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n"
+      }
+    }
+  },
+  "failed_game_queues": [
+    {
+      "model": "A4",
+      "seed": 1436145665,
+      "env": 1,
+      "game_pid": 3825865,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-panel-eval8-4gpu-r1/sc2-logs/game-3825865/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-45-03/trace.json",
+      "trace_sha256": "b0cb4156ccbc3902ea8b467282cc5cc52f01e74d7b946c0841bdf62c31077f3c",
+      "boundaries_sha256": "5ff4462529f06658c4b8dc59b1d7a64649362daed1577f6b6b50b2f0996d9bc0",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:09",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "09:10",
+          "bo_index": 18,
+          "done": true,
+          "queue_length": 25,
+          "queue_counts": {
+            "marine": 8,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              8
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 7,
+        "BARRACKSTRAIN_MARINE": 32
+      }
+    },
+    {
+      "model": "A4",
+      "seed": 363527354,
+      "env": 2,
+      "game_pid": 3825864,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-panel-eval8-4gpu-r1/sc2-logs/game-3825864/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-45-03/trace.json",
+      "trace_sha256": "9d81f45aa6a65d52d7a80f04c1ba4fd4101e37cd8106fa1be94315470d3d58e1",
+      "boundaries_sha256": "39f70fd8454f8c82c3a926a62341dfd1d68120c08d8e4c5e923141da60d8d11a",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:44",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "11:26",
+          "bo_index": 52,
+          "done": true,
+          "queue_length": 59,
+          "queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              42
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 7,
+        "BARRACKSTRAIN_MARINE": 66
+      }
+    },
+    {
+      "model": "A4",
+      "seed": 3434611143,
+      "env": 4,
+      "game_pid": 3825866,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-panel-eval8-4gpu-r1/sc2-logs/game-3825866/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-45-03/trace.json",
+      "trace_sha256": "02726aa8248588b96c363c7e04c667fc4f5a9c08028cd901573057b210c8e1a3",
+      "boundaries_sha256": "76edfc457d38a3a7f00a05f61418d8bec3a5409f55e3db91e069366b3473f61b",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:13",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "09:48",
+          "bo_index": 50,
+          "done": true,
+          "queue_length": 59,
+          "queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              42
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 5,
+        "BARRACKSTRAIN_MARINE": 66
+      }
+    },
+    {
+      "model": "SceneA8",
+      "seed": 1436145665,
+      "env": 1,
+      "game_pid": 3830493,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-SceneA8-l6-panel-eval8-4gpu-r1/sc2-logs/game-3830493/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-46-14/trace.json",
+      "trace_sha256": "8d29c5b15f5a640e24503f44387a517c575aad68dcf80b82db8c144ab7d21ef7",
+      "boundaries_sha256": "dcca4488994f629dec70616aeed7d0d98f4a662f883e9f584286bafb83b52013",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:09",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "09:58",
+          "bo_index": 50,
+          "done": true,
+          "queue_length": 59,
+          "queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              42
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 5,
+        "BARRACKSTRAIN_MARINE": 66
+      }
+    },
+    {
+      "model": "SceneA8",
+      "seed": 363527354,
+      "env": 2,
+      "game_pid": 3830499,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-SceneA8-l6-panel-eval8-4gpu-r1/sc2-logs/game-3830499/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-46-14/trace.json",
+      "trace_sha256": "fe4d0934f8a5b9c1b679811b5eb82afca9b6789b42dcea5c030cf518de64ab6b",
+      "boundaries_sha256": "40013f6a93564148b0f7cb4f26979917c2d42d764cec8e4cc2387a67ae6f065c",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:44",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "11:26",
+          "bo_index": 52,
+          "done": true,
+          "queue_length": 59,
+          "queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              42
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 7,
+        "BARRACKSTRAIN_MARINE": 66
+      }
+    },
+    {
+      "model": "SceneA8",
+      "seed": 3434611143,
+      "env": 4,
+      "game_pid": 3830496,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-SceneA8-l6-panel-eval8-4gpu-r1/sc2-logs/game-3830496/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-46-14/trace.json",
+      "trace_sha256": "98fc741949e091fd9a9511eb27c72d17414c927ddb3b8d021353e9ed8b8257b0",
+      "boundaries_sha256": "371d9db52544d2b4923ace3653920ad772d8f7030063b5d264901bba9a2f7142",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:13",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "09:48",
+          "bo_index": 50,
+          "done": true,
+          "queue_length": 59,
+          "queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              42
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 5,
+        "BARRACKSTRAIN_MARINE": 66
+      }
+    },
+    {
+      "model": "SceneB8",
+      "seed": 1436145665,
+      "env": 1,
+      "game_pid": 3847152,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-SceneB8-l6-panel-eval8-4gpu-r1/sc2-logs/game-3847152/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-57-04/trace.json",
+      "trace_sha256": "9dbfd14c0e971b06cb0595cec95f2d64578f145228af88216eed4f74eabb8994",
+      "boundaries_sha256": "3cf13afb5841bd9499c0e31d13af80dbc47e6addfcd03d194488fb7ac5e54c08",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:09",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "09:58",
+          "bo_index": 50,
+          "done": true,
+          "queue_length": 59,
+          "queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              42
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 5,
+        "BARRACKSTRAIN_MARINE": 66
+      }
+    },
+    {
+      "model": "SceneB8",
+      "seed": 363527354,
+      "env": 2,
+      "game_pid": 3847153,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-SceneB8-l6-panel-eval8-4gpu-r1/sc2-logs/game-3847153/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-57-04/trace.json",
+      "trace_sha256": "7a316111d5e9edaa3f74e194804cfec4dacd2081959b4622ffffde70373f48a8",
+      "boundaries_sha256": "85c8cf8a1b1c24f7ca6703756ab149c92c2cecb7b1aba0f85821725e851ed004",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:44",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "11:26",
+          "bo_index": 52,
+          "done": true,
+          "queue_length": 59,
+          "queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              42
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 7,
+        "BARRACKSTRAIN_MARINE": 66
+      }
+    },
+    {
+      "model": "SceneB8",
+      "seed": 3434611143,
+      "env": 4,
+      "game_pid": 3847159,
+      "trace_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-SceneB8-l6-panel-eval8-4gpu-r1/sc2-logs/game-3847159/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-15_03-57-04/trace.json",
+      "trace_sha256": "db6956b51485157a0f804d81f48b955846d66a45875d8d91e0d26fd84069415d",
+      "boundaries_sha256": "78f648b054fec9ba67f7e355cf0631b47af6291aa1e507418b523e8b7545d74e",
+      "boundaries": [
+        {
+          "time": "00:00",
+          "bo_index": 0,
+          "done": false,
+          "queue_length": 0,
+          "queue_counts": {},
+          "queue_runs": [],
+          "current_queue_item": null
+        },
+        {
+          "time": "04:13",
+          "bo_index": 32,
+          "done": false,
+          "queue_length": 32,
+          "queue_counts": {
+            "supplydepot": 4,
+            "barracks": 4,
+            "marine": 24
+          },
+          "queue_runs": [
+            [
+              "supplydepot",
+              4
+            ],
+            [
+              "barracks",
+              4
+            ],
+            [
+              "marine",
+              24
+            ]
+          ],
+          "current_queue_item": null
+        },
+        {
+          "time": "09:48",
+          "bo_index": 50,
+          "done": true,
+          "queue_length": 59,
+          "queue_counts": {
+            "marine": 42,
+            "supplydepot": 8,
+            "barracks": 3,
+            "reactor barracks": 3,
+            "scv": 2,
+            "refinery": 1
+          },
+          "queue_runs": [
+            [
+              "marine",
+              42
+            ],
+            [
+              "supplydepot",
+              8
+            ],
+            [
+              "barracks",
+              3
+            ],
+            [
+              "reactor barracks",
+              3
+            ],
+            [
+              "scv",
+              2
+            ],
+            [
+              "refinery",
+              1
+            ]
+          ],
+          "current_queue_item": "barracks"
+        }
+      ],
+      "mapped_abilities": {
+        "TERRANBUILD_SUPPLYDEPOT": 12,
+        "TERRANBUILD_BARRACKS": 5,
+        "BARRACKSTRAIN_MARINE": 66
+      }
+    }
+  ],
+  "limitations": [
+    "Exact query hashes differ across training/evaluation second calls, but this alone is not proof of semantic out-of-distribution inputs.",
+    "BO queue acceptance is not proof each SC2 command was submitted or unit constructed. bo_index progression can include skips.",
+    "No per-update gradients or parameter probabilities recomputed; observed choice changes are not a single-update causal proof.",
+    "No alternative plan was experimentally introduced this turn. Unobserved order/air choices cannot be assumed winning.",
+    "Nine failed games comprise three seeds times three checkpoints, not nine independent seeds.",
+    "Initial extraction used the wrong response field in an exploratory diversity print; that print was discarded. Final summary explicitly uses llm_response. Newline parsing and optional trace-time handling were corrected in analysis only; oversized stdout attempts were discarded. These are not production bugs or fixes."
+  ]
+}

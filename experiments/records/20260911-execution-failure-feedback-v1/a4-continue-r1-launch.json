@@ -1,0 +1,114 @@
+{
+  "checked_at": "2026-09-11T15:33:34.610946+00:00",
+  "runtime_sha": "4ad9a605cc6a91419fd2a2ef5d6e8a2af72aac32",
+  "node": "sc2-a100-43",
+  "gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "run_id": "20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1",
+  "run_path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1",
+  "controller": "/root/new-scii-execution-feedback-20260911/a4-continue-r1",
+  "controller_started_at": "2026-09-11T15:28:27Z",
+  "controller_stage": "training",
+  "controller_done": null,
+  "load": {
+    "loaded_global_step": 4,
+    "checkpoint": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "model_optimizer_load_returned": true,
+    "sc2_state_restored": false,
+    "exhausted_saved_epoch_closed_without_new_sample": true,
+    "driver_seed": 0,
+    "game_reset_index": 0,
+    "game_seed_per_new_step": [
+      45891,
+      21243,
+      30403,
+      32103
+    ],
+    "note": "Original model/optimizer/per-rank RNG restored; fresh games, declared driver seed0 and seed-sequence offset4. Not bitwise SC2 resume.",
+    "game_seed_sequence_offset": 4,
+    "parent_source_commit": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+    "parent_run": "20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2",
+    "new_run_global_steps": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "proof_alias_receipt": {
+    "utc": "2026-09-11T15:32:37.848088+00:00",
+    "source": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/a4_continuation.json",
+    "alias": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/a4_continuation.json",
+    "sha256": "db26ef3e6effd24f312a5074b15c289dde4437d3014f428d31a55362673af430",
+    "reason": "Unmodified controller4ad9a60 expects run-root path; exact original loader-proof copy only. No runtime, weight, game or training configuration change."
+  },
+  "training_seeds": [
+    {
+      "base_seed": 0,
+      "reset_index": 0,
+      "seeds": [
+        45891,
+        45891,
+        45891,
+        45891,
+        45891,
+        45891,
+        45891,
+        45891
+      ]
+    }
+  ],
+  "response_count": 0,
+  "response_examples": [],
+  "gpu_snapshot": "0, 8110 MiB, 0 %\n1, 8254 MiB, 0 %\n2, 8254 MiB, 0 %\n3, 8110 MiB, 0 %\n4, 0 MiB, 0 %\n5, 0 MiB, 0 %\n6, 0 MiB, 0 %\n7, 0 MiB, 0 %\n",
+  "manifest": {
+    "schema_version": 1,
+    "status": "running",
+    "started_at": "2026-09-11T15:28:51.822559+00:00",
+    "source_commit": "4ad9a605cc6a91419fd2a2ef5d6e8a2af72aac32",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_source": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "bo_path": "/root/new-scii-execution-feedback-20260911/code-4ad9a60/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "training",
+    "target_steps": 8,
+    "start_step": 4,
+    "sc2_checkpoint_resume": false,
+    "training_goal_global_steps": 96,
+    "resume_from_path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "host": "hpc",
+    "python": "3.12.3",
+    "gpu_selection": "0,1,2,3",
+    "world_size": 4,
+    "container_image_id": null,
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": "0.4.0",
+      "moba": null
+    }
+  },
+  "artifacts": {
+    "manifest.json": "65332948fa47ba3361e33f72c3b2ed8a0dd9f3c779454624927c3f0b497f61d2",
+    "effective_config.json": "e3c22d7a5cfa3e1d4434707343e903fb16d4d46f117a3fad017b6b80a81d55b3",
+    "checkpoints/a4_continuation.json": "db26ef3e6effd24f312a5074b15c289dde4437d3014f428d31a55362673af430"
+  },
+  "cpu_tests": {
+    "local": "49 total,46 passed,3 skipped (no Torch),4.344s",
+    "server": "18/18 passed,CUDA hidden,11.089s"
+  },
+  "source_bundle_sha256": "237a8b2a96c76349db014e9ddf4879462199cb2cc8a7a11105127218911097d7"
+}

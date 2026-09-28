@@ -1,0 +1,1350 @@
+{
+  "run_id": "20260908-garrison-wave-ownership-v1-spb2-l6-g2-s2807211443-planner-r3",
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260908-garrison-wave-ownership-v1/runs/20260908-garrison-wave-ownership-v1-spb2-l6-g2-s2807211443-planner-r3",
+  "local_artifacts": "/private/tmp/sc2-planner-r3-results-20260908",
+  "runtime": "e1e25ce1d14362b209e34ec73871ebaeb63538a6",
+  "orchestration": "426d12415e8b1be4db5b40dcdd4045bd6532f054",
+  "started_at": "2026-09-08T06:59:31.300690+00:00",
+  "ended_at": "2026-09-08T07:08:19.748075+00:00",
+  "node": "sc2-a100-44",
+  "gpu": 1,
+  "budget_seconds": 1800,
+  "term_grace_seconds": 30,
+  "mode": "one-game-evaluation-no-PPO",
+  "actual_seed": [
+    {
+      "base_seed": 1000,
+      "reset_index": 0,
+      "seeds": [
+        2807211443
+      ]
+    }
+  ],
+  "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+  "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+  "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+  "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+  "versions": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.55.2",
+    "ray": "2.48.0",
+    "gymnasium": "1.2.3",
+    "flash-attn": "2.6.3",
+    "flash-linear-attention": "0.4.0",
+    "moba": null
+  },
+  "config_comparison": "Remove r4 fourth-seed selection hook; use native RandomState(1000) first seed.",
+  "other_runtime_model_gameplay_config_equal": true,
+  "result": {
+    "status": "completed",
+    "ended_at": "2026-09-08T07:08:19.748075+00:00",
+    "mode": "evaluation",
+    "process_exit_code": 0,
+    "training_updates": 0,
+    "metrics": {
+      "val/text/test_score": -49.5,
+      "val/text/tool_call_count/mean": 0,
+      "val/success_rate": 0,
+      "val/sc2_attack_ct": 0,
+      "val/sc2_action_valid": 1,
+      "val/sc2_semantic_action_valid": 1,
+      "val/sc2_semantic_action_evaluable": 1,
+      "val/sc2_projection_action_valid": 1,
+      "val/sc2_executor_action_valid": 1,
+      "val/sc2/episode_count": 1,
+      "val/sc2/no_policy_episode_count": 0,
+      "val/sc2/policy_decision_count": 7
+    },
+    "metrics_finite": true,
+    "response_record_count": 7,
+    "evaluable_action_count": 7,
+    "valid_evaluable_action_count": 6,
+    "replays": {
+      "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_07-01-04/replay.SC2Replay": "393e89103eb22070bff0a4a384036674190f7b4d8e7f9d17160ccb5622cfa1f2"
+    },
+    "console_sha256": "459a86023f45805fda36fdb849ea053cfe740c74f1413f83f47f301a870414a2",
+    "episode_outcomes": {
+      "trajectories": 1,
+      "natural_games": 1,
+      "wins": 0,
+      "defeats": 1,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0,
+      "outcomes": [
+        {
+          "reset_index": 0,
+          "env_index": 0,
+          "decision_count": 7,
+          "step_index": 6,
+          "policy_decision_count": 7,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        }
+      ]
+    },
+    "natural_match_completed": true,
+    "termination_evidence": "game_result"
+  },
+  "cumulative_environment_reward": -49.5,
+  "valid_answer_fraction": 0.8571428571428571,
+  "legacy_flag_caveat": "val/sc2_action_valid=1 is not the answer-validity rate; actual whole-answer rate is 6/7.",
+  "plan_attribution": {
+    "consumed_answers": 7,
+    "all_logged_rows": 7,
+    "valid_answers": 6,
+    "cumulative_reward_all_rows": -49.5,
+    "plan_counts": {
+      "valid_model_plan": {
+        "marine": 21,
+        "mule": 6,
+        "siegetank": 6,
+        "marauder": 2,
+        "vikingfighter": 1
+      },
+      "invalid_rule_processed_plan": {
+        "supplydepot": 1,
+        "marine": 2,
+        "marauder": 2,
+        "starport": 1
+      }
+    },
+    "records": [
+      {
+        "step_index": 0,
+        "source": "invalid_rule_processed_plan",
+        "console_line": 14208,
+        "raw_answer": "- marauder\n- siege tank\n- marauder\n- marauder\n- marauder\n- marauder",
+        "final_plan": [
+          "supplydepot",
+          "marine",
+          "marauder",
+          "marine",
+          "starport",
+          "marauder"
+        ],
+        "air_offered": {
+          "starport": 1
+        },
+        "air_added_not_literal_in_raw": {
+          "starport": 1
+        },
+        "game_time": "10:04",
+        "prompt_sha256": "8246aa4c65cc2412f58e711090ab87462a9b97c127fb04bae4209c519a0777e7",
+        "refresh_iteration": 3383,
+        "commander_plan_unchanged": true,
+        "production_command_receipts": [
+          {
+            "iteration": 3406,
+            "trace_key": "llm_decision_final_action_1_3406",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  849
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 13624,
+              "sequence": 745,
+              "selected": [
+                61079553
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3429,
+            "trace_key": "llm_decision_final_action_2_3429",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARAUDER",
+                "units": [
+                  849
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 13716,
+              "sequence": 748,
+              "selected": [
+                61079553
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                3
+              ]
+            }
+          },
+          {
+            "iteration": 3452,
+            "trace_key": "llm_decision_final_action_3_3452",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  138
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 13808,
+              "sequence": 750,
+              "selected": [
+                61603841
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3476,
+            "trace_key": "llm_decision_final_action_5_3476",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARAUDER",
+                "units": [
+                  849
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 13904,
+              "sequence": 758,
+              "selected": [
+                61079553
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                3
+              ]
+            }
+          }
+        ],
+        "mule_skips": 0,
+        "timeouts": []
+      },
+      {
+        "step_index": 1,
+        "source": "valid_model_plan",
+        "console_line": 14594,
+        "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+        "final_plan": [
+          "marine",
+          "mule",
+          "siegetank",
+          "marauder",
+          "marine",
+          "marine"
+        ],
+        "air_offered": {},
+        "air_added_not_literal_in_raw": {},
+        "game_time": "10:20",
+        "prompt_sha256": "4c9d3305546a9fc7d4f48dacaee1b79b2f8c72070aff9bd7edecffb76673f93e",
+        "refresh_iteration": 3477,
+        "commander_plan_unchanged": true,
+        "production_command_receipts": [
+          {
+            "iteration": 3499,
+            "trace_key": "llm_decision_final_action_0_3499",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  138
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 13996,
+              "sequence": 762,
+              "selected": [
+                61603841
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3523,
+            "trace_key": "llm_decision_final_action_2_3523",
+            "executor_actions": [
+              {
+                "action": "FACTORYTRAIN_SIEGETANK",
+                "units": [
+                  507
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 14092,
+              "sequence": 771,
+              "selected": [
+                80478210
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                160,
+                1
+              ]
+            }
+          },
+          {
+            "iteration": 3568,
+            "trace_key": "llm_decision_final_action_3_3568",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARAUDER",
+                "units": [
+                  849
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 14272,
+              "sequence": 784,
+              "selected": [
+                61079553
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                3
+              ]
+            }
+          },
+          {
+            "iteration": 3591,
+            "trace_key": "llm_decision_final_action_4_3591",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  138
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 14364,
+              "sequence": 789,
+              "selected": [
+                61603841
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3614,
+            "trace_key": "llm_decision_final_action_5_3614",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  138
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 14456,
+              "sequence": 791,
+              "selected": [
+                61603841
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          }
+        ],
+        "mule_skips": 1,
+        "timeouts": []
+      },
+      {
+        "step_index": 2,
+        "source": "valid_model_plan",
+        "console_line": 15102,
+        "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- vikingfighter\n- marine",
+        "final_plan": [
+          "marine",
+          "mule",
+          "siegetank",
+          "marauder",
+          "vikingfighter",
+          "marine"
+        ],
+        "air_offered": {
+          "vikingfighter": 8
+        },
+        "air_added_not_literal_in_raw": {},
+        "game_time": "10:45",
+        "prompt_sha256": "efa59064284bc22ecbaa3be1e3f01d59e7dcfa1568a7891b0262ba0cb11c264f",
+        "refresh_iteration": 3615,
+        "commander_plan_unchanged": true,
+        "production_command_receipts": [
+          {
+            "iteration": 3659,
+            "trace_key": "llm_decision_final_action_0_3659",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  875
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 14636,
+              "sequence": 793,
+              "selected": [
+                66584577
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3727,
+            "trace_key": "llm_decision_final_action_2_3727",
+            "executor_actions": [
+              {
+                "action": "FACTORYTRAIN_SIEGETANK",
+                "units": [
+                  507
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 14908,
+              "sequence": 802,
+              "selected": [
+                80478210
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                160,
+                1
+              ]
+            }
+          },
+          {
+            "iteration": 3750,
+            "trace_key": "llm_decision_final_action_3_3750",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARAUDER",
+                "units": [
+                  849
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15000,
+              "sequence": 810,
+              "selected": [
+                61079553
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                3
+              ]
+            }
+          },
+          {
+            "iteration": 3972,
+            "trace_key": "llm_decision_final_action_5_3972",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  25
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15888,
+              "sequence": 823,
+              "selected": [
+                68681729
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          }
+        ],
+        "mule_skips": 1,
+        "timeouts": [
+          {
+            "iteration": 3971,
+            "key": "bo_skipped_4",
+            "detail": {
+              "reason": "timeout",
+              "action": "vikingfighter"
+            }
+          }
+        ]
+      },
+      {
+        "step_index": 3,
+        "source": "valid_model_plan",
+        "console_line": 16048,
+        "raw_answer": "- marine\n- mule\n- siegetank\n- marine\n- mule\n- siegetank",
+        "final_plan": [
+          "marine",
+          "mule",
+          "siegetank",
+          "marine",
+          "mule",
+          "siegetank"
+        ],
+        "air_offered": {
+          "vikingfighter": 7
+        },
+        "air_added_not_literal_in_raw": {},
+        "game_time": "11:49",
+        "prompt_sha256": "af21e9010a8b924215b778c397a950b651a84da3e07be696c92ba36a651bb599",
+        "refresh_iteration": 3973,
+        "commander_plan_unchanged": true,
+        "production_command_receipts": [
+          {
+            "iteration": 3973,
+            "trace_key": "llm_decision_final_action_0_3973",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  875
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15892,
+              "sequence": 824,
+              "selected": [
+                66584577
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3975,
+            "trace_key": "llm_decision_final_action_2_3975",
+            "executor_actions": [
+              {
+                "action": "FACTORYTRAIN_SIEGETANK",
+                "units": [
+                  453
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15900,
+              "sequence": 825,
+              "selected": [
+                67633155
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                160,
+                1
+              ]
+            }
+          },
+          {
+            "iteration": 3976,
+            "trace_key": "llm_decision_final_action_3_3976",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  394
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15904,
+              "sequence": 826,
+              "selected": [
+                87556097
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3978,
+            "trace_key": "llm_decision_final_action_5_3978",
+            "executor_actions": [
+              {
+                "action": "FACTORYTRAIN_SIEGETANK",
+                "units": [
+                  453
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15912,
+              "sequence": 827,
+              "selected": [
+                67633155
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                160,
+                1
+              ]
+            }
+          }
+        ],
+        "mule_skips": 2,
+        "timeouts": []
+      },
+      {
+        "step_index": 4,
+        "source": "valid_model_plan",
+        "console_line": 16153,
+        "raw_answer": "- marine\n- mule\n- siegetank\n- marine\n- mule\n- siegetank",
+        "final_plan": [
+          "marine",
+          "mule",
+          "siegetank",
+          "marine",
+          "mule",
+          "siegetank"
+        ],
+        "air_offered": {
+          "vikingfighter": 7
+        },
+        "air_added_not_literal_in_raw": {},
+        "game_time": "11:50",
+        "prompt_sha256": "2e99d1fdc2e810b0357d4a7f8185ef6287f44d4257807353cf702023d53fd672",
+        "refresh_iteration": 3979,
+        "commander_plan_unchanged": true,
+        "production_command_receipts": [
+          {
+            "iteration": 3979,
+            "trace_key": "llm_decision_final_action_0_3979",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  394
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15916,
+              "sequence": 828,
+              "selected": [
+                87556097
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3981,
+            "trace_key": "llm_decision_final_action_2_3981",
+            "executor_actions": [
+              {
+                "action": "FACTORYTRAIN_SIEGETANK",
+                "units": [
+                  453
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15924,
+              "sequence": 829,
+              "selected": [
+                67633155
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                160,
+                1
+              ]
+            }
+          },
+          {
+            "iteration": 3982,
+            "trace_key": "llm_decision_final_action_3_3982",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  202
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15928,
+              "sequence": 830,
+              "selected": [
+                76283905
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3984,
+            "trace_key": "llm_decision_final_action_5_3984",
+            "executor_actions": [
+              {
+                "action": "FACTORYTRAIN_SIEGETANK",
+                "units": [
+                  453
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15936,
+              "sequence": 831,
+              "selected": [
+                67633155
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                160,
+                1
+              ]
+            }
+          }
+        ],
+        "mule_skips": 2,
+        "timeouts": []
+      },
+      {
+        "step_index": 5,
+        "source": "valid_model_plan",
+        "console_line": 16280,
+        "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+        "final_plan": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "air_offered": {
+          "vikingfighter": 7
+        },
+        "air_added_not_literal_in_raw": {},
+        "game_time": "11:51",
+        "prompt_sha256": "9b69bf79d907baba9e305a407deda67bc8a772b29c0be21910677e7abf327eab",
+        "refresh_iteration": 3985,
+        "commander_plan_unchanged": true,
+        "production_command_receipts": [
+          {
+            "iteration": 3985,
+            "trace_key": "llm_decision_final_action_0_3985",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  81
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15940,
+              "sequence": 832,
+              "selected": [
+                81526785
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 3986,
+            "trace_key": "llm_decision_final_action_1_3986",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  81
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 15944,
+              "sequence": 833,
+              "selected": [
+                81526785
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 4097,
+            "trace_key": "llm_decision_final_action_2_4097",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  202
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 16388,
+              "sequence": 839,
+              "selected": [
+                76283905
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 4098,
+            "trace_key": "llm_decision_final_action_3_4098",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  81
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 16392,
+              "sequence": 840,
+              "selected": [
+                81526785
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 4099,
+            "trace_key": "llm_decision_final_action_4_4099",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  81
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 16396,
+              "sequence": 841,
+              "selected": [
+                81526785
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 4210,
+            "trace_key": "llm_decision_final_action_5_4210",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  202
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 16840,
+              "sequence": 846,
+              "selected": [
+                76283905
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          }
+        ],
+        "mule_skips": 0,
+        "timeouts": []
+      },
+      {
+        "step_index": 6,
+        "source": "valid_model_plan",
+        "console_line": 16963,
+        "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+        "final_plan": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "air_offered": {
+          "vikingfighter": 7
+        },
+        "air_added_not_literal_in_raw": {},
+        "game_time": "12:31",
+        "prompt_sha256": "38af7efcb105ad4421d20698043502601c2af42b1039415e0d27bc3a6a4bfb48",
+        "refresh_iteration": 4211,
+        "commander_plan_unchanged": true,
+        "production_command_receipts": [
+          {
+            "iteration": 4211,
+            "trace_key": "llm_decision_final_action_0_4211",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  81
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 16844,
+              "sequence": 847,
+              "selected": [
+                81526785
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          },
+          {
+            "iteration": 4212,
+            "trace_key": "llm_decision_final_action_1_4212",
+            "executor_actions": [
+              {
+                "action": "BARRACKSTRAIN_MARINE",
+                "units": [
+                  81
+                ]
+              }
+            ],
+            "replay_command": {
+              "loop": 16848,
+              "sequence": 848,
+              "selected": [
+                81526785
+              ],
+              "target": {
+                "None": null
+              },
+              "ability": [
+                159,
+                0
+              ]
+            }
+          }
+        ],
+        "mule_skips": 0,
+        "timeouts": [
+          {
+            "iteration": 4433,
+            "key": "bo_skipped_2",
+            "detail": {
+              "reason": "timeout",
+              "action": "marine"
+            }
+          }
+        ]
+      }
+    ],
+    "scope": "Planner production plans only; Commander guard, actual commands, completions and combat require separate evidence. Invalid-row output is rule-processed, not model attribution."
+  },
+  "valid_plan_production_commands": {
+    "BARRACKSTRAIN_MARINE": 17,
+    "FACTORYTRAIN_SIEGETANK": 6,
+    "BARRACKSTRAIN_MARAUDER": 2
+  },
+  "valid_plan_production_command_count": 25,
+  "first_valid_prompt": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:20 in the game, and we are playing as Terran with 25 minerals and 124 vespene gas, while our current supply is 53, of which 11 is allocated to the army, 41 to workers, and 137 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 39 SCV, 1 marauder, 1 marine, 3 mule, 1 siegetank. In terms of the structures, we have 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 3 barracks with reactor, 4 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 1 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 3 banshee, 1 battlecruiser, 6 marine, 3 viking. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 barracks, 1 factory, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 48\n- mule x 6\n- siegetank x 9\n- marauder x 2\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+  "first_planner_observation": "It is now 10:04 in the game, and we are playing as Terran with 45 minerals and 182 vespene gas, while our current supply is 59, of which 7 is allocated to the army, 50 to workers, and 123 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 48 SCV, 1 marauder, 2 marine, 2 mule. In terms of the structures, we have 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 3 barracks with reactor, 4 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 2 refinery, 20 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 3 banshee, 3 viking. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 barracks, 1 factory, 4 refinery, 2 starport, 2 starport with techlab, 5 supplydepot.\n",
+  "viking_block": {
+    "model_plan_step_index": 2,
+    "model_query_game_time": "10:45",
+    "executor_attempt_game_time": "11:09",
+    "wait_reason": "Facility under construction.",
+    "logged_blocked_attempts": 10,
+    "timeout_iteration": 3971,
+    "timeout_game_time": "11:49",
+    "starport_init_loop": 14000,
+    "starport_done_events": 0,
+    "starport_death_loop": 17267,
+    "viking_train_commands": 0,
+    "vikings_born": 0,
+    "interpretation": "The valid Viking selection reached Executor; unfinished Starport blocked production. Why construction never finished is not diagnosed by this result."
+  },
+  "gameplay": {
+    "build": 75689,
+    "game_seconds": 853.3928571428572,
+    "own_born_including_initial": {
+      "BeaconArmy": 1,
+      "BeaconDefend": 1,
+      "BeaconAttack": 1,
+      "BeaconHarass": 1,
+      "BeaconIdle": 1,
+      "BeaconAuto": 1,
+      "BeaconDetect": 1,
+      "BeaconScout": 1,
+      "BeaconClaim": 1,
+      "BeaconExpand": 1,
+      "BeaconRally": 1,
+      "BeaconCustom1": 1,
+      "BeaconCustom2": 1,
+      "BeaconCustom3": 1,
+      "BeaconCustom4": 1,
+      "CommandCenter": 1,
+      "SCV": 56,
+      "Marine": 117,
+      "MULE": 17,
+      "SiegeTank": 7,
+      "Marauder": 6
+    },
+    "own_construction_started": {
+      "SupplyDepot": 21,
+      "CommandCenter": 3,
+      "Barracks": 8,
+      "Bunker": 1,
+      "Refinery": 3,
+      "EngineeringBay": 1,
+      "BarracksTechLab": 4,
+      "BarracksReactor": 3,
+      "Factory": 3,
+      "MissileTurret": 2,
+      "FactoryTechLab": 3,
+      "Starport": 1
+    },
+    "own_construction_completed": {
+      "SupplyDepot": 20,
+      "Barracks": 8,
+      "CommandCenter": 3,
+      "Bunker": 1,
+      "Refinery": 3,
+      "EngineeringBay": 1,
+      "BarracksTechLab": 4,
+      "BarracksReactor": 3,
+      "Factory": 3,
+      "MissileTurret": 2,
+      "FactoryTechLab": 3
+    },
+    "own_deaths": {
+      "MULE": 17,
+      "SCV": 56,
+      "Marine": 117,
+      "SiegeTank": 7,
+      "Marauder": 6,
+      "MissileTurret": 2,
+      "OrbitalCommand": 2,
+      "Factory": 3,
+      "Barracks": 8,
+      "Bunker": 1,
+      "SupplyDepot": 21,
+      "TechLab": 7,
+      "CommandCenter": 2,
+      "Starport": 1,
+      "Reactor": 3,
+      "Refinery": 3,
+      "EngineeringBay": 1
+    },
+    "killers_by_victim_type": {
+      "MULE": {
+        "OrbitalCommand": 14,
+        "VikingAssault": 1,
+        "Banshee": 1,
+        "unrecorded": 1
+      },
+      "SCV": {
+        "Marine": 10,
+        "Banshee": 14,
+        "VikingAssault": 26,
+        "Battlecruiser": 6
+      },
+      "Marine": {
+        "Marine": 24,
+        "Banshee": 54,
+        "VikingAssault": 36,
+        "Battlecruiser": 1,
+        "AutoTurret": 2
+      },
+      "SiegeTank": {
+        "VikingAssault": 3,
+        "Banshee": 3,
+        "Battlecruiser": 1
+      },
+      "Marauder": {
+        "Marine": 2,
+        "Banshee": 1,
+        "VikingAssault": 1,
+        "Battlecruiser": 2
+      },
+      "MissileTurret": {
+        "VikingAssault": 1,
+        "unrecorded": 1
+      },
+      "OrbitalCommand": {
+        "Battlecruiser": 1,
+        "Marine": 1
+      },
+      "Factory": {
+        "VikingAssault": 2,
+        "Battlecruiser": 1
+      },
+      "Barracks": {
+        "Marine": 3,
+        "VikingAssault": 2,
+        "Battlecruiser": 2,
+        "Barracks": 1
+      },
+      "Bunker": {
+        "Battlecruiser": 1
+      },
+      "SupplyDepot": {
+        "Marine": 2,
+        "Battlecruiser": 7,
+        "AutoTurret": 1,
+        "VikingAssault": 9,
+        "Banshee": 2
+      },
+      "TechLab": {
+        "AutoTurret": 1,
+        "VikingAssault": 2,
+        "Battlecruiser": 2,
+        "Banshee": 2
+      },
+      "CommandCenter": {
+        "VikingAssault": 1,
+        "Battlecruiser": 1
+      },
+      "Starport": {
+        "Marine": 1
+      },
+      "Reactor": {
+        "VikingAssault": 2,
+        "Banshee": 1
+      },
+      "Refinery": {
+        "Banshee": 1,
+        "VikingAssault": 1,
+        "Battlecruiser": 1
+      },
+      "EngineeringBay": {
+        "Battlecruiser": 1
+      }
+    },
+    "upgrades": [
+      "SprayTerran",
+      "SprayTerran",
+      "SprayTerran",
+      "SprayTerran",
+      "SprayTerran",
+      "SprayTerran",
+      "SprayTerran",
+      "SprayTerran"
+    ],
+    "final_stats": {
+      "game_seconds": 853.3928571428572,
+      "m_scoreValueMineralsCurrent": 895,
+      "m_scoreValueVespeneCurrent": 638,
+      "m_scoreValueMineralsCollectionRate": 0,
+      "m_scoreValueVespeneCollectionRate": 0,
+      "m_scoreValueWorkersActiveCount": 0,
+      "m_scoreValueMineralsUsedInProgressArmy": 0,
+      "m_scoreValueMineralsUsedInProgressEconomy": 0,
+      "m_scoreValueMineralsUsedInProgressTechnology": 0,
+      "m_scoreValueVespeneUsedInProgressArmy": 0,
+      "m_scoreValueVespeneUsedInProgressEconomy": 0,
+      "m_scoreValueVespeneUsedInProgressTechnology": 0,
+      "m_scoreValueMineralsUsedCurrentArmy": 0,
+      "m_scoreValueMineralsUsedCurrentEconomy": 0,
+      "m_scoreValueMineralsUsedCurrentTechnology": 0,
+      "m_scoreValueVespeneUsedCurrentArmy": 0,
+      "m_scoreValueVespeneUsedCurrentEconomy": 0,
+      "m_scoreValueVespeneUsedCurrentTechnology": 0,
+      "m_scoreValueMineralsLostArmy": 7500,
+      "m_scoreValueMineralsLostEconomy": 7025,
+      "m_scoreValueMineralsLostTechnology": 2725,
+      "m_scoreValueVespeneLostArmy": 1025,
+      "m_scoreValueVespeneLostEconomy": 0,
+      "m_scoreValueVespeneLostTechnology": 725,
+      "m_scoreValueMineralsKilledArmy": 2900,
+      "m_scoreValueMineralsKilledEconomy": 300,
+      "m_scoreValueMineralsKilledTechnology": 0,
+      "m_scoreValueVespeneKilledArmy": 875,
+      "m_scoreValueVespeneKilledEconomy": 0,
+      "m_scoreValueVespeneKilledTechnology": 0,
+      "m_scoreValueFoodUsed": 0,
+      "m_scoreValueFoodMade": 0,
+      "m_scoreValueMineralsUsedActiveForces": 0,
+      "m_scoreValueVespeneUsedActiveForces": 0,
+      "m_scoreValueMineralsFriendlyFireArmy": 0,
+      "m_scoreValueMineralsFriendlyFireEconomy": 0,
+      "m_scoreValueMineralsFriendlyFireTechnology": 0,
+      "m_scoreValueVespeneFriendlyFireArmy": 0,
+      "m_scoreValueVespeneFriendlyFireEconomy": 0,
+      "m_scoreValueVespeneFriendlyFireTechnology": 0
+    }
+  },
+  "wave_audit": {
+    "waves": 9,
+    "reached_attacking": 7,
+    "active_wave_garrison_conflicts": 0
+  },
+  "artifact_sha256": {
+    "manifest.json": "91d3a74e591d5ceaf365667064d1cf151688f1c9a82f4a5e3fd2fafacab623ea",
+    "effective_config.json": "ec11829a6aa4a5f6e6c4496e0448309a96349aa80f7ed215fb93a8bf81db13a5",
+    "result.json": "e8122acb9a3844532b107bc59d592729dc457fc4836a333ee69818834a5cb7a3",
+    ".done": "e8122acb9a3844532b107bc59d592729dc457fc4836a333ee69818834a5cb7a3",
+    "evaluation_seeds.jsonl": "65a31ecceb8dd685c2342a095dc325fd2b28c949d2746f57eeb591ca17802c9d",
+    "prompt_response.jsonl": "f1b0d61113c0bb9839987bb9cb2bcbe45f5a1d17f3362924af48901bda1ad125",
+    "episode_outcomes.jsonl": "693e81fe91a6693e2fe56ae36125339496ec324ef03c6fa1ca39df9872577d12",
+    "console.log": "459a86023f45805fda36fdb849ea053cfe740c74f1413f83f47f301a870414a2",
+    "candidate_orchestration/.done": "1ca4a13146b2891c0e462123ac0cb848f92e6221f18b870a1b78c232d1956c35",
+    "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_07-01-04/trace.json": "e2b4d901fce0be3ab3dbbdfc612176df6be1e77d82d7195ec8dde00d26c975a2",
+    "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_07-01-04/replay.SC2Replay": "393e89103eb22070bff0a4a384036674190f7b4d8e7f9d17160ccb5622cfa1f2"
+  },
+  "analysis_tools": [
+    "experiments/records/20260908-planner-air-options-v1/attribute_plans.py",
+    "experiments/records/20260908-garrison-wave-ownership-v1/audit_wave_orders.py",
+    "experiments/records/20260906-integrated-fixes-v1/audit_r4_reactor_pair.py:replay_summary"
+  ],
+  "analysis_limitations": [
+    "Command receipts matched trace iterations to same-frame replay commands, including selected tags and raw ability ids; they are not one-to-one unit-birth attribution.",
+    "Optional sc2reader.load_replay failed on missing cache_handles; no runtime failed. Existing s2protocol decoder completed; no package changes.",
+    "Different seed from r2, so win/loss difference is not evidence that code changed or a causal A/B."
+  ],
+  "postcheck": {
+    "time": "2026-09-08T07:09:45+00:00",
+    "evaluation_tmux_exited": true,
+    "orchestration_exit_code": 0,
+    "frozen_runtime_clean": true,
+    "our_gpu_process_gone": true,
+    "gpu1_reused_by_other_task": true
+  },
+  "verdict": {
+    "planner_consumed_and_valid_plans_preserved": "passed in this game",
+    "model_plan_to_SC2_commands": "passed for 25 production commands from valid plans",
+    "complete_execution_of_every_valid_action": "not passed: six MULE skips, Viking and Marine timeout, final three Marine entries without submitted commands (BO index 3 started but unfinished; indices 4 and 5 never started)",
+    "natural_evaluation_finish": "passed",
+    "level6_game_result": "one natural defeat",
+    "RL_or_learning": "not tested"
+  }
+}

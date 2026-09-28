@@ -1,0 +1,37 @@
+--- a/agent_system/environments/env_package/sc2_online_restored/envSC2.py
++++ b/agent_system/environments/env_package/sc2_online_restored/envSC2.py
+@@ -588,6 +588,9 @@
+         self.env_num = env_num
+         self.num_processes = env_num * group_n
+         self.mode = mode
++        self.seed = seed
++        self.reset_index = 0
++        self.validation_rng = np.random.RandomState(seed)
+         np.random.seed(seed)
+ 
+         print(f"Env num and group n {env_num} {group_n}")
+@@ -629,10 +632,21 @@
+         # Generate seeds
+         if self.is_train:
+             seeds = np.random.randint(0, 2**16 - 1, size=self.env_num)
++            seeds = np.repeat(seeds, self.group_n).tolist()
+         else:
+-            seeds = np.random.randint(2**16, 2**32 - 1, size=self.env_num)
+-
+-        seeds = np.repeat(seeds, self.group_n).tolist()
++            seeds = self.validation_rng.randint(2**16, 2**32 - 1, size=self.num_processes).tolist()
++            seed_record = {
++                "base_seed": self.seed,
++                "reset_index": self.reset_index,
++                "seeds": seeds,
++            }
++            print(f"SC2 validation seed record: {seed_record}", flush=True)
++            seed_log_path = os.getenv("SC2_EVAL_SEEDS_LOG_PATH")
++            if seed_log_path:
++                os.makedirs(os.path.dirname(seed_log_path), exist_ok=True)
++                with open(seed_log_path, "a", encoding="utf-8") as seed_log:
++                    seed_log.write(json.dumps(seed_record, sort_keys=True) + "\n")
++            self.reset_index += 1
+ 
+         futures = [worker.reset.remote(seed) for worker, seed in zip(self.workers, seeds)]
+         results = ray.get(futures)

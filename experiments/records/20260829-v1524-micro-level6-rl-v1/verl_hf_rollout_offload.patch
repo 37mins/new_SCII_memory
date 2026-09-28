@@ -1,0 +1,21 @@
+--- a/verl/workers/fsdp_workers.py
++++ b/verl/workers/fsdp_workers.py
+@@ -651,6 +651,8 @@
+         prompts = prompts.to(get_torch_device().current_device())
+ 
+         assert self._is_rollout
++        if self._is_offload_param:
++            load_fsdp_model_to_gpu(self.actor_module_fsdp)
+ 
+         meta_info = {
+             "eos_token_id": self.generation_config.eos_token_id if self.generation_config is not None else self.tokenizer.eos_token_id,
+@@ -671,6 +673,9 @@
+ 
+         # clear kv cache
+         get_torch_device().empty_cache()
++        if self._is_offload_param:
++            offload_fsdp_model_to_cpu(self.actor_module_fsdp)
++            log_gpu_memory_usage("After offload actor model during generate_sequences", logger=logger)
+         return output
+ 
+ 

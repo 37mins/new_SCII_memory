@@ -1,0 +1,214 @@
+{
+  "status": "completed",
+  "source_commit": "946ebc2235e58fec5e4a2bc7747424c25f5a49ca",
+  "sole_variable": "shadow FP32 output projection observation, no forward mutation",
+  "worker_config_equal_all_ranks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "all_original_probability_arrays_unchanged": true,
+  "input_hashes_equal": true,
+  "cpu_tests_passed": 91,
+  "cpu_tests_seconds": 8.266,
+  "production_defaults_changed": false,
+  "runs": [
+    {
+      "manifest": {
+        "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-head-control-opt0-r24",
+        "mode": "head-control",
+        "status": "preflight",
+        "started_at": "2026-09-06T12:35:17.534166+00:00",
+        "source_commit": "946ebc2235e58fec5e4a2bc7747424c25f5a49ca",
+        "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+        "gpu_selection": "0,1,2,3",
+        "world_size": 4,
+        "max_optimizer_updates": 0,
+        "max_gpu_seconds": 1800,
+        "param_dtype": "fp32",
+        "fp32_normalization": true,
+        "recompute_start": false,
+        "hf_full_precision": false,
+        "observe_fp32_head": false,
+        "user_authorization": "2026-09-06: approved temperature precision A/B and bounded drift diagnosis",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_path": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "project_sft": false,
+        "resumed_checkpoint": false,
+        "sc2_started": false
+      },
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-00.jsonl": "completed",
+          "rank-01.jsonl": "completed",
+          "rank-02.jsonl": "completed",
+          "rank-03.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T12:36:13.664083+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "stats": {
+        "actor_vs_old": {
+          "tokens": 135,
+          "abs_mean": 0.06120718469481171,
+          "abs_max": 2.9016265869140625,
+          "finite": true
+        },
+        "normalization": {
+          "tokens": 135,
+          "abs_mean": 1.2790841236875605e-7,
+          "abs_max": 0.0000028043286874890327,
+          "finite": true
+        },
+        "parameter_precision_path": {
+          "tokens": 135,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "finite": true
+        },
+        "cached_vs_full": {
+          "tokens": 135,
+          "abs_mean": 0.0076416924265371505,
+          "abs_max": 0.8087818622589111,
+          "finite": true
+        },
+        "cached_vs_recorded_generate": {
+          "tokens": 135,
+          "abs_mean": 0.012977043508995381,
+          "abs_max": 1.073228359222412,
+          "finite": true
+        },
+        "cached_vs_actor": {
+          "tokens": 135,
+          "abs_mean": 0.007641704646004899,
+          "abs_max": 0.8087832927703857,
+          "finite": true
+        }
+      },
+      "input_sha256": [
+        "1a902ff0261290a19ba0d3fe975856a1e464a2e1587652df89deffe63bd99a85",
+        "3a29f838da6a54afd5aea0a9d20e8a286a79c852dbedabc0acb34db926ce3152",
+        "227de0dbf65677add116e95d31c1248762d1bb912b3274e428df476219ded552",
+        "36ba1c1fceedc6dc6d6aa60bc2e7a8bbac9cd3644bd2ce3537e563a5132928e9"
+      ],
+      "artifact_sha256": {
+        "rank-00.jsonl": "e635a92826ef5a7e292fbc802ed8fc8e3cf670fa25603b4cbd187b4c46dfbdc4",
+        "rank-01.jsonl": "600f4e69e7c198cbcbd0183fd9438ea38ad287d7a6d3e2d67a26b5eeb546da88",
+        "rank-02.jsonl": "45d6b56962b48dd91308dbefda337dc30dbd37e95dcb4de02288b0ef7ab8a071",
+        "rank-03.jsonl": "e757de4ede51c2213cf32015628ddc6808dd247353d35899eeaffd6a11460003"
+      }
+    },
+    {
+      "manifest": {
+        "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-head-observe-opt0-r25",
+        "mode": "head-observe",
+        "status": "preflight",
+        "started_at": "2026-09-06T12:35:17.548204+00:00",
+        "source_commit": "946ebc2235e58fec5e4a2bc7747424c25f5a49ca",
+        "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+        "gpu_selection": "4,5,6,7",
+        "world_size": 4,
+        "max_optimizer_updates": 0,
+        "max_gpu_seconds": 1800,
+        "param_dtype": "fp32",
+        "fp32_normalization": true,
+        "recompute_start": false,
+        "hf_full_precision": false,
+        "observe_fp32_head": true,
+        "user_authorization": "2026-09-06: approved temperature precision A/B and bounded drift diagnosis",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_path": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "project_sft": false,
+        "resumed_checkpoint": false,
+        "sc2_started": false
+      },
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-02.jsonl": "completed",
+          "rank-00.jsonl": "completed",
+          "rank-03.jsonl": "completed",
+          "rank-01.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T12:36:11.351045+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "stats": {
+        "actor_vs_old": {
+          "tokens": 135,
+          "abs_mean": 0.06120718469481171,
+          "abs_max": 2.9016265869140625,
+          "finite": true
+        },
+        "normalization": {
+          "tokens": 135,
+          "abs_mean": 1.2790841236875605e-7,
+          "abs_max": 0.0000028043286874890327,
+          "finite": true
+        },
+        "parameter_precision_path": {
+          "tokens": 135,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "finite": true
+        },
+        "cached_vs_full": {
+          "tokens": 135,
+          "abs_mean": 0.0076416924265371505,
+          "abs_max": 0.8087818622589111,
+          "finite": true
+        },
+        "cached_vs_recorded_generate": {
+          "tokens": 135,
+          "abs_mean": 0.012977043508995381,
+          "abs_max": 1.073228359222412,
+          "finite": true
+        },
+        "cached_vs_actor": {
+          "tokens": 135,
+          "abs_mean": 0.007641704646004899,
+          "abs_max": 0.8087832927703857,
+          "finite": true
+        },
+        "cached_vs_full_fp32_head": {
+          "tokens": 135,
+          "abs_mean": 0.004974280238043552,
+          "abs_max": 0.5053783059120178,
+          "finite": true
+        },
+        "fp32_head_effect_full": {
+          "tokens": 135,
+          "abs_mean": 0.00044848298069389875,
+          "abs_max": 0.018941938877105713,
+          "finite": true
+        },
+        "fp32_head_effect_cached": {
+          "tokens": 135,
+          "abs_mean": 0.0025495641553320595,
+          "abs_max": 0.29634833335876465,
+          "finite": true
+        }
+      },
+      "input_sha256": [
+        "1a902ff0261290a19ba0d3fe975856a1e464a2e1587652df89deffe63bd99a85",
+        "3a29f838da6a54afd5aea0a9d20e8a286a79c852dbedabc0acb34db926ce3152",
+        "227de0dbf65677add116e95d31c1248762d1bb912b3274e428df476219ded552",
+        "36ba1c1fceedc6dc6d6aa60bc2e7a8bbac9cd3644bd2ce3537e563a5132928e9"
+      ],
+      "artifact_sha256": {
+        "rank-00.jsonl": "87b0b8ae8c8e1e185950c823cce9a0324b13eba656d95c99a7b874fb196f7e41",
+        "rank-01.jsonl": "05c18acaedcdf4dc748c7cf74597a5ccea555e7a7a8a270f119b41065ebf86c3",
+        "rank-02.jsonl": "11b8621e05541030225744cdb945414102f4b13f819b62efdb0e022bfbcd3a23",
+        "rank-03.jsonl": "da208454481b3942bf7d6a9496cbd9f28c66db82e96490cc2209d2346d896f82"
+      }
+    }
+  ]
+}

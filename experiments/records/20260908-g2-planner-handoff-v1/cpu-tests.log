@@ -1,0 +1,131 @@
+test_disabled_candidate_still_executes_fixed_bo_138 (test_g2_planner_handoff.HandoffCallbackTest) ... ok
+test_existing_timeout_skip_boundary_is_unchanged (test_g2_planner_handoff.HandoffCallbackTest) ... ok
+test_handoff_only_after_last_prefix_bo_and_later_queues_are_not_cut (test_g2_planner_handoff.HandoffCallbackTest) ... ok
+test_no_handoff_while_current_command_is_waiting (test_g2_planner_handoff.HandoffCallbackTest) ... ok
+test_candidate_preserves_exact_prefix_and_records_withheld_tail (test_g2_planner_handoff.InitialQueueTest) ... ok
+test_default_and_explicit_zero_preserve_all_237_entries (test_g2_planner_handoff.InitialQueueTest) ... ok
+test_same_input_different_valid_answers_change_executor_queue (test_g2_planner_handoff.InitialQueueTest) ... ok
+test_stage_quota_source_is_existing_strategist_not_generated_tail (test_g2_planner_handoff.InitialQueueTest) ... ok
+test_unsupported_limits_and_different_bo_are_rejected (test_g2_planner_handoff.InitialQueueTest) ... ok
+test_consecutive_empty_plans_return_once_per_frame (test_empty_bo_frame.EmptyBoFrameTest) ... ok
+test_empty_plan_returns_through_on_step_without_inventing_actions (test_empty_bo_frame.EmptyBoFrameTest) ... ok
+test_empty_then_marine_submits_on_the_next_frame (test_empty_bo_frame.EmptyBoFrameTest) ... ok
+test_exhausted_queue_refreshes_and_executes_in_same_frame (test_empty_bo_frame.EmptyBoFrameTest) ... ok
+test_existing_nonempty_queue_executes_without_refresh (test_empty_bo_frame.EmptyBoFrameTest) ... ok
+test_planner_exception_propagates_without_retry (test_empty_bo_frame.EmptyBoFrameTest) ... ok
+test_attack_remains_after_build_actions (test_valid_bo_passthrough.ValidBoPassthroughTest) ... ok
+test_commander_opening_guard_is_not_silently_removed (test_valid_bo_passthrough.ValidBoPassthroughTest) ... ok
+test_invalid_answers_keep_original_fallback (test_valid_bo_passthrough.ValidBoPassthroughTest) ... ok
+test_numbered_mode_is_unchanged (test_valid_bo_passthrough.ValidBoPassthroughTest) ... ok
+test_six_marines_are_not_replaced_with_tanks (test_valid_bo_passthrough.ValidBoPassthroughTest) ... ok
+test_valid_build_order_and_counts_preserved (test_valid_bo_passthrough.ValidBoPassthroughTest) ... ok
+test_valid_short_answer_is_not_padded (test_valid_bo_passthrough.ValidBoPassthroughTest) ... ok
+test_checkpoint_evaluation_records_actual_eight_card_controls (test_system_release.LauncherTest) ... ok
+test_eight_gpu_long_budget_preserves_global_batch_and_rollouts (test_system_release.LauncherTest) ... ok
+test_evaluation_keeps_system_but_disables_updates (test_system_release.LauncherTest) ... ok
+test_explicit_stage8_overrides_keep_96_step_goal (test_system_release.LauncherTest) ... ok
+test_four_gpu_override_preserves_rollout_budget (test_system_release.LauncherTest) ... ok
+test_four_update_probe_saves_each_step_and_preserves_training_controls (test_system_release.LauncherTest) ... ok
+test_g2_handoff_is_the_only_nonpath_ab_override_and_reaches_ray (test_system_release.LauncherTest) ... ok
+test_integrated_defaults_select_instruct_and_disable_call_shaping (test_system_release.LauncherTest) ... ok
+test_integrated_spb_default_disables_only_swa_dropout (test_system_release.LauncherTest) ... ok
+test_invalid_bo_profile_stops_before_creation (test_system_release.LauncherTest) ... ok
+test_natural_gate_requires_an_explicit_ray_directory (test_system_release.LauncherTest) ... ok
+test_qwen_spb_share_all_nonmodel_training_controls (test_system_release.LauncherTest) ... ok
+test_refuses_existing_run_without_overwriting (test_system_release.LauncherTest) ... ok
+test_rush_is_explicit_and_does_not_select_seed2 (test_system_release.LauncherTest) ... ok
+test_spb_dropout_override_only_changes_swa_config (test_system_release.LauncherTest) ... ok
+test_step_shaping_is_the_only_nonpath_ab_override (test_system_release.LauncherTest) ... ok
+test_two_gpu_kl_probe_preserves_global_training_controls (test_system_release.LauncherTest) ... ok
+test_unknown_shaping_mode_is_rejected_before_run_creation (test_system_release.LauncherTest) ... ok
+test_alias_and_count_rejection_agrees_with_strict_parser (test_r6_planner_interface.PlannerInterfaceTest) ... ok
+test_generated_one_shot_matches_current_candidates (test_r6_planner_interface.PlannerInterfaceTest) ... ok
+test_invalid_suffix_and_overlong_answer_can_keep_valid_prefix (test_r6_planner_interface.PlannerInterfaceTest) ... ok
+test_log_truncation_does_not_truncate_forwarded_query (test_r6_planner_interface.PlannerInterfaceTest) ... ok
+test_training_records_the_full_query (test_r6_planner_interface.PlannerInterfaceTest) ... ok
+test_default_off_and_other_profiles_are_unchanged (test_planner_air_options.PlannerAirOptionsTest) ... ok
+test_existing_observed_starport_is_reconciled_without_using_enemy (test_planner_air_options.PlannerAirOptionsTest) ... ok
+test_invalid_answer_can_still_trigger_rule_generated_air_actions (test_planner_air_options.PlannerAirOptionsTest) ... ok
+test_only_terminal_quota_is_extended (test_planner_air_options.PlannerAirOptionsTest) ... ok
+test_prompt_template_and_example_unchanged_for_same_observation (test_planner_air_options.PlannerAirOptionsTest) ... ok
+test_starport_can_be_selected_without_adding_production (test_planner_air_options.PlannerAirOptionsTest) ... ok
+test_valid_all_marine_is_not_overridden (test_planner_air_options.PlannerAirOptionsTest) ... ok
+test_viking_waits_for_existing_prerequisite_filter (test_planner_air_options.PlannerAirOptionsTest) ... ok
+test_alignment_mismatch_fails (test_air_plan_attribution.AttributionTest) ... ok
+test_invalid_rule_air_is_not_model_selection (test_air_plan_attribution.AttributionTest) ... ok
+test_existing_validator_checks_whole_answer_before_truncation (test_r6_format_reward.FormatRewardTest) ... ok
+test_manager_transports_existing_validation_without_altering_text (test_r6_format_reward.FormatRewardTest) ... ok
+test_next_consumed_answer_replaces_previous_validation (test_r6_format_reward.FormatRewardTest) ... ok
+test_raw_invalid_answer_does_not_gain_reward_after_rule_repair (test_r6_format_reward.FormatRewardTest) ... ok
+test_socket_forwards_validation_and_identical_action_text (test_r6_format_reward.FormatRewardTest) ... ok
+test_unvalidated_direct_text_cannot_earn_a_format_bonus (test_r6_format_reward.FormatRewardTest) ... ok
+test_game_end_reports_only_real_sc2_results (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_manager_records_cutoff_once_and_refuses_truncated_training (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_only_real_results_have_outcome_rewards (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_planner_never_turns_call_count_into_done (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_real_result_wins_at_interaction_boundary (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_run_summary_counts_only_natural_results (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_sc2_step_uses_gymnasium_five_tuple (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_zero_disables_the_optional_interaction_limit (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_metadata_only_result_passes_actual_dataproto_consistency_check (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_mixed_games_count_once_not_once_per_answer (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_no_decision_victory_and_defeat_finish_without_policy_tensors (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_no_games_is_not_a_successful_evaluation (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_non_sc2_and_training_validation_do_not_gain_an_empty_batch_bypass (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+ok
+test_normal_single_game_keeps_whole_reward_and_real_answers (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_recorded_r1_outcome_closes_new_cpu_fixture_not_original_failed_run (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_reward_sources_remain_separate (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_training_empty_policy_still_fails_before_collation (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+ok
+test_training_mixed_batch_preserves_only_real_credit (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... SC2 policy credit: [{"traj_uid": "empty", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}, {"traj_uid": "game", "environment_reward": -49.0, "environment_interactions": 2, "policy_decisions": 1, "excluded_terminal_rows": 1}]
+ok
+test_unconsumed_nonterminal_still_fails_in_evaluation (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_unequal_validation_batches_use_game_weighting (test_sc2_evaluation_without_policy.EvaluationWithoutPolicyTest) ... ok
+test_all_waves_and_unit_types_are_excluded (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_attacking_wave_members_are_also_protected_when_idle (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_idle_viking_at_recorded_rally_is_not_pulled_back (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_no_wave_keeps_original_garrison_destination (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_release_by_member_or_wave_removal_restores_garrison (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_repeated_checks_do_not_create_new_orders_for_members (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_scout_handling_is_not_changed_by_this_fix (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_threat_and_existing_worker_idle_radius_filters_remain (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_addon_and_other_training_commands_keep_original_selection (test_barracks_production_slots.BarracksSlotsTest) ... ok
+test_all_busy_waits_without_finishing_then_uses_new_observation (test_barracks_production_slots.BarracksSlotsTest) ... ok
+test_engine_ability_filter_is_not_bypassed (test_barracks_production_slots.BarracksSlotsTest) ... ok
+test_nonlocal_executor_candidates_are_unchanged (test_barracks_production_slots.BarracksSlotsTest) ... ok
+test_reactor_uses_second_slot_but_not_waiting_queue (test_barracks_production_slots.BarracksSlotsTest) ... ok
+test_recorded_busy_barracks_are_not_selected_over_free_slots (test_barracks_production_slots.BarracksSlotsTest) ... ok
+test_resource_rejection_is_not_bypassed (test_barracks_production_slots.BarracksSlotsTest) ... ok
+test_sequential_orders_spread_and_never_cancel_existing_orders (test_barracks_production_slots.BarracksSlotsTest) ... ok
+test_all_three_production_buildings_including_queued_orders (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+test_engine_rejection_is_not_bypassed (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+test_existing_factory_protection_is_unchanged (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+test_explicit_opt_out_is_unchanged (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+test_no_pending_production_keeps_choice_and_random_state (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+test_no_stale_reservation_after_order_disappears (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+test_other_abilities_and_unit_tag_targets_do_not_reserve (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+test_recorded_factory_order_blocks_depot_before_factory_appears (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+test_spiral_search_filters_conflict_and_still_finds_alternative (test_pending_addon_placement.PendingAddonPlacementTest) ... ok
+
+----------------------------------------------------------------------
+Ran 106 tests in 4.146s
+
+OK
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end
+test_gen_batch meta info: {'eos_token_id': 0, 'pad_token_id': 0, 'recompute_log_prob': False, 'do_sample': False, 'validate': True}
+validation generation end

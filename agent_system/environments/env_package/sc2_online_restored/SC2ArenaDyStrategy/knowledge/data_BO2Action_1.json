@@ -1,0 +1,686 @@
+[
+    {
+      "action_name": "ARMORYRESEARCH_TERRANSHIPPLATINGLEVEL1",
+      "description": "Increase the armor of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser).",
+      "bo_name": "Ship Plating Level 1",
+      "bo_intent": "Research Air Armor"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANSHIPPLATINGLEVEL2",
+      "description": "Increase the armor of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser).",
+      "bo_name": "Ship Plating Level 2",
+      "bo_intent": "Research Air Armor"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANSHIPPLATINGLEVEL3",
+      "description": "Increase the armor of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser).",
+      "bo_name": "Ship Plating Level 3",
+      "bo_intent": "Research Air Armor"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANSHIPWEAPONSLEVEL1",
+      "description": "Increase the damage of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser).",
+      "bo_name": "Ship Weapons Level 1",
+      "bo_intent": "Research Air Weapons"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANSHIPWEAPONSLEVEL2",
+      "description": "Increase the damage of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser).",
+      "bo_name": "Ship Weapons Level 2",
+      "bo_intent": "Research Air Weapons"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANSHIPWEAPONSLEVEL3",
+      "description": "Increase the damage of Terran Air units (Viking, Liberator, Banshee, and Battlecruiser).",
+      "bo_name": "Ship Weapons Level 3",
+      "bo_intent": "Research Air Weapons"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEPLATINGLEVEL1",
+      "description": "Increase the armor of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor).",
+      "bo_name": "Vehicle Plating Level 1",
+      "bo_intent": "Research Vehicle Armor"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEPLATINGLEVEL2",
+      "description": "Increase the armor of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor).",
+      "bo_name": "Vehicle Plating Level 2",
+      "bo_intent": "Research Vehicle Armor"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEPLATINGLEVEL3",
+      "description": "Increase the armor of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor).",
+      "bo_name": "Vehicle Plating Level 3",
+      "bo_intent": "Research Vehicle Armor"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEWEAPONSLEVEL1",
+      "description": "Increase the damage of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor).",
+      "bo_name": "Vehicle Weapons Level 1",
+      "bo_intent": "Research Vehicle Weapons"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEWEAPONSLEVEL2",
+      "description": "Increase the damage of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor).",
+      "bo_name": "Vehicle Weapons Level 2",
+      "bo_intent": "Research Vehicle Weapons"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEWEAPONSLEVEL3",
+      "description": "Increase the damage of Terran Factory units (Hellion, Siege Tank, Cyclone, Hellbat, and Thor).",
+      "bo_name": "Vehicle Weapons Level 3",
+      "bo_intent": "Research Vehicle Weapons"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL1",
+      "description": "Increases the armor of Terran Factory and Starport units.",
+      "bo_name": "Vehicle and Ship Plating Level 1",
+      "bo_intent": "Research Mech/Air Armor"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL2",
+      "description": "Increases the armor of Terran Factory and Starport units.",
+      "bo_name": "Vehicle and Ship Plating Level 2",
+      "bo_intent": "Research Mech/Air Armor"
+    },
+    {
+      "action_name": "ARMORYRESEARCH_TERRANVEHICLEANDSHIPPLATINGLEVEL3",
+      "description": "Increases the armor of Terran Factory and Starport units.",
+      "bo_name": "Vehicle and Ship Plating Level 3",
+      "bo_intent": "Research Mech/Air Armor"
+    },
+    {
+      "action_name": "BARRACKSTECHLABRESEARCH_STIMPACK",
+      "description": "Every Marine and Marauder gain the Stimpack ability.",
+      "bo_name": "Stimpack",
+      "bo_intent": "Research Stimpack"
+    },
+    {
+      "action_name": "BARRACKSTRAIN_GHOST",
+      "description": "Train a Ghost, a stealthy special forces unit that can snipe high-value targets, deploy tactical nukes, and use cloaking for strategic advantage.",
+      "bo_name": "Ghost",
+      "bo_intent": "Train Ghost"
+    },
+    {
+      "action_name": "BARRACKSTRAIN_MARAUDER",
+      "description": "Train a Marauder, a heavily armored infantry unit that excels against armored targets with its concussive grenades, complementing Marine forces.",
+      "bo_name": "Marauder",
+      "bo_intent": "Train Marauder"
+    },
+    {
+      "action_name": "BARRACKSTRAIN_MARINE",
+      "description": "Train a Marine, a versatile, low-cost infantry unit that provides reliable ranged damage and forms the backbone of most Terran armies.",
+      "bo_name": "Marine",
+      "bo_intent": "Train Marine"
+    },
+    {
+      "action_name": "BARRACKSTRAIN_REAPER",
+      "description": "Train a Reaper, a fast, mobile infantry unit designed for early-game harassment and scouting, capable of jumping cliffs with its jetpack.",
+      "bo_name": "Reaper",
+      "bo_intent": "Train Reaper"
+    },
+    {
+      "action_name": "ATTACK_BATTLECRUISER",
+      "description": "Command Battlecruiser to attack.",
+      "bo_name": "Battlecruiser",
+      "bo_intent": "Attack"
+    },
+    {
+      "action_name": "BATTLECRUISERATTACK_ATTACKTOWARDS",
+      "description": "Conduct mobile attacks on the target.",
+      "bo_name": "Battlecruiser Attack Towards",
+      "bo_intent": "Attack"
+    },
+    {
+      "action_name": "BATTLECRUISERATTACK_ATTACKBARRAGE",
+      "description": "Launch artillery attacks on the target.",
+      "bo_name": "Battlecruiser Attack Barrage",
+      "bo_intent": "Attack"
+    },
+    {
+      "action_name": "MOVE_BATTLECRUISER",
+      "description": "Command Battlecruiser to move.",
+      "bo_name": "Battlecruiser",
+      "bo_intent": "Move"
+    },
+    {
+      "action_name": "BEHAVIOR_CLOAKON_BANSHEE",
+      "description": "The Benshee becomes invisible until it runs out of energy or the player cancels Cloak.",
+      "bo_name": "Banshee Cloak",
+      "bo_intent": "Activate Cloak"
+    },
+    {
+      "action_name": "BEHAVIOR_CLOAKON_GHOST",
+      "description": "The Ghost becomes invisible until it runs out of energy or the player cancels Cloak.",
+      "bo_name": "Ghost Cloak",
+      "bo_intent": "Activate Cloak"
+    },
+    {
+      "action_name": "BEHAVIOR_HOLDFIREON_GHOST",
+      "description": "Do not actively attack the enemy.",
+      "bo_name": "Ghost Hold Fire",
+      "bo_intent": "Toggle Hold Fire"
+    },
+    {
+      "action_name": "BUILDAUTOTURRET_AUTOTURRET",
+      "description": "Build an Auto-Turret, a temporary and immobile defense structure.",
+      "bo_name": "Auto-Turret",
+      "bo_intent": "Build Auto-Turret"
+    },
+    {
+      "action_name": "BUILD_NUKE",
+      "description": "Build a nuke.",
+      "bo_name": "Nuke",
+      "bo_intent": "Build Nuke"
+    },
+    {
+      "action_name": "BUILD_REACTOR_BARRACKS",
+      "description": "Allows structure create 2 units simultaneously.",
+      "bo_name": "Barracks Reactor",
+      "bo_intent": "Build Reactor"
+    },
+    {
+      "action_name": "BUILD_REACTOR_FACTORY",
+      "description": "Allows structure create 2 units simultaneously.",
+      "bo_name": "Factory Reactor",
+      "bo_intent": "Build Reactor"
+    },
+    {
+      "action_name": "BUILD_REACTOR_STARPORT",
+      "description": "Allows structure create 2 units simultaneously.",
+      "bo_name": "Starport Reactor",
+      "bo_intent": "Build Reactor"
+    },
+    {
+      "action_name": "BUILD_TECHLAB_BARRACKS",
+      "description": "Unlocks Marauder and is a requirement for Ghost.",
+      "bo_name": "Barracks Tech Lab",
+      "bo_intent": "Build Tech Lab"
+    },
+    {
+      "action_name": "BUILD_TECHLAB_FACTORY",
+      "description": "Unlocks Siege Tank and is a requirement for Thor.",
+      "bo_name": "Factory Tech Lab",
+      "bo_intent": "Build Tech Lab"
+    },
+    {
+      "action_name": "BUILD_TECHLAB_STARPORT",
+      "description": "Unlocks Raven and Banshee and is a requirement for Battlecruiser.",
+      "bo_name": "Starport Tech Lab",
+      "bo_intent": "Build Tech Lab"
+    },
+    {
+      "action_name": "CALLDOWNMULE_CALLDOWNMULE",
+      "description": "Calls down a MULE, a temporary unit with a timed life of 64 seconds that can mine minerals and repair for the Terran forces. It requires 50 energy from Orbital Command",
+      "bo_name": "MULE",
+      "bo_intent": "Call Down MULE"
+    },
+    {
+      "action_name": "COMMANDCENTERTRAIN_SCV",
+      "description": "Train a SCV, a Terran worker.",
+      "bo_name": "SCV",
+      "bo_intent": "Train SCV"
+    },
+    {
+      "action_name": "EFFECT_ANTIARMORMISSILE",
+      "description": "Deploys a Missile which pursues the target unit, and, upon contact, reduces the armor and shield armor of affected units by 2 for 21 seconds.",
+      "bo_name": "Anti-Armor Missile",
+      "bo_intent": "Launch Missile"
+    },
+    {
+      "action_name": "EFFECT_GHOSTSNIPE",
+      "description": "Deal 25 damage to enemy biological units (50 for Psionic).",
+      "bo_name": "Ghost Snipe",
+      "bo_intent": "Use Snipe"
+    },
+    {
+      "action_name": "EFFECT_INTERFERENCEMATRIX",
+      "description": "Disables a target unit rendering it unable to attack or use abilities for 11 seconds. Reveals Cloaked units. Can only target mechanical and psionic units.",
+      "bo_name": "Interference Matrix",
+      "bo_intent": "Cast Debuff"
+    },
+    {
+      "action_name": "EFFECT_MEDIVACIGNITEAFTERBURNERS",
+      "description": "Speed boost that increases Medivac's movement speed to 5.95 and acceleration to 1400 for 4.3 seconds.",
+      "bo_name": "Medivac Afterburners",
+      "bo_intent": "Activate Speed Boost"
+    },
+    {
+      "action_name": "EFFECT_SALVAGE",
+      "description": "Destroy a Bunker, returning 75 minerals.",
+      "bo_name": "Salvage Bunker",
+      "bo_intent": "Recycle Structure"
+    },
+    {
+      "action_name": "EFFECT_STIM_MARAUDER",
+      "description": "Increases the movement speed and firing rate by 50% at the cost of 20 HP.",
+      "bo_name": "Marauder Stimpack",
+      "bo_intent": "Activate Stimpack"
+    },
+    {
+      "action_name": "EFFECT_STIM_MARINE",
+      "description": "Increases the movement speed and firing rate by 50% at the cost of 10 HP.",
+      "bo_name": "Marine Stimpack",
+      "bo_intent": "Activate Stimpack"
+    },
+    {
+      "action_name": "EFFECT_STIM_MARINE_REDIRECT",
+      "description": "Increases inner Marine movement speed and firing rate by 50% at the cost of 10 HP.",
+      "bo_name": "Marine Stimpack (Redirect)",
+      "bo_intent": "Activate Stimpack"
+    },
+    {
+      "action_name": "EFFECT_STIM_MARAUDER_REDIRECT",
+      "description": "Increases inner Marauder movement speed and firing rate by 50% at the cost of 20 HP.",
+      "bo_name": "Marauder Stimpack (Redirect)",
+      "bo_intent": "Activate Stimpack"
+    },
+    {
+      "action_name": "EFFECT_TACTICALJUMP",
+      "description": "After 4 seconds, warps to the target location. Battlecruiser is invincible while warping. Stuns and puts the Battlecruiser into a 1 second vulnerability phase before it teleports. In this state, the Battlecruiser can be damaged, but Tactical Jump may not be canceled.",
+      "bo_name": "Tactical Jump",
+      "bo_intent": "Use Teleport"
+    },
+    {
+      "action_name": "EMP_EMP",
+      "description": "The Ghost fires an EMP Round that removes up to 100 shields and energy from every unit and building within the AoE. Also reveals cloaked units.",
+      "bo_name": "EMP Round",
+      "bo_intent": "Launch EMP"
+    },
+    {
+      "action_name": "ENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL1",
+      "description": "Increase the armor of Terran infantry units (Ghost, Marauder, Reaper, Marine, SCV).",
+      "bo_name": "Infantry Armor Level 1",
+      "bo_intent": "Research Infantry Armor"
+    },
+    {
+      "action_name": "ENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL2",
+      "description": "Increase the armor of Terran infantry units (Ghost, Marauder, Reaper, Marine, SCV).",
+      "bo_name": "Infantry Armor Level 2",
+      "bo_intent": "Research Infantry Armor"
+    },
+    {
+      "action_name": "ENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL3",
+      "description": "Increase the armor of Terran infantry units (Ghost, Marauder, Reaper, Marine, SCV).",
+      "bo_name": "Infantry Armor Level 3",
+      "bo_intent": "Research Infantry Armor"
+    },
+    {
+      "action_name": "ENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL1",
+      "description": "Increase the damage of Terran infantry units (Ghost, Marauder, Reaper, Marine).",
+      "bo_name": "Infantry Weapons Level 1",
+      "bo_intent": "Research Infantry Weapons"
+    },
+    {
+      "action_name": "ENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL2",
+      "description": "Increase the damage of Terran infantry units (Ghost, Marauder, Reaper, Marine).",
+      "bo_name": "Infantry Weapons Level 2",
+      "bo_intent": "Research Infantry Weapons"
+    },
+    {
+      "action_name": "ENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL3",
+      "description": "Increase the damage of Terran infantry units (Ghost, Marauder, Reaper, Marine).",
+      "bo_name": "Infantry Weapons Level 3",
+      "bo_intent": "Research Infantry Weapons"
+    },
+    {
+      "action_name": "FACTORYTRAIN_HELLION",
+      "description": "Train a Hellion, a fast harassment vehicle that incinerates light ground units in a line.",
+      "bo_name": "Hellion",
+      "bo_intent": "Train Hellion"
+    },
+    {
+      "action_name": "FACTORYTRAIN_SIEGETANK",
+      "description": "Train a Siege Tank, a transforming artillery unit that bombards ground targets from long range with devastating area-of-effect damage.",
+      "bo_name": "Siege Tank",
+      "bo_intent": "Train Siege Tank"
+    },
+    {
+      "action_name": "FACTORYTRAIN_THOR",
+      "description": "Train a Thor, a heavily-armored combat walker that excels against massive ground units and light air fleets.",
+      "bo_name": "Thor",
+      "bo_intent": "Train Thor"
+    },
+    {
+      "action_name": "FACTORYTRAIN_WIDOWMINE",
+      "description": "Train a Widow Mine, a burrowing trap that launches a devastating missile at the first enemy ground or air unit to cross its path.",
+      "bo_name": "Widow Mine",
+      "bo_intent": "Train Widow Mine"
+    },
+    {
+      "action_name": "KD8CHARGE_KD8CHARGE",
+      "description": "Explodes after a short delay, dealing 5 damage and knocking back nearby units.",
+      "bo_name": "KD8 Charge",
+      "bo_intent": "Use Explosive Charge"
+    },
+    {
+      "action_name": "LOCKON_LOCKON",
+      "description": "Locks the Cyclone's weapons on the target unit, increasing the Cyclone's range to 9 and allowing it to move while firing. Canceled if the target moves out of range (9) or vision.",
+      "bo_name": "Cyclone Lock On",
+      "bo_intent": "Activate Weapon Lock"
+    },
+    {
+      "action_name": "MEDIVACHEAL_HEAL",
+      "description": "Enables a Medivac to heal nearby injured units.",
+      "bo_name": "Medivac Heal",
+      "bo_intent": "Activate Healing Beam"
+    },
+    {
+      "action_name": "MORPH_HELLBAT",
+      "description": "Transforms the Hellion into its Hellbat form, short-range defense mode.",
+      "bo_name": "Hellbat Mode",
+      "bo_intent": "Morph to Hellbat"
+    },
+    {
+      "action_name": "MORPH_HELLION",
+      "description": "Transforms the Hellbat into its Hellion form, remote support mode.",
+      "bo_name": "Hellion Mode",
+      "bo_intent": "Morph to Hellion"
+    },
+    {
+      "action_name": "MORPH_LIBERATORAAMODE",
+      "description": "Reverts to Fighter Mode. In this mode, Liberators can move, but they can only target air units.",
+      "bo_name": "Liberator Fighter Mode",
+      "bo_intent": "Morph to Air Attack"
+    },
+    {
+      "action_name": "MORPH_LIBERATORAGMODE",
+      "description": "Deploys into Defender Mode. In this mode, Liberators inflict single target damage to ground units. Liberators in this mode cannot move.",
+      "bo_name": "Liberator Defender Mode",
+      "bo_intent": "Morph to Ground Attack"
+    },
+    {
+      "action_name": "MORPH_THOREXPLOSIVEMODE",
+      "description": "Arms the Thor's Javelin missile launchers, which deal splash damage to nearby air units and additional damage to Light units.",
+      "bo_name": "Thor Explosive Mode",
+      "bo_intent": "Morph to Anti-Light Air"
+    },
+    {
+      "action_name": "MORPH_THORHIGHIMPACTMODE",
+      "description": "Activates the Thor's 250mm Punisher Cannons, which strike a single air target for heavy damage.",
+      "bo_name": "Thor High Impact Mode",
+      "bo_intent": "Morph to Anti-Massive Air"
+    },
+    {
+      "action_name": "MORPH_VIKINGASSAULTMODE",
+      "description": "Transforms the Viking into Assault Mode where it becomes a Ground unit with a ground attack.",
+      "bo_name": "Viking Assault Mode",
+      "bo_intent": "Morph to Ground Unit"
+    },
+    {
+      "action_name": "MORPH_VIKINGFIGHTERMODE",
+      "description": "Transforms the Viking into Fighter Mode where it becomes an Air unit with an anti-air attack.",
+      "bo_name": "Viking Fighter Mode",
+      "bo_intent": "Morph to Air Unit"
+    },
+    {
+      "action_name": "RESEARCH_SMARTSERVOS",
+      "description": "Allows Hellions, Hellbats, Vikings, and Thors to transform quickly between combat modes.",
+      "bo_name": "Smart Servos",
+      "bo_intent": "Research Quick Morph"
+    },
+    {
+      "action_name": "RESEARCH_CYCLONELOCKONDAMAGE",
+      "description": "Increases Cyclone Lock On damage. Deals 600 damage over 14 seconds to ground and flying targets.",
+      "bo_name": "Cyclone Lock-On Damage",
+      "bo_intent": "Research Cyclone Damage"
+    },
+    {
+      "action_name": "RESEARCH_BANSHEECLOAKINGFIELD",
+      "description": "Allows Banshees to use the Cloak ability.",
+      "bo_name": "Banshee Cloaking Field",
+      "bo_intent": "Research Banshee Cloak"
+    },
+    {
+      "action_name": "RESEARCH_BANSHEEHYPERFLIGHTROTORS",
+      "description": "Increases the movement speed of Banshees from 3.85 to 5.25.",
+      "bo_name": "Banshee Hyperflight Rotors",
+      "bo_intent": "Research Banshee Speed"
+    },
+    {
+      "action_name": "RESEARCH_BATTLECRUISERWEAPONREFIT",
+      "description": "Allows Battlecruisers to use the Yamato Cannon ability.",
+      "bo_name": "Battlecruiser Weapon Refit",
+      "bo_intent": "Research Yamato"
+    },
+    {
+      "action_name": "RESEARCH_COMBATSHIELD",
+      "description": "Every Marine gains a Combat Shield that gives 10 hitpoints.",
+      "bo_name": "Combat Shield",
+      "bo_intent": "Research Marine HP"
+    },
+    {
+      "action_name": "RESEARCH_CONCUSSIVESHELLS",
+      "description": "Marauders gain the Concussive Shells ability.",
+      "bo_name": "Concussive Shells",
+      "bo_intent": "Research Marauder Slow"
+    },
+    {
+      "action_name": "RESEARCH_DRILLINGCLAWS",
+      "description": "Allows Widow Mines to burrow, unborrow and activate two times as fast. Additionally this grants invisibility while reloading.",
+      "bo_name": "Drilling Claws",
+      "bo_intent": "Research Mine Speed/Cloak"
+    },
+    {
+      "action_name": "RESEARCH_HISECAUTOTRACKING",
+      "description": "Adds +1 attack range to Auto-Turrets, Missile Turrets, and Planetary Fortresses.",
+      "bo_name": "Hi-Sec Auto Tracking",
+      "bo_intent": "Research Static Range"
+    },
+    {
+      "action_name": "RESEARCH_INFERNALPREIGNITER",
+      "description": "Improves the Hellion's bonus against Light units by +5 damage and the Hellbat's bonus against Light units by +12 damage.",
+      "bo_name": "Infernal Pre-Igniter",
+      "bo_intent": "Research Hellion/Hellbat Damage"
+    },
+    {
+      "action_name": "RESEARCH_PERSONALCLOAKING",
+      "description": "Enables Ghosts to use the Cloak ability. Cloak renders a unit invisible to enemies unless it's revealed by detectors or effects.",
+      "bo_name": "Personal Cloaking",
+      "bo_intent": "Research Ghost Cloak"
+    },
+    {
+      "action_name": "RESEARCH_RAVENCORVIDREACTOR",
+      "description": "Increases the Raven's starting energy by 25.",
+      "bo_name": "Raven Corvid Reactor",
+      "bo_intent": "Research Raven Energy"
+    },
+    {
+      "action_name": "RESEARCH_TERRANSTRUCTUREARMORUPGRADE",
+      "description": "Increases the armor of the Point Defense Drone, Auto-Turret, Missile Turret, Planetary Fortress, and all other Terran structures by 2.",
+      "bo_name": "Terran Structure Armor",
+      "bo_intent": "Research Structure Armor"
+    },
+    {
+      "action_name": "SIEGEMODE_SIEGEMODE",
+      "description": "Transforms a Siege Tank into Siege Mode, increasing its attack range and damage but preventing movement.",
+      "bo_name": "Siege Mode",
+      "bo_intent": "Activate Siege Mode"
+    },
+    {
+      "action_name": "STARPORTTECHLABRESEARCH_RESEARCHDURABLEMATERIALS",
+      "description": "Increases the duration of Auto-Turrets and Point Defense Drones from 180 to 240 seconds, and increases the duration of the Seeker Missile from 15 to 20 Seconds.",
+      "bo_name": "Durable Materials",
+      "bo_intent": "Research Raven/Turret Duration"
+    },
+    {
+      "action_name": "STARPORTTECHLABRESEARCH_RESEARCHMEDIVACENERGYUPGRADE",
+      "description": "Double the energy regeneration rate of Medivac.",
+      "bo_name": "Medivac Energy Upgrade",
+      "bo_intent": "Research Medivac Energy"
+    },
+    {
+      "action_name": "STARPORTTRAIN_BANSHEE",
+      "description": "Train a Banshee, a cloaked air unit that excels at surprise attacks against ground targets.",
+      "bo_name": "Banshee",
+      "bo_intent": "Train Banshee"
+    },
+    {
+      "action_name": "STARPORTTRAIN_BATTLECRUISER",
+      "description": "Train a Battle Cruiser, a powerful capital ship that can teleport across the map and unleash a devastating single-target blast.",
+      "bo_name": "Battlecruiser",
+      "bo_intent": "Train Battlecruiser"
+    },
+    {
+      "action_name": "STARPORTTRAIN_LIBERATOR",
+      "description": "Train a Liberator, an air unit that transforms into a stationary platform to lockdown and destroy ground targets in a designated area.",
+      "bo_name": "Liberator",
+      "bo_intent": "Train Liberator"
+    },
+    {
+      "action_name": "STARPORTTRAIN_MEDIVAC",
+      "description": "Train a Medivac, a flying support unit that heals biological forces and transports them across the battlefield.",
+      "bo_name": "Medivac",
+      "bo_intent": "Train Medivac"
+    },
+    {
+      "action_name": "STARPORTTRAIN_RAVEN",
+      "description": "Train a Raven, a flying spellcaster that disrupts enemy armies with debilitating abilities and provides detection.",
+      "bo_name": "Raven",
+      "bo_intent": "Train Raven"
+    },
+    {
+      "action_name": "STARPORTTRAIN_VIKINGFIGHTER",
+      "description": "Train a Viking Fighter, a transforming fighter that dominates the skies in air mode and provides ground support in assault mode.",
+      "bo_name": "Viking",
+      "bo_intent": "Train Viking"
+    },
+    {
+      "action_name": "KD8CHARGE_KD8CHARGE",
+      "description": "Explodes after a short delay, dealing 5 damage and knocking back nearby units.",
+      "bo_name": "KD8 Charge",
+      "bo_intent": "Use Explosive Charge"
+    },
+    {
+      "action_name": "TERRANBUILD_ARMORY",
+      "description": "Build a Armory to unlock the Hellbat, Thor and higher-level infantry upgrades.",
+      "bo_name": "Armory",
+      "bo_intent": "Build Armory"
+    },
+    {
+      "action_name": "TERRANBUILD_BARRACKS",
+      "description": "Build a Barracks to produce infantry units (Marine, Reaper, Marauder, Ghost).",
+      "bo_name": "Barracks",
+      "bo_intent": "Build Barracks"
+    },
+    {
+      "action_name": "TERRANBUILD_BUNKER",
+      "description": "Build a Bunker, a static defense building.",
+      "bo_name": "Bunker",
+      "bo_intent": "Build Bunker"
+    },
+    {
+      "action_name": "TERRANBUILD_COMMANDCENTER",
+      "description": "Build a Command Center, the Terran base.",
+      "bo_name": "Command Center",
+      "bo_intent": "Build Command Center"
+    },
+    {
+      "action_name": "TERRANBUILD_ENGINEERINGBAY",
+      "description": "Build an Engineer Bay to unlock Missile Turret, Sensor Tower and Planetary Fortress.",
+      "bo_name": "Engineering Bay",
+      "bo_intent": "Build Engineering Bay"
+    },
+    {
+      "action_name": "TERRANBUILD_FACTORY",
+      "description": "Build a Factory to produce mechanical ground units (Hellion, Widow Mine, Siege Tank, Hellbat, Thor) and unlock the Starport and Armory.",
+      "bo_name": "Factory",
+      "bo_intent": "Build Factory"
+    },
+    {
+      "action_name": "TERRANBUILD_FUSIONCORE",
+      "description": "Build a Fusion Core to unlock Battlecruiser.",
+      "bo_name": "Fusion Core",
+      "bo_intent": "Build Fusion Core"
+    },
+    {
+      "action_name": "TERRANBUILD_GHOSTACADEMY",
+      "description": "Build a Ghost Academy to unlock the Ghost unit.",
+      "bo_name": "Ghost Academy",
+      "bo_intent": "Build Ghost Academy"
+    },
+    {
+      "action_name": "TERRANBUILD_MISSILETURRET",
+      "description": "Build a Missile Turret to attack flying units.",
+      "bo_name": "Missile Turret",
+      "bo_intent": "Build Missile Turret"
+    },
+    {
+      "action_name": "TERRANBUILD_REFINERY",
+      "description": "Build a Refinery on a Vespene Geyser.",
+      "bo_name": "Refinery",
+      "bo_intent": "Build Refinery"
+    },
+    {
+      "action_name": "TERRANBUILD_SENSORTOWER",
+      "description": "Build a Sensor Tower, which senses any approaching uncloaked, unburrowed enemy units.",
+      "bo_name": "Sensor Tower",
+      "bo_intent": "Build Sensor Tower"
+    },
+    {
+      "action_name": "TERRANBUILD_STARPORT",
+      "description": "Build a Starport to produce air units (Viking, Medivac, Banshee, Raven, Battlecruiser).",
+      "bo_name": "Starport",
+      "bo_intent": "Build Starport"
+    },
+    {
+      "action_name": "TERRANBUILD_SUPPLYDEPOT",
+      "description": "Build a Supply Depot to increase 8 supplies and unlock Barracks.",
+      "bo_name": "Supply Depot",
+      "bo_intent": "Build Supply Depot"
+    },
+    {
+      "action_name": "TRAIN_CYCLONE",
+      "description": "Train a Cyclone, locking onto a single air or ground target to deal immense damage while moving to stay at range.",
+      "bo_name": "Cyclone",
+      "bo_intent": "Train Cyclone"
+    },
+    {
+      "action_name": "TRAIN_HELLBAT",
+      "description": "Train a Hellbat, a tough, short-ranged walker that incinerates masses of light units with its wide flame attack.",
+      "bo_name": "Hellbat",
+      "bo_intent": "Train Hellbat"
+    },
+    {
+      "action_name": "UNSIEGE_UNSIEGE",
+      "description": "Converts a Siege Tank back from Siege Mode to its regular mode.",
+      "bo_name": "Unsiege",
+      "bo_intent": "Toggle Siege Mode Off"
+    },
+    {
+      "action_name": "UPGRADETOORBITAL_ORBITALCOMMAND",
+      "description": "Unlocks MULE (Faster Mineral Income), Extra Supplies (Doubles Supply Depot food), and use Scanner Sweep (Reveal any part of the map). You need to have a barraks first to update to orbital command.",
+      "bo_name": "Orbital Command",
+      "bo_intent": "Upgrade to Orbital Command"
+    },
+    {
+      "action_name": "UPGRADETOPLANETARYFORTRESS_PLANETARYFORTRESS",
+      "description": "Enhance the defense capability of Command Center",
+      "bo_name": "Planetary Fortress",
+      "bo_intent": "Upgrade to Planetary Fortress"
+    },
+    {
+      "action_name": "WIDOWMINEATTACK_WIDOWMINEATTACK",
+      "description": "Command Widow Mine to attack.",
+      "bo_name": "Widow Mine",
+      "bo_intent": "Attack"
+    },
+    {
+      "action_name": "YAMATO_YAMATOGUN",
+      "description": "Blasts a target with a devastating plasma cannon, causing 240 damage.",
+      "bo_name": "Yamato Gun",
+      "bo_intent": "Fire Yamato Cannon"
+    },
+    {
+      "action_name": "STARPORTTECHLABRESEARCH_RESEARCHRAVENINTERFERENCEMATRIX",
+      "description": "Allows Ravens to use the Interference Matrix ability.",
+      "bo_name": "Raven Interference Matrix",
+      "bo_intent": "Research Interference Matrix"
+    },
+    {
+      "action_name": "BURROWUP_WIDOWMINE",
+      "description": "Enables the Widow Mine to emerge from the ground and regain mobility.",
+      "bo_name": "Widow Mine Burrow Up",
+      "bo_intent": "Unburrow"
+    }
+  ]

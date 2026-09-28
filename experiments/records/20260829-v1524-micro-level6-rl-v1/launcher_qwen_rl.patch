@@ -1,0 +1,178 @@
+--- launcher.sh
++++ launcher.sh
+@@ -9,15 +9,21 @@
+ EVAL_LAUNCHER_PATCH_SHA=${EVAL_LAUNCHER_PATCH_SHA:?EVAL_LAUNCHER_PATCH_SHA is required}
+ FULL_NODE_PATCH_SHA=${FULL_NODE_PATCH_SHA:?FULL_NODE_PATCH_SHA is required}
+ VALIDATION_SEED_PATCH_SHA=${VALIDATION_SEED_PATCH_SHA:?VALIDATION_SEED_PATCH_SHA is required}
++QWEN_RL_PATCH_SHA=${QWEN_RL_PATCH_SHA:?QWEN_RL_PATCH_SHA is required}
++TRAINING_SEED_PATCH_SHA=${TRAINING_SEED_PATCH_SHA:?TRAINING_SEED_PATCH_SHA is required}
++HF_ROLLOUT_OFFLOAD_PATCH_SHA=${HF_ROLLOUT_OFFLOAD_PATCH_SHA:?HF_ROLLOUT_OFFLOAD_PATCH_SHA is required}
++RL_REWARD_BALANCE_PATCH_SHA=${RL_REWARD_BALANCE_PATCH_SHA:?RL_REWARD_BALANCE_PATCH_SHA is required}
+ MICRO=${MICRO:-old}
+ ENV_SEED=${ENV_SEED:?ENV_SEED is required}
+ VAL_ROLLOUT_N=${VAL_ROLLOUT_N:-1}
++TRAIN_ROLLOUT_N=${TRAIN_ROLLOUT_N:-8}
+ SAVE_FREQ=${SAVE_FREQ:-20}
+ TARGET_STEP=${TARGET_STEP:-96}
+-REQUIRE_CHECKPOINT=${REQUIRE_CHECKPOINT:-0}
++REQUIRE_CHECKPOINT=${REQUIRE_CHECKPOINT:-1}
+ DIFFICULTY_NAME=${DIFFICULTY_NAME:?DIFFICULTY_NAME is required}
+ DIFFICULTY_LEVEL=${DIFFICULTY_LEVEL:?DIFFICULTY_LEVEL is required}
+ MAX_RESPONSE_LENGTH=${MAX_RESPONSE_LENGTH:-192}
++MAX_PROMPT_LENGTH=${MAX_PROMPT_LENGTH:-4096}
+ EXPERIMENT_TAG=${EXPERIMENT_TAG:?EXPERIMENT_TAG is required}
+ WANDB_GROUP=${WANDB_GROUP:-99-audit/qwen-compact-contract-canary}
+ MODE=control
+@@ -48,6 +54,7 @@
+ RAY_TAG=${RAY_TAG:-$(printf '%s' "${NODE_TAG}" | sha256sum | cut -c1-10)}
+ RAY_TMPDIR=/dev/shm/r_${RAY_TAG}
+ CACHE_DIR=${ROOT}/cache
++PYTHON_SITE_ROOT=${PYTHON_SITE_ROOT_OVERRIDE:-}
+ 
+ SOURCE_REPO=${PROJECT_ROOT}/git/worktrees/stageguard-v7-legacy-contract
+ RUNNER_REL=examples/gigpo_trainer/run_sc2_spb2_gigpo_0095_newmicro_skill_phase2_8gpu_100ep_20260724.sh
+@@ -55,24 +62,27 @@
+ V7_ASSETS=${PROJECT_ROOT}/assets/repro/stageguard_v7_legacy_contract_20260806
+ FROZEN_RUNTIME_TAR=${V7_ASSETS}/runtime/frozen_runtime_source.tar.gz
+ EXPECTED_FROZEN_RUNTIME_TAR_SHA=016772ab0cd8f8cbc3d017150cb1b7c17cb3f40984accdfd14a2e8b6a9b76cb0
+-PATCH_AGENTS=${SOURCE_REPO}/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents
+-PATCH_MANAGER=${SOURCE_REPO}/agent_system/environments/strategic_sc2_env_manager_v2.py
++PATCH_AGENTS=${PATCH_AGENTS_OVERRIDE:-${SOURCE_REPO}/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents}
++PATCH_MANAGER=${PATCH_MANAGER_OVERRIDE:-${SOURCE_REPO}/agent_system/environments/strategic_sc2_env_manager_v2.py}
+ PATCH_STRATEGIST_SHA=3abb1fe0ec718919f1b897f1b4747685a5548830508082394b3126bbd70b7bbe
+ PATCH_COMMANDER_SHA=0ffd91b4f913bb2f69bd02c88b9274fc718da9103b2a1ffd61ae496e1ae6c592
+ PATCH_PLANNER_SHA=221aac4f71b6219b01ff4c0425b2a204ae0f700a92c11088e9acfdd8e94b8346
+ PATCH_MANAGER_SHA=1feeb6e7ab45b21d4daab9f46ee7c9466d1bc0faccfb943388acdc2c99d219c8
+-PYTHON_BIN=${PROJECT_ROOT}/envs/verl-agent-v7-exact/bin/python
+-BASE_MODEL=${PROJECT_ROOT}/assets/models/Qwen/checkpoint-1248_verlfix
++PYTHON_BIN=${PYTHON_BIN_OVERRIDE:-${PROJECT_ROOT}/envs/verl-agent-v7-exact/bin/python}
++BASE_MODEL=${MODEL_ASSET_ROOT:-${PROJECT_ROOT}/assets/models/Qwen/checkpoint-1248_verlfix}
+ EXPECTED_BASE_CONFIG_SHA=c26e806188ff1d430c2358ae63c3e5b7d5b54275342223c19b63d6171619c7ed
+ EXPECTED_BASE_TOKENIZER_CONFIG_SHA=d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101
+ EXPECTED_BASE_MODEL_SHA=a3810262ecc434647f6644f9421d6f9ffa7bb7f8cc6a32c62b742f18bf8f9b6b
+ DATA_ROOT=${V7_ASSETS}/frozen_inputs
+ FLA_ROOT=${V7_ASSETS}/source/extracted/flash-linear-attention_dev
+ MOBA_ROOT=${V7_ASSETS}/source/extracted/MoBA
+-SC2PATH=${PROJECT_ROOT}/assets/sc2/StarCraftII
++SC2PATH=${SC2PATH_OVERRIDE:-${PROJECT_ROOT}/assets/sc2/StarCraftII}
+ EXPECTED_GIT_COMMIT=e61a23b8c642cb1b88d67f11f1f6d9a96a65ef31
+ RUNNER_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/runner_new_a100.patch
+ VALIDATION_SEED_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/independent_validation_seeds.patch
++TRAINING_SEED_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/training_seed_ledger.patch
++HF_ROLLOUT_OFFLOAD_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/verl_hf_rollout_offload.patch
++RL_REWARD_BALANCE_PATCH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/rl_reward_balance.patch
+ 
+ EXPECTED_VERL_TREE_SHA=aa81b037c7972bd62886403c01a92c398a8b4abc28d863aeaa0c1a1b874dcc4b
+ EXPECTED_AGENT_TREE_SHA=7ea801c8d6d758479bd26269b6289a7df71f4217b66796e3cbd6dd0511c8377b
+@@ -250,14 +260,35 @@
+   exit 14
+ fi
+ 
+-if ! PYTHONPATH="${CODE}" "${PYTHON_BIN}" -c \
++hf_rollout_offload_patch_sha=$(sha256sum "${HF_ROLLOUT_OFFLOAD_PATCH}" 2>/dev/null | awk '{print $1}')
++if [[ "${hf_rollout_offload_patch_sha}" != "${HF_ROLLOUT_OFFLOAD_PATCH_SHA}" ]] || \
++   ! patch --batch --forward -d "${CODE}" -p1 < "${HF_ROLLOUT_OFFLOAD_PATCH}"; then
++  write_failure 20 hf_rollout_offload_patch_failed
++  exit 20
++fi
++
++training_seed_patch_sha=$(sha256sum "${TRAINING_SEED_PATCH}" 2>/dev/null | awk '{print $1}')
++if [[ "${training_seed_patch_sha}" != "${TRAINING_SEED_PATCH_SHA}" ]] || \
++   ! patch --batch --forward -d "${CODE}" -p1 < "${TRAINING_SEED_PATCH}"; then
++  write_failure 17 training_seed_ledger_patch_failed
++  exit 17
++fi
++
++rl_reward_balance_patch_sha=$(sha256sum "${RL_REWARD_BALANCE_PATCH}" 2>/dev/null | awk '{print $1}')
++if [[ "${rl_reward_balance_patch_sha}" != "${RL_REWARD_BALANCE_PATCH_SHA}" ]] || \
++   ! patch --ignore-whitespace --batch --forward -d "${CODE}" -p1 < "${RL_REWARD_BALANCE_PATCH}"; then
++  write_failure 21 rl_reward_balance_patch_failed
++  exit 21
++fi
++
++if ! PYTHONPATH="${CODE}:${PYTHON_SITE_ROOT}" "${PYTHON_BIN}" -c \
+   'from gigpo import core_gigpo; from verl.trainer.ppo.ray_trainer import RayPPOTrainer'; then
+   write_failure 8 frozen_python_import_preflight_failed
+   exit 8
+ fi
+ 
+ {
+-  echo "EVALUATION_ONLY=1"
++  echo "EVALUATION_ONLY=0"
+   echo "RUN_ID=${RUN_ID}"
+   echo "NODE_TAG=${NODE_TAG}"
+   echo "GPU_ID=${GPU_ID}"
+@@ -267,7 +298,12 @@
+   echo "EVAL_LAUNCHER_PATCH_SHA=${EVAL_LAUNCHER_PATCH_SHA}"
+   echo "FULL_NODE_PATCH_SHA=${FULL_NODE_PATCH_SHA}"
+   echo "VALIDATION_SEED_PATCH_SHA=${validation_seed_patch_sha}"
++  echo "QWEN_RL_PATCH_SHA=${QWEN_RL_PATCH_SHA}"
++  echo "TRAINING_SEED_PATCH_SHA=${training_seed_patch_sha}"
++  echo "HF_ROLLOUT_OFFLOAD_PATCH_SHA=${hf_rollout_offload_patch_sha}"
++  echo "RL_REWARD_BALANCE_PATCH_SHA=${rl_reward_balance_patch_sha}"
+   echo "PROJECT_ROOT=${PROJECT_ROOT}"
++  echo "PYTHON_SITE_ROOT=${PYTHON_SITE_ROOT}"
+   echo "RUNTIME_ROOT=${ROOT}"
+   echo "INDEPENDENT_VALIDATION_SEEDS=1"
+   echo "GIT_COMMIT=${EXPECTED_GIT_COMMIT}"
+@@ -331,6 +367,8 @@
+   echo "SAVE_FREQ=${SAVE_FREQ}"
+   echo "MAX_RESPONSE_LENGTH=${MAX_RESPONSE_LENGTH}"
+   echo "VAL_ROLLOUT_N=${VAL_ROLLOUT_N}"
++  echo "TRAIN_ROLLOUT_N=${TRAIN_ROLLOUT_N}"
++  echo "MAX_PROMPT_LENGTH=${MAX_PROMPT_LENGTH}"
+   echo "REQUIRE_CHECKPOINT=${REQUIRE_CHECKPOINT}"
+   echo "WANDB_ENTITY=${WANDB_ENTITY}"
+   echo "WANDB_PROJECT=${WANDB_PROJECT}"
+@@ -349,7 +387,7 @@
+ timeout 604800s env \
+   CUDA_VISIBLE_DEVICES="${GPU_ID}" \
+   REPO_DIR="${CODE}" \
+-  PYTHONPATH="${CODE}:${FLA_ROOT}:${MOBA_ROOT}" \
++  PYTHONPATH="${CODE}:${FLA_ROOT}:${MOBA_ROOT}:${PYTHON_SITE_ROOT}" \
+   TMPDIR="${RAY_TMPDIR}" \
+   RAY_TMPDIR="${RAY_TMPDIR}" \
+   XDG_CACHE_HOME="${CACHE_DIR}" \
+@@ -368,9 +406,10 @@
+   SC2_EXPECTED_DIFFICULTY="${DIFFICULTY_NAME}" \
+   SC2_ENV_SEED="${ENV_SEED}" \
+   SC2_EVAL_SEEDS_LOG_PATH="${AUDIT_DIR}/evaluation_seeds.jsonl" \
++  SC2_TRAIN_SEEDS_LOG_PATH="${AUDIT_DIR}/training_seeds.jsonl" \
+   SC2_AI_BUILD=Air \
+   SC2_MAX_STEPS=20 \
+-  SC2_ROLLOUT_N="${VAL_ROLLOUT_N}" \
++  SC2_ROLLOUT_N="${TRAIN_ROLLOUT_N}" \
+   SC2_BO_ADDRESS="${BO}" \
+   SC2_STRATEGY_PROFILE=marine_pressure \
+   SC2_AUTO_TRAIN_MARINES=0 \
+@@ -421,21 +460,25 @@
+     +ray_init.runtime_env.env_vars.TMPDIR="${RAY_TMPDIR}" \
+     +ray_init.runtime_env.env_vars.RAY_TMPDIR="${RAY_TMPDIR}" \
+     +ray_init.runtime_env.env_vars.SC2_EVAL_SEEDS_LOG_PATH="${AUDIT_DIR}/evaluation_seeds.jsonl" \
++    +ray_init.runtime_env.env_vars.SC2_TRAIN_SEEDS_LOG_PATH="${AUDIT_DIR}/training_seeds.jsonl" \
+     +ray_init.runtime_env.env_vars.SC2_PLAN_BULLET_MAX="'6'" \
+     +ray_init.runtime_env.env_vars.SC2_PLANNER_PROTOCOL="'legacy'" \
+     trainer.total_epochs="${TARGET_STEP}" \
+     trainer.save_freq="${SAVE_FREQ}" \
+     trainer.test_freq=-1 \
+     trainer.logger="['console']" \
+-    trainer.project_name="${WANDB_PROJECT}" \
++    trainer.project_name=sc2-rl \
+     trainer.resume_mode=disable \
+     trainer.n_gpus_per_node=8 \
+-    trainer.val_before_train=True \
+-    trainer.val_only=True \
++    trainer.val_before_train=False \
++    trainer.val_only=False \
++    data.max_prompt_length="${MAX_PROMPT_LENGTH}" \
++    actor_rollout_ref.actor.fsdp_config.param_offload=True \
++    actor_rollout_ref.actor.fsdp_config.optimizer_offload=True \
++    actor_rollout_ref.ref.fsdp_config.param_offload=True \
+     actor_rollout_ref.rollout.val_kwargs.n="${VAL_ROLLOUT_N}" \
+     +env.val_rollout_n="${VAL_ROLLOUT_N}" \
+-    env.prompt_response_log_train_only=False \
+-    trainer.validation_data_dir="${AUDIT_DIR}/validation"
++    env.prompt_response_log_train_only=True
+ status=$?
+ 
+ OUT_FILE=${LOG_DIR}/test-${RUN_NAME}.txt

@@ -1,0 +1,537 @@
+{
+  "source_sha": "7aad7773e993417cde5ead3484aa6433e7788a83",
+  "reports": [
+    {
+      "run_id": "20260906-integrated-fixes-v1-r4-python-rng-prefix120-s2621640384-repeat1-r1",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-prefix120-s2621640384-repeat1-r1",
+      "exit_code": 0,
+      "source_sha": "7aad7773e993417cde5ead3484aa6433e7788a83",
+      "started_at": "2026-09-07T12:02:04+00:00",
+      "ended_at": "2026-09-07T12:02:45+00:00",
+      "artifacts": {
+        "driver.log": "f1ab6cee9420098a05dad40faa284841778f3820ee53d56c14eabc779853435a",
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_12-02-06/trace.json": "b28d175c1a639c19f52372260c3e58be6e7ecb46c66b0e06fdac84838e1b2df1",
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_12-02-06/replay.SC2Replay": "27f84284365dddcc1c6bc244ddb874a01b16329cb1c3e3039c92b4ae14551591",
+        "effective_config.json": "b5c1822e95b293e078ebe5d1ec78b3793f616bf6e559a3aba72a028b03a5548d",
+        "terminal.json": "2c6e6aa89fbc0d84ab43d386fab3d5c26417f159a538fc6d05bfb28ef771e685"
+      },
+      "trace_frames": 87,
+      "snapshot_frames": 68,
+      "observation_frames": 12,
+      "command_frames": {
+        "0": {
+          "llm_decision_final_action_0_0": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "67": {
+          "llm_decision_final_action_1_67": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "112": {
+          "llm_decision_final_action_2_112": [
+            {
+              "action": "TERRANBUILD_SUPPLYDEPOT",
+              "units": [
+                945
+              ],
+              "target_position": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "135": {
+          "llm_decision_final_action_3_135": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "268": {
+          "llm_decision_final_action_4_268": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "269": {
+          "llm_decision_final_action_5_269": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "380": {
+          "llm_decision_final_action_6_380": [
+            {
+              "action": "TERRANBUILD_COMMANDCENTER",
+              "units": [
+                409
+              ],
+              "target_position": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "447": {
+          "llm_decision_final_action_7_447": [
+            {
+              "action": "TERRANBUILD_BARRACKS",
+              "units": [
+                953
+              ],
+              "target_position": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "470": {
+          "llm_decision_final_action_8_470": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "537": {
+          "llm_decision_final_action_9_537": [
+            {
+              "action": "TERRANBUILD_BARRACKS",
+              "units": [
+                377
+              ],
+              "target_position": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "560": {
+          "llm_decision_final_action_10_560": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "583": {
+          "llm_decision_final_action_11_583": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        }
+      },
+      "bo_events": [
+        [
+          "00:00",
+          "Start Processing BO #0: SCV <<<"
+        ],
+        [
+          "00:00",
+          "Start Processing BO #1: SCV <<<"
+        ],
+        [
+          "00:12",
+          "Start Processing BO #2: supplydepot <<<"
+        ],
+        [
+          "00:20",
+          "Start Processing BO #3: SCV <<<"
+        ],
+        [
+          "00:24",
+          "Start Processing BO #4: SCV <<<"
+        ],
+        [
+          "00:48",
+          "Start Processing BO #5: SCV <<<"
+        ],
+        [
+          "00:48",
+          "Start Processing BO #6: commandcenter <<<"
+        ],
+        [
+          "01:08",
+          "Start Processing BO #7: barracks <<<"
+        ],
+        [
+          "01:20",
+          "Start Processing BO #8: SCV <<<"
+        ],
+        [
+          "01:24",
+          "Start Processing BO #9: barracks <<<"
+        ],
+        [
+          "01:36",
+          "Start Processing BO #10: SCV <<<"
+        ],
+        [
+          "01:40",
+          "Start Processing BO #11: SCV <<<"
+        ],
+        [
+          "01:44",
+          "Start Processing BO #12: orbitalcommand <<<"
+        ]
+      ],
+      "planner_calls": 0,
+      "depot_observation_135": "[657]CommandCenter\nPosition: (24, 22)\nHealth: 1500/1500 (100%)\nHarvesters: 11/16\nProduction list: SCV\n[833]SupplyDepot(building 3%)\nPosition: (29, 23)",
+      "snapshot_130": {
+        "iteration": 130,
+        "time_seconds": 23,
+        "time_formatted": "00:23",
+        "minerals": 40,
+        "vespene": 0,
+        "cumulative_minerals_collected": 190,
+        "cumulative_vespene_collected": 0,
+        "unit_mineral_value": 650,
+        "unit_vespene_value": 0,
+        "structure_mineral_value": 400,
+        "structure_vespene_value": 0,
+        "cumulative_unit_value": 650,
+        "cumulative_structure_value": 400,
+        "supply_army": 0,
+        "supply_workers": 13,
+        "supply_left": 1,
+        "n_structures": 1,
+        "n_visible_enemy_units": 0,
+        "n_visible_enemy_structures": 0,
+        "n_unit_types": 1,
+        "n_structure_types": 1
+      },
+      "snapshot_670": {
+        "iteration": 670,
+        "time_seconds": 119,
+        "time_formatted": "01:59",
+        "minerals": 235,
+        "vespene": 0,
+        "cumulative_minerals_collected": 1385,
+        "cumulative_vespene_collected": 0,
+        "unit_mineral_value": 950,
+        "unit_vespene_value": 0,
+        "structure_mineral_value": 1200,
+        "structure_vespene_value": 0,
+        "cumulative_unit_value": 950,
+        "cumulative_structure_value": 500,
+        "supply_army": 0,
+        "supply_workers": 19,
+        "supply_left": 3,
+        "n_structures": 5,
+        "n_visible_enemy_units": 0,
+        "n_visible_enemy_structures": 3,
+        "n_unit_types": 1,
+        "n_structure_types": 3
+      }
+    },
+    {
+      "run_id": "20260906-integrated-fixes-v1-r4-python-rng-prefix120-s2621640384-repeat2-r1",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-prefix120-s2621640384-repeat2-r1",
+      "exit_code": 0,
+      "source_sha": "7aad7773e993417cde5ead3484aa6433e7788a83",
+      "started_at": "2026-09-07T12:02:45+00:00",
+      "ended_at": "2026-09-07T12:03:20+00:00",
+      "artifacts": {
+        "driver.log": "12c0b0207e010469cdf62e45a82248aa3dd8f85db3c8a47df98ecb63be796e24",
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_12-02-46/trace.json": "b28d175c1a639c19f52372260c3e58be6e7ecb46c66b0e06fdac84838e1b2df1",
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_12-02-46/replay.SC2Replay": "11370909cead32c135f0cd0aff86d7321f5cf4e46d2ab7e99dad8d506442172e",
+        "effective_config.json": "83bd9c73e85008f7f0a724ffe0670b6bb532fe7d657d85f3f04b4e2ea679e865",
+        "terminal.json": "2c6e6aa89fbc0d84ab43d386fab3d5c26417f159a538fc6d05bfb28ef771e685"
+      },
+      "trace_frames": 87,
+      "snapshot_frames": 68,
+      "observation_frames": 12,
+      "command_frames": {
+        "0": {
+          "llm_decision_final_action_0_0": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "67": {
+          "llm_decision_final_action_1_67": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "112": {
+          "llm_decision_final_action_2_112": [
+            {
+              "action": "TERRANBUILD_SUPPLYDEPOT",
+              "units": [
+                945
+              ],
+              "target_position": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "135": {
+          "llm_decision_final_action_3_135": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "268": {
+          "llm_decision_final_action_4_268": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "269": {
+          "llm_decision_final_action_5_269": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "380": {
+          "llm_decision_final_action_6_380": [
+            {
+              "action": "TERRANBUILD_COMMANDCENTER",
+              "units": [
+                409
+              ],
+              "target_position": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "447": {
+          "llm_decision_final_action_7_447": [
+            {
+              "action": "TERRANBUILD_BARRACKS",
+              "units": [
+                953
+              ],
+              "target_position": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "470": {
+          "llm_decision_final_action_8_470": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "537": {
+          "llm_decision_final_action_9_537": [
+            {
+              "action": "TERRANBUILD_BARRACKS",
+              "units": [
+                377
+              ],
+              "target_position": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        "560": {
+          "llm_decision_final_action_10_560": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        },
+        "583": {
+          "llm_decision_final_action_11_583": [
+            {
+              "action": "COMMANDCENTERTRAIN_SCV",
+              "units": [
+                657
+              ]
+            }
+          ]
+        }
+      },
+      "bo_events": [
+        [
+          "00:00",
+          "Start Processing BO #0: SCV <<<"
+        ],
+        [
+          "00:00",
+          "Start Processing BO #1: SCV <<<"
+        ],
+        [
+          "00:12",
+          "Start Processing BO #2: supplydepot <<<"
+        ],
+        [
+          "00:20",
+          "Start Processing BO #3: SCV <<<"
+        ],
+        [
+          "00:24",
+          "Start Processing BO #4: SCV <<<"
+        ],
+        [
+          "00:48",
+          "Start Processing BO #5: SCV <<<"
+        ],
+        [
+          "00:48",
+          "Start Processing BO #6: commandcenter <<<"
+        ],
+        [
+          "01:08",
+          "Start Processing BO #7: barracks <<<"
+        ],
+        [
+          "01:20",
+          "Start Processing BO #8: SCV <<<"
+        ],
+        [
+          "01:24",
+          "Start Processing BO #9: barracks <<<"
+        ],
+        [
+          "01:36",
+          "Start Processing BO #10: SCV <<<"
+        ],
+        [
+          "01:40",
+          "Start Processing BO #11: SCV <<<"
+        ],
+        [
+          "01:44",
+          "Start Processing BO #12: orbitalcommand <<<"
+        ]
+      ],
+      "planner_calls": 0,
+      "depot_observation_135": "[657]CommandCenter\nPosition: (24, 22)\nHealth: 1500/1500 (100%)\nHarvesters: 11/16\nProduction list: SCV\n[833]SupplyDepot(building 3%)\nPosition: (29, 23)",
+      "snapshot_130": {
+        "iteration": 130,
+        "time_seconds": 23,
+        "time_formatted": "00:23",
+        "minerals": 40,
+        "vespene": 0,
+        "cumulative_minerals_collected": 190,
+        "cumulative_vespene_collected": 0,
+        "unit_mineral_value": 650,
+        "unit_vespene_value": 0,
+        "structure_mineral_value": 400,
+        "structure_vespene_value": 0,
+        "cumulative_unit_value": 650,
+        "cumulative_structure_value": 400,
+        "supply_army": 0,
+        "supply_workers": 13,
+        "supply_left": 1,
+        "n_structures": 1,
+        "n_visible_enemy_units": 0,
+        "n_visible_enemy_structures": 0,
+        "n_unit_types": 1,
+        "n_structure_types": 1
+      },
+      "snapshot_670": {
+        "iteration": 670,
+        "time_seconds": 119,
+        "time_formatted": "01:59",
+        "minerals": 235,
+        "vespene": 0,
+        "cumulative_minerals_collected": 1385,
+        "cumulative_vespene_collected": 0,
+        "unit_mineral_value": 950,
+        "unit_vespene_value": 0,
+        "structure_mineral_value": 1200,
+        "structure_vespene_value": 0,
+        "cumulative_unit_value": 950,
+        "cumulative_structure_value": 500,
+        "supply_army": 0,
+        "supply_workers": 19,
+        "supply_left": 3,
+        "n_structures": 5,
+        "n_visible_enemy_units": 0,
+        "n_visible_enemy_structures": 3,
+        "n_unit_types": 1,
+        "n_structure_types": 3
+      }
+    }
+  ],
+  "full_trace_equal": true,
+  "compared_trace_frames": 87,
+  "first_trace_difference": [],
+  "differing_trace_frames": 0,
+  "bo_events_equal": true,
+  "config_differences": {
+    "SC2_EPISODE_OUTCOME_LOG": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-prefix120-s2621640384-repeat1-r1/episode_outcomes.jsonl",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-prefix120-s2621640384-repeat2-r1/episode_outcomes.jsonl"
+    ],
+    "SC2_RUNTIME_LOG_ROOT": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-prefix120-s2621640384-repeat1-r1/sc2-logs",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-prefix120-s2621640384-repeat2-r1/sc2-logs"
+    ]
+  },
+  "scope": "Two seeded repeats, not an on/off A/B; no claims about whole-game determinism, KL or learning"
+}

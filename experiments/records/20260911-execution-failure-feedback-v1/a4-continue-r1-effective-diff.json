@@ -1,0 +1,35 @@
+{
+  "train": {
+    "trainer.del_local_ckpt_after_load": [
+      null,
+      "False"
+    ],
+    "+ray_init.runtime_env.env_vars.PYTHONPATH": [
+      "<SOURCE>:<SOURCE>/experiments/records/20260906-integrated-fixes-v1:/root/new-scii-spb-level5-96-20260908/python:/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/repro/stageguard_v7_legacy_contract_20260806/source/extracted/flash-linear-attention_dev:/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/repro/stageguard_v7_legacy_contract_20260806/source/extracted/MoBA",
+      "<SOURCE>:<SOURCE>/experiments/records/20260911-execution-failure-feedback-v1:<SOURCE>/experiments/records/20260910-spb-fsdp-layer-wrap-v1:<SOURCE>/experiments/records/20260906-integrated-fixes-v1:/root/new-scii-spb-level5-96-20260908/python:/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/repro/stageguard_v7_legacy_contract_20260806/source/extracted/flash-linear-attention_dev:/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/sc2-verl-agent-experiments/assets/repro/stageguard_v7_legacy_contract_20260806/source/extracted/MoBA"
+    ],
+    "trainer.resume_from_path": [
+      null,
+      "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4"
+    ],
+    "+ray_init.runtime_env.worker_process_setup_hook": [
+      null,
+      "continue_a4.install"
+    ],
+    "trainer.resume_mode": [
+      "disable",
+      "resume_path"
+    ]
+  },
+  "eval": {
+    "+ray_init.runtime_env.env_vars.SC2_FEEDBACK_LEARNING_MODEL": [
+      "'A4'",
+      "'A8'"
+    ],
+    "trainer.resume_from_path": [
+      "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+      "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8"
+    ]
+  },
+  "checked_utc": "2026-09-11T15:27:40.799895+00:00"
+}

@@ -1,0 +1,804 @@
+{
+  "experiment_id": "20260906-qwen-kl-metric-v1",
+  "status": "completed",
+  "node": "sc2-a100-44",
+  "source_commit": "a6ab6e05dad47282a42a12f49960602e3fd264e2",
+  "source_branch": "codex/fix-unit-id-exhaustion",
+  "baseline_commit": "2526f88",
+  "run_root": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "project_sft": false,
+  "optimizer_updates": 0,
+  "sc2_started": false,
+  "sole_variable": "actor.fsdp_config.mixed_precision.param_dtype: bf16 -> fp32",
+  "production_defaults_changed": false,
+  "preserved": [
+    "original model weights",
+    "reference configuration",
+    "BF16 autocast",
+    "generation use_cache=True",
+    "eager attention",
+    "temperature=0.4",
+    "top_p=0.9",
+    "response budget=96",
+    "loss",
+    "learning rate",
+    "prompt",
+    "reward",
+    "history configuration",
+    "old/ref/advantage tensors"
+  ],
+  "cpu_verification": {
+    "command": "CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=<frozen source>:/root/new-scii-spb2-level5-control/python /usr/bin/python3 -B -m unittest discover -s tests -v",
+    "passed": 87,
+    "seconds": 8.301
+  },
+  "hypothesis": "Matching FSDP parameter precision to the existing HF full-parameter path removes their full-input logprob gap under the same FP32 normalization",
+  "primary_gate": {
+    "maximum_allowed_abs_gap": 0.00001,
+    "baseline": {
+      "tokens": 135,
+      "abs_mean": 0.06571127516717963,
+      "abs_max": 3.0192973613739014,
+      "finite": true
+    },
+    "candidate": {
+      "tokens": 135,
+      "abs_mean": 0,
+      "abs_max": 0,
+      "finite": true
+    },
+    "passed": true
+  },
+  "runs": [
+    {
+      "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-param-bf16-opt0-r14",
+      "source_commit": "a6ab6e05dad47282a42a12f49960602e3fd264e2",
+      "param_dtype": "bf16",
+      "gpus": "0,1,2,3",
+      "started_at": "2026-09-06T11:47:29.432032+00:00",
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-03.jsonl": "completed",
+          "rank-00.jsonl": "completed",
+          "rank-02.jsonl": "completed",
+          "rank-01.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T11:48:25.744206+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "seconds": 56.312174,
+      "aggregate": {
+        "actor_vs_old": {
+          "tokens": 135,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "finite": true
+        },
+        "normalization": {
+          "tokens": 135,
+          "abs_mean": 0.004511106277946487,
+          "abs_max": 0.291806697845459,
+          "finite": true
+        },
+        "parameter_precision_path": {
+          "tokens": 135,
+          "abs_mean": 0.06571127516717963,
+          "abs_max": 3.0192973613739014,
+          "finite": true
+        },
+        "cached_vs_full": {
+          "tokens": 135,
+          "abs_mean": 0.0076416924265371505,
+          "abs_max": 0.8087818622589111,
+          "finite": true
+        },
+        "cached_vs_recorded_generate": {
+          "tokens": 135,
+          "abs_mean": 0.012977043508995381,
+          "abs_max": 1.073228359222412,
+          "finite": true
+        },
+        "cached_vs_actor": {
+          "tokens": 135,
+          "abs_mean": 0.05529620352025593,
+          "abs_max": 2.9983041286468506,
+          "finite": true
+        }
+      },
+      "responses": 8,
+      "peak_allocated_bytes": 36202213376,
+      "peak_reserved_bytes": 45701136384,
+      "examples": [
+        {
+          "rank": 0,
+          "sample": 49,
+          "response": "- marine x 2<|im_end|>",
+          "dtypes": {
+            "actor_recompute": {
+              "weight": "torch.bfloat16",
+              "activation": "torch.bfloat16"
+            },
+            "fsdp_full_fp32_normalization": {
+              "weight": "torch.bfloat16",
+              "activation": "torch.bfloat16"
+            },
+            "hf_full_fp32_normalization": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            },
+            "hf_cached_generate": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            }
+          },
+          "log_probs": {
+            "actor": [
+              0,
+              0,
+              -0.0001220703125,
+              0,
+              0,
+              -3.059112548828125
+            ],
+            "fsdp_fp32_norm": [
+              0,
+              0,
+              -0.00008487341256113723,
+              0,
+              0,
+              -3.176783561706543
+            ],
+            "hf_full": [
+              0,
+              0,
+              -0.0000069141146923357155,
+              0,
+              0,
+              -0.15748624503612518
+            ],
+            "hf_cached": [
+              0,
+              0,
+              -0.00004541770613286644,
+              0,
+              0,
+              -0.06080838292837143
+            ],
+            "old": [
+              0,
+              0,
+              -0.0001220703125,
+              0,
+              0,
+              -3.059112548828125
+            ],
+            "recorded_generate": [
+              0,
+              0,
+              -0.0005529781919904053,
+              0,
+              0,
+              -0.017803387716412544
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "sample": 44,
+          "response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder<|im_end|>",
+          "dtypes": {
+            "actor_recompute": {
+              "weight": "torch.bfloat16",
+              "activation": "torch.bfloat16"
+            },
+            "fsdp_full_fp32_normalization": {
+              "weight": "torch.bfloat16",
+              "activation": "torch.bfloat16"
+            },
+            "hf_full_fp32_normalization": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            },
+            "hf_cached_generate": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            }
+          },
+          "log_probs": {
+            "actor": [
+              0,
+              -3.048583984375,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0000457763671875,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0000152587890625
+            ],
+            "fsdp_fp32_norm": [
+              0,
+              -3.167999029159546,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.00004541770613286644,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.000017881233361549675
+            ],
+            "hf_full": [
+              0,
+              -0.6931471824645996,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.000024318398573086597,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.009282526560127735
+            ],
+            "hf_cached": [
+              0,
+              -1.5019290447235107,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.000024318398573086597,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0007626485894434154
+            ],
+            "old": [
+              0,
+              -3.048583984375,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0000457763671875,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0000152587890625
+            ],
+            "recorded_generate": [
+              0,
+              -0.42870065569877625,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.00004541770613286644,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0430804118514061
+            ]
+          }
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "fe1084c25661c23d7ad29d53a70df34893793b977a9c36639e9a6edd51bf9682",
+        "result.json": "2fd702a1cdbe5146af839613401d64786372ebcecec06483f882327bf4af9d37",
+        "console.log": "f24dcebad0d28d5341d01f8e73a97cec6fc698d0ebb5356b621935fe1628fbab",
+        "rank-00.jsonl": "21852b60537178eae6aef556396a967cadc26fb844a440f5283165cf4b930c01",
+        "rank-01.jsonl": "07ee01d07c0c9cbe1d259cd4c5567bd4f84bcb7ca93dccc9891ef47951adb4ac",
+        "rank-02.jsonl": "aba6c9c52c1fccc72cb70ca66d8b7ab4bc6b774e63934e0108dfe3953a10f291",
+        "rank-03.jsonl": "2f89fa0f6be846d41affe1d8684437f28c2d93dbf0934517fa173bbeb85f1f72"
+      }
+    },
+    {
+      "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-param-fp32-opt0-r15",
+      "source_commit": "a6ab6e05dad47282a42a12f49960602e3fd264e2",
+      "param_dtype": "fp32",
+      "gpus": "4,5,6,7",
+      "started_at": "2026-09-06T11:47:29.443879+00:00",
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-02.jsonl": "completed",
+          "rank-00.jsonl": "completed",
+          "rank-01.jsonl": "completed",
+          "rank-03.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T11:48:23.422504+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "seconds": 53.978625,
+      "aggregate": {
+        "actor_vs_old": {
+          "tokens": 135,
+          "abs_mean": 0.06243642347765764,
+          "abs_max": 2.9161758422851562,
+          "finite": true
+        },
+        "normalization": {
+          "tokens": 135,
+          "abs_mean": 0.0013263454404618938,
+          "abs_max": 0.14907658100128174,
+          "finite": true
+        },
+        "parameter_precision_path": {
+          "tokens": 135,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "finite": true
+        },
+        "cached_vs_full": {
+          "tokens": 135,
+          "abs_mean": 0.0076416924265371505,
+          "abs_max": 0.8087818622589111,
+          "finite": true
+        },
+        "cached_vs_recorded_generate": {
+          "tokens": 135,
+          "abs_mean": 0.012977043508995381,
+          "abs_max": 1.073228359222412,
+          "finite": true
+        },
+        "cached_vs_actor": {
+          "tokens": 135,
+          "abs_mean": 0.008559641440472922,
+          "abs_max": 0.8087832927703857,
+          "finite": true
+        }
+      },
+      "responses": 8,
+      "peak_allocated_bytes": 36202213376,
+      "peak_reserved_bytes": 38023462912,
+      "examples": [
+        {
+          "rank": 0,
+          "sample": 49,
+          "response": "- marine x 2<|im_end|>",
+          "dtypes": {
+            "actor_recompute": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            },
+            "fsdp_full_fp32_normalization": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            },
+            "hf_full_fp32_normalization": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            },
+            "hf_cached_generate": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            }
+          },
+          "log_probs": {
+            "actor": [
+              0,
+              0,
+              -0.00000762939453125,
+              0,
+              0,
+              -0.14293670654296875
+            ],
+            "fsdp_fp32_norm": [
+              0,
+              0,
+              -0.0000069141146923357155,
+              0,
+              0,
+              -0.15748624503612518
+            ],
+            "hf_full": [
+              0,
+              0,
+              -0.0000069141146923357155,
+              0,
+              0,
+              -0.15748624503612518
+            ],
+            "hf_cached": [
+              0,
+              0,
+              -0.00004541770613286644,
+              0,
+              0,
+              -0.06080838292837143
+            ],
+            "old": [
+              0,
+              0,
+              -0.0001220703125,
+              0,
+              0,
+              -3.059112548828125
+            ],
+            "recorded_generate": [
+              0,
+              0,
+              -0.0005529781919904053,
+              0,
+              0,
+              -0.017803387716412544
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "sample": 44,
+          "response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder<|im_end|>",
+          "dtypes": {
+            "actor_recompute": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            },
+            "fsdp_full_fp32_normalization": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            },
+            "hf_full_fp32_normalization": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            },
+            "hf_cached_generate": {
+              "weight": "torch.float32",
+              "activation": "torch.float32"
+            }
+          },
+          "log_probs": {
+            "actor": [
+              0,
+              -0.693145751953125,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.000030517578125,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.01116943359375
+            ],
+            "fsdp_fp32_norm": [
+              0,
+              -0.6931471824645996,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.000024318398573086597,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.009282526560127735
+            ],
+            "hf_full": [
+              0,
+              -0.6931471824645996,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.000024318398573086597,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.009282526560127735
+            ],
+            "hf_cached": [
+              0,
+              -1.5019290447235107,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.000024318398573086597,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0007626485894434154
+            ],
+            "old": [
+              0,
+              -3.048583984375,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0000457763671875,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0000152587890625
+            ],
+            "recorded_generate": [
+              0,
+              -0.42870065569877625,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.00004541770613286644,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -0.0430804118514061
+            ]
+          }
+        }
+      ],
+      "artifact_sha256": {
+        "manifest.json": "dad249e5823815a2dffaac30e9416bc35f160e3eb2d902d86766f26207552db1",
+        "result.json": "19c0f2882f63c92bf909c5cb72e0086d79802554e0b8cf3b15d18bdaae0cf8a2",
+        "console.log": "e5824bb68d214183f7bbb14e0225384d21c2b876d3dccc8787be4f850e56ba20",
+        "rank-00.jsonl": "16a8b1f25a92e5d678cb7aa8dc525587d35c10a8925b241f0bbdd6d5377aa25c",
+        "rank-01.jsonl": "c9f5b19f1a87def8b662071a8b2fa6615fe4e20b425db6de805751d2f12cb829",
+        "rank-02.jsonl": "d9ba01453bab53810247ae5af60cb08d923b3702d0fff9194dfb01f1ffbec2fb",
+        "rank-03.jsonl": "1308c765982e5397801b0f2bfedd85a038cb801dd69e550012393850d8bb9ee5"
+      }
+    }
+  ],
+  "crosscheck": {
+    "config_differences_by_rank": [
+      {
+        "rank": 0,
+        "differences": [
+          [
+            ".actor.fsdp_config.mixed_precision.param_dtype",
+            "bf16",
+            "fp32"
+          ]
+        ]
+      },
+      {
+        "rank": 1,
+        "differences": [
+          [
+            ".actor.fsdp_config.mixed_precision.param_dtype",
+            "bf16",
+            "fp32"
+          ]
+        ]
+      },
+      {
+        "rank": 2,
+        "differences": [
+          [
+            ".actor.fsdp_config.mixed_precision.param_dtype",
+            "bf16",
+            "fp32"
+          ]
+        ]
+      },
+      {
+        "rank": 3,
+        "differences": [
+          [
+            ".actor.fsdp_config.mixed_precision.param_dtype",
+            "bf16",
+            "fp32"
+          ]
+        ]
+      }
+    ],
+    "input_hashes_identical": true,
+    "sample_and_response_identical": true,
+    "A_vs_historical_r11_actor_max_gap": 0,
+    "A_vs_B_max_gap_by_probability_path": {
+      "actor": 2.9161758422851562,
+      "fsdp_fp32_norm": 3.019297316670418,
+      "hf_full": 0,
+      "hf_cached": 0,
+      "old": 0,
+      "recorded_generate": 0
+    }
+  },
+  "interpretation": "Single-parameter intervention removes full-input FSDP/HF path discrepancy on 135 selected valid tokens. Actual cached generation/recompute mismatch improves but remains nonzero. This is a verified numerical-path improvement, not complete policy-consistency or learning validation.",
+  "remaining": [
+    "Candidate normalization abs max 0.14907658100128174",
+    "Cached versus full forward abs max 0.8087818622589111",
+    "Cached replay versus original generation abs max 1.073228359222412",
+    "Post-optimizer-update drift has not been tested under candidate precision"
+  ],
+  "limitations": [
+    "8 deliberately selected historical responses, not a random population sample",
+    "No new games, no win-rate results, no optimizer updates",
+    "Peak memory includes checkpoint loading; 54/56 seconds are cold diagnostic runtimes, not training throughput benchmarks",
+    "Old saved probabilities remain from BF16 and cannot be reused as candidate PPO old probabilities",
+    "No automatic production promotion or long training"
+  ],
+  "next_step": "Separate proposed experiment: preserve fp32 param_dtype and test FP32 response-logit temperature/normalization only; obtain authorization before additional GPU work. Do not disable generation cache."
+}

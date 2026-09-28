@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260829-v1524-micro-level6-rl-v1",
+  "run_id": "20260829-v1524-micro-level6-rl-v1-qwen-base-l6-smoke8-s0-r1",
+  "status": "completed",
+  "baseline_run_id": "20260819-qwen-spb-canonical-level6-rl-v1-qwen-base-l6-full96-s0-r1",
+  "only_change": "SC2_ENABLE_NEWEXEC_MICRO: 0 -> 1",
+  "model": {
+    "id": "Qwen/Qwen3-4B",
+    "initialization": "public base; no SFT and no prior project RL",
+    "manifest_sha256": "82fdeae910670892e5c70b177ca5ec30d3d69090416e34480be6d63880f7a56c"
+  },
+  "system": {
+    "planner": "canonical-plan-v2",
+    "planner_sha256": "25cd70413db0d5846a5823093545f793092bc850d9eac1091a7d7d018f1bf3e5",
+    "protocol": "legacy compact6",
+    "segment_max": 6,
+    "response_tokens": 96,
+    "script_player_sha256": "76354ff908b47f8c400e2cf279a3af5f49e98a3da6afb53018143b579f28c6da",
+    "newexec_micro": true,
+    "attack_target_units_first": false,
+    "strategy_profile": "marine_pressure",
+    "auto_train_marines": false,
+    "max_forced_attacks": 0,
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494"
+  },
+  "environment": {
+    "map": "Flat128",
+    "difficulty": "Harder",
+    "difficulty_level": 6,
+    "ai_build": "Air",
+    "seed": 0,
+    "rollouts_per_update": 8
+  },
+  "training": {
+    "algorithm": "GIGPO",
+    "global_steps": 8,
+    "learning_rate": 0.000001,
+    "checkpoint_step": 8,
+    "thinking": false
+  },
+  "resources": {
+    "host": "sc2-a100-44",
+    "gpu_ids": [0, 1, 2, 3, 4, 5, 6, 7]
+  },
+  "result": {
+    "exit_status": 0,
+    "checkpoint_complete": true,
+    "completed_global_steps": 8,
+    "training_rollouts": 64,
+    "successful_rollouts": 0,
+    "mean_episode_reward": -42.718625,
+    "mean_valid_action_ratio": 0.0685,
+    "mean_response_clip_ratio": 0.818375,
+    "mean_preclip_grad_norm": 25.627625,
+    "max_preclip_grad_norm": 44.689,
+    "nonempty_micro_trace_count": 360,
+    "numerically_finite": true,
+    "promotion_gate": "failed"
+  }
+}

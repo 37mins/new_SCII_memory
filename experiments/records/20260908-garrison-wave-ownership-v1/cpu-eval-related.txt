@@ -1,0 +1,122 @@
+COMMAND: /private/tmp/sc2-air-results.HBI61m/decoder/bin/python -B -m unittest discover -s tests -p test_r6_terminal_policy_credit.py -v
+test_collector_carries_consumption_metadata_without_hiding_game_outcome (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_delayed_terminal_reward_is_attached_once_to_last_real_action (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_gather_filters_before_collation_and_keeps_all_game_successes (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}, {"traj_uid": "game", "environment_reward": -49.5, "environment_interactions": 2, "policy_decisions": 1, "excluded_terminal_rows": 1}]
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+ok
+test_no_decision_victory_or_defeat_has_no_policy_sample (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_only_get_action_consumes_action_id_not_terminal_ack_loop (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... Terminal received ACTION after done; resending terminal data.
+Terminal ack received.
+ok
+test_other_environments_keep_existing_active_mask_contract (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_real_last_action_keeps_terminal_reward_even_if_invalid (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_reset_caches_and_acknowledges_initial_terminal_without_action (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_transport_reports_consumption_not_just_socket_success (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_unconsumed_nonterminal_is_not_silently_discarded (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.020s
+
+OK
+EXIT_CODE=0
+COMMAND: /private/tmp/sc2-air-results.HBI61m/decoder/bin/python -B -m unittest discover -s tests -p test_r6_natural_termination.py -v
+test_game_end_reports_only_real_sc2_results (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_manager_records_cutoff_once_and_refuses_truncated_training (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_only_real_results_have_outcome_rewards (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_planner_never_turns_call_count_into_done (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_real_result_wins_at_interaction_boundary (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_run_summary_counts_only_natural_results (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_sc2_step_uses_gymnasium_five_tuple (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+test_zero_disables_the_optional_interaction_limit (test_r6_natural_termination.R6NaturalTerminationTest) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.027s
+
+OK
+EXIT_CODE=0
+COMMAND: /private/tmp/sc2-air-results.HBI61m/decoder/bin/python -B -m unittest discover -s tests -p test_garrison_wave_ownership.py -v
+test_all_waves_and_unit_types_are_excluded (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_attacking_wave_members_are_also_protected_when_idle (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_idle_viking_at_recorded_rally_is_not_pulled_back (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_no_wave_keeps_original_garrison_destination (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_release_by_member_or_wave_removal_restores_garrison (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_repeated_checks_do_not_create_new_orders_for_members (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_scout_handling_is_not_changed_by_this_fix (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_threat_and_existing_worker_idle_radius_filters_remain (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.031s
+
+OK
+EXIT_CODE=0
+COMMAND: /private/tmp/sc2-air-results.HBI61m/decoder/bin/python -B -m unittest discover -s tests -p test_system_release.py -v
+test_checkpoint_evaluation_records_actual_eight_card_controls (test_system_release.LauncherTest) ... ok
+test_eight_gpu_long_budget_preserves_global_batch_and_rollouts (test_system_release.LauncherTest) ... ok
+test_evaluation_keeps_system_but_disables_updates (test_system_release.LauncherTest) ... ok
+test_explicit_stage8_overrides_keep_96_step_goal (test_system_release.LauncherTest) ... ok
+test_four_gpu_override_preserves_rollout_budget (test_system_release.LauncherTest) ... ok
+test_four_update_probe_saves_each_step_and_preserves_training_controls (test_system_release.LauncherTest) ... ok
+test_integrated_defaults_select_instruct_and_disable_call_shaping (test_system_release.LauncherTest) ... ok
+test_integrated_spb_default_disables_only_swa_dropout (test_system_release.LauncherTest) ... ok
+test_invalid_bo_profile_stops_before_creation (test_system_release.LauncherTest) ... ok
+test_natural_gate_requires_an_explicit_ray_directory (test_system_release.LauncherTest) ... ok
+test_qwen_spb_share_all_nonmodel_training_controls (test_system_release.LauncherTest) ... ok
+test_refuses_existing_run_without_overwriting (test_system_release.LauncherTest) ... ok
+test_rush_is_explicit_and_does_not_select_seed2 (test_system_release.LauncherTest) ... ok
+test_spb_dropout_override_only_changes_swa_config (test_system_release.LauncherTest) ... ok
+test_step_shaping_is_the_only_nonpath_ab_override (test_system_release.LauncherTest) ... ok
+test_two_gpu_kl_probe_preserves_global_training_controls (test_system_release.LauncherTest) ... ok
+test_unknown_shaping_mode_is_rejected_before_run_creation (test_system_release.LauncherTest) ... ok
+test_matches_historical_training_branch_only (test_system_release.ModelPreparationTest) ... ok
+test_preparation_does_not_modify_source_or_copy_weights (test_system_release.ModelPreparationTest) ... ok
+test_complete_and_incomplete_checkpoint (test_system_release.ResultAuditTest) ... ok
+test_eval_requires_result_and_replay_but_not_model_participation (test_system_release.ResultAuditTest) ... ok
+test_four_gpu_checkpoint_is_audited_against_four_ranks (test_system_release.ResultAuditTest) ... ok
+test_nonfinite_or_process_failure_is_not_completed (test_system_release.ResultAuditTest) ... ok
+test_step8_evaluation_requires_all_eight_natural_games (test_system_release.ResultAuditTest) ... ok
+test_frozen_system_source (test_system_release.SourceFreezeTest) ... ok
+test_rush_bo_is_exact_historical_input (test_system_release.SourceFreezeTest) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.475s
+
+OK
+EXIT_CODE=0
+COMMAND: /private/tmp/sc2-air-results.HBI61m/decoder/bin/python -B -m unittest discover -s tests -p test_r6_format_reward.py -v
+test_existing_validator_checks_whole_answer_before_truncation (test_r6_format_reward.FormatRewardTest) ... ok
+test_manager_transports_existing_validation_without_altering_text (test_r6_format_reward.FormatRewardTest) ... ok
+test_next_consumed_answer_replaces_previous_validation (test_r6_format_reward.FormatRewardTest) ... ok
+test_raw_invalid_answer_does_not_gain_reward_after_rule_repair (test_r6_format_reward.FormatRewardTest) ... ok
+test_socket_forwards_validation_and_identical_action_text (test_r6_format_reward.FormatRewardTest) ... ok
+test_unvalidated_direct_text_cannot_earn_a_format_bonus (test_r6_format_reward.FormatRewardTest) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.050s
+
+OK
+EXIT_CODE=0
+COMMAND: shasum -a 256 -c configs/system-v1.sha256
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py: OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/strategist.py: OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/base_player.py: OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py: OK
+agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py: OK
+agent_system/environments/env_package/sc2_online_restored/envSC2.py: OK
+agent_system/environments/strategic_sc2_env_manager_v2.py: OK
+agent_system/multi_turn_rollout/rollout_loop.py: OK
+agent_system/sc2_episode.py: OK
+configs/system-v1.env: OK
+agent_system/reward_manager/episode.py: OK
+gigpo/core_gigpo.py: OK
+verl/protocol.py: OK
+verl/trainer/ppo/core_algos.py: OK
+verl/trainer/ppo/ray_trainer.py: OK
+verl/workers/actor/dp_actor.py: OK
+verl/models/transformers/qwen3_rowwise_rms_norm.py: OK
+verl/workers/actor/ppo_diagnostics.py: OK
+verl/workers/fsdp_workers.py: OK
+verl/workers/rollout/hf_rollout.py: OK
+verl/workers/rollout/hf_diagnostics.py: OK
+EXIT_CODE=0
+COMMAND: git diff --check
+EXIT_CODE=0

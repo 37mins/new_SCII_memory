@@ -1,0 +1,497 @@
+{
+  "scope": "Historical A4/feedback-on temperature games, not new feedback-off RL.",
+  "scale": 0.001,
+  "categories": [
+    "Army",
+    "Economy",
+    "Technology"
+  ],
+  "games": [
+    {
+      "arm": "04",
+      "env": 0,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1/sc2-logs/game-3970909/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/replay.SC2Replay",
+      "replay_sha256": "301e1483b7a0f41d2c36a7fe2ff0347fc62c34d470fb59eb3ecaf53b4b7da806",
+      "second_plan": {
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "calls": 2,
+      "old_return": -49.382,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 14360,
+        "killed": 2475,
+        "lost": 6450
+      },
+      "net_value": -3975,
+      "candidate_component": -3.975,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "04",
+      "env": 1,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1/sc2-logs/game-3970911/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/replay.SC2Replay",
+      "replay_sha256": "c0c4f2de108cdc0b64fc5592ffffc460e0e1780bf9dcaf11fbf98566c3ad42ed",
+      "second_plan": {
+        "marine": 8,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "calls": 6,
+      "old_return": -49.5,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 18044,
+        "killed": 2475,
+        "lost": 6550
+      },
+      "net_value": -4075,
+      "candidate_component": -4.075,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "04",
+      "env": 2,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1/sc2-logs/game-3970910/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/replay.SC2Replay",
+      "replay_sha256": "09e87b0fdda937b7895f697eb065ac34ced06e8e19972e919b5554d3d2eb864a",
+      "second_plan": {
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "calls": 2,
+      "old_return": -49.382,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 14360,
+        "killed": 2475,
+        "lost": 6450
+      },
+      "net_value": -3975,
+      "candidate_component": -3.975,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "04",
+      "env": 3,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1/sc2-logs/game-3970912/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/replay.SC2Replay",
+      "replay_sha256": "da39a736af79da78a6a15079a9eea33d4cbebf54b13ee889edd51f4e146a8d75",
+      "second_plan": {
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "calls": 2,
+      "old_return": -49.382,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 14360,
+        "killed": 2475,
+        "lost": 6450
+      },
+      "net_value": -3975,
+      "candidate_component": -3.975,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "04",
+      "env": 4,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1/sc2-logs/game-3970915/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/replay.SC2Replay",
+      "replay_sha256": "6cf0cfe42a3fe164dfb3c0cfb5f66ee0700630d75bbb23c8698d84aafe2004ed",
+      "second_plan": {
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "calls": 2,
+      "old_return": -49.382,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 14360,
+        "killed": 2475,
+        "lost": 6450
+      },
+      "net_value": -3975,
+      "candidate_component": -3.975,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "04",
+      "env": 5,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1/sc2-logs/game-3970914/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/replay.SC2Replay",
+      "replay_sha256": "a08a694045e3eb25ec17834b4708d307aa9086cfa34eabde1d9d66217aba2938",
+      "second_plan": {
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "calls": 2,
+      "old_return": -49.382,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 14360,
+        "killed": 2475,
+        "lost": 6450
+      },
+      "net_value": -3975,
+      "candidate_component": -3.975,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "04",
+      "env": 6,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1/sc2-logs/game-3970916/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/replay.SC2Replay",
+      "replay_sha256": "12c1f1c8ac6ea1d692f038e95899cd22d84a7ba32ac7a5143422177de77a6f8f",
+      "second_plan": {
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "calls": 2,
+      "old_return": -49.382,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 14360,
+        "killed": 2475,
+        "lost": 6450
+      },
+      "net_value": -3975,
+      "candidate_component": -3.975,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "04",
+      "env": 7,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1/sc2-logs/game-3970913/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/replay.SC2Replay",
+      "replay_sha256": "3133d60924ef8339b119a1217633c24313ea674093e41726f616a887c4050315",
+      "second_plan": {
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "calls": 2,
+      "old_return": -49.382,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 14360,
+        "killed": 2475,
+        "lost": 6450
+      },
+      "net_value": -3975,
+      "candidate_component": -3.975,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "08",
+      "env": 0,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1/sc2-logs/game-3984472/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/replay.SC2Replay",
+      "replay_sha256": "8818c2dd0025337fae2feb9fce7e1578138f5370bad18c3371a0fbdb32f6052e",
+      "second_plan": {
+        "marine": 1,
+        "supplydepot": 1,
+        "barracks": 1,
+        "reactor barracks": 1,
+        "scv": 1,
+        "refinery": 1,
+        "Attacking Instruction: Launch OFFENSE with 8 marine": 1
+      },
+      "calls": 6,
+      "old_return": -48.95,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 17532,
+        "killed": 925,
+        "lost": 7750
+      },
+      "net_value": -6825,
+      "candidate_component": -6.825,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "08",
+      "env": 1,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1/sc2-logs/game-3984474/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/replay.SC2Replay",
+      "replay_sha256": "1a6c3ea36b7df65c90684c3f9a13f65420dadc334650ff39841fe0ccd5eff0c6",
+      "second_plan": {
+        "marine": 8,
+        "supplydepot": 8,
+        "barracks": 3
+      },
+      "calls": 7,
+      "old_return": -49.901,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 18042,
+        "killed": 1400,
+        "lost": 7350
+      },
+      "net_value": -5950,
+      "candidate_component": -5.95,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "08",
+      "env": 2,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1/sc2-logs/game-3984473/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/replay.SC2Replay",
+      "replay_sha256": "7dcab6491efda1876d1a6cc69bddf4c320176f170f4bd339bf18d1da09da5d1b",
+      "second_plan": {
+        "marine": 4,
+        "supplydepot": 2,
+        "barracks": 3
+      },
+      "calls": 8,
+      "old_return": -49.432,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 18507,
+        "killed": 2775,
+        "lost": 8500
+      },
+      "net_value": -5725,
+      "candidate_component": -5.7250000000000005,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "08",
+      "env": 3,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1/sc2-logs/game-3984475/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/replay.SC2Replay",
+      "replay_sha256": "690732c2f029af96f36509480a0397ffb3760a9cc7c618ffc3ae42fe6eba6eb4",
+      "second_plan": {
+        "marine": 4,
+        "supplydepot": 1,
+        "barracks": 2
+      },
+      "calls": 9,
+      "old_return": -49.901,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 17426,
+        "killed": 625,
+        "lost": 6925
+      },
+      "net_value": -6300,
+      "candidate_component": -6.3,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "08",
+      "env": 4,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1/sc2-logs/game-3984476/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/replay.SC2Replay",
+      "replay_sha256": "dd5f2292c238c2de9ba1a6c3652ec1b6ddd672a7ed27c7e4b78521f9c869a18d",
+      "second_plan": {
+        "supplydepot": 2,
+        "barracks": 2,
+        "marine": 22
+      },
+      "calls": 8,
+      "old_return": -48.901,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 17639,
+        "killed": 1375,
+        "lost": 6925
+      },
+      "net_value": -5550,
+      "candidate_component": -5.55,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "08",
+      "env": 5,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1/sc2-logs/game-3984477/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/replay.SC2Replay",
+      "replay_sha256": "1ace355f06218027b7d2574c38bd8f34a76caa3460c66253ca61cfab2de16eb8",
+      "second_plan": {
+        "marine": 2,
+        "supplydepot": 2,
+        "barracks": 2
+      },
+      "calls": 8,
+      "old_return": -49.901,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 17945,
+        "killed": 1400,
+        "lost": 7350
+      },
+      "net_value": -5950,
+      "candidate_component": -5.95,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "08",
+      "env": 6,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1/sc2-logs/game-3984478/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/replay.SC2Replay",
+      "replay_sha256": "012140f65186c3737a337ab229d52fdd7a979a01547e43600dcba65db17597db",
+      "second_plan": {
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3
+      },
+      "calls": 3,
+      "old_return": -49.382,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 14360,
+        "killed": 2475,
+        "lost": 6450
+      },
+      "net_value": -3975,
+      "candidate_component": -3.975,
+      "counter_sum_check": true
+    },
+    {
+      "arm": "08",
+      "env": 7,
+      "replay": "/private/tmp/sc2-temperature-replays.DAGhO7/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1/sc2-logs/game-3984479/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/replay.SC2Replay",
+      "replay_sha256": "247418f7c644fbd21c5a4ff2118eaae6be8e01363ed059e2f047e283ac815595",
+      "second_plan": {
+        "marine": 2,
+        "supplydepot": 2,
+        "barracks": 2,
+        "reactor barracks": 2,
+        "scv": 3
+      },
+      "calls": 9,
+      "old_return": -49.5,
+      "outcome": "Defeat",
+      "first_stats": {
+        "loop": 1,
+        "killed": 0,
+        "lost": 0
+      },
+      "last_stats": {
+        "loop": 17624,
+        "killed": 775,
+        "lost": 6475
+      },
+      "net_value": -5700,
+      "candidate_component": -5.7,
+      "counter_sum_check": true
+    }
+  ],
+  "summary": {
+    "04": {
+      "old_return_unique": 2,
+      "combat_unique": 2,
+      "net_min": -4075,
+      "net_max": -3975,
+      "candidate_std": 0.03307189138830741
+    },
+    "08": {
+      "old_return_unique": 6,
+      "combat_unique": 7,
+      "net_min": -6825,
+      "net_max": -3975,
+      "candidate_std": 0.7690738647067653
+    }
+  },
+  "source_audit": "9ae8668c4c6045f5834d197c72f7495c175c1c73",
+  "timeline_sha256": "d160894d4d817f15be6b4569f2738e760d62274ec0f8b4c477927e91ccd542f5",
+  "limits": [
+    "Replay stats are sampled; this is not exact live-boundary reward or GiGPO advantage.",
+    "All games lost; differing combat score does not establish which policy improves winning.",
+    "Identical counters give identical reward; this cannot create exploration.",
+    "Historical temperature/feedback differs from the proposed RL; no transfer guarantee."
+  ]
+}

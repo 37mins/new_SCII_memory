@@ -1,0 +1,451 @@
+{
+  "status": "boundary-conflict; B not implemented",
+  "baseline_sha": "0d7ba09ddbdf94d85d67b553bf7978f402cf2052",
+  "archive_sha256": "e40fb7dad98f4c7d336031f3b2047ee3e15113ce14925830cfb6540aaa5888ab",
+  "archive_planner_sha256": "ad7fb851c67add208fb747050e965cbc0e2efc665a9b55c3206564e81fec37c5",
+  "log_sha256": "d66c1b802b3d4596e72fe30040273e45963fbe7cb3bb21c48951c10e360dca43",
+  "cases": [
+    {
+      "name": "actual_29_marine_remainder8",
+      "origin": "unaltered log line38",
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n",
+      "A": {
+        "valid": false,
+        "reason": "selected bullet count exceeds response line limit",
+        "after_line_truncation": "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+        "parsed_before_line_truncation": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "parsed_after_line_truncation": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "planner_queue": [
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "executor_action_queue": [
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "line_limit_exceeded": true,
+        "executor_scope": "CPU action queue only; no engine command submitted"
+      },
+      "original_parser_result": [
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine"
+      ],
+      "frozen_candidate_violations": {
+        "marine": {
+          "selected": 29,
+          "allowed": 8
+        }
+      },
+      "B_executor_queue": null,
+      "debug": "Generate new plan... [0]\nStep shaping reward off: 0.000\nBO ori: Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n\nMax entries exceeded.\nBO ori: Here are the Build Orders with attack instructions:,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,, BO: ['marine', 'marine', 'marine']\nBO choices: #1=Launch OFFENSE with 12 marine, #2=marine\n"
+    },
+    {
+      "name": "actual_six_actions",
+      "origin": "unaltered log line46",
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot\n- barracks\n- marine\n- marine\n- marine\n- marine",
+      "A": {
+        "valid": true,
+        "reason": "",
+        "after_line_truncation": "Here are the Build Orders with attack instructions:\n- supplydepot\n- barracks\n- marine\n- marine\n- marine\n- marine",
+        "parsed_before_line_truncation": [
+          "supplydepot",
+          "barracks",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "parsed_after_line_truncation": [
+          "supplydepot",
+          "barracks",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "planner_queue": [
+          "supplydepot",
+          "barracks",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "executor_action_queue": [
+          "supplydepot",
+          "barracks",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "line_limit_exceeded": false,
+        "executor_scope": "CPU action queue only; no engine command submitted"
+      },
+      "original_parser_result": [
+        "supplydepot",
+        "barracks",
+        "marine",
+        "marine",
+        "marine",
+        "marine"
+      ],
+      "frozen_candidate_violations": {},
+      "B_executor_queue": null,
+      "debug": "Generate new plan... [0]\nStep shaping reward off: 0.000\nBO ori: Here are the Build Orders with attack instructions:\n- supplydepot\n- barracks\n- marine\n- marine\n- marine\n- marine\nBO ori: Here are the Build Orders with attack instructions:,- supplydepot,- barracks,- marine,- marine,- marine,- marine, BO: ['supplydepot', 'barracks', 'marine', 'marine', 'marine', 'marine']\nBO choices: #1=Launch OFFENSE with 8 marine, #2=marine, #3=supplydepot, #4=barracks, #5=reactor barracks, #6=scv, #7=refinery\n"
+    },
+    {
+      "name": "derived_seven_marine",
+      "origin": "first7 actions of line38; line46 context, remainder42",
+      "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+      "A": {
+        "valid": false,
+        "reason": "selected bullet count exceeds response line limit",
+        "after_line_truncation": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+        "parsed_before_line_truncation": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "parsed_after_line_truncation": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "planner_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "executor_action_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "line_limit_exceeded": true,
+        "executor_scope": "CPU action queue only; no engine command submitted"
+      },
+      "original_parser_result": [
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine"
+      ],
+      "frozen_candidate_violations": {},
+      "B_executor_queue": null,
+      "debug": "Generate new plan... [0]\nStep shaping reward off: 0.000\nBO ori: - marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\nMax entries exceeded.\nBO ori: - marine,- marine,- marine,- marine,- marine,- marine,- marine, BO: ['supplydepot', 'barracks', 'refinery', 'marine', 'barracks', 'reactor barracks']\nBO choices: #1=Launch OFFENSE with 8 marine, #2=marine, #3=supplydepot, #4=barracks, #5=reactor barracks, #6=scv, #7=refinery\n"
+    },
+    {
+      "name": "derived_fifteen_marine",
+      "origin": "first15 actions of line38; line46 context, remainder42",
+      "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+      "A": {
+        "valid": false,
+        "reason": "selected bullet count exceeds response line limit",
+        "after_line_truncation": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+        "parsed_before_line_truncation": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "parsed_after_line_truncation": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine"
+        ],
+        "planner_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "executor_action_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "line_limit_exceeded": true,
+        "executor_scope": "CPU action queue only; no engine command submitted"
+      },
+      "original_parser_result": [
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine"
+      ],
+      "frozen_candidate_violations": {},
+      "B_executor_queue": null,
+      "debug": "Generate new plan... [0]\nStep shaping reward off: 0.000\nBO ori: - marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\nMax entries exceeded.\nBO ori: - marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine,- marine, BO: ['supplydepot', 'barracks', 'refinery', 'marine', 'barracks', 'reactor barracks']\nBO choices: #1=Launch OFFENSE with 8 marine, #2=marine, #3=supplydepot, #4=barracks, #5=reactor barracks, #6=scv, #7=refinery\n"
+    },
+    {
+      "name": "derived_count29",
+      "origin": "lossless count encoding of line38; line46 context, remainder42",
+      "raw_answer": "- marine x 29",
+      "A": {
+        "valid": false,
+        "reason": "action outside current canonical BO candidates: marine x 29",
+        "after_line_truncation": "- marine x 29",
+        "parsed_before_line_truncation": [],
+        "parsed_after_line_truncation": [],
+        "planner_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "executor_action_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "line_limit_exceeded": false,
+        "executor_scope": "CPU action queue only; no engine command submitted"
+      },
+      "original_parser_result": [
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine"
+      ],
+      "frozen_candidate_violations": {},
+      "B_executor_queue": null,
+      "debug": "Generate new plan... [0]\nStep shaping reward off: 0.000\nBO ori: - marine x 29\nBO fallback to remaining list.\nBO ori: - marine x 29, BO: ['supplydepot', 'barracks', 'refinery', 'marine', 'barracks', 'reactor barracks']\nBO choices: #1=Launch OFFENSE with 8 marine, #2=marine, #3=supplydepot, #4=barracks, #5=reactor barracks, #6=scv, #7=refinery\n"
+    },
+    {
+      "name": "derived_mixed_18_actions",
+      "origin": "synthetic count boundary, real line46 candidates",
+      "raw_answer": "- supplydepot x 2\n- barracks\n- marine x 15",
+      "A": {
+        "valid": false,
+        "reason": "action outside current canonical BO candidates: supplydepot x 2",
+        "after_line_truncation": "- supplydepot x 2\n- barracks\n- marine x 15",
+        "parsed_before_line_truncation": [
+          "barracks"
+        ],
+        "parsed_after_line_truncation": [
+          "barracks"
+        ],
+        "planner_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "executor_action_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "line_limit_exceeded": false,
+        "executor_scope": "CPU action queue only; no engine command submitted"
+      },
+      "original_parser_result": [
+        "supplydepot",
+        "supplydepot",
+        "barracks",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine",
+        "marine"
+      ],
+      "frozen_candidate_violations": {},
+      "B_executor_queue": null,
+      "debug": "Generate new plan... [0]\nStep shaping reward off: 0.000\nBO ori: - supplydepot x 2\n- barracks\n- marine x 15\nBO ori: - supplydepot x 2,- barracks,- marine x 15, BO: ['supplydepot', 'barracks', 'refinery', 'marine', 'barracks', 'reactor barracks']\nBO choices: #1=Launch OFFENSE with 8 marine, #2=marine, #3=supplydepot, #4=barracks, #5=reactor barracks, #6=scv, #7=refinery\n"
+    },
+    {
+      "name": "derived_bad_name",
+      "origin": "synthetic exact-name negative control",
+      "raw_answer": "- barrack\n- marine x 2",
+      "A": {
+        "valid": false,
+        "reason": "action outside current canonical BO candidates: barrack",
+        "after_line_truncation": "- barrack\n- marine x 2",
+        "parsed_before_line_truncation": [],
+        "parsed_after_line_truncation": [],
+        "planner_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "executor_action_queue": [
+          "supplydepot",
+          "barracks",
+          "refinery",
+          "marine",
+          "barracks",
+          "reactor barracks"
+        ],
+        "line_limit_exceeded": false,
+        "executor_scope": "CPU action queue only; no engine command submitted"
+      },
+      "original_parser_result": [
+        "barrack",
+        "marine",
+        "marine"
+      ],
+      "frozen_candidate_violations": {
+        "barrack": {
+          "selected": 1,
+          "allowed": 0
+        }
+      },
+      "B_executor_queue": null,
+      "debug": "Generate new plan... [0]\nStep shaping reward off: 0.000\nBO ori: - barrack\n- marine x 2\nBO fallback to remaining list.\nBO ori: - barrack,- marine x 2, BO: ['supplydepot', 'barracks', 'refinery', 'marine', 'barracks', 'reactor barracks']\nBO choices: #1=Launch OFFENSE with 8 marine, #2=marine, #3=supplydepot, #4=barracks, #5=reactor barracks, #6=scv, #7=refinery\n"
+    }
+  ],
+  "guard_conflict": {
+    "origin": "synthetic legal-name boundary; not a generated answer",
+    "before": [
+      "supplydepot",
+      "supplydepot",
+      "supplydepot",
+      "barracks",
+      "barracks",
+      "barracks",
+      "barracks"
+    ],
+    "after": [
+      "supplydepot",
+      "supplydepot",
+      "supplydepot",
+      "barracks",
+      "barracks",
+      "marine"
+    ],
+    "removed": 2,
+    "rule_added": [
+      "marine"
+    ],
+    "debug": "Opening marine guard: dropping barracks to fit marine\nOpening marine guard: dropping barracks to fit marine\nOpening marine guard applied: ['supplydepot', 'supplydepot', 'supplydepot', 'barracks', 'barracks', 'marine']\n"
+  },
+  "assertions_passed": true
+}

@@ -1,0 +1,746 @@
+{
+  "status": "waiting_for_eight_free_gpus",
+  "verified_at_utc": "2026-09-07T07:55:09.769413+00:00",
+  "authorization": "Only complete r4 step8 independent evaluation, same frozen configuration and the eight actual initial-evaluation game seeds. Do not retrain, repeat initial evaluation, change GPU count, deploy another environment, or start step9/96.",
+  "runtime_sha": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+  "runtime_dirty": "",
+  "deployment": "/root/new-scii-empty-bo-frame-20260907/code-ca7885d",
+  "planned_run_id": "20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-step8-eval",
+  "planned_entry": "experiments/records/20260906-integrated-fixes-v1/run_real_rl_node44.sh step8-eval",
+  "preflight": {
+    "step8_eval_exists": false,
+    "matching_runs": [
+      "20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-initial-eval",
+      "20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8"
+    ],
+    "train_done_sha256": "2025fb0a1fb6b4ed55eac427cfd315cdfbbd039e676fe1e4fbb4feda943b7ebe",
+    "train_done": {
+      "status": "completed",
+      "ended_at": "2026-09-07T07:36:00.285703+00:00",
+      "process_exit_code": 0,
+      "completed_steps": 8,
+      "training_wins": 2,
+      "training_episodes": 64
+    },
+    "checkpoint_tracker": "8",
+    "checkpoint_files": [
+      {
+        "path": "actor/added_tokens.json",
+        "size": 707
+      },
+      {
+        "path": "actor/chat_template.jinja",
+        "size": 2630
+      },
+      {
+        "path": "actor/config.json",
+        "size": 1542
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_0.pt",
+        "size": 15077,
+        "zip_entries": 8,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_1.pt",
+        "size": 15141,
+        "zip_entries": 8,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_2.pt",
+        "size": 15141,
+        "zip_entries": 8,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_3.pt",
+        "size": 15077,
+        "zip_entries": 8,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_4.pt",
+        "size": 15077,
+        "zip_entries": 8,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_5.pt",
+        "size": 15077,
+        "zip_entries": 8,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_6.pt",
+        "size": 15141,
+        "zip_entries": 8,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/extra_state_world_size_8_rank_7.pt",
+        "size": 15141,
+        "zip_entries": 8,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/generation_config.json",
+        "size": 213
+      },
+      {
+        "path": "actor/merges.txt",
+        "size": 1671853
+      },
+      {
+        "path": "actor/model_world_size_8_rank_0.pt",
+        "size": 2205930155,
+        "zip_entries": 406,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/model_world_size_8_rank_1.pt",
+        "size": 2205930155,
+        "zip_entries": 406,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/model_world_size_8_rank_2.pt",
+        "size": 2205930155,
+        "zip_entries": 406,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/model_world_size_8_rank_3.pt",
+        "size": 2205930155,
+        "zip_entries": 406,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/model_world_size_8_rank_4.pt",
+        "size": 2205930155,
+        "zip_entries": 406,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/model_world_size_8_rank_5.pt",
+        "size": 2205930155,
+        "zip_entries": 406,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/model_world_size_8_rank_6.pt",
+        "size": 2205930155,
+        "zip_entries": 406,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/model_world_size_8_rank_7.pt",
+        "size": 2205930155,
+        "zip_entries": 406,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_0.pt",
+        "size": 4022470787,
+        "zip_entries": 9,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_1.pt",
+        "size": 4022470787,
+        "zip_entries": 9,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_2.pt",
+        "size": 4022470787,
+        "zip_entries": 9,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_3.pt",
+        "size": 4022470787,
+        "zip_entries": 9,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_4.pt",
+        "size": 4022470787,
+        "zip_entries": 9,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_5.pt",
+        "size": 4022470787,
+        "zip_entries": 9,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_6.pt",
+        "size": 4022470787,
+        "zip_entries": 9,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/optim_world_size_8_rank_7.pt",
+        "size": 4022470787,
+        "zip_entries": 9,
+        "empty_zip_entries": 0
+      },
+      {
+        "path": "actor/special_tokens_map.json",
+        "size": 613
+      },
+      {
+        "path": "actor/tokenizer.json",
+        "size": 11422654
+      },
+      {
+        "path": "actor/tokenizer_config.json",
+        "size": 5405
+      },
+      {
+        "path": "actor/vocab.json",
+        "size": 2776833
+      },
+      {
+        "path": "data.pt",
+        "size": 1947,
+        "zip_entries": 6,
+        "empty_zip_entries": 0
+      }
+    ],
+    "loading_verified": false,
+    "checkpoint_check_scope": "All 25 required model/optim/extra/data files have readable ZIP central directories. Existing training .done supplies model-shard hashes; not a new tensor reload or full CRC scan.",
+    "config_diff_after_identity_paths_normalized": {
+      "trainer.resume_from_path": [
+        null,
+        "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8"
+      ],
+      "trainer.resume_mode": [
+        "disable",
+        "resume_path"
+      ]
+    },
+    "step8_saved_preflight_config_sha256": "8ad04ba07ef5577668add4e13f248cc2bd77ae3e94934add85f19d5c86406f7c",
+    "seed_validation": "CPU check in node44 pinned NumPy passed: independent RandomState(1000), first reset index 0, randint(2**16, 2**32-1, size=8) matches all eight actual initial seeds individually. Must check the new actual evaluation_seeds.jsonl too.",
+    "config_validation_scope": "Compared previously saved step8 dry-run effective overrides to actual initial-evaluation overrides; only checkpoint resume fields differ after identity paths normalize. Must check actual evaluation manifest/config again after launch."
+  },
+  "resources": {
+    "42": {
+      "free": [],
+      "occupied": "8 vLLM workers"
+    },
+    "43": {
+      "free": [],
+      "occupied": "8 vLLM workers"
+    },
+    "44": {
+      "free": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "occupied": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "owner_evidence": "Four external cjy_mob Python processes, not r4; original sc2_real_r4 tmux absent."
+    },
+    "46": {
+      "free": [],
+      "occupied": "8 external yht_axbench workers"
+    },
+    "47": {
+      "free": [],
+      "occupied": "8 external inner_mem workers"
+    },
+    "48": {
+      "free": [
+        4,
+        6
+      ],
+      "occupied": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    "197": {
+      "free": [],
+      "occupied": "8 external Python training workers"
+    },
+    "198": {
+      "status": "SSH authentication denied; GPU state unknown; credentials not changed"
+    },
+    "snapshots_beijing": "2026-09-07 15:50–15:56"
+  },
+  "initial_evaluation": {
+    "at_utc": "2026-09-07T07:55:09.769413+00:00",
+    "normalized_config_diff": {
+      "trainer.resume_from_path": [
+        null,
+        "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8"
+      ],
+      "trainer.resume_mode": [
+        "disable",
+        "resume_path"
+      ]
+    },
+    "source_initial": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-initial-eval",
+    "source_step8_preflight": "/root/new-scii-empty-bo-frame-20260907/preflight-r4-step8-eval",
+    "preflight_config_sha256": "8ad04ba07ef5577668add4e13f248cc2bd77ae3e94934add85f19d5c86406f7c",
+    "episodes": [
+      {
+        "env_index": 0,
+        "game_seed": 2807211443,
+        "result": "Defeat",
+        "cumulative_reward": -49,
+        "consumed_planner_decisions": 8,
+        "evaluable": 8,
+        "valid": 8,
+        "non_evaluable_consumed": 0,
+        "raw_examples": [
+          "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine"
+        ],
+        "invalid_example": null,
+        "answer_character_lengths": [
+          93,
+          73,
+          71,
+          44,
+          31,
+          31,
+          31,
+          8
+        ]
+      },
+      {
+        "env_index": 1,
+        "game_seed": 882774615,
+        "result": "Defeat",
+        "cumulative_reward": -50,
+        "consumed_planner_decisions": 0,
+        "evaluable": 0,
+        "valid": 0,
+        "non_evaluable_consumed": 0,
+        "raw_examples": [],
+        "invalid_example": null,
+        "answer_character_lengths": []
+      },
+      {
+        "env_index": 2,
+        "game_seed": 494016583,
+        "result": "Defeat",
+        "cumulative_reward": -48,
+        "consumed_planner_decisions": 18,
+        "evaluable": 18,
+        "valid": 17,
+        "non_evaluable_consumed": 0,
+        "raw_examples": [
+          "- marine  \n- siegetank  \n- marauder  \n- supplydepot  \n- mule  \n- Launch OFFENSE with 8 marine"
+        ],
+        "invalid_example": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+        "answer_character_lengths": [
+          93,
+          91,
+          90,
+          71,
+          31,
+          31,
+          31,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          75
+        ]
+      },
+      {
+        "env_index": 3,
+        "game_seed": 2621640384,
+        "result": "Defeat",
+        "cumulative_reward": -45.961,
+        "consumed_planner_decisions": 58,
+        "evaluable": 58,
+        "valid": 55,
+        "non_evaluable_consumed": 0,
+        "raw_examples": [
+          "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine"
+        ],
+        "invalid_example": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+        "answer_character_lengths": [
+          93,
+          69,
+          91,
+          71,
+          31,
+          58,
+          31,
+          22,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          71,
+          71,
+          69,
+          44,
+          31,
+          31,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          71,
+          71,
+          91,
+          69,
+          58,
+          31,
+          22,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          71,
+          71,
+          71,
+          44,
+          31,
+          31,
+          21
+        ]
+      },
+      {
+        "env_index": 4,
+        "game_seed": 4081499387,
+        "result": "Defeat",
+        "cumulative_reward": -46.5,
+        "consumed_planner_decisions": 55,
+        "evaluable": 55,
+        "valid": 50,
+        "non_evaluable_consumed": 0,
+        "raw_examples": [
+          "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine"
+        ],
+        "invalid_example": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+        "answer_character_lengths": [
+          93,
+          71,
+          91,
+          71,
+          31,
+          31,
+          58,
+          22,
+          8,
+          8,
+          19,
+          19,
+          44,
+          8,
+          8,
+          8,
+          12,
+          71,
+          71,
+          69,
+          44,
+          31,
+          58,
+          22,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          87,
+          71,
+          71,
+          71,
+          69,
+          31,
+          31,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          44,
+          71,
+          71,
+          78
+        ]
+      },
+      {
+        "env_index": 5,
+        "game_seed": 44124510,
+        "result": "Defeat",
+        "cumulative_reward": -44.174,
+        "consumed_planner_decisions": 56,
+        "evaluable": 56,
+        "valid": 50,
+        "non_evaluable_consumed": 0,
+        "raw_examples": [
+          "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine"
+        ],
+        "invalid_example": "- Launch OFFENSE with 8 marine\n- marine x 26",
+        "answer_character_lengths": [
+          93,
+          91,
+          71,
+          44,
+          31,
+          31,
+          58,
+          22,
+          44,
+          44,
+          8,
+          8,
+          8,
+          44,
+          8,
+          8,
+          12,
+          71,
+          69,
+          71,
+          91,
+          58,
+          58,
+          22,
+          22,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          71,
+          71,
+          71,
+          71,
+          31,
+          31,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          71,
+          71,
+          71,
+          69,
+          74
+        ]
+      },
+      {
+        "env_index": 6,
+        "game_seed": 2071061852,
+        "result": "Defeat",
+        "cumulative_reward": -47,
+        "consumed_planner_decisions": 55,
+        "evaluable": 55,
+        "valid": 53,
+        "non_evaluable_consumed": 0,
+        "raw_examples": [
+          "- Launch OFFENSE with 8 marine\n- marine\n- siegetank\n- marauder"
+        ],
+        "invalid_example": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+        "answer_character_lengths": [
+          62,
+          69,
+          69,
+          71,
+          31,
+          58,
+          31,
+          22,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          71,
+          69,
+          71,
+          69,
+          31,
+          31,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          71,
+          71,
+          71,
+          69,
+          31,
+          31,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          74,
+          73,
+          76,
+          76
+        ]
+      },
+      {
+        "env_index": 7,
+        "game_seed": 1549697793,
+        "result": "Defeat",
+        "cumulative_reward": -46.224,
+        "consumed_planner_decisions": 56,
+        "evaluable": 56,
+        "valid": 53,
+        "non_evaluable_consumed": 0,
+        "raw_examples": [
+          "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine"
+        ],
+        "invalid_example": "- marine x 2",
+        "answer_character_lengths": [
+          93,
+          69,
+          91,
+          69,
+          31,
+          58,
+          31,
+          22,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          71,
+          71,
+          69,
+          69,
+          31,
+          31,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          71,
+          71,
+          71,
+          69,
+          31,
+          31,
+          22,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          12,
+          71,
+          71,
+          71,
+          44,
+          31
+        ]
+      }
+    ],
+    "mean_reward_all8": -47.107375,
+    "initial_data_hashes": {
+      "episode_outcomes.jsonl": "b7a20d790ca0a5197fe417aab4837d23ae1c4bdfe98f838f371b7a8ded5deafd",
+      "prompt_response.jsonl": "61111674c3a6bab9d2978b12f3156646dde30c8e0af837c3ae5e1f39af3daa71",
+      "evaluation_seeds.jsonl": "fe29009e02d3c378175699b96f6e9cffcc36d43e55c99550fcd4a4fc9e83b487"
+    }
+  },
+  "metric_definitions": {
+    "cumulative_reward": "Sum prompt_response reward rows for env_idx through its first episode_outcomes.step_index inclusive; exclude later terminal placeholders, retain zero-Planner games.",
+    "planner_decisions": "Applied/consumed model decisions, cross-checked against outcome.policy_decision_count; not all batched generation rows (terminal placeholders may still contain unused text).",
+    "effective_rate": "valid/evaluable on actual active rows, current frozen semantic_action_evaluable and is_action_valid; N/A for no evaluable model decisions.",
+    "stage8_comparison": "Pair by actual per-env game seed, include all eight games; report raw applied responses, repetition/length changes and input context. No-gameplay unused terminal text is not evidence of policy decline."
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "experiment": "20260906-integrated-fixes-v1",
+  "orchestration_sha": "67b121fb6a3eeebc6e896d9d498dd18a3af7d50a",
+  "comparison": "Original SpB2 vs completed Qwen Instruct2507 slots-r2; identical c15d02b gameplay, Level6/g2 seed2621640384, one game each, no PPO",
+  "qwen_control_run": "20260906-integrated-fixes-v1-r4-reactor-pair-slots-qwen2507-l6-g2-s2621640384-r2",
+  "first_plaintext_prompt_identical": true,
+  "first_prompt_sha256": "b7dfd3a02652d430310a0396ec1f2160663dc049fa14b835b3d7bb1fafe463a0",
+  "spb_runtime_parameters": "5.17B",
+  "qwen_runtime_parameters": "4.02B",
+  "local_artifacts": "/private/tmp/sc2-reactor-pair.cGSFdy",
+  "report": {
+    "run_id": "20260906-integrated-fixes-v1-r4-reactor-pair-slots-spb2-l6-g2-s2621640384-r1",
+    "manifest": {
+      "schema_version": 1,
+      "status": "running",
+      "started_at": "2026-09-07T16:04:03.235680+00:00",
+      "source_commit": "c15d02b08085ddfcf20cff5517d10ceae9fa2af0",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+      "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+      "model_source": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+      "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+      "bo_profile": "canonical",
+      "episode_api": "gymnasium-v0.26",
+      "bo_path": "/root/new-scii-r4-python-rng-20260907/code-c15d02b/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "mode": "evaluation",
+      "source_files_sha256": {
+        "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "edbf08227eb325e01c6362f8c933d52bd2f1d520d93f7c4dc19c421b85ace5c1",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "6b5d474f90b1a3a9d7a641c92f3379b9d936e14aa7102d1f1717545093056704",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+      },
+      "target_steps": 1,
+      "training_goal_global_steps": 1,
+      "resume_from_path": null,
+      "host": "hpc",
+      "python": "3.12.3",
+      "gpu_selection": "0",
+      "world_size": 1,
+      "container_image_id": null,
+      "versions": {
+        "torch": "2.7.1+cu128",
+        "transformers": "4.55.2",
+        "ray": "2.48.0",
+        "gymnasium": "1.2.3",
+        "flash-attn": "2.6.3",
+        "flash-linear-attention": "0.4.0",
+        "moba": null
+      }
+    },
+    "result": {
+      "status": "completed",
+      "ended_at": "2026-09-07T16:23:24.353366+00:00",
+      "mode": "evaluation",
+      "process_exit_code": 0,
+      "training_updates": 0,
+      "metrics": {
+        "val/text/test_score": -49.5,
+        "val/text/tool_call_count/mean": 0,
+        "val/success_rate": 0
+      },
+      "metrics_finite": true,
+      "response_record_count": 56,
+      "evaluable_action_count": 56,
+      "valid_evaluable_action_count": 43,
+      "replays": {
+        "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_16-05-33/replay.SC2Replay": "1e82e0001c46961e97fe97055225c125ca71228c39bf0573eb44c9c7a7c2a291"
+      },
+      "console_sha256": "2a78af6525954fe68bc91848a0ba86b6b3c871ce63f3d6870cdf3c437d8f6eab",
+      "episode_outcomes": {
+        "trajectories": 1,
+        "natural_games": 1,
+        "wins": 0,
+        "defeats": 1,
+        "ties": 0,
+        "truncated": 0,
+        "natural_win_rate": 0,
+        "outcomes": [
+          {
+            "reset_index": 0,
+            "env_index": 0,
+            "decision_count": 56,
+            "step_index": 55,
+            "policy_decision_count": 56,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          }
+        ]
+      },
+      "natural_match_completed": true,
+      "termination_evidence": "game_result"
+    },
+    "seeds": [
+      {
+        "base_seed": 1000,
+        "reset_index": 0,
+        "seeds": [
+          2621640384
+        ]
+      }
+    ],
+    "consumed_model_answers": 56,
+    "cumulative_environment_reward": -49.5,
+    "valid_evaluable_answers": 43,
+    "evaluable_answers": 56,
+    "raw_response_frequency": {
+      "Here are the Build Orders with attack instructions:\n- supplydepot\n- mule\n- marauder\n- siege tank\n- marauder\n- marauder": 1,
+      "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine": 3,
+      "- marine\n- marine\n- marine\n- marine\n- marine\n- marine": 36,
+      "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine": 2,
+      "Here are the Build Orders with attack instructions:\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n- marine\n": 3,
+      "- marine\n- mule\n- siegetank\n- marauder\n- marauder\n- marauder": 5,
+      "- marine\n- mule\n- siegetank\n- marauder\n- marine\n- mule": 1,
+      "- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine": 2,
+      "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marauder\n- marauder": 1,
+      "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- siege tank": 1,
+      "- marine\n- marauder\n- siegetank\n- marauder\n- marine\n- marine": 1
+    },
+    "first_answers": [
+      {
+        "step_index": 0,
+        "llm_response": "Here are the Build Orders with attack instructions:\n- supplydepot\n- mule\n- marauder\n- siege tank\n- marauder\n- marauder",
+        "projected_action": "Here are the Build Orders with attack instructions:\n- supplydepot\n- mule\n- marauder\n- siege tank\n- marauder\n- marauder",
+        "is_action_valid": false,
+        "failure_reason": "action outside current canonical BO candidates: siege tank",
+        "policy_action_id": 1
+      },
+      {
+        "step_index": 1,
+        "llm_response": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+        "projected_action": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+        "is_action_valid": true,
+        "failure_reason": "",
+        "policy_action_id": 2
+      },
+      {
+        "step_index": 2,
+        "llm_response": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+        "projected_action": "Here are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n- marauder\n- marine\n- marine",
+        "is_action_valid": true,
+        "failure_reason": "",
+        "policy_action_id": 3
+      }
+    ],
+    "skipped": [
+      {
+        "frame": "6644",
+        "key": "bo_skipped_5",
+        "record": {
+          "reason": "timeout",
+          "action": "siegetank"
+        }
+      },
+      {
+        "frame": "6958",
+        "key": "bo_skipped_5",
+        "record": {
+          "reason": "timeout",
+          "action": "siegetank"
+        }
+      }
+    ],
+    "executor_action_records": {
+      "COMMANDCENTERTRAIN_SCV": 44,
+      "TERRANBUILD_SUPPLYDEPOT": 10,
+      "TERRANBUILD_COMMANDCENTER": 1,
+      "TERRANBUILD_BARRACKS": 7,
+      "UPGRADETOORBITAL_ORBITALCOMMAND": 2,
+      "BARRACKSTRAIN_MARINE": 268,
+      "TERRANBUILD_BUNKER": 1,
+      "TERRANBUILD_REFINERY": 3,
+      "TERRANBUILD_ENGINEERINGBAY": 1,
+      "BUILD_TECHLAB_BARRACKS": 5,
+      "BUILD_REACTOR_BARRACKS": 3,
+      "TERRANBUILD_FACTORY": 1,
+      "TERRANBUILD_MISSILETURRET": 1,
+      "BUILD_TECHLAB_FACTORY": 3,
+      "FACTORYTRAIN_SIEGETANK": 40,
+      "BARRACKSTRAIN_MARAUDER": 20
+    },
+    "replay": {
+      "build": 75689,
+      "game_seconds": 1339.2857142857144,
+      "own_born_including_initial": {
+        "BeaconArmy": 1,
+        "BeaconDefend": 1,
+        "BeaconAttack": 1,
+        "BeaconHarass": 1,
+        "BeaconIdle": 1,
+        "BeaconAuto": 1,
+        "BeaconDetect": 1,
+        "BeaconScout": 1,
+        "BeaconClaim": 1,
+        "BeaconExpand": 1,
+        "BeaconRally": 1,
+        "BeaconCustom1": 1,
+        "BeaconCustom2": 1,
+        "BeaconCustom3": 1,
+        "BeaconCustom4": 1,
+        "CommandCenter": 1,
+        "SCV": 56,
+        "Marine": 268,
+        "MULE": 22,
+        "SiegeTank": 38,
+        "Marauder": 20
+      },
+      "own_construction_started": {
+        "SupplyDepot": 21,
+        "CommandCenter": 3,
+        "Barracks": 8,
+        "Bunker": 1,
+        "Refinery": 3,
+        "EngineeringBay": 1,
+        "BarracksTechLab": 5,
+        "BarracksReactor": 3,
+        "Factory": 3,
+        "MissileTurret": 2,
+        "FactoryTechLab": 3
+      },
+      "own_construction_completed": {
+        "SupplyDepot": 21,
+        "Barracks": 8,
+        "CommandCenter": 2,
+        "Bunker": 1,
+        "Refinery": 3,
+        "EngineeringBay": 1,
+        "BarracksTechLab": 5,
+        "BarracksReactor": 3,
+        "Factory": 3,
+        "MissileTurret": 2,
+        "FactoryTechLab": 3
+      },
+      "own_deaths": {
+        "MULE": 22,
+        "SCV": 55,
+        "Marine": 268,
+        "Marauder": 20,
+        "SiegeTank": 38,
+        "CommandCenter": 2,
+        "MissileTurret": 2,
+        "SupplyDepot": 21,
+        "OrbitalCommand": 2,
+        "Barracks": 8,
+        "Factory": 3,
+        "Refinery": 3,
+        "TechLab": 8,
+        "EngineeringBay": 1,
+        "Bunker": 1,
+        "Reactor": 3
+      },
+      "killers_by_victim_type": {
+        "MULE": {
+          "OrbitalCommand": 22
+        },
+        "SCV": {
+          "Marine": 6,
+          "Battlecruiser": 12,
+          "VikingAssault": 24,
+          "AutoTurret": 1,
+          "LiberatorAG": 12
+        },
+        "Marine": {
+          "Marine": 32,
+          "VikingAssault": 104,
+          "Marauder": 17,
+          "AutoTurret": 10,
+          "Battlecruiser": 81,
+          "SCV": 4,
+          "LiberatorAG": 20
+        },
+        "Marauder": {
+          "Battlecruiser": 11,
+          "AutoTurret": 2,
+          "Marine": 3,
+          "LiberatorAG": 1,
+          "VikingAssault": 3
+        },
+        "SiegeTank": {
+          "Battlecruiser": 19,
+          "Marine": 3,
+          "VikingAssault": 12,
+          "LiberatorAG": 4
+        },
+        "CommandCenter": {
+          "Battlecruiser": 2
+        },
+        "MissileTurret": {
+          "Battlecruiser": 2
+        },
+        "SupplyDepot": {
+          "Battlecruiser": 7,
+          "AutoTurret": 4,
+          "VikingAssault": 9,
+          "SupplyDepot": 1
+        },
+        "OrbitalCommand": {
+          "Battlecruiser": 2
+        },
+        "Barracks": {
+          "Battlecruiser": 2,
+          "Barracks": 2,
+          "VikingAssault": 3,
+          "Marine": 1
+        },
+        "Factory": {
+          "Battlecruiser": 2,
+          "VikingAssault": 1
+        },
+        "Refinery": {
+          "AutoTurret": 1,
+          "VikingAssault": 1,
+          "Battlecruiser": 1
+        },
+        "TechLab": {
+          "AutoTurret": 3,
+          "VikingAssault": 3,
+          "Battlecruiser": 2
+        },
+        "EngineeringBay": {
+          "AutoTurret": 1
+        },
+        "Bunker": {
+          "Battlecruiser": 1
+        },
+        "Reactor": {
+          "VikingAssault": 1,
+          "Battlecruiser": 2
+        }
+      },
+      "upgrades": [
+        "SprayTerran",
+        "SprayTerran",
+        "SprayTerran",
+        "SprayTerran",
+        "SprayTerran",
+        "SprayTerran",
+        "SprayTerran"
+      ],
+      "final_stats": {
+        "game_seconds": 1339.2857142857144,
+        "m_scoreValueMineralsCurrent": 2095,
+        "m_scoreValueVespeneCurrent": 232,
+        "m_scoreValueMineralsCollectionRate": 0,
+        "m_scoreValueVespeneCollectionRate": 0,
+        "m_scoreValueWorkersActiveCount": 1,
+        "m_scoreValueMineralsUsedInProgressArmy": 0,
+        "m_scoreValueMineralsUsedInProgressEconomy": 0,
+        "m_scoreValueMineralsUsedInProgressTechnology": 0,
+        "m_scoreValueVespeneUsedInProgressArmy": 0,
+        "m_scoreValueVespeneUsedInProgressEconomy": 0,
+        "m_scoreValueVespeneUsedInProgressTechnology": 0,
+        "m_scoreValueMineralsUsedCurrentArmy": 0,
+        "m_scoreValueMineralsUsedCurrentEconomy": 50,
+        "m_scoreValueMineralsUsedCurrentTechnology": 0,
+        "m_scoreValueVespeneUsedCurrentArmy": 0,
+        "m_scoreValueVespeneUsedCurrentEconomy": 0,
+        "m_scoreValueVespeneUsedCurrentTechnology": 0,
+        "m_scoreValueMineralsLostArmy": 21100,
+        "m_scoreValueMineralsLostEconomy": 6975,
+        "m_scoreValueMineralsLostTechnology": 2625,
+        "m_scoreValueVespeneLostArmy": 5250,
+        "m_scoreValueVespeneLostEconomy": 0,
+        "m_scoreValueVespeneLostTechnology": 650,
+        "m_scoreValueMineralsKilledArmy": 7700,
+        "m_scoreValueMineralsKilledEconomy": 3175,
+        "m_scoreValueMineralsKilledTechnology": 300,
+        "m_scoreValueVespeneKilledArmy": 2550,
+        "m_scoreValueVespeneKilledEconomy": 0,
+        "m_scoreValueVespeneKilledTechnology": 0,
+        "m_scoreValueFoodUsed": 4096,
+        "m_scoreValueFoodMade": 0,
+        "m_scoreValueMineralsUsedActiveForces": 0,
+        "m_scoreValueVespeneUsedActiveForces": 0,
+        "m_scoreValueMineralsFriendlyFireArmy": 0,
+        "m_scoreValueMineralsFriendlyFireEconomy": 0,
+        "m_scoreValueMineralsFriendlyFireTechnology": 0,
+        "m_scoreValueVespeneFriendlyFireArmy": 0,
+        "m_scoreValueVespeneFriendlyFireEconomy": 0,
+        "m_scoreValueVespeneFriendlyFireTechnology": 0
+      }
+    },
+    "artifact_sha256": {
+      "manifest.json": "9ce5c304de5d9cb808b3127728e06e6f830bf472e95bc6b0b0f814656a1f77d5",
+      "effective_config.json": "97f9b1fe69181c4ddfb405800aa9ec2a7d4c1bf18dc241216bfd8dee8dbb1717",
+      "result.json": "1fc76ea60d35224351f853dcc6de104d07c027851da99cc116b407db283186a8",
+      ".done": "1fc76ea60d35224351f853dcc6de104d07c027851da99cc116b407db283186a8",
+      "evaluation_seeds.jsonl": "aee94d25ef459decb70bf3f9657cf3a29e575a78b2e8641f8d501f8bdb462179",
+      "prompt_response.jsonl": "219523e994df1e8198d0198cba217d78575b21ac4fa40fc5f4ab9bf39c143a45",
+      "episode_outcomes.jsonl": "20057e9187e0ff4749e5b58597d9a2033e0fc480d71d127902d4245d6946366f",
+      "console.log": "2a78af6525954fe68bc91848a0ba86b6b3c871ce63f3d6870cdf3c437d8f6eab",
+      "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_16-05-33/trace.json": "ced0f243ec1bcd9423d2f3d0d39a697321c08010e6e901f9df299813378ab415",
+      "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-07_16-05-33/replay.SC2Replay": "1e82e0001c46961e97fe97055225c125ca71228c39bf0573eb44c9c7a7c2a291"
+    },
+    "caveats": "One seed, one game per arm; replay owner 1 is our first player. Born SCVs include the initial 12. Executor records are commands, not production. Reward sums all environment interactions including the terminal poll; no-policy games must not be excluded."
+  }
+}

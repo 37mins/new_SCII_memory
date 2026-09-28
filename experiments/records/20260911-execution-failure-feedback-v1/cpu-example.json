@@ -1,0 +1,44 @@
+{
+  "scope": "CPU synthetic observation and hand-written answers; no model or SC2 inference",
+  "parent_source": "ce6a64be74a2a65dc426c65aec31ae3122e0a4b0",
+  "original_queue": [
+    "marine",
+    "reactor barracks",
+    "refinery",
+    "marine"
+  ],
+  "original_debits": [
+    "marine",
+    "reactor barracks",
+    null,
+    "marine"
+  ],
+  "failed_index": 1,
+  "restored_selectable_quota": {
+    "reactor barracks": 1,
+    "marine": 1
+  },
+  "waiting_after_release": {
+    "reactor barracks": 1,
+    "marine": 1
+  },
+  "final_query": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nProvide the next segment's BO list, approximately 15 entries in length. This refers to list lines/entries, NOT the total count of units or expanded actions. A single attack instruction is one entry.\nEvery build bullet must be exactly `- canonicalname` or `- canonicalname x N`, where `canonicalname` is copied verbatim from the current remaining BO list and N is a positive integer within its remaining count.\nFor repeated actions, you may repeat the complete bullet line or use `x N`. The parser expands each `x N` entry into N actions, preserving list order; it still counts as one list entry. There is no hard limit of 15 expanded actions.\nDo not add timing, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple action names to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: offline test 06:07 onwards\n- Detailed Instruction: Produce the listed units.\n- Attacking Instruction: Launch game-ending attacks.\n\nCurrent observations are:\nIt is now 04:30 in the game. We have 140 minerals and 0 vespene gas. In terms of our military forces, we have 18 marine, 11 SCV. In terms of the structures, we have 1 commandcenter, 4 barracks, 4 supplydepot. As for the visible enemy presence, there are no units currently.\nThe remaining BO list in this phase:\n- reactor barracks x 1\n- marine x 1\n- refinery x 1\nUse only exact canonical names that occur in the remaining BO list above.\nFor each action name, add its quantities across ALL lines in your answer: a line without `x N` counts as 1. This cumulative total must not exceed that action's count in the remaining BO list.\nThe example below demonstrates output format only; it is not an additional task or an extra quota. Do not append the remaining list to a copied example and count both separately.\nAim for approximately 15 list entries, but do not repeat actions just to fill that target. Once this near-term segment is complete, close </answer> and stop; do not restart the list. Repeated names and `x N` remain allowed within the cumulative quota.\nThe example below is generated from that same current list. Follow its format:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- reactor barracks x 1\n- marine x 1\n- refinery x 1\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nExecution feedback for the previous segment (not owned units/buildings):\n{\"failed\": {\"action\": \"reactor barracks\", \"reason\": \"timeout: insufficient gas\", \"target_command_submitted\": false, \"pre_move_command_attempted\": false}, \"unsubmitted_suffix\": [\"refinery\", \"marine\"], \"restored_selectable_quota\": {\"reactor barracks\": 1, \"marine\": 1}, \"source_policy_action_id\": 41, \"phase_index\": 1, \"processed_prefix_count\": 1}\nThe failed target and unsubmitted suffix were not submitted as production commands. Only recorded selection quotas were released; previously processed commands are not cancelled. These are not additional tasks or required retries. Use the current observation and remaining BO list above to choose the next segment, in the same answer format.\n",
+  "outputs": [
+    {
+      "hand_written_answer": "- refinery",
+      "parser_and_rule_output": [
+        "refinery"
+      ],
+      "whole_answer_valid": true,
+      "synthetic_policy_action_id": 42
+    },
+    {
+      "hand_written_answer": "- marine",
+      "parser_and_rule_output": [
+        "marine"
+      ],
+      "whole_answer_valid": true,
+      "synthetic_policy_action_id": 42
+    }
+  ]
+}

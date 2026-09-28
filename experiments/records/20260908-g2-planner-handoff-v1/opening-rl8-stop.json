@@ -1,0 +1,66 @@
+{
+  "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-opening-rl96-gate8-8gpu-s0-r1-train8",
+  "runtime_sha": "e3ffac9e2da577679b9b980d66678e4cc72b06aa",
+  "node": "sc2-a100-44",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "operator_status": "aborted",
+  "reason": "User approved stopping the confirmed empty-candidate loop; no restart authorized in this turn.",
+  "termination": {
+    "signal": "SIGINT",
+    "target_pid": 998217,
+    "verified_pid_start": "611748116",
+    "requested_at": "2026-09-09T06:28:47.196782+00:00",
+    "verified_owned_tree_size": 335,
+    "group_owned": true,
+    "cleanup": {
+      "time": "2026-09-09T06:34:55.199805+00:00",
+      "terminated_residual_pids": [
+        1003784
+      ],
+      "already_zombie_pids": []
+    }
+  },
+  "raw_launcher_result": {
+    "status": "failed",
+    "process_exit_code": 1,
+    "ended_at": "2026-09-09T06:28:54.061713+00:00",
+    "completed_global_steps": 0,
+    "checkpoint_complete": false,
+    "checkpoint_files": [],
+    "finished_games": 7,
+    "wins": 7,
+    "unfinished_game_env_idx": 1,
+    "unfinished_game_decisions": 161,
+    "consecutive_empty_candidate_failures": 134,
+    "last_response_utc": "2026-09-09 06:28:31",
+    "console_sha256": "4df727d802154ed5c2d6d95920682d7abb487f62cdfdc6925bce8173a860ea9f"
+  },
+  "resource_release_verified_at": "2026-09-09T06:36:45+00:00",
+  "gpu_memory_mib": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "remaining_sc2_pid_1003784_exists": false,
+  "preservation": "Original .done/result.json, manifest, effective config, console, prompt responses and seven natural outcomes are unchanged. No files or model assets deleted. The eighth unfinished game is not recorded as a natural loss.",
+  "backup": {
+    "path": "/private/tmp/sc2-empty-bo-before-df35bc3.bundle",
+    "head": "df35bc3cda7458522d5a326ea3755efc74606c6c",
+    "sha256": "21a94180d3bc88bc0927f76dbc76623ff101f61c03df76de43689e73d50b5808",
+    "verified_complete": true
+  }
+}

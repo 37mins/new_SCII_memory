@@ -1,0 +1,97 @@
+{
+  "status": "model_initialization_observed; SC2 startup not yet verified",
+  "frozen_sha": "e3ffac9e2da577679b9b980d66678e4cc72b06aa",
+  "node": "sc2-a100-47",
+  "tmux": "g2_may_opening_pair_r1",
+  "launcher_pid": 675863,
+  "started_at": "2026-09-09T03:03:40+00:00",
+  "deadline": "2026-09-09T03:53:40+00:00",
+  "bundle_sha256": "c345f3b1a30f216b15d27fad6265ce55c8b0f197f1fa7b7f923d88cf2d37166e",
+  "github_push": "blocked by safety review; no push executed; requires renewed user authorization",
+  "audit": [
+    {
+      "arm": "A",
+      "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-may-opening-A-eval4-s0-r1",
+      "manifest": {
+        "source_commit": "e3ffac9e2da577679b9b980d66678e4cc72b06aa",
+        "dirty": false,
+        "formal": true,
+        "model_source": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+        "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+        "mode": "evaluation",
+        "gpu_selection": "0,1,2,3",
+        "world_size": 4
+      },
+      "effective": {
+        "trainer.val_only": "True",
+        "trainer.resume_mode": "disable",
+        "trainer.save_freq": "-1",
+        "env.rollout.n": "4",
+        "+env.val_rollout_n": "4",
+        "actor_rollout_ref.rollout.val_kwargs.n": "4",
+        "actor_rollout_ref.rollout.val_kwargs.temperature": "0.4",
+        "actor_rollout_ref.rollout.val_kwargs.top_p": "0.9",
+        "actor_rollout_ref.rollout.val_kwargs.top_k": "0",
+        "+ray_init.runtime_env.env_vars.SC2_FIXED_BO_PREFIX_LIMIT": "'0'",
+        "+ray_init.runtime_env.env_vars.SC2_STRATEGY_PROFILE": "'marine_pressure'",
+        "+actor_rollout_ref.model.override_config.swa_dropout": "0.0",
+        "+actor_rollout_ref.actor.fsdp_config.mixed_precision.param_dtype": "fp32",
+        "+actor_rollout_ref.actor.fp32_normalization": "True",
+        "env.history_length": "0",
+        "env.sc2_memory_mode": null
+      },
+      "sampling_ranks": [],
+      "done_exists": false
+    },
+    {
+      "arm": "B",
+      "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-may-opening-B-eval4-s0-r1",
+      "manifest": {
+        "source_commit": "e3ffac9e2da577679b9b980d66678e4cc72b06aa",
+        "dirty": false,
+        "formal": true,
+        "model_source": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+        "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+        "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+        "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+        "mode": "evaluation",
+        "gpu_selection": "4,5,6,7",
+        "world_size": 4
+      },
+      "effective": {
+        "trainer.val_only": "True",
+        "trainer.resume_mode": "disable",
+        "trainer.save_freq": "-1",
+        "env.rollout.n": "4",
+        "+env.val_rollout_n": "4",
+        "actor_rollout_ref.rollout.val_kwargs.n": "4",
+        "actor_rollout_ref.rollout.val_kwargs.temperature": "0.4",
+        "actor_rollout_ref.rollout.val_kwargs.top_p": "0.9",
+        "actor_rollout_ref.rollout.val_kwargs.top_k": "0",
+        "+ray_init.runtime_env.env_vars.SC2_FIXED_BO_PREFIX_LIMIT": "'-1'",
+        "+ray_init.runtime_env.env_vars.SC2_STRATEGY_PROFILE": "'marine_pressure'",
+        "+actor_rollout_ref.model.override_config.swa_dropout": "0.0",
+        "+actor_rollout_ref.actor.fsdp_config.mixed_precision.param_dtype": "fp32",
+        "+actor_rollout_ref.actor.fp32_normalization": "True",
+        "env.history_length": "0",
+        "env.sc2_memory_mode": null
+      },
+      "sampling_ranks": [],
+      "done_exists": false
+    }
+  ],
+  "linux_cpu_tests": {
+    "count": 18,
+    "seconds": 57.522,
+    "exit_code": 0
+  },
+  "last_readback": {
+    "at": "2026-09-09T03:05:30+00:00",
+    "sc2_processes": 0,
+    "stage": "both actors loading 11 model shards",
+    "use_cache_logged": true
+  },
+  "connection_observation": "Two subsequent fresh SSH readbacks timed out during banner exchange; not evidence that background jobs stopped."
+}

@@ -1,0 +1,49 @@
+{
+  "source_commit": "1f2d8b5ac25d13cb4dc2b735725806fa713bb092",
+  "source_clean": true,
+  "node": "sc2-a100-44",
+  "deployment": "/root/new-scii-integrated-fixes-20260906/code-1f2d8b5",
+  "cpu_tests_passed": 74,
+  "cpu_tests_skipped": 0,
+  "cpu_seconds": 7.597,
+  "cpu_log_sha256": "ad3bf4923fdb913064ea077d76b31d4ce8e77ee1416594590e44a90529b0dfd5",
+  "preflight_log_sha256": "a2a7c6b2dd8b402a024f3951d18c401f7a5dec448017fb7880620f5ea68b855f",
+  "preflight_effective_config_sha256": "da40dc4c9934ffb5cb321d38efde8af3a5135dc65c0a6dcc898b115d9b8d8653",
+  "source_bundle_sha256": "3c200a8457aea549c2f11bd0266ec9877508a23202706dca9efaa3cdbf1f5902",
+  "all_registered_source_model_sc2_map_hashes_verified": true,
+  "override_count": 128,
+  "nonpath_override_differences_from_old_four_step": {
+    "trainer.n_gpus_per_node": ["8", "4"],
+    "+ray_init.runtime_env.env_vars.SC2_STEP_SHAPING_MODE": ["'legacy'", "'off'"]
+  },
+  "core_python_changes_from_8cb4f18": [],
+  "actor_changes_from_old_four_step": "Only reference KL metric assignment becomes append_to_dict; loss unchanged.",
+  "unvalidated_kl_diagnostic_hooks_included": false,
+  "planned_run": {
+    "run_id": "20260906-integrated-fixes-v1-qwen-instruct2507-l6-4gpu-rl4-s0-r1",
+    "gpu_selection": "4,5,6,7",
+    "world_size": 4,
+    "target_steps": 4,
+    "rollouts_per_step": 8,
+    "save_freq": 1,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7"
+  },
+  "old_four_step_completion": {
+    "run_id": "20260906-unit-id-exhaustion-v1-qwen-instruct2507-l6-8gpu-rl4-s0-r1",
+    "status": "completed",
+    "ended_at": "2026-09-06T04:59:00.673669+00:00",
+    "source_commit": "44a6e9deb1e18ae42dcaf0c8da47ceec2ee04433",
+    "process_exit_code": 0,
+    "completed_steps": 4,
+    "natural_games": 32,
+    "wins": 2,
+    "truncated": 0,
+    "checkpoint_nonempty_files_per_step": [25, 25, 25, 25],
+    "episode_reward_means": [-38.566, -24.295, -18.709, -33.164],
+    "ppo_kl": [0.271, 1.986, 0.028, 0.000],
+    "result_sha256": "6c918007c5beb3831ad6e8b03e710a07a56a4ffb40ffdfba3301465e175a347a",
+    "metrics_sha256": "e06ffccf2259aea671c17c320030fd40b92a4b7130188a2857afc654eea32b55"
+  }
+}

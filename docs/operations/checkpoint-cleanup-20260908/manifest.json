@@ -1,0 +1,312 @@
+{
+  "node_alias": "sc2-a100-42",
+  "audited_at": "2026-09-08T15:22:03.660530+00:00",
+  "active_references": [],
+  "reason": "Retired two-step smoke checkpoints; original models, baseline/final checkpoints and all non-model/non-optimizer artifacts retained.",
+  "backup_verified": false,
+  "runs": [
+    {
+      "run_id": "20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1",
+      "driver_exit": 0,
+      "actor": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor"
+    },
+    {
+      "run_id": "20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4",
+      "driver_exit": 0,
+      "actor": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor"
+    }
+  ],
+  "files": [
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_0.pt",
+      "size": 2778150315,
+      "blocks": 5426080,
+      "inode": 1261218,
+      "device": 28,
+      "mtime_ns": 1787219923202985184,
+      "sha256": "e8875375188d54a2f37240f3f23f788ba266a2757f61c5b4f736fc73d9956846"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_1.pt",
+      "size": 2778150315,
+      "blocks": 5426080,
+      "inode": 1261223,
+      "device": 28,
+      "mtime_ns": 1787219923339987796,
+      "sha256": "ca23caedafffb7e786885ea402d53ab10486055243f0e297a10106435886b487"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_2.pt",
+      "size": 2778150315,
+      "blocks": 5426080,
+      "inode": 1261222,
+      "device": 28,
+      "mtime_ns": 1787219923273986538,
+      "sha256": "8e4ff32054a0c3ecd4cd11753a47ea2242d2aa0a568f27d70a60b0ec1ead8781"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_3.pt",
+      "size": 2778150315,
+      "blocks": 5426080,
+      "inode": 1261220,
+      "device": 28,
+      "mtime_ns": 1787219923298987015,
+      "sha256": "1b232c2f0ec99e6aa1e89cf1b68c6958efed43de4935d64093a5d02cc54e77ec"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_4.pt",
+      "size": 2777884011,
+      "blocks": 5425560,
+      "inode": 1261217,
+      "device": 28,
+      "mtime_ns": 1787219923539991609,
+      "sha256": "f7c430ba35824b304a121b1f97320ba9ed9f733c5f0f2804953a877425b25c1b"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_5.pt",
+      "size": 2777884011,
+      "blocks": 5425560,
+      "inode": 1261219,
+      "device": 28,
+      "mtime_ns": 1787219923230985718,
+      "sha256": "050488195245d9f9560afebd23ea2e06401cdda0966b9dd928b96225bac90107"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_6.pt",
+      "size": 2777884011,
+      "blocks": 5425560,
+      "inode": 1261224,
+      "device": 28,
+      "mtime_ns": 1787219923590992582,
+      "sha256": "d443abdb522510079c843d5007a13585ede27065add4035a4f15812646d647da"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_7.pt",
+      "size": 2777884011,
+      "blocks": 5425560,
+      "inode": 1261221,
+      "device": 28,
+      "mtime_ns": 1787219923264986366,
+      "sha256": "b474108e4053a3879dd7f9703a6d157e7103b22e69276c0fbe802c2f29ff1503"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_0.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1261225,
+      "device": 28,
+      "mtime_ns": 1787219926775053297,
+      "sha256": "77992d6ae5baa27c19d4585f3ef2ec8a50a56b83f2d3f84182db2d77ae7653e1"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_1.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1261230,
+      "device": 28,
+      "mtime_ns": 1787219926873055166,
+      "sha256": "676d6769a8daae4ebf4da8821134f7c5a9fbba413d311a5e46e3b030c3aacdfa"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_2.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1261228,
+      "device": 28,
+      "mtime_ns": 1787219926816054079,
+      "sha256": "eb151ec4a67f2a30660d81a4f2e0e209871b65f966d72410d97f4f7c0ff4728b"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_3.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1261229,
+      "device": 28,
+      "mtime_ns": 1787219926904055757,
+      "sha256": "f69a5d9fcf5d220e8e3007f6b062e5fc3bfdeec1c380857d7f7f78c6db0bbdcf"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_4.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1261231,
+      "device": 28,
+      "mtime_ns": 1787219927094059381,
+      "sha256": "2dfe0b6bfb2928b9fe04a602980e352447c7afaf80c09502652d3d6f659a2be5"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_5.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1261226,
+      "device": 28,
+      "mtime_ns": 1787219926829054327,
+      "sha256": "ee10b3b6672fe93153c4427368f238a89d76723fcc2f48301c97793a37c1e932"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_6.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1261232,
+      "device": 28,
+      "mtime_ns": 1787219927128060029,
+      "sha256": "6091986ec5b3131c69617397116eae5a17ec022455ae87386ba995437c69ce1d"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-eager-smoke2-s0-r1/results/checkpoints/spb2_spb2_level5_attention_eager_smoke2_v1_level5_oldmicro_sc2-a100-42_seed0_step2_resp96_level5_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_7.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1261227,
+      "device": 28,
+      "mtime_ns": 1787219926931056272,
+      "sha256": "9ff3f837a66d289fd7fae26f1264cccd8abd94f0f2590b69404c7eedb1e68311"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_0.pt",
+      "size": 2778150315,
+      "blocks": 5426080,
+      "inode": 1277485,
+      "device": 28,
+      "mtime_ns": 1787233268953977483,
+      "sha256": "54b2a7dc497c77ca0a2f0112dabe9f48d168fb6bbfe5e05eee66173beb823765"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_1.pt",
+      "size": 2778150315,
+      "blocks": 5426080,
+      "inode": 1277484,
+      "device": 28,
+      "mtime_ns": 1787233268876975547,
+      "sha256": "cdc9f13063adc7526875a9a49272decdfd0d014afd5a0c17390ba85ae1882f1c"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_2.pt",
+      "size": 2778150315,
+      "blocks": 5426080,
+      "inode": 1277483,
+      "device": 28,
+      "mtime_ns": 1787233268759972605,
+      "sha256": "f7a19992061af120daf2a94aa26c2ccdd3716f31418e14702b93aaf58853b774"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_3.pt",
+      "size": 2778150315,
+      "blocks": 5426080,
+      "inode": 1277478,
+      "device": 28,
+      "mtime_ns": 1787233268765972756,
+      "sha256": "fba29e5793c07f9298a0d80414a8e3bf48a24b8bef376262fb0e4ba3d47916d8"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_4.pt",
+      "size": 2777884011,
+      "blocks": 5425560,
+      "inode": 1277482,
+      "device": 28,
+      "mtime_ns": 1787233268757972555,
+      "sha256": "206ce736d7b85f3007eb6035391b72858e03a4201717cd1fa68ddace8655beee"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_5.pt",
+      "size": 2777884011,
+      "blocks": 5425560,
+      "inode": 1277481,
+      "device": 28,
+      "mtime_ns": 1787233268722971675,
+      "sha256": "9a5d20a0f587259125c3950f7392ddc57ef498771c97c8c5045f0cda1e5190a0"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_6.pt",
+      "size": 2777884011,
+      "blocks": 5425560,
+      "inode": 1277479,
+      "device": 28,
+      "mtime_ns": 1787233268671970393,
+      "sha256": "1a1bc29e6b43a1b1462bf7bff1bd6df9b7b5a96c453a30620cda40563f80347e"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/model_world_size_8_rank_7.pt",
+      "size": 2777884011,
+      "blocks": 5425560,
+      "inode": 1277480,
+      "device": 28,
+      "mtime_ns": 1787233268735972002,
+      "sha256": "9badf7088cf250c6823eb658e3b6add70702e74cd672597ab3de669504fb55b5"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_0.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1277493,
+      "device": 28,
+      "mtime_ns": 1787233272551067929,
+      "sha256": "8acc8a60367a548676295a2416d492586c54387ecd3313666b8c37a696b2c10a"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_1.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1277492,
+      "device": 28,
+      "mtime_ns": 1787233272510066898,
+      "sha256": "ad31ecdcfa6927ac5677dda8c9894b5af54ce899c1bff6000c09cc856db113be"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_2.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1277490,
+      "device": 28,
+      "mtime_ns": 1787233272317062045,
+      "sha256": "7f12a78f714b1e2a78d2723dec0832010eea48b872b674ba0dc6936aee1f93bb"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_3.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1277491,
+      "device": 28,
+      "mtime_ns": 1787233272341062648,
+      "sha256": "505c7036ed38e627c68361e1203b2b818db000f7be59b75d2db873c142eb15d1"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_4.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1277489,
+      "device": 28,
+      "mtime_ns": 1787233272377063554,
+      "sha256": "8dc8597ebddd3bc5d8f04a00aca968145ec3df18d24edf2852d645e3cb651fc5"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_5.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1277487,
+      "device": 28,
+      "mtime_ns": 1787233272579068633,
+      "sha256": "af4014ac07a21e4c18225f13aefde5a0c64116036dcb7bc4abfbadfbd4bf954c"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_6.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1277486,
+      "device": 28,
+      "mtime_ns": 1787233272203059178,
+      "sha256": "902f7802ccfded3649368816aa169582a16949864308fb7c2c99570f755bd51f"
+    },
+    {
+      "path": "/dev/shm/new_scii_level5_attn_ab_assets/runs/20260820-level5-attention-backend-ab-v1-spb-canonical-eager-level6-smoke2-s0-r4/results/checkpoints/spb2_spb2_generic_rl_level6_canonical_plan_v2_eager_smoke2_level6_oldmicro_sc2-a100-42_seed0_step2_resp96_level6_spb2_instruct_noskill_compact6_v7_newa100_20260815/global_step_2/actor/optim_world_size_8_rank_7.pt",
+      "size": 5166217891,
+      "blocks": 10090272,
+      "inode": 1277488,
+      "device": 28,
+      "mtime_ns": 1787233272666070821,
+      "sha256": "e870cce909573523b36f19dd9aa62ddaaed8a13235588c5a19c3d92f1bf2a951"
+    }
+  ],
+  "bytes": 127107760864,
+  "allocated_bytes": 127107825664,
+  "active_references_after_hash": []
+}

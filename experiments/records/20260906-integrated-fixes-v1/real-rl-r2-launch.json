@@ -1,0 +1,134 @@
+{
+  "verified_at_utc": "2026-09-06T15:51:24Z",
+  "frozen_sha": "3e1cc0afe84c0e8b24305eaf78427d73aeec5530",
+  "node": "sc2-a100-44",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "stage": "failed_before_model_loading_and_gameplay",
+  "cpu_config_recheck": {
+    "entry": "RayPPOTrainer._validate_config on frozen Hydra configurations, CUDA_VISIBLE_DEVICES empty",
+    "train8_original": "passed",
+    "initial_eval_original": "same assertion reproduced",
+    "step8_eval_original": "same assertion reproduced",
+    "eval_in_memory_env_rollout_n_8": "both passed; validation n and generation n remain 8",
+    "code_modified": false,
+    "model_loaded": false
+  },
+  "initial_launch_guard": {
+    "at_utc": "2026-09-06T15:30:17Z",
+    "exit_code": 1,
+    "reason": "GPUs 0–2 occupied by unrelated tasks; no run or tmux created"
+  },
+  "second_launch": {
+    "at_utc": "2026-09-06T15:50:17Z",
+    "outer_exit_code": 0,
+    "tmux": "sc2_real_r2",
+    "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r2-initial-eval",
+    "run_manifest": {
+      "sha256": "5963593be3e5c3ca2fe7add668f0b2634d47042d73599728e873bf55a20e69cf",
+      "value": {
+        "schema_version": 1,
+        "status": "running",
+        "started_at": "2026-09-06T15:50:27.993000+00:00",
+        "source_commit": "3e1cc0afe84c0e8b24305eaf78427d73aeec5530",
+        "dirty": false,
+        "formal": true,
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_source": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+        "bo_profile": "canonical",
+        "episode_api": "gymnasium-v0.26",
+        "bo_path": "/root/new-scii-real-rl-20260906/code-3e1cc0a/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+        "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+        "mode": "evaluation",
+        "source_files_sha256": {
+          "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+          "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+          "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "54644b5d9176139e4a8c9650f3f5e99bd03651d53f3ad19bb6e01329808a9578",
+          "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+          "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+          "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+        },
+        "target_steps": 1,
+        "training_goal_global_steps": 96,
+        "resume_from_path": null,
+        "host": "hpc",
+        "python": "3.12.3",
+        "gpu_selection": "0,1,2,3,4,5,6,7",
+        "world_size": 8,
+        "container_image_id": null,
+        "versions": {
+          "torch": "2.7.1+cu128",
+          "transformers": "4.55.2",
+          "ray": "2.48.0",
+          "gymnasium": "1.2.3",
+          "flash-attn": "2.6.3",
+          "flash-linear-attention": null,
+          "moba": null
+        }
+      }
+    },
+    "result": {
+      "sha256": "56354f171aef4c0698e6ae9b90eab4d492c3c48f31213cfef7e2cafad3efe055",
+      "value": {
+        "status": "failed",
+        "ended_at": "2026-09-06T15:50:53.675018+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 1,
+        "training_updates": 0,
+        "metrics": {},
+        "metrics_finite": false,
+        "response_record_count": 0,
+        "evaluable_action_count": 0,
+        "valid_evaluable_action_count": 0,
+        "replays": {},
+        "console_sha256": "f42daf0cea61fb6a3bca634661bf0caf6036ab8ecd3156429a7c62608a75ff4c",
+        "episode_outcomes": {
+          "trajectories": 0,
+          "natural_games": 0,
+          "wins": 0,
+          "defeats": 0,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": null,
+          "outcomes": []
+        },
+        "natural_match_completed": false,
+        "termination_evidence": null
+      }
+    },
+    "done": {
+      "sha256": "56354f171aef4c0698e6ae9b90eab4d492c3c48f31213cfef7e2cafad3efe055",
+      "value": "{\n  \"status\": \"failed\",\n  \"ended_at\": \"2026-09-06T15:50:53.675018+00:00\",\n  \"mode\": \"evaluation\",\n  \"process_exit_code\": 1,\n  \"training_updates\": 0,\n  \"metrics\": {},\n  \"metrics_finite\": false,\n  \"response_record_count\": 0,\n  \"evaluable_action_count\": 0,\n  \"valid_evaluable_action_count\": 0,\n  \"replays\": {},\n  \"console_sha256\": \"f42daf0cea61fb6a3bca634661bf0caf6036ab8ecd3156429a7c62608a75ff4c\",\n  \"episode_outcomes\": {\n    \"trajectories\": 0,\n    \"natural_games\": 0,\n    \"wins\": 0,\n    \"defeats\": 0,\n    \"ties\": 0,\n    \"truncated\": 0,\n    \"natural_win_rate\": null,\n    \"outcomes\": []\n  },\n  \"natural_match_completed\": false,\n  \"termination_evidence\": null\n}\n"
+    },
+    "effective_config_sha256": "fb1d5a89b7624951e1eda301b7b850b16f462352c89342f7ac30af8d7dcae377"
+  },
+  "train8_directory_exists": false,
+  "error": "AssertionError: real_train_batch_size (1) must be divisible by total n_gpus (8).",
+  "evidence": "scripts/train_sc2.sh:24 resets evaluation SC2_ROLLOUT_N=1; the eight-GPU entry overrides trainer.n_gpus_per_node and val_rollout_n but not env.rollout.n; RayPPOTrainer._validate_config:469-474 fails before model loading.",
+  "plan": "No frozen module modified. Requested approval to correct evaluation-only env.rollout.n=8 and restart with new SHA/RUN. The r2 failure and all artifacts remain unchanged.",
+  "metric_note": "metrics_finite=false here reflects no metrics, not observed NaN.",
+  "planned_training": {
+    "path": "/root/new-scii-real-rl-20260906/staging/preflight-train8/effective_config.json",
+    "sha256": "cdbfb08c425c6fe8b508191058634fd052e07c9afc88dc36e0538611877a9856"
+  },
+  "verification_before_launch": {
+    "cpu_tests": 99,
+    "passed": 99,
+    "skipped": 0,
+    "seconds": 8.758,
+    "training_started": false
+  }
+}

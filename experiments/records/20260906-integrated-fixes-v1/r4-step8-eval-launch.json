@@ -1,0 +1,218 @@
+{
+  "status": "running_evaluation",
+  "node": "sc2-a100-44",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "launch": {
+    "at_utc": "20260907T080713Z",
+    "launch_exit_code": 0,
+    "stderr": "",
+    "tmux": "sc2_r4_step8_eval",
+    "driver_log": "/root/new-scii-empty-bo-frame-20260907/step8-eval-20260907T080713Z.driver.log",
+    "run_id": "20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-step8-eval",
+    "source_sha": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+    "entry": "/root/new-scii-empty-bo-frame-20260907/code-ca7885d/experiments/records/20260906-integrated-fixes-v1/run_real_rl_node44.sh step8-eval",
+    "checkpoint_files_checked": 25,
+    "phase": "tmux launch only; model restoration and SC2 start not yet verified"
+  },
+  "runtime_sha": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+  "started_at_utc": "2026-09-07T08:07:24.199838+00:00",
+  "verified_at_utc": "2026-09-07T08:12:05.064738+00:00",
+  "manifest": {
+    "schema_version": 1,
+    "status": "running",
+    "started_at": "2026-09-07T08:07:24.199838+00:00",
+    "source_commit": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "model_source": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+    "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "bo_path": "/root/new-scii-empty-bo-frame-20260907/code-ca7885d/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "evaluation",
+    "source_files_sha256": {
+      "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+      "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+      "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "8dd13723f38687ea3e35a282b9a3f2f190a257190974501e59f6cbc51f0d1c11",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+    },
+    "target_steps": 1,
+    "training_goal_global_steps": 96,
+    "resume_from_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8",
+    "host": "hpc",
+    "python": "3.12.3",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "world_size": 8,
+    "container_image_id": null,
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": null,
+      "moba": null
+    }
+  },
+  "manifest_sha256": "42e875d5dab9c3c89635fa9ce9346044d7313b7f5b2dc446e2fa7c8a683e35e7",
+  "effective_config_sha256": "cc2183099c169400bb8df757c7f6abcd0dfe1a5fe55a3fc6df0047ed540ba15e",
+  "effective_config_diff_vs_actual_initial": {
+    "trainer.resume_from_path": [
+      null,
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8"
+    ],
+    "trainer.resume_mode": [
+      "disable",
+      "resume_path"
+    ]
+  },
+  "actual_flags": {
+    "trainer.val_only": "True",
+    "trainer.val_before_train": "True",
+    "trainer.resume_mode": "resume_path",
+    "trainer.resume_from_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8",
+    "trainer.save_freq": "-1",
+    "trainer.n_gpus_per_node": "8"
+  },
+  "matched_source_hashes": true,
+  "matched_dependency_versions": true,
+  "matched_model_manifest": true,
+  "evaluated_checkpoint_restoration": {
+    "rank_logs": [
+      {
+        "pid": 3956010,
+        "log": "/dev/shm/sc2_real_r4_step8-eval/session_latest/logs/worker-f579866ad1955a8a2f01af04fc93bf553f4db63b9a2f0755c94c8810-01000000-3956010.out",
+        "checkpoint_lines": [
+          "[rank-0]: Loading from /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/model_world_size_8_rank_0.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/optim_world_size_8_rank_0.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/extra_state_world_size_8_rank_0.pt"
+        ]
+      },
+      {
+        "pid": 3956222,
+        "log": "/dev/shm/sc2_real_r4_step8-eval/session_latest/logs/worker-ee9c51e480430306474149a83db16749556524c3248f93dcab4ba887-01000000-3956222.out",
+        "checkpoint_lines": [
+          "[rank-1]: Loading from /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/model_world_size_8_rank_1.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/optim_world_size_8_rank_1.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/extra_state_world_size_8_rank_1.pt"
+        ]
+      },
+      {
+        "pid": 3956223,
+        "log": "/dev/shm/sc2_real_r4_step8-eval/session_latest/logs/worker-f32e30d61652de1180d6699bef02455c9cc62dbe258379c3d4505b10-01000000-3956223.out",
+        "checkpoint_lines": [
+          "[rank-2]: Loading from /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/model_world_size_8_rank_2.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/optim_world_size_8_rank_2.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/extra_state_world_size_8_rank_2.pt"
+        ]
+      },
+      {
+        "pid": 3956224,
+        "log": "/dev/shm/sc2_real_r4_step8-eval/session_latest/logs/worker-f66a0e6ea1bd39bef7b19480b492542b75f9ea28814a866ae6a148fd-01000000-3956224.out",
+        "checkpoint_lines": [
+          "[rank-3]: Loading from /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/model_world_size_8_rank_3.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/optim_world_size_8_rank_3.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/extra_state_world_size_8_rank_3.pt"
+        ]
+      },
+      {
+        "pid": 3956225,
+        "log": "/dev/shm/sc2_real_r4_step8-eval/session_latest/logs/worker-4c320529a50d94932c99bf0aedbf833daca4040abc974637736347db-01000000-3956225.out",
+        "checkpoint_lines": [
+          "[rank-4]: Loading from /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/model_world_size_8_rank_4.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/optim_world_size_8_rank_4.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/extra_state_world_size_8_rank_4.pt"
+        ]
+      },
+      {
+        "pid": 3956226,
+        "log": "/dev/shm/sc2_real_r4_step8-eval/session_latest/logs/worker-8e9045cbe0b4e0d3f205f8967fe7bb14294afaea910483c2b8f07063-01000000-3956226.out",
+        "checkpoint_lines": [
+          "[rank-5]: Loading from /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/model_world_size_8_rank_5.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/optim_world_size_8_rank_5.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/extra_state_world_size_8_rank_5.pt"
+        ]
+      },
+      {
+        "pid": 3956227,
+        "log": "/dev/shm/sc2_real_r4_step8-eval/session_latest/logs/worker-9ea6bfbfedd6cfbb1e90151e4e899afa0a65f6ebc9a2de397b787d7f-01000000-3956227.out",
+        "checkpoint_lines": [
+          "[rank-6]: Loading from /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/model_world_size_8_rank_6.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/optim_world_size_8_rank_6.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/extra_state_world_size_8_rank_6.pt"
+        ]
+      },
+      {
+        "pid": 3956228,
+        "log": "/dev/shm/sc2_real_r4_step8-eval/session_latest/logs/worker-9f61b39157c37be4e3090bda7f5b2f060f1e72a06bb976b8c39ec815-01000000-3956228.out",
+        "checkpoint_lines": [
+          "[rank-7]: Loading from /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/model_world_size_8_rank_7.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/optim_world_size_8_rank_7.pt and /mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8/actor/extra_state_world_size_8_rank_7.pt"
+        ]
+      }
+    ],
+    "blocking_load_returned": true,
+    "evidence": "Frozen ray_trainer.fit calls blocking _load_checkpoint before _validate. Actual validation seed reset and progressing SC2 game logs occur after that return; all 8 independent worker logs identify the step8 model/optim/extra shard paths. No new parameter-hash/tensor comparison was performed."
+  },
+  "evaluation_seeds": {
+    "base_seed": 1000,
+    "reset_index": 0,
+    "seeds": [
+      2807211443,
+      882774615,
+      494016583,
+      2621640384,
+      4081499387,
+      44124510,
+      2071061852,
+      1549697793
+    ]
+  },
+  "initial_seeds": [
+    2807211443,
+    882774615,
+    494016583,
+    2621640384,
+    4081499387,
+    44124510,
+    2071061852,
+    1549697793
+  ],
+  "each_seed_matches": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "seeds_file_sha256": "fe29009e02d3c378175699b96f6e9cffcc36d43e55c99550fcd4a4fc9e83b487",
+  "snapshot": {
+    "tmux": {
+      "rc": 0,
+      "out": "3951422 timeout"
+    },
+    "gpu_apps": {
+      "rc": 0,
+      "out": "3956010, ray::WorkerDict, 5164 MiB\n3956222, ray::WorkerDict, 5308 MiB\n3956223, ray::WorkerDict, 5308 MiB\n3956224, ray::WorkerDict, 5308 MiB\n3956225, ray::WorkerDict, 5308 MiB\n3956226, ray::WorkerDict, 5308 MiB\n3956227, ray::WorkerDict, 5308 MiB\n3956228, ray::WorkerDict, 5164 MiB"
+    },
+    "gameplay_tail": [
+      "\u001b[36m(SC2Worker pid=3954026)\u001b[0m [04:46] >>> BO #marine action condition <<<\u001b[32m [repeated 16x across cluster]\u001b[0m",
+      "\u001b[36m(SC2Worker pid=3954027)\u001b[0m [04:43] >>> Start Processing BO #70: Attacking Instruction: Attack with 21 marines to punish exposed expansions or tech transitions <<<\u001b[32m [repeated 5x across cluster]\u001b[0m",
+      "\u001b[36m(SC2Worker pid=3954027)\u001b[0m [04:43] >>> Start Processing BO #72: barracks <<<\u001b[32m [repeated 5x across cluster]\u001b[0m",
+      "\u001b[36m(SC2Worker pid=3954026)\u001b[0m [04:51] >>> Start Processing BO #68: SCV <<<\u001b[32m [repeated 14x across cluster]\u001b[0m",
+      "\u001b[36m(SC2Worker pid=3954028)\u001b[0m [04:56] >>> BO #supplydepot action condition <<<"
+    ],
+    "errors": []
+  },
+  "evaluation_outcome": "pending",
+  "training_after_step8_started": false,
+  "extra_initial_evaluation_started": false,
+  "limits": "3h evaluation wall limit inherited unchanged; no PPO update or step9. No claim of learning improvement before paired results.",
+  "eta_beijing": "2026-09-07 16:47–17:37 (40–90 minutes from 16:07 launch; estimate, not a new budget)",
+  "previous_preflight_record": "r4-step8-eval-handoff.json"
+}

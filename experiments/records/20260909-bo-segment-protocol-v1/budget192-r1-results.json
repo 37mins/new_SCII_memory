@@ -1,0 +1,154 @@
+[
+  {
+    "run_id": "20260909-bo-segment-protocol-v1-spb2-l6-g2-opening-B192-8gpu-eval4-s0-r1",
+    "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260909-bo-segment-protocol-v1/runs/20260909-bo-segment-protocol-v1-spb2-l6-g2-opening-B192-8gpu-eval4-s0-r1",
+    "source_sha": "71fae36ccc112d4c9cd303ab084c1e0a0c7eebec",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "result_status": "completed",
+    "started_at": "2026-09-09T09:02:34.608193+00:00",
+    "ended_at": "2026-09-09T09:21:04.448889+00:00",
+    "process_exit_code": 0,
+    "training_updates": 0,
+    "wins": 3,
+    "games": [
+      {
+        "env_index": 0,
+        "seed": 2732,
+        "won": true,
+        "cumulative_reward": 21,
+        "policy_decisions": 12,
+        "valid_decisions": 8,
+        "request_game_seconds": [
+          0,
+          111,
+          131,
+          159,
+          171,
+          192,
+          200,
+          212,
+          253,
+          301,
+          357,
+          425
+        ],
+        "median_interval_seconds": 28
+      },
+      {
+        "env_index": 1,
+        "seed": 2732,
+        "won": false,
+        "cumulative_reward": -49.45,
+        "policy_decisions": 11,
+        "valid_decisions": 5,
+        "request_game_seconds": [
+          0,
+          111,
+          131,
+          151,
+          171,
+          184,
+          253,
+          313,
+          393,
+          449,
+          521
+        ],
+        "median_interval_seconds": 58
+      },
+      {
+        "env_index": 2,
+        "seed": 43567,
+        "won": true,
+        "cumulative_reward": 20.5,
+        "policy_decisions": 9,
+        "valid_decisions": 5,
+        "request_game_seconds": [
+          0,
+          107,
+          159,
+          175,
+          180,
+          257,
+          328,
+          381,
+          480
+        ],
+        "median_interval_seconds": 62
+      },
+      {
+        "env_index": 3,
+        "seed": 43567,
+        "won": true,
+        "cumulative_reward": 21,
+        "policy_decisions": 9,
+        "valid_decisions": 4,
+        "request_game_seconds": [
+          0,
+          107,
+          135,
+          159,
+          168,
+          245,
+          317,
+          373,
+          445
+        ],
+        "median_interval_seconds": 64
+      }
+    ],
+    "no_policy_games": 0,
+    "mean_cumulative_reward": 3.2624999999999993,
+    "consumed_answers": 41,
+    "format_valid": 22,
+    "semantic_valid": 22,
+    "failure_reasons": {
+      "canonical legacy response requires `- exactname`": 3,
+      "action outside current canonical BO candidates: Launch OFFENSE ...": 1,
+      "action outside current canonical BO candidates: supplydep": 1,
+      "action outside current canonical BO candidates: marine x": 5,
+      "action outside current canonical BO candidates: supplydepot": 2,
+      "action count exceeds current BO remainder: supplydepot": 3,
+      "action outside current canonical BO candidates: supplydepot x": 1,
+      "action count exceeds current BO remainder: mule": 1,
+      "action outside current canonical BO candidates: techlab": 1,
+      "action outside current canonical BO candidates: siege tank": 1
+    },
+    "decoded_text_token_length_histogram": {
+      "5": 2,
+      "14": 5,
+      "15": 1,
+      "21": 3,
+      "28": 6,
+      "29": 1,
+      "31": 1,
+      "34": 1,
+      "35": 1,
+      "38": 1,
+      "57": 1,
+      "60": 1,
+      "74": 1,
+      "81": 1,
+      "192": 15
+    },
+    "response_budget": 192,
+    "decoded_text_at_budget": 15,
+    "decoded_text_at_budget_invalid": 15,
+    "token_length_method": "Retokenize consumed decoded text without special tokens; proxy only. Original generation token IDs/EOS flags were not saved here; not an exact truncation rate.",
+    "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "replay_paths": {
+      "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-09_09-04-00/replay.SC2Replay": "db371562fbaef30a1e0c6c1fb065e76e342b4fb2610a71c1e1423153a751a7c2"
+    },
+    "artifact_sha256": {
+      "manifest.json": "f02de1f82c425ba70df6811676915b3164a7838364c71b6597f367b984dc1369",
+      "effective_config.json": "61a9292ad79aa5b4785559f5cb07fbd2ce709bd24941060b657a680f309753aa",
+      "result.json": "caa2136d3db90891e81549fccf34d528e5e3d64fec979af74c7a9a2bbd2c937d",
+      ".done": "caa2136d3db90891e81549fccf34d528e5e3d64fec979af74c7a9a2bbd2c937d",
+      "episode_outcomes.jsonl": "95446c5eb9d4a214a32994db18b9eb177f4aad19dd0e60c6b0f48432c6acd4c9",
+      "prompt_response.jsonl": "5067499ab9efd79f88bb5c11a333780dea003417bb6d53a89fdc6a7ba8ecdebf",
+      "evaluation_seeds.jsonl": "2a2fbfb073f0c2c9e220b29122219e6946a1c32164e9824db08763d37cc8606f",
+      "console.log": "674d9da62210d7858e411a75993d569730c8dbf787307c365835ac4eaac215e8"
+    }
+  }
+]

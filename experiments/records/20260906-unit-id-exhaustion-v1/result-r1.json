@@ -1,0 +1,354 @@
+{
+  "source_commit": "f083ec58eeeb271c8abafaf98f917762898ce152",
+  "run_id": "20260906-unit-id-exhaustion-v1-qwen-instruct2507-l6-4gpu-rl1-s0-r1",
+  "verified_at": "2026-09-06T01:49:26.622750+00:00",
+  "result": {
+    "status": "completed",
+    "ended_at": "2026-09-06T01:15:54.623883+00:00",
+    "process_exit_code": 0,
+    "completed_steps": 1,
+    "target_steps": 1,
+    "metrics_finite": true,
+    "checkpoint_complete": true,
+    "checkpoint_files": {
+      "checkpoints/global_step_1/data.pt": {
+        "bytes": 1947,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/model_world_size_4_rank_0.pt": {
+        "bytes": 4411642379,
+        "sha256": "b649e7010bc6910f4a622c1684fcaa00c267797000da6a6dcb877b2130a45520"
+      },
+      "checkpoints/global_step_1/actor/model_world_size_4_rank_1.pt": {
+        "bytes": 4411642379,
+        "sha256": "a9f106b8be4eae9a3abc88429ab02b50844c083b6d16c2890512dbbfd4de1b06"
+      },
+      "checkpoints/global_step_1/actor/model_world_size_4_rank_2.pt": {
+        "bytes": 4411642379,
+        "sha256": "b1650abef9b30b06bfc078b8d77ab8e9bf53917423b4ba80aad328cbfd898797"
+      },
+      "checkpoints/global_step_1/actor/model_world_size_4_rank_3.pt": {
+        "bytes": 4411642379,
+        "sha256": "a2e12e28acc1835e21dc1a1a8c8e58000c3829be7f1a18ac8111f0926f52911b"
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_4_rank_0.pt": {
+        "bytes": 8044938915,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_4_rank_1.pt": {
+        "bytes": 8044938915,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_4_rank_2.pt": {
+        "bytes": 8044938915,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_4_rank_3.pt": {
+        "bytes": 8044938915,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_4_rank_0.pt": {
+        "bytes": 15141,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_4_rank_1.pt": {
+        "bytes": 15077,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_4_rank_2.pt": {
+        "bytes": 15205,
+        "sha256": null
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_4_rank_3.pt": {
+        "bytes": 15077,
+        "sha256": null
+      }
+    },
+    "console_sha256": "2c014e9e4a307dd731f498c7af4879f6e0e307f48da311d990298e399b8c1d23",
+    "episode_outcomes": {
+      "trajectories": 8,
+      "natural_games": 8,
+      "wins": 0,
+      "defeats": 8,
+      "ties": 0,
+      "truncated": 0,
+      "natural_win_rate": 0,
+      "outcomes": [
+        {
+          "reset_index": 0,
+          "env_index": 4,
+          "decision_count": 4,
+          "step_index": 3,
+          "policy_decision_count": 4,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 1,
+          "decision_count": 19,
+          "step_index": 18,
+          "policy_decision_count": 19,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 5,
+          "decision_count": 26,
+          "step_index": 25,
+          "policy_decision_count": 26,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 6,
+          "decision_count": 38,
+          "step_index": 37,
+          "policy_decision_count": 38,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 2,
+          "decision_count": 39,
+          "step_index": 38,
+          "policy_decision_count": 39,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 0,
+          "decision_count": 43,
+          "step_index": 42,
+          "policy_decision_count": 43,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 3,
+          "decision_count": 47,
+          "step_index": 46,
+          "policy_decision_count": 47,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        },
+        {
+          "reset_index": 0,
+          "env_index": 7,
+          "decision_count": 47,
+          "step_index": 46,
+          "policy_decision_count": 47,
+          "terminated": true,
+          "truncated": false,
+          "game_result": "Defeat",
+          "termination_reason": "game_result",
+          "outcome_reward": -50
+        }
+      ]
+    }
+  },
+  "metrics": [
+    {
+      "step": 1,
+      "global_seqlen/min": 64294,
+      "global_seqlen/max": 65460,
+      "global_seqlen/minmax_diff": 1166,
+      "global_seqlen/balanced_min": 64914,
+      "global_seqlen/balanced_max": 64915,
+      "global_seqlen/mean": 64914.5,
+      "actor/entropy_loss": 0.006,
+      "episode/valid_action_ratio": 0.947,
+      "actor/kl_loss": 0,
+      "actor/kl_coef": 0.01,
+      "actor/pg_loss": -0.082,
+      "actor/pg_clipfrac": 0.004,
+      "actor/ppo_kl": 0.323,
+      "actor/pg_clipfrac_lower": 0,
+      "actor/grad_norm": 1.172,
+      "perf/mfu/actor": 0.033,
+      "perf/max_memory_allocated_gb": 41.233,
+      "perf/max_memory_reserved_gb": 70.883,
+      "perf/cpu_memory_used_gb": 50.222,
+      "actor/lr": 0,
+      "training/global_step": 1,
+      "training/epoch": 0,
+      "critic/score/mean": -28.743,
+      "critic/score/max": -24.952,
+      "critic/score/min": -48.706,
+      "critic/rewards/mean": -28.743,
+      "critic/rewards/max": -24.952,
+      "critic/rewards/min": -48.706,
+      "critic/advantages/mean": -0.079,
+      "critic/advantages/max": 0.156,
+      "critic/advantages/min": -4.102,
+      "critic/returns/mean": -0.079,
+      "critic/returns/max": 0.156,
+      "critic/returns/min": -4.102,
+      "response_length/mean": 12.223,
+      "response_length/max": 31,
+      "response_length/min": 3,
+      "response_length/clip_ratio": 0,
+      "prompt_length/mean": 971.33,
+      "prompt_length/max": 1038,
+      "prompt_length/min": 892,
+      "prompt_length/clip_ratio": 0,
+      "episode/reward/mean": -32.299,
+      "episode/reward/max": -24.952,
+      "episode/reward/min": -48.706,
+      "episode/length/mean": 32.875,
+      "episode/length/max": 47,
+      "episode/length/min": 4,
+      "episode/tool_call_count/mean": 0,
+      "episode/success_rate": 0,
+      "timing_s/gen": 1441.062,
+      "timing_s/reward": 0.095,
+      "timing_s/old_log_prob": 49.847,
+      "timing_s/ref": 57.378,
+      "timing_s/adv": 0.104,
+      "timing_s/update_actor": 182.943,
+      "timing_s/save_checkpoint": 777.833,
+      "timing_s/step": 2509.341,
+      "timing_per_token_ms/update_actor": 0.705,
+      "timing_per_token_ms/ref": 0.221,
+      "timing_per_token_ms/gen": 446.564,
+      "timing_per_token_ms/adv": 0,
+      "perf/total_num_tokens": 259658,
+      "perf/time_per_step": 2509.341,
+      "perf/throughput": 25.869
+    }
+  ],
+  "audit": {
+    "status": "passed",
+    "source_commit": "f083ec58eeeb271c8abafaf98f917762898ce152",
+    "steps": [
+      {
+        "step": 1,
+        "wins": 0,
+        "planner_games": 8,
+        "environment_reward_mean": -32.29850196838379,
+        "consumed": 263,
+        "valid": 249,
+        "valid_rate": 0.9467680608365019,
+        "excluded_terminal_rows": 0,
+        "rejection_reasons": {
+          "action outside current canonical BO candidates: marine x 2": 11,
+          "action outside current canonical BO candidates: marine x 5": 2,
+          "action outside current canonical BO candidates: marine x 23": 1
+        },
+        "training_metrics": {
+          "actor/grad_norm": 1.172,
+          "actor/ppo_kl": 0.323,
+          "actor/kl_loss": 0,
+          "actor/pg_clipfrac": 0.004,
+          "response_length/clip_ratio": 0,
+          "episode/reward/mean": -32.299,
+          "episode/success_rate": 0
+        }
+      }
+    ],
+    "sha256": {
+      ".done": "f1b6147dfb5f44f7f984d391a802c67e37f322b66e07848b291e2574ff5efda5",
+      "manifest.json": "bd8e02529e032c6242e9739ef9ef45421d40eafc27972f24c19de1f93e81bf00",
+      "effective_config.json": "5881d7c38c19f6182703ebb5563e2df2e6add0b2d19a70fc6e85070ceab29702",
+      "metrics.json": "4362c8ae1300dd02e65e39f10bfeba038a67750333aefb53e04df3504405941c",
+      "prompt_response.jsonl": "03bc8a318f63dce1238a2997359e11e3cf4fe9ca351b947af7fa92d86ca8001f"
+    },
+    "scope": "completion/credit/validator audit; promotion still requires review of quality and anomalies"
+  },
+  "execution_review": {
+    "policy_credit": [
+      {
+        "traj_uid": "0477af42-200a-4922-9874-42fc0dae51c0",
+        "environment_reward": -25.87299919128418,
+        "environment_interactions": 43,
+        "policy_decisions": 43,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "8dfce68d-c8b2-405b-97b7-6122cdda4bf3",
+        "environment_reward": -39.814998626708984,
+        "environment_interactions": 19,
+        "policy_decisions": 19,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "861de43e-f776-4896-9d4a-dd6f027e5588",
+        "environment_reward": -28.065000534057617,
+        "environment_interactions": 39,
+        "policy_decisions": 39,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "008740dd-7488-484d-8051-b53b83953364",
+        "environment_reward": -24.95199966430664,
+        "environment_interactions": 47,
+        "policy_decisions": 47,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "8c77672b-1d94-4b9f-a896-f06735aa4dbb",
+        "environment_reward": -48.70600128173828,
+        "environment_interactions": 4,
+        "policy_decisions": 4,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "1d40cd38-91b3-4e36-9b4b-bf64846ea011",
+        "environment_reward": -37.8640022277832,
+        "environment_interactions": 26,
+        "policy_decisions": 26,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "62acf1ed-9310-4469-9efb-e54cd801dbf6",
+        "environment_reward": -28.140005111694336,
+        "environment_interactions": 38,
+        "policy_decisions": 38,
+        "excluded_terminal_rows": 0
+      },
+      {
+        "traj_uid": "23e68434-4c9c-4238-bc5b-c0347869d2e2",
+        "environment_reward": -24.97300910949707,
+        "environment_interactions": 47,
+        "policy_decisions": 47,
+        "excluded_terminal_rows": 0
+      }
+    ],
+    "maximum_logged_executor_id": 973,
+    "extended_id_examples": [],
+    "action_blocked_console_line_count": 461,
+    "limitations": "Console repeat suppression means this is not a count of unique failed actions. Executor ID log does not give full allocator capacity."
+  },
+  "long_training": {
+    "status": "held",
+    "started": false,
+    "automatic_handoff_active": false,
+    "reason": "User questioned launching 96 steps with 0 wins; do not launch on completion/numeric audit alone. Analyze failure and learning signal first."
+  }
+}

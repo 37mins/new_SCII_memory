@@ -1,0 +1,629 @@
+{
+  "verified_at_utc": "2026-09-06T17:27:07.754332+00:00",
+  "source_commit": "aa1d20dbe87ddaf67213e8fa67e15e4eb2e56835",
+  "node": "sc2-a100-44",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "run_id": "20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r3-train8",
+  "status": "global_step_1_completed; global_step_2_sampling; not step8 acceptance",
+  "global_steps_completed": 1,
+  "optimizer_updates_in_global_step_1": 21,
+  "training_rollout": {
+    "games": 8,
+    "natural_games": 8,
+    "wins": 0,
+    "truncated": 0,
+    "true_policy_decisions": 163,
+    "valid_evaluable_actions": 155
+  },
+  "batch_accounting": {
+    "true_policy_decisions": 163,
+    "physical_ppo_rows": 168,
+    "copied_padding_rows": 5,
+    "note": "Existing adjust_batch(copy) semantics retained as a known frozen limitation, not zero-weight padding and not a new fix."
+  },
+  "console_metrics_rounded": {
+    "step": 1,
+    "global_seqlen/min": 20184,
+    "global_seqlen/max": 21067,
+    "global_seqlen/minmax_diff": 883,
+    "global_seqlen/balanced_min": 20629,
+    "global_seqlen/balanced_max": 20630,
+    "global_seqlen/mean": 20629.5,
+    "actor/entropy_loss": 0.007,
+    "episode/valid_action_ratio": 0.952,
+    "actor/kl_loss": 0.101,
+    "actor/kl_coef": 0.01,
+    "actor/pg_loss": 0,
+    "actor/pg_clipfrac": 0.004,
+    "actor/ppo_kl": 0.095,
+    "actor/pg_clipfrac_lower": 0,
+    "actor/grad_norm": 1.582,
+    "perf/mfu/actor": 0.02,
+    "perf/max_memory_allocated_gb": 50.592,
+    "perf/max_memory_reserved_gb": 67.055,
+    "perf/cpu_memory_used_gb": 60.203,
+    "actor/lr": 0,
+    "training/global_step": 1,
+    "training/epoch": 0,
+    "critic/score/mean": -47.04,
+    "critic/score/max": -45.761,
+    "critic/score/min": -49,
+    "critic/rewards/mean": -47.04,
+    "critic/rewards/max": -45.761,
+    "critic/rewards/min": -49,
+    "critic/advantages/mean": -0.009,
+    "critic/advantages/max": 0.049,
+    "critic/advantages/min": -0.248,
+    "critic/returns/mean": -0.009,
+    "critic/returns/max": 0.049,
+    "critic/returns/min": -0.248,
+    "response_length/mean": 12.97,
+    "response_length/max": 31,
+    "response_length/min": 3,
+    "response_length/clip_ratio": 0,
+    "prompt_length/mean": 969.387,
+    "prompt_length/max": 1031,
+    "prompt_length/min": 922,
+    "prompt_length/clip_ratio": 0,
+    "episode/reward/mean": -47.746,
+    "episode/reward/max": -45.761,
+    "episode/reward/min": -49,
+    "episode/length/mean": 20.375,
+    "episode/length/max": 41,
+    "episode/length/min": 5,
+    "episode/tool_call_count/mean": 0,
+    "episode/success_rate": 0,
+    "timing_s/gen": 1426.572,
+    "timing_s/reward": 0.069,
+    "timing_s/old_log_prob": 18.267,
+    "timing_s/ref": 22.874,
+    "timing_s/adv": 0.078,
+    "timing_s/update_actor": 96.958,
+    "timing_s/save_checkpoint": 642.276,
+    "timing_s/step": 2207.153,
+    "timing_per_token_ms/ref": 0.139,
+    "timing_per_token_ms/update_actor": 0.587,
+    "timing_per_token_ms/gen": 654.691,
+    "timing_per_token_ms/adv": 0,
+    "perf/total_num_tokens": 165036,
+    "perf/time_per_step": 2207.153,
+    "perf/throughput": 9.347
+  },
+  "metric_precision_note": "Console uses three decimal places: actor/lr=0 is display rounding, not the actual learning rate; see saved scheduler state.",
+  "saved_scheduler": {
+    "base_lrs": [
+      0.000001
+    ],
+    "last_epoch": 1,
+    "_step_count": 2,
+    "_get_lr_called_within_step": false,
+    "_last_lr": [
+      0.000001
+    ],
+    "lr_lambdas": [
+      null
+    ]
+  },
+  "checkpoint": {
+    "required_files_complete": true,
+    "total_bytes": 49827330547,
+    "files": {
+      "checkpoints/global_step_1/data.pt": {
+        "bytes": 1947,
+        "zip_entries": 6
+      },
+      "checkpoints/global_step_1/actor/model_world_size_8_rank_0.pt": {
+        "bytes": 2205930155,
+        "zip_entries": 406
+      },
+      "checkpoints/global_step_1/actor/model_world_size_8_rank_1.pt": {
+        "bytes": 2205930155,
+        "zip_entries": 406
+      },
+      "checkpoints/global_step_1/actor/model_world_size_8_rank_2.pt": {
+        "bytes": 2205930155,
+        "zip_entries": 406
+      },
+      "checkpoints/global_step_1/actor/model_world_size_8_rank_3.pt": {
+        "bytes": 2205930155,
+        "zip_entries": 406
+      },
+      "checkpoints/global_step_1/actor/model_world_size_8_rank_4.pt": {
+        "bytes": 2205930155,
+        "zip_entries": 406
+      },
+      "checkpoints/global_step_1/actor/model_world_size_8_rank_5.pt": {
+        "bytes": 2205930155,
+        "zip_entries": 406
+      },
+      "checkpoints/global_step_1/actor/model_world_size_8_rank_6.pt": {
+        "bytes": 2205930155,
+        "zip_entries": 406
+      },
+      "checkpoints/global_step_1/actor/model_world_size_8_rank_7.pt": {
+        "bytes": 2205930155,
+        "zip_entries": 406
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_8_rank_0.pt": {
+        "bytes": 4022470787,
+        "zip_entries": 9
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_8_rank_1.pt": {
+        "bytes": 4022470787,
+        "zip_entries": 9
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_8_rank_2.pt": {
+        "bytes": 4022470787,
+        "zip_entries": 9
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_8_rank_3.pt": {
+        "bytes": 4022470787,
+        "zip_entries": 9
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_8_rank_4.pt": {
+        "bytes": 4022470787,
+        "zip_entries": 9
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_8_rank_5.pt": {
+        "bytes": 4022470787,
+        "zip_entries": 9
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_8_rank_6.pt": {
+        "bytes": 4022470787,
+        "zip_entries": 9
+      },
+      "checkpoints/global_step_1/actor/optim_world_size_8_rank_7.pt": {
+        "bytes": 4022470787,
+        "zip_entries": 9
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_8_rank_0.pt": {
+        "bytes": 15205,
+        "zip_entries": 8
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_8_rank_1.pt": {
+        "bytes": 15141,
+        "zip_entries": 8
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_8_rank_2.pt": {
+        "bytes": 15077,
+        "zip_entries": 8
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_8_rank_3.pt": {
+        "bytes": 15141,
+        "zip_entries": 8
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_8_rank_4.pt": {
+        "bytes": 15141,
+        "zip_entries": 8
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_8_rank_5.pt": {
+        "bytes": 15141,
+        "zip_entries": 8
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_8_rank_6.pt": {
+        "bytes": 15141,
+        "zip_entries": 8
+      },
+      "checkpoints/global_step_1/actor/extra_state_world_size_8_rank_7.pt": {
+        "bytes": 15077,
+        "zip_entries": 8
+      }
+    },
+    "model_shard_sha256": {
+      "model_world_size_8_rank_0.pt": "cb759455c22f0b9218cf1d6b6f0ba4811531bf44dcdacfa4a77c8b787188906e",
+      "model_world_size_8_rank_1.pt": "d5ffafb89c0ba6f635eecb48a9922ecdae9ff26f114171b97d00b8f4e7e41ee1",
+      "model_world_size_8_rank_2.pt": "181bce6e5b22abd0c0880722f0f7a3b3286251b75e4e4d13fda238a7017ce75d",
+      "model_world_size_8_rank_3.pt": "b8119f4d404cf654f14d33d75805ba399c9af94dd35e140271b24a0cd5a8dbd8",
+      "model_world_size_8_rank_4.pt": "5e878e34d4c08012be8e9ea1d7bf15539c85a8396563594c81e63b9d4e7e8631",
+      "model_world_size_8_rank_5.pt": "b2cd382aa380acc687c4763132ce7fff0ab44716a1a91d93c5a1b20b8c71acf4",
+      "model_world_size_8_rank_6.pt": "fd868f37944b837d993d62537b8e40ffe4fe8a45d19834d948d5d381570976ae",
+      "model_world_size_8_rank_7.pt": "762dc5c2062353a2beac42e3decac413a91977ef508daabff7e9d18940551233"
+    },
+    "verification_scope": "ZIP directory structure checked only; no full tensor reload or per-file CRC scan performed."
+  },
+  "all_rank_diagnostics": {
+    "rank_files": {
+      "update-0001-rank-00.jsonl": {
+        "phase_counts": {
+          "pre_update": 21,
+          "update": 21,
+          "post_update": 21
+        },
+        "nonfinite": 0,
+        "updates": 21,
+        "sha256": "9142d7948d8bf5d21822361b2b88ae34e871170aaea96842a2269a6ba0f2720f"
+      },
+      "update-0001-rank-01.jsonl": {
+        "phase_counts": {
+          "pre_update": 21,
+          "update": 21,
+          "post_update": 21
+        },
+        "nonfinite": 0,
+        "updates": 21,
+        "sha256": "689948b107c904c6bd720e5aa0f4fdc2e5d7bf1d0e5db0abd37c88c5044cad67"
+      },
+      "update-0001-rank-02.jsonl": {
+        "phase_counts": {
+          "pre_update": 21,
+          "update": 21,
+          "post_update": 21
+        },
+        "nonfinite": 0,
+        "updates": 21,
+        "sha256": "6bff3362e47abedd3e4a51802de7df973b858d2d04c2668e442d9e5ace7fbf97"
+      },
+      "update-0001-rank-03.jsonl": {
+        "phase_counts": {
+          "pre_update": 21,
+          "update": 21,
+          "post_update": 21
+        },
+        "nonfinite": 0,
+        "updates": 21,
+        "sha256": "e360bb92986673f9f421410761c77c34c0e5a6a8605837fb488277f40ffc3636"
+      },
+      "update-0001-rank-04.jsonl": {
+        "phase_counts": {
+          "pre_update": 21,
+          "update": 21,
+          "post_update": 21
+        },
+        "nonfinite": 0,
+        "updates": 21,
+        "sha256": "85bbb5bf4efc04bc85ac7cf9a683b1b6a77529ed16f49471eec8771735cb6867"
+      },
+      "update-0001-rank-05.jsonl": {
+        "phase_counts": {
+          "pre_update": 21,
+          "update": 21,
+          "post_update": 21
+        },
+        "nonfinite": 0,
+        "updates": 21,
+        "sha256": "dc66f66731501344d99a53b01e8c34556a2d4b6554dbf2f77cb3896eccc42744"
+      },
+      "update-0001-rank-06.jsonl": {
+        "phase_counts": {
+          "pre_update": 21,
+          "update": 21,
+          "post_update": 21
+        },
+        "nonfinite": 0,
+        "updates": 21,
+        "sha256": "50391a54230b12fdd3b695d386a50bb1e37ee7c3fc3ed249d169ab4626e20fcf"
+      },
+      "update-0001-rank-07.jsonl": {
+        "phase_counts": {
+          "pre_update": 21,
+          "update": 21,
+          "post_update": 21
+        },
+        "nonfinite": 0,
+        "updates": 21,
+        "sha256": "7718d45f0977bcfd5cad5baae194e77023c30ac147fb2e747bae015e05725061"
+      }
+    },
+    "phases": {
+      "pre_update": {
+        "rows": 168,
+        "valid_tokens": 2179,
+        "all_finite": true,
+        "weighted_k1": 0,
+        "weighted_abs_gap": 0,
+        "max_abs_gap": 0,
+        "objective_clipfrac": 0,
+        "ratio_below_clip": 0,
+        "ratio_above_clip": 0,
+        "exponent_clamped_tokens": 0
+      },
+      "update": {
+        "rows": 168,
+        "valid_tokens": 2179,
+        "all_finite": true,
+        "weighted_k1": 0.11691544678518673,
+        "weighted_abs_gap": 0.12539744978927045,
+        "max_abs_gap": 34.57129669189453,
+        "objective_clipfrac": 0.006424965580541533,
+        "ratio_below_clip": 0.014685635612666361,
+        "ratio_above_clip": 0.0036714089031665903,
+        "exponent_clamped_tokens": 3
+      },
+      "post_update": {
+        "rows": 168,
+        "valid_tokens": 2179,
+        "all_finite": true,
+        "weighted_k1": 0.30595643392337907,
+        "weighted_abs_gap": 0.31287567502810026,
+        "max_abs_gap": 48.32129669189453,
+        "objective_clipfrac": 0.005966039467645709,
+        "ratio_below_clip": 0.016062413951353834,
+        "ratio_above_clip": 0.004130335016062414,
+        "exponent_clamped_tokens": 15
+      }
+    },
+    "scope": "pre/update/post are existing teacher-forced forward observations versus recomputed old log-prob; not a cached/full generation equality claim. Aggregates weight valid tokens; training metric aggregation and phase differ."
+  },
+  "post_update_probability_distribution": {
+    "at_utc": "2026-09-06T17:18:31.787884+00:00",
+    "source": "existing update-0001 all-rank batch .pt and completed post_update JSONL; CPU-only, no forward or token generation",
+    "effective_tokens": 2179,
+    "abs_gap_quantiles": {
+      "0.5": 0,
+      "0.9": 0,
+      "0.95": 0.00021743774414062153,
+      "0.99": 15.624186553955077,
+      "0.999": 42.25950685119701
+    },
+    "abs_gap_mean": 0.31287567502810026,
+    "abs_gap_max": 48.32129669189453,
+    "signed_gap_mean": -0.30595643392337907,
+    "abs_gap_gt_1": 37,
+    "abs_gap_gt_20": 15,
+    "worst_rows": [
+      {
+        "rank_file": "update-0001-rank-05.jsonl",
+        "sample": 13,
+        "response_index": 18,
+        "token_id": 28591,
+        "token": " marine",
+        "old": -0.42870330810546875,
+        "new": -48.75,
+        "gap": -48.32129669189453,
+        "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- marine  \n- siegetank<|im_end|>"
+      },
+      {
+        "rank_file": "update-0001-rank-07.jsonl",
+        "sample": 0,
+        "response_index": 1,
+        "token_id": 23205,
+        "token": " Launch",
+        "old": -0.693145751953125,
+        "new": -44.6875,
+        "gap": -43.994354248046875,
+        "response": "- Launch OFFENSE with 8 marine\n- marine\n- siegetank\n- marauder\n- techlab barracks<|im_end|>"
+      },
+      {
+        "rank_file": "update-0001-rank-01.jsonl",
+        "sample": 5,
+        "response_index": 18,
+        "token_id": 28591,
+        "token": " marine",
+        "old": -2.5788955688476562,
+        "new": -45.9375,
+        "gap": -43.358604431152344,
+        "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- marine  \n- siegetank<|im_end|>"
+      },
+      {
+        "rank_file": "update-0001-rank-00.jsonl",
+        "sample": 12,
+        "response_index": 1,
+        "token_id": 23205,
+        "token": " Launch",
+        "old": -0.14267730712890625,
+        "new": -30.625,
+        "gap": -30.482322692871094,
+        "response": "- Launch OFFENSE with 8 marine\n- marine\n- siegetank\n- marauder<|im_end|>"
+      },
+      {
+        "rank_file": "update-0001-rank-03.jsonl",
+        "sample": 19,
+        "response_index": 2,
+        "token_id": 856,
+        "token": " x",
+        "old": -2.578948974609375,
+        "new": -30.9375,
+        "gap": -28.358551025390625,
+        "response": "- marine x 5<|im_end|>"
+      },
+      {
+        "rank_file": "update-0001-rank-02.jsonl",
+        "sample": 14,
+        "response_index": 2,
+        "token_id": 856,
+        "token": " x",
+        "old": -0.0000457763671875,
+        "new": -24.375,
+        "gap": -24.374954223632812,
+        "response": "- marine x 2<|im_end|>"
+      },
+      {
+        "rank_file": "update-0001-rank-04.jsonl",
+        "sample": 8,
+        "response_index": 27,
+        "token_id": 3594,
+        "token": " mar",
+        "old": -0.69329833984375,
+        "new": -24.6875,
+        "gap": -23.99420166015625,
+        "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine  \n- marauder<|im_end|>"
+      },
+      {
+        "rank_file": "update-0001-rank-06.jsonl",
+        "sample": 12,
+        "response_index": 16,
+        "token_id": 2303,
+        "token": "  \n",
+        "old": -0.00711822509765625,
+        "new": -22.5,
+        "gap": -22.492881774902344,
+        "response": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder<|im_end|>"
+      }
+    ],
+    "note": "All counts retain existing copied batch padding; these are distribution descriptions, not new pass/fail thresholds."
+  },
+  "policy_credit": [
+    {
+      "traj_uid": "063b66bb-f872-4f6b-841e-383e8074c935",
+      "environment_reward": -48.5,
+      "environment_interactions": 19,
+      "policy_decisions": 19,
+      "excluded_terminal_rows": 0
+    },
+    {
+      "traj_uid": "cad9a493-cf4d-47f4-ac62-c980c3a87e6e",
+      "environment_reward": -48.5,
+      "environment_interactions": 6,
+      "policy_decisions": 6,
+      "excluded_terminal_rows": 0
+    },
+    {
+      "traj_uid": "08f1ecaa-25e8-4015-ba98-db3e7f81349e",
+      "environment_reward": -45.76100158691406,
+      "environment_interactions": 41,
+      "policy_decisions": 41,
+      "excluded_terminal_rows": 0
+    },
+    {
+      "traj_uid": "304e0452-cd24-44f2-a76e-3430567042e8",
+      "environment_reward": -48,
+      "environment_interactions": 8,
+      "policy_decisions": 8,
+      "excluded_terminal_rows": 0
+    },
+    {
+      "traj_uid": "d4cb2ac6-143b-409b-9852-1b9e08d66f78",
+      "environment_reward": -49,
+      "environment_interactions": 5,
+      "policy_decisions": 5,
+      "excluded_terminal_rows": 0
+    },
+    {
+      "traj_uid": "c7d1f555-46ab-4105-9df4-59121a577d6e",
+      "environment_reward": -46.5,
+      "environment_interactions": 40,
+      "policy_decisions": 40,
+      "excluded_terminal_rows": 0
+    },
+    {
+      "traj_uid": "36f6bb68-2a88-4c6e-a040-61e123645e75",
+      "environment_reward": -47,
+      "environment_interactions": 33,
+      "policy_decisions": 33,
+      "excluded_terminal_rows": 0
+    },
+    {
+      "traj_uid": "856ee13d-74d0-4b12-ac01-9db0a0d42045",
+      "environment_reward": -48.70500183105469,
+      "environment_interactions": 11,
+      "policy_decisions": 11,
+      "excluded_terminal_rows": 0
+    }
+  ],
+  "subsequent_training_answers": {
+    "at_utc": "2026-09-06T17:33:19.715076+00:00",
+    "completed_reset_end_step_indices": {
+      "0": 40
+    },
+    "batches": {
+      "0": {
+        "global_step": 1,
+        "raw_rows": 328,
+        "true_evaluable_responses": 163,
+        "valid_responses": 155,
+        "step_index_range": [
+          0,
+          40
+        ],
+        "examples": [
+          {
+            "time": "2026-09-06 16:53:23",
+            "env_idx": 0,
+            "step_index": 0,
+            "llm_response": "- Launch OFFENSE with 8 marine\n- marine\n- siegetank\n- marauder\n- techlab barracks",
+            "is_action_valid": true,
+            "failure_reason": ""
+          },
+          {
+            "time": "2026-09-06 16:53:23",
+            "env_idx": 1,
+            "step_index": 0,
+            "llm_response": "- marine  \n- siegetank  \n- marauder  \n- supplydepot  \n- mule  \n- Launch OFFENSE with 8 marine",
+            "is_action_valid": true,
+            "failure_reason": ""
+          },
+          {
+            "time": "2026-09-06 16:53:23",
+            "env_idx": 2,
+            "step_index": 0,
+            "llm_response": "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine",
+            "is_action_valid": true,
+            "failure_reason": ""
+          },
+          {
+            "time": "2026-09-06 16:53:23",
+            "env_idx": 3,
+            "step_index": 0,
+            "llm_response": "- Launch OFFENSE with 8 marine\n- marine\n- siegetank\n- marauder",
+            "is_action_valid": true,
+            "failure_reason": ""
+          }
+        ],
+        "failure_reasons": {
+          "action count exceeds current BO remainder: marauder": 3,
+          "action outside current canonical BO candidates: marine x 2": 4,
+          "action outside current canonical BO candidates: marine x 5": 1
+        }
+      },
+      "1": {
+        "global_step": 2,
+        "raw_rows": 120,
+        "true_evaluable_responses": 118,
+        "valid_responses": 116,
+        "step_index_range": [
+          41,
+          55
+        ],
+        "examples": [
+          {
+            "time": "2026-09-06 17:27:46",
+            "env_idx": 0,
+            "step_index": 41,
+            "llm_response": "- marine  \n- siegetank  \n- marauder  \n- mule  \n- supplydepot  \n- Launch OFFENSE with 8 marine",
+            "is_action_valid": true,
+            "failure_reason": ""
+          },
+          {
+            "time": "2026-09-06 17:27:46",
+            "env_idx": 1,
+            "step_index": 41,
+            "llm_response": "- marine  \n- siegetank  \n- marauder  \n- mule  \n- supplydepot  \n- Launch OFFENSE with 8 marine",
+            "is_action_valid": true,
+            "failure_reason": ""
+          },
+          {
+            "time": "2026-09-06 17:27:46",
+            "env_idx": 2,
+            "step_index": 41,
+            "llm_response": "- marine  \n- siegetank  \n- marauder  \n- mule  \n- supplydepot  \n- Launch OFFENSE with 8 marine",
+            "is_action_valid": true,
+            "failure_reason": ""
+          },
+          {
+            "time": "2026-09-06 17:27:46",
+            "env_idx": 3,
+            "step_index": 41,
+            "llm_response": "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine",
+            "is_action_valid": true,
+            "failure_reason": ""
+          }
+        ],
+        "failure_reasons": {
+          "action count exceeds current BO remainder: marauder": 2
+        }
+      }
+    },
+    "method": "Prompt step_index is cumulative across resets; partition using last step_index of each fully completed eight-game reset, not a counter decrease."
+  },
+  "conclusion": "First full rollout/PPO/checkpoint cycle completed and resampling continued. Recorded metrics/log-probs finite and gradient guard did not fail. Significant tail probability changes remain; no single-threshold failure, no code changes. Learning effect and step8/96 acceptance remain unproven.",
+  "unresolved_artifact_note": "Replay timestamp collision described in real-rl-r3-initial-eval.json remains; no running code changed."
+}

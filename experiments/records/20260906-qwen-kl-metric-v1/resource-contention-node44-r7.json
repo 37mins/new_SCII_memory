@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-06T06:33:54+00:00",
+  "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+  "status": "running_with_external_gpu_contention",
+  "kl_started_at": "2026-09-06T06:24:19.138279+00:00",
+  "kl_worker_pids_0_3": [3400290, 3400517, 3400518, 3400519],
+  "external_process_start_utc": "2026-09-06 06:30:11-06:30:12",
+  "external_process_executable": "/mnt/data0601/miniconda3/envs/cjy_mob/bin/python",
+  "external_pids_gpu_0_3": [3402088, 3402084, 3402086, 3402075],
+  "external_memory_mib_gpu_0_3": [14486, 13984, 14480, 14518],
+  "kl_completed_updates": 0,
+  "kl_completed_natural_games": 0,
+  "kl_done_exists": false,
+  "kl_trace_exists": false,
+  "integrated_completed_updates": 2,
+  "integrated_checkpoint_step1_step2": "13/13 nonempty files each",
+  "integrated_natural_games": 16,
+  "integrated_wins": 1,
+  "interpretation": "Another workload started after KL launch and now shares GPUs0-3. This is resource contention, not a demonstrated KL/model bug or an observed OOM. Actor-update memory on the same 4-rank integrated code was about 75 GB per GPU at 14:15; concurrent external allocation poses OOM risk.",
+  "action": "Read-only checks and user notification; no process stopped, no restart, no code or loss change"
+}

@@ -1,0 +1,8 @@
+diff --git a/scripts/train_sc2.sh b/scripts/train_sc2.sh
+--- a/scripts/train_sc2.sh
++++ b/scripts/train_sc2.sh
+@@ -236,3 +236,3 @@
+     +env.prompt_response_log_path="${OUTPUT_DIR}/prompt_response.jsonl" \
+-    +env.prompt_response_log_max_prompt_chars=3000 \
++    +env.prompt_response_log_max_prompt_chars=0 \
+     +env.prompt_response_log_train_only=True \

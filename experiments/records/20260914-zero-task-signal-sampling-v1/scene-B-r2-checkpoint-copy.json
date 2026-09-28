@@ -1,0 +1,122 @@
+{
+  "source": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+  "destination": "/mnt/data0601/yangjinyue/new_SCII/staging/20260915-scene-B-r2/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+  "files": [
+    {
+      "path": "actor/added_tokens.json",
+      "bytes": 707,
+      "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+    },
+    {
+      "path": "actor/chat_template.jinja",
+      "bytes": 2630,
+      "sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326"
+    },
+    {
+      "path": "actor/config.json",
+      "bytes": 1651,
+      "sha256": "0b438c5cf18a6130f7dee00ae8ec8c954ba660c0f8914e20bd5869b6cdab0664"
+    },
+    {
+      "path": "actor/configuration_sse_swa_moba.py",
+      "bytes": 4533,
+      "sha256": "682efc414c0c64fa4c1b79d509132b86943f937583bc3a5d9b79160bf8fa64ac"
+    },
+    {
+      "path": "actor/extra_state_world_size_4_rank_0.pt",
+      "bytes": 15077,
+      "sha256": "8916a54490b4078f3ba617da9d918374bdcf2ac7776da718ce4cdb6a7fe65b3d"
+    },
+    {
+      "path": "actor/extra_state_world_size_4_rank_1.pt",
+      "bytes": 15077,
+      "sha256": "8ac16ec66eb91f12c4c268b71bc56b9305e697b48ab05150fd77c6b34b62aed0"
+    },
+    {
+      "path": "actor/extra_state_world_size_4_rank_2.pt",
+      "bytes": 15141,
+      "sha256": "28512767d4e610b7244800bee5ad07dac707d48c1b8684f4449a6926c54adc4c"
+    },
+    {
+      "path": "actor/extra_state_world_size_4_rank_3.pt",
+      "bytes": 15141,
+      "sha256": "fec1819e7b265667cfdd6b32c7ef768e1c59d58dedde01c2b03402659e6f5070"
+    },
+    {
+      "path": "actor/generation_config.json",
+      "bytes": 121,
+      "sha256": "339c17c8356e1cd033a9c06e8553e4e9d3bc972fafff698a821b5de29a4afa75"
+    },
+    {
+      "path": "actor/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "path": "actor/model_world_size_4_rank_0.pt",
+      "bytes": 5555629511,
+      "sha256": "6a3db5bc5758688488f4b35b483b706127fd7bfcd857e2ddffa1ee508815a30e"
+    },
+    {
+      "path": "actor/model_world_size_4_rank_1.pt",
+      "bytes": 5555629511,
+      "sha256": "de24aa2111712486417f51924be85ca20d7a6bf92c330e41db84f49e2d5f8785"
+    },
+    {
+      "path": "actor/model_world_size_4_rank_2.pt",
+      "bytes": 5555629511,
+      "sha256": "e49756cb90c17e6a0eb009584977dd81976b975e26a13ba6440a92cebe4ce794"
+    },
+    {
+      "path": "actor/model_world_size_4_rank_3.pt",
+      "bytes": 5555629511,
+      "sha256": "00e8acecb24a124ca98e9735738db731a81e3b890cebc59935f4b9efb0593e86"
+    },
+    {
+      "path": "actor/optim_world_size_4_rank_0.pt",
+      "bytes": 10332463827,
+      "sha256": "8423787689cbacd281e3e29fb068b0cd543a7c6b7d473913bd2acfb6bc5574af"
+    },
+    {
+      "path": "actor/optim_world_size_4_rank_1.pt",
+      "bytes": 10332463827,
+      "sha256": "80dc5a43fced9d201eac86dec6ae487a68b09791f3a57ce620d09477184b8151"
+    },
+    {
+      "path": "actor/optim_world_size_4_rank_2.pt",
+      "bytes": 10332463827,
+      "sha256": "7e156cb93ee2ea2402196e43a441e7eb18f5e82f9f9924c9a7b38a732ba7a6ef"
+    },
+    {
+      "path": "actor/optim_world_size_4_rank_3.pt",
+      "bytes": 10332463827,
+      "sha256": "a21f7f5e90bafc61f60dcc0e0688571915b90927cbb0d27412c75b9774a0f63f"
+    },
+    {
+      "path": "actor/special_tokens_map.json",
+      "bytes": 758,
+      "sha256": "c27c358c771c6eb2303f90c96fc7db8e69295cc3c78e33ba656dd785427b97bc"
+    },
+    {
+      "path": "actor/tokenizer.json",
+      "bytes": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    {
+      "path": "actor/tokenizer_config.json",
+      "bytes": 5415,
+      "sha256": "efb173ce0b0e5cb1ff07b7b526e094ebf936a38ff43f7061d3633fb2e357de4c"
+    },
+    {
+      "path": "actor/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "path": "data.pt",
+      "bytes": 1947,
+      "sha256": "3dd3f0101d1ee785b0c877ceebe99819a11ea5bcad358a0b2f118bf06ecb9fcb"
+    }
+  ],
+  "verified": true
+}

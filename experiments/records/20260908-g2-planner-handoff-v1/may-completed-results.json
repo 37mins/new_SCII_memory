@@ -1,0 +1,444 @@
+{
+  "verified_at_beijing": "2026-09-09 12:22",
+  "runtime_sha": "e3ffac9e2da577679b9b980d66678e4cc72b06aa",
+  "runtime_clean": true,
+  "node": "sc2-a100-47",
+  "control_exit_codes": {
+    "A": 0,
+    "B": 0
+  },
+  "resource_snapshot": "At 12:17 Beijing all eight GPUs had 0 MiB used, no tmux sessions or SC2 processes.",
+  "reward_scope": "Sum each env only through its first done row; later placeholders excluded, matching val/text/test_score to log precision.",
+  "action_valid_scope": "Valid semantic-evaluable Planner answers / all semantic-evaluable Planner answers; not final per-episode val/sc2_action_valid.",
+  "arms": {
+    "A": {
+      "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-may-opening-A-eval4-s0-r1",
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-09T03:34:50.529143+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": -13.992,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0.5,
+          "val/sc2_attack_ct": 1,
+          "val/sc2_action_valid": 1,
+          "val/sc2_semantic_action_valid": 1,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 4,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 53
+        },
+        "metrics_finite": true,
+        "response_record_count": 104,
+        "evaluable_action_count": 53,
+        "valid_evaluable_action_count": 34,
+        "replays": {
+          "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-09_03-06-17/replay.SC2Replay": "8dc30fe01b1009aaff3787aebc83ec0ef392fad7685fc9d99ddfee63e6203196"
+        },
+        "console_sha256": "8b6f152dce50cdd27619f716966a6ad8c1cbf1d9e414b714c61c9d817dde6a09",
+        "episode_outcomes": {
+          "trajectories": 4,
+          "natural_games": 4,
+          "wins": 2,
+          "defeats": 2,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.5,
+          "outcomes": [
+            {
+              "reset_index": 0,
+              "env_index": 0,
+              "decision_count": 2,
+              "step_index": 1,
+              "policy_decision_count": 2,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 1,
+              "decision_count": 3,
+              "step_index": 2,
+              "policy_decision_count": 3,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 3,
+              "decision_count": 22,
+              "step_index": 21,
+              "policy_decision_count": 22,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            },
+            {
+              "reset_index": 0,
+              "env_index": 2,
+              "decision_count": 26,
+              "step_index": 25,
+              "policy_decision_count": 26,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            }
+          ]
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "seeds": [
+        2732,
+        2732,
+        43567,
+        43567
+      ],
+      "games": [
+        {
+          "env_index": 0,
+          "seed": 2732,
+          "outcome": {
+            "reset_index": 0,
+            "env_index": 0,
+            "decision_count": 2,
+            "step_index": 1,
+            "policy_decision_count": 2,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Victory",
+            "termination_reason": "game_result",
+            "outcome_reward": 20
+          },
+          "first_planner_game_time": "10:00",
+          "first_response": "Here are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n- siege tank\n- marauder\n- starport",
+          "first_response_valid": false,
+          "valid_answers": 1,
+          "evaluable_answers": 2,
+          "failure_reasons": [
+            "action outside current canonical BO candidates: siege tank"
+          ],
+          "episode_cumulative_reward": 20.5
+        },
+        {
+          "env_index": 1,
+          "seed": 2732,
+          "outcome": {
+            "reset_index": 0,
+            "env_index": 1,
+            "decision_count": 3,
+            "step_index": 2,
+            "policy_decision_count": 3,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Victory",
+            "termination_reason": "game_result",
+            "outcome_reward": 20
+          },
+          "first_planner_game_time": "10:00",
+          "first_response": "Here are the Build Orders with attack instructions:\n- supplydepot\n- mule\n- marine\n- marauder\n- siegetank\n- marine",
+          "first_response_valid": true,
+          "valid_answers": 3,
+          "evaluable_answers": 3,
+          "failure_reasons": [],
+          "episode_cumulative_reward": 20.5
+        },
+        {
+          "env_index": 2,
+          "seed": 43567,
+          "outcome": {
+            "reset_index": 0,
+            "env_index": 2,
+            "decision_count": 26,
+            "step_index": 25,
+            "policy_decision_count": 26,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          },
+          "first_planner_game_time": "09:52",
+          "first_response": "Here are the Build Orders with attack instructions:\n- supplydepot\n- mule\n- marine\n- marine\n- marine\n- marine",
+          "first_response_valid": true,
+          "valid_answers": 16,
+          "evaluable_answers": 26,
+          "failure_reasons": [
+            "action count exceeds current BO remainder: marauder",
+            "action count exceeds current BO remainder: marine",
+            "action outside current canonical BO candidates: launch OFFENSE with 8 marine",
+            "action outside current canonical BO candidates: marauder",
+            "action outside current canonical BO candidates: siege tank",
+            "selected bullet count exceeds response line limit"
+          ],
+          "episode_cumulative_reward": -48.467
+        },
+        {
+          "env_index": 3,
+          "seed": 43567,
+          "outcome": {
+            "reset_index": 0,
+            "env_index": 3,
+            "decision_count": 22,
+            "step_index": 21,
+            "policy_decision_count": 22,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          },
+          "first_planner_game_time": "09:52",
+          "first_response": "Here are the Build Orders with attack instructions:\n- supplydepot\n- mule\n- marine\n- marauder\n- siegetank\n- marine",
+          "first_response_valid": true,
+          "valid_answers": 14,
+          "evaluable_answers": 22,
+          "failure_reasons": [
+            "action count exceeds current BO remainder: marauder",
+            "action count exceeds current BO remainder: vikingfighter",
+            "action outside current canonical BO candidates: launch OFFENSE",
+            "action outside current canonical BO candidates: marauder",
+            "action outside current canonical BO candidates: marine",
+            "action outside current canonical BO candidates: siege tank"
+          ],
+          "episode_cumulative_reward": -48.5
+        }
+      ],
+      "artifact_sha256": {
+        "result.json": "68e0ec31e5a35ab645a275cac1d1cfb0fbb67f772a3e1e52fd48a2147aaee2e8",
+        ".done": "68e0ec31e5a35ab645a275cac1d1cfb0fbb67f772a3e1e52fd48a2147aaee2e8",
+        "evaluation_seeds.jsonl": "2a2fbfb073f0c2c9e220b29122219e6946a1c32164e9824db08763d37cc8606f",
+        "episode_outcomes.jsonl": "34bd133cdebcfadbcf6765e599d0e5cd6a55ed800f52ee97531733326024f757",
+        "prompt_response.jsonl": "912c252df76bcb05ec454e94aa26cce6146fc2c2aec7c886e7b2e3211d57518a",
+        "manifest.json": "0a9c7924a524c270fdc875c7f2eebf9004c07c2aaa270b34fe1c52ec545480d2",
+        "effective_config.json": "51948daf8b9fdd6fc74d3baf0f42b83f3d650b8d15c16ef19fa92931b2c88bc7"
+      }
+    },
+    "B": {
+      "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-may-opening-B-eval4-s0-r1",
+      "result": {
+        "status": "completed",
+        "ended_at": "2026-09-09T03:18:34.814940+00:00",
+        "mode": "evaluation",
+        "process_exit_code": 0,
+        "training_updates": 0,
+        "metrics": {
+          "val/text/test_score": 3.012,
+          "val/text/tool_call_count/mean": 0,
+          "val/success_rate": 0.75,
+          "val/sc2_attack_ct": 0.25,
+          "val/sc2_action_valid": 0.75,
+          "val/sc2_semantic_action_valid": 0.75,
+          "val/sc2_semantic_action_evaluable": 1,
+          "val/sc2_projection_action_valid": 1,
+          "val/sc2_executor_action_valid": 1,
+          "val/sc2/episode_count": 4,
+          "val/sc2/no_policy_episode_count": 0,
+          "val/sc2/policy_decision_count": 45
+        },
+        "metrics_finite": true,
+        "response_record_count": 52,
+        "evaluable_action_count": 45,
+        "valid_evaluable_action_count": 39,
+        "replays": {
+          "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-09_03-06-13/replay.SC2Replay": "a9465cae2e4ae325ecb064f3f5393c50978c66d17ce44852096b989af8fad14d"
+        },
+        "console_sha256": "5917d4ed6f5d99fc72ac87b6de04c578bc7eed2e58b64bad4cbec9cacb9dd9fc",
+        "episode_outcomes": {
+          "trajectories": 4,
+          "natural_games": 4,
+          "wins": 3,
+          "defeats": 1,
+          "ties": 0,
+          "truncated": 0,
+          "natural_win_rate": 0.75,
+          "outcomes": [
+            {
+              "reset_index": 0,
+              "env_index": 2,
+              "decision_count": 9,
+              "step_index": 8,
+              "policy_decision_count": 9,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 0,
+              "decision_count": 11,
+              "step_index": 10,
+              "policy_decision_count": 11,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 1,
+              "decision_count": 12,
+              "step_index": 11,
+              "policy_decision_count": 12,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Victory",
+              "termination_reason": "game_result",
+              "outcome_reward": 20
+            },
+            {
+              "reset_index": 0,
+              "env_index": 3,
+              "decision_count": 13,
+              "step_index": 12,
+              "policy_decision_count": 13,
+              "terminated": true,
+              "truncated": false,
+              "game_result": "Defeat",
+              "termination_reason": "game_result",
+              "outcome_reward": -50
+            }
+          ]
+        },
+        "natural_match_completed": true,
+        "termination_evidence": "game_result"
+      },
+      "seeds": [
+        2732,
+        2732,
+        43567,
+        43567
+      ],
+      "games": [
+        {
+          "env_index": 0,
+          "seed": 2732,
+          "outcome": {
+            "reset_index": 0,
+            "env_index": 0,
+            "decision_count": 11,
+            "step_index": 10,
+            "policy_decision_count": 11,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Victory",
+            "termination_reason": "game_result",
+            "outcome_reward": 20
+          },
+          "first_planner_game_time": "00:00",
+          "first_response": "- supplydepot\n- barracks\n- marine",
+          "first_response_valid": true,
+          "valid_answers": 10,
+          "evaluable_answers": 11,
+          "failure_reasons": [
+            "action count exceeds current BO remainder: supplydepot"
+          ],
+          "episode_cumulative_reward": 20.5
+        },
+        {
+          "env_index": 1,
+          "seed": 2732,
+          "outcome": {
+            "reset_index": 0,
+            "env_index": 1,
+            "decision_count": 12,
+            "step_index": 11,
+            "policy_decision_count": 12,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Victory",
+            "termination_reason": "game_result",
+            "outcome_reward": 20
+          },
+          "first_planner_game_time": "00:00",
+          "first_response": "- supplydepot\n- barracks\n- marine",
+          "first_response_valid": true,
+          "valid_answers": 12,
+          "evaluable_answers": 12,
+          "failure_reasons": [],
+          "episode_cumulative_reward": 20.5
+        },
+        {
+          "env_index": 2,
+          "seed": 43567,
+          "outcome": {
+            "reset_index": 0,
+            "env_index": 2,
+            "decision_count": 9,
+            "step_index": 8,
+            "policy_decision_count": 9,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Victory",
+            "termination_reason": "game_result",
+            "outcome_reward": 20
+          },
+          "first_planner_game_time": "00:00",
+          "first_response": "- supplydepot\n- barracks\n- marine\n- supplydepot\n- barracks\n- marine",
+          "first_response_valid": true,
+          "valid_answers": 7,
+          "evaluable_answers": 9,
+          "failure_reasons": [
+            "action count exceeds current BO remainder: barracks",
+            "selected bullet count exceeds response line limit"
+          ],
+          "episode_cumulative_reward": 20
+        },
+        {
+          "env_index": 3,
+          "seed": 43567,
+          "outcome": {
+            "reset_index": 0,
+            "env_index": 3,
+            "decision_count": 13,
+            "step_index": 12,
+            "policy_decision_count": 13,
+            "terminated": true,
+            "truncated": false,
+            "game_result": "Defeat",
+            "termination_reason": "game_result",
+            "outcome_reward": -50
+          },
+          "first_planner_game_time": "00:00",
+          "first_response": "- supplydepot\n- barracks\n- marine\n- supplydepot\n- barracks\n- marine",
+          "first_response_valid": true,
+          "valid_answers": 10,
+          "evaluable_answers": 13,
+          "failure_reasons": [
+            "action count exceeds current BO remainder: barracks",
+            "action outside current canonical BO candidates: launch OFFENSE with 8 marine",
+            "selected bullet count exceeds response line limit"
+          ],
+          "episode_cumulative_reward": -48.95
+        }
+      ],
+      "artifact_sha256": {
+        "result.json": "d4d57ce6c9c80fd6cfd85596e4ed2b66ac382395fa06a90a27913af09595230f",
+        ".done": "d4d57ce6c9c80fd6cfd85596e4ed2b66ac382395fa06a90a27913af09595230f",
+        "evaluation_seeds.jsonl": "2a2fbfb073f0c2c9e220b29122219e6946a1c32164e9824db08763d37cc8606f",
+        "episode_outcomes.jsonl": "99742107bed67e64a31a8a4774e43f451f1395a4f37d3ed8b4fa5e5fc1dbd6d9",
+        "prompt_response.jsonl": "83df9bf54646db8c48bbf9023436e9f06f0a789f9c53af921ae7967481170726",
+        "manifest.json": "6f6ac0e2c002731a5ebabea0ccf743adb63efebaac1cf64c106c92fe454123bd",
+        "effective_config.json": "50ee2dc40afe14a0961b1e106196a8753cca342778416a86d4c13073b883d1cf"
+      }
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-opening-rl96-gate8-8gpu-s0-r1-train8",
+  "node": "sc2-a100-44",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "runtime_sha": "e3ffac9e2da577679b9b980d66678e4cc72b06aa",
+  "orchestration_sha": "34c90a49ca8fdd641f75cdbacabb30df06c41de3",
+  "runtime_clean_verified_utc": "2026-09-09T06:08:18+00:00",
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260908-g2-planner-handoff-v1/runs/20260908-g2-planner-handoff-v1-spb2-l6-opening-rl96-gate8-8gpu-s0-r1-train8",
+  "first_empty": {
+    "time": "2026-09-09 05:37:15",
+    "step_index": 27,
+    "env_idx": 1,
+    "prompt": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 14:32 in the game, and we are playing as Terran with 50 minerals and 572 vespene gas, while our current supply is 42, of which 17 is allocated to the army, 24 to workers, and 131 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 23 SCV, 12 marine. In terms of the structures, we have 3 bases in the form of commandcenter, 7 barracks, 1 refinery, 16 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 3 bases in the form of orbitalcommand, 1 armory, 2 barracks, 1 barracks with techlab, 1 engineeringbay, 1 factory, 1 fusioncore, 4 missileturret, 6 refinery, 4 starport, 1 starport with reactor, 2 starport with techlab, 9 supplydepot.\nThe remaining BO list in this phase:\nnone\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+    "llm_response": "Here are the Build Orders with attack instructions:\n\n- Launch OFFENSE\n- Launch OFFENSE\n- Launch OFFENSE\n- Launch OFFENSE\n- Launch OFFENSE\n- Launch OFFENSE",
+    "reward": 0,
+    "done": false,
+    "failure_reason": "current BO candidate list is empty",
+    "policy_action_applied": true,
+    "policy_action_id": 28
+  },
+  "early_factory_candidates": [],
+  "early_factory_answers": [],
+  "factory_execution_lines": [],
+  "configuration": {
+    "overrides.+ray_init.runtime_env.env_vars.SC2_MAX_STEPS": "'0'",
+    "overrides.+ray_init.runtime_env.env_vars.SC2_STRATEGY_PROFILE": "'marine_pressure'",
+    "overrides.+ray_init.runtime_env.env_vars.SC2_ATTACK_OPTION_ACCOUNT_ISSUED": "'1'",
+    "overrides.actor_rollout_ref.actor.use_invalid_action_penalty": "True",
+    "overrides.actor_rollout_ref.actor.invalid_action_penalty_coef": "0.1",
+    "overrides.env.max_steps": "0"
+  },
+  "latest": {
+    "time": "2026-09-09 06:11:30",
+    "step_index": 109,
+    "done": false,
+    "failure_reason": "current BO candidate list is empty",
+    "policy_action_applied": true
+  },
+  "empty_count": 83,
+  "rewards_empty": {
+    "0.0": 83
+  },
+  "checkpoints": [],
+  "outcomes": [
+    {
+      "reset_index": 0,
+      "env_index": 5,
+      "decision_count": 10,
+      "step_index": 9,
+      "policy_decision_count": 10,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20
+    },
+    {
+      "reset_index": 0,
+      "env_index": 6,
+      "decision_count": 10,
+      "step_index": 9,
+      "policy_decision_count": 10,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20
+    },
+    {
+      "reset_index": 0,
+      "env_index": 2,
+      "decision_count": 11,
+      "step_index": 10,
+      "policy_decision_count": 11,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20
+    },
+    {
+      "reset_index": 0,
+      "env_index": 3,
+      "decision_count": 11,
+      "step_index": 10,
+      "policy_decision_count": 11,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20
+    },
+    {
+      "reset_index": 0,
+      "env_index": 4,
+      "decision_count": 11,
+      "step_index": 10,
+      "policy_decision_count": 11,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20
+    },
+    {
+      "reset_index": 0,
+      "env_index": 0,
+      "decision_count": 12,
+      "step_index": 11,
+      "policy_decision_count": 12,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20
+    },
+    {
+      "reset_index": 0,
+      "env_index": 7,
+      "decision_count": 12,
+      "step_index": 11,
+      "policy_decision_count": 12,
+      "terminated": true,
+      "truncated": false,
+      "game_result": "Victory",
+      "termination_reason": "game_result",
+      "outcome_reward": 20
+    }
+  ],
+  "cpu_reproduction": {
+    "runtime_python": "/private/tmp/sc2-air-results.HBI61m/decoder/bin/python",
+    "execution": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=.:tests <runtime_python> - (stdin, existing planner_scope/replay/strict_validator helpers; no model/socket/game)",
+    "exit_code": 0,
+    "results": {
+      "phase_bo_keys": [
+        [
+          "SCV",
+          "supplydepot",
+          "barracks",
+          "marine"
+        ],
+        [
+          "marine",
+          "supplydepot",
+          "barracks",
+          "reactor barracks",
+          "SCV"
+        ],
+        [
+          "marine",
+          "supplydepot",
+          "mule",
+          "siegetank",
+          "SCV",
+          "marauder",
+          "commandcenter",
+          "refinery",
+          "starport",
+          "vikingfighter"
+        ]
+      ],
+      "own_structure_counts": {
+        "barracks": 7,
+        "factory": 0,
+        "refinery": 1,
+        "starport": 0
+      },
+      "input_todo": {
+        "siegetank": 9,
+        "starport": 1,
+        "vikingfighter": 8
+      },
+      "filtered_todo": {},
+      "attack_threshold": 8,
+      "army_supply": 17,
+      "attack_options": {
+        "0": "Launch OFFENSE with 8 marine",
+        "1": "Launch OFFENSE with 8 marine",
+        "2": null
+      },
+      "raw_waiting_count": 3,
+      "terminal_phase_refresh": false,
+      "answer_cases": [
+        {
+          "answer": "",
+          "validator": [
+            false,
+            "current BO candidate list is empty"
+          ],
+          "plan": [],
+          "reason": "current BO candidate list is empty"
+        },
+        {
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n</answer>",
+          "validator": [
+            false,
+            "current BO candidate list is empty"
+          ],
+          "plan": [],
+          "reason": "current BO candidate list is empty"
+        },
+        {
+          "answer": "- factory",
+          "validator": [
+            false,
+            "current BO candidate list is empty"
+          ],
+          "plan": [],
+          "reason": "current BO candidate list is empty"
+        },
+        {
+          "answer": "- marine",
+          "validator": [
+            false,
+            "current BO candidate list is empty"
+          ],
+          "plan": [],
+          "reason": "current BO candidate list is empty"
+        },
+        {
+          "answer": "- Launch OFFENSE with 8 marine",
+          "validator": [
+            false,
+            "current BO candidate list is empty"
+          ],
+          "plan": [],
+          "reason": "current BO candidate list is empty"
+        },
+        {
+          "answer": "Here are the Build Orders with attack instructions:\n\n- Launch OFFENSE\n- Launch OFFENSE\n- Launch OFFENSE\n- Launch OFFENSE\n- Launch OFFENSE\n- Launch OFFENSE",
+          "validator": [
+            false,
+            "current BO candidate list is empty"
+          ],
+          "plan": [],
+          "reason": "current BO candidate list is empty"
+        }
+      ],
+      "retained_invalid_policy_rows": 1
+    }
+  },
+  "limitations": [
+    "No source, deployment, prompt, reward, optimizer or running process changed.",
+    "Factory absence before the first empty prompt is established at every Planner observation; this does not prove every SC2 frame was inspected.",
+    "The attack_ct=2 CPU check matches two accepted attack answers immediately before the empty prompt; no new runtime instrumentation was added.",
+    "No PPO update/checkpoint at captured snapshot. The invalid-action penalty is the next training-code path, not an observed completed update.",
+    "Git blame reaches repository root df1cbb0 (2026-08-19); it does not establish original ZIP authorship."
+  ]
+}

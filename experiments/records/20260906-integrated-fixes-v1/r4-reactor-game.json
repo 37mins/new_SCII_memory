@@ -1,0 +1,413 @@
+{
+  "candidate": {
+    "run_id": "20260906-integrated-fixes-v1-r4-python-rng-reactor-slots-g2-l6-s2621640384-repeat1-r1",
+    "source_sha": "c15d02b08085ddfcf20cff5517d10ceae9fa2af0",
+    "started_at": "2026-09-07T14:42:50+00:00",
+    "ended_at": "2026-09-07T14:47:06+00:00",
+    "exit_code": 0,
+    "result": {
+      "status": "reached_first_planner",
+      "planner_answers_sent": 0,
+      "scope": "intentional diagnostic stop, not a game outcome"
+    },
+    "boundary": {
+      "iteration": 3427,
+      "time_seconds": 611.9642857142858,
+      "time_formatted": "10:11",
+      "bo_index": 237,
+      "bo_length": 237,
+      "planner_ct": 1
+    },
+    "first_observed_building": [
+      {
+        "frame": 1830,
+        "game_seconds": 326.78571428571433,
+        "type": "BarracksReactor",
+        "id": 538,
+        "raw": "[538]BarracksReactor(building 0%)\nPosition: (35, 28)"
+      },
+      {
+        "frame": 2091,
+        "game_seconds": 373.39285714285717,
+        "type": "BarracksReactor",
+        "id": 426,
+        "raw": "[426]BarracksReactor(building 0%)\nPosition: (20, 37)"
+      },
+      {
+        "frame": 2142,
+        "game_seconds": 382.5,
+        "type": "BarracksReactor",
+        "id": 892,
+        "raw": "[892]BarracksReactor(building 11%)\nPosition: (35, 14)"
+      },
+      {
+        "frame": 2193,
+        "game_seconds": 391.6071428571429,
+        "type": "FactoryTechLab",
+        "id": 867,
+        "raw": "[867]FactoryTechLab(building 24%)\nPosition: (20, 53)"
+      },
+      {
+        "frame": 2242,
+        "game_seconds": 400.3571428571429,
+        "type": "FactoryTechLab",
+        "id": 684,
+        "raw": "[684]FactoryTechLab(building 23%)\nPosition: (36, 37)"
+      },
+      {
+        "frame": 2243,
+        "game_seconds": 400.53571428571433,
+        "type": "FactoryTechLab",
+        "id": 844,
+        "raw": "[844]FactoryTechLab(building 0%)\nPosition: (32, 35)"
+      }
+    ],
+    "first_observed_complete": [
+      {
+        "frame": 2042,
+        "game_seconds": 364.64285714285717,
+        "type": "BarracksReactor",
+        "id": 538,
+        "raw": "[538]BarracksReactor\nPosition: (35, 28)\nHealth: 400/400 (100%)\nState: idle"
+      },
+      {
+        "frame": 2291,
+        "game_seconds": 409.1071428571429,
+        "type": "FactoryTechLab",
+        "id": 867,
+        "raw": "[867]FactoryTechLab\nPosition: (20, 53)\nHealth: 400/400 (100%)\nState: idle"
+      },
+      {
+        "frame": 2291,
+        "game_seconds": 409.1071428571429,
+        "type": "BarracksReactor",
+        "id": 426,
+        "raw": "[426]BarracksReactor\nPosition: (20, 37)\nHealth: 400/400 (100%)\nState: idle"
+      },
+      {
+        "frame": 2319,
+        "game_seconds": 414.1071428571429,
+        "type": "FactoryTechLab",
+        "id": 684,
+        "raw": "[684]FactoryTechLab\nPosition: (36, 37)\nHealth: 400/400 (100%)\nState: idle"
+      },
+      {
+        "frame": 2343,
+        "game_seconds": 418.39285714285717,
+        "type": "BarracksReactor",
+        "id": 892,
+        "raw": "[892]BarracksReactor\nPosition: (35, 14)\nHealth: 400/400 (100%)\nState: idle"
+      },
+      {
+        "frame": 2343,
+        "game_seconds": 418.39285714285717,
+        "type": "FactoryTechLab",
+        "id": 844,
+        "raw": "[844]FactoryTechLab\nPosition: (32, 35)\nHealth: 400/400 (100%)\nState: idle"
+      },
+      {
+        "frame": 2730,
+        "game_seconds": 487.50000000000006,
+        "type": "SiegeTank",
+        "id": 141,
+        "raw": "[141]SiegeTank\nPosition: (33, 42)\nHealth: 175/175 (100%)\nState: moving to [(38, 52)]"
+      },
+      {
+        "frame": 2901,
+        "game_seconds": 518.0357142857143,
+        "type": "SiegeTank",
+        "id": 997,
+        "raw": "[997]SiegeTank\nPosition: (30, 38)\nHealth: 175/175 (100%)\nState: moving to [(38, 52)]"
+      },
+      {
+        "frame": 3117,
+        "game_seconds": 556.6071428571429,
+        "type": "SiegeTank",
+        "id": 188,
+        "raw": "[188]SiegeTank\nPosition: (36, 40)\nHealth: 175/175 (100%)\nState: idle"
+      },
+      {
+        "frame": 3261,
+        "game_seconds": 582.3214285714286,
+        "type": "SiegeTank",
+        "id": 973,
+        "raw": "[973]SiegeTank\nPosition: (31, 38)\nHealth: 175/175 (100%)\nState: moving to [(38, 52)]"
+      }
+    ],
+    "distinct_complete_observed": {
+      "BarracksReactor": 3,
+      "FactoryTechLab": 3,
+      "SiegeTank": 4
+    },
+    "commands": [
+      {
+        "frame": 1829,
+        "bo": 91,
+        "action": {
+          "action": "BUILD_REACTOR_BARRACKS",
+          "units": [
+            858
+          ]
+        }
+      },
+      {
+        "frame": 2090,
+        "bo": 110,
+        "action": {
+          "action": "BUILD_REACTOR_BARRACKS",
+          "units": [
+            938
+          ]
+        }
+      },
+      {
+        "frame": 2116,
+        "bo": 114,
+        "action": {
+          "action": "BUILD_REACTOR_BARRACKS",
+          "units": [
+            114
+          ]
+        }
+      },
+      {
+        "frame": 2169,
+        "bo": 123,
+        "action": {
+          "action": "BUILD_TECHLAB_FACTORY",
+          "units": [
+            689
+          ]
+        }
+      },
+      {
+        "frame": 2219,
+        "bo": 129,
+        "action": {
+          "action": "BUILD_TECHLAB_FACTORY",
+          "units": [
+            978
+          ]
+        }
+      },
+      {
+        "frame": 2242,
+        "bo": 130,
+        "action": {
+          "action": "BUILD_TECHLAB_FACTORY",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 2541,
+        "bo": 165,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 2564,
+        "bo": 166,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 2587,
+        "bo": 167,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 2753,
+        "bo": 179,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 2904,
+        "bo": 198,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 2977,
+        "bo": 205,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 3332,
+        "bo": 230,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 3377,
+        "bo": 231,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      },
+      {
+        "frame": 3403,
+        "bo": 235,
+        "action": {
+          "action": "FACTORYTRAIN_SIEGETANK",
+          "units": [
+            554
+          ]
+        }
+      }
+    ],
+    "skipped": [],
+    "marine_commands": 103,
+    "marine_slot_overflows": [],
+    "max_marine_producer_orders_before": 1,
+    "cleanup": [
+      {
+        "reason": "reset_or_close",
+        "environment_pid": 4165285,
+        "children": [
+          {
+            "pid": 4165295,
+            "created_at": 1788792171.69
+          }
+        ],
+        "alive_child_pids": [],
+        "environment_alive": false
+      }
+    ],
+    "replays": [],
+    "artifact_hashes": {
+      ".done": "1ca4a13146b2891c0e462123ac0cb848f92e6221f18b870a1b78c232d1956c35",
+      "source_sha.txt": "5fd5bf4542bb4d3baa57411d48d51040a0301b681af59601cf5fc29a534423fe",
+      "started_at.txt": "63164d641a89ee71d4cd1f98f2754a5f082e5888c4458812157ce685112a53b6",
+      "ended_at.txt": "face872c9fa549a9c93d855f347efff7c02c78502f171da54147d999783089a0",
+      "effective_config.json": "8163c19d18cf17912f4fe4000f95c09df28d4f4ff1e716f41e84d0a73af8bf06",
+      "driver.log": "ed062e77b7aa8770f8cb3ca4ce1a1efe2d055190ef7c6e7da29278dcc7fd717d",
+      "result.json": "6b3646f1e42de175e1ff00583afce263a3de99d0b65cf33eb299d4cdb3bb3d9a",
+      "sc2-logs/cleanup.jsonl": "0b3e896b0e1ecf61cafab03095e82b3fc2c6185db263329371f7b24631f89efd",
+      "boundary_trace.json": "88e0f0378ac19dc2322187edab1b01ea04812eb831c79148381d62b55901b5bf",
+      "first_planner.json": "e83a35570e789607222a4b87800e846524a7877f2e9fd8ad1865e19f1c6aa117"
+    },
+    "limitation": "Entity observations, not exact birth/done times; display IDs persist within this game. No model or PPO. A Planner boundary is not a win/loss. Occupancy is pre-command observation, not engine acceptance."
+  },
+  "baseline": {
+    "run_id": "20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1",
+    "source_sha": "836460a8533b6f0429f9e9d401ac9715adc55f5b",
+    "boundary": {
+      "iteration": 3361,
+      "time_seconds": 600.1785714285714,
+      "time_formatted": "10:00",
+      "bo_index": 237,
+      "bo_length": 237,
+      "planner_ct": 1
+    },
+    "distinct_complete_observed": {
+      "BarracksReactor": 1,
+      "FactoryTechLab": 3,
+      "SiegeTank": 3
+    },
+    "skipped": [
+      {
+        "frame": 2332,
+        "bo": 110,
+        "reason": "timeout",
+        "action": "reactor barracks"
+      },
+      {
+        "frame": 2556,
+        "bo": 114,
+        "reason": "timeout",
+        "action": "reactor barracks"
+      }
+    ],
+    "marine_commands": 103,
+    "max_marine_producer_orders_before": 7,
+    "artifact_hashes": {
+      ".done": "1ca4a13146b2891c0e462123ac0cb848f92e6221f18b870a1b78c232d1956c35",
+      "source_sha.txt": "39ced57eccf37aef79486181d7e3031bf98536fb599af4c53960b11dfe39e368",
+      "started_at.txt": "10cdb107aedc3eeb2c1ffbfde9d288f54ad3c95e1b260d72577b6bd592e88c43",
+      "ended_at.txt": "635b1ca36dc4690bc387d9984b6537980f71ad7a1ea76d34876dc6c651b45eb3",
+      "effective_config.json": "beaa672f58f719f07d1472ce72f4ea309f201b9c7121cf9c2b4dd9414e661a13",
+      "driver.log": "34acd011f5a3ac5faf7062ec48f0506c6a97bed0b2bde4a6f25fa0c1b0902d60",
+      "result.json": "6b3646f1e42de175e1ff00583afce263a3de99d0b65cf33eb299d4cdb3bb3d9a",
+      "sc2-logs/cleanup.jsonl": "0ed14bc1ccd2cad90e828060bd4a2b4efb0e10593492ea79141331eb63937e31",
+      "boundary_trace.json": "21244846d9407211df54ff915f7173306d051e49229a7a26ea1a7100a9dca652",
+      "first_planner.json": "020cbcbd6cd0de83e31609049fd70ed51d6dbb8d85f526531c2192e3abb3a9ef"
+    },
+    "marine_slot_overflows": 93
+  },
+  "effective_config_differences": {
+    "SC2_EPISODE_OUTCOME_LOG": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1/episode_outcomes.jsonl",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-reactor-slots-g2-l6-s2621640384-repeat1-r1/episode_outcomes.jsonl"
+    ],
+    "PYTHONPATH": [
+      "/root/new-scii-r4-python-rng-20260907/code-836460a:/root/new-scii-spb2-level5-control/python",
+      "/root/new-scii-r4-python-rng-20260907/code-c15d02b:/root/new-scii-spb2-level5-control/python"
+    ],
+    "SC2_RNG_PREFIX_RUN_TAG": [
+      "pending-addon-g2-l6",
+      "reactor-slots-g2-l6"
+    ],
+    "SC2_BO_ADDRESS": [
+      "/root/new-scii-r4-python-rng-20260907/code-836460a/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "/root/new-scii-r4-python-rng-20260907/code-c15d02b/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json"
+    ],
+    "SC2_RUNTIME_LOG_ROOT": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1/sc2-logs",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-reactor-slots-g2-l6-s2621640384-repeat1-r1/sc2-logs"
+    ]
+  },
+  "acceptance": "passed_single_game_mechanism_gate",
+  "limits": "No model answer, PPO or natural game outcome. Different first-Planner time; tank counts alone do not prove a production-rate or win-rate gain.",
+  "local_artifact_directory": "/private/tmp/sc2-reactor-acceptance.dgj77F/20260906-integrated-fixes-v1-r4-python-rng-reactor-slots-g2-l6-s2621640384-repeat1-r1",
+  "server_artifact_directory": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-python-rng-reactor-slots-g2-l6-s2621640384-repeat1-r1",
+  "server_source_directory": "/root/new-scii-r4-python-rng-20260907/code-c15d02b",
+  "server_local_hashes_match": 10,
+  "frozen_asset_sha256": {
+    "g2": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "sc2_base75689": "115f65a49191c504f6336f7d5b7818b23dbba3d7a45cacf9142c86c959abaa41",
+    "flat128": "3916dbd2bb662a6e9c9bd27089906630c8b0a42fdbab51fc4401cf1df7b9b212"
+  },
+  "preparation_notes": [
+    "Initial permission review timed out before execution; no game launched.",
+    "Initial git bundle range used a raw SHA without an advertised ref and was rejected as empty; repackaged from HEAD at c15d02b.",
+    "Initial map checksum command omitted Maps/Melee; actual pinned asset found and checksum matched before launch.",
+    "A read-only process check used exact comm name and returned nonzero despite live SC2; command-line/PID check verified game was running.",
+    "Initial local audit attempted before scp had finished and found no .done; reran only offline audit after successful transfer. No game retry."
+  ]
+}

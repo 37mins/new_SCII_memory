@@ -1,0 +1,112 @@
+--- a/gigpo/core_gigpo.py
++++ b/gigpo/core_gigpo.py
+@@ -177,7 +177,6 @@
+                         traj_index: np.array,
+                         epsilon: float = 1e-6,
+                         remove_std: bool = True,
+-                        compute_mean_std_cross_steps: bool = True,
+                         ):
+     """
+     Compute episode-level advantage using mean-std normalization for GiGPO.
+@@ -195,10 +194,6 @@
+             A small value to avoid division by zero.
+         remove_std: bool
+             If True, the standard deviation is removed from the normalization.
+-        compute_mean_std_cross_steps: bool
+-            If True (more stable), the mean and std are computed across steps within one group.
+-            If False (i.e., standard episode-level adv), the mean and std are computed across trajectories within one group.
+-
+     Returns:
+         advantages: `(torch.Tensor)`
+             shape: (bs, response_length)
+@@ -211,30 +206,39 @@
+     id2score = defaultdict(list)
+     id2mean = {}
+     id2std = {}
+-    seen_pairs = set()
++    trajectory_score = {}
++    trajectory_size = Counter()
+     with torch.no_grad():
+         bsz = scores.shape[0]
+         for i in range(bsz):
+-            if (index[i], traj_index[i]) in seen_pairs:
+-                continue
+-            id2score[index[i]].append(scores[i])
+-            if not compute_mean_std_cross_steps:
+-                seen_pairs.add((index[i], traj_index[i]))
++            pair = (index[i], traj_index[i])
++            trajectory_size[pair] += 1
++            if pair not in trajectory_score:
++                # EpisodeRewardManager repeats the full episode return on every
++                # transition. Use it once when estimating the group baseline.
++                trajectory_score[pair] = scores[i].clone()
++                id2score[index[i]].append(trajectory_score[pair])
+
+         for idx in id2score:
+             if len(id2score[idx]) == 1:
+-                id2mean[idx] = torch.tensor(0.0)
+-                id2std[idx] = torch.tensor(1.0)
++                id2mean[idx] = id2score[idx][0]
++                id2std[idx] = scores.new_tensor(1.0)
+             elif len(id2score[idx]) > 1:
+-                id2mean[idx] = torch.mean(torch.tensor(id2score[idx]))
+-                id2std[idx] = torch.std(torch.tensor([id2score[idx]]))
++                group_scores = torch.stack(id2score[idx])
++                id2mean[idx] = group_scores.mean()
++                id2std[idx] = group_scores.std()
+             else:
+                 raise ValueError(f"no score in prompt index: {idx}")
+         for i in range(bsz):
++            pair = (index[i], traj_index[i])
++            score = trajectory_score[pair]
+             if remove_std:
+-                scores[i] = scores[i] - id2mean[index[i]]
++                advantage = score - id2mean[index[i]]
+             else:
+-                scores[i] = (scores[i] - id2mean[index[i]]) / (id2std[index[i]] + epsilon)
++                advantage = (score - id2mean[index[i]]) / (id2std[index[i]] + epsilon)
++            # Each trajectory contributes equal total episode-level weight,
++            # independent of how many planner transitions it survived.
++            scores[i] = advantage / trajectory_size[pair]
+         episode_advantages = scores.unsqueeze(-1).tile([1, response_length]) * response_mask
+
+     return episode_advantages
+--- a/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py
++++ b/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py
+@@ -10,6 +10,8 @@
+ import multiprocessing as mp
+ import time
+
++DEFEAT_PENALTY = -50.0
++
+ numbered_system_prompt = """
+ You are an expert in StarCraft II. Rank the next build-order segment for the current phase.
+ You will be given a numbered remaining BO list for this phase. Your output must choose only from that numbered list.
+@@ -1037,6 +1039,7 @@
+         if result == 'Victory':
+             reward += 20
+         else:
++            reward += DEFEAT_PENALTY
+             state_reward = final_state_shaping_reward(obs)
+             reward += state_reward
+             print(f"Outcome shaping reward: {state_reward:.3f}")
+@@ -1084,7 +1087,7 @@
+
+         if self.ct >= 20:
+             done = True
+-            reward += -50
++            reward += DEFEAT_PENALTY
+
+         if not done:
+             state_reward = final_state_shaping_reward(obs)
+--- a/examples/gigpo_trainer/run_sc2_spb2_gigpo_0095_newmicro_skill_phase2_8gpu_100ep_20260724.sh
++++ b/examples/gigpo_trainer/run_sc2_spb2_gigpo_0095_newmicro_skill_phase2_8gpu_100ep_20260724.sh
+@@ -244,7 +244,7 @@
+   actor_rollout_ref.rollout.multi_turn.enable=False \
+   actor_rollout_ref.actor.ppo_mini_batch_size=8 \
+   actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu=1 \
+-  actor_rollout_ref.actor.grad_clip=0 \
++  actor_rollout_ref.actor.grad_clip=1.0 \
+   actor_rollout_ref.actor.use_kl_loss=True \
+   actor_rollout_ref.actor.kl_loss_coef=${KL_LOSS_COEF} \
+   actor_rollout_ref.actor.entropy_coeff=${ENTROPY_COEFF} \

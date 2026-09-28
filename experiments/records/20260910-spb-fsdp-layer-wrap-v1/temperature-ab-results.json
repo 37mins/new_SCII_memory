@@ -1,0 +1,714 @@
+{
+  "audit_date": "2026-09-10",
+  "frozen_sha": "939c4ca956adabf1728e0cdd4a87c879593d7cbe",
+  "node": "sc2-a100-44",
+  "gpus": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "control_started_at": "2026-09-10T12:53:20Z",
+  "control_ended_at": "2026-09-10T13:22:35Z",
+  "exit_codes": {
+    "A": 0,
+    "B": 0,
+    "controller": 0
+  },
+  "training_updates": 0,
+  "run_root": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs",
+  "runs": {
+    "A": "20260910-spb-fsdp-layer-wrap-v1-spb2-l7s24-l6-g2-temp0.4-eval8-4gpu-r1",
+    "B": "20260910-spb-fsdp-layer-wrap-v1-spb2-l7s24-l6-g2-temp1.0-eval8-4gpu-r1"
+  },
+  "checkpoint_relative_path": "20260910-spb-fsdp-layer-wrap-v1-spb2-l7-g2-opening-quota-resume4to96-4gpu-s0-r1/checkpoints/global_step_24",
+  "seeds": [
+    52620,
+    52620,
+    52620,
+    52620,
+    17089,
+    17089,
+    17089,
+    17089
+  ],
+  "source_artifact_sha256": {
+    "A": {
+      "manifest.json": "20b617d639f227952160d9d57b903cceac519c1a21844f95f46b24f7d1b2a0ba",
+      "effective_config.json": "0351dc588516c3cd33867bfb681a6f92a8bc2b670bd0738e027f16eaa8f653a8",
+      "checkpoint_evaluation.json": "bc94f5a55092484e51007cc8d4e05c8d6413ab5728ce503c66fcb8b168b92434",
+      "evaluation_seeds.jsonl": "d04645a9698271d2ddf9c9ab7d7d47a968bdf0954b4f2c427df31657cbe055ae",
+      "prompt_response.jsonl": "e344f547a80b72f1ff00f8142659ef7d0ff9493a2837bcc30633ba98727e3e0f",
+      "episode_outcomes.jsonl": "932c738785615c9bd640e5b6ab5396d13084df73cae5bf2bc8ef7403a5afb974",
+      "result.json": "2157cdb66c8e7beeed2aa8232d844474174e7427068694ccdab242f3e90f1451",
+      ".done": "2157cdb66c8e7beeed2aa8232d844474174e7427068694ccdab242f3e90f1451"
+    },
+    "B": {
+      "manifest.json": "719dde5b47902fc6b0645ea98546d71b522594064f90db2bd8d7dc50f6b02451",
+      "effective_config.json": "f82fcbf6e52d02879035c83f63b8f908a374a2d4ef27ea5fb2f60bff26c97e64",
+      "checkpoint_evaluation.json": "8bf3570be76a0a22ab585f5cebe9474ad9481deca7c09a6bb095f385cc6fffdc",
+      "evaluation_seeds.jsonl": "d04645a9698271d2ddf9c9ab7d7d47a968bdf0954b4f2c427df31657cbe055ae",
+      "prompt_response.jsonl": "f49674f0863394497a4edffef754b3968b8a5ab90e88de7ab56a57a266b91edb",
+      "episode_outcomes.jsonl": "851c9e1ce6a9d3d75ca1f4ed5d97e6a427d72b0d9ef397b23a399e47068b1751",
+      "result.json": "6cb19924f51259f94f75db1a3b43c6422d350a02fbcacd238e26922f8419d318",
+      ".done": "6cb19924f51259f94f75db1a3b43c6422d350a02fbcacd238e26922f8419d318",
+      "console.log": "ff1402acc0e57157311b5e5741cb7a75ca605171891486bded2252b1258685a4"
+    }
+  },
+  "measurement": "Each episode ends at episode_outcomes.step_index. Sum prompt_response rewards up to that index, including terminal feedback. Count actual answers only where policy_action_applied=true; assert this equals policy_decision_count. Ignore post-termination placeholder rows. 'valid' is logged protocol validity, not successful execution or strategic quality.",
+  "probability_and_scope_limits": "No PPO, no probability replay. Two diagnostic game seeds, not eight independent scenes or held-out learning evaluation. Subsequent sampling streams need not remain aligned after trajectories diverge.",
+  "token_measurement": {
+    "method": "CPU re-encoding of saved llm_response with frozen SpB tokenizer.json, not saved generation token IDs",
+    "A_at_budget_missing_close": 2,
+    "A_actual_answers": 21,
+    "B_at_budget_missing_close": 0,
+    "B_actual_answers": 26,
+    "budget": 192
+  },
+  "aggregate": {
+    "A": {
+      "episodes": 8,
+      "wins": 4,
+      "reward_sum": -115.202,
+      "reward_mean": -14.400250000000002,
+      "real_answers": 21,
+      "valid_answers": 16,
+      "episodes_without_planner": 0
+    },
+    "B": {
+      "episodes": 8,
+      "wins": 4,
+      "reward_sum": -115.252,
+      "reward_mean": -14.406500000000001,
+      "real_answers": 26,
+      "valid_answers": 19,
+      "episodes_without_planner": 0
+    }
+  },
+  "episodes": [
+    {
+      "arm": "A",
+      "env": 0,
+      "seed": 52620,
+      "outcome": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:25",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 20.5,
+          "prompt_sha": "6cb764517e84",
+          "own_state": "It is now 04:25 in the game, and we are playing as Terran with 180 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "A",
+      "env": 1,
+      "seed": 52620,
+      "outcome": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:25",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 20.5,
+          "prompt_sha": "6cb764517e84",
+          "own_state": "It is now 04:25 in the game, and we are playing as Terran with 180 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "A",
+      "env": 2,
+      "seed": 52620,
+      "outcome": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:25",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 20.5,
+          "prompt_sha": "6cb764517e84",
+          "own_state": "It is now 04:25 in the game, and we are playing as Terran with 180 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "A",
+      "env": 3,
+      "seed": 52620,
+      "outcome": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:25",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 20.5,
+          "prompt_sha": "6cb764517e84",
+          "own_state": "It is now 04:25 in the game, and we are playing as Terran with 180 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "A",
+      "env": 4,
+      "seed": 17089,
+      "outcome": "Defeat",
+      "reward": -49.45,
+      "calls": 6,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:09",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- starport x 3\n- Launch OFFENSE with 8 marine\n</answer>",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: starport",
+          "reward": 0.5,
+          "prompt_sha": "8d4d419e666c",
+          "own_state": "It is now 04:09 in the game, and we are playing as Terran with 90 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "05:01",
+          "answer": "<answer>\n- marine x 3\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 2\n- scv x 2\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "14f27d036c7e",
+          "own_state": "It is now 05:01 in the game, and we are playing as Terran with 25 minerals and 0 vespene gas, while our current supply is 16, of which 5 is allocated to the army, 11 to workers, and 39 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 10 SCV, 5 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 5 barracks, 1 refinery, 5 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "06:37",
+          "answer": "<answer>\n- marine x 20\n- supplydepot x 9\n- mule x 6\n- marauder x 4\n- commandcenter x 2\n- techlab barracks x 1\n- factory x 1\n- siege tank x 2\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines x 20\n- marines",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: siege tank",
+          "reward": 0,
+          "prompt_sha": "b9504d36e91b",
+          "own_state": "It is now 06:37 in the game, and we are playing as Terran with 10 minerals and 152 vespene gas, while our current supply is 18, of which 6 is allocated to the army, 11 to workers, and 45 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 10 SCV, 6 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 2 barracks with reactor, 1 refinery, 6 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "07:37",
+          "answer": "<answer>\n- marauder x 1\n- siege_tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- siege_tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- siege_tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- siege_tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- siege_tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: siege_tank",
+          "reward": 0,
+          "prompt_sha": "82299d86bdf5",
+          "own_state": "It is now 07:37 in the game, and we are playing as Terran with 5 minerals and 162 vespene gas, while our current supply is 22, of which 9 is allocated to the army, 13 to workers, and 49 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 6 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 2 barracks with reactor, 1 barracks with techlab, 1 refinery, 7 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "08:45",
+          "answer": "<answer>\n- marauder x 2\n- siege-tank x 2\n- marines x 2\n- supplydepot x 2\n- mule x 2\n- starport x 1\n</answer>",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: siege-tank",
+          "reward": -49.95,
+          "prompt_sha": "fa18d67a2248",
+          "own_state": "It is now 08:45 in the game, and we are playing as Terran with 20 minerals and 221 vespene gas, while our current supply is 16, of which 3 is allocated to the army, 13 to workers, and 63 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 2 barracks with reactor, 1 barracks with techlab, 2 factory, 1 refinery, 8 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "A",
+      "env": 5,
+      "seed": 17089,
+      "outcome": "Defeat",
+      "reward": -48.852,
+      "calls": 3,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:09",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- starport x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: starport",
+          "reward": 0.5,
+          "prompt_sha": "8d4d419e666c",
+          "own_state": "It is now 04:09 in the game, and we are playing as Terran with 90 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "05:01",
+          "answer": "<answer>\n- marine x 41\n- supplydepot x 7\n- barracks x 1\n- reactor barracks x 3\n- scv x 3\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": -49.352,
+          "prompt_sha": "14f27d036c7e",
+          "own_state": "It is now 05:01 in the game, and we are playing as Terran with 25 minerals and 0 vespene gas, while our current supply is 16, of which 5 is allocated to the army, 11 to workers, and 39 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 10 SCV, 5 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 5 barracks, 1 refinery, 5 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "A",
+      "env": 6,
+      "seed": 17089,
+      "outcome": "Defeat",
+      "reward": -49.45,
+      "calls": 2,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:09",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": -49.45,
+          "prompt_sha": "8d4d419e666c",
+          "own_state": "It is now 04:09 in the game, and we are playing as Terran with 90 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "A",
+      "env": 7,
+      "seed": 17089,
+      "outcome": "Defeat",
+      "reward": -49.45,
+      "calls": 2,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:09",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": -49.45,
+          "prompt_sha": "8d4d419e666c",
+          "own_state": "It is now 04:09 in the game, and we are playing as Terran with 90 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "env": 0,
+      "seed": 52620,
+      "outcome": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:25",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 20.5,
+          "prompt_sha": "6cb764517e84",
+          "own_state": "It is now 04:25 in the game, and we are playing as Terran with 180 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "env": 1,
+      "seed": 52620,
+      "outcome": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:25",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 20.5,
+          "prompt_sha": "6cb764517e84",
+          "own_state": "It is now 04:25 in the game, and we are playing as Terran with 180 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "env": 2,
+      "seed": 52620,
+      "outcome": "Victory",
+      "reward": 20.5,
+      "calls": 3,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:25",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n- Starport x 2\n</answer>",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: Starport",
+          "reward": 0,
+          "prompt_sha": "6cb764517e84",
+          "own_state": "It is now 04:25 in the game, and we are playing as Terran with 180 minerals and 0 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 11 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "05:28",
+          "answer": "<answer>\n- marine x 41\n- supplydepot x 7\n- barracks x 1\n- reactor barracks x 2\n- scv x 2\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 20.5,
+          "prompt_sha": "284f925497ba",
+          "own_state": "It is now 05:28 in the game, and we are playing as Terran with 115 minerals and 10 vespene gas, while our current supply is 36, of which 24 is allocated to the army, 12 to workers, and 19 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 24 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 6 barracks, 1 barracks with reactor, 1 refinery, 5 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "env": 3,
+      "seed": 52620,
+      "outcome": "Victory",
+      "reward": 21,
+      "calls": 5,
+      "valid": 4,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 48\n</answer>",
+          "valid": false,
+          "failure": "action count exceeds current BO remainder: marine",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "01:51",
+          "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "89d6a711cfca",
+          "own_state": "It is now 01:51 in the game, and we are playing as Terran with 460 minerals and 0 vespene gas, while our current supply is 14, of which 2 is allocated to the army, 12 to workers, and 9 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 1 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 2 barracks, 1 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "02:23",
+          "answer": "<answer>\n- marine x 20\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "72241321794d",
+          "own_state": "It is now 02:23 in the game, and we are playing as Terran with 40 minerals and 0 vespene gas, while our current supply is 16, of which 4 is allocated to the army, 12 to workers, and 31 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV, 2 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:13",
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0.5,
+          "prompt_sha": "66c185e9f904",
+          "own_state": "It is now 04:13 in the game, and we are playing as Terran with 130 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 21 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "06:08",
+          "answer": "<answer>\n- marine x 40\n- supplydepot x 6\n- barracks x 2\n- reactor barracks x 1\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 20.5,
+          "prompt_sha": "21be220a1406",
+          "own_state": "It is now 06:08 in the game, and we are playing as Terran with 645 minerals and 0 vespene gas, while our current supply is 35, of which 23 is allocated to the army, 11 to workers, and 28 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 23 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 5 barracks, 6 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "env": 4,
+      "seed": 17089,
+      "outcome": "Defeat",
+      "reward": -50,
+      "calls": 5,
+      "valid": 3,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:09",
+          "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "8d4d419e666c",
+          "own_state": "It is now 04:09 in the game, and we are playing as Terran with 90 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "05:52",
+          "answer": "<answer>\n- marine x 41\n- supplydepot x 7\n- barracks x 2\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "09446705f2ae",
+          "own_state": "It is now 05:52 in the game, and we are playing as Terran with 660 minerals and 0 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 11 to workers, and 40 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 3 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 5 barracks, 5 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "10:56",
+          "answer": "<answer>\n- marine x 50\n- mule x 6\n- scv x 15\n- commandcenter x 2\n- techlab barracks x 1\n- factory x 1\n- suppressors x 3\n- research labs x 1\n- research facilities x 1\n- plasma cannon x 1\n- plasma cannon x 1\n</answer>",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: suppressors",
+          "reward": 0,
+          "prompt_sha": "5ecc731f35d3",
+          "own_state": "It is now 10:56 in the game, and we are playing as Terran with 25 minerals and 752 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 6 barracks, 1 refinery, 12 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "12:11",
+          "answer": "<answer>\n- siege_tank x 1\n- marauder x 1\n- mule x 4\n- marauder x 2\n- supplydepot x 1\n- commandcenter x 1\n- barracks x 1\n- factory x 1\n</answer>",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: siege_tank",
+          "reward": -50,
+          "prompt_sha": "5f684b969bba",
+          "own_state": "It is now 12:11 in the game, and we are playing as Terran with 5 minerals and 786 vespene gas, while our current supply is 15, of which 3 is allocated to the army, 12 to workers, and 104 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 1 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 7 barracks, 1 barracks with techlab, 1 refinery, 13 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "env": 5,
+      "seed": 17089,
+      "outcome": "Defeat",
+      "reward": -49.45,
+      "calls": 3,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:09",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- attack x 1\n</answer>",
+          "valid": false,
+          "failure": "action outside current canonical BO candidates: attack",
+          "reward": 0,
+          "prompt_sha": "8d4d419e666c",
+          "own_state": "It is now 04:09 in the game, and we are playing as Terran with 90 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "05:25",
+          "answer": "<answer>\n- marine x 41\n- supplydepot x 7\n- barracks x 1\n- reactor barracks x 2\n- scv x 3\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": -49.45,
+          "prompt_sha": "94c4a701b8ae",
+          "own_state": "It is now 05:25 in the game, and we are playing as Terran with 105 minerals and 6 vespene gas, while our current supply is 15, of which 4 is allocated to the army, 11 to workers, and 40 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 10 SCV, 4 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 6 barracks, 1 refinery, 5 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "env": 6,
+      "seed": 17089,
+      "outcome": "Defeat",
+      "reward": -49.45,
+      "calls": 3,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:09",
+          "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- barracks x 1\n</answer>",
+          "valid": false,
+          "failure": "action count exceeds current BO remainder: barracks",
+          "reward": 0,
+          "prompt_sha": "8d4d419e666c",
+          "own_state": "It is now 04:09 in the game, and we are playing as Terran with 90 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "05:25",
+          "answer": "<answer>\n- marine x 41\n- supplydepot x 7\n- barracks x 1\n- reactor barracks x 2\n- scv x 3\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": -49.45,
+          "prompt_sha": "94c4a701b8ae",
+          "own_state": "It is now 05:25 in the game, and we are playing as Terran with 105 minerals and 6 vespene gas, while our current supply is 15, of which 4 is allocated to the army, 11 to workers, and 40 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 10 SCV, 4 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 6 barracks, 1 refinery, 5 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    },
+    {
+      "arm": "B",
+      "env": 7,
+      "seed": 17089,
+      "outcome": "Defeat",
+      "reward": -48.852,
+      "calls": 3,
+      "valid": 2,
+      "plans": [
+        {
+          "at": "00:00",
+          "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": 0,
+          "prompt_sha": "95f4e1650fe0",
+          "own_state": "It is now 00:00 in the game, and we are playing as Terran with 50 minerals and 0 vespene gas, while our current supply is 12, of which 0 is allocated to the army, 12 to workers, and 3 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 12 SCV. In terms of the structures, we have 1 bases in the form of commandcenter. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "04:09",
+          "answer": "<answer>\n- Launch OFFENSE with 8 marine\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- supplydepot x 8\n</answer>",
+          "valid": false,
+          "failure": "action count exceeds current BO remainder: supplydepot",
+          "reward": 0.5,
+          "prompt_sha": "8d4d419e666c",
+          "own_state": "It is now 04:09 in the game, and we are playing as Terran with 90 minerals and 0 vespene gas, while our current supply is 35, of which 24 is allocated to the army, 11 to workers, and 12 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 11 SCV, 20 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 4 barracks, 4 supplydepot. \nIn terms of research, we have researched no research currently."
+        },
+        {
+          "at": "05:01",
+          "answer": "<answer>\n- marine x 40\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 3\n- scv x 2\n</answer>",
+          "valid": true,
+          "failure": "",
+          "reward": -49.352,
+          "prompt_sha": "14f27d036c7e",
+          "own_state": "It is now 05:01 in the game, and we are playing as Terran with 25 minerals and 0 vespene gas, while our current supply is 16, of which 5 is allocated to the army, 11 to workers, and 39 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 10 SCV, 5 marine. In terms of the structures, we have 1 bases in the form of commandcenter, 5 barracks, 1 refinery, 5 supplydepot. \nIn terms of research, we have researched no research currently."
+        }
+      ]
+    }
+  ],
+  "b_env4_execution_evidence": {
+    "worker_pid": 1944583,
+    "mapping": "The unique seven-action valid plan in env4 matches this worker's refresh build order. Console deduplication repetition counts are not episode counts.",
+    "console_excerpt": [
+      "(SC2Worker pid=1944583) 2026-09-10 13:12:51 [default_player_Qwen3-30B] [INFO]: (0) refresh build order: supplydepot, supplydepot, supplydepot, supplydepot, barracks, barracks, barracks, barracks, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine [repeated 6x across cluster]",
+      "(SC2Worker pid=1944583) 2026-09-10 13:14:42 [default_player_Qwen3-30B] [INFO]: (1396) refresh build order: marine, supplydepot, barracks, reactor barracks, reactor barracks, scv, refinery",
+      "(SC2Worker pid=1944583)     -> [Wait] Action blocked: **Action Failed**: Insufficient Vespene Gas (0/50).",
+      "(SC2Worker pid=1944583)     -> [Wait] Action blocked: **Action Failed**: Insufficient Vespene Gas (0/50).",
+      "(SC2Worker pid=1944583)     -> [Wait] Action blocked: **Action Failed**: Insufficient Vespene Gas (0/50).",
+      "(SC2Worker pid=1944583)     -> [Wait] Action blocked: **Action Failed**: Insufficient Vespene Gas (0/50).",
+      "(SC2Worker pid=1944583) 2026-09-10 13:14:59 [default_player_Qwen3-30B] [INFO]: (1661) manage_total_attack_groups: 总攻波次 1 已全灭。 [repeated 2x across cluster]",
+      "(SC2Worker pid=1944583) 2026-09-10 13:15:03 [default_player_Qwen3-30B] [INFO]: (1751) bo_skipped_3: {'reason': 'timeout', 'action': 'reactor barracks'}",
+      "(SC2Worker pid=1944583)     -> [Wait] Action blocked: **Action Failed**: Insufficient Vespene Gas (0/50). [repeated 12x across cluster]",
+      "(SC2Worker pid=1944583)     -> [Wait] Action blocked: **Action Failed**: Insufficient Vespene Gas (0/50). [repeated 5x across cluster]",
+      "(SC2Worker pid=1944583)     -> [Wait] Action blocked: **Action Failed**: Insufficient Vespene Gas (0/50). [repeated 4x across cluster]",
+      "(SC2Worker pid=1944583) 2026-09-10 13:15:15 [default_player_Qwen3-30B] [INFO]: (1972) bo_skipped_4: {'reason': 'timeout', 'action': 'reactor barracks'}",
+      "(SC2Worker pid=1944583) 2026-09-10 13:16:58 [default_player_Qwen3-30B] [INFO]: (1975) refresh build order: marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, marine, supplydepot, supplydepot, supplydepot, supplydepot, supplydepot, supplydepot, supplydepot, barracks, barracks",
+      "(SC2Worker pid=1944583) 2026-09-10 13:17:25 [default_player_Qwen3-30B] [INFO]: (2393) manage_total_attack_groups: 总攻波次 2 已全灭。",
+      "(SC2Worker pid=1944583) 2026-09-10 13:17:41 [default_player_Qwen3-30B] [INFO]: (2631) manage_total_attack_groups: 总攻波次 3 已全灭。",
+      "(SC2Worker pid=1944583) 2026-09-10 13:18:00 [default_player_Qwen3-30B] [INFO]: (2874) manage_total_attack_groups: 总攻波次 4 已全灭。",
+      "(SC2Worker pid=1944583) 2026-09-10 13:18:20 [default_player_Qwen3-30B] [INFO]: (3129) manage_total_attack_groups: 总攻波次 5 已全灭。",
+      "(SC2Worker pid=1944583) 2026-09-10 13:19:56 [default_player_Qwen3-30B] [INFO]: (3675) refresh build order: supplydepot, marine, techlab barracks, marauder, marine, factory",
+      "(SC2Worker pid=1944583) 2026-09-10 13:21:33 [default_player_Qwen3-30B] [INFO]: (4099) refresh build order: supplydepot, marine, marauder, marine, factory, supplydepot"
+    ]
+  }
+}

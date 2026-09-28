@@ -1,0 +1,602 @@
+{
+  "frozen_sha": "5b24db566007b514686f61242ad999b5d296725b",
+  "scope": "Offline geometry and command/initialization timeline; no original ActionResult available.",
+  "reports": [
+    {
+      "run_id": "20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat1-r1",
+      "hashes": {
+        "replay.SC2Replay": "de0d49eabb650765a10a4b6e2553962b5d7eac2cae9a3bac3acc36fc318c1005",
+        "trace.json": "5983cca3198149eb2fbf0c164ad76a6c4ca6b574d32edd291803af33eb31598d",
+        "driver.log": "7363120f2e4c10760ad17021066774047004ce57b36e22dc1c75cba902c6c972"
+      },
+      "factory_command": {
+        "loop": 8300,
+        "second": 370.53571428571433,
+        "point": [
+          26.5,
+          30.5
+        ],
+        "event": {
+          "m_cmdFlags": 33554688,
+          "m_abil": {
+            "m_abilLink": 129,
+            "m_abilCmdIndex": 10,
+            "m_abilCmdData": null
+          },
+          "m_data": {
+            "TargetPoint": {
+              "x": 108544,
+              "y": 124928,
+              "z": 32768
+            }
+          },
+          "m_sequence": 273,
+          "m_otherUnit": null,
+          "m_unitGroup": null,
+          "_event": "NNet.Game.SCmdEvent",
+          "_eventid": 27,
+          "_gameloop": 8300,
+          "_userid": {
+            "m_userId": 0
+          },
+          "_bits": 184
+        }
+      },
+      "depot_command": {
+        "loop": 8336,
+        "second": 372.14285714285717,
+        "point": [
+          28.5,
+          30.5
+        ],
+        "event": {
+          "m_cmdFlags": 33554688,
+          "m_abil": {
+            "m_abilLink": 129,
+            "m_abilCmdIndex": 1,
+            "m_abilCmdData": null
+          },
+          "m_data": {
+            "TargetPoint": {
+              "x": 116736,
+              "y": 124928,
+              "z": 32768
+            }
+          },
+          "m_sequence": 282,
+          "m_otherUnit": null,
+          "m_unitGroup": null,
+          "_event": "NNet.Game.SCmdEvent",
+          "_eventid": 27,
+          "_gameloop": 8336,
+          "_userid": {
+            "m_userId": 0
+          },
+          "_bits": 184
+        }
+      },
+      "factory_events": [
+        {
+          "m_unitTagIndex": 347,
+          "m_unitTagRecycle": 1,
+          "m_unitTypeName": "Factory",
+          "m_controlPlayerId": 1,
+          "m_upkeepPlayerId": 1,
+          "m_x": 26,
+          "m_y": 30,
+          "_event": "NNet.Replay.Tracker.SUnitInitEvent",
+          "_eventid": 6,
+          "_gameloop": 8366,
+          "_bits": 296
+        },
+        {
+          "m_unitTagIndex": 347,
+          "m_unitTagRecycle": 1,
+          "_event": "NNet.Replay.Tracker.SUnitDoneEvent",
+          "_eventid": 7,
+          "_gameloop": 9326,
+          "_bits": 120
+        },
+        {
+          "m_unitTagIndex": 347,
+          "m_unitTagRecycle": 1,
+          "m_killerPlayerId": 2,
+          "m_x": 26,
+          "m_y": 30,
+          "m_killerUnitTagIndex": 256,
+          "m_killerUnitTagRecycle": 2,
+          "_event": "NNet.Replay.Tracker.SUnitDiedEvent",
+          "_eventid": 2,
+          "_gameloop": 13373,
+          "_bits": 296
+        }
+      ],
+      "depot_events": [
+        {
+          "m_unitTagIndex": 351,
+          "m_unitTagRecycle": 1,
+          "m_unitTypeName": "SupplyDepot",
+          "m_controlPlayerId": 1,
+          "m_upkeepPlayerId": 1,
+          "m_x": 29,
+          "m_y": 31,
+          "_event": "NNet.Replay.Tracker.SUnitInitEvent",
+          "_eventid": 6,
+          "_gameloop": 8427,
+          "_bits": 328
+        },
+        {
+          "m_unitTagIndex": 351,
+          "m_unitTagRecycle": 1,
+          "_event": "NNet.Replay.Tracker.SUnitDoneEvent",
+          "_eventid": 7,
+          "_gameloop": 8907,
+          "_bits": 120
+        },
+        {
+          "m_unitTagIndex": 351,
+          "m_unitTagRecycle": 1,
+          "m_killerPlayerId": 2,
+          "m_x": 29,
+          "m_y": 31,
+          "m_killerUnitTagIndex": 281,
+          "m_killerUnitTagRecycle": 7,
+          "_event": "NNet.Replay.Tracker.SUnitDiedEvent",
+          "_eventid": 2,
+          "_gameloop": 14698,
+          "_bits": 296
+        }
+      ],
+      "addon_center": [
+        29,
+        30
+      ],
+      "depot_center": [
+        29,
+        31
+      ],
+      "overlap_size": [
+        2,
+        1
+      ],
+      "pre_init_observation": {
+        "Round state": "Time: 06:12\nRace: Terran\nMinerals: 730\nVespene: 293\nSupply army: 24\nSupply workers: 40\nSupply unused: 14\nMap size: 128x128",
+        "Own units": "[673, 809, 874, 65, 137, 665, 953, 155, 89, 178, 129, 377, 402, 498, 393, 51, 649, 977, 570, 201, 930, 242, 474, 58, 418, 314, 97, 836, 241, 379, 945, 385, 801, 194]SCV\nState: collecting resources automatically\n[826]SCV\nPosition: (23, 18)\nHealth: 45/45 (100%)\nState: constructing [(34, 32)]\n[409]SCV\nPosition: (25, 35)\nHealth: 45/45 (100%)\nState: constructing [(26, 30)]\n[145]SCV\nPosition: (21, 45)\nHealth: 45/45 (100%)\nState: constructing [(14, 32)]\n[538]MULE\nPosition: (19, 46)\nHealth: 60/60 (100%)\n[547]MULE\nPosition: (22, 48)\nHealth: 60/60 (100%)\n[659]SCV\nPosition: (29, 51)\nHealth: 45/45 (100%)\nState: constructing [(30, 52)]\n[763]Marine\nPosition: (27, 64)\nHealth: 45/45 (100%)\nState: attacking [(28, 73)]\n[403]Marine\nPosition: (27, 65)\nHealth: 45/45 (100%)\nState: attacking [(28, 73)]\n[257]Marine\nPosition: (27, 68)\nHealth: 45/45 (100%)\nState: attacking [(28, 73)]\n[642]Marine\nPosition: (27, 70)\nHealth: 45/45 (100%)\nState: idle\n[898]Marine\nPosition: (27, 71)\nHealth: 45/45 (100%)\nState: idle\n[962]Marine\nPosition: (28, 71)\nHealth: 45/45 (100%)\nState: idle\n[619]Marine\nPosition: (29, 71)\nHealth: 45/45 (100%)\nState: idle\n[594]Marine\nPosition: (30, 71)\nHealth: 45/45 (100%)\nState: idle\n[817]Marine\nPosition: (28, 72)\nHealth: 45/45 (100%)\nState: idle\n[505]Marine\nPosition: (27, 72)\nHealth: 45/45 (100%)\nState: idle\n[756]Marine\nPosition: (29, 72)\nHealth: 45/45 (100%)\nState: idle\n[442]Marine\nPosition: (30, 72)\nHealth: 45/45 (100%)\nState: idle\n[99]Marine\nPosition: (29, 72)\nHealth: 45/45 (100%)\nState: idle\n[770]Marine\nPosition: (27, 72)\nHealth: 45/45 (100%)\nState: idle\n[10]Marine\nPosition: (30, 72)\nHealth: 45/45 (100%)\nState: idle\n[513]Marine\nPosition: (28, 73)\nHealth: 45/45 (100%)\nState: idle\n[489]Marine\nPosition: (29, 73)\nHealth: 45/45 (100%)\nState: idle\n[666]Marine\nPosition: (27, 73)\nHealth: 45/45 (100%)\nState: idle\n[882]Marine\nPosition: (29, 73)\nHealth: 45/45 (100%)\nState: idle\n[329]Marine\nPosition: (28, 73)\nHealth: 45/45 (100%)\nState: idle\n[458]Marine\nPosition: (32, 127)\nHealth: 45/45 (100%)\nState: moving to [(24, 125)]",
+        "Unit abilities": "SCV[673, 809, 874, 65, 137, 665, 953, 155, 89, 178, 129, 377, 402, 498, 393, 51, 649, 409, 977, 570, 201, 930, 242, 659, 474, 58, 418, 826, 314, 145, 97, 836, 241, 379, 945, 385, 801, 194]: TERRANBUILD_COMMANDCENTER, TERRANBUILD_SUPPLYDEPOT, TERRANBUILD_REFINERY, TERRANBUILD_BARRACKS, TERRANBUILD_ENGINEERINGBAY, TERRANBUILD_MISSILETURRET, TERRANBUILD_BUNKER, TERRANBUILD_SENSORTOWER, TERRANBUILD_GHOSTACADEMY, TERRANBUILD_FACTORY",
+        "Own structures": "[657]OrbitalCommand\nPosition: (24, 22)\nHealth: 1500/1500 (100%)\nEnergy: 22/200\nState: idle\nHarvesters: 15/16\n[849]Barracks\nPosition: (24, 26)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine, Marine, Marine\n[833]SupplyDepot\nPosition: (29, 23)\nHealth: 400/400 (100%)\nState: idle\n[217]SupplyDepot\nPosition: (31, 23)\nHealth: 400/400 (100%)\nState: idle\n[290]Bunker\nPosition: (30, 20)\nHealth: 400/400 (100%)\nState: idle\n[33]Refinery\nPosition: (28, 15)\nHealth: 500/500 (100%)\nState: idle\nHarvesters: 3/3 (no more harvesters accepted)\n[73]Barracks\nPosition: (32, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [105]BarracksTechLab\n[105]BarracksTechLab\nPosition: (35, 14)\nHealth: 400/400 (100%)\nState: idle\n[795]BarracksTechLab\nPosition: (35, 28)\nHealth: 400/400 (100%)\nState: idle\n[170]Barracks\nPosition: (32, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine\nThis structure has an add-on: [795]BarracksTechLab\n[626]SupplyDepot\nPosition: (32, 40)\nHealth: 400/400 (100%)\nState: idle\n[91]BarracksTechLab\nPosition: (30, 41)\nHealth: 400/400 (100%)\nState: idle\n[482]Barracks\nPosition: (27, 41)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [91]BarracksTechLab\n[561]OrbitalCommand\nPosition: (25, 45)\nHealth: 1500/1500 (100%)\nEnergy: 6/200\nState: idle\nHarvesters: 15/16\n[306]Barracks\nPosition: (29, 45)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [235]BarracksTechLab\n[235]BarracksTechLab\nPosition: (32, 45)\nHealth: 400/400 (100%)\nState: idle\n[858]SupplyDepot\nPosition: (30, 50)\nHealth: 400/400 (100%)\nState: idle\n[211]SupplyDepot(building 90%)\nPosition: (30, 52)\n[921]SupplyDepot\nPosition: (32, 52)\nHealth: 400/400 (100%)\nState: idle\n[42]SupplyDepot\nPosition: (28, 50)\nHealth: 400/400 (100%)\nState: idle\n[633]EngineeringBay\nPosition: (27, 53)\nHealth: 850/850 (100%)\nState: idle\n[363]BarracksReactor(building 6%)\nPosition: (20, 53)\n[524]Barracks\nPosition: (17, 53)\nHealth: 1000/1000 (100%)\n[603]Refinery\nPosition: (23, 38)\nHealth: 500/500 (100%)\nState: idle\nHarvesters: 3/3 (no more harvesters accepted)\n[425]Barracks\nPosition: (18, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine, Marine, Marine\n[17]Barracks\nPosition: (16, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [802]BarracksTechLab\n[802]BarracksTechLab\nPosition: (19, 14)\nHealth: 400/400 (100%)\nState: idle",
+        "Structure abilities": "Barracks[17, 482, 170, 73, 306]: BARRACKSTRAIN_MARINE, BARRACKSTRAIN_REAPER, BARRACKSTRAIN_MARAUDER\nOrbitalCommand[657, 561]: CALLDOWNMULE_CALLDOWNMULE, COMMANDCENTERTRAIN_SCV\nEngineeringBay[633]: RESEARCH_HISECAUTOTRACKING, RESEARCH_TERRANSTRUCTUREARMORUPGRADE, ENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL1, ENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL1\nBarracksTechLab[795, 105, 235, 802, 91]: BARRACKSTECHLABRESEARCH_STIMPACK, RESEARCH_COMBATSHIELD, RESEARCH_CONCUSSIVESHELLS\nBunker[290]: EFFECT_SALVAGE",
+        "Visible enemy units": "[545]SCV\nPosition: (33, 38)\nHealth: 45/45 (100%)\n[122]VikingFighter\nPosition: (30, 117)\nHealth: 135/135 (100%)\n[106]SCV\nPosition: (27, 124)\nHealth: 45/45 (100%)\n[994]SCV\nPosition: (25, 128)\nHealth: 45/45 (100%)\n[258]SCV\nPosition: (24, 129)\nHealth: 45/45 (100%)\n[674]SCV\nPosition: (27, 130)\nHealth: 45/45 (100%)",
+        "Visible enemy structures": "[794]CommandCenter(building 17%)\nPosition: (24, 101)\n[835]Starport\nPosition: (23, 117)\n[955]BarracksTechLab\nPosition: (26, 120)\nHealth: 400/400 (100%)\n[1]SupplyDepotLowered\nPosition: (28, 121)\nHealth: 400/400 (100%)\n[938]SupplyDepotLowered\nPosition: (28, 119)\nHealth: 400/400 (100%)\n[811]Barracks\nPosition: (30, 119)\nHealth: 1000/1000 (100%)\n[721]Starport\nPosition: (30, 122)\nHealth: 1300/1300 (100%)\n[226]StarportReactor\nPosition: (33, 122)\nHealth: 400/400 (100%)\n[281]Factory\nPosition: (30, 125)\nHealth: 1250/1250 (100%)\n[610]SupplyDepotLowered\nPosition: (30, 128)\nHealth: 400/400 (100%)\n[985]Refinery\nPosition: (28, 132)\nHealth: 500/500 (100%)\n[530]OrbitalCommand\nPosition: (24, 125)\nHealth: 1500/1500 (100%)\nEnergy: 48/200\n[374]SupplyDepotLowered\nPosition: (21, 121)\n[184]Refinery(building 67%)\nPosition: (17, 122)",
+        "Action history": "{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [849]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [849]}\n{\"action\": \"TERRANBUILD_FACTORY\", \"units\": [409], \"target_position\": [1, 1]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [849]}\n{\"action\": \"TERRANBUILD_FACTORY\", \"units\": [826], \"target_position\": [1, 1]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [425]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [425]}\n{\"action\": \"TERRANBUILD_FACTORY\", \"units\": [145], \"target_position\": [1, 1]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [425]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [170]}",
+        "Map information": "Closest mineral fields: [753](25, 16), [465](18, 22), [169](24, 15), [90](20, 16), [209](17, 21), [481](18, 18), [401](21, 15), [745](17, 19), [585](20, 40), [755](43, 17), [810](19, 41), [386](44, 16), [705](19, 43), [497](18, 44), [954](18, 46), [49](19, 47), [569](19, 49), [889](20, 50), [50](20, 68), [179](19, 69), [243](19, 71), [595](18, 72), [378](18, 74), [225](19, 75), [658](19, 77), [234](20, 78), [100](25, 131), [74](24, 132)\nClosest vespene geysers: [769](17, 25), [881](28, 15), [273](23, 38), [929](42, 20), [746](23, 52), [130](23, 66), [737](23, 80), [681](42, 127), [449](28, 132)",
+        "Ability description": "BARRACKSTECHLABRESEARCH_STIMPACK(target: None): Every Marine and Marauder gain the Stimpack ability. Cost: 100 minerals, 100 vespene.\nBARRACKSTRAIN_MARAUDER(target: None): Train a Marauder, a heavily armored infantry unit that excels against armored targets with its concussive grenades, complementing Marine forces. Cost: 100 minerals, 25 vespene.\nBARRACKSTRAIN_MARINE(target: None): Train a Marine, a versatile, low-cost infantry unit that provides reliable ranged damage and forms the backbone of most Terran armies. Cost: 50 minerals.\nBARRACKSTRAIN_REAPER(target: None): Train a Reaper, a fast, mobile infantry unit designed for early-game harassment and scouting, capable of jumping cliffs with its jetpack. Cost: 50 minerals, 50 vespene.\nCALLDOWNMULE_CALLDOWNMULE(target: PointOrUnit): Calls down a MULE, a temporary unit with a timed life of 64 seconds that can mine minerals and repair for the Terran forces. It requires 50 energy from Orbital Command\nCOMMANDCENTERTRAIN_SCV(target: None): Train a SCV, a Terran worker. Cost: 50 minerals.\nEFFECT_SALVAGE(target: None): Destroy a Bunker, returning 75 minerals.\nENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL1(target: None): Increase the armor of Terran infantry units (Ghost, Marauder, Reaper, Marine, SCV). Cost: 100 minerals, 100 vespene.\nENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL1(target: None): Increase the damage of Terran infantry units (Ghost, Marauder, Reaper, Marine). Cost: 100 minerals, 100 vespene.\nRESEARCH_COMBATSHIELD(target: None): Every Marine gains a Combat Shield that gives 10 hitpoints. Cost: 100 minerals, 100 vespene.\nRESEARCH_CONCUSSIVESHELLS(target: None): Marauders gain the Concussive Shells ability. Cost: 50 minerals, 50 vespene.\nRESEARCH_HISECAUTOTRACKING(target: None): Adds +1 attack range to Auto-Turrets, Missile Turrets, and Planetary Fortresses. Cost: 100 minerals, 100 vespene.\nRESEARCH_TERRANSTRUCTUREARMORUPGRADE(target: None): Increases the armor of the Point Defense Drone, Auto-Turret, Missile Turret, Planetary Fortress, and all other Terran structures by 2. Cost: 150 minerals, 150 vespene.\nTERRANBUILD_BARRACKS(target: Point): Build a Barracks to produce infantry units (Marine, Reaper, Marauder, Ghost). Cost: 150 minerals.\nTERRANBUILD_BUNKER(target: Point): Build a Bunker, a static defense building. Cost: 100 minerals.\nTERRANBUILD_COMMANDCENTER(target: Point): Build a Command Center, the Terran base. Cost: 400 minerals.\nTERRANBUILD_ENGINEERINGBAY(target: Point): Build an Engineer Bay to unlock Missile Turret, Sensor Tower and Planetary Fortress. Cost: 125 minerals.\nTERRANBUILD_FACTORY(target: Point): Build a Factory to produce mechanical ground units (Hellion, Widow Mine, Siege Tank, Hellbat, Thor) and unlock the Starport and Armory. Cost: 150 minerals, 100 vespene.\nTERRANBUILD_GHOSTACADEMY(target: Point): Build a Ghost Academy to unlock the Ghost unit. Cost: 150 minerals, 50 vespene.\nTERRANBUILD_MISSILETURRET(target: Point): Build a Missile Turret to attack flying units. Cost: 100 minerals.\nTERRANBUILD_REFINERY(target: Unit): Build a Refinery on a Vespene Geyser. Cost: 75 minerals.\nTERRANBUILD_SENSORTOWER(target: Point): Build a Sensor Tower, which senses any approaching uncloaked, unburrowed enemy units. Cost: 125 minerals, 100 vespene.\nTERRANBUILD_SUPPLYDEPOT(target: Point): Build a Supply Depot to increase 8 supplies and unlock Barracks. Cost: 100 minerals."
+      },
+      "attempts": [
+        {
+          "bo": 123,
+          "iteration": 2521,
+          "loop": 10084,
+          "second": 450.17857142857144,
+          "action": [
+            {
+              "action": "BUILD_TECHLAB_FACTORY",
+              "units": [
+                266
+              ]
+            }
+          ],
+          "replay_selection": {
+            "m_controlGroupId": 10,
+            "m_delta": {
+              "m_subgroupIndex": 0,
+              "m_removeMask": {
+                "None": null
+              },
+              "m_addSubgroups": [
+                {
+                  "m_unitLink": 48,
+                  "m_subgroupPriority": 22,
+                  "m_intraSubgroupPriority": 1,
+                  "m_count": 1
+                }
+              ],
+              "m_addUnitTags": [
+                90963969
+              ]
+            },
+            "_event": "NNet.Game.SSelectionDeltaEvent",
+            "_eventid": 28,
+            "_gameloop": 10084,
+            "_userid": {
+              "m_userId": 0
+            },
+            "_bits": 128
+          },
+          "round_state": "Time: 07:30\nRace: Terran\nMinerals: 2515\nVespene: 667\nSupply army: 15\nSupply workers: 40\nSupply unused: 39\nMap size: 128x128"
+        },
+        {
+          "bo": 129,
+          "iteration": 2527,
+          "loop": 10108,
+          "second": 451.25000000000006,
+          "action": [
+            {
+              "action": "BUILD_TECHLAB_FACTORY",
+              "units": [
+                266
+              ]
+            }
+          ],
+          "replay_selection": {
+            "m_controlGroupId": 10,
+            "m_delta": {
+              "m_subgroupIndex": 0,
+              "m_removeMask": {
+                "None": null
+              },
+              "m_addSubgroups": [
+                {
+                  "m_unitLink": 48,
+                  "m_subgroupPriority": 22,
+                  "m_intraSubgroupPriority": 1,
+                  "m_count": 1
+                }
+              ],
+              "m_addUnitTags": [
+                90963969
+              ]
+            },
+            "_event": "NNet.Game.SSelectionDeltaEvent",
+            "_eventid": 28,
+            "_gameloop": 10108,
+            "_userid": {
+              "m_userId": 0
+            },
+            "_bits": 128
+          },
+          "round_state": "Time: 07:31\nRace: Terran\nMinerals: 2310\nVespene: 671\nSupply army: 16\nSupply workers: 40\nSupply unused: 38\nMap size: 128x128"
+        },
+        {
+          "bo": 130,
+          "iteration": 2528,
+          "loop": 10112,
+          "second": 451.42857142857144,
+          "action": [
+            {
+              "action": "BUILD_TECHLAB_FACTORY",
+              "units": [
+                266
+              ]
+            }
+          ],
+          "replay_selection": {
+            "m_controlGroupId": 10,
+            "m_delta": {
+              "m_subgroupIndex": 0,
+              "m_removeMask": {
+                "None": null
+              },
+              "m_addSubgroups": [
+                {
+                  "m_unitLink": 48,
+                  "m_subgroupPriority": 22,
+                  "m_intraSubgroupPriority": 1,
+                  "m_count": 1
+                }
+              ],
+              "m_addUnitTags": [
+                90963969
+              ]
+            },
+            "_event": "NNet.Game.SSelectionDeltaEvent",
+            "_eventid": 28,
+            "_gameloop": 10112,
+            "_userid": {
+              "m_userId": 0
+            },
+            "_bits": 128
+          },
+          "round_state": "Time: 07:31\nRace: Terran\nMinerals: 2320\nVespene: 675\nSupply army: 16\nSupply workers: 40\nSupply unused: 38\nMap size: 128x128"
+        }
+      ]
+    },
+    {
+      "run_id": "20260906-integrated-fixes-v1-r4-python-rng-preplanner-s2621640384-repeat2-r1",
+      "hashes": {
+        "replay.SC2Replay": "2f09795e41e92eae7ef447787a41f26a1d5ff0d2c5b060c766f454b3a530c19c",
+        "trace.json": "9c331f5692c672509c1c6bee68d679a58977eb6511336bd4194ecbdcf7672a8c",
+        "driver.log": "9e55555b387f479aed9bc4466660c1638f7bdf6aaa0b213e5066faaf5bb96b43"
+      },
+      "factory_command": {
+        "loop": 8300,
+        "second": 370.53571428571433,
+        "point": [
+          26.5,
+          30.5
+        ],
+        "event": {
+          "m_cmdFlags": 33554688,
+          "m_abil": {
+            "m_abilLink": 129,
+            "m_abilCmdIndex": 10,
+            "m_abilCmdData": null
+          },
+          "m_data": {
+            "TargetPoint": {
+              "x": 108544,
+              "y": 124928,
+              "z": 32768
+            }
+          },
+          "m_sequence": 273,
+          "m_otherUnit": null,
+          "m_unitGroup": null,
+          "_event": "NNet.Game.SCmdEvent",
+          "_eventid": 27,
+          "_gameloop": 8300,
+          "_userid": {
+            "m_userId": 0
+          },
+          "_bits": 184
+        }
+      },
+      "depot_command": {
+        "loop": 8336,
+        "second": 372.14285714285717,
+        "point": [
+          28.5,
+          30.5
+        ],
+        "event": {
+          "m_cmdFlags": 33554688,
+          "m_abil": {
+            "m_abilLink": 129,
+            "m_abilCmdIndex": 1,
+            "m_abilCmdData": null
+          },
+          "m_data": {
+            "TargetPoint": {
+              "x": 116736,
+              "y": 124928,
+              "z": 32768
+            }
+          },
+          "m_sequence": 282,
+          "m_otherUnit": null,
+          "m_unitGroup": null,
+          "_event": "NNet.Game.SCmdEvent",
+          "_eventid": 27,
+          "_gameloop": 8336,
+          "_userid": {
+            "m_userId": 0
+          },
+          "_bits": 184
+        }
+      },
+      "factory_events": [
+        {
+          "m_unitTagIndex": 347,
+          "m_unitTagRecycle": 1,
+          "m_unitTypeName": "Factory",
+          "m_controlPlayerId": 1,
+          "m_upkeepPlayerId": 1,
+          "m_x": 26,
+          "m_y": 30,
+          "_event": "NNet.Replay.Tracker.SUnitInitEvent",
+          "_eventid": 6,
+          "_gameloop": 8366,
+          "_bits": 296
+        },
+        {
+          "m_unitTagIndex": 347,
+          "m_unitTagRecycle": 1,
+          "_event": "NNet.Replay.Tracker.SUnitDoneEvent",
+          "_eventid": 7,
+          "_gameloop": 9326,
+          "_bits": 120
+        },
+        {
+          "m_unitTagIndex": 347,
+          "m_unitTagRecycle": 1,
+          "m_killerPlayerId": 2,
+          "m_x": 26,
+          "m_y": 30,
+          "m_killerUnitTagIndex": 256,
+          "m_killerUnitTagRecycle": 2,
+          "_event": "NNet.Replay.Tracker.SUnitDiedEvent",
+          "_eventid": 2,
+          "_gameloop": 13373,
+          "_bits": 296
+        }
+      ],
+      "depot_events": [
+        {
+          "m_unitTagIndex": 351,
+          "m_unitTagRecycle": 1,
+          "m_unitTypeName": "SupplyDepot",
+          "m_controlPlayerId": 1,
+          "m_upkeepPlayerId": 1,
+          "m_x": 29,
+          "m_y": 31,
+          "_event": "NNet.Replay.Tracker.SUnitInitEvent",
+          "_eventid": 6,
+          "_gameloop": 8427,
+          "_bits": 328
+        },
+        {
+          "m_unitTagIndex": 351,
+          "m_unitTagRecycle": 1,
+          "_event": "NNet.Replay.Tracker.SUnitDoneEvent",
+          "_eventid": 7,
+          "_gameloop": 8907,
+          "_bits": 120
+        },
+        {
+          "m_unitTagIndex": 351,
+          "m_unitTagRecycle": 1,
+          "m_killerPlayerId": 2,
+          "m_x": 29,
+          "m_y": 31,
+          "m_killerUnitTagIndex": 281,
+          "m_killerUnitTagRecycle": 7,
+          "_event": "NNet.Replay.Tracker.SUnitDiedEvent",
+          "_eventid": 2,
+          "_gameloop": 14698,
+          "_bits": 296
+        }
+      ],
+      "addon_center": [
+        29,
+        30
+      ],
+      "depot_center": [
+        29,
+        31
+      ],
+      "overlap_size": [
+        2,
+        1
+      ],
+      "pre_init_observation": {
+        "Round state": "Time: 06:12\nRace: Terran\nMinerals: 730\nVespene: 293\nSupply army: 24\nSupply workers: 40\nSupply unused: 14\nMap size: 128x128",
+        "Own units": "[673, 809, 874, 65, 137, 665, 953, 155, 89, 178, 129, 377, 402, 498, 393, 51, 649, 977, 570, 201, 930, 242, 474, 58, 418, 314, 97, 836, 241, 379, 945, 385, 801, 194]SCV\nState: collecting resources automatically\n[826]SCV\nPosition: (23, 18)\nHealth: 45/45 (100%)\nState: constructing [(34, 32)]\n[409]SCV\nPosition: (25, 35)\nHealth: 45/45 (100%)\nState: constructing [(26, 30)]\n[145]SCV\nPosition: (21, 45)\nHealth: 45/45 (100%)\nState: constructing [(14, 32)]\n[538]MULE\nPosition: (19, 46)\nHealth: 60/60 (100%)\n[547]MULE\nPosition: (22, 48)\nHealth: 60/60 (100%)\n[659]SCV\nPosition: (29, 51)\nHealth: 45/45 (100%)\nState: constructing [(30, 52)]\n[763]Marine\nPosition: (27, 64)\nHealth: 45/45 (100%)\nState: attacking [(28, 73)]\n[403]Marine\nPosition: (27, 65)\nHealth: 45/45 (100%)\nState: attacking [(28, 73)]\n[257]Marine\nPosition: (27, 68)\nHealth: 45/45 (100%)\nState: attacking [(28, 73)]\n[642]Marine\nPosition: (27, 70)\nHealth: 45/45 (100%)\nState: idle\n[898]Marine\nPosition: (27, 71)\nHealth: 45/45 (100%)\nState: idle\n[962]Marine\nPosition: (28, 71)\nHealth: 45/45 (100%)\nState: idle\n[619]Marine\nPosition: (29, 71)\nHealth: 45/45 (100%)\nState: idle\n[594]Marine\nPosition: (30, 71)\nHealth: 45/45 (100%)\nState: idle\n[817]Marine\nPosition: (28, 72)\nHealth: 45/45 (100%)\nState: idle\n[505]Marine\nPosition: (27, 72)\nHealth: 45/45 (100%)\nState: idle\n[756]Marine\nPosition: (29, 72)\nHealth: 45/45 (100%)\nState: idle\n[442]Marine\nPosition: (30, 72)\nHealth: 45/45 (100%)\nState: idle\n[99]Marine\nPosition: (29, 72)\nHealth: 45/45 (100%)\nState: idle\n[770]Marine\nPosition: (27, 72)\nHealth: 45/45 (100%)\nState: idle\n[10]Marine\nPosition: (30, 72)\nHealth: 45/45 (100%)\nState: idle\n[513]Marine\nPosition: (28, 73)\nHealth: 45/45 (100%)\nState: idle\n[489]Marine\nPosition: (29, 73)\nHealth: 45/45 (100%)\nState: idle\n[666]Marine\nPosition: (27, 73)\nHealth: 45/45 (100%)\nState: idle\n[882]Marine\nPosition: (29, 73)\nHealth: 45/45 (100%)\nState: idle\n[329]Marine\nPosition: (28, 73)\nHealth: 45/45 (100%)\nState: idle\n[458]Marine\nPosition: (32, 127)\nHealth: 45/45 (100%)\nState: moving to [(24, 125)]",
+        "Unit abilities": "SCV[673, 809, 874, 65, 137, 665, 953, 155, 89, 178, 129, 377, 402, 498, 393, 51, 649, 409, 977, 570, 201, 930, 242, 659, 474, 58, 418, 826, 314, 145, 97, 836, 241, 379, 945, 385, 801, 194]: TERRANBUILD_COMMANDCENTER, TERRANBUILD_SUPPLYDEPOT, TERRANBUILD_REFINERY, TERRANBUILD_BARRACKS, TERRANBUILD_ENGINEERINGBAY, TERRANBUILD_MISSILETURRET, TERRANBUILD_BUNKER, TERRANBUILD_SENSORTOWER, TERRANBUILD_GHOSTACADEMY, TERRANBUILD_FACTORY",
+        "Own structures": "[657]OrbitalCommand\nPosition: (24, 22)\nHealth: 1500/1500 (100%)\nEnergy: 22/200\nState: idle\nHarvesters: 15/16\n[849]Barracks\nPosition: (24, 26)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine, Marine, Marine\n[833]SupplyDepot\nPosition: (29, 23)\nHealth: 400/400 (100%)\nState: idle\n[217]SupplyDepot\nPosition: (31, 23)\nHealth: 400/400 (100%)\nState: idle\n[290]Bunker\nPosition: (30, 20)\nHealth: 400/400 (100%)\nState: idle\n[33]Refinery\nPosition: (28, 15)\nHealth: 500/500 (100%)\nState: idle\nHarvesters: 3/3 (no more harvesters accepted)\n[73]Barracks\nPosition: (32, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [105]BarracksTechLab\n[105]BarracksTechLab\nPosition: (35, 14)\nHealth: 400/400 (100%)\nState: idle\n[795]BarracksTechLab\nPosition: (35, 28)\nHealth: 400/400 (100%)\nState: idle\n[170]Barracks\nPosition: (32, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine\nThis structure has an add-on: [795]BarracksTechLab\n[626]SupplyDepot\nPosition: (32, 40)\nHealth: 400/400 (100%)\nState: idle\n[91]BarracksTechLab\nPosition: (30, 41)\nHealth: 400/400 (100%)\nState: idle\n[482]Barracks\nPosition: (27, 41)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [91]BarracksTechLab\n[561]OrbitalCommand\nPosition: (25, 45)\nHealth: 1500/1500 (100%)\nEnergy: 6/200\nState: idle\nHarvesters: 15/16\n[306]Barracks\nPosition: (29, 45)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [235]BarracksTechLab\n[235]BarracksTechLab\nPosition: (32, 45)\nHealth: 400/400 (100%)\nState: idle\n[858]SupplyDepot\nPosition: (30, 50)\nHealth: 400/400 (100%)\nState: idle\n[211]SupplyDepot(building 90%)\nPosition: (30, 52)\n[921]SupplyDepot\nPosition: (32, 52)\nHealth: 400/400 (100%)\nState: idle\n[42]SupplyDepot\nPosition: (28, 50)\nHealth: 400/400 (100%)\nState: idle\n[633]EngineeringBay\nPosition: (27, 53)\nHealth: 850/850 (100%)\nState: idle\n[363]BarracksReactor(building 6%)\nPosition: (20, 53)\n[524]Barracks\nPosition: (17, 53)\nHealth: 1000/1000 (100%)\n[603]Refinery\nPosition: (23, 38)\nHealth: 500/500 (100%)\nState: idle\nHarvesters: 3/3 (no more harvesters accepted)\n[425]Barracks\nPosition: (18, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine, Marine, Marine\n[17]Barracks\nPosition: (16, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [802]BarracksTechLab\n[802]BarracksTechLab\nPosition: (19, 14)\nHealth: 400/400 (100%)\nState: idle",
+        "Structure abilities": "Barracks[17, 482, 170, 73, 306]: BARRACKSTRAIN_MARINE, BARRACKSTRAIN_REAPER, BARRACKSTRAIN_MARAUDER\nOrbitalCommand[657, 561]: CALLDOWNMULE_CALLDOWNMULE, COMMANDCENTERTRAIN_SCV\nEngineeringBay[633]: RESEARCH_HISECAUTOTRACKING, RESEARCH_TERRANSTRUCTUREARMORUPGRADE, ENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL1, ENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL1\nBarracksTechLab[795, 105, 235, 802, 91]: BARRACKSTECHLABRESEARCH_STIMPACK, RESEARCH_COMBATSHIELD, RESEARCH_CONCUSSIVESHELLS\nBunker[290]: EFFECT_SALVAGE",
+        "Visible enemy units": "[545]SCV\nPosition: (33, 38)\nHealth: 45/45 (100%)\n[122]VikingFighter\nPosition: (30, 117)\nHealth: 135/135 (100%)\n[106]SCV\nPosition: (27, 124)\nHealth: 45/45 (100%)\n[994]SCV\nPosition: (25, 128)\nHealth: 45/45 (100%)\n[258]SCV\nPosition: (24, 129)\nHealth: 45/45 (100%)\n[674]SCV\nPosition: (27, 130)\nHealth: 45/45 (100%)",
+        "Visible enemy structures": "[794]CommandCenter(building 17%)\nPosition: (24, 101)\n[835]Starport\nPosition: (23, 117)\n[955]BarracksTechLab\nPosition: (26, 120)\nHealth: 400/400 (100%)\n[1]SupplyDepotLowered\nPosition: (28, 121)\nHealth: 400/400 (100%)\n[938]SupplyDepotLowered\nPosition: (28, 119)\nHealth: 400/400 (100%)\n[811]Barracks\nPosition: (30, 119)\nHealth: 1000/1000 (100%)\n[721]Starport\nPosition: (30, 122)\nHealth: 1300/1300 (100%)\n[226]StarportReactor\nPosition: (33, 122)\nHealth: 400/400 (100%)\n[281]Factory\nPosition: (30, 125)\nHealth: 1250/1250 (100%)\n[610]SupplyDepotLowered\nPosition: (30, 128)\nHealth: 400/400 (100%)\n[985]Refinery\nPosition: (28, 132)\nHealth: 500/500 (100%)\n[530]OrbitalCommand\nPosition: (24, 125)\nHealth: 1500/1500 (100%)\nEnergy: 48/200\n[374]SupplyDepotLowered\nPosition: (21, 121)\n[184]Refinery(building 67%)\nPosition: (17, 122)",
+        "Action history": "{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [849]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [849]}\n{\"action\": \"TERRANBUILD_FACTORY\", \"units\": [409], \"target_position\": [1, 1]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [849]}\n{\"action\": \"TERRANBUILD_FACTORY\", \"units\": [826], \"target_position\": [1, 1]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [425]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [425]}\n{\"action\": \"TERRANBUILD_FACTORY\", \"units\": [145], \"target_position\": [1, 1]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [425]}\n{\"action\": \"BARRACKSTRAIN_MARINE\", \"units\": [170]}",
+        "Map information": "Closest mineral fields: [753](25, 16), [465](18, 22), [169](24, 15), [90](20, 16), [209](17, 21), [481](18, 18), [401](21, 15), [745](17, 19), [585](20, 40), [755](43, 17), [810](19, 41), [386](44, 16), [705](19, 43), [497](18, 44), [954](18, 46), [49](19, 47), [569](19, 49), [889](20, 50), [50](20, 68), [179](19, 69), [243](19, 71), [595](18, 72), [378](18, 74), [225](19, 75), [658](19, 77), [234](20, 78), [100](25, 131), [74](24, 132)\nClosest vespene geysers: [769](17, 25), [881](28, 15), [273](23, 38), [929](42, 20), [746](23, 52), [130](23, 66), [737](23, 80), [681](42, 127), [449](28, 132)",
+        "Ability description": "BARRACKSTECHLABRESEARCH_STIMPACK(target: None): Every Marine and Marauder gain the Stimpack ability. Cost: 100 minerals, 100 vespene.\nBARRACKSTRAIN_MARAUDER(target: None): Train a Marauder, a heavily armored infantry unit that excels against armored targets with its concussive grenades, complementing Marine forces. Cost: 100 minerals, 25 vespene.\nBARRACKSTRAIN_MARINE(target: None): Train a Marine, a versatile, low-cost infantry unit that provides reliable ranged damage and forms the backbone of most Terran armies. Cost: 50 minerals.\nBARRACKSTRAIN_REAPER(target: None): Train a Reaper, a fast, mobile infantry unit designed for early-game harassment and scouting, capable of jumping cliffs with its jetpack. Cost: 50 minerals, 50 vespene.\nCALLDOWNMULE_CALLDOWNMULE(target: PointOrUnit): Calls down a MULE, a temporary unit with a timed life of 64 seconds that can mine minerals and repair for the Terran forces. It requires 50 energy from Orbital Command\nCOMMANDCENTERTRAIN_SCV(target: None): Train a SCV, a Terran worker. Cost: 50 minerals.\nEFFECT_SALVAGE(target: None): Destroy a Bunker, returning 75 minerals.\nENGINEERINGBAYRESEARCH_TERRANINFANTRYARMORLEVEL1(target: None): Increase the armor of Terran infantry units (Ghost, Marauder, Reaper, Marine, SCV). Cost: 100 minerals, 100 vespene.\nENGINEERINGBAYRESEARCH_TERRANINFANTRYWEAPONSLEVEL1(target: None): Increase the damage of Terran infantry units (Ghost, Marauder, Reaper, Marine). Cost: 100 minerals, 100 vespene.\nRESEARCH_COMBATSHIELD(target: None): Every Marine gains a Combat Shield that gives 10 hitpoints. Cost: 100 minerals, 100 vespene.\nRESEARCH_CONCUSSIVESHELLS(target: None): Marauders gain the Concussive Shells ability. Cost: 50 minerals, 50 vespene.\nRESEARCH_HISECAUTOTRACKING(target: None): Adds +1 attack range to Auto-Turrets, Missile Turrets, and Planetary Fortresses. Cost: 100 minerals, 100 vespene.\nRESEARCH_TERRANSTRUCTUREARMORUPGRADE(target: None): Increases the armor of the Point Defense Drone, Auto-Turret, Missile Turret, Planetary Fortress, and all other Terran structures by 2. Cost: 150 minerals, 150 vespene.\nTERRANBUILD_BARRACKS(target: Point): Build a Barracks to produce infantry units (Marine, Reaper, Marauder, Ghost). Cost: 150 minerals.\nTERRANBUILD_BUNKER(target: Point): Build a Bunker, a static defense building. Cost: 100 minerals.\nTERRANBUILD_COMMANDCENTER(target: Point): Build a Command Center, the Terran base. Cost: 400 minerals.\nTERRANBUILD_ENGINEERINGBAY(target: Point): Build an Engineer Bay to unlock Missile Turret, Sensor Tower and Planetary Fortress. Cost: 125 minerals.\nTERRANBUILD_FACTORY(target: Point): Build a Factory to produce mechanical ground units (Hellion, Widow Mine, Siege Tank, Hellbat, Thor) and unlock the Starport and Armory. Cost: 150 minerals, 100 vespene.\nTERRANBUILD_GHOSTACADEMY(target: Point): Build a Ghost Academy to unlock the Ghost unit. Cost: 150 minerals, 50 vespene.\nTERRANBUILD_MISSILETURRET(target: Point): Build a Missile Turret to attack flying units. Cost: 100 minerals.\nTERRANBUILD_REFINERY(target: Unit): Build a Refinery on a Vespene Geyser. Cost: 75 minerals.\nTERRANBUILD_SENSORTOWER(target: Point): Build a Sensor Tower, which senses any approaching uncloaked, unburrowed enemy units. Cost: 125 minerals, 100 vespene.\nTERRANBUILD_SUPPLYDEPOT(target: Point): Build a Supply Depot to increase 8 supplies and unlock Barracks. Cost: 100 minerals."
+      },
+      "attempts": [
+        {
+          "bo": 123,
+          "iteration": 2521,
+          "loop": 10084,
+          "second": 450.17857142857144,
+          "action": [
+            {
+              "action": "BUILD_TECHLAB_FACTORY",
+              "units": [
+                266
+              ]
+            }
+          ],
+          "replay_selection": {
+            "m_controlGroupId": 10,
+            "m_delta": {
+              "m_subgroupIndex": 0,
+              "m_removeMask": {
+                "None": null
+              },
+              "m_addSubgroups": [
+                {
+                  "m_unitLink": 48,
+                  "m_subgroupPriority": 22,
+                  "m_intraSubgroupPriority": 1,
+                  "m_count": 1
+                }
+              ],
+              "m_addUnitTags": [
+                90963969
+              ]
+            },
+            "_event": "NNet.Game.SSelectionDeltaEvent",
+            "_eventid": 28,
+            "_gameloop": 10084,
+            "_userid": {
+              "m_userId": 0
+            },
+            "_bits": 128
+          },
+          "round_state": "Time: 07:30\nRace: Terran\nMinerals: 2515\nVespene: 667\nSupply army: 15\nSupply workers: 40\nSupply unused: 39\nMap size: 128x128"
+        },
+        {
+          "bo": 129,
+          "iteration": 2527,
+          "loop": 10108,
+          "second": 451.25000000000006,
+          "action": [
+            {
+              "action": "BUILD_TECHLAB_FACTORY",
+              "units": [
+                266
+              ]
+            }
+          ],
+          "replay_selection": {
+            "m_controlGroupId": 10,
+            "m_delta": {
+              "m_subgroupIndex": 0,
+              "m_removeMask": {
+                "None": null
+              },
+              "m_addSubgroups": [
+                {
+                  "m_unitLink": 48,
+                  "m_subgroupPriority": 22,
+                  "m_intraSubgroupPriority": 1,
+                  "m_count": 1
+                }
+              ],
+              "m_addUnitTags": [
+                90963969
+              ]
+            },
+            "_event": "NNet.Game.SSelectionDeltaEvent",
+            "_eventid": 28,
+            "_gameloop": 10108,
+            "_userid": {
+              "m_userId": 0
+            },
+            "_bits": 128
+          },
+          "round_state": "Time: 07:31\nRace: Terran\nMinerals: 2310\nVespene: 671\nSupply army: 16\nSupply workers: 40\nSupply unused: 38\nMap size: 128x128"
+        },
+        {
+          "bo": 130,
+          "iteration": 2528,
+          "loop": 10112,
+          "second": 451.42857142857144,
+          "action": [
+            {
+              "action": "BUILD_TECHLAB_FACTORY",
+              "units": [
+                266
+              ]
+            }
+          ],
+          "replay_selection": {
+            "m_controlGroupId": 10,
+            "m_delta": {
+              "m_subgroupIndex": 0,
+              "m_removeMask": {
+                "None": null
+              },
+              "m_addSubgroups": [
+                {
+                  "m_unitLink": 48,
+                  "m_subgroupPriority": 22,
+                  "m_intraSubgroupPriority": 1,
+                  "m_count": 1
+                }
+              ],
+              "m_addUnitTags": [
+                90963969
+              ]
+            },
+            "_event": "NNet.Game.SSelectionDeltaEvent",
+            "_eventid": 28,
+            "_gameloop": 10112,
+            "_userid": {
+              "m_userId": 0
+            },
+            "_bits": 128
+          },
+          "round_state": "Time: 07:31\nRace: Terran\nMinerals: 2320\nVespene: 675\nSupply army: 16\nSupply workers: 40\nSupply unused: 38\nMap size: 128x128"
+        }
+      ]
+    }
+  ]
+}

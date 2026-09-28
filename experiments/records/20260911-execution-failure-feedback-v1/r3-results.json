@@ -1,0 +1,67 @@
+{
+  "status": "completed",
+  "source_commit": "d155c96eaccf9aa809544945b387f0e17e1ca5bd",
+  "ended_at": "2026-09-11T05:18:54Z",
+  "pair_exit_code": 0,
+  "training_updates": 0,
+  "node43_gpus_released_at_observation": "2026-09-11T05:19:24Z",
+  "A": {
+    "feedback": false,
+    "exit_code": 0,
+    "ended_at": "2026-09-11T05:12:57.258725+00:00",
+    "natural_games": 4,
+    "wins": 2,
+    "mean_episode_reward": -14.475,
+    "policy_decisions": 8,
+    "raw_response_rows": 8,
+    "valid_evaluable_responses": 8,
+    "evaluable_responses": 8,
+    "result_sha256": "26814aa1663eb765fb8895ac034f8e9efa184faa192d606b58f7b4336ccdc6b6",
+    "console_sha256": "50d8d5c92c255b8274c1f42d0ea4f45236bf83d72049835710571e6f60c182a4"
+  },
+  "B": {
+    "feedback": true,
+    "exit_code": 0,
+    "ended_at": "2026-09-11T05:18:54.938379+00:00",
+    "natural_games": 4,
+    "wins": 2,
+    "mean_episode_reward": -14.475,
+    "policy_decisions": 16,
+    "raw_response_rows": 24,
+    "valid_evaluable_responses": 11,
+    "evaluable_responses": 16,
+    "excluded_terminal_placeholder_rows": 8,
+    "result_sha256": "f235d6ff20a585264626b083c725403c2b0a82f0be8ee66261d7956e1f98792e",
+    "console_sha256": "479714211b699d7fb4c1bc6aabecccc11866aad25caf947f35eeca5412f8bd55"
+  },
+  "paired_games": [
+    {"env": 0, "seed": 52620, "repeat": 1, "A_result": "Victory", "B_result": "Victory", "A_reward": 20.5, "B_reward": 20.5, "A_decisions": 2, "B_decisions": 4, "B_feedback_responses": 2},
+    {"env": 1, "seed": 52620, "repeat": 2, "A_result": "Victory", "B_result": "Victory", "A_reward": 20.5, "B_reward": 20.5, "A_decisions": 2, "B_decisions": 4, "B_feedback_responses": 2},
+    {"env": 2, "seed": 17089, "repeat": 1, "A_result": "Defeat", "B_result": "Defeat", "A_reward": -49.45, "B_reward": -49.45, "A_decisions": 2, "B_decisions": 6, "B_feedback_responses": 0},
+    {"env": 3, "seed": 17089, "repeat": 2, "A_result": "Defeat", "B_result": "Defeat", "A_reward": -49.45, "B_reward": -49.45, "A_decisions": 2, "B_decisions": 2, "B_feedback_responses": 0}
+  ],
+  "feedback_observation": {
+    "environments": [0, 1],
+    "failure": "Marine command not submitted: supply blocked; explicitly suggest SupplyDepot immediately",
+    "first_feedback_source_policy_action_id": 2,
+    "first_feedback_processed_prefix": 13,
+    "responses_after_first_feedback": ["marine x 29 before supplydepot x 8", "marine x 1 before supplydepot x 1"],
+    "following_failure_processed_prefix": 0,
+    "following_failure": "same supply block",
+    "second_feedback_responses_still_start_with": "marine",
+    "real_applied_and_evaluable_responses": 4
+  },
+  "conclusions": {
+    "local_storage_startup": "validated through complete evaluation",
+    "feedback_delivery": "observed in real prompts and applied model responses",
+    "corrective_reordering": "not demonstrated; observed supply-block correction failed",
+    "win_reward_improvement": "none in these paired games",
+    "candidate_promotion": "not accepted as a correction-capability fix; no new training started"
+  },
+  "limitations": [
+    "Only two distinct game seeds, repeated twice each; no RL or architecture conclusion.",
+    "B's five invalid evaluable answers came from env2, which received no execution feedback; do not attribute these errors or all additional calls directly to feedback.",
+    "Valid/evaluable counts are raw genuine-decision counts; runner val/sc2_semantic_action_valid uses a different aggregation and is not substituted for these counts.",
+    "Terminal placeholder rows are excluded from decision validity and cumulative reward; per-game sums match reported mean episode reward."
+  ]
+}

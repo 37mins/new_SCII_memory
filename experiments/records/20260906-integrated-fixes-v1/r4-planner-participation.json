@@ -1,0 +1,3594 @@
+{
+  "scope": "Read-only CPU log audit; no game, model or GPU",
+  "target_seed": 2621640384,
+  "first_fixed_bo_timing_divergence": [
+    {
+      "line": 1436,
+      "time": "01:32",
+      "index": 10,
+      "bo": "SCV"
+    },
+    {
+      "line": 1499,
+      "time": "01:36",
+      "index": 10,
+      "bo": "SCV"
+    }
+  ],
+  "reports": {
+    "initial-eval": {
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-initial-eval",
+      "worker": "/dev/shm/sc2_real_r4_initial-eval/session_2026-09-07_01-23-19_820340_3649359/logs/worker-dd21f0bfe5e661dfea91514bc8e4cb89fc2e3936f9c6fa41134fb329-01000000-3652008.out",
+      "worker_sha256": "5ea045084a7f4db9d487dc729428a40d7fa9435caaf4aafc9acbd5a30da6896c",
+      "frozen_source": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+      "bo_path": "/root/new-scii-empty-bo-frame-20260907/code-ca7885d/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "fixed_bo_entries": 237,
+      "source_hashes": {
+        "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "8dd13723f38687ea3e35a282b9a3f2f190a257190974501e59f6cbc51f0d1c11",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+      },
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 2807211443,
+          "calls": 8,
+          "first_planner_game_time": "09:56",
+          "first_planner_units": "45 SCV, 2 mule",
+          "nonterminal_reward": 0.5,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -49
+        },
+        {
+          "env": 1,
+          "seed": 882774615,
+          "calls": 0,
+          "first_planner_game_time": null,
+          "first_planner_units": null,
+          "nonterminal_reward": 0,
+          "terminal_reward": -50,
+          "cumulative_reward": -50
+        },
+        {
+          "env": 2,
+          "seed": 494016583,
+          "calls": 18,
+          "first_planner_game_time": "09:56",
+          "first_planner_units": "46 SCV, 4 marauder, 8 marine, 2 mule, 2 siegetank",
+          "nonterminal_reward": 1.5,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -48
+        },
+        {
+          "env": 3,
+          "seed": 2621640384,
+          "calls": 58,
+          "first_planner_game_time": "10:00",
+          "first_planner_units": "48 SCV, 2 marauder, 20 marine, 2 mule, 2 siegetank",
+          "nonterminal_reward": 3.5,
+          "terminal_reward": -49.461,
+          "cumulative_reward": -45.961
+        },
+        {
+          "env": 4,
+          "seed": 4081499387,
+          "calls": 55,
+          "first_planner_game_time": "10:04",
+          "first_planner_units": "48 SCV, 1 marauder, 3 marine, 2 mule",
+          "nonterminal_reward": 3,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -46.5
+        },
+        {
+          "env": 5,
+          "seed": 44124510,
+          "calls": 56,
+          "first_planner_game_time": "10:00",
+          "first_planner_units": "48 SCV, 2 marauder, 16 marine, 2 mule, 1 siegetank",
+          "nonterminal_reward": 5,
+          "terminal_reward": -49.174,
+          "cumulative_reward": -44.174
+        },
+        {
+          "env": 6,
+          "seed": 2071061852,
+          "calls": 55,
+          "first_planner_game_time": "10:00",
+          "first_planner_units": "48 SCV, 4 marauder, 18 marine, 2 mule, 3 siegetank",
+          "nonterminal_reward": 2.5,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -47
+        },
+        {
+          "env": 7,
+          "seed": 1549697793,
+          "calls": 56,
+          "first_planner_game_time": "10:08",
+          "first_planner_units": "48 SCV, 4 marauder, 15 marine, 2 mule, 1 siegetank",
+          "nonterminal_reward": 3,
+          "terminal_reward": -49.224,
+          "cumulative_reward": -46.224
+        }
+      ],
+      "target_game_time_seconds": 1343,
+      "fixed_end_evidence": [
+        {
+          "line": 13211,
+          "text": "}"
+        },
+        {
+          "line": 13212,
+          "text": "[10:00] >>> BO #236 Completed/Skipped. <<<"
+        },
+        {
+          "line": 13213,
+          "text": ""
+        },
+        {
+          "line": 13214,
+          "text": "[侦察信息] 发现 SCV (Tag: 4370464770) 位于 (20, 108)"
+        },
+        {
+          "line": 13215,
+          "text": "2026-09-07 01:28:27 [default_player_Qwen3-30B] [INFO]: (3361) scout_discovery: 发现 SCV (Tag: 4370464770) 位于 (20, 108)"
+        },
+        {
+          "line": 13216,
+          "text": "[侦察信息] 发现 SCV (Tag: 4384620546) 位于 (20, 109)"
+        },
+        {
+          "line": 13217,
+          "text": "2026-09-07 01:28:27 [default_player_Qwen3-30B] [INFO]: (3361) scout_discovery: 发现 SCV (Tag: 4384620546) 位于 (20, 109)"
+        },
+        {
+          "line": 13218,
+          "text": "2026-09-07 01:28:27 [default_player_Qwen3-30B] [INFO]: (3361) manage_total_attack_groups: 总攻波次 8: 锁定新目标 AutoTurret (Tag: 4386979846)，攻击位置: (31, 98)。"
+        },
+        {
+          "line": 13219,
+          "text": "Current stage 0"
+        },
+        {
+          "line": 13220,
+          "text": "Bonus time: 0"
+        },
+        {
+          "line": 13221,
+          "text": "Generate new plan... [0]"
+        },
+        {
+          "line": 13222,
+          "text": "Step shaping reward off: 0.000"
+        }
+      ],
+      "fixed_first_scout": {
+        "line": 263,
+        "text": "正在派遣 SCV (Tag: 4345036801) 侦察 (24, 125)"
+      },
+      "auto_attacks_before_planner": [
+        {
+          "line": 6253,
+          "text": "[Auto-Attack] 首次总攻触发！当前兵力 20 >= 20"
+        },
+        {
+          "line": 7701,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "line": 9955,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "line": 10485,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "line": 10998,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "line": 11455,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "line": 12029,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "line": 12419,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        }
+      ],
+      "timeline": [
+        {
+          "call": 1,
+          "game_time": "10:00",
+          "request_line": 13221,
+          "raw_answer": "- marine  \n- supplydepot  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine",
+          "queue": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "Launch OFFENSE with 8 marine"
+          ],
+          "queue_line": 13229,
+          "started_actions": [
+            {
+              "line": 13235,
+              "time": "10:00",
+              "index": 0,
+              "bo": "supplydepot"
+            },
+            {
+              "line": 13261,
+              "time": "10:00",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 13359,
+              "time": "10:04",
+              "index": 2,
+              "bo": "marauder"
+            },
+            {
+              "line": 13379,
+              "time": "10:04",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 13475,
+              "time": "10:08",
+              "index": 4,
+              "bo": "marine"
+            },
+            {
+              "line": 13516,
+              "time": "10:08",
+              "index": 5,
+              "bo": "Attacking Instruction: Launch OFFENSE with 8 marine"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0.5,
+          "done": false
+        },
+        {
+          "call": 2,
+          "game_time": "10:09",
+          "request_line": 13526,
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "Launch OFFENSE with 8 marine"
+          ],
+          "queue_line": 13533,
+          "started_actions": [
+            {
+              "line": 13539,
+              "time": "10:09",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 13608,
+              "time": "10:13",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 13627,
+              "time": "10:13",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 13691,
+              "time": "10:17",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 13710,
+              "time": "10:17",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 13740,
+              "time": "10:17",
+              "index": 5,
+              "bo": "Attacking Instruction: Launch OFFENSE with 8 marine"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0.5,
+          "done": false
+        },
+        {
+          "call": 3,
+          "game_time": "10:18",
+          "request_line": 13748,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine  \n- siegetank",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "Launch OFFENSE with 8 marine"
+          ],
+          "queue_line": 13756,
+          "started_actions": [
+            {
+              "line": 13762,
+              "time": "10:18",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 13781,
+              "time": "10:18",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 13858,
+              "time": "10:22",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 13877,
+              "time": "10:22",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 13973,
+              "time": "10:26",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 14003,
+              "time": "10:26",
+              "index": 5,
+              "bo": "Attacking Instruction: Launch OFFENSE with 8 marine"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0.5,
+          "done": false
+        },
+        {
+          "call": 4,
+          "game_time": "10:26",
+          "request_line": 14011,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 14019,
+          "started_actions": [
+            {
+              "line": 14025,
+              "time": "10:26",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 14044,
+              "time": "10:27",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 14063,
+              "time": "10:27",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 14134,
+              "time": "10:31",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 14153,
+              "time": "10:31",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 14161,
+              "time": "10:31",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 5,
+          "game_time": "10:35",
+          "request_line": 14253,
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 14258,
+          "started_actions": [
+            {
+              "line": 14264,
+              "time": "10:35",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 14328,
+              "time": "10:40",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 14347,
+              "time": "10:40",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 14366,
+              "time": "10:40",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 14374,
+              "time": "10:40",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 14463,
+              "time": "10:44",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 6,
+          "game_time": "10:48",
+          "request_line": 14531,
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "Launch OFFENSE with 8 marine"
+          ],
+          "queue_line": 14537,
+          "started_actions": [
+            {
+              "line": 14543,
+              "time": "10:48",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 14562,
+              "time": "10:48",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 14581,
+              "time": "10:49",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 14654,
+              "time": "10:53",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 14662,
+              "time": "10:53",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 14703,
+              "time": "10:53",
+              "index": 5,
+              "bo": "Attacking Instruction: Launch OFFENSE with 8 marine"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0.5,
+          "done": false
+        },
+        {
+          "call": 7,
+          "game_time": "10:53",
+          "request_line": 14712,
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 14717,
+          "started_actions": [
+            {
+              "line": 14723,
+              "time": "10:53",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 14743,
+              "time": "10:53",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 14808,
+              "time": "10:58",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 14827,
+              "time": "10:58",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 14835,
+              "time": "10:58",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 15025,
+              "time": "11:10",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 8,
+          "game_time": "11:26",
+          "request_line": 15344,
+          "raw_answer": "- marine  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 15348,
+          "started_actions": [
+            {
+              "line": 15354,
+              "time": "11:26",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 15373,
+              "time": "11:26",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 15392,
+              "time": "11:26",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 15411,
+              "time": "11:26",
+              "index": 3,
+              "bo": "siegetank"
+            },
+            {
+              "line": 15652,
+              "time": "11:42",
+              "index": 4,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 5,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 9,
+          "game_time": "11:54",
+          "request_line": 15881,
+          "raw_answer": "- marine  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank"
+          ],
+          "queue_line": 15885,
+          "started_actions": [
+            {
+              "line": 15891,
+              "time": "11:54",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 15910,
+              "time": "11:54",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 15929,
+              "time": "11:55",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 15948,
+              "time": "11:55",
+              "index": 3,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 4,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 10,
+          "game_time": "12:11",
+          "request_line": 16297,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 16300,
+          "started_actions": [
+            {
+              "line": 16306,
+              "time": "12:11",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16325,
+              "time": "12:11",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 16344,
+              "time": "12:11",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 11,
+          "game_time": "12:11",
+          "request_line": 16362,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 16365,
+          "started_actions": [
+            {
+              "line": 16371,
+              "time": "12:11",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16390,
+              "time": "12:11",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 16409,
+              "time": "12:11",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 12,
+          "game_time": "12:12",
+          "request_line": 16449,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 16452,
+          "started_actions": [
+            {
+              "line": 16458,
+              "time": "12:12",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16477,
+              "time": "12:12",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 16496,
+              "time": "12:12",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 13,
+          "game_time": "12:12",
+          "request_line": 16514,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 16517,
+          "started_actions": [
+            {
+              "line": 16523,
+              "time": "12:12",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16542,
+              "time": "12:12",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 16561,
+              "time": "12:13",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 14,
+          "game_time": "12:13",
+          "request_line": 16579,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 16582,
+          "started_actions": [
+            {
+              "line": 16588,
+              "time": "12:13",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16607,
+              "time": "12:13",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 16626,
+              "time": "12:13",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 15,
+          "game_time": "12:13",
+          "request_line": 16644,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 16647,
+          "started_actions": [
+            {
+              "line": 16653,
+              "time": "12:13",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16694,
+              "time": "12:13",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 16713,
+              "time": "12:14",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 16,
+          "game_time": "12:14",
+          "request_line": 16731,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 16734,
+          "started_actions": [
+            {
+              "line": 16740,
+              "time": "12:14",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16759,
+              "time": "12:14",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 16778,
+              "time": "12:14",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 17,
+          "game_time": "12:14",
+          "request_line": 16796,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine"
+          ],
+          "queue_line": 16799,
+          "started_actions": [
+            {
+              "line": 16805,
+              "time": "12:14",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16824,
+              "time": "12:15",
+              "index": 1,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 2,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 18,
+          "game_time": "12:15",
+          "request_line": 16844,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 16852,
+          "started_actions": [
+            {
+              "line": 16858,
+              "time": "12:15",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 16877,
+              "time": "12:15",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 16896,
+              "time": "12:15",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 16937,
+              "time": "12:15",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 16956,
+              "time": "12:15",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 16964,
+              "time": "12:16",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 19,
+          "game_time": "12:31",
+          "request_line": 17285,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 17293,
+          "started_actions": [
+            {
+              "line": 17299,
+              "time": "12:31",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 17320,
+              "time": "12:32",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 17341,
+              "time": "12:32",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 17362,
+              "time": "12:32",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 17383,
+              "time": "12:32",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 17391,
+              "time": "12:32",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 20,
+          "game_time": "12:48",
+          "request_line": 17680,
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "Launch OFFENSE with 8 marine"
+          ],
+          "queue_line": 17687,
+          "started_actions": [
+            {
+              "line": 17693,
+              "time": "12:48",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 17712,
+              "time": "12:48",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 17820,
+              "time": "12:53",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 17863,
+              "time": "12:53",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 17882,
+              "time": "12:53",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 17890,
+              "time": "12:53",
+              "index": 5,
+              "bo": "Attacking Instruction: Launch OFFENSE with 8 marine"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0.5,
+          "done": false
+        },
+        {
+          "call": 21,
+          "game_time": "12:53",
+          "request_line": 17901,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 17907,
+          "started_actions": [
+            {
+              "line": 17913,
+              "time": "12:53",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 17932,
+              "time": "12:53",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 17951,
+              "time": "12:54",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 17970,
+              "time": "12:54",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 17989,
+              "time": "12:54",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 17997,
+              "time": "12:54",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 22,
+          "game_time": "13:10",
+          "request_line": 18283,
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 18288,
+          "started_actions": [
+            {
+              "line": 18294,
+              "time": "13:10",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 18313,
+              "time": "13:10",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 18332,
+              "time": "13:10",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 18373,
+              "time": "13:11",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 18381,
+              "time": "13:11",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 18655,
+              "time": "13:27",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 23,
+          "game_time": "13:39",
+          "request_line": 18813,
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 18818,
+          "started_actions": [
+            {
+              "line": 18824,
+              "time": "13:39",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 18843,
+              "time": "13:39",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 18862,
+              "time": "13:39",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 18903,
+              "time": "13:39",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 18911,
+              "time": "13:39",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 19193,
+              "time": "13:55",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 24,
+          "game_time": "14:11",
+          "request_line": 19438,
+          "raw_answer": "- marine  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 19442,
+          "started_actions": [
+            {
+              "line": 19448,
+              "time": "14:11",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 19491,
+              "time": "14:11",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 19510,
+              "time": "14:11",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 19529,
+              "time": "14:12",
+              "index": 3,
+              "bo": "siegetank"
+            },
+            {
+              "line": 19785,
+              "time": "14:28",
+              "index": 4,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 5,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 25,
+          "game_time": "14:40",
+          "request_line": 19956,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 19959,
+          "started_actions": [
+            {
+              "line": 19965,
+              "time": "14:40",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 19984,
+              "time": "14:40",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20025,
+              "time": "14:40",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 26,
+          "game_time": "14:40",
+          "request_line": 20043,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20046,
+          "started_actions": [
+            {
+              "line": 20052,
+              "time": "14:40",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20071,
+              "time": "14:40",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20090,
+              "time": "14:40",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 27,
+          "game_time": "14:41",
+          "request_line": 20108,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20111,
+          "started_actions": [
+            {
+              "line": 20117,
+              "time": "14:41",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20136,
+              "time": "14:41",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20155,
+              "time": "14:41",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 28,
+          "game_time": "14:41",
+          "request_line": 20173,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20176,
+          "started_actions": [
+            {
+              "line": 20182,
+              "time": "14:41",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20201,
+              "time": "14:41",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20220,
+              "time": "14:41",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 29,
+          "game_time": "14:42",
+          "request_line": 20260,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20263,
+          "started_actions": [
+            {
+              "line": 20269,
+              "time": "14:42",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20288,
+              "time": "14:42",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20307,
+              "time": "14:42",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 30,
+          "game_time": "14:42",
+          "request_line": 20325,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20328,
+          "started_actions": [
+            {
+              "line": 20334,
+              "time": "14:42",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20353,
+              "time": "14:42",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20372,
+              "time": "14:43",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 31,
+          "game_time": "14:43",
+          "request_line": 20390,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20393,
+          "started_actions": [
+            {
+              "line": 20399,
+              "time": "14:43",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20418,
+              "time": "14:43",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20437,
+              "time": "14:43",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 32,
+          "game_time": "14:43",
+          "request_line": 20455,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20458,
+          "started_actions": [
+            {
+              "line": 20464,
+              "time": "14:43",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20505,
+              "time": "14:43",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20524,
+              "time": "14:44",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 33,
+          "game_time": "14:44",
+          "request_line": 20542,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20545,
+          "started_actions": [
+            {
+              "line": 20551,
+              "time": "14:44",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20570,
+              "time": "14:44",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 20589,
+              "time": "14:44",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 34,
+          "game_time": "14:44",
+          "request_line": 20607,
+          "raw_answer": "- marine x 2",
+          "queue": [
+            "marine",
+            "marine"
+          ],
+          "queue_line": 20611,
+          "started_actions": [
+            {
+              "line": 20617,
+              "time": "14:44",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20636,
+              "time": "14:45",
+              "index": 1,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 2,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 35,
+          "game_time": "14:45",
+          "request_line": 20659,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 20667,
+          "started_actions": [
+            {
+              "line": 20673,
+              "time": "14:45",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 20692,
+              "time": "14:45",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 20711,
+              "time": "14:45",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 20752,
+              "time": "14:45",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 20771,
+              "time": "14:45",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 20779,
+              "time": "14:46",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 36,
+          "game_time": "15:01",
+          "request_line": 21052,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 21060,
+          "started_actions": [
+            {
+              "line": 21066,
+              "time": "15:01",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 21085,
+              "time": "15:02",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 21104,
+              "time": "15:02",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 21123,
+              "time": "15:02",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 21142,
+              "time": "15:02",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 21150,
+              "time": "15:02",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 37,
+          "game_time": "15:18",
+          "request_line": 21386,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- Launch OFFENSE with 8 marine  \n- siegetank",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "Launch OFFENSE with 8 marine"
+          ],
+          "queue_line": 21394,
+          "started_actions": [
+            {
+              "line": 21400,
+              "time": "15:18",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 21419,
+              "time": "15:18",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 21487,
+              "time": "15:23",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 21528,
+              "time": "15:23",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 21547,
+              "time": "15:23",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 21555,
+              "time": "15:23",
+              "index": 5,
+              "bo": "Attacking Instruction: Launch OFFENSE with 8 marine"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0.5,
+          "done": false
+        },
+        {
+          "call": 38,
+          "game_time": "15:23",
+          "request_line": 21563,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- marine  \n- siegetank",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 21571,
+          "started_actions": [
+            {
+              "line": 21577,
+              "time": "15:23",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 21596,
+              "time": "15:23",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 21615,
+              "time": "15:24",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 21634,
+              "time": "15:24",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 21655,
+              "time": "15:24",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 21666,
+              "time": "15:24",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 39,
+          "game_time": "15:40",
+          "request_line": 21993,
+          "raw_answer": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "Launch OFFENSE with 8 marine"
+          ],
+          "queue_line": 21999,
+          "started_actions": [
+            {
+              "line": 22005,
+              "time": "15:40",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 22024,
+              "time": "15:40",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 22043,
+              "time": "15:40",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 22084,
+              "time": "15:41",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 22092,
+              "time": "15:41",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 22412,
+              "time": "15:57",
+              "index": 5,
+              "bo": "Attacking Instruction: Launch OFFENSE with 8 marine"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0.5,
+          "done": false
+        },
+        {
+          "call": 40,
+          "game_time": "15:57",
+          "request_line": 22427,
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 22432,
+          "started_actions": [
+            {
+              "line": 22438,
+              "time": "15:57",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 22457,
+              "time": "15:57",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 22478,
+              "time": "15:57",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 22500,
+              "time": "15:57",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 22512,
+              "time": "15:58",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 22712,
+              "time": "16:10",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 41,
+          "game_time": "16:25",
+          "request_line": 22971,
+          "raw_answer": "- marine  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 22975,
+          "started_actions": [
+            {
+              "line": 22981,
+              "time": "16:25",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 23000,
+              "time": "16:26",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 23019,
+              "time": "16:26",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 23038,
+              "time": "16:26",
+              "index": 3,
+              "bo": "siegetank"
+            },
+            {
+              "line": 23395,
+              "time": "16:42",
+              "index": 4,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 5,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 42,
+          "game_time": "16:58",
+          "request_line": 23626,
+          "raw_answer": "- marine  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "siegetank"
+          ],
+          "queue_line": 23630,
+          "started_actions": [
+            {
+              "line": 23636,
+              "time": "16:58",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 23655,
+              "time": "16:58",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 23674,
+              "time": "16:58",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 23693,
+              "time": "16:58",
+              "index": 3,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 4,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 43,
+          "game_time": "17:14",
+          "request_line": 23930,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 23933,
+          "started_actions": [
+            {
+              "line": 23939,
+              "time": "17:14",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 23958,
+              "time": "17:14",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 23977,
+              "time": "17:15",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 44,
+          "game_time": "17:15",
+          "request_line": 23995,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 23998,
+          "started_actions": [
+            {
+              "line": 24004,
+              "time": "17:15",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24023,
+              "time": "17:15",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 24042,
+              "time": "17:15",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 45,
+          "game_time": "17:15",
+          "request_line": 24082,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 24085,
+          "started_actions": [
+            {
+              "line": 24091,
+              "time": "17:15",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24110,
+              "time": "17:15",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 24129,
+              "time": "17:16",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 46,
+          "game_time": "17:16",
+          "request_line": 24147,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 24150,
+          "started_actions": [
+            {
+              "line": 24156,
+              "time": "17:16",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24178,
+              "time": "17:16",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 24197,
+              "time": "17:16",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 47,
+          "game_time": "17:16",
+          "request_line": 24215,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 24218,
+          "started_actions": [
+            {
+              "line": 24224,
+              "time": "17:16",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24243,
+              "time": "17:16",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 24262,
+              "time": "17:17",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 48,
+          "game_time": "17:17",
+          "request_line": 24280,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 24283,
+          "started_actions": [
+            {
+              "line": 24289,
+              "time": "17:17",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24330,
+              "time": "17:17",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 24349,
+              "time": "17:17",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 49,
+          "game_time": "17:17",
+          "request_line": 24367,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 24370,
+          "started_actions": [
+            {
+              "line": 24376,
+              "time": "17:17",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24395,
+              "time": "17:18",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 24414,
+              "time": "17:18",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 50,
+          "game_time": "17:18",
+          "request_line": 24432,
+          "raw_answer": "- marine",
+          "queue": [
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 24435,
+          "started_actions": [
+            {
+              "line": 24441,
+              "time": "17:18",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24460,
+              "time": "17:18",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 24479,
+              "time": "17:18",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 3,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 51,
+          "game_time": "17:18",
+          "request_line": 24497,
+          "raw_answer": "- marine x 2",
+          "queue": [
+            "marine",
+            "marine"
+          ],
+          "queue_line": 24501,
+          "started_actions": [
+            {
+              "line": 24507,
+              "time": "17:18",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24526,
+              "time": "17:19",
+              "index": 1,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 2,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 52,
+          "game_time": "17:19",
+          "request_line": 24568,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 24576,
+          "started_actions": [
+            {
+              "line": 24582,
+              "time": "17:19",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24601,
+              "time": "17:19",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 24620,
+              "time": "17:19",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 24639,
+              "time": "17:19",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 24658,
+              "time": "17:20",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 24666,
+              "time": "17:20",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 53,
+          "game_time": "17:32",
+          "request_line": 24939,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 24947,
+          "started_actions": [
+            {
+              "line": 24953,
+              "time": "17:32",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 24982,
+              "time": "17:32",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 25007,
+              "time": "17:32",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 25029,
+              "time": "17:32",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 25048,
+              "time": "17:32",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 25056,
+              "time": "17:33",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 54,
+          "game_time": "18:04",
+          "request_line": 25597,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 25605,
+          "started_actions": [
+            {
+              "line": 25611,
+              "time": "18:04",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 25630,
+              "time": "18:04",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 25700,
+              "time": "18:08",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 25719,
+              "time": "18:09",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 25760,
+              "time": "18:09",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 25768,
+              "time": "18:09",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 55,
+          "game_time": "18:13",
+          "request_line": 25845,
+          "raw_answer": "- marine  \n- mule  \n- siegetank  \n- marauder",
+          "queue": [
+            "marine",
+            "marauder",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank"
+          ],
+          "queue_line": 25851,
+          "started_actions": [
+            {
+              "line": 25857,
+              "time": "18:13",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 25876,
+              "time": "18:13",
+              "index": 1,
+              "bo": "marauder"
+            },
+            {
+              "line": 26198,
+              "time": "18:37",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 26217,
+              "time": "18:37",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 26258,
+              "time": "18:37",
+              "index": 4,
+              "bo": "mule"
+            },
+            {
+              "line": 26266,
+              "time": "18:38",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 1,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 56,
+          "game_time": "19:17",
+          "request_line": 27004,
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 27009,
+          "started_actions": [
+            {
+              "line": 27015,
+              "time": "19:17",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 27034,
+              "time": "19:17",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 27053,
+              "time": "19:17",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 27074,
+              "time": "19:18",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 27084,
+              "time": "19:18",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 27769,
+              "time": "19:57",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 2,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 57,
+          "game_time": "20:37",
+          "request_line": 28530,
+          "raw_answer": "- marine  \n- mule  \n- siegetank",
+          "queue": [
+            "marine",
+            "marine",
+            "marine",
+            "mule",
+            "siegetank",
+            "siegetank"
+          ],
+          "queue_line": 28535,
+          "started_actions": [
+            {
+              "line": 28541,
+              "time": "20:37",
+              "index": 0,
+              "bo": "marine"
+            },
+            {
+              "line": 28560,
+              "time": "20:37",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 28601,
+              "time": "20:37",
+              "index": 2,
+              "bo": "marine"
+            },
+            {
+              "line": 28620,
+              "time": "20:37",
+              "index": 3,
+              "bo": "mule"
+            },
+            {
+              "line": 28628,
+              "time": "20:37",
+              "index": 4,
+              "bo": "siegetank"
+            },
+            {
+              "line": 29363,
+              "time": "21:17",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 2,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 58,
+          "game_time": "21:56",
+          "request_line": 30224,
+          "raw_answer": "- marine  \n- refinery",
+          "queue": [
+            "refinery",
+            "marine",
+            "marine",
+            "marine"
+          ],
+          "queue_line": 30228,
+          "started_actions": [
+            {
+              "line": 30234,
+              "time": "21:56",
+              "index": 0,
+              "bo": "refinery"
+            },
+            {
+              "line": 30257,
+              "time": "21:56",
+              "index": 1,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 1,
+          "timeout_count": 0,
+          "reward": -49.461,
+          "done": true
+        }
+      ],
+      "post_events": [
+        {
+          "line": 30226,
+          "text": "BO ori: - marine  "
+        },
+        {
+          "line": 30228,
+          "text": "BO ori: - marine  ,- refinery, BO: ['refinery', 'marine', 'marine', 'marine']"
+        },
+        {
+          "line": 30232,
+          "text": "2026-09-07 01:48:49 [default_player_Qwen3-30B] [INFO]: (7374) refresh build order: refinery, marine, marine, marine"
+        },
+        {
+          "line": 30234,
+          "text": "[21:56] >>> Start Processing BO #0: refinery <<<"
+        },
+        {
+          "line": 30252,
+          "text": "[21:56] >>> BO #0 Completed/Skipped. <<<"
+        },
+        {
+          "line": 30257,
+          "text": "[21:56] >>> Start Processing BO #1: marine <<<"
+        },
+        {
+          "line": 30261,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 30306,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 30351,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 30418,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 30468,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 30569,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 30615,
+          "text": "2026-09-07 01:48:59 [default_player_Qwen3-30B] [INFO]: (7525) game_result: Defeat"
+        },
+        {
+          "line": 30617,
+          "text": "2026-09-07 01:48:59 [default_player_Qwen3-30B] [INFO]: (7525) time_cost: 1343"
+        }
+      ],
+      "first_prompt": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:00 in the game, and we are playing as Terran with 120 minerals and 258 vespene gas, while our current supply is 93, of which 41 is allocated to the army, 50 to workers, and 89 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 48 SCV, 2 marauder, 20 marine, 2 mule, 2 siegetank. In terms of the structures, we have 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with reactor, 5 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 2 factory with techlab, 2 missileturret, 2 refinery, 20 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 6 SCV, 2 battlecruiser, 2 marine, 1 raven, 7 viking. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 1 autoturret, 2 barracks, 1 barracks with techlab, 1 factory, 2 missileturret, 4 refinery, 2 starport, 1 starport with reactor, 5 supplydepot.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 50\n- supplydepot x 1\n- mule x 6\n- siegetank x 9\n- marauder x 4\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+      "last_prompt": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 21:56 in the game, and we are playing as Terran with 11250 minerals and 118 vespene gas, while our current supply is 6, of which 0 is allocated to the army, 6 to workers, and 17 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 6 SCV. In terms of the structures, we have 1 bases in the form of commandcenter, 1 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 10 battlecruiser, 2 liberator, 2 marauder, 8 marine, 3 medivac, 5 raven, 13 viking. As for the visible enemy structures, there are 2 bases in the form of commandcenter, 3 bases in the form of orbitalcommand, 2 autoturret, 3 barracks, 1 barracks with techlab, 1 factory, 1 factory with techlab, 4 missileturret, 6 refinery, 3 starport, 1 starport with reactor, 1 starport with techlab, 5 supplydepot.\nThe remaining BO list in this phase:\n- marine x 32\n- refinery x 1\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- refinery\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+      "artifact_hashes": {
+        "manifest.json": "6e4ed9c2047a6cc8bb6ff50441051e64e4016afe4214d04b58fb064cef71accb",
+        "effective_config.json": "c29679c46dc885dfe7cae40ac36e335bb0479f5ac118e91127649fadd4daf39c",
+        ".done": "9664c5ed4dc0fb39bafc4e1ec0c7cf14ef38080e5d314783c084d9cedf3b1080",
+        "evaluation_seeds.jsonl": "fe29009e02d3c378175699b96f6e9cffcc36d43e55c99550fcd4a4fc9e83b487",
+        "prompt_response.jsonl": "61111674c3a6bab9d2978b12f3156646dde30c8e0af837c3ae5e1f39af3daa71",
+        "episode_outcomes.jsonl": "b7a20d790ca0a5197fe417aab4837d23ae1c4bdfe98f838f371b7a8ded5deafd"
+      }
+    },
+    "step8-eval": {
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-step8-eval",
+      "worker": "/dev/shm/sc2_real_r4_step8-eval/session_2026-09-07_08-07-31_923930_3951460/logs/worker-93ce7ecc30f4db4c401ea4a236a00e2f8e5cc5502935af78e69fc415-01000000-3954027.out",
+      "worker_sha256": "00037381033007ed48cbe9c198a42a67558e0139c0b4f95666c61d98afceda55",
+      "frozen_source": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+      "bo_path": "/root/new-scii-empty-bo-frame-20260907/code-ca7885d/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "fixed_bo_entries": 237,
+      "source_hashes": {
+        "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "8dd13723f38687ea3e35a282b9a3f2f190a257190974501e59f6cbc51f0d1c11",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+      },
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 2807211443,
+          "calls": 4,
+          "first_planner_game_time": "13:51",
+          "first_planner_units": "53 SCV, 9 marine, 1 mule",
+          "nonterminal_reward": 0,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -49.5
+        },
+        {
+          "env": 1,
+          "seed": 882774615,
+          "calls": 0,
+          "first_planner_game_time": null,
+          "first_planner_units": null,
+          "nonterminal_reward": 0,
+          "terminal_reward": -50,
+          "cumulative_reward": -50
+        },
+        {
+          "env": 2,
+          "seed": 494016583,
+          "calls": 0,
+          "first_planner_game_time": null,
+          "first_planner_units": null,
+          "nonterminal_reward": 0,
+          "terminal_reward": -50,
+          "cumulative_reward": -50
+        },
+        {
+          "env": 3,
+          "seed": 2621640384,
+          "calls": 3,
+          "first_planner_game_time": "10:39",
+          "first_planner_units": "2 SCV, 1 siegetank",
+          "nonterminal_reward": 0,
+          "terminal_reward": -49.45,
+          "cumulative_reward": -49.45
+        },
+        {
+          "env": 4,
+          "seed": 4081499387,
+          "calls": 14,
+          "first_planner_game_time": "10:08",
+          "first_planner_units": "48 SCV, 7 marine, 2 mule, 1 siegetank",
+          "nonterminal_reward": 0,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -49.5
+        },
+        {
+          "env": 5,
+          "seed": 44124510,
+          "calls": 41,
+          "first_planner_game_time": "09:56",
+          "first_planner_units": "46 SCV, 1 marauder, 7 marine, 2 mule, 2 siegetank",
+          "nonterminal_reward": 0,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -49.5
+        },
+        {
+          "env": 6,
+          "seed": 2071061852,
+          "calls": 4,
+          "first_planner_game_time": "10:04",
+          "first_planner_units": "38 SCV, 1 marauder, 1 marine, 2 mule, 1 siegetank",
+          "nonterminal_reward": 0,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -49.5
+        },
+        {
+          "env": 7,
+          "seed": 1549697793,
+          "calls": 30,
+          "first_planner_game_time": "10:00",
+          "first_planner_units": "48 SCV, 4 marauder, 18 marine, 2 mule, 2 siegetank",
+          "nonterminal_reward": 0,
+          "terminal_reward": -49.5,
+          "cumulative_reward": -49.5
+        }
+      ],
+      "target_game_time_seconds": 765,
+      "fixed_end_evidence": [
+        {
+          "line": 13409,
+          "text": "    \"action\": \"TERRANBUILD_REFINERY\","
+        },
+        {
+          "line": 13410,
+          "text": "    \"units\": ["
+        },
+        {
+          "line": 13411,
+          "text": "        251"
+        },
+        {
+          "line": 13412,
+          "text": "    ],"
+        },
+        {
+          "line": 13413,
+          "text": "    \"target_unit\": 769"
+        },
+        {
+          "line": 13414,
+          "text": "}"
+        },
+        {
+          "line": 13415,
+          "text": "[10:39] >>> BO #236 Completed/Skipped. <<<"
+        },
+        {
+          "line": 13416,
+          "text": ""
+        },
+        {
+          "line": 13417,
+          "text": "Current stage 0"
+        },
+        {
+          "line": 13418,
+          "text": "Bonus time: 0"
+        },
+        {
+          "line": 13419,
+          "text": "Generate new plan... [0]"
+        },
+        {
+          "line": 13420,
+          "text": "Step shaping reward off: 0.000"
+        }
+      ],
+      "fixed_first_scout": {
+        "line": 263,
+        "text": "正在派遣 SCV (Tag: 4346347521) 侦察 (24, 125)"
+      },
+      "auto_attacks_before_planner": [
+        {
+          "line": 6631,
+          "text": "[Auto-Attack] 首次总攻触发！当前兵力 20 >= 20"
+        },
+        {
+          "line": 8119,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        },
+        {
+          "line": 10058,
+          "text": "[Auto-Attack] 后续波次触发！当前积累 10 >= 10"
+        }
+      ],
+      "timeline": [
+        {
+          "call": 1,
+          "game_time": "10:39",
+          "request_line": 13419,
+          "raw_answer": "- marine\n- supplydepot\n- mule\n- siegetank\n- marauder",
+          "queue": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "supplydepot",
+            "siegetank"
+          ],
+          "queue_line": 13426,
+          "started_actions": [
+            {
+              "line": 13432,
+              "time": "10:39",
+              "index": 0,
+              "bo": "supplydepot"
+            },
+            {
+              "line": 13605,
+              "time": "10:51",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 13624,
+              "time": "10:51",
+              "index": 2,
+              "bo": "marauder"
+            },
+            {
+              "line": 13665,
+              "time": "10:51",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 13684,
+              "time": "10:51",
+              "index": 4,
+              "bo": "supplydepot"
+            },
+            {
+              "line": 13707,
+              "time": "10:52",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 0,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 2,
+          "game_time": "10:52",
+          "request_line": 13725,
+          "raw_answer": "- marine\n- supplydepot\n- mule\n- siegetank\n- marauder",
+          "queue": [
+            "supplydepot",
+            "marine",
+            "marauder",
+            "marine",
+            "supplydepot",
+            "siegetank"
+          ],
+          "queue_line": 13732,
+          "started_actions": [
+            {
+              "line": 13738,
+              "time": "10:52",
+              "index": 0,
+              "bo": "supplydepot"
+            },
+            {
+              "line": 14138,
+              "time": "11:20",
+              "index": 1,
+              "bo": "marine"
+            },
+            {
+              "line": 14157,
+              "time": "11:20",
+              "index": 2,
+              "bo": "marauder"
+            },
+            {
+              "line": 14198,
+              "time": "11:20",
+              "index": 3,
+              "bo": "marine"
+            },
+            {
+              "line": 14217,
+              "time": "11:20",
+              "index": 4,
+              "bo": "supplydepot"
+            },
+            {
+              "line": 14242,
+              "time": "11:20",
+              "index": 5,
+              "bo": "siegetank"
+            }
+          ],
+          "finished_or_skipped": 6,
+          "timeout_count": 1,
+          "reward": 0,
+          "done": false
+        },
+        {
+          "call": 3,
+          "game_time": "12:01",
+          "request_line": 14907,
+          "raw_answer": "- marine\n- supplydepot\n- mule\n- marauder\n- barracks\n- techlab barracks",
+          "queue": [
+            "supplydepot",
+            "barracks",
+            "marine",
+            "techlab barracks",
+            "marauder",
+            "marine"
+          ],
+          "queue_line": 14915,
+          "started_actions": [
+            {
+              "line": 14921,
+              "time": "12:01",
+              "index": 0,
+              "bo": "supplydepot"
+            },
+            {
+              "line": 14944,
+              "time": "12:01",
+              "index": 1,
+              "bo": "barracks"
+            },
+            {
+              "line": 15330,
+              "time": "12:25",
+              "index": 2,
+              "bo": "marine"
+            }
+          ],
+          "finished_or_skipped": 2,
+          "timeout_count": 0,
+          "reward": -49.45,
+          "done": true
+        }
+      ],
+      "post_events": [
+        {
+          "line": 13419,
+          "text": "Generate new plan... [0]"
+        },
+        {
+          "line": 13421,
+          "text": "BO ori: - marine"
+        },
+        {
+          "line": 13426,
+          "text": "BO ori: - marine,- supplydepot,- mule,- siegetank,- marauder, BO: ['supplydepot', 'marine', 'marauder', 'marine', 'supplydepot', 'siegetank']"
+        },
+        {
+          "line": 13430,
+          "text": "2026-09-07 08:16:43 [default_player_Qwen3-30B] [INFO]: (3581) refresh build order: supplydepot, marine, marauder, marine, supplydepot, siegetank"
+        },
+        {
+          "line": 13432,
+          "text": "[10:39] >>> Start Processing BO #0: supplydepot <<<"
+        },
+        {
+          "line": 13453,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Insufficient Minerals (50/100)."
+        },
+        {
+          "line": 13602,
+          "text": "[10:51] >>> BO #0 Completed/Skipped. <<<"
+        },
+        {
+          "line": 13605,
+          "text": "[10:51] >>> Start Processing BO #1: marine <<<"
+        },
+        {
+          "line": 13621,
+          "text": "[10:51] >>> BO #1 Completed/Skipped. <<<"
+        },
+        {
+          "line": 13624,
+          "text": "[10:51] >>> Start Processing BO #2: marauder <<<"
+        },
+        {
+          "line": 13640,
+          "text": "[10:51] >>> BO #2 Completed/Skipped. <<<"
+        },
+        {
+          "line": 13665,
+          "text": "[10:51] >>> Start Processing BO #3: marine <<<"
+        },
+        {
+          "line": 13681,
+          "text": "[10:51] >>> BO #3 Completed/Skipped. <<<"
+        },
+        {
+          "line": 13684,
+          "text": "[10:51] >>> Start Processing BO #4: supplydepot <<<"
+        },
+        {
+          "line": 13704,
+          "text": "[10:51] >>> BO #4 Completed/Skipped. <<<"
+        },
+        {
+          "line": 13707,
+          "text": "[10:52] >>> Start Processing BO #5: siegetank <<<"
+        },
+        {
+          "line": 13723,
+          "text": "[10:52] >>> BO #5 Completed/Skipped. <<<"
+        },
+        {
+          "line": 13725,
+          "text": "Generate new plan... [1]"
+        },
+        {
+          "line": 13727,
+          "text": "BO ori: - marine"
+        },
+        {
+          "line": 13732,
+          "text": "BO ori: - marine,- supplydepot,- mule,- siegetank,- marauder, BO: ['supplydepot', 'marine', 'marauder', 'marine', 'supplydepot', 'siegetank']"
+        },
+        {
+          "line": 13736,
+          "text": "2026-09-07 08:16:59 [default_player_Qwen3-30B] [INFO]: (3653) refresh build order: supplydepot, marine, marauder, marine, supplydepot, siegetank"
+        },
+        {
+          "line": 13738,
+          "text": "[10:52] >>> Start Processing BO #0: supplydepot <<<"
+        },
+        {
+          "line": 13744,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13745,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13793,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13794,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13842,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13843,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13891,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13892,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13962,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 13963,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 14010,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 14011,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 14060,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 14061,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_SUPPLYDEPOT"
+        },
+        {
+          "line": 14133,
+          "text": "[11:19] >>> BO #0 Completed/Skipped. <<<"
+        },
+        {
+          "line": 14138,
+          "text": "[11:20] >>> Start Processing BO #1: marine <<<"
+        },
+        {
+          "line": 14154,
+          "text": "[11:20] >>> BO #1 Completed/Skipped. <<<"
+        },
+        {
+          "line": 14157,
+          "text": "[11:20] >>> Start Processing BO #2: marauder <<<"
+        },
+        {
+          "line": 14173,
+          "text": "[11:20] >>> BO #2 Completed/Skipped. <<<"
+        },
+        {
+          "line": 14198,
+          "text": "[11:20] >>> Start Processing BO #3: marine <<<"
+        },
+        {
+          "line": 14214,
+          "text": "[11:20] >>> BO #3 Completed/Skipped. <<<"
+        },
+        {
+          "line": 14217,
+          "text": "[11:20] >>> Start Processing BO #4: supplydepot <<<"
+        },
+        {
+          "line": 14237,
+          "text": "[11:20] >>> BO #4 Completed/Skipped. <<<"
+        },
+        {
+          "line": 14242,
+          "text": "[11:20] >>> Start Processing BO #5: siegetank <<<"
+        },
+        {
+          "line": 14246,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14305,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14352,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14403,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14492,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14563,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14638,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14687,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14741,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14814,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 14881,
+          "text": "[Skip] BO #5 skipped after 11 attempts (Threshold: 10)."
+        },
+        {
+          "line": 14882,
+          "text": "2026-09-07 08:17:30 [default_player_Qwen3-30B] [INFO]: (4032) bo_skipped_5: {'reason': 'timeout', 'action': 'siegetank'}"
+        },
+        {
+          "line": 14883,
+          "text": "[12:00] >>> BO #5 Completed/Skipped. <<<"
+        },
+        {
+          "line": 14907,
+          "text": "Generate new plan... [2]"
+        },
+        {
+          "line": 14909,
+          "text": "BO ori: - marine"
+        },
+        {
+          "line": 14915,
+          "text": "BO ori: - marine,- supplydepot,- mule,- marauder,- barracks,- techlab barracks, BO: ['supplydepot', 'barracks', 'marine', 'techlab barracks', 'marauder', 'marine']"
+        },
+        {
+          "line": 14919,
+          "text": "2026-09-07 08:17:39 [default_player_Qwen3-30B] [INFO]: (4041) refresh build order: supplydepot, barracks, marine, techlab barracks, marauder, marine"
+        },
+        {
+          "line": 14921,
+          "text": "[12:01] >>> Start Processing BO #0: supplydepot <<<"
+        },
+        {
+          "line": 14941,
+          "text": "[12:01] >>> BO #0 Completed/Skipped. <<<"
+        },
+        {
+          "line": 14944,
+          "text": "[12:01] >>> Start Processing BO #1: barracks <<<"
+        },
+        {
+          "line": 14950,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 14951,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 14998,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 14999,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15046,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15047,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15094,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15095,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15205,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15206,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15259,
+          "text": "    -> [Wait] Agent returned no executor for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15260,
+          "text": "    -> [Wait] Generated empty action for TERRANBUILD_BARRACKS"
+        },
+        {
+          "line": 15327,
+          "text": "[12:25] >>> BO #1 Completed/Skipped. <<<"
+        },
+        {
+          "line": 15330,
+          "text": "[12:25] >>> Start Processing BO #2: marine <<<"
+        },
+        {
+          "line": 15334,
+          "text": "    -> [Wait] Action blocked: **Action Failed**: Missing facility."
+        },
+        {
+          "line": 15338,
+          "text": "2026-09-07 08:17:56 [default_player_Qwen3-30B] [INFO]: (4284) game_result: Defeat"
+        },
+        {
+          "line": 15340,
+          "text": "2026-09-07 08:17:56 [default_player_Qwen3-30B] [INFO]: (4284) time_cost: 765"
+        }
+      ],
+      "first_prompt": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:39 in the game, and we are playing as Terran with 50 minerals and 330 vespene gas, while our current supply is 8, of which 6 is allocated to the army, 2 to workers, and 111 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 2 SCV, 1 siegetank. In terms of the structures, we have 2 bases in the form of commandcenter, 2  with techlab, 4 barracks, 1 barracks with reactor, 3 barracks with techlab, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 refinery, 13 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 3 battlecruiser, 3 marine, 2 raven, 8 viking. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 1 bases in the form of orbitalcommand, 1 autoturret, 2 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 2 refinery, 2 starport, 1 starport with reactor, 1 starport with techlab, 6 supplydepot.\nThe remaining BO list in this phase:\n- marine x 50\n- supplydepot x 8\n- mule x 6\n- siegetank x 9\n- scv x 15\n- marauder x 4\n- commandcenter x 1\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+      "last_prompt": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 12:01 in the game, and we are playing as Terran with 355 minerals and 850 vespene gas, while our current supply is 1, of which 0 is allocated to the army, 1 to workers, and 61 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 1 SCV. In terms of the structures, we have 2 bases in the form of commandcenter, 1 refinery, 4 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 5 battlecruiser, 3 marine, 12 viking. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 1 bases in the form of orbitalcommand, 2 autoturret, 2 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 2 refinery, 2 starport, 1 starport with reactor, 1 starport with techlab, 6 supplydepot.\nThe remaining BO list in this phase:\n- marine x 46\n- supplydepot x 4\n- mule x 6\n- scv x 15\n- marauder x 2\n- commandcenter x 1\n- barracks x 1\n- techlab barracks x 1\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+      "artifact_hashes": {
+        "manifest.json": "42e875d5dab9c3c89635fa9ce9346044d7313b7f5b2dc446e2fa7c8a683e35e7",
+        "effective_config.json": "cc2183099c169400bb8df757c7f6abcd0dfe1a5fe55a3fc6df0047ed540ba15e",
+        ".done": "44b3dfdfe0d42e54040d64c7eaa66666354c2b31e094eea9b110b194f8012f30",
+        "evaluation_seeds.jsonl": "fe29009e02d3c378175699b96f6e9cffcc36d43e55c99550fcd4a4fc9e83b487",
+        "prompt_response.jsonl": "225ee0593efd73cbbfc5792fb76ca8d28bdaa2aa8ba76f92cdb6c99b31cc05db",
+        "episode_outcomes.jsonl": "81f1fa2f5fecc4ecff1b2613721089eda98ba150d14e0de146c211fde0a41df5"
+      }
+    }
+  }
+}

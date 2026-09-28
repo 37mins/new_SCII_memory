@@ -1,0 +1,2538 @@
+{
+  "status": "inventory_only_no_deletion_authorized",
+  "checked_at": "2026-09-15T09:19:46+08:00",
+  "scope": [
+    "sc2-a100-43 local project paths",
+    "shared /mnt/data0601/yangjinyue/new_SCII/experiments"
+  ],
+  "other_nodes_active_references_checked": false,
+  "files_deleted": 0,
+  "processes_stopped": 0,
+  "cache": [
+    {
+      "path": "/dev/shm/a4s_0913_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/a4s_0913_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/a4s_0913_r1/triton",
+      "allocated_bytes": 216551424
+    },
+    {
+      "path": "/dev/shm/a4t_0911_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/a4t_0911_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/a4t_0911_r1/triton",
+      "allocated_bytes": 348893184
+    },
+    {
+      "path": "/dev/shm/a8e_0911_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/a8e_0911_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/a8e_0911_r1/triton",
+      "allocated_bytes": 140496896
+    },
+    {
+      "path": "/dev/shm/me_A4_0913_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/me_A4_0913_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/me_A4_0913_r1/triton",
+      "allocated_bytes": 113147904
+    },
+    {
+      "path": "/dev/shm/me_A5scene_0913_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/me_A5scene_0913_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/me_A5scene_0913_r1/triton",
+      "allocated_bytes": 113053696
+    },
+    {
+      "path": "/dev/shm/oc_0913_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/oc_0913_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/oc_0913_r1/triton",
+      "allocated_bytes": 96329728
+    },
+    {
+      "path": "/dev/shm/sc2_coverage_b5_update3_0914_r2/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_coverage_b5_update3_0914_r2/triton",
+      "allocated_bytes": 142438400
+    },
+    {
+      "path": "/dev/shm/sc2_example_order_0912_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_example_order_0912_r1/triton",
+      "allocated_bytes": 56410112
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_A_0911_r3/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_A_0911_r3/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_A_0911_r3/triton",
+      "allocated_bytes": 66695168
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_B_0911_r3/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_B_0911_r3/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_B_0911_r3/triton",
+      "allocated_bytes": 103743488
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_A_0911_r2/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_A_0911_r2/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_A_0911_r2/triton",
+      "allocated_bytes": 676548608
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_B_0911_r2/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_B_0911_r2/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_feedback_rl4_B_0911_r2/triton",
+      "allocated_bytes": 1215721472
+    },
+    {
+      "path": "/dev/shm/sc2_fixed_feedback_0911_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_fixed_feedback_0911_r1/triton",
+      "allocated_bytes": 61386752
+    },
+    {
+      "path": "/dev/shm/sc2_original_a4_0912_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_original_a4_0912_r1/triton",
+      "allocated_bytes": 56598528
+    },
+    {
+      "path": "/dev/shm/sc2_phase_deadline_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/sc2_phase_deadline_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_phase_deadline_0914_r1/triton",
+      "allocated_bytes": 88399872
+    },
+    {
+      "path": "/dev/shm/sc2_prereq_context_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_prereq_context_0914_r1/triton",
+      "allocated_bytes": 63901696
+    },
+    {
+      "path": "/dev/shm/sc2_spb_l5_96_0908_r5/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/sc2_spb_l5_empty_0908_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/se_A4_0913_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/se_A4_0913_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/se_A4_0913_r1/triton",
+      "allocated_bytes": 63746048
+    },
+    {
+      "path": "/dev/shm/se_A5scene_0913_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/se_A5scene_0913_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/se_A5scene_0913_r1/triton",
+      "allocated_bytes": 63934464
+    },
+    {
+      "path": "/dev/shm/ss_0_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_0_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_0_0914_r1/triton",
+      "allocated_bytes": 63746048
+    },
+    {
+      "path": "/dev/shm/ss_1_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_1_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_1_0914_r1/triton",
+      "allocated_bytes": 63840256
+    },
+    {
+      "path": "/dev/shm/ss_2_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_2_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_2_0914_r1/triton",
+      "allocated_bytes": 63746048
+    },
+    {
+      "path": "/dev/shm/ss_3_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_3_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_3_0914_r1/triton",
+      "allocated_bytes": 63651840
+    },
+    {
+      "path": "/dev/shm/ss_4_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_4_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_4_0914_r1/triton",
+      "allocated_bytes": 63746048
+    },
+    {
+      "path": "/dev/shm/ss_5_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_5_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_5_0914_r1/triton",
+      "allocated_bytes": 105869312
+    },
+    {
+      "path": "/dev/shm/ss_6_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_6_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_6_0914_r1/triton",
+      "allocated_bytes": 63557632
+    },
+    {
+      "path": "/dev/shm/ss_7_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_7_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_7_0914_r1/triton",
+      "allocated_bytes": 83542016
+    },
+    {
+      "path": "/dev/shm/ss_A_0915_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/ss_A_0915_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/ss_A_0915_r1/triton",
+      "allocated_bytes": 250556416
+    },
+    {
+      "path": "/dev/shm/zs_A_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/zs_A_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/zs_A_0914_r1/triton",
+      "allocated_bytes": 272027648
+    },
+    {
+      "path": "/dev/shm/zs_B_0914_r1/hf",
+      "allocated_bytes": 176128
+    },
+    {
+      "path": "/dev/shm/zs_B_0914_r1/torchinductor_root",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/dev/shm/zs_B_0914_r1/triton",
+      "allocated_bytes": 271106048
+    }
+  ],
+  "retirement_candidates": [
+    {
+      "label": "C2_local_A8",
+      "run": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1",
+      "step": 8,
+      "checkpoint": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8",
+      "run_state": {
+        "status": "completed",
+        "ended_at": "2026-09-11T16:01:06.395108+00:00",
+        "process_exit_code": 0,
+        "last_global_step": 8,
+        "checkpoint_complete": true
+      },
+      "files": [
+        {
+          "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_0.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 9715999,
+          "mtime_ns": 1789142422419044900,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_1.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 9715998,
+          "mtime_ns": 1789142421133998600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_2.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 9716000,
+          "mtime_ns": 1789142421270003500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_3.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 9715997,
+          "mtime_ns": 1789142421156999400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_0.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 9716004,
+          "mtime_ns": 1789142461805458700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_1.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 9716001,
+          "mtime_ns": 1789142455212223200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_2.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 9716003,
+          "mtime_ns": 1789142456295262000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-s4plus4-4gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_3.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 9716002,
+          "mtime_ns": 1789142455020216300,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C3_zero_A",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1",
+      "step": 8,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8",
+      "run_state": {
+        "status": "completed",
+        "ended_at": "2026-09-14T12:54:30.875943+00:00",
+        "process_exit_code": 0,
+        "last_global_step": 8,
+        "checkpoint_complete": true
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_0.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 29923236135,
+          "mtime_ns": 1789390363665134000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_1.pt",
+          "allocated_bytes": 5555630080,
+          "bytes": 5555629511,
+          "inode": 29923236133,
+          "mtime_ns": 1789390361705128700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_2.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 29923236134,
+          "mtime_ns": 1789390359905123600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_3.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 29923236136,
+          "mtime_ns": 1789390363701134000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_0.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 29923236143,
+          "mtime_ns": 1789390454729383700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_1.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 29923236142,
+          "mtime_ns": 1789390450853373200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_2.pt",
+          "allocated_bytes": 10332467200,
+          "bytes": 10332463827,
+          "inode": 29923236141,
+          "mtime_ns": 1789390451997376300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_3.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 29923236144,
+          "mtime_ns": 1789390453293379800,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C3_zero_B",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1",
+      "step": 8,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8",
+      "run_state": {
+        "status": "completed",
+        "ended_at": "2026-09-14T13:31:57.361900+00:00",
+        "process_exit_code": 0,
+        "last_global_step": 8,
+        "checkpoint_complete": true
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_0.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 12046169020,
+          "mtime_ns": 1789392622859498000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_1.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 12046169022,
+          "mtime_ns": 1789392622887498000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_2.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 12046169023,
+          "mtime_ns": 1789392624703502800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8/actor/model_world_size_4_rank_3.pt",
+          "allocated_bytes": 5555634176,
+          "bytes": 5555629511,
+          "inode": 12046169021,
+          "mtime_ns": 1789392622011495400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_0.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 11370760299,
+          "mtime_ns": 1789392712271744500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_1.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 11370760311,
+          "mtime_ns": 1789392712951746300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_2.pt",
+          "allocated_bytes": 10332471296,
+          "bytes": 10332463827,
+          "inode": 10762419843,
+          "mtime_ns": 1789392712151744300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260914-zero-task-signal-sampling-v1/runs/20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1/checkpoints/global_step_8/actor/optim_world_size_4_rank_3.pt",
+          "allocated_bytes": 10332467200,
+          "bytes": 10332463827,
+          "inode": 11370760297,
+          "mtime_ns": 1789392710687740200,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 8,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 13520938579,
+          "mtime_ns": 1789024356498564600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 13520938576,
+          "mtime_ns": 1789024357382567400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 13520938581,
+          "mtime_ns": 1789024356586564900,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 13520938577,
+          "mtime_ns": 1789024356678565000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 13520938574,
+          "mtime_ns": 1789024352294551600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 13520938580,
+          "mtime_ns": 1789024359142572800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 13520938575,
+          "mtime_ns": 1789024346682534100,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 13520938578,
+          "mtime_ns": 1789024356538564900,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 13520938593,
+          "mtime_ns": 1789024591083296000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 13520938597,
+          "mtime_ns": 1789024590747295000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 13520938595,
+          "mtime_ns": 1789024592775301400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 13520938596,
+          "mtime_ns": 1789024588815289000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 13520938590,
+          "mtime_ns": 1789024588099286800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 13520938598,
+          "mtime_ns": 1789024593259303000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 13520938589,
+          "mtime_ns": 1789024570079230700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_8/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 13520938594,
+          "mtime_ns": 1789024591011295700,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 12,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 69191163287,
+          "mtime_ns": 1789032008646644700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 69191163281,
+          "mtime_ns": 1789032008010642700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 69191163283,
+          "mtime_ns": 1789032003598628900,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 69191163285,
+          "mtime_ns": 1789032003938630000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 69191163282,
+          "mtime_ns": 1789032008610644700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 69191163288,
+          "mtime_ns": 1789032003634629000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 69191163286,
+          "mtime_ns": 1789032008218643500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 69191163284,
+          "mtime_ns": 1789032003698629000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69191163297,
+          "mtime_ns": 1789032161415124200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69191163294,
+          "mtime_ns": 1789032158447115000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69191163290,
+          "mtime_ns": 1789032158203114200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69191163293,
+          "mtime_ns": 1789032158395114800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69191163296,
+          "mtime_ns": 1789032161183123500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69191163291,
+          "mtime_ns": 1789032158211114200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69191163295,
+          "mtime_ns": 1789032161091123200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_12/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69191163292,
+          "mtime_ns": 1789032161007123000,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 16,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 41544298542,
+          "mtime_ns": 1789034525782544600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 41544298546,
+          "mtime_ns": 1789034526226546000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 41544298548,
+          "mtime_ns": 1789034525182542800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 41544298537,
+          "mtime_ns": 1789034528726553900,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 41544298544,
+          "mtime_ns": 1789034525210542800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 41544298547,
+          "mtime_ns": 1789034529874557400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 41544298545,
+          "mtime_ns": 1789034525258543000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 41544298543,
+          "mtime_ns": 1789034525674544400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 41544298553,
+          "mtime_ns": 1789034653222943500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 41544298554,
+          "mtime_ns": 1789034651090936800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 41544298549,
+          "mtime_ns": 1789034650982936600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 41544298555,
+          "mtime_ns": 1789034652806942200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 41544298551,
+          "mtime_ns": 1789034652894942500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 41544298556,
+          "mtime_ns": 1789034653738945000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 41544298550,
+          "mtime_ns": 1789034652738942000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_16/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 41544298552,
+          "mtime_ns": 1789034653538944500,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 20,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 63075629207,
+          "mtime_ns": 1789038653515398100,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 63075629210,
+          "mtime_ns": 1789038643599367200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 63075629209,
+          "mtime_ns": 1789038642159362600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 63075629212,
+          "mtime_ns": 1789038654083400000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 63075629208,
+          "mtime_ns": 1789038653483398100,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 63075629213,
+          "mtime_ns": 1789038643547367000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 63075629211,
+          "mtime_ns": 1789038642715364400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 63075629214,
+          "mtime_ns": 1789038652987396600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63075629232,
+          "mtime_ns": 1789038856904035800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63075629229,
+          "mtime_ns": 1789038854504028400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63075629222,
+          "mtime_ns": 1789038852848023000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166256128,
+          "bytes": 5166248083,
+          "inode": 63075629233,
+          "mtime_ns": 1789038856896035800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63075629231,
+          "mtime_ns": 1789038854680029000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63075629228,
+          "mtime_ns": 1789038854636028700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63075629223,
+          "mtime_ns": 1789038852680022500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_20/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63075629230,
+          "mtime_ns": 1789038854572028700,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 28,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778177536,
+          "bytes": 2778173291,
+          "inode": 58857674548,
+          "mtime_ns": 1789045562661064000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 58857674554,
+          "mtime_ns": 1789045562961065000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778177536,
+          "bytes": 2778173291,
+          "inode": 58857674551,
+          "mtime_ns": 1789045562489063400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 58857674552,
+          "mtime_ns": 1789045562809064400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777911296,
+          "bytes": 2777907051,
+          "inode": 58857674553,
+          "mtime_ns": 1789045562305063000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 58857674550,
+          "mtime_ns": 1789045560721058000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 58857674555,
+          "mtime_ns": 1789045569009084000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777911296,
+          "bytes": 2777907051,
+          "inode": 58857674549,
+          "mtime_ns": 1789045562325063000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 58543589576,
+          "mtime_ns": 1789045745817638400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 58543589578,
+          "mtime_ns": 1789045745793638400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 58543589575,
+          "mtime_ns": 1789045746073639200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 58543589577,
+          "mtime_ns": 1789045745789638100,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 58543589573,
+          "mtime_ns": 1789045744141633000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 58543589572,
+          "mtime_ns": 1789045745729638100,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 58543589579,
+          "mtime_ns": 1789045743889632300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_28/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 58543589574,
+          "mtime_ns": 1789045745805638400,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 32,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 336249853,
+          "mtime_ns": 1789049701934045700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 336249855,
+          "mtime_ns": 1789049698954036500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 358392513,
+          "mtime_ns": 1789049696106027500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 336249850,
+          "mtime_ns": 1789049702042046200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 358392512,
+          "mtime_ns": 1789049702142046500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 336249854,
+          "mtime_ns": 1789049695850026800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 336353918,
+          "mtime_ns": 1789049700026039800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 336249852,
+          "mtime_ns": 1789049696418028500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 358392520,
+          "mtime_ns": 1789049833802459400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 335060542,
+          "mtime_ns": 1789049833526458400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 358392516,
+          "mtime_ns": 1789049833046457000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 358392521,
+          "mtime_ns": 1789049836054466300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 358392522,
+          "mtime_ns": 1789049835790465500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 358392514,
+          "mtime_ns": 1789049826742437000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 358392519,
+          "mtime_ns": 1789049833350457900,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_32/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 358392517,
+          "mtime_ns": 1789049833054457000,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 36,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 30976405224,
+          "mtime_ns": 1789051746016456700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 30976405230,
+          "mtime_ns": 1789051767220523300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 30976405227,
+          "mtime_ns": 1789051757488492800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 30976405223,
+          "mtime_ns": 1789051759936500500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 30976405228,
+          "mtime_ns": 1789051768824528400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 30976405226,
+          "mtime_ns": 1789051745420455000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 30976405229,
+          "mtime_ns": 1789051757464492800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 30976405225,
+          "mtime_ns": 1789051761072504000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 30978499454,
+          "mtime_ns": 1789051980993194000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 30978634442,
+          "mtime_ns": 1789052005849272000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 30978634439,
+          "mtime_ns": 1789051991369226500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 30978634440,
+          "mtime_ns": 1789051990429223700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 30978634443,
+          "mtime_ns": 1789052006133272800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 30978499453,
+          "mtime_ns": 1789051979481189400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 30978634436,
+          "mtime_ns": 1789051995165238500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_36/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 30978634441,
+          "mtime_ns": 1789051990853225000,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 40,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 15996535414,
+          "mtime_ns": 1789054014427569400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 15996535419,
+          "mtime_ns": 1789054024367600600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 15996535417,
+          "mtime_ns": 1789054012863564500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 15996535416,
+          "mtime_ns": 1789054023827598800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 15996535413,
+          "mtime_ns": 1789054014543570000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 15996535412,
+          "mtime_ns": 1789054009275553300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 15996535418,
+          "mtime_ns": 1789054019943586800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 15996535415,
+          "mtime_ns": 1789054012651563800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 15996535423,
+          "mtime_ns": 1789054165156042200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 15996532675,
+          "mtime_ns": 1789054171816063200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 15996535422,
+          "mtime_ns": 1789054167044048100,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 15996532674,
+          "mtime_ns": 1789054171816063200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 15996532672,
+          "mtime_ns": 1789054165656043800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 15996535420,
+          "mtime_ns": 1789054158752022300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 15996534270,
+          "mtime_ns": 1789054167500049700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_40/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 15996535421,
+          "mtime_ns": 1789054161072029400,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 44,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 69246669327,
+          "mtime_ns": 1789056514631420400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 69246669332,
+          "mtime_ns": 1789056520479438600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 69246669331,
+          "mtime_ns": 1789056520519438800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 69246669328,
+          "mtime_ns": 1789056520555438800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 69246669330,
+          "mtime_ns": 1789056522523445000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 69246669329,
+          "mtime_ns": 1789056524655452000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 69246669333,
+          "mtime_ns": 1789056524915452700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 69246669325,
+          "mtime_ns": 1789056520847440000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69246669334,
+          "mtime_ns": 1789056659183874600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69246669335,
+          "mtime_ns": 1789056661815882800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69246669336,
+          "mtime_ns": 1789056658971874000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69246669337,
+          "mtime_ns": 1789056664663891700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69246669339,
+          "mtime_ns": 1789056664771892200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69246669340,
+          "mtime_ns": 1789056664527891500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69246669341,
+          "mtime_ns": 1789056664779892200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_44/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 69246669338,
+          "mtime_ns": 1789056661743882800,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 48,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 22295920790,
+          "mtime_ns": 1789060123506759700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 22295920793,
+          "mtime_ns": 1789060126026767600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 22295920794,
+          "mtime_ns": 1789060122378756400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 22295920788,
+          "mtime_ns": 1789060123130758700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 22295920791,
+          "mtime_ns": 1789060122706757400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 22295920789,
+          "mtime_ns": 1789060121458753300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 22295920792,
+          "mtime_ns": 1789060123058758400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 22295920787,
+          "mtime_ns": 1789060123422759400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 22295920801,
+          "mtime_ns": 1789060234783109000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 22295920802,
+          "mtime_ns": 1789060236083113200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 22295920796,
+          "mtime_ns": 1789060233711105800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 22295920799,
+          "mtime_ns": 1789060233803106000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 22295920797,
+          "mtime_ns": 1789060231255098000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 22295920795,
+          "mtime_ns": 1789060233007103700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 22295920798,
+          "mtime_ns": 1789060233411105000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_48/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 22295920800,
+          "mtime_ns": 1789060234511108400,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 52,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 63197738648,
+          "mtime_ns": 1789062075992874200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 63197738653,
+          "mtime_ns": 1789062084388900400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 63197738652,
+          "mtime_ns": 1789062078456882000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 63197738649,
+          "mtime_ns": 1789062077872880000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 63197738655,
+          "mtime_ns": 1789062075284872000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 63197738650,
+          "mtime_ns": 1789062078144881000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 63197738654,
+          "mtime_ns": 1789062085284903200,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 63197738651,
+          "mtime_ns": 1789062079120884000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63197738657,
+          "mtime_ns": 1789062268109475000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63197738662,
+          "mtime_ns": 1789062272809490000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63197738660,
+          "mtime_ns": 1789062269941480700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63197738658,
+          "mtime_ns": 1789062267477473000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63197738656,
+          "mtime_ns": 1789062267409473000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63197738659,
+          "mtime_ns": 1789062269825480400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63197738663,
+          "mtime_ns": 1789062272805489700,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_52/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 63197738661,
+          "mtime_ns": 1789062270161481500,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    },
+    {
+      "label": "C4_old_l6_intermediate",
+      "run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+      "step": 56,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56",
+      "run_state": {
+        "status": "failed",
+        "ended_at": "2026-09-10T19:43:36.163336+00:00",
+        "process_exit_code": 1,
+        "last_global_step": null,
+        "checkpoint_complete": false
+      },
+      "files": [
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/model_world_size_8_rank_0.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 7141881744,
+          "mtime_ns": 1789064317775860000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/model_world_size_8_rank_1.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 7141881750,
+          "mtime_ns": 1789064317499859000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/model_world_size_8_rank_2.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 7141881748,
+          "mtime_ns": 1789064316143854800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/model_world_size_8_rank_3.pt",
+          "allocated_bytes": 2778173440,
+          "bytes": 2778173291,
+          "inode": 7141881746,
+          "mtime_ns": 1789064319887866400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/model_world_size_8_rank_4.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 7141881749,
+          "mtime_ns": 1789064315115851500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/model_world_size_8_rank_5.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 7141881747,
+          "mtime_ns": 1789064319211864300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/model_world_size_8_rank_6.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 7141881751,
+          "mtime_ns": 1789064319715865900,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/model_world_size_8_rank_7.pt",
+          "allocated_bytes": 2777907200,
+          "bytes": 2777907051,
+          "inode": 7141881745,
+          "mtime_ns": 1789064314835850800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/optim_world_size_8_rank_0.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 7141881756,
+          "mtime_ns": 1789064421728183800,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/optim_world_size_8_rank_1.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 7141881755,
+          "mtime_ns": 1789064421916184300,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/optim_world_size_8_rank_2.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 7141881754,
+          "mtime_ns": 1789064421656183600,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/optim_world_size_8_rank_3.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 7141881759,
+          "mtime_ns": 1789064423916190500,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/optim_world_size_8_rank_4.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 7141881753,
+          "mtime_ns": 1789064420560180000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/optim_world_size_8_rank_5.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 7141881757,
+          "mtime_ns": 1789064422200185000,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/optim_world_size_8_rank_6.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 7141881758,
+          "mtime_ns": 1789064423552189400,
+          "nlink": 1,
+          "symlink": false
+        },
+        {
+          "path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_56/actor/optim_world_size_8_rank_7.pt",
+          "allocated_bytes": 5166252032,
+          "bytes": 5166248083,
+          "inode": 7141881752,
+          "mtime_ns": 1789064419796177700,
+          "nlink": 1,
+          "symlink": false
+        }
+      ]
+    }
+  ],
+  "process_pss_bytes": {
+    "failed_B": 6530532352,
+    "old_l6": 6393704448,
+    "old_resume60": 6690614272
+  },
+  "excluded_active_temp_directories": [
+    "/dev/shm/ss_B_0915_r1",
+    "/dev/shm/sc2_spb_fsdp_rl96_0910_r1",
+    "/dev/shm/sc2_spb_l6_resume60_0911_r1"
+  ],
+  "checkpoint_warning": "Deleting optimizer alone breaks the current evaluator: FSDPCheckpointManager.load_checkpoint unconditionally loads model, optimizer and extra. Retirement candidates cover only explicitly enumerated model/optim files, retaining records, replays, data.pt and extra states; they cease to be complete/restorable checkpoints. No backup of these exact checkpoint shards has been verified.",
+  "next_execution_preconditions": [
+    "explicit user selection of item IDs",
+    "refresh process/queue ownership and open/mapped-file checks; shared targets require other-node references checked",
+    "revalidate paths/inodes/mtime/sizes and symlink/hardlink state",
+    "preserve failure logs and write deletion manifest/receipt outside old runs",
+    "do not restart B or alter trainer as part of cleanup"
+  ]
+}

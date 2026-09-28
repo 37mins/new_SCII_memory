@@ -1,0 +1,981 @@
+{
+  "run_id": "20260906-integrated-fixes-v1-r4-python-rng-pending-addon-g2-l6-s2621640384-repeat1-r1",
+  "source_sha": "836460a8533b6f0429f9e9d401ac9715adc55f5b",
+  "waits": [
+    {
+      "bo": 110,
+      "start_frame": 2112,
+      "end_frame": 2332,
+      "game_seconds": 39.285714285714285,
+      "result": {
+        "reason": "timeout",
+        "action": "reactor barracks"
+      },
+      "full_observations_in_wait": 0
+    },
+    {
+      "bo": 114,
+      "start_frame": 2336,
+      "end_frame": 2556,
+      "game_seconds": 39.285714285714285,
+      "result": {
+        "reason": "timeout",
+        "action": "reactor barracks"
+      },
+      "full_observations_in_wait": 0
+    }
+  ],
+  "commands": [
+    {
+      "frame": 2093,
+      "bo": 91,
+      "actions": [
+        {
+          "action": "BUILD_REACTOR_BARRACKS",
+          "units": [
+            387
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2094,
+      "bo": 92,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            849
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2095,
+      "bo": 93,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            849
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2096,
+      "bo": 94,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            849
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2097,
+      "bo": 95,
+      "actions": [
+        {
+          "action": "TERRANBUILD_FACTORY",
+          "units": [
+            194
+          ],
+          "target_position": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2098,
+      "bo": 96,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            849
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2099,
+      "bo": 97,
+      "actions": [
+        {
+          "action": "TERRANBUILD_FACTORY",
+          "units": [
+            538
+          ],
+          "target_position": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2100,
+      "bo": 98,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            425
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2101,
+      "bo": 99,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            425
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2102,
+      "bo": 100,
+      "actions": [
+        {
+          "action": "TERRANBUILD_FACTORY",
+          "units": [
+            418
+          ],
+          "target_position": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2104,
+      "bo": 102,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            425
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2105,
+      "bo": 103,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            425
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2106,
+      "bo": 104,
+      "actions": [
+        {
+          "action": "TERRANBUILD_SUPPLYDEPOT",
+          "units": [
+            241
+          ],
+          "target_position": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2107,
+      "bo": 105,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            425
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2108,
+      "bo": 106,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            170
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2109,
+      "bo": 107,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            170
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2110,
+      "bo": 108,
+      "actions": [
+        {
+          "action": "TERRANBUILD_MISSILETURRET",
+          "units": [
+            809
+          ],
+          "target_position": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2111,
+      "bo": 109,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            170
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2333,
+      "bo": 111,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            849
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2334,
+      "bo": 112,
+      "actions": [
+        {
+          "action": "BARRACKSTRAIN_MARINE",
+          "units": [
+            849
+          ]
+        }
+      ]
+    }
+  ],
+  "snapshots": [
+    {
+      "frame": 2095,
+      "barracks": [
+        {
+          "id": 849,
+          "position": [
+            24,
+            26
+          ],
+          "marine_orders": 2,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[849]Barracks\nPosition: (24, 26)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine"
+        },
+        {
+          "id": 387,
+          "position": [
+            26,
+            30
+          ],
+          "marine_orders": 0,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[387]Barracks\nPosition: (26, 30)\nHealth: 1000/1000 (100%)"
+        },
+        {
+          "id": 170,
+          "position": [
+            32,
+            28
+          ],
+          "marine_orders": 0,
+          "addon_id": 666,
+          "addon_type": "BarracksTechLab",
+          "raw": "[170]Barracks\nPosition: (32, 28)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [666]BarracksTechLab"
+        },
+        {
+          "id": 17,
+          "position": [
+            16,
+            14
+          ],
+          "marine_orders": 0,
+          "addon_id": 369,
+          "addon_type": "BarracksTechLab",
+          "raw": "[17]Barracks\nPosition: (16, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [369]BarracksTechLab"
+        },
+        {
+          "id": 425,
+          "position": [
+            18,
+            28
+          ],
+          "marine_orders": 1,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[425]Barracks\nPosition: (18, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine"
+        },
+        {
+          "id": 482,
+          "position": [
+            27,
+            41
+          ],
+          "marine_orders": 0,
+          "addon_id": 513,
+          "addon_type": "BarracksTechLab",
+          "raw": "[482]Barracks\nPosition: (27, 41)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [513]BarracksTechLab"
+        },
+        {
+          "id": 306,
+          "position": [
+            29,
+            45
+          ],
+          "marine_orders": 0,
+          "addon_id": 91,
+          "addon_type": "BarracksTechLab",
+          "raw": "[306]Barracks\nPosition: (29, 45)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [91]BarracksTechLab"
+        },
+        {
+          "id": 930,
+          "position": [
+            33,
+            37
+          ],
+          "marine_orders": 0,
+          "addon_id": 393,
+          "addon_type": "BarracksTechLab",
+          "raw": "[930]Barracks\nPosition: (33, 37)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [393]BarracksTechLab"
+        }
+      ],
+      "marine_capable_ids": [
+        306,
+        482,
+        170,
+        930,
+        17,
+        849,
+        425
+      ],
+      "commands": [
+        {
+          "frame": 2095,
+          "bo": 93,
+          "actions": [
+            {
+              "action": "BARRACKSTRAIN_MARINE",
+              "units": [
+                849
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2109,
+      "barracks": [
+        {
+          "id": 849,
+          "position": [
+            24,
+            26
+          ],
+          "marine_orders": 5,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[849]Barracks\nPosition: (24, 26)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine, Marine, Marine"
+        },
+        {
+          "id": 387,
+          "position": [
+            26,
+            30
+          ],
+          "marine_orders": 0,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[387]Barracks\nPosition: (26, 30)\nHealth: 1000/1000 (100%)"
+        },
+        {
+          "id": 170,
+          "position": [
+            32,
+            28
+          ],
+          "marine_orders": 1,
+          "addon_id": 666,
+          "addon_type": "BarracksTechLab",
+          "raw": "[170]Barracks\nPosition: (32, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine\nThis structure has an add-on: [666]BarracksTechLab"
+        },
+        {
+          "id": 17,
+          "position": [
+            16,
+            14
+          ],
+          "marine_orders": 0,
+          "addon_id": 369,
+          "addon_type": "BarracksTechLab",
+          "raw": "[17]Barracks\nPosition: (16, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [369]BarracksTechLab"
+        },
+        {
+          "id": 425,
+          "position": [
+            18,
+            28
+          ],
+          "marine_orders": 5,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[425]Barracks\nPosition: (18, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine, Marine, Marine"
+        },
+        {
+          "id": 482,
+          "position": [
+            27,
+            41
+          ],
+          "marine_orders": 0,
+          "addon_id": 513,
+          "addon_type": "BarracksTechLab",
+          "raw": "[482]Barracks\nPosition: (27, 41)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [513]BarracksTechLab"
+        },
+        {
+          "id": 306,
+          "position": [
+            29,
+            45
+          ],
+          "marine_orders": 0,
+          "addon_id": 91,
+          "addon_type": "BarracksTechLab",
+          "raw": "[306]Barracks\nPosition: (29, 45)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [91]BarracksTechLab"
+        },
+        {
+          "id": 930,
+          "position": [
+            33,
+            37
+          ],
+          "marine_orders": 0,
+          "addon_id": 393,
+          "addon_type": "BarracksTechLab",
+          "raw": "[930]Barracks\nPosition: (33, 37)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [393]BarracksTechLab"
+        }
+      ],
+      "marine_capable_ids": [
+        306,
+        17,
+        930,
+        482,
+        170
+      ],
+      "commands": [
+        {
+          "frame": 2109,
+          "bo": 107,
+          "actions": [
+            {
+              "action": "BARRACKSTRAIN_MARINE",
+              "units": [
+                170
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2111,
+      "barracks": [
+        {
+          "id": 849,
+          "position": [
+            24,
+            26
+          ],
+          "marine_orders": 5,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[849]Barracks\nPosition: (24, 26)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine, Marine, Marine"
+        },
+        {
+          "id": 387,
+          "position": [
+            26,
+            30
+          ],
+          "marine_orders": 0,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[387]Barracks\nPosition: (26, 30)\nHealth: 1000/1000 (100%)"
+        },
+        {
+          "id": 170,
+          "position": [
+            32,
+            28
+          ],
+          "marine_orders": 2,
+          "addon_id": 666,
+          "addon_type": "BarracksTechLab",
+          "raw": "[170]Barracks\nPosition: (32, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine\nThis structure has an add-on: [666]BarracksTechLab"
+        },
+        {
+          "id": 17,
+          "position": [
+            16,
+            14
+          ],
+          "marine_orders": 0,
+          "addon_id": 369,
+          "addon_type": "BarracksTechLab",
+          "raw": "[17]Barracks\nPosition: (16, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [369]BarracksTechLab"
+        },
+        {
+          "id": 425,
+          "position": [
+            18,
+            28
+          ],
+          "marine_orders": 5,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[425]Barracks\nPosition: (18, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine, Marine, Marine"
+        },
+        {
+          "id": 482,
+          "position": [
+            27,
+            41
+          ],
+          "marine_orders": 0,
+          "addon_id": 513,
+          "addon_type": "BarracksTechLab",
+          "raw": "[482]Barracks\nPosition: (27, 41)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [513]BarracksTechLab"
+        },
+        {
+          "id": 306,
+          "position": [
+            29,
+            45
+          ],
+          "marine_orders": 0,
+          "addon_id": 91,
+          "addon_type": "BarracksTechLab",
+          "raw": "[306]Barracks\nPosition: (29, 45)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [91]BarracksTechLab"
+        },
+        {
+          "id": 930,
+          "position": [
+            33,
+            37
+          ],
+          "marine_orders": 0,
+          "addon_id": 393,
+          "addon_type": "BarracksTechLab",
+          "raw": "[930]Barracks\nPosition: (33, 37)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [393]BarracksTechLab"
+        }
+      ],
+      "marine_capable_ids": [
+        306,
+        482,
+        930,
+        170,
+        17
+      ],
+      "commands": [
+        {
+          "frame": 2111,
+          "bo": 109,
+          "actions": [
+            {
+              "action": "BARRACKSTRAIN_MARINE",
+              "units": [
+                170
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2333,
+      "barracks": [
+        {
+          "id": 849,
+          "position": [
+            24,
+            26
+          ],
+          "marine_orders": 2,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[849]Barracks\nPosition: (24, 26)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine"
+        },
+        {
+          "id": 387,
+          "position": [
+            26,
+            30
+          ],
+          "marine_orders": 0,
+          "addon_id": 122,
+          "addon_type": "BarracksReactor",
+          "raw": "[387]Barracks\nPosition: (26, 30)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [122]BarracksReactor"
+        },
+        {
+          "id": 170,
+          "position": [
+            32,
+            28
+          ],
+          "marine_orders": 1,
+          "addon_id": 666,
+          "addon_type": "BarracksTechLab",
+          "raw": "[170]Barracks\nPosition: (32, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine\nThis structure has an add-on: [666]BarracksTechLab"
+        },
+        {
+          "id": 17,
+          "position": [
+            16,
+            14
+          ],
+          "marine_orders": 0,
+          "addon_id": 369,
+          "addon_type": "BarracksTechLab",
+          "raw": "[17]Barracks\nPosition: (16, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [369]BarracksTechLab"
+        },
+        {
+          "id": 425,
+          "position": [
+            18,
+            28
+          ],
+          "marine_orders": 3,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[425]Barracks\nPosition: (18, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine"
+        },
+        {
+          "id": 482,
+          "position": [
+            27,
+            41
+          ],
+          "marine_orders": 0,
+          "addon_id": 513,
+          "addon_type": "BarracksTechLab",
+          "raw": "[482]Barracks\nPosition: (27, 41)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [513]BarracksTechLab"
+        },
+        {
+          "id": 306,
+          "position": [
+            29,
+            45
+          ],
+          "marine_orders": 0,
+          "addon_id": 91,
+          "addon_type": "BarracksTechLab",
+          "raw": "[306]Barracks\nPosition: (29, 45)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [91]BarracksTechLab"
+        },
+        {
+          "id": 930,
+          "position": [
+            33,
+            37
+          ],
+          "marine_orders": 0,
+          "addon_id": 393,
+          "addon_type": "BarracksTechLab",
+          "raw": "[930]Barracks\nPosition: (33, 37)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [393]BarracksTechLab"
+        }
+      ],
+      "marine_capable_ids": [
+        425,
+        849,
+        387,
+        17,
+        482,
+        930,
+        306,
+        170
+      ],
+      "commands": [
+        {
+          "frame": 2333,
+          "bo": 111,
+          "actions": [
+            {
+              "action": "BARRACKSTRAIN_MARINE",
+              "units": [
+                849
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2334,
+      "barracks": [
+        {
+          "id": 849,
+          "position": [
+            24,
+            26
+          ],
+          "marine_orders": 3,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[849]Barracks\nPosition: (24, 26)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine"
+        },
+        {
+          "id": 387,
+          "position": [
+            26,
+            30
+          ],
+          "marine_orders": 0,
+          "addon_id": 122,
+          "addon_type": "BarracksReactor",
+          "raw": "[387]Barracks\nPosition: (26, 30)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [122]BarracksReactor"
+        },
+        {
+          "id": 170,
+          "position": [
+            32,
+            28
+          ],
+          "marine_orders": 1,
+          "addon_id": 666,
+          "addon_type": "BarracksTechLab",
+          "raw": "[170]Barracks\nPosition: (32, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine\nThis structure has an add-on: [666]BarracksTechLab"
+        },
+        {
+          "id": 17,
+          "position": [
+            16,
+            14
+          ],
+          "marine_orders": 0,
+          "addon_id": 369,
+          "addon_type": "BarracksTechLab",
+          "raw": "[17]Barracks\nPosition: (16, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [369]BarracksTechLab"
+        },
+        {
+          "id": 425,
+          "position": [
+            18,
+            28
+          ],
+          "marine_orders": 3,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[425]Barracks\nPosition: (18, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine, Marine"
+        },
+        {
+          "id": 482,
+          "position": [
+            27,
+            41
+          ],
+          "marine_orders": 0,
+          "addon_id": 513,
+          "addon_type": "BarracksTechLab",
+          "raw": "[482]Barracks\nPosition: (27, 41)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [513]BarracksTechLab"
+        },
+        {
+          "id": 306,
+          "position": [
+            29,
+            45
+          ],
+          "marine_orders": 0,
+          "addon_id": 91,
+          "addon_type": "BarracksTechLab",
+          "raw": "[306]Barracks\nPosition: (29, 45)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [91]BarracksTechLab"
+        },
+        {
+          "id": 930,
+          "position": [
+            33,
+            37
+          ],
+          "marine_orders": 0,
+          "addon_id": 393,
+          "addon_type": "BarracksTechLab",
+          "raw": "[930]Barracks\nPosition: (33, 37)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [393]BarracksTechLab"
+        }
+      ],
+      "marine_capable_ids": [
+        425,
+        849,
+        387,
+        17,
+        930,
+        170,
+        306,
+        482
+      ],
+      "commands": [
+        {
+          "frame": 2334,
+          "bo": 112,
+          "actions": [
+            {
+              "action": "BARRACKSTRAIN_MARINE",
+              "units": [
+                849
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2557,
+      "barracks": [
+        {
+          "id": 849,
+          "position": [
+            24,
+            26
+          ],
+          "marine_orders": 2,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[849]Barracks\nPosition: (24, 26)\nHealth: 1000/1000 (100%)\nProduction list: Marine, Marine"
+        },
+        {
+          "id": 387,
+          "position": [
+            26,
+            30
+          ],
+          "marine_orders": 0,
+          "addon_id": 122,
+          "addon_type": "BarracksReactor",
+          "raw": "[387]Barracks\nPosition: (26, 30)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [122]BarracksReactor"
+        },
+        {
+          "id": 170,
+          "position": [
+            32,
+            28
+          ],
+          "marine_orders": 0,
+          "addon_id": 666,
+          "addon_type": "BarracksTechLab",
+          "raw": "[170]Barracks\nPosition: (32, 28)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [666]BarracksTechLab"
+        },
+        {
+          "id": 17,
+          "position": [
+            16,
+            14
+          ],
+          "marine_orders": 0,
+          "addon_id": 369,
+          "addon_type": "BarracksTechLab",
+          "raw": "[17]Barracks\nPosition: (16, 14)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [369]BarracksTechLab"
+        },
+        {
+          "id": 425,
+          "position": [
+            18,
+            28
+          ],
+          "marine_orders": 1,
+          "addon_id": 0,
+          "addon_type": null,
+          "raw": "[425]Barracks\nPosition: (18, 28)\nHealth: 1000/1000 (100%)\nProduction list: Marine"
+        },
+        {
+          "id": 482,
+          "position": [
+            27,
+            41
+          ],
+          "marine_orders": 0,
+          "addon_id": 513,
+          "addon_type": "BarracksTechLab",
+          "raw": "[482]Barracks\nPosition: (27, 41)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [513]BarracksTechLab"
+        },
+        {
+          "id": 306,
+          "position": [
+            29,
+            45
+          ],
+          "marine_orders": 0,
+          "addon_id": 91,
+          "addon_type": "BarracksTechLab",
+          "raw": "[306]Barracks\nPosition: (29, 45)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [91]BarracksTechLab"
+        },
+        {
+          "id": 930,
+          "position": [
+            33,
+            37
+          ],
+          "marine_orders": 0,
+          "addon_id": 393,
+          "addon_type": "BarracksTechLab",
+          "raw": "[930]Barracks\nPosition: (33, 37)\nHealth: 1000/1000 (100%)\nState: idle\nThis structure has an add-on: [393]BarracksTechLab"
+        }
+      ],
+      "marine_capable_ids": [
+        482,
+        170,
+        17,
+        306,
+        930,
+        849,
+        387,
+        425
+      ],
+      "commands": []
+    }
+  ],
+  "limitations": "Observation snapshots, not a full per-retry unit/order trace or engine ActionResult. Positions are integer-rendered. No game simulation or new gameplay result.",
+  "artifact_hashes": {
+    "boundary_trace.json": "21244846d9407211df54ff915f7173306d051e49229a7a26ea1a7100a9dca652",
+    "driver.log": "34acd011f5a3ac5faf7062ec48f0506c6a97bed0b2bde4a6f25fa0c1b0902d60",
+    "effective_config.json": "beaa672f58f719f07d1472ce72f4ea309f201b9c7121cf9c2b4dd9414e661a13",
+    ".done": "1ca4a13146b2891c0e462123ac0cb848f92e6221f18b870a1b78c232d1956c35"
+  }
+}

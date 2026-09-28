@@ -1,0 +1,58 @@
+{
+  "run_id": "20260908-valid-bo-passthrough-v1-spb2-l6-g2-s2621640384-r1",
+  "source_sha": "019ca9942a586797621e301db77b988b65dfa7bd",
+  "node": "sc2-a100-48",
+  "gpu": 4,
+  "status": "completed",
+  "ended_at": "2026-09-08T02:07:38.067039+00:00",
+  "process_exit_code": 0,
+  "orchestration_exit_code": 0,
+  "training_updates": 0,
+  "game_seed": 2621640384,
+  "natural_games": 1,
+  "wins": 0,
+  "defeats": 1,
+  "truncated": 0,
+  "cumulative_environment_reward": -49.5,
+  "consumed_model_answers": 37,
+  "evaluable_answers": 37,
+  "valid_answers": 27,
+  "valid_build_plans_preserved": 27,
+  "valid_build_plan_mismatches": 0,
+  "all_marine_valid_answers": 18,
+  "all_marine_final_plan_length": 6,
+  "all_marine_example": {
+    "step_index": 3,
+    "game_time": "10:50",
+    "raw_answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+    "final_bo": ["marine", "marine", "marine", "marine", "marine", "marine"]
+  },
+  "commander_opening_marine_guard_log_count": 0,
+  "last_game_time_log_sample": "17:40",
+  "exact_replay_duration_not_yet_decoded": true,
+  "first_prompt_sha256": "b7dfd3a02652d430310a0396ec1f2160663dc049fa14b835b3d7bb1fafe463a0",
+  "console_sha256_verified": "ba5ea14e5c6afaa0a825f608c24a9e40bfde5280b29cffc0157ab6b0e4a76243",
+  "prompt_response_sha256": "798c61f45a4b1707f7b12a6900368512854b29e1d3dde4819dec5df7dd1723ff",
+  "replay_manifest": {
+    "sc2-logs/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-08_01-52-07/replay.SC2Replay": "606ca7ea612c7caa4e19dbd46e2a32100b2b6eec3d5638f94dda5a5ae11c606b"
+  },
+  "control": {
+    "run_id": "20260906-integrated-fixes-v1-r4-reactor-pair-slots-spb2-l6-g2-s2621640384-r1",
+    "source_sha": "c15d02b08085ddfcf20cff5517d10ceae9fa2af0",
+    "node": "sc2-a100-44",
+    "game_seed": 2621640384,
+    "natural_games": 1,
+    "wins": 0,
+    "cumulative_environment_reward": -49.5,
+    "consumed_model_answers": 56,
+    "valid_answers": 43
+  },
+  "resource_snapshot": {
+    "checked_at": "2026-09-08T02:12:16Z",
+    "gpu4_compute_processes": [],
+    "gpu4_memory_mib": 4,
+    "tmux_session_present": false
+  },
+  "method": "Read-only audit: match all 37 prompt_response rows to BO ori / BO console lines; compare valid raw production bullets to final build plans; sum all row rewards; verify console hash against result.json; cross-check .done, natural outcome and actual seed.",
+  "limitations": "Final BO preservation is not evidence that every SC2 command succeeded or every unit completed. Unit production/loss and replay combat analysis remain unverified. One game per arm on different nodes; equal seed/first query do not prove complete frame-by-frame determinism. No overall game improvement or architecture claim."
+}

@@ -1,0 +1,115 @@
+{
+  "status": "running-first-rollout",
+  "checked_at": "2026-09-16T07:08:38.303110+00:00",
+  "runtime_sha": "cf3ff4c26c9cb3f4f744b6cf4eeae909ccf92565",
+  "branch": "codex/feature-combat-result-reward",
+  "node": "sc2-a100-47",
+  "gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "run_id": "20260916-combat-result-reward-v1-spb2-A4-l6-C-temp08-rl4-4gpu-r1",
+  "control_run_id": "20260916-combat-result-reward-v1-spb2-A4-l6-B-rl4-4gpu-r1",
+  "source": "/dev/shm/sc2-combat-temperature-20260916-r1/code-cf3ff4c",
+  "control": "/dev/shm/sc2-combat-temperature-20260916-r1/control",
+  "tmux_socket": "/dev/shm/sc2-combat-temperature-20260916-r1/tmux.sock",
+  "tmux_session": "sc2_combat_temperature_C_r1",
+  "started_at": "2026-09-16T07:04:13Z",
+  "deadline_unix": 1789547653,
+  "budget_seconds": 5400,
+  "private_git_backup": "/mnt/data0601/yangjinyue/new_SCII/staging/20260916-combat-temperature-r1/source.bundle",
+  "bundle_sha256": "aa451db58c1985a293110019332cb63d7b1e8873afb839f6e9fa5d12b3eae82a",
+  "bundle_complete_history_verified": true,
+  "github_pushed": false,
+  "github_note": "Earlier outbound push was denied; no bypass. Complete Git bundle verified on private shared storage.",
+  "local_cpu_tests_passed": 24,
+  "local_extra_tests_note": "An expanded test invocation encountered missing numpy in local system Python. No dependency/code change was made; the pinned server environment passed all 30 tests.",
+  "server_cpu_tests_passed": 30,
+  "system_hash_checks_passed": true,
+  "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+  "effective_config_comparison": {
+    "normalizations": [
+      "source path",
+      "run path/name",
+      "Ray/cache path"
+    ],
+    "differences": {
+      "actor_rollout_ref.rollout.temperature": [
+        "0.4",
+        "0.8"
+      ]
+    },
+    "control_gpus": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "candidate_gpus": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "combat_reward_scale": 0.001,
+  "manifest": {
+    "source_commit": "cf3ff4c26c9cb3f4f744b6cf4eeae909ccf92565",
+    "dirty": false,
+    "world_size": 4,
+    "start_step": 4,
+    "target_steps": 8
+  },
+  "a4_restore": {
+    "loaded_global_step": 4,
+    "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/staging/20260915-scene-B-r2/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2/checkpoints/global_step_4",
+    "model_optimizer_load_returned": true,
+    "sc2_state_restored": false,
+    "exhausted_saved_epoch_closed_without_new_sample": true,
+    "driver_seed": 0,
+    "game_reset_index": 0,
+    "note": "Original model/optimizer/per-rank RNG restored; fresh games, declared driver seed0. Not bitwise SC2 resume; no answer intervention. Zero-task skipping is disabled; all four groups are retained.",
+    "game_seed_sequence_offset": null,
+    "seed_selection": "explicit coverage table",
+    "parent_source_commit": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+    "parent_run": "20260911-execution-failure-feedback-v1-spb2-original-l6-g2-A-rl4-4gpu-s0-r2",
+    "game_seed_per_collection": [
+      1098341402,
+      42613,
+      17089,
+      3236598124
+    ],
+    "planned_max_new_global_steps": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "training_seeds": [
+    {
+      "base_seed": 0,
+      "reset_index": 0,
+      "seeds": [
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402,
+        1098341402
+      ]
+    }
+  ],
+  "actual_game_started_at_from_log": "2026-09-16T07:08:03Z",
+  "game_start_evidence": "SC2Worker logged initial observation, Current stage 0 and Generate new plan... [0].",
+  "completed_new_global_steps_at_check": 0,
+  "automatic_retry": false,
+  "automatic_96_step_continuation": false,
+  "independent_post_training_evaluation_authorized": false,
+  "learning_signal_repair_validated": false,
+  "deployment_note": "Intermittent SSH failures occurred before the controlled launch; no GPU experiment was retried, and existing deployments/runs were preserved."
+}

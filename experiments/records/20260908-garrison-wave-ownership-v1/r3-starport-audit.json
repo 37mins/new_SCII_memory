@@ -1,0 +1,208 @@
+{
+  "run": "20260908-garrison-wave-ownership-v1-spb2-l6-g2-s2807211443-planner-r3",
+  "runtime_sha": "e1e25ce1d14362b209e34ec73871ebaeb63538a6",
+  "replay_sha256": "393e89103eb22070bff0a4a384036674190f7b4d8e7f9d17160ccb5622cfa1f2",
+  "console_sha256": "459a86023f45805fda36fdb849ea053cfe740c74f1413f83f47f301a870414a2",
+  "trace_sha256": "e2b4d901fce0be3ab3dbbdfc612176df6be1e77d82d7195ec8dde00d26c975a2",
+  "starport_tag": 99352595,
+  "worker_tag": 50069507,
+  "worker_live_log_tag": 4345036803,
+  "tag_note": "Live log tag minus 2**32 matches replay SCV tag; command selection and target also match.",
+  "command": {
+    "loop": 13900,
+    "sequence": 755,
+    "selected": [
+      50069507
+    ],
+    "target": {
+      "TargetPoint": {
+        "x": 481280,
+        "y": 157696,
+        "z": 32768
+      }
+    },
+    "ability": [
+      129,
+      11
+    ]
+  },
+  "worker_commands": [
+    {
+      "loop": 6816,
+      "sequence": 205,
+      "selected": [
+        50069507
+      ],
+      "target": {
+        "TargetUnit": {
+          "m_targetUnitFlags": 111,
+          "m_timer": 0,
+          "m_tag": 31981569,
+          "m_snapshotUnitLink": 506,
+          "m_snapshotControlPlayerId": 0,
+          "m_snapshotUpkeepPlayerId": 0,
+          "m_snapshotPoint": {
+            "x": 552960,
+            "y": 186368,
+            "z": 32768
+          }
+        }
+      },
+      "ability": [
+        119,
+        0
+      ]
+    },
+    {
+      "loop": 13900,
+      "sequence": 755,
+      "selected": [
+        50069507
+      ],
+      "target": {
+        "TargetPoint": {
+          "x": 481280,
+          "y": 157696,
+          "z": 32768
+        }
+      },
+      "ability": [
+        129,
+        11
+      ]
+    }
+  ],
+  "worker_commands_after_build": [],
+  "commands_targeting_starport": [],
+  "starport_history": [
+    {
+      "m_unitTagIndex": 379,
+      "m_unitTagRecycle": 19,
+      "m_unitTypeName": "Starport",
+      "m_controlPlayerId": 1,
+      "m_upkeepPlayerId": 1,
+      "m_x": 117,
+      "m_y": 38,
+      "_event": "NNet.Replay.Tracker.SUnitInitEvent",
+      "_eventid": 6,
+      "_gameloop": 14000,
+      "_bits": 312
+    },
+    {
+      "m_unitTagIndex": 379,
+      "m_unitTagRecycle": 19,
+      "m_killerPlayerId": 2,
+      "m_x": 117,
+      "m_y": 38,
+      "m_killerUnitTagIndex": 374,
+      "m_killerUnitTagRecycle": 14,
+      "_event": "NNet.Replay.Tracker.SUnitDiedEvent",
+      "_eventid": 2,
+      "_gameloop": 17267,
+      "_bits": 312
+    }
+  ],
+  "worker_history": [
+    {
+      "m_unitTagIndex": 191,
+      "m_unitTagRecycle": 3,
+      "m_unitTypeName": "SCV",
+      "m_controlPlayerId": 1,
+      "m_upkeepPlayerId": 1,
+      "m_x": 127,
+      "m_y": 43,
+      "m_creatorUnitTagIndex": 231,
+      "m_creatorUnitTagRecycle": 1,
+      "m_creatorAbilityName": "CommandCenterTrain",
+      "_event": "NNet.Replay.Tracker.SUnitBornEvent",
+      "_eventid": 1,
+      "_gameloop": 6816,
+      "_bits": 544
+    },
+    {
+      "m_unitTagIndex": 191,
+      "m_unitTagRecycle": 3,
+      "m_killerPlayerId": 2,
+      "m_x": 118,
+      "m_y": 37,
+      "m_killerUnitTagIndex": 286,
+      "m_killerUnitTagRecycle": 1,
+      "_event": "NNet.Replay.Tracker.SUnitDiedEvent",
+      "_eventid": 2,
+      "_gameloop": 14022,
+      "_bits": 304
+    }
+  ],
+  "worker_killer_type": "Banshee",
+  "starport_killer_type": "Marine",
+  "seconds_from_start_to_worker_death": 0.9821428571428572,
+  "seconds_from_worker_death_to_starport_death": 144.86607142857144,
+  "other_scvs_alive_at_worker_death": 37,
+  "console_evidence": [
+    {
+      "line": 14435,
+      "text": "(SC2Worker pid=400702) [10:16] >>> Start Processing BO #4: starport <<<"
+    },
+    {
+      "line": 14442,
+      "text": "(SC2Worker pid=400702)     -> [Pre-Move] Commanding Unit 4345036803 to Move to (131.5, 56.5)"
+    },
+    {
+      "line": 14454,
+      "text": "(SC2Worker pid=400702)     \"error\": \"[803]SCV cannot perform action MOVE_MOVE\""
+    },
+    {
+      "line": 14517,
+      "text": "(SC2Worker pid=400702)     -> [Execute Cached] Resources Ready! Using Pre-moved Unit 4345036803 to Build at (131.5, 56.5)"
+    },
+    {
+      "line": 15475,
+      "text": "(SC2Worker pid=400702) [11:09] >>> Start Processing BO #4: vikingfighter <<<"
+    },
+    {
+      "line": 15479,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15527,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15572,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15620,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15667,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15736,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15781,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15827,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15873,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15918,
+      "text": "(SC2Worker pid=400702)     -> [Wait] Action blocked: **Action Failed**: Facility under construction."
+    },
+    {
+      "line": 15985,
+      "text": "(SC2Worker pid=400702) [Skip] BO #4 skipped after 11 attempts (Threshold: 10)."
+    }
+  ],
+  "limitations": "No continuous per-building build_progress/health or SCV position/order observations are saved. Tracker death identifies the killing unit, not every attacker. No counterfactual evidence that replacement SCVs would survive or the game would be won."
+}

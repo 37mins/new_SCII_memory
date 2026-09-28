@@ -1,0 +1,38 @@
+{
+  "status": "running",
+  "started_at": "2026-09-06T00:33:03.805297+00:00",
+  "verified_at": "2026-09-06T00:34:28.734498+00:00",
+  "run_id": "20260906-unit-id-exhaustion-v1-qwen-instruct2507-l6-4gpu-rl1-s0-r1",
+  "node": "sc2-a100-44",
+  "gpu_selection": "4,5,6,7",
+  "tmux": "unitid_l6_1_0906",
+  "pane_pid": 3181472,
+  "model_worker_pids": [
+    3190891,
+    3191091,
+    3191092,
+    3191093
+  ],
+  "source_commit": "f083ec58eeeb271c8abafaf98f917762898ce152",
+  "branch": "codex/fix-unit-id-exhaustion",
+  "deployment": "/root/new-scii-unit-id-exhaustion-20260906/code-f083ec5",
+  "run_directory": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-unit-id-exhaustion-v1/runs/20260906-unit-id-exhaustion-v1-qwen-instruct2507-l6-4gpu-rl1-s0-r1",
+  "target_steps": 1,
+  "rollouts": 8,
+  "level": 6,
+  "formal": true,
+  "dirty": false,
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "model_source": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+  "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+  "world_size": 4,
+  "actual_matches_preflight": true,
+  "sha256": {
+    "manifest.json": "bd8e02529e032c6242e9739ef9ef45421d40eafc27972f24c19de1f93e81bf00",
+    "effective_config.json": "5881d7c38c19f6182703ebb5563e2df2e6add0b2d19a70fc6e85070ceab29702",
+    "preflight.log": "492576f93dc0300d4a9d37d468634da26b81cb02db650bd7030de42967ba32ca"
+  },
+  "verified_state": "Four model workers alive; SC2 games advancing. No completed PPO update or final result claimed.",
+  "automatic_96_step_restart": false
+}

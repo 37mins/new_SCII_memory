@@ -1,0 +1,1117 @@
+{
+  "source_sha": "71fae36ccc112d4c9cd303ab084c1e0a0c7eebec",
+  "log_sha256": "5067499ab9efd79f88bb5c11a333780dea003417bb6d53a89fdc6a7ba8ecdebf",
+  "scope": "CPU frozen validation and valid-answer parsing only; no model/game/update",
+  "summary": {
+    "consumed": 41,
+    "valid": 22,
+    "validator_log_matches": 41,
+    "valid_examples": 41,
+    "valid_parser_matches": 22,
+    "starts_with_example": 27,
+    "invalid_with_complete_action_excess": 17,
+    "single_build_candidate": 16
+  },
+  "cases": [
+    {
+      "log_line": 1,
+      "env": 0,
+      "id": 1,
+      "prompt_sha256": "537bd891a3836cb515a812c5ecbe57bae82377df9142dc44595806f57551493a",
+      "candidates": {
+        "supplydepot": 4,
+        "barracks": 4,
+        "marine": 24
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 2,
+      "env": 1,
+      "id": 1,
+      "prompt_sha256": "537bd891a3836cb515a812c5ecbe57bae82377df9142dc44595806f57551493a",
+      "candidates": {
+        "supplydepot": 4,
+        "barracks": 4,
+        "marine": 24
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 3,
+      "env": 2,
+      "id": 1,
+      "prompt_sha256": "537bd891a3836cb515a812c5ecbe57bae82377df9142dc44595806f57551493a",
+      "candidates": {
+        "supplydepot": 4,
+        "barracks": 4,
+        "marine": 24
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 4,
+      "env": 3,
+      "id": 1,
+      "prompt_sha256": "537bd891a3836cb515a812c5ecbe57bae82377df9142dc44595806f57551493a",
+      "candidates": {
+        "supplydepot": 4,
+        "barracks": 4,
+        "marine": 24
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 5,
+      "env": 0,
+      "id": 2,
+      "prompt_sha256": "18e0c6a496efc447c9729a3e299ef7d8abee0510174399946257659633b8ed52",
+      "candidates": {
+        "supplydepot": 2,
+        "barracks": 2,
+        "marine": 22
+      },
+      "valid": false,
+      "reason": "canonical legacy response requires `- exactname`",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "marine": {
+          "selected": 56,
+          "allowed": 22
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n-",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: marine"
+      }
+    },
+    {
+      "log_line": 6,
+      "env": 1,
+      "id": 2,
+      "prompt_sha256": "18e0c6a496efc447c9729a3e299ef7d8abee0510174399946257659633b8ed52",
+      "candidates": {
+        "supplydepot": 2,
+        "barracks": 2,
+        "marine": 22
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: Launch OFFENSE ...",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n- Launch OFFENSE ...",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 7,
+      "env": 2,
+      "id": 2,
+      "prompt_sha256": "8e1ee6c39940e970e431e21f42e03f861ef4436c2a4e572e6f25c843eafaafd1",
+      "candidates": {
+        "supplydepot": 2,
+        "barracks": 2,
+        "marine": 22
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 8,
+      "env": 3,
+      "id": 2,
+      "prompt_sha256": "8e1ee6c39940e970e431e21f42e03f861ef4436c2a4e572e6f25c843eafaafd1",
+      "candidates": {
+        "supplydepot": 2,
+        "barracks": 2,
+        "marine": 22
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: supplydep",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 18,
+          "allowed": 2
+        },
+        "barracks": {
+          "selected": 18,
+          "allowed": 2
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydep",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 9,
+      "env": 0,
+      "id": 3,
+      "prompt_sha256": "3a9ab8ee36946a34e79d3ee02cf12beb42831aef4cd29d883f9dfb4dbaa3f63e",
+      "candidates": {
+        "marine": 20
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: marine x",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "marine": {
+          "selected": 31,
+          "allowed": 20
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: marine"
+      }
+    },
+    {
+      "log_line": 10,
+      "env": 1,
+      "id": 3,
+      "prompt_sha256": "3a9ab8ee36946a34e79d3ee02cf12beb42831aef4cd29d883f9dfb4dbaa3f63e",
+      "candidates": {
+        "marine": 20
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 11,
+      "env": 2,
+      "id": 3,
+      "prompt_sha256": "d25e3710a6e73861d0cd7e35095bb8f0555b1ed77f85c917ec11e13c79b871f8",
+      "candidates": {
+        "marine": 18
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {},
+      "raw_answer": "- marine x 2",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "no build-order bullet lines"
+      }
+    },
+    {
+      "log_line": 12,
+      "env": 3,
+      "id": 3,
+      "prompt_sha256": "76755219da4eb250ac243ba8cc06e51e1cd5cc9e5e1864b033ddf5b15e3cbc18",
+      "candidates": {
+        "marine": 20
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: marine x",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "marine": {
+          "selected": 60,
+          "allowed": 20
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: marine"
+      }
+    },
+    {
+      "log_line": 13,
+      "env": 0,
+      "id": 4,
+      "prompt_sha256": "839425fc3a42d72b89311a0942e54ca4ab6218df63f5834c4c6e3359f7b1b767",
+      "candidates": {
+        "marine": 17
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "no build-order bullet lines"
+      }
+    },
+    {
+      "log_line": 14,
+      "env": 1,
+      "id": 4,
+      "prompt_sha256": "8d94514fa2b44caf4e561be485d6afab531a51f879e983507d92774be6bbce69",
+      "candidates": {
+        "marine": 18
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "no build-order bullet lines"
+      }
+    },
+    {
+      "log_line": 15,
+      "env": 2,
+      "id": 4,
+      "prompt_sha256": "00447c462425a2b3066d971001decd43d2b0a6f6824b7d6300fdb1e15947663b",
+      "candidates": {
+        "marine": 16
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "no build-order bullet lines"
+      }
+    },
+    {
+      "log_line": 16,
+      "env": 3,
+      "id": 4,
+      "prompt_sha256": "78919235f642e829cb242a397293c9710f61f4891e5fd17c169532761b845868",
+      "candidates": {
+        "marine": 17
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {},
+      "raw_answer": "- marine x 2",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "no build-order bullet lines"
+      }
+    },
+    {
+      "log_line": 17,
+      "env": 0,
+      "id": 5,
+      "prompt_sha256": "2ee10bd71f481ccb506ab144dcdf1accfb82a8866d116dac1048211bd5812c52",
+      "candidates": {
+        "marine": 15
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: supplydepot",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 15\n- supplydepot x 1\n- barracks x 1",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action outside current canonical BO candidates: supplydepot"
+      }
+    },
+    {
+      "log_line": 18,
+      "env": 1,
+      "id": 5,
+      "prompt_sha256": "7697ddc1ba3eadd06aa83deaccbe6560a82dd1617adfc5bffc0450907f0d147a",
+      "candidates": {
+        "marine": 16
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: supplydepot",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "marine": {
+          "selected": 68,
+          "allowed": 16
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 14\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action outside current canonical BO candidates: supplydepot"
+      }
+    },
+    {
+      "log_line": 19,
+      "env": 2,
+      "id": 5,
+      "prompt_sha256": "8d7445c91913f580b51794178fc526b1763c2dc742ee0329d009e31990b6793e",
+      "candidates": {
+        "marine": 14
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- marine x 12",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 20,
+      "env": 3,
+      "id": 5,
+      "prompt_sha256": "6632cbc55cc88957e1df3fe1d55a73d55e7f2388c450700a22be8fafeff8d69d",
+      "candidates": {
+        "marine": 15
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 15",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "no build-order bullet lines"
+      }
+    },
+    {
+      "log_line": 21,
+      "env": 0,
+      "id": 6,
+      "prompt_sha256": "ea117b462fc00df7d157fbd1632b1dd928d74206b7011ab1da129329ed2bfac4",
+      "candidates": {
+        "Launch OFFENSE with 12 marine": 1,
+        "marine": 12
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "no build-order bullet lines"
+      }
+    },
+    {
+      "log_line": 22,
+      "env": 1,
+      "id": 6,
+      "prompt_sha256": "55c6bab2f554a6a57be75a385c5aa72f59d69b8e5161baac5efb0d0621521296",
+      "candidates": {
+        "marine": 13
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- marine x 11",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 23,
+      "env": 2,
+      "id": 6,
+      "prompt_sha256": "1da91ff6f1799303267a85c57a2159bd2462abafd1247fb85c46cbdf92d0b7fb",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: marine x",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 18,
+          "allowed": 8
+        },
+        "barracks": {
+          "selected": 18,
+          "allowed": 3
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 24,
+      "env": 3,
+      "id": 6,
+      "prompt_sha256": "9309407977acc822e79e2bff30af87928e49c5d273763b93115c06a3c937a758",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 3,
+        "refinery": 1
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: marine x",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 10,
+          "allowed": 8
+        },
+        "barracks": {
+          "selected": 10,
+          "allowed": 3
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 25,
+      "env": 0,
+      "id": 7,
+      "prompt_sha256": "e49228fb673b14ea6c46608493e5edd5ff36a6cd7e7331844cf70b31a088e09f",
+      "candidates": {
+        "Launch OFFENSE with 12 marine": 1,
+        "marine": 10
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "no build-order bullet lines"
+      }
+    },
+    {
+      "log_line": 26,
+      "env": 1,
+      "id": 7,
+      "prompt_sha256": "291b11834f282c44280408c7013ba3305191ab4b5508982092522f1b7842dde9",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 2,
+        "refinery": 1
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: marine x",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 18,
+          "allowed": 8
+        },
+        "barracks": {
+          "selected": 18,
+          "allowed": 3
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 27,
+      "env": 2,
+      "id": 7,
+      "prompt_sha256": "9363b21f89c240cdb49973b213adc3038be2846a4ed45cd3a5692d062eb59f98",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 41,
+        "supplydepot": 7,
+        "barracks": 1,
+        "reactor barracks": 2,
+        "scv": 3
+      },
+      "valid": false,
+      "reason": "action count exceeds current BO remainder: supplydepot",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 9,
+          "allowed": 7
+        },
+        "barracks": {
+          "selected": 2,
+          "allowed": 1
+        },
+        "Launch OFFENSE with 8 marine": {
+          "selected": 2,
+          "allowed": 1
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- Launch OFFENSE with 8 marine\n- supplydepot x 7\n- barracks x 1\n- reactor barracks x 2\n- scv x 3\n- Launch OFFENSE with 8 marine",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 28,
+      "env": 3,
+      "id": 7,
+      "prompt_sha256": "452d3fbf7cdc105ea644403a5cad1f61626ae4f221d07fb3fc0f5cc8bc11f4fa",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 41,
+        "supplydepot": 7,
+        "barracks": 1,
+        "reactor barracks": 2,
+        "scv": 3
+      },
+      "valid": false,
+      "reason": "action count exceeds current BO remainder: supplydepot",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1",
+      "starts_with_example": false,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 12,
+          "allowed": 7
+        },
+        "barracks": {
+          "selected": 12,
+          "allowed": 1
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- Launch OFFENSE with 8 marine\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n- supplydepot x 1\n- barracks x 1\n",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 29,
+      "env": 0,
+      "id": 8,
+      "prompt_sha256": "0ef44cf133bb5f654f0f8401b153bc5a793e1f29a996e36c3ef8bbc5bf90d8c4",
+      "candidates": {
+        "Launch OFFENSE with 12 marine": 1,
+        "marine": 8
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {},
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- Launch OFFENSE with 12 marine\n</answer>",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 30,
+      "env": 1,
+      "id": 8,
+      "prompt_sha256": "0e76edccdc719d8770c29c49d5025d7690145dd030178bdb90e43197fe1dbe3f",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 41,
+        "supplydepot": 7,
+        "barracks": 1,
+        "reactor barracks": 2,
+        "scv": 2
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1",
+      "starts_with_example": false,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- Launch OFFENSE with 8 marine\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 2\n- scv x 2\n- marine x 1",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 31,
+      "env": 2,
+      "id": 8,
+      "prompt_sha256": "da5803745806e2179cbac8b39d3a84199441ba188e0f470a2e48fe1099d705d7",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 50,
+        "supplydepot": 9,
+        "mule": 6,
+        "scv": 15,
+        "marauder": 4,
+        "commandcenter": 2,
+        "techlab barracks": 1,
+        "factory": 1
+      },
+      "valid": false,
+      "reason": "canonical legacy response requires `- exactname`",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {
+        "marine": {
+          "selected": 52,
+          "allowed": 50
+        }
+      },
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- mule x 2\n- marauder x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n-",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: marine"
+      }
+    },
+    {
+      "log_line": 32,
+      "env": 3,
+      "id": 8,
+      "prompt_sha256": "5680efe167e752c07a15db275b423ce514cfccff69584d08ca15dd5c3661d074",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 39,
+        "supplydepot": 6,
+        "reactor barracks": 1,
+        "scv": 3
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 1",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 1\n- Launch OFFENSE with 8 marine",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 33,
+      "env": 0,
+      "id": 9,
+      "prompt_sha256": "a564dfbea009153c0fdd398bb8316d0202c01d3606c2a910063ac71aceefea27",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 42,
+        "supplydepot": 8,
+        "barracks": 3,
+        "reactor barracks": 3,
+        "scv": 2,
+        "refinery": 1
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 34,
+      "env": 1,
+      "id": 9,
+      "prompt_sha256": "baeb77d4cf4f6693a3bdf8955a0acb955d9caa6f1936a57d568fa5bc43fba22f",
+      "candidates": {
+        "marine": 50,
+        "supplydepot": 9,
+        "mule": 6,
+        "scv": 15,
+        "marauder": 4,
+        "commandcenter": 2,
+        "techlab barracks": 1,
+        "factory": 1
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: supplydepot x",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 18,
+          "allowed": 9
+        }
+      },
+      "raw_answer": "- marine x 1\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- commandcenter x 1\n- techlab barracks x 1\n- factory x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x ",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 35,
+      "env": 2,
+      "id": 9,
+      "prompt_sha256": "501bc5474b59861a9b70aac33805645af40381aaec3286612f9e125a44f43301",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 48,
+        "supplydepot": 8,
+        "mule": 6,
+        "scv": 15,
+        "marauder": 3,
+        "commandcenter": 2,
+        "factory": 1
+      },
+      "valid": false,
+      "reason": "action count exceeds current BO remainder: mule",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {
+        "mule": {
+          "selected": 7,
+          "allowed": 6
+        },
+        "scv": {
+          "selected": 75,
+          "allowed": 15
+        }
+      },
+      "raw_answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- mule x 2\n- marauder x 1\n- commandcenter x 2\n- factory x 1\n- marine x 2\n- supplydepot x 1\n- mule x 1\n- scv x 15\n- marine x 1\n- supplydepot x 1\n- mule x 1\n- scv x 15\n- marine x 1\n- supplydepot x 1\n- mule x 1\n- scv x 15\n- marine x 1\n- supplydepot x 1\n- mule x 1\n- scv x 15\n- marine x 1\n- supplydepot x 1\n- mule x 1\n- scv x 15",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: mule"
+      }
+    },
+    {
+      "log_line": 36,
+      "env": 3,
+      "id": 9,
+      "prompt_sha256": "6994351e685d9f38ee78ea7e638803f30a227c78ca448407819bd8fa402b4a73",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 50,
+        "supplydepot": 9,
+        "mule": 6,
+        "scv": 15,
+        "marauder": 4,
+        "commandcenter": 2,
+        "techlab barracks": 1,
+        "factory": 1
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: techlab",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2",
+      "starts_with_example": true,
+      "complete_action_excess": {
+        "marine": {
+          "selected": 52,
+          "allowed": 50
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2\n- marauder x 2\n- factory x 1\n- techlab barracks x 1\n- commandcenter x 2\n- techlab x 1\n- marine x 50\n- Launch OFFENSE with 8 marine",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action outside current canonical BO candidates: techlab"
+      }
+    },
+    {
+      "log_line": 37,
+      "env": 0,
+      "id": 10,
+      "prompt_sha256": "e8b986cd6d5fc3edd555d21dcabab23f1a3af62b1a3352542ee0b22dc8d123b6",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 40,
+        "supplydepot": 6,
+        "barracks": 1,
+        "reactor barracks": 3,
+        "scv": 2,
+        "refinery": 1
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1",
+      "starts_with_example": true,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    },
+    {
+      "log_line": 38,
+      "env": 1,
+      "id": 10,
+      "prompt_sha256": "e90f1e6476b7472db9fce2bdff008b45418539c73b462e099196608006147e1c",
+      "candidates": {
+        "marine": 48,
+        "supplydepot": 8,
+        "mule": 6,
+        "scv": 15,
+        "marauder": 3,
+        "commandcenter": 2,
+        "factory": 1
+      },
+      "valid": false,
+      "reason": "action count exceeds current BO remainder: supplydepot",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 12,
+          "allowed": 8
+        }
+      },
+      "raw_answer": "- scv x 1\n- marauder x 1\n- commandcenter x 1\n- factory x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine x 1\n- supplydepot x 1\n- marine",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 41,
+      "env": 0,
+      "id": 11,
+      "prompt_sha256": "86255454daebac7d883087ca423985b08a4f9d994fe5474c8f7d2a25e5635927",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 38,
+        "supplydepot": 4,
+        "reactor barracks": 3,
+        "scv": 2,
+        "refinery": 1
+      },
+      "valid": false,
+      "reason": "canonical legacy response requires `- exactname`",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 9,
+          "allowed": 4
+        },
+        "reactor barracks": {
+          "selected": 8,
+          "allowed": 3
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 2\n- supplydepot x 1\n-",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action count exceeds current BO remainder: supplydepot"
+      }
+    },
+    {
+      "log_line": 42,
+      "env": 1,
+      "id": 11,
+      "prompt_sha256": "c55fee72c6b27fa2d1f5e0986974ab32e80439a40a717c6947418cf9e74c5215",
+      "candidates": {
+        "marine": 46,
+        "supplydepot": 6,
+        "mule": 6,
+        "siegetank": 9,
+        "scv": 15,
+        "marauder": 2,
+        "commandcenter": 2,
+        "starport": 1
+      },
+      "valid": false,
+      "reason": "action outside current canonical BO candidates: siege tank",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {
+        "supplydepot": {
+          "selected": 11,
+          "allowed": 6
+        },
+        "marauder": {
+          "selected": 11,
+          "allowed": 2
+        }
+      },
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 1\n- marauder x 1\n- siege tank x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n- marauder x 1\n- supplydepot x 1\n",
+      "remove_last_line_only": {
+        "valid": false,
+        "reason": "action outside current canonical BO candidates: siege tank"
+      }
+    },
+    {
+      "log_line": 45,
+      "env": 0,
+      "id": 12,
+      "prompt_sha256": "ce79b795d950f534896fb703187634dbae94887e296d1583d783ec1ba06e68c1",
+      "candidates": {
+        "Launch OFFENSE with 8 marine": 1,
+        "marine": 50,
+        "supplydepot": 9,
+        "mule": 6,
+        "scv": 15,
+        "marauder": 4,
+        "commandcenter": 2,
+        "techlab barracks": 1,
+        "factory": 1
+      },
+      "valid": true,
+      "reason": "",
+      "valid_example": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2",
+      "starts_with_example": false,
+      "complete_action_excess": {},
+      "raw_answer": "Here are the Build Orders with attack instructions:\n- marine x 5\n- supplydepot x 2\n- mule x 2\n- marauder x 2\n- factory x 1\n- techlab barracks x 1\n- Launch OFFENSE with 8 marine",
+      "remove_last_line_only": {
+        "valid": true,
+        "reason": ""
+      }
+    }
+  ],
+  "tokenizer_check": {
+    "method": "CPU AutoTokenizer from actual run/model, rendered frozen single-user chat; original generation IDs not saved",
+    "prompt_token_min": 844,
+    "prompt_token_max": 982,
+    "prompt_limit": 4096,
+    "eos_token_id": 151645,
+    "pad_token_id": 151643,
+    "decoded_text_at192_ids": [
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        11
+      ]
+    ],
+    "all_15_already_exceed_quota": true,
+    "all_15_still_invalid_after_removing_last_line": true
+  }
+}

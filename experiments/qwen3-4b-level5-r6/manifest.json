@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260818-qwen-canonical-plan-rl-v1",
+  "run_id": "20260818-qwen-canonical-plan-rl-v1-qwen-base-l5-full96-s0-r6",
+  "status": "completed",
+  "completed_at_utc": "2026-08-19T01:47:13Z",
+  "source": {
+    "historical_runtime_commit": "e61a23b8c642cb1b88d67f11f1f6d9a96a65ef31",
+    "orchestration_commit": "cbf7424b1ec764d2b059fbd2ffe410f98469f9c7",
+    "dirty": false
+  },
+  "model": {
+    "id": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "project_sft": false,
+    "prior_project_rl": false,
+    "thinking": false,
+    "snapshot_manifest_sha256": "82fdeae910670892e5c70b177ca5ec30d3d69090416e34480be6d63880f7a56c"
+  },
+  "environment": {
+    "map": "Flat128",
+    "map_sha256": "3916dbd2bb662a6e9c9bd27089906630c8b0a42fdbab51fc4401cf1df7b9b212",
+    "sc2_build": "Base75689",
+    "difficulty": "Hard",
+    "ai_build": "Air",
+    "race": "Terran",
+    "opponent_race": "Terran",
+    "seed": 0,
+    "max_planner_steps": 20,
+    "executor": "System-v1 old_micro marine_pressure",
+    "memory": "off",
+    "external_tools": false
+  },
+  "planner": {
+    "protocol": "legacy",
+    "segment_max": 6,
+    "bullet_max": 6,
+    "max_prompt_tokens": 4096,
+    "max_response_tokens": 96
+  },
+  "training": {
+    "algorithm": "GiGPO",
+    "advantage_mode": "mean_norm",
+    "updates": 96,
+    "rollouts_per_update": 8,
+    "gpus": 8,
+    "learning_rate": 1e-6,
+    "gamma": 0.95,
+    "gradient_clip": 1.0,
+    "kl_loss_coefficient": 0.01,
+    "entropy_coefficient": 0.001,
+    "rollout_engine": "hf",
+    "temperature": 0.4,
+    "top_p": 0.9,
+    "use_remove_padding": false
+  },
+  "result": {
+    "rollouts": 768,
+    "successes": 625,
+    "success_rate": 0.8138020833333334,
+    "mean_episode_reward": 9.903677083333333,
+    "first_16_success_rate": 0.734375,
+    "last_16_success_rate": 0.8984375,
+    "first_16_mean_episode_reward": 6.2185625,
+    "last_16_mean_episode_reward": 14.8295625,
+    "exit_code": 0,
+    "checkpoint_complete": true
+  }
+}

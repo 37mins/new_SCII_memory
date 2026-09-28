@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "run_id": "20260828-qwen3-4b-instruct-2507-level5-v1-smoke5-s0-r5",
+  "status": "completed",
+  "gate": "passed",
+  "node": "sc2-a100-197",
+  "gpus": [0, 1, 2, 3, 4, 5, 6, 7],
+  "started_at_utc": "2026-08-28T08:22:59Z",
+  "completed_at_utc": "2026-08-28T08:31:27Z",
+  "exit_code": 0,
+  "source_commit": "f34d09b08d99a8570f1d19c22bffbc4c4d059ae5",
+  "run_path": "/tmp/yangjinyue-qwen-instruct2507-level5/runs/20260828-qwen3-4b-instruct-2507-level5-v1-smoke5-s0-r5",
+  "completed_updates": 1,
+  "terminal_rollouts": 8,
+  "successes": 7,
+  "metrics": {
+    "episode_success_rate": 0.875,
+    "mean_episode_reward": 16.375,
+    "valid_action_ratio": 0.179,
+    "actor_pg_loss": -0.956,
+    "actor_kl_loss": 0.529,
+    "actor_ppo_kl": -0.231,
+    "actor_pg_clipfrac": 0.104,
+    "pre_clip_gradient_norm": 197.281,
+    "advantage_min": -2.353,
+    "advantage_max": 4.087,
+    "response_clip_ratio": 0.375,
+    "throughput_tokens_per_second": 20.093
+  },
+  "checks": {
+    "all_training_metrics_finite": true,
+    "thinking_markers": 0,
+    "checkpoint_iteration": 1,
+    "model_checkpoint_ranks": 8,
+    "optimizer_checkpoint_ranks": 8,
+    "extra_state_checkpoint_ranks": 8
+  },
+  "artifacts": {
+    "controller_log_sha256": "b000f174754ce6e14787bf7bbc42561b792e95402057dfd9f5b7e64e4eb3bce7",
+    "prompt_response_sha256": "303cfac090ca068308a3506ea7568f225fd85e9b09fde58640376cc39de85536",
+    "training_seeds_sha256": "bfb645109985416db9f25fdc7c2c8a66e62aefa2c4a4a6e44320d47219a7e0c3",
+    "run_manifest_sha256": "32f0b6b4d266a68d0563145a055ef53c44e8d0c576e0a3f0bff1bbc4bb555144",
+    "checkpoint_data_sha256": "7d11914eb34626e86526acb40f7fc8304228b0f6f9daa5a0b8919bdc2ab0e272",
+    "checkpoint_bytes": 49843221061
+  },
+  "notes": "The smoke starts from the official checkpoint and is a gate, not an estimate of final performance. The high pre-clip gradient norm and 37.5% response clipping are finite but must be monitored without changing the matched control before the 96-update comparison."
+}

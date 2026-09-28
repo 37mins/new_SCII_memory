@@ -1,0 +1,23 @@
+{
+  "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-updates-opt4-r12",
+  "status": "failed",
+  "exit_code": 1,
+  "node": "sc2-a100-44",
+  "gpus": [4, 5, 6, 7],
+  "source_commit": "33a2e8186f01a9e7d075e1f44e2a403cfbdd6037",
+  "started_at": "2026-09-06T11:24:46.582442+00:00",
+  "ended_at": "2026-09-06T11:25:38.392613+00:00",
+  "initial_logprob_gap_all_ranks": 0.0,
+  "optimizer_updates": 0,
+  "failure": "ValueError: Pointer argument (at 4) cannot be accessed from Triton (cpu tensor?)",
+  "stage": "start_trace -> record_full_batch -> actor forward -> cross entropy, before optimizer update",
+  "cause": "Diagnostic directly invoked actor.update_policy with CPU prefix labels, omitting original ActorRolloutRefWorker.update_actor's data.to(current_device()) boundary",
+  "fix": "Move complete prefix to current GPU before direct actor.update_policy; no production training changes",
+  "retry": "updates-opt4-r13",
+  "old_artifacts_preserved": true,
+  "artifact_sha256": {
+    "manifest.json": "0d7895a0071e2e378a07db485b5a771c0787163f79aec3b3d44a0c78a4661aea",
+    "result.json": "785bd204831e77eae7b28d471db036b91f600143b6a62b133a4a423314b919a4",
+    "console.log": "7e4e21163614a9f545b718b265d7f011deda189ec09cfeb80412170ce6f7b4f7"
+  }
+}

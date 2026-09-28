@@ -1,0 +1,29 @@
+--- launcher.sh
++++ launcher.sh
+@@ -13,5 +13,7 @@
+ TRAINING_SEED_PATCH_SHA=${TRAINING_SEED_PATCH_SHA:?TRAINING_SEED_PATCH_SHA is required}
+ HF_ROLLOUT_OFFLOAD_PATCH_SHA=${HF_ROLLOUT_OFFLOAD_PATCH_SHA:?HF_ROLLOUT_OFFLOAD_PATCH_SHA is required}
++CHAT_TEMPLATE_CONTROL_PATCH_SHA=${CHAT_TEMPLATE_CONTROL_PATCH_SHA:?CHAT_TEMPLATE_CONTROL_PATCH_SHA is required}
++CHAT_TEMPLATE_CANARY_SHA=${CHAT_TEMPLATE_CANARY_SHA:?CHAT_TEMPLATE_CANARY_SHA is required}
+ RL_REWARD_BALANCE_PATCH_SHA=${RL_REWARD_BALANCE_PATCH_SHA:?RL_REWARD_BALANCE_PATCH_SHA is required}
+ QWEN_BASE_CHECKPOINT_PATCH_SHA=${QWEN_BASE_CHECKPOINT_PATCH_SHA:?QWEN_BASE_CHECKPOINT_PATCH_SHA is required}
+ MICRO=${MICRO:-old}
+@@ -309,5 +311,9 @@
+   echo "TRAINING_SEED_PATCH_SHA=${training_seed_patch_sha}"
+   echo "HF_ROLLOUT_OFFLOAD_PATCH_SHA=${hf_rollout_offload_patch_sha}"
++  echo "CHAT_TEMPLATE_CONTROL_PATCH_SHA=${CHAT_TEMPLATE_CONTROL_PATCH_SHA}"
++  echo "CHAT_TEMPLATE_CANARY_SHA=${CHAT_TEMPLATE_CANARY_SHA}"
++  echo "ENABLE_THINKING=0"
++  echo "FORBID_THINKING_OUTPUT=1"
+   echo "RL_REWARD_BALANCE_PATCH_SHA=${rl_reward_balance_patch_sha}"
+   echo "QWEN_BASE_CHECKPOINT_PATCH_SHA=${QWEN_BASE_CHECKPOINT_PATCH_SHA}"
+   echo "PROJECT_ROOT=${PROJECT_ROOT}"
+@@ -482,6 +488,8 @@
+     trainer.val_before_train=False \
+     trainer.val_only=False \
+     data.max_prompt_length="${MAX_PROMPT_LENGTH}" \
++    +data.apply_chat_template_kwargs.enable_thinking=False \
++    +env.forbid_thinking_output=True \
+     actor_rollout_ref.actor.fsdp_config.param_offload=True \
+     actor_rollout_ref.actor.fsdp_config.optimizer_offload=True \
+     actor_rollout_ref.ref.fsdp_config.param_offload=True \

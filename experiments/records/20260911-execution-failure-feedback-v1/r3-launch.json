@@ -1,0 +1,86 @@
+{
+  "status": "running",
+  "observed_at": "2026-09-11T05:08:12Z",
+  "source_commit": "d155c96eaccf9aa809544945b387f0e17e1ca5bd",
+  "source_dirty": false,
+  "node": "sc2-a100-43",
+  "deployment": "/root/new-scii-execution-feedback-20260911/code-d155c96",
+  "session": "sc2_feedback_ab_r3",
+  "control": "/root/new-scii-execution-feedback-20260911/pair-r3",
+  "started_at": "2026-09-11T05:04:17Z",
+  "hard_deadline": "2026-09-11T06:01:17Z",
+  "budget_seconds": 3420,
+  "automatic_retry": false,
+  "storage_root": "/root/new-scii-execution-feedback-local-20260911/shared",
+  "model": "SpikingBrain-2.0-instruct, trained Level7 global_step_24",
+  "checkpoint_parent_source_commit": "90b3fdc2fb7fadc1230861306b20c27540d9b736",
+  "checkpoint_parent_manifest_sha256": "8eb7f1c7ab7d0175061de311ef021af1568dcc9417e5c8207c8668ccc894b444",
+  "checkpoint_hash_list_sha256": "1aaee6f2cd16a80c13e93cf30ab883f0bfc593bd73afb2db910266da4f4493ce",
+  "full_private_source_bundle_sha256": "16d4a0184e3a0c600b6c54a098a8ef63a5984f40abfc21d701372e3572bb68a4",
+  "mode": "evaluation_only",
+  "level": 6,
+  "map": "Flat128",
+  "opponent": "Terran/Air",
+  "games_per_arm": 4,
+  "actual_game_seeds_per_arm": [52620, 52620, 17089, 17089],
+  "independent_scenarios": 2,
+  "arms": {
+    "A": {
+      "run_id": "20260911-execution-failure-feedback-v1-spb2-l7s24-l6-g2-A-eval4-s0-r3",
+      "gpus": [0, 1, 2, 3],
+      "execution_failure_feedback": 0,
+      "loaded_global_step": 24,
+      "checkpoint_load_returned": true,
+      "game_worker_pids": [3624244, 3624245, 3624246, 3624247]
+    },
+    "B": {
+      "run_id": "20260911-execution-failure-feedback-v1-spb2-l7s24-l6-g2-B-eval4-s0-r3",
+      "gpus": [4, 5, 6, 7],
+      "execution_failure_feedback": 1,
+      "loaded_global_step": 24,
+      "checkpoint_load_returned": true,
+      "game_worker_pids": [3624370, 3624371, 3624372, 3624373]
+    }
+  },
+  "copy": {
+    "source_node": "sc2-a100-44",
+    "started_at": "2026-09-11T04:40:44Z",
+    "ended_at": "2026-09-11T05:00:35Z",
+    "deadline": "2026-09-11T05:10:44Z",
+    "direct_transfer_exit_code": 0,
+    "total_file_bytes": 79825153682,
+    "deleted_files": 0,
+    "integrity": "rsync --checksum --append-verify; existing partial prefix reused",
+    "source_log_sha256": "63a6429fec53014a86170bad67520bbdd6e0ee68aca353bb38cbb0d55cd62aa7",
+    "initial_relay_exit_code": 2,
+    "initial_relay_record_retained": true,
+    "private_keys_copied": false,
+    "host_key_check_disabled": false,
+    "global_nfs_mount_modified": false
+  },
+  "verification": {
+    "ended_at": "2026-09-11T05:03:04Z",
+    "exit_code": 0,
+    "source_model_sc2_hashes_matched": true,
+    "checkpoint_files_hashed": 14,
+    "log_sha256": "2b50b6967ba02748f6fdc54706cea0c62c25a0ca38019f30b3cadf936c39bdd8",
+    "node43_cpu_entry_tests_passed": 8,
+    "cpu_entry_tests_seconds": 4.398
+  },
+  "effective_config_comparison": {
+    "source": "saved r2 A effective_config.json, read through node44; saved r3 A/B effective_config.json",
+    "normalization": ["storage root", "deployment path", "run ID", "Ray directory"],
+    "r2_A_to_r3_A_remaining_differences": {},
+    "r3_A_to_B_remaining_differences": {
+      "+ray_init.runtime_env.env_vars.SC2_EXECUTION_FAILURE_FEEDBACK": ["'0'", "'1'"]
+    }
+  },
+  "observed_result": {
+    "sc2_games_started": 8,
+    "planner_initial_requests": 8,
+    "initial_prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+    "natural_games_completed": 0,
+    "optimizer_updates": 0,
+    "feedback_effect": "not yet evaluated"
+  }
+}

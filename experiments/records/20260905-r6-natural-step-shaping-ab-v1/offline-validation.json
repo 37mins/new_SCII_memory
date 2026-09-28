@@ -1,0 +1,26 @@
+{
+  "status": "offline_passed_live_pending",
+  "verified_at": "2026-09-05T10:58:44Z",
+  "source_commit": "583d1888eefa8eda892963a6aa4386b9ed3b6214",
+  "validated_parent_runtime": "8ac1e197aa11403a43f3afd5b7b204188f653c4f",
+  "baseline_tag": "validated/r6-natural-terminal-1step-20260905",
+  "node": "sc2-a100-44",
+  "deployment": "/root/new-scii-r6-shaping-ab-20260905/code",
+  "source_dirty": false,
+  "local_tests_passed": 28,
+  "linux_tests_passed": 32,
+  "linux_command": "PYTHONPATH=/root/new-scii-r6-shaping-ab-20260905/code:/root/new-scii-spb2-level5-control/python PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -B -m unittest discover -s tests -v",
+  "shell_syntax_and_diff_check": "passed",
+  "mechanism_regression": {"unchanged_state_score": 2.0, "repeated_calls": 20, "legacy_state_bonus_sum": 10.0, "off_state_bonus_sum": 0.0, "incoming_rewards_preserved": true, "terminal_rewards_preserved": true},
+  "planner_outside_get_action_sha256": "0cad37132557cb87b1ba72d8792ffcc087310f0ae79b96cf28a9347c0d914694",
+  "dry_run_only_nonpath_difference": {"+ray_init.runtime_env.env_vars.SC2_STEP_SHAPING_MODE": ["'legacy'", "'off'"]},
+  "artifacts_sha256": {
+    "cpu-tests.log": "2b2a0f43e6976e93a36b891c5bed88188f21623f15f0ea5922c6463749fa3dd4",
+    "source.bundle": "3c7bef5cb58f9c2c2e268a5f5322206631b9a65530aa107f00ac7fb9ecb26dfb",
+    "dry-legacy/effective_config.json": "1bdbbd026648bfe09b42f6d79e56dfffc8bec4e2113881e06d8fa9fc8a34d906",
+    "dry-off/effective_config.json": "6ae26685d1e8cf93fc5e3dddaa1890396665e0f1079e1cc300ff950f133a856c"
+  },
+  "live_gpu_runs_started": 0,
+  "live_gate_pending": ["explicit GPU A/B approval", "private GitHub synchronization approval and verification", "fresh node ownership check"],
+  "conclusion": "Only the per-call state bonus is disabled in the candidate. No live win-rate or learning improvement has been established; legacy remains the default."
+}

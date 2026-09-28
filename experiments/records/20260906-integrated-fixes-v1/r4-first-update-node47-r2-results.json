@@ -1,0 +1,881 @@
+{
+  "at_utc": "2026-09-07T10:45:52.613886+00:00",
+  "run_id": "20260906-integrated-fixes-v1-r4-step2-first-update-8gpu-node47-r2",
+  "source_sha": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+  "scope": "CPU only, saved gradients and small batch; no checkpoint loads or GPU",
+  "manifest": {
+    "run_id": "20260906-integrated-fixes-v1-r4-step2-first-update-8gpu-node47-r2",
+    "started_at": "2026-09-07T10:37:37.730263+00:00",
+    "diagnostic_commit": "ff4086c867a60a425ea3f192a76d7a2a64dc2719",
+    "runtime_commit": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+    "node": "sc2-a100-47",
+    "max_gpu_seconds": 1680,
+    "compiler_include_path": "/dev/shm/spb-unitid-20260906/include/python3.12:/dev/shm/spb-unitid-20260906/include"
+  },
+  "done": {
+    "status": "completed",
+    "process_exit_code": 0,
+    "ended_at": "2026-09-07T10:39:24.905666+00:00",
+    "rank_tails": {
+      "rank-00.jsonl": "completed",
+      "rank-01.jsonl": "completed",
+      "rank-04.jsonl": "completed",
+      "rank-03.jsonl": "completed",
+      "rank-06.jsonl": "completed",
+      "rank-02.jsonl": "completed",
+      "rank-07.jsonl": "completed",
+      "rank-05.jsonl": "completed"
+    },
+    "sc2_started": false,
+    "diagnostic_only": true,
+    "max_optimizer_updates": 1
+  },
+  "summary": {
+    "samples": 184,
+    "optimizer_updates": 1,
+    "pre_vs_old": {
+      "tokens": 2087,
+      "finite": true,
+      "k1_token_mean": 0,
+      "k1_response_mean": 0,
+      "abs_mean": 0,
+      "abs_max": 0,
+      "delta_quantiles": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "drops_over20": 0
+    },
+    "post_vs_old": {
+      "tokens": 2087,
+      "finite": true,
+      "k1_token_mean": 0.01614255589849365,
+      "k1_response_mean": 0.007934726006690424,
+      "abs_mean": 0.017488268499004252,
+      "abs_max": 6.8320465087890625,
+      "delta_quantiles": [
+        -6.8320465087890625,
+        -0.005914764404296876,
+        0,
+        0,
+        0,
+        0.0000152587890625,
+        0.6912155151367188
+      ],
+      "drops_over20": 0
+    },
+    "post_vs_pre": {
+      "tokens": 2087,
+      "finite": true,
+      "k1_token_mean": 0.01614255589849365,
+      "k1_response_mean": 0.007934726006690424,
+      "abs_mean": 0.017488268499004252,
+      "abs_max": 6.8320465087890625,
+      "delta_quantiles": [
+        -6.8320465087890625,
+        -0.005914764404296876,
+        0,
+        0,
+        0,
+        0.0000152587890625,
+        0.6912155151367188
+      ],
+      "drops_over20": 0
+    },
+    "gradient_norm_from_shards_before": 24.80706029039192,
+    "gradient_norm_from_shards_after": 0.9999999529151453
+  },
+  "ranks": [
+    {
+      "rank": 0,
+      "valid_tokens_in_update": 26,
+      "loss_logprob_gradient_abs_max_error": 0,
+      "loss_entropy_gradient_abs_max_error": 0,
+      "padding_logprob_gradient_abs_max": 0,
+      "gradient_clip_slice_abs_max_error": 0,
+      "adam_group": {
+        "lr": 0.000001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-8,
+        "weight_decay": 0.01,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": null,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null,
+        "decoupled_weight_decay": true,
+        "initial_lr": 0.000001
+      },
+      "slices": 65536,
+      "shard_numel": 502808512
+    },
+    {
+      "rank": 1,
+      "valid_tokens_in_update": 31,
+      "loss_logprob_gradient_abs_max_error": 0,
+      "loss_entropy_gradient_abs_max_error": 0,
+      "padding_logprob_gradient_abs_max": 0,
+      "gradient_clip_slice_abs_max_error": 0,
+      "adam_group": {
+        "lr": 0.000001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-8,
+        "weight_decay": 0.01,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": null,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null,
+        "decoupled_weight_decay": true,
+        "initial_lr": 0.000001
+      },
+      "slices": 65536,
+      "shard_numel": 502808512
+    },
+    {
+      "rank": 2,
+      "valid_tokens_in_update": 8,
+      "loss_logprob_gradient_abs_max_error": 0,
+      "loss_entropy_gradient_abs_max_error": 0,
+      "padding_logprob_gradient_abs_max": 0,
+      "gradient_clip_slice_abs_max_error": 0,
+      "adam_group": {
+        "lr": 0.000001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-8,
+        "weight_decay": 0.01,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": null,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null,
+        "decoupled_weight_decay": true,
+        "initial_lr": 0.000001
+      },
+      "slices": 65536,
+      "shard_numel": 502808512
+    },
+    {
+      "rank": 3,
+      "valid_tokens_in_update": 26,
+      "loss_logprob_gradient_abs_max_error": 0,
+      "loss_entropy_gradient_abs_max_error": 0,
+      "padding_logprob_gradient_abs_max": 0,
+      "gradient_clip_slice_abs_max_error": 0,
+      "adam_group": {
+        "lr": 0.000001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-8,
+        "weight_decay": 0.01,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": null,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null,
+        "decoupled_weight_decay": true,
+        "initial_lr": 0.000001
+      },
+      "slices": 65536,
+      "shard_numel": 502808512
+    },
+    {
+      "rank": 4,
+      "valid_tokens_in_update": 12,
+      "loss_logprob_gradient_abs_max_error": 0,
+      "loss_entropy_gradient_abs_max_error": 0,
+      "padding_logprob_gradient_abs_max": 0,
+      "gradient_clip_slice_abs_max_error": 0,
+      "adam_group": {
+        "lr": 0.000001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-8,
+        "weight_decay": 0.01,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": null,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null,
+        "decoupled_weight_decay": true,
+        "initial_lr": 0.000001
+      },
+      "slices": 65536,
+      "shard_numel": 502808512
+    },
+    {
+      "rank": 5,
+      "valid_tokens_in_update": 3,
+      "loss_logprob_gradient_abs_max_error": 0,
+      "loss_entropy_gradient_abs_max_error": 0,
+      "padding_logprob_gradient_abs_max": 0,
+      "gradient_clip_slice_abs_max_error": 0,
+      "adam_group": {
+        "lr": 0.000001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-8,
+        "weight_decay": 0.01,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": null,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null,
+        "decoupled_weight_decay": true,
+        "initial_lr": 0.000001
+      },
+      "slices": 65536,
+      "shard_numel": 502808512
+    },
+    {
+      "rank": 6,
+      "valid_tokens_in_update": 3,
+      "loss_logprob_gradient_abs_max_error": 0,
+      "loss_entropy_gradient_abs_max_error": 0,
+      "padding_logprob_gradient_abs_max": 0,
+      "gradient_clip_slice_abs_max_error": 0,
+      "adam_group": {
+        "lr": 0.000001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-8,
+        "weight_decay": 0.01,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": null,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null,
+        "decoupled_weight_decay": true,
+        "initial_lr": 0.000001
+      },
+      "slices": 65536,
+      "shard_numel": 502808512
+    },
+    {
+      "rank": 7,
+      "valid_tokens_in_update": 26,
+      "loss_logprob_gradient_abs_max_error": 0,
+      "loss_entropy_gradient_abs_max_error": 0,
+      "padding_logprob_gradient_abs_max": 0,
+      "gradient_clip_slice_abs_max_error": 0,
+      "adam_group": {
+        "lr": 0.000001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-8,
+        "weight_decay": 0.01,
+        "amsgrad": false,
+        "maximize": false,
+        "foreach": null,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null,
+        "decoupled_weight_decay": true,
+        "initial_lr": 0.000001
+      },
+      "slices": 65536,
+      "shard_numel": 502808512
+    }
+  ],
+  "adam_cpu_ranks": [
+    {
+      "rank": 0,
+      "step_before": 22,
+      "step_after": 23,
+      "observed_optimizer_steps": 1,
+      "parameter": {
+        "finite": true,
+        "abs_max": 4.656612873077393e-10,
+        "abs_mean": 7.188694084447889e-15,
+        "equal_elements": 65533,
+        "elements": 65536
+      },
+      "parameter_delta": {
+        "finite": true,
+        "abs_max": 4.656612873077393e-10,
+        "abs_mean": 7.188694084447889e-15,
+        "equal_elements": 65533,
+        "elements": 65536
+      },
+      "exp_avg": {
+        "finite": true,
+        "abs_max": 0,
+        "abs_mean": 0,
+        "equal_elements": 65536,
+        "elements": 65536
+      },
+      "exp_avg_sq": {
+        "finite": true,
+        "abs_max": 6.938893903907228e-18,
+        "abs_mean": 1.4829538988594699e-21,
+        "equal_elements": 65203,
+        "elements": 65536
+      },
+      "actual_delta_abs_max": 8.23289155960083e-7,
+      "changed_parameters": 16341,
+      "global_gradient_norm_before_clip": 24.80706024169922,
+      "local_gradient_norm_before_clip": 3.2283506393432617,
+      "local_gradient_norm_after_clip": 0.13013838231563568,
+      "note": "CPU slice reference; CUDA foreach arithmetic may round differently; no arbitrary pass threshold"
+    },
+    {
+      "rank": 1,
+      "step_before": 22,
+      "step_after": 23,
+      "observed_optimizer_steps": 1,
+      "parameter": {
+        "finite": true,
+        "abs_max": 7.275957614183426e-12,
+        "abs_mean": 2.0122792321330962e-16,
+        "equal_elements": 65531,
+        "elements": 65536
+      },
+      "parameter_delta": {
+        "finite": true,
+        "abs_max": 7.275957614183426e-12,
+        "abs_mean": 2.0122792321330962e-16,
+        "equal_elements": 65531,
+        "elements": 65536
+      },
+      "exp_avg": {
+        "finite": true,
+        "abs_max": 0,
+        "abs_mean": 0,
+        "equal_elements": 65536,
+        "elements": 65536
+      },
+      "exp_avg_sq": {
+        "finite": true,
+        "abs_max": 6.938893903907228e-18,
+        "abs_mean": 1.678285158644411e-21,
+        "equal_elements": 63825,
+        "elements": 65536
+      },
+      "actual_delta_abs_max": 9.015202522277832e-7,
+      "changed_parameters": 65416,
+      "global_gradient_norm_before_clip": 24.80706024169922,
+      "local_gradient_norm_before_clip": 6.755407333374023,
+      "local_gradient_norm_after_clip": 0.27231791615486145,
+      "note": "CPU slice reference; CUDA foreach arithmetic may round differently; no arbitrary pass threshold"
+    },
+    {
+      "rank": 2,
+      "step_before": 22,
+      "step_after": 23,
+      "observed_optimizer_steps": 1,
+      "parameter": {
+        "finite": true,
+        "abs_max": 4.656612873077393e-10,
+        "abs_mean": 7.191729850530848e-15,
+        "equal_elements": 65530,
+        "elements": 65536
+      },
+      "parameter_delta": {
+        "finite": true,
+        "abs_max": 4.656612873077393e-10,
+        "abs_mean": 7.191729850530848e-15,
+        "equal_elements": 65530,
+        "elements": 65536
+      },
+      "exp_avg": {
+        "finite": true,
+        "abs_max": 0,
+        "abs_mean": 0,
+        "equal_elements": 65536,
+        "elements": 65536
+      },
+      "exp_avg_sq": {
+        "finite": true,
+        "abs_max": 1.1102230246251565e-16,
+        "abs_mean": 4.290640767275107e-21,
+        "equal_elements": 63460,
+        "elements": 65536
+      },
+      "actual_delta_abs_max": 9.248033165931702e-7,
+      "changed_parameters": 65422,
+      "global_gradient_norm_before_clip": 24.80706024169922,
+      "local_gradient_norm_before_clip": 12.336146354675293,
+      "local_gradient_norm_after_clip": 0.4972836375236511,
+      "note": "CPU slice reference; CUDA foreach arithmetic may round differently; no arbitrary pass threshold"
+    },
+    {
+      "rank": 3,
+      "step_before": 22,
+      "step_after": 23,
+      "observed_optimizer_steps": 1,
+      "parameter": {
+        "finite": true,
+        "abs_max": 1.4551915228366852e-11,
+        "abs_mean": 2.3397082882237186e-16,
+        "equal_elements": 65530,
+        "elements": 65536
+      },
+      "parameter_delta": {
+        "finite": true,
+        "abs_max": 1.4551915228366852e-11,
+        "abs_mean": 2.3418766925686896e-16,
+        "equal_elements": 65530,
+        "elements": 65536
+      },
+      "exp_avg": {
+        "finite": true,
+        "abs_max": 0,
+        "abs_mean": 0,
+        "equal_elements": 65536,
+        "elements": 65536
+      },
+      "exp_avg_sq": {
+        "finite": true,
+        "abs_max": 5.551115123125783e-17,
+        "abs_mean": 5.427679682998804e-21,
+        "equal_elements": 63268,
+        "elements": 65536
+      },
+      "actual_delta_abs_max": 9.080395102500916e-7,
+      "changed_parameters": 65431,
+      "global_gradient_norm_before_clip": 24.80706024169922,
+      "local_gradient_norm_before_clip": 11.918604850769043,
+      "local_gradient_norm_after_clip": 0.4804520905017853,
+      "note": "CPU slice reference; CUDA foreach arithmetic may round differently; no arbitrary pass threshold"
+    },
+    {
+      "rank": 4,
+      "step_before": 22,
+      "step_after": 23,
+      "observed_optimizer_steps": 1,
+      "parameter": {
+        "finite": true,
+        "abs_max": 5.820766091346741e-11,
+        "abs_mean": 8.881784197001252e-16,
+        "equal_elements": 65535,
+        "elements": 65536
+      },
+      "parameter_delta": {
+        "finite": true,
+        "abs_max": 5.820766091346741e-11,
+        "abs_mean": 8.881784197001252e-16,
+        "equal_elements": 65535,
+        "elements": 65536
+      },
+      "exp_avg": {
+        "finite": true,
+        "abs_max": 0,
+        "abs_mean": 0,
+        "equal_elements": 65536,
+        "elements": 65536
+      },
+      "exp_avg_sq": {
+        "finite": true,
+        "abs_max": 2.220446049250313e-16,
+        "abs_mean": 9.5176471638382e-21,
+        "equal_elements": 62919,
+        "elements": 65536
+      },
+      "actual_delta_abs_max": 9.527429938316345e-7,
+      "changed_parameters": 65437,
+      "global_gradient_norm_before_clip": 24.80706024169922,
+      "local_gradient_norm_before_clip": 13.391124725341797,
+      "local_gradient_norm_after_clip": 0.5398110151290894,
+      "note": "CPU slice reference; CUDA foreach arithmetic may round differently; no arbitrary pass threshold"
+    },
+    {
+      "rank": 5,
+      "step_before": 22,
+      "step_after": 23,
+      "observed_optimizer_steps": 1,
+      "parameter": {
+        "finite": true,
+        "abs_max": 4.656612873077393e-10,
+        "abs_mean": 1.0796918914479647e-14,
+        "equal_elements": 65532,
+        "elements": 65536
+      },
+      "parameter_delta": {
+        "finite": true,
+        "abs_max": 4.656612873077393e-10,
+        "abs_mean": 1.0796918914479647e-14,
+        "equal_elements": 65532,
+        "elements": 65536
+      },
+      "exp_avg": {
+        "finite": true,
+        "abs_max": 0,
+        "abs_mean": 0,
+        "equal_elements": 65536,
+        "elements": 65536
+      },
+      "exp_avg_sq": {
+        "finite": true,
+        "abs_max": 2.7755575615628914e-17,
+        "abs_mean": 2.6201188248575845e-21,
+        "equal_elements": 63449,
+        "elements": 65536
+      },
+      "actual_delta_abs_max": 9.136274456977844e-7,
+      "changed_parameters": 65413,
+      "global_gradient_norm_before_clip": 24.80706024169922,
+      "local_gradient_norm_before_clip": 8.658066749572754,
+      "local_gradient_norm_after_clip": 0.3490162491798401,
+      "note": "CPU slice reference; CUDA foreach arithmetic may round differently; no arbitrary pass threshold"
+    },
+    {
+      "rank": 6,
+      "step_before": 22,
+      "step_after": 23,
+      "observed_optimizer_steps": 1,
+      "parameter": {
+        "finite": true,
+        "abs_max": 9.313225746154785e-10,
+        "abs_mean": 4.2633431507344e-14,
+        "equal_elements": 65532,
+        "elements": 65536
+      },
+      "parameter_delta": {
+        "finite": true,
+        "abs_max": 9.313225746154785e-10,
+        "abs_mean": 4.2633431507344e-14,
+        "equal_elements": 65532,
+        "elements": 65536
+      },
+      "exp_avg": {
+        "finite": true,
+        "abs_max": 0,
+        "abs_mean": 0,
+        "equal_elements": 65536,
+        "elements": 65536
+      },
+      "exp_avg_sq": {
+        "finite": true,
+        "abs_max": 1.734723475976807e-18,
+        "abs_mean": 1.2792034968729145e-22,
+        "equal_elements": 64626,
+        "elements": 65536
+      },
+      "actual_delta_abs_max": 8.097849786281586e-7,
+      "changed_parameters": 65439,
+      "global_gradient_norm_before_clip": 24.80706024169922,
+      "local_gradient_norm_before_clip": 2.382446527481079,
+      "local_gradient_norm_after_clip": 0.0960390493273735,
+      "note": "CPU slice reference; CUDA foreach arithmetic may round differently; no arbitrary pass threshold"
+    },
+    {
+      "rank": 7,
+      "step_before": 22,
+      "step_after": 23,
+      "observed_optimizer_steps": 1,
+      "parameter": {
+        "finite": true,
+        "abs_max": 4.656612873077393e-10,
+        "abs_mean": 8.88530785406183e-15,
+        "equal_elements": 65531,
+        "elements": 65536
+      },
+      "parameter_delta": {
+        "finite": true,
+        "abs_max": 4.656612873077393e-10,
+        "abs_mean": 8.885362064170454e-15,
+        "equal_elements": 65531,
+        "elements": 65536
+      },
+      "exp_avg": {
+        "finite": true,
+        "abs_max": 0,
+        "abs_mean": 0,
+        "equal_elements": 65536,
+        "elements": 65536
+      },
+      "exp_avg_sq": {
+        "finite": true,
+        "abs_max": 3.469446951953614e-18,
+        "abs_mean": 3.234500705883003e-22,
+        "equal_elements": 64153,
+        "elements": 65536
+      },
+      "actual_delta_abs_max": 8.484348654747009e-7,
+      "changed_parameters": 64542,
+      "global_gradient_norm_before_clip": 24.80706024169922,
+      "local_gradient_norm_before_clip": 2.2668089866638184,
+      "local_gradient_norm_after_clip": 0.09137756377458572,
+      "note": "CPU slice reference; CUDA foreach arithmetic may round differently; no arbitrary pass threshold"
+    }
+  ],
+  "historical_next8_replay_probability_abs_max": 0,
+  "tail": {
+    "tokens": 2087,
+    "exact_zero": 1994,
+    "abs_gt_1e_5": 77,
+    "abs_gt_0_01": 24,
+    "abs_gt_0_1": 17,
+    "abs_gt1": 10,
+    "abs_gt5": 2,
+    "abs_gt20": 0,
+    "ratios_below_0_8": 14,
+    "ratios_above_1_28": 2,
+    "ratio_min": 0.0010786483938466885,
+    "ratio_max": 1.9961403980834527
+  },
+  "worst_tokens": [
+    {
+      "rank": 2,
+      "local_sample": 3,
+      "token_index": 1,
+      "used_in_first_update": false,
+      "token_id": 23205,
+      "old": -3.167999267578125,
+      "pre": -3.167999267578125,
+      "post": -10.000045776367188,
+      "delta": -6.8320465087890625,
+      "ref": -6.251930236816406,
+      "advantage": -0.16684170067310333,
+      "token_text": " Launch",
+      "raw_response": "- Launch OFFENSE with 8 marine\n- marine\n- supplydepot\n- mule\n- siegetank\n- marauder<|im_end|>",
+      "input_with_response": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:13 in the game, and we are playing as Terran with 135 minerals and 223 vespene gas, while our current supply is 83, of which 30 is allocated to the army, 52 to workers, and 99 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 50 SCV, 1 marauder, 17 marine, 2 mule, 1 siegetank. In terms of the structures, we have 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 3 barracks with reactor, 2 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 3 refinery, 20 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are no units currently. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 1 bases in the form of orbitalcommand, 2 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 1 missileturret, 4 refinery, 2 starport, 1 starport with reactor, 1 starport with techlab, 6 supplydepot.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 47\n- supplydepot x 1\n- mule x 6\n- siegetank x 9\n- marauder x 3\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n- Launch OFFENSE with 8 marine\n- marine\n- supplydepot\n- mule\n- siegetank\n- marauder<|im_end|>",
+      "old_probability": 0.04208771998843656,
+      "post_probability": 0.00004539785156619626,
+      "ratio": 0.0010786483938466885
+    },
+    {
+      "rank": 6,
+      "local_sample": 2,
+      "token_index": 1,
+      "used_in_first_update": false,
+      "token_id": 23205,
+      "old": -1.0537033081054688,
+      "pre": -1.0537033081054688,
+      "post": -6.876029968261719,
+      "delta": -5.82232666015625,
+      "ref": -1.5019302368164062,
+      "advantage": -1.7872145175933838,
+      "token_text": " Launch",
+      "raw_response": "- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder<|im_end|>",
+      "input_with_response": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:21 in the game, and we are playing as Terran with 130 minerals and 353 vespene gas, while our current supply is 78, of which 24 is allocated to the army, 53 to workers, and 112 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 51 SCV, 4 marauder, 6 marine, 2 mule, 1 siegetank. In terms of the structures, we have 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 1 barracks with reactor, 5 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 1 factory with techlab, 2 missileturret, 3 refinery, 21 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 3 battlecruiser, 6 marine, 2 medivac, 5 viking. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 2 barracks, 1 barracks with techlab, 2 missileturret, 2 refinery, 2 starport, 1 starport with reactor, 1 starport with techlab, 4 supplydepot.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 44\n- mule x 5\n- siegetank x 9\n- marauder x 2\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- mule\n- siegetank\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n- Launch OFFENSE with 8 marine\n- marine\n- mule\n- siegetank\n- marauder<|im_end|>",
+      "old_probability": 0.34864421845808113,
+      "post_probability": 0.0010322339227657555,
+      "ratio": 0.0029607085622441348
+    },
+    {
+      "rank": 7,
+      "local_sample": 3,
+      "token_index": 1,
+      "used_in_first_update": false,
+      "token_id": 23205,
+      "old": -0.14267730712890625,
+      "pre": -0.14267730712890625,
+      "post": -5.0067138671875,
+      "delta": -4.864036560058594,
+      "ref": -2.578887939453125,
+      "advantage": -0.16684170067310333,
+      "token_text": " Launch",
+      "raw_response": "- Launch OFFENSE with 8 marine\n- marine\n- supplydepot\n- mule\n- siegetank\n- marauder<|im_end|>",
+      "input_with_response": "<|im_start|>user\nYou are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 10:00 in the game, and we are playing as Terran with 35 minerals and 188 vespene gas, while our current supply is 79, of which 27 is allocated to the army, 50 to workers, and 95 remains unused on a 128x128 sized map. \nIn terms of our military forces, we have 48 SCV, 1 marauder, 14 marine, 2 mule, 1 siegetank. In terms of the structures, we have 2 bases in the form of commandcenter, 2 bases in the form of orbitalcommand, 8 barracks, 3 barracks with reactor, 2 barracks with techlab, 1 bunker, 1 engineeringbay, 3 factory, 3 factory with techlab, 2 missileturret, 2 refinery, 19 supplydepot. \nIn terms of research, we have researched no research currently.\nAs for the visible enemy presence, there are 1 SCV, 1 battlecruiser, 1 marine, 4 viking. As for the visible enemy structures, there are 1 bases in the form of commandcenter, 1 bases in the form of orbitalcommand, 2 barracks, 1 barracks with techlab, 1 factory, 1 fusioncore, 1 missileturret, 4 refinery, 2 starport, 1 starport with reactor, 1 starport with techlab, 6 supplydepot.\nThe remaining BO list in this phase:\n- Launch OFFENSE with 8 marine\n- marine x 50\n- supplydepot x 2\n- mule x 6\n- siegetank x 9\n- marauder x 4\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n<|im_end|>\n<|im_start|>assistant\n- Launch OFFENSE with 8 marine\n- marine\n- supplydepot\n- mule\n- siegetank\n- marauder<|im_end|>",
+      "old_probability": 0.8670338093872167,
+      "post_probability": 0.006692860838423102,
+      "ratio": 0.007719261655036654
+    }
+  ],
+  "artifacts": [
+    {
+      "name": ".done",
+      "bytes": 479,
+      "sha256": "7130fb5749ff836541f3675faf871db85f8c55b00a04a6287403192106e75df0"
+    },
+    {
+      "name": "console.log",
+      "bytes": 16700,
+      "sha256": "f7764a45620ec9d205a85e50be0f8ba78fa97447623f5eeb4523ab466eabc941"
+    },
+    {
+      "name": "cpu-adam-analysis.json",
+      "bytes": 157532,
+      "sha256": "fe117c21510f4c46429f670e7fac892d34fb35187be8a771518f3a498c3bb26e"
+    },
+    {
+      "name": "full-batch-rank-00.jsonl",
+      "bytes": 107422,
+      "sha256": "8733ec2a612688c21aa52f932cf0090a562cb013f64f87cd2850c638ab05e2f0"
+    },
+    {
+      "name": "full-batch-rank-01.jsonl",
+      "bytes": 106853,
+      "sha256": "02d6c13736474315d4e1369ca52af2f3b88e08713050fbd1c6c595dc844844b9"
+    },
+    {
+      "name": "full-batch-rank-02.jsonl",
+      "bytes": 103369,
+      "sha256": "d478c439d3fa2a37a8a4ff48132174215516d5dbc559f88f79545f7433e06b08"
+    },
+    {
+      "name": "full-batch-rank-03.jsonl",
+      "bytes": 106117,
+      "sha256": "f94d86190884ee1ebd8b129d98a2eb8293026859d1777bd430bcde0910234a25"
+    },
+    {
+      "name": "full-batch-rank-04.jsonl",
+      "bytes": 106295,
+      "sha256": "e7d47dbcb182d6e8f48333b4c94ea4b68079ae9897116e9ed972a363b115a21b"
+    },
+    {
+      "name": "full-batch-rank-05.jsonl",
+      "bytes": 104433,
+      "sha256": "381fceaba7a6c2659b880b422fafeb4e2e431e81d11d184d2b57d32a03f76d12"
+    },
+    {
+      "name": "full-batch-rank-06.jsonl",
+      "bytes": 106515,
+      "sha256": "fd82a0ab53f6ac876eb8f30fb442570241419bd3e6b0c80cc9db8647d734b8a5"
+    },
+    {
+      "name": "full-batch-rank-07.jsonl",
+      "bytes": 106163,
+      "sha256": "3c68bd9a50f49485bf410b861205754afe6f5d73360284904cd26d27f48d4b24"
+    },
+    {
+      "name": "full-batch-summary.json",
+      "bytes": 1287,
+      "sha256": "9a4d38b004ba15de327bfb86406725200c7c79fd9ad00c3b78fab91698bd6214"
+    },
+    {
+      "name": "launcher.sh",
+      "bytes": 5763,
+      "sha256": "eb386217f1abcc5240275fe17bec4a07a916882dbc2b94f03b6980f8f35ecedd"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 44610,
+      "sha256": "f524c1f8c766b7bfe2ad5c5791bdebb42ed359d732f938b62a34f53dc02caad6"
+    },
+    {
+      "name": "parameter-chain-rank-00.pt",
+      "bytes": 2917951,
+      "sha256": "84dd53966d44a666bbeccf01a11f38ed576b8caea017b991f82d94a905690b93"
+    },
+    {
+      "name": "parameter-chain-rank-01.pt",
+      "bytes": 2918399,
+      "sha256": "f17bb4202b0059b2f15608d499f4460eddf3abcb41ab9328edb02a5201006253"
+    },
+    {
+      "name": "parameter-chain-rank-02.pt",
+      "bytes": 2918399,
+      "sha256": "1e765b6aedc183551af0fc967e93c8a48b7f23607488a5678045dc926211de17"
+    },
+    {
+      "name": "parameter-chain-rank-03.pt",
+      "bytes": 2918399,
+      "sha256": "ae7a9bc9bc33b4682912a991876cd0881558fe82d749c4e0c07b5acfb3b6c35f"
+    },
+    {
+      "name": "parameter-chain-rank-04.pt",
+      "bytes": 2918399,
+      "sha256": "50eb369e1b5dd028de5acd09b27a0a3566da1202a3ec76079635df209826b6bc"
+    },
+    {
+      "name": "parameter-chain-rank-05.pt",
+      "bytes": 2918399,
+      "sha256": "3c8775c9bc6906b328abd991a8d343a3cf53738ca5f168f516e3cce0e56b8597"
+    },
+    {
+      "name": "parameter-chain-rank-06.pt",
+      "bytes": 2918399,
+      "sha256": "418d452ccca555468c67f7ef34dd21e5306d329c8f0a5b0f6ad286c454cd0c69"
+    },
+    {
+      "name": "parameter-chain-rank-07.pt",
+      "bytes": 2918399,
+      "sha256": "dcf4fd23f72b548120c97d30b6f4866c7768d98f2e6fe62b4b2bc0f3aeeec982"
+    },
+    {
+      "name": "rank-00.jsonl",
+      "bytes": 5196,
+      "sha256": "3ab6eff176dac6d8a83ba42dd897325bfb866adb7620d4d06dd7419ca1c7d35b"
+    },
+    {
+      "name": "rank-01.jsonl",
+      "bytes": 5179,
+      "sha256": "f8f84a2d216707c3c756e591ed0c5b4cce02a4c172a531736e3f52a91d76ca31"
+    },
+    {
+      "name": "rank-02.jsonl",
+      "bytes": 5179,
+      "sha256": "d53843fc80ed52cdc34be20419257a55e54ac89ad17467eed3639dd8296ba869"
+    },
+    {
+      "name": "rank-03.jsonl",
+      "bytes": 5196,
+      "sha256": "306af914550f01ce56880e851aa973afb7046cbca3a27ca8d0b42e8ee48d1b6c"
+    },
+    {
+      "name": "rank-04.jsonl",
+      "bytes": 5179,
+      "sha256": "82802d3be28517247e1f31c317f51dcca0d2e08b24790423390b23e6670be134"
+    },
+    {
+      "name": "rank-05.jsonl",
+      "bytes": 5179,
+      "sha256": "dc193fccd2e599db5207e275d0613c89528ff8fe1bbfe4d3833bad7951a45a7f"
+    },
+    {
+      "name": "rank-06.jsonl",
+      "bytes": 5179,
+      "sha256": "b0ffefe3d71f5a0c728e9fa53e611cf02ce1c38108b76556e50fe5793d95b254"
+    },
+    {
+      "name": "rank-07.jsonl",
+      "bytes": 5179,
+      "sha256": "5cb6c9c52c072b0d32709b358633da0a8d6ab7fbfcc9a1a179f4cdbf8c836407"
+    },
+    {
+      "name": "result.json",
+      "bytes": 479,
+      "sha256": "7130fb5749ff836541f3675faf871db85f8c55b00a04a6287403192106e75df0"
+    }
+  ],
+  "conclusion": {
+    "implementation_bug_confirmed": false,
+    "restoration": "All 184 responses / 2087 valid tokens exactly match saved old before update; the next-mini eight responses after update also exactly match the original historical update-2 pre-forward.",
+    "verified": "All ranks observe Adam 22->23 exactly once. Saved local loss gradients match CPU frozen loss; padding gradients zero; saved clipping slices exactly match global norm formula. 524288 saved parameter elements agree with PyTorch 2.7.1 CPU AdamW up to reported CPU/CUDA arithmetic differences.",
+    "limitations": [
+      "No per-rank pre-FSDP-reduction gradient tensors or full model Jacobian; the generation/backprop sensitivity is not explained.",
+      "Parameter/moment comparisons cover 16 fixed blocks per shard, not the full model.",
+      "One optimizer update does not validate the remaining 22 updates of global step2 or learning performance.",
+      "These are teacher-forced effective-token probabilities, not cached/full equivalence or exact full-vocabulary KL."
+    ],
+    "next": "No training-code fix is justified by this replay. No extra GPU replay, precision candidate, game or long training is started."
+  },
+  "cpu_analysis_method": {
+    "script": "analyze_r4_first_update.py from diagnostic ff4086c; CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONPATH=/dev/shm/spb-unitid-20260906/python /usr/bin/python3 -B",
+    "supplemental": "AST-extract frozen masked_mean/agg_loss/compute_policy_loss/kl_penalty; CPU grad(pg+.01*reference) for each original offset0 (local accumulation=1), compare recorded loss_to_logprob. Compare entropy derivative -.001*mask/token_count. Compare saved postclip gradient to preclip*min(1,1/(global_norm+1e-6)). Decode saved worst-token input with local original tokenizer; compare replay offset1 post with historical second-mini update log.",
+    "gpu_experiments_added": 0
+  }
+}

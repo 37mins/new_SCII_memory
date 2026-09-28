@@ -1,0 +1,113 @@
+test_all_waves_and_unit_types_are_excluded (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... FAIL
+test_attacking_wave_members_are_also_protected_when_idle (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... FAIL
+test_idle_viking_at_recorded_rally_is_not_pulled_back (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... FAIL
+test_no_wave_keeps_original_garrison_destination (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_release_by_member_or_wave_removal_restores_garrison (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... test_repeated_checks_do_not_create_new_orders_for_members (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... FAIL
+test_scout_handling_is_not_changed_by_this_fix (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+test_threat_and_existing_worker_idle_radius_filters_remain (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) ... ok
+
+======================================================================
+FAIL: test_all_waves_and_unit_types_are_excluded (test_garrison_wave_ownership.GarrisonWaveOwnershipTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 65, in _callTestMethod
+    self._callMaybeAsync(method)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 88, in _callMaybeAsync
+    return self._asyncioTestLoop.run_until_complete(fut)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 102, in _asyncioLoopRunner
+    ret = await awaitable
+  File "/private/tmp/sc2-air-options-20260908/tests/test_garrison_wave_ownership.py", line 88, in test_all_waves_and_unit_types_are_excluded
+    unit.move.assert_not_called()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/mock.py", line 868, in assert_not_called
+    raise AssertionError(msg)
+AssertionError: Expected 'mock' to not have been called. Called 1 times.
+Calls: [call((38.56325759084457, 52.872333491862776))].
+
+======================================================================
+FAIL: test_attacking_wave_members_are_also_protected_when_idle (test_garrison_wave_ownership.GarrisonWaveOwnershipTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 65, in _callTestMethod
+    self._callMaybeAsync(method)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 88, in _callMaybeAsync
+    return self._asyncioTestLoop.run_until_complete(fut)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 102, in _asyncioLoopRunner
+    ret = await awaitable
+  File "/private/tmp/sc2-air-options-20260908/tests/test_garrison_wave_ownership.py", line 77, in test_attacking_wave_members_are_also_protected_when_idle
+    unit.move.assert_not_called()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/mock.py", line 868, in assert_not_called
+    raise AssertionError(msg)
+AssertionError: Expected 'mock' to not have been called. Called 1 times.
+Calls: [call((38.56325759084457, 52.872333491862776))].
+
+======================================================================
+FAIL: test_idle_viking_at_recorded_rally_is_not_pulled_back (test_garrison_wave_ownership.GarrisonWaveOwnershipTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 65, in _callTestMethod
+    self._callMaybeAsync(method)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 88, in _callMaybeAsync
+    return self._asyncioTestLoop.run_until_complete(fut)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 102, in _asyncioLoopRunner
+    ret = await awaitable
+  File "/private/tmp/sc2-air-options-20260908/tests/test_garrison_wave_ownership.py", line 69, in test_idle_viking_at_recorded_rally_is_not_pulled_back
+    viking.move.assert_not_called()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/mock.py", line 868, in assert_not_called
+    raise AssertionError(msg)
+AssertionError: Expected 'mock' to not have been called. Called 1 times.
+Calls: [call((29.85441919694819, 47.95744449728759))].
+
+======================================================================
+FAIL: test_release_by_member_or_wave_removal_restores_garrison (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) (delete_wave=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/sc2-air-options-20260908/tests/test_garrison_wave_ownership.py", line 110, in test_release_by_member_or_wave_removal_restores_garrison
+    unit.move.assert_not_called()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/mock.py", line 868, in assert_not_called
+    raise AssertionError(msg)
+AssertionError: Expected 'mock' to not have been called. Called 1 times.
+Calls: [call((38.56325759084457, 52.872333491862776))].
+
+======================================================================
+FAIL: test_release_by_member_or_wave_removal_restores_garrison (test_garrison_wave_ownership.GarrisonWaveOwnershipTest) (delete_wave=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/sc2-air-options-20260908/tests/test_garrison_wave_ownership.py", line 110, in test_release_by_member_or_wave_removal_restores_garrison
+    unit.move.assert_not_called()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/mock.py", line 868, in assert_not_called
+    raise AssertionError(msg)
+AssertionError: Expected 'mock' to not have been called. Called 1 times.
+Calls: [call((38.56325759084457, 52.872333491862776))].
+
+======================================================================
+FAIL: test_repeated_checks_do_not_create_new_orders_for_members (test_garrison_wave_ownership.GarrisonWaveOwnershipTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 65, in _callTestMethod
+    self._callMaybeAsync(method)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 88, in _callMaybeAsync
+    return self._asyncioTestLoop.run_until_complete(fut)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/async_case.py", line 102, in _asyncioLoopRunner
+    ret = await awaitable
+  File "/private/tmp/sc2-air-options-20260908/tests/test_garrison_wave_ownership.py", line 95, in test_repeated_checks_do_not_create_new_orders_for_members
+    unit.move.assert_not_called()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/mock.py", line 868, in assert_not_called
+    raise AssertionError(msg)
+AssertionError: Expected 'mock' to not have been called. Called 3 times.
+Calls: [call((38.56325759084457, 52.872333491862776)),
+ call((38.56325759084457, 52.872333491862776)),
+ call((38.56325759084457, 52.872333491862776))].
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.032s
+
+FAILED (failures=6)
+EXIT_CODE=1

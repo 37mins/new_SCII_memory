@@ -1,0 +1,1876 @@
+{
+  "runtime_sha": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+  "authority_sha256": "afa62e4549ac1b5af889b8e2447fe3b6a9813536f87544e7b278b658cff018bd",
+  "source_file_hashes": {
+    "gigpo/core_gigpo.py": "f135bd272518b49a58762da3474e2d4bc90906b053f1ae820d8fb05c2064148b",
+    "verl/trainer/ppo/ray_trainer.py": "97b3795548b53bc081918719dceb397a16315ba5ef64b4c621ce17555ca0a26f",
+    "agent_system/multi_turn_rollout/utils.py": "83e43da3108cc9d06e38f990758e0c559c2d807325a32dea1a94fc9bf78c462d",
+    "agent_system/reward_manager/episode.py": "f9a71d8ccba625f2dc218594a3f9edaa2894306a1accc62cd19832ef4c521428",
+    "agent_system/environments/strategic_sc2_env_manager_v2.py": "002249bfac1ade8487ff43672320ee38cb7e72453d2edeafffb1617fcc514a88",
+    "agent_system/multi_turn_rollout/rollout_loop.py": "cb80b5a08331838f81aa39f868e3dbcba7a64c5ae0fe856aab1137adbfaa1d57"
+  },
+  "batches": [
+    {
+      "arm": "A",
+      "global_step": 1,
+      "wins": 8,
+      "decisions": 49,
+      "copied_rows": 3,
+      "logged_advantage": [
+        -3.52,
+        2.737
+      ],
+      "first_phase_answers": [
+        {
+          "env": 0,
+          "call": 6,
+          "source_line": 41,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.0,
+          "step_r": 19.0,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 7,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            -0.06607142857142888,
+            -0.03125
+          ]
+        },
+        {
+          "env": 1,
+          "call": 8,
+          "source_line": 58,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.5,
+          "step_r": 19.474999999999998,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 9,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n- marine x 2\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.0031249999999998224,
+            0.020833333333333332
+          ]
+        },
+        {
+          "env": 2,
+          "call": 2,
+          "source_line": 11,
+          "valid": true,
+          "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+          "episode_reward": 20.0,
+          "step_r": 18.05,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            -0.11562500000000053,
+            -0.044642857142857144
+          ]
+        },
+        {
+          "env": 3,
+          "call": 6,
+          "source_line": 44,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.5,
+          "step_r": 15.862509218749995,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 11,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 2,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.0026785714285712764,
+            0.017045454545454544
+          ]
+        },
+        {
+          "env": 4,
+          "call": 2,
+          "source_line": 13,
+          "valid": true,
+          "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+          "episode_reward": 20.5,
+          "step_r": 19.474999999999998,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 3,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.020833333333333332,
+            0.06666666666666643
+          ]
+        },
+        {
+          "env": 5,
+          "call": 2,
+          "source_line": 14,
+          "valid": true,
+          "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+          "episode_reward": 20.5,
+          "step_r": 18.50125,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.005357142857142553,
+            0.046875
+          ]
+        },
+        {
+          "env": 6,
+          "call": 6,
+          "source_line": 47,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.5,
+          "step_r": 19.474999999999998,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 7,
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 2,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.003749999999999787,
+            0.026785714285714284
+          ]
+        },
+        {
+          "env": 7,
+          "call": 2,
+          "source_line": 16,
+          "valid": true,
+          "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+          "episode_reward": 20.5,
+          "step_r": 18.50125,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 2,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.017857142857142856,
+            0.04999999999999982
+          ]
+        }
+      ],
+      "marine_counts": {
+        "4": 5,
+        "2": 3
+      },
+      "input_groups": {
+        "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6": 4,
+        "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872": 4
+      }
+    },
+    {
+      "arm": "A",
+      "global_step": 2,
+      "wins": 8,
+      "decisions": 27,
+      "copied_rows": 1,
+      "logged_advantage": [
+        -1.616,
+        1.124
+      ],
+      "first_phase_answers": [
+        {
+          "env": 0,
+          "call": 5,
+          "source_line": 121,
+          "valid": true,
+          "prompt_sha256": "cb3da9707602f5527f52fd0850979de8c99706b5be02b86633d7d88c3cc87b51",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 5,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:01",
+          "marine_count": 42,
+          "real_anchor_size": 1,
+          "episode_component_bounds": [
+            -0.042500000000000426,
+            -0.018750000000000117
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            -0.042500000000000426,
+            -0.018750000000000117
+          ]
+        },
+        {
+          "env": 1,
+          "call": 2,
+          "source_line": 98,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 21.0,
+          "step_r": 19.00125,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 2\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 7,
+          "episode_component_bounds": [
+            0.075,
+            0.09999999999999964
+          ]
+        },
+        {
+          "env": 2,
+          "call": 2,
+          "source_line": 99,
+          "valid": false,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 18.401249999999997,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n",
+          "game_time": "04:13",
+          "marine_count": null,
+          "real_anchor_size": 7,
+          "episode_component_bounds": [
+            -0.05312500000000053,
+            -0.02250000000000014
+          ]
+        },
+        {
+          "env": 3,
+          "call": 2,
+          "source_line": 100,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 19.474999999999998,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 3,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 2,
+          "real_anchor_size": 7,
+          "episode_component_bounds": [
+            -0.041666666666666664,
+            -0.025000000000000355
+          ]
+        },
+        {
+          "env": 4,
+          "call": 2,
+          "source_line": 101,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 8,
+          "real_anchor_size": 7,
+          "episode_component_bounds": [
+            -0.0625,
+            -0.033333333333333805
+          ]
+        },
+        {
+          "env": 5,
+          "call": 2,
+          "source_line": 102,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 21.0,
+          "step_r": 18.97625,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 7,
+          "episode_component_bounds": [
+            0.075,
+            0.09999999999999964
+          ]
+        },
+        {
+          "env": 6,
+          "call": 2,
+          "source_line": 103,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 8,
+          "real_anchor_size": 7,
+          "episode_component_bounds": [
+            -0.0625,
+            -0.033333333333333805
+          ]
+        },
+        {
+          "env": 7,
+          "call": 2,
+          "source_line": 104,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 19.474999999999998,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 3,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 7,
+          "episode_component_bounds": [
+            -0.041666666666666664,
+            -0.025000000000000355
+          ]
+        }
+      ],
+      "marine_counts": {
+        "42": 1,
+        "4": 3,
+        "None": 1,
+        "2": 1,
+        "8": 2
+      },
+      "input_groups": {
+        "cb3da9707602f5527f52fd0850979de8c99706b5be02b86633d7d88c3cc87b51": 1,
+        "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18": 7
+      }
+    },
+    {
+      "arm": "A",
+      "global_step": 3,
+      "wins": 0,
+      "decisions": 16,
+      "copied_rows": 0,
+      "logged_advantage": [
+        -0.0,
+        -0.0
+      ],
+      "first_phase_answers": [
+        {
+          "env": 0,
+          "call": 2,
+          "source_line": 137,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.382,
+          "step_r": -49.382,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 1,
+          "call": 2,
+          "source_line": 138,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.382,
+          "step_r": -49.382,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 2,
+          "call": 2,
+          "source_line": 139,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.382,
+          "step_r": -49.382,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 3,
+          "call": 2,
+          "source_line": 140,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.382,
+          "step_r": -49.382,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 4,
+          "call": 2,
+          "source_line": 141,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.382,
+          "step_r": -49.382,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 5,
+          "call": 2,
+          "source_line": 142,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.382,
+          "step_r": -49.382,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 6,
+          "call": 2,
+          "source_line": 143,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.382,
+          "step_r": -49.382,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 7,
+          "call": 2,
+          "source_line": 144,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.382,
+          "step_r": -49.382,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "marine_counts": {
+        "42": 8
+      },
+      "input_groups": {
+        "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1": 8
+      }
+    },
+    {
+      "arm": "A",
+      "global_step": 4,
+      "wins": 8,
+      "decisions": 16,
+      "copied_rows": 0,
+      "logged_advantage": [
+        0.0,
+        0.0
+      ],
+      "first_phase_answers": [
+        {
+          "env": 0,
+          "call": 2,
+          "source_line": 153,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 1,
+          "call": 2,
+          "source_line": 154,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 2,
+          "call": 2,
+          "source_line": 155,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 3,
+          "call": 2,
+          "source_line": 156,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 8,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 4,
+          "call": 2,
+          "source_line": 157,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 5,
+          "call": 2,
+          "source_line": 158,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 6,
+          "call": 2,
+          "source_line": 159,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 8,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "env": 7,
+          "call": 2,
+          "source_line": 160,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 42,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0,
+            0.0
+          ],
+          "step_component": 0.0,
+          "joint_scalar_bounds": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "marine_counts": {
+        "42": 6,
+        "8": 2
+      },
+      "input_groups": {
+        "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519": 8
+      }
+    },
+    {
+      "arm": "B",
+      "global_step": 1,
+      "wins": 8,
+      "decisions": 60,
+      "copied_rows": 0,
+      "logged_advantage": [
+        -3.109,
+        2.252
+      ],
+      "first_phase_answers": [
+        {
+          "env": 0,
+          "call": 6,
+          "source_line": 41,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.0,
+          "step_r": 16.290124999999996,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 10,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 6,
+          "episode_component_bounds": [
+            -0.05250000000000021,
+            -0.03874999999999993
+          ],
+          "step_component": -1.3125734375000029,
+          "joint_scalar_bounds": [
+            -1.365073437500003,
+            -1.3513234375000027
+          ]
+        },
+        {
+          "env": 1,
+          "call": 2,
+          "source_line": 10,
+          "valid": true,
+          "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+          "episode_reward": 20.5,
+          "step_r": 17.576187499999996,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 5,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 2,
+          "episode_component_bounds": [
+            -0.005000000000000426,
+            0.02250000000000014
+          ],
+          "step_component": 1.3801364650390653,
+          "joint_scalar_bounds": [
+            1.375136465039065,
+            1.4026364650390655
+          ]
+        },
+        {
+          "env": 2,
+          "call": 5,
+          "source_line": 35,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.0,
+          "step_r": 18.05,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 7,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 6,
+          "episode_component_bounds": [
+            -0.0750000000000003,
+            -0.05535714285714276
+          ],
+          "step_component": 0.44730156250000164,
+          "joint_scalar_bounds": [
+            0.37230156250000135,
+            0.39194441964285887
+          ]
+        },
+        {
+          "env": 3,
+          "call": 2,
+          "source_line": 12,
+          "valid": true,
+          "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+          "episode_reward": 21.0,
+          "step_r": 14.815914569921869,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 9,
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 2,
+          "real_anchor_size": 2,
+          "episode_component_bounds": [
+            0.05277777777777754,
+            0.06805555555555563
+          ],
+          "step_component": -1.3801364650390617,
+          "joint_scalar_bounds": [
+            -1.3273586872612841,
+            -1.3120809094835062
+          ]
+        },
+        {
+          "env": 4,
+          "call": 3,
+          "source_line": 21,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.5,
+          "step_r": 18.50125,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 5,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 6,
+          "episode_component_bounds": [
+            0.0125,
+            0.025
+          ],
+          "step_component": 0.8985515624999998,
+          "joint_scalar_bounds": [
+            0.9110515624999997,
+            0.9235515624999998
+          ]
+        },
+        {
+          "env": 5,
+          "call": 9,
+          "source_line": 70,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.5,
+          "step_r": 17.576187499999996,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 12,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 42,
+          "real_anchor_size": 6,
+          "episode_component_bounds": [
+            -0.002083333333333511,
+            0.009375000000000059
+          ],
+          "step_component": -0.026510937500002996,
+          "joint_scalar_bounds": [
+            -0.028594270833336505,
+            -0.01713593750000294
+          ]
+        },
+        {
+          "env": 6,
+          "call": 3,
+          "source_line": 23,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.5,
+          "step_r": 16.697378124999997,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 7,
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 2,
+          "real_anchor_size": 6,
+          "episode_component_bounds": [
+            0.008928571428571428,
+            0.017857142857142856
+          ],
+          "step_component": -0.9053203125000024,
+          "joint_scalar_bounds": [
+            -0.896391741071431,
+            -0.8874631696428595
+          ]
+        },
+        {
+          "env": 7,
+          "call": 3,
+          "source_line": 24,
+          "valid": true,
+          "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+          "episode_reward": 20.5,
+          "step_r": 18.50125,
+          "seed": 2732,
+          "result": "Victory",
+          "calls_total": 5,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 6,
+          "episode_component_bounds": [
+            0.0125,
+            0.025
+          ],
+          "step_component": 0.8985515624999998,
+          "joint_scalar_bounds": [
+            0.9110515624999997,
+            0.9235515624999998
+          ]
+        }
+      ],
+      "marine_counts": {
+        "4": 5,
+        "2": 2,
+        "42": 1
+      },
+      "input_groups": {
+        "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6": 6,
+        "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872": 2
+      }
+    },
+    {
+      "arm": "B",
+      "global_step": 2,
+      "wins": 8,
+      "decisions": 41,
+      "copied_rows": 3,
+      "logged_advantage": [
+        -2.32,
+        1.865
+      ],
+      "first_phase_answers": [
+        {
+          "env": 0,
+          "call": 2,
+          "source_line": 105,
+          "valid": false,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 18.401249999999997,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+          "game_time": "04:13",
+          "marine_count": null,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            -0.021875000000000533,
+            0.0031249999999998224
+          ]
+        },
+        {
+          "env": 1,
+          "call": 2,
+          "source_line": 106,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 19.474999999999998,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 3,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 2\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.0,
+            0.00833333333333286
+          ]
+        },
+        {
+          "env": 2,
+          "call": 5,
+          "source_line": 131,
+          "valid": true,
+          "prompt_sha256": "f29bd16dfb5fb762d8c8fd496c4b664d7d6f16913d660f86f36d1747f892629f",
+          "episode_reward": 20.5,
+          "step_r": 19.474999999999998,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 6,
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n</answer>",
+          "game_time": "04:17",
+          "marine_count": 4,
+          "real_anchor_size": 2,
+          "episode_component_bounds": [
+            -0.01458333333333369,
+            0.002083333333333215
+          ]
+        },
+        {
+          "env": 3,
+          "call": 2,
+          "source_line": 108,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 18.50125,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.0,
+            0.006249999999999645
+          ]
+        },
+        {
+          "env": 4,
+          "call": 3,
+          "source_line": 117,
+          "valid": true,
+          "prompt_sha256": "328cd105e94eaa1c114b88ac11ae5c1a806ee6fd4493b223b4441143a893bd87",
+          "episode_reward": 20.5,
+          "step_r": 17.576187499999996,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 6,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:48",
+          "marine_count": 4,
+          "real_anchor_size": 2,
+          "episode_component_bounds": [
+            0.0,
+            0.00416666666666643
+          ]
+        },
+        {
+          "env": 5,
+          "call": 3,
+          "source_line": 118,
+          "valid": true,
+          "prompt_sha256": "328cd105e94eaa1c114b88ac11ae5c1a806ee6fd4493b223b4441143a893bd87",
+          "episode_reward": 20.5,
+          "step_r": 15.862509218749995,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 8,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:48",
+          "marine_count": 4,
+          "real_anchor_size": 2,
+          "episode_component_bounds": [
+            0.0,
+            0.0031249999999998224
+          ]
+        },
+        {
+          "env": 6,
+          "call": 2,
+          "source_line": 111,
+          "valid": true,
+          "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+          "episode_reward": 20.5,
+          "step_r": 17.576187499999996,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 5,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+          "game_time": "04:13",
+          "marine_count": 4,
+          "real_anchor_size": 4,
+          "episode_component_bounds": [
+            0.0,
+            0.004999999999999716
+          ]
+        },
+        {
+          "env": 7,
+          "call": 5,
+          "source_line": 136,
+          "valid": true,
+          "prompt_sha256": "f29bd16dfb5fb762d8c8fd496c4b664d7d6f16913d660f86f36d1747f892629f",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 43567,
+          "result": "Victory",
+          "calls_total": 5,
+          "answer": "<answer>\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:17",
+          "marine_count": 8,
+          "real_anchor_size": 2,
+          "episode_component_bounds": [
+            0.0,
+            0.004999999999999716
+          ]
+        }
+      ],
+      "marine_counts": {
+        "None": 1,
+        "4": 6,
+        "8": 1
+      },
+      "input_groups": {
+        "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18": 4,
+        "f29bd16dfb5fb762d8c8fd496c4b664d7d6f16913d660f86f36d1747f892629f": 2,
+        "328cd105e94eaa1c114b88ac11ae5c1a806ee6fd4493b223b4441143a893bd87": 2
+      }
+    },
+    {
+      "arm": "B",
+      "global_step": 3,
+      "wins": 0,
+      "decisions": 66,
+      "copied_rows": 2,
+      "logged_advantage": [
+        -8.903,
+        6.842
+      ],
+      "first_phase_answers": [
+        {
+          "env": 0,
+          "call": 2,
+          "source_line": 169,
+          "valid": false,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.401,
+          "step_r": -38.325552093437494,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 7,
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydep",
+          "game_time": "04:09",
+          "marine_count": null,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0011111111111101006,
+            0.021071428571428692
+          ]
+        },
+        {
+          "env": 1,
+          "call": 2,
+          "source_line": 170,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.431,
+          "step_r": -31.15385857209715,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 11,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            -0.0018181818181821025,
+            0.010681818181818802
+          ]
+        },
+        {
+          "env": 2,
+          "call": 2,
+          "source_line": 171,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.45,
+          "step_r": -31.165833310881922,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 11,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            -0.003545454545455326,
+            0.008954545454545578
+          ]
+        },
+        {
+          "env": 3,
+          "call": 2,
+          "source_line": 172,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.375,
+          "step_r": -44.5609375,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 4,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.02058333333333214,
+            0.04650000000000176
+          ]
+        },
+        {
+          "env": 4,
+          "call": 2,
+          "source_line": 173,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.45,
+          "step_r": -36.35029399140624,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 8,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.004849999999998999,
+            0.013875000000000526
+          ]
+        },
+        {
+          "env": 5,
+          "call": 2,
+          "source_line": 174,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.95,
+          "step_r": -36.71783993671874,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 8,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 4\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            -0.06737500000000107,
+            -0.040149999999999866
+          ]
+        },
+        {
+          "env": 6,
+          "call": 2,
+          "source_line": 175,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.481,
+          "step_r": -29.626102490454215,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 12,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            0.0012499999999993708,
+            0.006666666666667116
+          ]
+        },
+        {
+          "env": 7,
+          "call": 2,
+          "source_line": 176,
+          "valid": true,
+          "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+          "episode_reward": -49.45,
+          "step_r": -42.39719375,
+          "seed": 42613,
+          "result": "Defeat",
+          "calls_total": 5,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+          "game_time": "04:09",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            -0.007800000000001717,
+            0.019700000000000273
+          ]
+        }
+      ],
+      "marine_counts": {
+        "None": 1,
+        "4": 7
+      },
+      "input_groups": {
+        "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1": 8
+      }
+    },
+    {
+      "arm": "B",
+      "global_step": 4,
+      "wins": 7,
+      "decisions": 31,
+      "copied_rows": 1,
+      "logged_advantage": [
+        -64.868,
+        20.238
+      ],
+      "first_phase_answers": [
+        {
+          "env": 0,
+          "call": 2,
+          "source_line": 265,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": -49.431,
+          "step_r": -44.6114775,
+          "seed": 52416,
+          "result": "Defeat",
+          "calls_total": 4,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 2\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            -15.29740625,
+            -12.237925
+          ],
+          "all_copy_joint_bounds": [
+            -71.77607477430556,
+            -61.48198491319444
+          ],
+          "log_compatible_scalar_values": [
+            -61.48198491319444
+          ]
+        },
+        {
+          "env": 1,
+          "call": 2,
+          "source_line": 266,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 18.50125,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            1.748275,
+            2.18534375
+          ],
+          "all_copy_joint_bounds": [
+            8.604417309027777,
+            16.054011336805555
+          ],
+          "log_compatible_scalar_values": [
+            16.054011336805555
+          ]
+        },
+        {
+          "env": 2,
+          "call": 2,
+          "source_line": 267,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 8,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            2.9137916666666666,
+            4.3706875
+          ],
+          "all_copy_joint_bounds": [
+            11.546600642361113,
+            20.238105086805554
+          ],
+          "log_compatible_scalar_values": [
+            20.238105086805554
+          ]
+        },
+        {
+          "env": 3,
+          "call": 2,
+          "source_line": 268,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 19.474999999999998,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 3,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            2.18534375,
+            2.9137916666666666
+          ],
+          "all_copy_joint_bounds": [
+            9.907041614583333,
+            17.756209253472218
+          ],
+          "log_compatible_scalar_values": [
+            17.756209253472218
+          ]
+        },
+        {
+          "env": 4,
+          "call": 2,
+          "source_line": 269,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 18.50125,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 4,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            1.748275,
+            2.18534375
+          ],
+          "all_copy_joint_bounds": [
+            8.604417309027777,
+            16.054011336805555
+          ],
+          "log_compatible_scalar_values": [
+            16.054011336805555
+          ]
+        },
+        {
+          "env": 5,
+          "call": 2,
+          "source_line": 270,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 15.862509218749995,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 7,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            1.092671875,
+            1.248767857142857
+          ],
+          "all_copy_joint_bounds": [
+            5.244086051587296,
+            12.478694662698405
+          ],
+          "log_compatible_scalar_values": [
+            12.478694662698405
+          ]
+        },
+        {
+          "env": 6,
+          "call": 2,
+          "source_line": 271,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 20.5,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 2,
+          "answer": "<answer>\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 8,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            2.9137916666666666,
+            4.3706875
+          ],
+          "all_copy_joint_bounds": [
+            11.546600642361113,
+            20.238105086805554
+          ],
+          "log_compatible_scalar_values": [
+            20.238105086805554
+          ]
+        },
+        {
+          "env": 7,
+          "call": 2,
+          "source_line": 272,
+          "valid": true,
+          "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+          "episode_reward": 20.5,
+          "step_r": 17.576187499999996,
+          "seed": 52416,
+          "result": "Victory",
+          "calls_total": 5,
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "game_time": "04:25",
+          "marine_count": 4,
+          "real_anchor_size": 8,
+          "episode_component_bounds": [
+            1.4568958333333333,
+            1.748275
+          ],
+          "all_copy_joint_bounds": [
+            7.457271475694441,
+            14.69188008680555
+          ],
+          "log_compatible_scalar_values": [
+            14.69188008680555
+          ]
+        }
+      ],
+      "marine_counts": {
+        "4": 6,
+        "8": 2
+      },
+      "input_groups": {
+        "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519": 8
+      },
+      "copy_enumeration": {
+        "candidates": [
+          {
+            "copied_source_line": 257,
+            "full_batch_range": [
+              -67.63749240234375,
+              19.444734207465277
+            ]
+          },
+          {
+            "copied_source_line": 265,
+            "full_batch_range": [
+              -64.86751403222655,
+              20.238105086805554
+            ]
+          },
+          {
+            "copied_source_line": 273,
+            "full_batch_range": [
+              -67.63749240234375,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 281,
+            "full_batch_range": [
+              -67.63749240234375,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 258,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 266,
+            "full_batch_range": [
+              -71.55399144097223,
+              13.597002092773437
+            ]
+          },
+          {
+            "copied_source_line": 274,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 282,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 259,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 267,
+            "full_batch_range": [
+              -71.77607477430556,
+              13.597002092773437
+            ]
+          },
+          {
+            "copied_source_line": 260,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 268,
+            "full_batch_range": [
+              -71.66218588541666,
+              13.597002092773437
+            ]
+          },
+          {
+            "copied_source_line": 276,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 261,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 269,
+            "full_batch_range": [
+              -71.55399144097223,
+              13.597002092773437
+            ]
+          },
+          {
+            "copied_source_line": 277,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 285,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 262,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 270,
+            "full_batch_range": [
+              -71.26079802083333,
+              13.597002092773437
+            ]
+          },
+          {
+            "copied_source_line": 278,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 286,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 294,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 302,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 310,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 263,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 271,
+            "full_batch_range": [
+              -71.77607477430556,
+              13.597002092773437
+            ]
+          },
+          {
+            "copied_source_line": 264,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 272,
+            "full_batch_range": [
+              -71.45120671875,
+              13.597002092773437
+            ]
+          },
+          {
+            "copied_source_line": 280,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 288,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          },
+          {
+            "copied_source_line": 296,
+            "full_batch_range": [
+              -70.69697365234376,
+              14.08259759765625
+            ]
+          }
+        ],
+        "log_compatible_source_lines": [
+          265
+        ],
+        "meaning": "Log-constrained scalar inference; actual copy IDs/token tensors were not saved."
+      }
+    }
+  ],
+  "limits": [
+    "First reinforcement phase is not necessarily the second model call.",
+    "Whole-response scalar signal is not the gradient of the Marine count token or actual probability change.",
+    "Copy IDs, balancing permutation, token masks and optimizer update tensors are absent from these snapshots.",
+    "Winning/losing trajectories are not isolated causality of their first reinforcement answer.",
+    "Rounded metric matching is an inference, not recovery of the original FP32/PPO tensors."
+  ]
+}

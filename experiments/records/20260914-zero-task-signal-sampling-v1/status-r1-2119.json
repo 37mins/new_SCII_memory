@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-14T21:19:30+08:00",
+  "source_sha": "0cccaa90ea8e7852e7601391c404b656b82889c0",
+  "source_clean": true,
+  "node": "sc2-a100-43",
+  "gpus": [0, 1, 2, 3],
+  "deadline": "2026-09-14T23:16:49+08:00",
+  "A": {
+    "run_id": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-A-32games-4gpu-r1",
+    "status": "completed",
+    "ended_at": "2026-09-14T20:54:30.875943+08:00",
+    "process_exit_code": 0,
+    "new_global_steps": 4,
+    "last_global_step": 8,
+    "natural_games": 32,
+    "wins": 7,
+    "wins_per_collection": [7, 0, 0, 0],
+    "mean_episode_reward_logged": [11.688, -49.382, -49.450, -49.427],
+    "result_done_equal": true,
+    "result_sha256": "b6edf4b9abbd8b86dd2277907176a94a313841b133d35d886b71fa9ae7c0e530",
+    "checkpoint_complete": true,
+    "checkpoint_all_recorded_file_sizes_match": true,
+    "checkpoint_tensors_reloaded_this_audit": false,
+    "metrics_finite": true
+  },
+  "B": {
+    "run_id": "20260914-zero-task-signal-sampling-v1-spb2-A4-l6-B-32games-4gpu-r1",
+    "status": "running",
+    "model_optimizer_restored_from_A4": true,
+    "completed_new_global_steps_at_least": 2,
+    "collected_games": 24,
+    "accepted_collections": 3,
+    "skipped_collections": 0,
+    "max_abs_task_advantage_by_collection": [80.0625, 0.0000057220458984375, 0.0000057220458984375]
+  },
+  "interpretation": "Exact-zero-only filter did not skip the two observed identical-return groups. Nonzero residual is not evidence of meaningful task discrimination. This snapshot is not completed A/B or learning acceptance.",
+  "new_gpu_experiments": false,
+  "runtime_or_threshold_modified": false
+}

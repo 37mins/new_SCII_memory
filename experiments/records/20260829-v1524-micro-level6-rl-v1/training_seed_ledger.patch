@@ -1,0 +1,160 @@
+--- a/agent_system/environments/env_package/sc2_online_restored/envSC2.py
++++ b/agent_system/environments/env_package/sc2_online_restored/envSC2.py
+@@ -591,6 +591,7 @@
+         self.seed = seed
+         self.reset_index = 0
+         self.validation_rng = np.random.RandomState(seed)
++        self.training_rng = np.random.RandomState(seed)
+         np.random.seed(seed)
+
+         print(f"Env num and group n {env_num} {group_n}")
+@@ -631,8 +632,20 @@
+         """
+         # Generate seeds
+         if self.is_train:
+-            seeds = np.random.randint(0, 2**16 - 1, size=self.env_num)
++            seeds = self.training_rng.randint(0, 2**16 - 1, size=self.env_num)
+             seeds = np.repeat(seeds, self.group_n).tolist()
++            seed_record = {
++                "base_seed": self.seed,
++                "reset_index": self.reset_index,
++                "seeds": seeds,
++            }
++            print(f"SC2 training seed record: {seed_record}", flush=True)
++            seed_log_path = os.getenv("SC2_TRAIN_SEEDS_LOG_PATH")
++            if seed_log_path:
++                os.makedirs(os.path.dirname(seed_log_path), exist_ok=True)
++                with open(seed_log_path, "a", encoding="utf-8") as seed_log:
++                    seed_log.write(json.dumps(seed_record, sort_keys=True) + "\n")
++            self.reset_index += 1
+         else:
+             seeds = self.validation_rng.randint(2**16, 2**32 - 1, size=self.num_processes).tolist()
+             seed_record = {
+--- a/agent_system/environments/strategic_sc2_env_manager_v2.py
++++ b/agent_system/environments/strategic_sc2_env_manager_v2.py
+@@ -160,6 +160,7 @@
+         self._last_tool_results = []
+         self._last_tool_result_prompts = []
+         self._pending_tool_call_counts = []
++        self._forbid_thinking_output = _as_bool(config.env.get("forbid_thinking_output", False))
+         self._enable_prompt_response_log = _as_bool(config.env.get("enable_prompt_response_log", False))
+         self._prompt_response_log_train_only = _as_bool(config.env.get("prompt_response_log_train_only", True))
+         self._prompt_response_log_path = str(config.env.get("prompt_response_log_path", "") or "")
+@@ -195,3 +196,11 @@
+     def step(self, text_actions: List[str]):
++        if self._forbid_thinking_output:
++            offending = [
++                index
++                for index, response in enumerate(text_actions)
++                if "<think>" in str(response) or "</think>" in str(response)
++            ]
++            if offending:
++                raise RuntimeError(f"thinking output forbidden for environment indices {offending}")
+         text_actions = self._apply_verified_candidate_override(text_actions)
+         text_actions, final_tool_invalids = self._sanitize_final_actions(text_actions)
+         semantic_valids = []
+--- a/verl/utils/dataset/rl_dataset.py
++++ b/verl/utils/dataset/rl_dataset.py
+@@ -113,6 +113,7 @@ class RLHFDataset(Dataset):
+         self.use_shm = config.get('use_shm', False)
+         self.chat_template_func = config.get("chat_template_func", None)
+         self.need_tools_kwargs = config.get("need_tools_kwargs", False)
++        self.apply_chat_template_kwargs = dict(config.get("apply_chat_template_kwargs", {}))
+         self.filter_prompts = config.get("filter_prompts", True)
+         self.serialize_dataset = False
+         self._download()
+@@ -136,8 +137,14 @@ class RLHFDataset(Dataset):
+         if self.filter_overlong_prompts:
+             tokenizer = self.tokenizer
+             prompt_key = self.prompt_key
++            apply_chat_template_kwargs = self.apply_chat_template_kwargs
+             self.dataframe = self.dataframe.filter(
+-                lambda doc: len(tokenizer.apply_chat_template(doc[prompt_key], add_generation_prompt=True)) <= self.max_prompt_length,
++                lambda doc: len(
++                    tokenizer.apply_chat_template(
++                        doc[prompt_key], add_generation_prompt=True, **apply_chat_template_kwargs
++                    )
++                )
++                <= self.max_prompt_length,
+                 num_proc=self.num_workers,
+                 desc=f"Filtering prompts longer than {self.max_prompt_length} tokens",
+             )
+@@ -189,7 +196,12 @@ class RLHFDataset(Dataset):
+         if self.processor is not None:
+             from verl.utils.dataset.vision_utils import process_image, process_video
+
+-            raw_prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
++            raw_prompt = self.processor.apply_chat_template(
++                messages,
++                add_generation_prompt=True,
++                tokenize=False,
++                **self.apply_chat_template_kwargs,
++            )
+             multi_modal_data = {}
+
+             images = None
+@@ -218,7 +230,12 @@ class RLHFDataset(Dataset):
+             row_dict["multi_modal_inputs"].pop("second_per_grid_ts", None)
+
+         else:
+-            raw_prompt = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
++            raw_prompt = self.tokenizer.apply_chat_template(
++                messages,
++                add_generation_prompt=True,
++                tokenize=False,
++                **self.apply_chat_template_kwargs,
++            )
+             model_inputs = self.tokenizer(raw_prompt, return_tensors="pt", add_special_tokens=False)
+             input_ids = model_inputs.pop("input_ids")
+             attention_mask = model_inputs.pop("attention_mask")
+--- a/verl/trainer/ppo/core_algos.py
++++ b/verl/trainer/ppo/core_algos.py
+@@ -473,2 +473,8 @@
+-    ratio = torch.exp(negative_approx_kl)
+-    ppo_kl = verl_F.masked_mean(-negative_approx_kl, response_mask)
++    active_log_ratio = torch.where(
++        response_mask.bool(), negative_approx_kl, torch.zeros_like(negative_approx_kl)
++    )
++    # PPO clips ratios far below BF16's exp overflow threshold. Clamping the
++    # exponent preserves the clipped objective while keeping saturated-token
++    # backward passes finite.
++    ratio = torch.exp(torch.clamp(active_log_ratio, min=-20.0, max=20.0))
++    ppo_kl = verl_F.masked_mean(-active_log_ratio, response_mask)
+@@ -639,0 +646,4 @@
++        # The returned K3 estimate is already capped at 10. Bounding its exp
++        # input prevents inf in BF16/FP32 and the resulting 0 * inf NaN during
++        # clamp backward without changing the saturated objective.
++        kl = torch.clamp(kl, min=-20.0, max=20.0)
+--- a/verl/workers/actor/dp_actor.py
++++ b/verl/workers/actor/dp_actor.py
+@@ -253,3 +253,3 @@
+-        # if grad_norm is not finite, skip the update
+-        if not torch.isfinite(grad_norm):
+-            print(f"WARN: rank {torch.distributed.get_rank()} grad_norm is not finite: {grad_norm}")
++        # A skipped update makes a formal run look healthy while doing no work.
++        # Fail fast so the run is explicitly invalidated instead.
++        if not torch.isfinite(grad_norm):
+@@ -256,0 +257,3 @@
++            raise FloatingPointError(
++                f"rank {torch.distributed.get_rank()} grad_norm is not finite: {grad_norm}"
++            )
+@@ -420 +423,4 @@
+-                        entropy_loss = agg_loss(loss_mat=entropy, loss_mask=response_mask, loss_agg_mode=loss_agg_mode)
++                        active_entropy = torch.where(
++                            response_mask.bool(), entropy, torch.zeros_like(entropy)
++                        )
++                        entropy_loss = agg_loss(loss_mat=active_entropy, loss_mask=response_mask, loss_agg_mode=loss_agg_mode)
+@@ -428,0 +435,6 @@
++                        active_log_prob = torch.where(
++                            response_mask.bool(), log_prob, torch.zeros_like(log_prob)
++                        )
++                        active_ref_log_prob = torch.where(
++                            response_mask.bool(), ref_log_prob, torch.zeros_like(ref_log_prob)
++                        )
+@@ -430 +442,5 @@
+-                        kld = kl_penalty(logprob=log_prob, ref_logprob=ref_log_prob, kl_penalty=self.config.kl_loss_type)
++                        kld = kl_penalty(
++                            logprob=active_log_prob,
++                            ref_logprob=active_ref_log_prob,
++                            kl_penalty=self.config.kl_loss_type,
++                        )

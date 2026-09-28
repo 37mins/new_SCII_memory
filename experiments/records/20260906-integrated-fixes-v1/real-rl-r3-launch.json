@@ -1,0 +1,144 @@
+{
+  "frozen_sha": "aa1d20dbe87ddaf67213e8fa67e15e4eb2e56835",
+  "node": "sc2-a100-44",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "deployment": "/root/new-scii-real-rl-20260906/code-aa1d20d",
+  "source_bundle_sha256": "02a5f4c3c54fb4194e5d3cad8b63b61a39eb36a3a3b8e422482e92d7722c8510",
+  "backup_bundle_sha256": "5e8621c7797563614b4a42f92cf6967ed993f988e57408c039f31422b9c2fffc",
+  "authorization": "User approved evaluation-only env.rollout.n=8, new SHA/RUN, all other controls unchanged; real Level6 RL gate at global step8 before 96.",
+  "preflight": {
+    "initial-eval": {
+      "configuration_check": "passed",
+      "differences_after_path_normalization": {
+        "env.rollout.n": [
+          "1",
+          "8"
+        ]
+      },
+      "world_size": 8,
+      "env_rollout_n": 8,
+      "val_rollout_n": 8,
+      "val_generation_n": 8,
+      "sha256": "a83f66894b701b9e9bbdef46cd221747f4d6982cad21b36163571d8afd70b088"
+    },
+    "train8": {
+      "configuration_check": "passed",
+      "differences_after_path_normalization": {},
+      "world_size": 8,
+      "env_rollout_n": 8,
+      "val_rollout_n": null,
+      "val_generation_n": 1,
+      "sha256": "6db376e308cfeaf7a4cd1536625232054cea80ffafddfae0c3104864c3fcb3ce"
+    },
+    "step8-eval": {
+      "configuration_check": "passed",
+      "differences_after_path_normalization": {
+        "env.rollout.n": [
+          "1",
+          "8"
+        ]
+      },
+      "world_size": 8,
+      "env_rollout_n": 8,
+      "val_rollout_n": 8,
+      "val_generation_n": 8,
+      "sha256": "d2fb387b5dc447529f16233a25d591f9def9fe188c5f3abd7d439f6cf69a29e5"
+    },
+    "cpu_tests": [
+      "Ran 99 tests in 8.620s",
+      "OK"
+    ]
+  },
+  "suite": {
+    "tmux": "sc2_real_r3",
+    "driver_log": "/root/new-scii-real-rl-20260906/suite-r3.driver.log",
+    "launch_at_utc": "2026-09-06T16:16:43Z",
+    "outer_exit_code": 0,
+    "shell_body": "set -e\nexec > /root/new-scii-real-rl-20260906/suite-r3.driver.log 2>&1\ndate -u\ncd /root/new-scii-real-rl-20260906/code-aa1d20d\nbash experiments/records/20260906-integrated-fixes-v1/run_real_rl_node44.sh initial-eval\nsleep 15\nbash experiments/records/20260906-integrated-fixes-v1/run_real_rl_node44.sh train8\nsleep 15\nbash experiments/records/20260906-integrated-fixes-v1/run_real_rl_node44.sh step8-eval\ndate -u",
+    "stage_order": [
+      "initial-eval",
+      "train8",
+      "step8-eval"
+    ],
+    "on_stage_failure": "set -e stops later stages; preserve failure; no automatic retry",
+    "global_step9_authorized_to_start_now": false
+  },
+  "snapshot": {
+    "checked_at_utc": "2026-09-06T16:20:00.130898+00:00",
+    "run_id": "20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r3-initial-eval",
+    "manifest": {
+      "schema_version": 1,
+      "status": "running",
+      "started_at": "2026-09-06T16:16:54.793147+00:00",
+      "source_commit": "aa1d20dbe87ddaf67213e8fa67e15e4eb2e56835",
+      "dirty": false,
+      "formal": true,
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "model_source": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+      "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+      "bo_profile": "canonical",
+      "episode_api": "gymnasium-v0.26",
+      "bo_path": "/root/new-scii-real-rl-20260906/code-aa1d20d/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+      "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+      "mode": "evaluation",
+      "source_files_sha256": {
+        "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+        "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+        "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+        "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "54644b5d9176139e4a8c9650f3f5e99bd03651d53f3ad19bb6e01329808a9578",
+        "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+        "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+        "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+      },
+      "target_steps": 1,
+      "training_goal_global_steps": 96,
+      "resume_from_path": null,
+      "host": "hpc",
+      "python": "3.12.3",
+      "gpu_selection": "0,1,2,3,4,5,6,7",
+      "world_size": 8,
+      "container_image_id": null,
+      "versions": {
+        "torch": "2.7.1+cu128",
+        "transformers": "4.55.2",
+        "ray": "2.48.0",
+        "gymnasium": "1.2.3",
+        "flash-attn": "2.6.3",
+        "flash-linear-attention": null,
+        "moba": null
+      }
+    },
+    "manifest_sha256": "a3ccd8c12557f48079313a6506a87b9f3cc472dff480a3c5c42e569df6df3c65",
+    "effective_config_sha256": "ab8092efae259c4fabaf73faaa816874e5b82711b662d190c8dfc7b4a5cccb12",
+    "done_exists": false,
+    "train8_directory_exists": false,
+    "step8_eval_directory_exists": false,
+    "episode_outcomes.jsonl": [],
+    "evaluation_seeds.jsonl": [
+      "{\"base_seed\": 1000, \"reset_index\": 0, \"seeds\": [2807211443, 882774615, 494016583, 2621640384, 4081499387, 44124510, 2071061852, 1549697793]}"
+    ],
+    "gpu_snapshot": "0, 1316 MiB, 0 %\n1, 1460 MiB, 0 %\n2, 1460 MiB, 0 %\n3, 1460 MiB, 0 %\n4, 1460 MiB, 0 %\n5, 1460 MiB, 0 %\n6, 1460 MiB, 0 %\n7, 1316 MiB, 0 %\n",
+    "gpu_processes": "3601330, ray::WorkerDict, 1304 MiB\n3601604, ray::WorkerDict, 1448 MiB\n3601605, ray::WorkerDict, 1448 MiB\n3601606, ray::WorkerDict, 1448 MiB\n3601607, ray::WorkerDict, 1448 MiB\n3601608, ray::WorkerDict, 1448 MiB\n3601609, ray::WorkerDict, 1448 MiB\n3601610, ray::WorkerDict, 1304 MiB\n",
+    "sc2_pids": []
+  },
+  "stage_at_snapshot": "initial evaluation: eight GPU workers loaded the original model; validation seeds recorded; SC2 console has live production at game time 05:52–05:53. train8 has not started.",
+  "retained_failure": "real-rl-r2-launch.json; historical r2 output/deployment unchanged",
+  "process_match_note": "pgrep -x SC2_x64 returned no matches; not used as a game-status conclusion. Actual SC2 game-time/action logs establish gameplay.",
+  "gameplay_log_examples": [
+    "[05:53] >>> BO #techlab barracks action condition <<<",
+    "[05:52] >>> Start Processing BO #103: marine <<<",
+    "[05:52] >>> BO #marine action condition <<<"
+  ]
+}

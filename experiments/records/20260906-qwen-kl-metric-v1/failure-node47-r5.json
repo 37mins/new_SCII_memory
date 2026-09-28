@@ -1,0 +1,58 @@
+{
+  "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-8gpu-trace-rl1-s0-r5",
+  "node": "sc2-a100-47",
+  "source_commit": "1e38a6ab97f03fa76ffe4b5abc96c5e72f990e69",
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-8gpu-trace-rl1-s0-r5",
+  "status": "failed",
+  "ended_at": "2026-09-06T04:08:30.987664+00:00",
+  "process_exit_code": 137,
+  "completed_steps": 0,
+  "target_steps": 1,
+  "checkpoint_complete": false,
+  "checkpoint_files": {},
+  "result_json_sha256": "be9832b3abb66f7257016e4389a8ab0ccdcfcd1ff3fa0ac527351d0af32ac694",
+  "done_sha256": "be9832b3abb66f7257016e4389a8ab0ccdcfcd1ff3fa0ac527351d0af32ac694",
+  "console_sha256": "f32deff5d7d30be310d04f1e3cc94d1d234b8f51e80d1584ef4516b6d0bef965",
+  "metric_rows": 0,
+  "diagnostics_directory_present": false,
+  "natural_games_finished": 3,
+  "planned_games": 8,
+  "finished_game_wins": 1,
+  "finished_game_defeats": 2,
+  "observed_errors": [
+    "driver killed; shell exit 137",
+    "ray.exceptions.ActorUnavailableError; RPC Socket closed"
+  ],
+  "termination_origin": "unresolved",
+  "cgroup_snapshot_at": "2026-09-06T04:23:29+00:00",
+  "cgroup": "/user.slice/user-0.slice/session-18585.scope",
+  "cgroup_memory_peak_bytes": 160861110272,
+  "cgroup_memory_max": "max",
+  "cgroup_memory_events": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "parent_cgroup_oom_kill": {
+    "/user.slice/user-0.slice": 0,
+    "/user.slice": 0
+  },
+  "systemd_oomd": "inactive; no journal entries in inspected failure window",
+  "kernel_evidence": "No matching current OOM/Xid found; NFS lost-lock warnings present, causality unproven.",
+  "result_readback": "Bounded reads on 47 timed out; read and SHA-256 verification succeeded through 44.",
+  "owned_sc2_orphans_at_20260906T042422Z": [3031644, 3031646, 3031648, 3031649, 3031651],
+  "orphan_attribution": "PPID 1; command temp paths under /dev/shm/qkl_l6_trace_r5, checked before recording.",
+  "cleanup_performed": false,
+  "files_deleted": false,
+  "retry_launched": false,
+  "later_resource_snapshot": {
+    "checked_at": "2026-09-06T04:23:29+00:00",
+    "all_gpus_occupied_by_other_job": true,
+    "other_worker_start_time": "2026-09-06T04:14:12+00:00",
+    "causality_note": "Later occupation does not identify who sent SIGKILL."
+  },
+  "conclusion": "GPU policy-consistency/drift diagnosis not reached. CPU regression passed; no real-model KL health or learning conclusion. Long training held."
+}

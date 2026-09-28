@@ -1,0 +1,167 @@
+{
+  "frozen_sha": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+  "node": "sc2-a100-44",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "deployment": "/root/new-scii-empty-bo-frame-20260907/code-ca7885d",
+  "source_bundle_sha256": "b6368530e4ff70cef2f1e9eb256e4a151cbbefa49eb40f2f5d4041de64872b29",
+  "authorization": "User approved restoring real Level 6 validation with the new empty-BO frame-loop fix, preferably all 8 GPUs; stop at global step 8 for acceptance before continuing toward 96.",
+  "only_game_behavior_change": "llm_player.py:660 changes empty/exhausted-queue refresh from while to if; prompt, prerequisite filtering, parser, reward, micro and training settings unchanged.",
+  "preflight": {
+    "at_utc": "2026-09-07T01:21:09.813501+00:00",
+    "source_commit": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+    "stages": {
+      "initial-eval": {
+        "output": "/root/new-scii-empty-bo-frame-20260907/preflight-r4-initial-eval",
+        "dry_run_exit": 0,
+        "config_validation": "passed",
+        "effective_config_sha256": "cee20b43244009315a31f3cdaf031d5fcc0780f78a5cd7ac9a7fd02816fc234e",
+        "differences_vs_r3_after_identity_normalization": {},
+        "gpus": 8,
+        "env_rollout_n": 8,
+        "goal": 96,
+        "epochs": 1,
+        "resume_mode": "disable",
+        "resume_path": null,
+        "val_only": true,
+        "asset_verification": true
+      },
+      "train8": {
+        "output": "/root/new-scii-empty-bo-frame-20260907/preflight-r4-train8",
+        "dry_run_exit": 0,
+        "config_validation": "passed",
+        "effective_config_sha256": "6fa82ce0edff29c3cb8b06ca22a29861d2baa6142c84cea07addada6b0d19246",
+        "differences_vs_r3_after_identity_normalization": {},
+        "gpus": 8,
+        "env_rollout_n": 8,
+        "goal": 96,
+        "epochs": 8,
+        "resume_mode": "disable",
+        "resume_path": null,
+        "val_only": false,
+        "asset_verification": false
+      },
+      "step8-eval": {
+        "output": "/root/new-scii-empty-bo-frame-20260907/preflight-r4-step8-eval",
+        "dry_run_exit": 0,
+        "config_validation": "passed",
+        "effective_config_sha256": "8ad04ba07ef5577668add4e13f248cc2bd77ae3e94934add85f19d5c86406f7c",
+        "differences_vs_r3_after_identity_normalization": null,
+        "gpus": 8,
+        "env_rollout_n": 8,
+        "goal": 96,
+        "epochs": 1,
+        "resume_mode": "resume_path",
+        "resume_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_8",
+        "val_only": true,
+        "asset_verification": false
+      }
+    },
+    "scope": "No model, GPU or SC2 execution; first stage verifies shared assets; all three invoke frozen trainer initialization validation."
+  },
+  "suite": {
+    "tmux": "sc2_real_r4",
+    "driver_log": "/root/new-scii-empty-bo-frame-20260907/suite-r4.driver.log",
+    "launch_at_utc": "2026-09-07T01:23:01Z",
+    "tmux_create_exit_code": 0,
+    "shell_body": "set -e\nexec > /root/new-scii-empty-bo-frame-20260907/suite-r4.driver.log 2>&1\ndate -u\ncd /root/new-scii-empty-bo-frame-20260907/code-ca7885d\nbash experiments/records/20260906-integrated-fixes-v1/run_real_rl_node44.sh initial-eval\n/usr/bin/python3 -B -c 'import json,sys; data=json.load(open(sys.argv[1])); assert data[\"status\"]==\"completed\", data[\"status\"]' '/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-initial-eval/.done'\nsleep 15\nbash experiments/records/20260906-integrated-fixes-v1/run_real_rl_node44.sh train8\n/usr/bin/python3 -B -c 'import json,sys; data=json.load(open(sys.argv[1])); assert data[\"status\"]==\"completed\", data[\"status\"]' '/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/.done'\nsleep 15\nbash experiments/records/20260906-integrated-fixes-v1/run_real_rl_node44.sh step8-eval\n/usr/bin/python3 -B -c 'import json,sys; data=json.load(open(sys.argv[1])); assert data[\"status\"]==\"completed\", data[\"status\"]' '/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-step8-eval/.done'\nsleep 15\ndate -u",
+    "stage_order": [
+      "initial-eval",
+      "train8",
+      "step8-eval"
+    ],
+    "on_failure": "set -e and completed .done checks stop subsequent stages; no retry",
+    "step9_queued": false
+  },
+  "actual_config_check": {
+    "at_utc": "2026-09-07T01:30:18.659555+00:00",
+    "actual_vs_preflight_override_differences_after_run_path_normalization": {},
+    "actual_effective_sha256": "c29679c46dc885dfe7cae40ac36e335bb0479f5ac118e91127649fadd4daf39c",
+    "overrides_count": 140
+  },
+  "snapshot": {
+    "at_utc": "2026-09-07T01:28:59.504711+00:00",
+    "tmux_returncode": 0,
+    "handle": "3649280 bash",
+    "gpu_snapshot": "0, 1316 MiB, 0 %\n1, 1460 MiB, 0 %\n2, 1460 MiB, 0 %\n3, 1460 MiB, 0 %\n4, 1460 MiB, 0 %\n5, 1460 MiB, 0 %\n6, 1460 MiB, 0 %\n7, 1316 MiB, 0 %\n",
+    "gpu_apps": "3653870, ray::WorkerDict, 1304 MiB\n3654099, ray::WorkerDict, 1448 MiB\n3654100, ray::WorkerDict, 1448 MiB\n3654102, ray::WorkerDict, 1448 MiB\n3654103, ray::WorkerDict, 1448 MiB\n3654104, ray::WorkerDict, 1448 MiB\n3654105, ray::WorkerDict, 1448 MiB\n3654101, ray::WorkerDict, 1304 MiB\n",
+    "initial-eval": {
+      "exists": true,
+      "manifest.json_sha256": "6e4ed9c2047a6cc8bb6ff50441051e64e4016afe4214d04b58fb064cef71accb",
+      "manifest": {
+        "schema_version": 1,
+        "status": "running",
+        "started_at": "2026-09-07T01:23:12.145468+00:00",
+        "source_commit": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+        "dirty": false,
+        "formal": true,
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_source": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "model_manifest_sha256": "c82106ca091f4797af1217cca7578618bb2a5cd7c4136ca0d2d06c0a77ed00a7",
+        "bo_profile": "canonical",
+        "episode_api": "gymnasium-v0.26",
+        "bo_path": "/root/new-scii-empty-bo-frame-20260907/code-ca7885d/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+        "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+        "mode": "evaluation",
+        "source_files_sha256": {
+          "configs/qwen3-4b-instruct-2507-level5.env": "faa88a45451d5c42003430fdf244775ca9f20b4ee4e2c0f49bd2b2d8c764957e",
+          "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+          "scripts/train_sc2.sh": "b949abfdeddcf33b90e8591e724e4ad5fef2db0bb58970ecc191956b880908f8",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "e9f3c7bdc5600b378648adaced0dec75c5bff5949250b58f929f3e4ac62dff8b",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "5e44bedf015cc8d6397f0a27d1c795cb01cbf58c91f4326227c449b877404dd2",
+          "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "8dd13723f38687ea3e35a282b9a3f2f190a257190974501e59f6cbc51f0d1c11",
+          "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+          "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "a8b3078367660dcf25df8fc503d75de284acdfcf13117b425af2e1689180e31f",
+          "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+        },
+        "target_steps": 1,
+        "training_goal_global_steps": 96,
+        "resume_from_path": null,
+        "host": "hpc",
+        "python": "3.12.3",
+        "gpu_selection": "0,1,2,3,4,5,6,7",
+        "world_size": 8,
+        "container_image_id": null,
+        "versions": {
+          "torch": "2.7.1+cu128",
+          "transformers": "4.55.2",
+          "ray": "2.48.0",
+          "gymnasium": "1.2.3",
+          "flash-attn": "2.6.3",
+          "flash-linear-attention": null,
+          "moba": null
+        }
+      },
+      "effective_config.json_sha256": "c29679c46dc885dfe7cae40ac36e335bb0479f5ac118e91127649fadd4daf39c",
+      "evaluation_seeds.jsonl_sha256": "fe29009e02d3c378175699b96f6e9cffcc36d43e55c99550fcd4a4fc9e83b487",
+      "evaluation_seeds": [
+        "{\"base_seed\": 1000, \"reset_index\": 0, \"seeds\": [2807211443, 882774615, 494016583, 2621640384, 4081499387, 44124510, 2071061852, 1549697793]}"
+      ],
+      "log_bytes": 1352296,
+      "gameplay_tail": [
+        "\u001b[36m(SC2Worker pid=3652007)\u001b[0m [10:35] >>> BO #supplydepot action condition <<<",
+        "\u001b[36m(SC2Worker pid=3652007)\u001b[0m [10:35] >>> Start Processing BO #217: SCV <<<",
+        "\u001b[36m(SC2Worker pid=3652007)\u001b[0m [10:35] >>> BO #SCV action condition <<<",
+        "\u001b[36m(SC2Worker pid=3652007)\u001b[0m [10:36] >>> Start Processing BO #218: SCV <<<",
+        "\u001b[36m(SC2Worker pid=3652007)\u001b[0m [10:36] >>> BO #SCV action condition <<<"
+      ],
+      "error_tail": []
+    },
+    "train8": {
+      "exists": false
+    },
+    "step8-eval": {
+      "exists": false
+    }
+  },
+  "conclusion": "Actually running initial evaluation, with 8 model workers, SC2 gameplay and the planned 8 seeds confirmed. No PPO update or training result yet at snapshot time. Initial/train8 preflight differs from actual r3 overrides only by identity/path; step8-eval has no actual r3 run to compare."
+}

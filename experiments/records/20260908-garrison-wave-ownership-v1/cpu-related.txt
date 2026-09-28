@@ -1,0 +1,15 @@
+/private/tmp/sc2-air-results.HBI61m/decoder/bin/python -B - <<'PY'
+import sys, unittest
+sys.path.insert(0, 'tests')
+names = ['test_pending_addon_placement', 'test_barracks_production_slots', 'test_planner_air_options', 'test_valid_bo_passthrough', 'test_r6_planner_interface', 'test_r6_format_reward', 'test_empty_bo_frame']
+suite = unittest.TestLoader().loadTestsFromNames(names)
+result = unittest.TextTestRunner(verbosity=1).run(suite)
+raise SystemExit(not result.wasSuccessful())
+PY
+
+.................................................
+----------------------------------------------------------------------
+Ran 49 tests in 1.392s
+
+OK
+EXIT_CODE=0

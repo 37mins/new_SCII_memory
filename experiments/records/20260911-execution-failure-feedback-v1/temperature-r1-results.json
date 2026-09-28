@@ -1,0 +1,4208 @@
+{
+  "source_sha": "9ae8668c4c6045f5834d197c72f7495c175c1c73",
+  "config_differences": {
+    "+ray_init.runtime_env.env_vars.SC2_FEEDBACK_TEMPERATURE_AB": [
+      "'0.4'",
+      "'0.8'"
+    ],
+    "actor_rollout_ref.rollout.temperature": [
+      "0.4",
+      "0.8"
+    ],
+    "actor_rollout_ref.rollout.val_kwargs.temperature": [
+      "0.4",
+      "0.8"
+    ]
+  },
+  "runtime_directory_differences": {
+    "+ray_init._temp_dir": [
+      "/dev/shm/t04_0912_r1",
+      "/dev/shm/t08_0912_r1"
+    ],
+    "+ray_init.runtime_env.env_vars.TMPDIR": [
+      "/dev/shm/t04_0912_r1",
+      "/dev/shm/t08_0912_r1"
+    ],
+    "+ray_init.runtime_env.env_vars.RAY_TMPDIR": [
+      "/dev/shm/t04_0912_r1",
+      "/dev/shm/t08_0912_r1"
+    ]
+  },
+  "arms": {
+    "04": {
+      "run": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp04-eval8-s42613-r1",
+      "ended_at": "2026-09-12T00:59:12.988194+00:00",
+      "wins": 0,
+      "mean_reward": -49.39675,
+      "calls": 20,
+      "valid": 20,
+      "early": [
+        {
+          "call": 1,
+          "count": 8,
+          "valid": 8,
+          "valid_input_hashes": {
+            "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424": 8
+          },
+          "unique_valid_queues": 1,
+          "all_queue_patterns": {
+            "[\"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"barracks\", \"barracks\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\"]": 8
+          }
+        },
+        {
+          "call": 2,
+          "count": 8,
+          "valid": 8,
+          "valid_input_hashes": {
+            "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1": 8
+          },
+          "unique_valid_queues": 2,
+          "all_queue_patterns": {
+            "[\"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"barracks\", \"reactor barracks\", \"reactor barracks\", \"reactor barracks\", \"scv\", \"scv\", \"scv\", \"refinery\"]": 7,
+            "[\"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"barracks\", \"reactor barracks\", \"reactor barracks\", \"reactor barracks\", \"scv\", \"scv\", \"scv\", \"refinery\"]": 1
+          }
+        }
+      ],
+      "games": [
+        {
+          "env": 0,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": 2,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 42,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": -49.382,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3970909/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 1,
+          "outcome": "Defeat",
+          "reward": -49.5,
+          "calls": 6,
+          "valid": 6,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 8,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\n- marine x 34\n- reactor barracks x 3\n- scv x 3\n</answer>",
+              "prompt_sha256": "7a145a2b1f99dfefea22c57f8cb3ff4732cded4bf127741ed5a59f03e4996cd4",
+              "prompt_game_time": "07:41",
+              "queue": {
+                "line": 5925,
+                "iteration": 2582,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv"
+                ]
+              },
+              "counts": {
+                "marine": 34,
+                "reactor barracks": 3,
+                "scv": 3
+              }
+            },
+            {
+              "step_index": 3,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "6b34d851b822e9271aeccc3782751f5a46f369a91219c11768dfa38d66175198",
+              "prompt_game_time": "10:32",
+              "queue": {
+                "line": 8288,
+                "iteration": 3541,
+                "actions": [
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            },
+            {
+              "step_index": 4,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "70c591315d5fde84451edf8ee3c820afd5c8d5daedd6ba21456ab2a735bd167f",
+              "prompt_game_time": "11:11",
+              "queue": {
+                "line": 8935,
+                "iteration": 3762,
+                "actions": [
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            },
+            {
+              "step_index": 5,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "e958f7008ab718ffcd3aad7ed522a994cdde17fcb25f39579b10f104918b290f",
+              "prompt_game_time": "11:51",
+              "queue": {
+                "line": 9451,
+                "iteration": 3983,
+                "actions": [
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "reactor barracks": 2,
+                "scv": 3,
+                "refinery": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 3,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 4,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 5,
+              "reward": -49.5,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3970911/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 2,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": 2,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 42,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": -49.382,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3970910/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 3,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": 2,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 42,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": -49.382,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3970912/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 4,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": 2,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 42,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": -49.382,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3970915/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 5,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": 2,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 42,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": -49.382,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3970914/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 6,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": 2,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 42,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": -49.382,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3970916/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 7,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": 2,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 42,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": -49.382,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3970913/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_00-47-25/default_player_Qwen3-30B_20260912.log"
+        }
+      ],
+      "missing_answer_close": 0,
+      "hashes": {
+        "manifest.json": "8cb7d3f50167d98739f3955370fdbc7eb09429f4b4a563d3943d7fe8ac4ac9ee",
+        "effective_config.json": "94a1402cec138dbe24ac293f62de2855e704f12b9d5fdaa41c517a639b6766a7",
+        "result.json": "4be46361ba58085243945501c69fd2b0d7d050dec55a329919bbb7002ce82a68",
+        ".done": "4be46361ba58085243945501c69fd2b0d7d050dec55a329919bbb7002ce82a68",
+        "prompt_response.jsonl": "ddbb6de28607f8fa4cbc9b2d98035c56ba02dddde04d0a04f4adb35479a16de1",
+        "episode_outcomes.jsonl": "b65ad5e5fc82f2d692dd002cdee0961665c5ea945925bc1b72168862b1c20d75",
+        "evaluation_seeds.jsonl": "70e253b2ad8eb6ed8aaae1106cd385cdebcbc90149acec25dea577fd3483a9f1",
+        "checkpoint_evaluation.json": "347addab794444936928953c129a7aea2ce6442da8bd37f1b03f47f3983a0ff1"
+      }
+    },
+    "08": {
+      "run": "/root/new-scii-execution-feedback-local-20260911/shared/yangjinyue/new_SCII/experiments/20260911-execution-failure-feedback-v1/runs/20260911-execution-failure-feedback-v1-spb2-A4-l6-temp08-eval8-s42613-r1",
+      "ended_at": "2026-09-12T01:21:07.844774+00:00",
+      "wins": 0,
+      "mean_reward": -49.4835,
+      "calls": 58,
+      "valid": 34,
+      "early": [
+        {
+          "call": 1,
+          "count": 8,
+          "valid": 7,
+          "valid_input_hashes": {
+            "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424": 7
+          },
+          "unique_valid_queues": 1,
+          "all_queue_patterns": {
+            "[\"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"barracks\", \"barracks\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\"]": 7,
+            "[\"supplydepot\", \"barracks\", \"marine\", \"barracks\", \"marine\", \"supplydepot\"]": 1
+          }
+        },
+        {
+          "call": 2,
+          "count": 8,
+          "valid": 8,
+          "valid_input_hashes": {
+            "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1": 7,
+            "bbb46559bc7f9fbdd96376252b4720cf7ed81075a1e381bec9159c3a82f93614": 1
+          },
+          "unique_valid_queues": 8,
+          "all_queue_patterns": {
+            "[\"marine\", \"supplydepot\", \"barracks\", \"reactor barracks\", \"scv\", \"refinery\", \"Attacking Instruction: Launch OFFENSE with 8 marine\"]": 1,
+            "[\"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"barracks\"]": 1,
+            "[\"marine\", \"marine\", \"marine\", \"marine\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"barracks\"]": 1,
+            "[\"marine\", \"marine\", \"marine\", \"marine\", \"supplydepot\", \"barracks\", \"barracks\"]": 1,
+            "[\"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\"]": 1,
+            "[\"marine\", \"marine\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\"]": 1,
+            "[\"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"marine\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"barracks\"]": 1,
+            "[\"marine\", \"marine\", \"supplydepot\", \"supplydepot\", \"barracks\", \"barracks\", \"reactor barracks\", \"reactor barracks\", \"scv\", \"scv\", \"scv\"]": 1
+          }
+        }
+      ],
+      "games": [
+        {
+          "env": 0,
+          "outcome": "Defeat",
+          "reward": -48.95,
+          "calls": 6,
+          "valid": 4,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "supplydepot",
+                  "barracks",
+                  "reactor barracks",
+                  "scv",
+                  "refinery",
+                  "Attacking Instruction: Launch OFFENSE with 8 marine"
+                ]
+              },
+              "counts": {
+                "marine": 1,
+                "supplydepot": 1,
+                "barracks": 1,
+                "reactor barracks": 1,
+                "scv": 1,
+                "refinery": 1,
+                "Attacking Instruction: Launch OFFENSE with 8 marine": 1
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 41\n- supplydepot x 7\n- barracks x 2\n- reactor barracks x 3\n</answer>",
+              "prompt_sha256": "e237b0f4fa638feac2ade0e5ecedc1ec2c59728566057291f08730f8d133e69c",
+              "prompt_game_time": "05:08",
+              "queue": {
+                "line": 4077,
+                "iteration": 1730,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks"
+                ]
+              },
+              "counts": {
+                "marine": 41,
+                "supplydepot": 7,
+                "barracks": 2,
+                "reactor barracks": 3
+              }
+            },
+            {
+              "step_index": 3,
+              "valid": false,
+              "failure": "canonical legacy response requires `- exactname`",
+              "answer": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags. Do not restart the list. Repeated names and `x N` remain allowed within the cumulative quota.**\n\nHere are the Build Orders with attack instructions:\n- scv x 2\n- reactor barracks x 1\n- refinery x 1",
+              "prompt_sha256": "351303d46163da73483258e7a99b45dbcc04709f90d08349de8ab5a5580ad883",
+              "prompt_game_time": "10:16",
+              "queue": {
+                "line": 8285,
+                "iteration": 3453,
+                "actions": [
+                  "refinery",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv"
+                ]
+              },
+              "counts": {
+                "refinery": 1,
+                "reactor barracks": 3,
+                "scv": 2
+              }
+            },
+            {
+              "step_index": 4,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: supplydepot",
+              "answer": "<answer>\n- scv x 2\n- reactor barracks x 3\n- supplydepot x 2\n</answer>",
+              "prompt_sha256": "fad72bc9974cafd05b784a52f68222be7d614f5c3a73be612149f4ee492616ba",
+              "prompt_game_time": "10:56",
+              "queue": {
+                "line": 8780,
+                "iteration": 3675,
+                "actions": [
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv"
+                ]
+              },
+              "counts": {
+                "reactor barracks": 3,
+                "scv": 3
+              }
+            },
+            {
+              "step_index": 5,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- mule x 3\n- commandcenter x 2\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "prompt_sha256": "73a60d759ce98bc9315072a3588f12112356d95e8ac77116b95ca93c6b0f4695",
+              "prompt_game_time": "11:40",
+              "queue": {
+                "line": 9391,
+                "iteration": 3923,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "commandcenter",
+                  "commandcenter",
+                  "techlab barracks",
+                  "factory"
+                ]
+              },
+              "counts": {
+                "marine": 4,
+                "supplydepot": 1,
+                "mule": 3,
+                "commandcenter": 2,
+                "techlab barracks": 1,
+                "factory": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": 0.5,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 3,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 4,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 5,
+              "reward": -49.45,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3984472/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 1,
+          "outcome": "Defeat",
+          "reward": -49.901,
+          "calls": 7,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks"
+                ]
+              },
+              "counts": {
+                "marine": 8,
+                "supplydepot": 8,
+                "barracks": 3
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: starport",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 2\n- supplydepot x 1\n- commandcenter x 1\n- factory x 1\n- techlab barracks x 1\n- refinery x 1\n- starport x 1\n- starport with techlab x 1\n- supplydepot x 1\n</answer>",
+              "prompt_sha256": "a8d225bbea398ea952e5ef9057cd3c54a9d3cfeb6d899bc468158117d1ef8a88",
+              "prompt_game_time": "07:01",
+              "queue": {
+                "line": 5427,
+                "iteration": 2361,
+                "actions": [
+                  "supplydepot",
+                  "refinery",
+                  "marine",
+                  "techlab barracks",
+                  "marauder",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 1,
+                "refinery": 1,
+                "marine": 2,
+                "techlab barracks": 1,
+                "marauder": 1
+              }
+            },
+            {
+              "step_index": 3,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: marines",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 3\n- supplydepot x 1\n- commandcenter x 1\n- factory x 1\n- marines x 36\n- SCVs x 15\n</answer>",
+              "prompt_sha256": "c4f4b4a4cdfbb033b2a21e009c546b6fd6ba263b0b7a9a9ff8042677fbde9732",
+              "prompt_game_time": "08:25",
+              "queue": {
+                "line": 6484,
+                "iteration": 2829,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "marauder",
+                  "marine",
+                  "factory",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 2,
+                "marauder": 1,
+                "factory": 1
+              }
+            },
+            {
+              "step_index": 4,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: siege tank",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- siege tank x 2\n- supplydepot x 6\n- starport x 1\n</answer>",
+              "prompt_sha256": "cec02ea67ef382c3bbe6966b045f541e46bb9f18f81291407b2e0100d8cc1e4b",
+              "prompt_game_time": "09:17",
+              "queue": {
+                "line": 7144,
+                "iteration": 3121,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "marauder",
+                  "marine",
+                  "starport",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 2,
+                "marauder": 1,
+                "starport": 1
+              }
+            },
+            {
+              "step_index": 5,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: siege tank",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 4\n- mule x 6\n- siege tank x 9\n- scv x 15\n- marines x 44\n</answer>",
+              "prompt_sha256": "1d71a1007bb54096141c5aa51fb889f67cc2618b8772f8384a34c16e29285dfc",
+              "prompt_game_time": "10:44",
+              "queue": {
+                "line": 8252,
+                "iteration": 3611,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "vikingfighter",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "marine": 3,
+                "supplydepot": 2,
+                "vikingfighter": 1
+              }
+            },
+            {
+              "step_index": 6,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: barracks",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 3\n- marauder x 1\n- supplydepot x 2\n- mule x 1\n- siegetank x 5\n- scv x 15\n- commandcenter x 2\n- vikingfighter x 7\n- barracks x 3\n</answer>",
+              "prompt_sha256": "405ed4838ad38acf1d51821f0b1e0bbac3c4b12e52030a02ac74095272e380d0",
+              "prompt_game_time": "12:00",
+              "queue": {
+                "line": 9234,
+                "iteration": 4035,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "vikingfighter",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "marine": 3,
+                "supplydepot": 2,
+                "vikingfighter": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 3,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 4,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 5,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 6,
+              "reward": -49.901,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            }
+          ],
+          "executor_log": "sc2-logs/game-3984474/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 2,
+          "outcome": "Defeat",
+          "reward": -49.432,
+          "calls": 8,
+          "valid": 5,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks"
+                ]
+              },
+              "counts": {
+                "marine": 4,
+                "supplydepot": 2,
+                "barracks": 3
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: battlecruiser",
+              "answer": "<answer>\n- marine x 38\n- supplydepot x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- battlecruiser x 2\n</answer>",
+              "prompt_sha256": "8ba1ae41693d91622e6bd1081b729ba262cecc08f9aab0898d574809109c2c2c",
+              "prompt_game_time": "05:29",
+              "queue": {
+                "line": 4425,
+                "iteration": 1845,
+                "actions": [
+                  "supplydepot",
+                  "refinery",
+                  "marine",
+                  "reactor barracks",
+                  "marine",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "refinery": 1,
+                "marine": 2,
+                "reactor barracks": 1
+              }
+            },
+            {
+              "step_index": 3,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+              "prompt_sha256": "f1e9f7505432035eece0731057c77963b22501f7e60db6963b87d88cf16f9ac1",
+              "prompt_game_time": "06:40",
+              "queue": {
+                "line": 5314,
+                "iteration": 2245,
+                "actions": [
+                  "marine",
+                  "supplydepot",
+                  "reactor barracks"
+                ]
+              },
+              "counts": {
+                "marine": 1,
+                "supplydepot": 1,
+                "reactor barracks": 1
+              }
+            },
+            {
+              "step_index": 4,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: reactor",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- mule x 6\n- supplydepot x 9\n- marauder x 4\n- commandcenter x 2\n- techlab barracks x 1\n- factory x 1\n- reactor x 1\n</answer>",
+              "prompt_sha256": "dde548df44bd5eb32062da48c5b072446353efc7eaeb29ff5c017fb39f4d270f",
+              "prompt_game_time": "06:41",
+              "queue": {
+                "line": 5324,
+                "iteration": 2248,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "techlab barracks",
+                  "marauder",
+                  "marine",
+                  "factory"
+                ]
+              },
+              "counts": {
+                "supplydepot": 1,
+                "marine": 2,
+                "techlab barracks": 1,
+                "marauder": 1,
+                "factory": 1
+              }
+            },
+            {
+              "step_index": 5,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 3\n- mule x 6\n- scv x 15\n</answer>",
+              "prompt_sha256": "769bbd2ec03ec7d752dac703f33d534479544da72385c6421340fd0c9b83eaa6",
+              "prompt_game_time": "07:53",
+              "queue": {
+                "line": 6225,
+                "iteration": 2650,
+                "actions": [
+                  "marauder",
+                  "marauder",
+                  "marauder",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv"
+                ]
+              },
+              "counts": {
+                "marauder": 3,
+                "mule": 6,
+                "scv": 15
+              }
+            },
+            {
+              "step_index": 6,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: siege tank",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 36\n- supplydepot x 4\n- siege tank x 7\n- command center x 1\n- starport x 1\n- barracks with reactor x 1\n- barracks with tech lab x 1\n- factory x 1\n- refinery x 1\n</answer>",
+              "prompt_sha256": "ca2d8af14750940d33b8f893844937dfa194b09ae6a462479dc107bc963e45bf",
+              "prompt_game_time": "10:58",
+              "queue": {
+                "line": 8554,
+                "iteration": 3686,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "marine",
+                  "starport",
+                  "supplydepot",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 3,
+                "starport": 1
+              }
+            },
+            {
+              "step_index": 7,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 45\n- supplydepot x 6\n- siegetank x 9\n- commandcenter x 2\n</answer>",
+              "prompt_sha256": "244f56d72e39efd4e4dc04af8edc42fbbc1a5a9ff7edfaa447e78535804437d7",
+              "prompt_game_time": "10:59",
+              "queue": {
+                "line": 8594,
+                "iteration": 3692,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "siegetank",
+                  "siegetank",
+                  "siegetank",
+                  "siegetank",
+                  "siegetank",
+                  "siegetank",
+                  "siegetank",
+                  "siegetank",
+                  "siegetank",
+                  "commandcenter",
+                  "commandcenter"
+                ]
+              },
+              "counts": {
+                "marine": 45,
+                "supplydepot": 6,
+                "siegetank": 9,
+                "commandcenter": 2
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 3,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 4,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 5,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 6,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 7,
+              "reward": -49.432,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3984473/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 3,
+          "outcome": "Defeat",
+          "reward": -49.901,
+          "calls": 9,
+          "valid": 2,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 2\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "barracks",
+                  "barracks"
+                ]
+              },
+              "counts": {
+                "marine": 4,
+                "supplydepot": 1,
+                "barracks": 2
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": false,
+              "failure": "action count exceeds current BO remainder: refinery",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 2\n- scv x 2\n- refinery x 2\n</answer>",
+              "prompt_sha256": "8b82034afc4b25e1d613b74a4d2bb21b8ff6eff5964331633693a1a7eef3825b",
+              "prompt_game_time": "04:57",
+              "queue": {
+                "line": 3836,
+                "iteration": 1667,
+                "actions": [
+                  "supplydepot",
+                  "barracks",
+                  "refinery",
+                  "marine",
+                  "reactor barracks",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 1,
+                "barracks": 1,
+                "refinery": 1,
+                "marine": 2,
+                "reactor barracks": 1
+              }
+            },
+            {
+              "step_index": 3,
+              "valid": false,
+              "failure": "canonical legacy response requires `- exactname`",
+              "answer": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags. Do not repeat actions just to fill that target. Once this near-term segment is complete, close </answer> and stop; do not restart the list. Repeated names and `x N` remain allowed within the cumulative quota.**\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- scv x 2\n- marine x 37\n</answer>",
+              "prompt_sha256": "0f941f65e6418be79d6acfada1dd8deb0f757a8084df1216c1f408274488d615",
+              "prompt_game_time": "06:28",
+              "queue": {
+                "line": 5035,
+                "iteration": 2178,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "reactor barracks",
+                  "marine",
+                  "supplydepot",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 3,
+                "reactor barracks": 1
+              }
+            },
+            {
+              "step_index": 4,
+              "valid": false,
+              "failure": "action count exceeds current BO remainder: marauder",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 4\n- commandcenter x 2\n- techlab barracks x 1\n- factory x 1\n- supplydepot x 9\n- marauder x 2\n- supplydepot x 7\n- scv x 15\n- supplydepot x 1\n- mule x 6\n- mule x 1\n</answer>",
+              "prompt_sha256": "61370a8e368aa260dd6f4f275529807bdc378d6596bfb2c9c5448027bba331bd",
+              "prompt_game_time": "06:45",
+              "queue": {
+                "line": 5264,
+                "iteration": 2272,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "techlab barracks",
+                  "marauder",
+                  "marine",
+                  "factory"
+                ]
+              },
+              "counts": {
+                "supplydepot": 1,
+                "marine": 2,
+                "techlab barracks": 1,
+                "marauder": 1,
+                "factory": 1
+              }
+            },
+            {
+              "step_index": 5,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: reactor",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 1\n- marine x 1\n- commandcenter x 1\n- factory x 1\n- reactor x 1\n- barracks x 1\n- barracks with reactor x 1\n- barracks with techlab x 1\n- techlab x 1\n- marauder x 1\n- marauder x 1\n- marauder x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x 1\n- supplydepot x",
+              "prompt_sha256": "a47281d433c38b5f082ca4e98bfec27442d5d4af3ec178533f4d4b9f28b2bc87",
+              "prompt_game_time": "08:01",
+              "queue": {
+                "line": 6311,
+                "iteration": 2696,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "marauder",
+                  "marine",
+                  "factory",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 2,
+                "marauder": 1,
+                "factory": 1
+              }
+            },
+            {
+              "step_index": 6,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: siege tank",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 1\n- mule x 1\n- siege tank x 2\n- marines x 46\n- starport x 1\n- reactors x 2\n- research labs x 2\n</answer>",
+              "prompt_sha256": "98371359263544264e12630ef8b0d02c98998b221bc03cafaa9bfe5ada33fbbd",
+              "prompt_game_time": "09:25",
+              "queue": {
+                "line": 7375,
+                "iteration": 3164,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "marauder",
+                  "marine",
+                  "starport",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 2,
+                "marauder": 1,
+                "starport": 1
+              }
+            },
+            {
+              "step_index": 7,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: siege tank",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- siege tank x 2\n- marauder x 1\n- commandcenter x 1\n- supplydepot x 1\n- marine x 2\n- marauder x 1\n- mule x 1\n</answer>",
+              "prompt_sha256": "3ccf0c1e70af1a1c0af5042143362afabf5470700d0de146ccf2a8c897f86d22",
+              "prompt_game_time": "10:52",
+              "queue": {
+                "line": 8545,
+                "iteration": 3654,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "vikingfighter",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "marine": 3,
+                "supplydepot": 2,
+                "vikingfighter": 1
+              }
+            },
+            {
+              "step_index": 8,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: siege tank",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 31\n- supplydepot x 2\n- mule x 4\n- siege tank x 9\n- marauder x 1\n- commandcenter x 2\n</answer>",
+              "prompt_sha256": "2ca7d523a68fe0980b33711e3b42adfbfcb391b3e89c3bbf802e07621a72ac9b",
+              "prompt_game_time": "12:12",
+              "queue": {
+                "line": 9655,
+                "iteration": 4100,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "marauder",
+                  "marine",
+                  "supplydepot",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 3,
+                "marauder": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 3,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 4,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 5,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 6,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 7,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 8,
+              "reward": -49.901,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            }
+          ],
+          "executor_log": "sc2-logs/game-3984475/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 4,
+          "outcome": "Defeat",
+          "reward": -48.901,
+          "calls": 8,
+          "valid": 6,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": false,
+              "failure": "action count exceeds current BO remainder: supplydepot",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 12\n- supplydepot x 4\n- barracks x 4\n- marine x 12\n- supplydepot x 4\n- barracks x 4\n- marine x 12\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "barracks",
+                  "marine",
+                  "barracks",
+                  "marine",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "barracks": 2,
+                "marine": 2
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n</answer>",
+              "prompt_sha256": "bbb46559bc7f9fbdd96376252b4720cf7ed81075a1e381bec9159c3a82f93614",
+              "prompt_game_time": "01:47",
+              "queue": {
+                "line": 1325,
+                "iteration": 600,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "barracks": 2,
+                "marine": 22
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+              "prompt_sha256": "cfce76adace5e50d9a4c81347686915d25d4fc4d6528ef4504c3c09109d3ecbf",
+              "prompt_game_time": "04:17",
+              "queue": {
+                "line": 3221,
+                "iteration": 1440,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ]
+              },
+              "counts": {
+                "marine": 8,
+                "supplydepot": 8,
+                "barracks": 3,
+                "reactor barracks": 3,
+                "scv": 3,
+                "refinery": 1
+              }
+            },
+            {
+              "step_index": 3,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: launch OFFENSE with 8 marine",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- launch OFFENSE with 8 marine\n- marine x 34\n- reactor barracks x 3\n- scv x 3\n</answer>",
+              "prompt_sha256": "0a147e44e6772d94c4019a8ff5436a38f7674acf040cc28bed70a99aac8a803d",
+              "prompt_game_time": "07:48",
+              "queue": {
+                "line": 5955,
+                "iteration": 2626,
+                "actions": [
+                  "refinery",
+                  "marine",
+                  "reactor barracks",
+                  "marine",
+                  "marine",
+                  "Attacking Instruction: launch OFFENSE with 8 marine"
+                ]
+              },
+              "counts": {
+                "refinery": 1,
+                "marine": 3,
+                "reactor barracks": 1,
+                "Attacking Instruction: launch OFFENSE with 8 marine": 1
+              }
+            },
+            {
+              "step_index": 4,
+              "valid": true,
+              "failure": "",
+              "answer": "Here are the Build Orders with attack instructions:\n- marine x 3\n- reactor barracks x 3\n- scv x 3\n",
+              "prompt_sha256": "6bcb9840fd23408db1dd2f0c53e5ee36eb49c05dcedeb698021647afa0bb0950",
+              "prompt_game_time": "08:28",
+              "queue": {
+                "line": 6436,
+                "iteration": 2849,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv"
+                ]
+              },
+              "counts": {
+                "marine": 3,
+                "reactor barracks": 3,
+                "scv": 3
+              }
+            },
+            {
+              "step_index": 5,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 2\n- supplydepot x 1\n- techlab barracks x 1\n</answer>",
+              "prompt_sha256": "fcee5b4d4470f26930bf52e8b73cb5e8f3d5cadb7b9bfcd534b88a91049f7f06",
+              "prompt_game_time": "09:13",
+              "queue": {
+                "line": 7060,
+                "iteration": 3100,
+                "actions": [
+                  "marauder",
+                  "marauder",
+                  "supplydepot",
+                  "techlab barracks"
+                ]
+              },
+              "counts": {
+                "marauder": 2,
+                "supplydepot": 1,
+                "techlab barracks": 1
+              }
+            },
+            {
+              "step_index": 6,
+              "valid": true,
+              "failure": "",
+              "answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 9\n- marauder x 4\n- commandcenter x 2\n</answer>",
+              "prompt_sha256": "f5ca7c8fb29b60f7ffa423eb364c555170fbca429045e8688a0ba860771e20e6",
+              "prompt_game_time": "09:53",
+              "queue": {
+                "line": 7598,
+                "iteration": 3321,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "marauder",
+                  "marauder",
+                  "marauder",
+                  "marauder",
+                  "commandcenter",
+                  "commandcenter"
+                ]
+              },
+              "counts": {
+                "supplydepot": 9,
+                "marauder": 4,
+                "commandcenter": 2
+              }
+            },
+            {
+              "step_index": 7,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 50\n- mule x 6\n- scv x 15\n- commandcenter x 2\n- techlab barracks x 1\n- factory x 1\n</answer>",
+              "prompt_sha256": "b5431637f6d880f2fbbc81c14ce584cc730eca0cb2a26310f77e759b97842bfd",
+              "prompt_game_time": "11:29",
+              "queue": {
+                "line": 8751,
+                "iteration": 3859,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "commandcenter",
+                  "commandcenter",
+                  "techlab barracks",
+                  "factory"
+                ]
+              },
+              "counts": {
+                "marine": 50,
+                "mule": 6,
+                "scv": 15,
+                "commandcenter": 2,
+                "techlab barracks": 1,
+                "factory": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 1,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 3,
+              "reward": 0.5,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 4,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 5,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 6,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 7,
+              "reward": -49.401,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3984476/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 5,
+          "outcome": "Defeat",
+          "reward": -49.901,
+          "calls": 8,
+          "valid": 4,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks"
+                ]
+              },
+              "counts": {
+                "marine": 2,
+                "supplydepot": 2,
+                "barracks": 2
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 20\n- supplydepot x 3\n- barracks x 1\n</answer>",
+              "prompt_sha256": "3f2a5e6108b3917510d1921e727f790a263465e33e4942a1f4ef92a4330148cb",
+              "prompt_game_time": "05:01",
+              "queue": {
+                "line": 3908,
+                "iteration": 1688,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks"
+                ]
+              },
+              "counts": {
+                "marine": 20,
+                "supplydepot": 3,
+                "barracks": 1
+              }
+            },
+            {
+              "step_index": 3,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: techlab",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- factory x 1\n- marauder x 1\n- supplydepot x 1\n- commandcenter x 1\n- refinery x 1\n- techlab barracks x 1\n- techlab x 1\n</answer>",
+              "prompt_sha256": "d593fa2ceae39e1c893b56287b4f2833dc91abd6714a622fb75291c72ffbd86d",
+              "prompt_game_time": "07:35",
+              "queue": {
+                "line": 5979,
+                "iteration": 2548,
+                "actions": [
+                  "supplydepot",
+                  "refinery",
+                  "marine",
+                  "techlab barracks",
+                  "marauder",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 1,
+                "refinery": 1,
+                "marine": 2,
+                "techlab barracks": 1,
+                "marauder": 1
+              }
+            },
+            {
+              "step_index": 4,
+              "valid": false,
+              "failure": "action count exceeds current BO remainder: supplydepot",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 16\n- supplydepot x 11\n- mule x 6\n- marauder x 3\n- commandcenter x 2\n- factory x 1\n</answer>",
+              "prompt_sha256": "e3202df8678f1b9b78b1dc50b618dba2edf137365ce2f198274f467aedb13ed8",
+              "prompt_game_time": "08:58",
+              "queue": {
+                "line": 7050,
+                "iteration": 3016,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "marauder",
+                  "marine",
+                  "factory",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 2,
+                "marauder": 1,
+                "factory": 1
+              }
+            },
+            {
+              "step_index": 5,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 2\n- supplydepot x 2\n- mule x 2\n</answer>",
+              "prompt_sha256": "3b9c61a8d140be749d01ab68a9f1c171797fe8b9e0e2b160a9232eded186649e",
+              "prompt_game_time": "09:58",
+              "queue": {
+                "line": 7794,
+                "iteration": 3352,
+                "actions": [
+                  "marauder",
+                  "marauder",
+                  "supplydepot",
+                  "supplydepot",
+                  "mule",
+                  "mule"
+                ]
+              },
+              "counts": {
+                "marauder": 2,
+                "supplydepot": 2,
+                "mule": 2
+              }
+            },
+            {
+              "step_index": 6,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: marauder",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 5\n- marine x 1\n- supplydepot x 4\n- starport x 1\n- scv x 1\n- siege tank x 9\n</answer>",
+              "prompt_sha256": "80a8363f2a6ce3473d89c27eb033c01dcc5c4ee5002d1e8a933f38517354e02d",
+              "prompt_game_time": "11:02",
+              "queue": {
+                "line": 8658,
+                "iteration": 3710,
+                "actions": [
+                  "supplydepot",
+                  "marine",
+                  "marine",
+                  "starport",
+                  "supplydepot",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 2,
+                "marine": 3,
+                "starport": 1
+              }
+            },
+            {
+              "step_index": 7,
+              "valid": false,
+              "failure": "action outside current canonical BO candidates: reactor",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 43\n- supplydepot x 2\n- mule x 4\n- siegetank x 9\n- scv x 15\n- commandcenter x 2\n- vikingfighter x 8\n- reactor x 2\n- starport x 2\n- starport x 2\n</answer>",
+              "prompt_sha256": "d22b910ac9d21b29c6046b537a35d5e223c5e31921cca6c3882a39dcffe2bbd0",
+              "prompt_game_time": "12:22",
+              "queue": {
+                "line": 9716,
+                "iteration": 4156,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "vikingfighter",
+                  "supplydepot"
+                ]
+              },
+              "counts": {
+                "marine": 3,
+                "supplydepot": 2,
+                "vikingfighter": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 3,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 4,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 5,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 6,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 7,
+              "reward": -49.901,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            }
+          ],
+          "executor_log": "sc2-logs/game-3984477/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 6,
+          "outcome": "Defeat",
+          "reward": -49.382,
+          "calls": 3,
+          "valid": 3,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks"
+                ]
+              },
+              "counts": {
+                "marine": 42,
+                "supplydepot": 8,
+                "barracks": 3
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 1\n- factory x 1\n</answer>",
+              "prompt_sha256": "1cddbaaa523bb373e06c9322463440f6b2edc3b71091036db483239102114231",
+              "prompt_game_time": "09:44",
+              "queue": {
+                "line": 7808,
+                "iteration": 3275,
+                "actions": [
+                  "marauder",
+                  "supplydepot",
+                  "factory"
+                ]
+              },
+              "counts": {
+                "marauder": 1,
+                "supplydepot": 1,
+                "factory": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": -49.382,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3984478/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/default_player_Qwen3-30B_20260912.log"
+        },
+        {
+          "env": 7,
+          "outcome": "Defeat",
+          "reward": -49.5,
+          "calls": 9,
+          "valid": 8,
+          "choices": [
+            {
+              "step_index": 0,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+              "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+              "prompt_game_time": "00:00",
+              "queue": {
+                "line": 22,
+                "iteration": 0,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 4,
+                "barracks": 4,
+                "marine": 24
+              }
+            },
+            {
+              "step_index": 1,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n</answer>",
+              "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+              "prompt_game_time": "04:09",
+              "queue": {
+                "line": 3120,
+                "iteration": 1396,
+                "actions": [
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv"
+                ]
+              },
+              "counts": {
+                "marine": 2,
+                "supplydepot": 2,
+                "barracks": 2,
+                "reactor barracks": 2,
+                "scv": 3
+              }
+            },
+            {
+              "step_index": 2,
+              "valid": false,
+              "failure": "canonical legacy response requires `- exactname`",
+              "answer": "**The next segment of the build order is as follows:**\n- marine x 40\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- techlab barracks x 3\n- starport x 1\n- starport with techlab x 1\n- battlecruiser x 1\n- marine x 10\n- scv x 10\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n- techlab barracks x 3\n- starport x 1\n- starport with techlab x 1\n- battlecruiser x 1",
+              "prompt_sha256": "626bf9a1ef90ff1a8f89b4ec720aef144aa33406f0b6f3d0b2e1e53714aababd",
+              "prompt_game_time": "05:40",
+              "queue": {
+                "line": 4443,
+                "iteration": 1909,
+                "actions": [
+                  "supplydepot",
+                  "barracks",
+                  "refinery",
+                  "marine",
+                  "reactor barracks",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "supplydepot": 1,
+                "barracks": 1,
+                "refinery": 1,
+                "marine": 2,
+                "reactor barracks": 1
+              }
+            },
+            {
+              "step_index": 3,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\n- reactor barracks x 1\n- supplydepot x 1\n- marine x 1\n</answer>",
+              "prompt_sha256": "c2c741370a2ede143c5c3d7ed2623db2027ba8cfb2bdab6ef8b85d6b6052af03",
+              "prompt_game_time": "06:25",
+              "queue": {
+                "line": 5030,
+                "iteration": 2156,
+                "actions": [
+                  "reactor barracks",
+                  "supplydepot",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "reactor barracks": 1,
+                "supplydepot": 1,
+                "marine": 1
+              }
+            },
+            {
+              "step_index": 4,
+              "valid": true,
+              "failure": "",
+              "answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 5\n- marauder x 2\n- techlab barracks x 1\n- factory x 1\n- commandcenter x 1\n- scv x 15\n- mule x 6\n</answer>",
+              "prompt_sha256": "6cf9507d1da4d60440dfbc9517dbc4ca5b8812566298be0b64e1fe1d85714722",
+              "prompt_game_time": "06:25",
+              "queue": {
+                "line": 5040,
+                "iteration": 2159,
+                "actions": [
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "marauder",
+                  "marauder",
+                  "techlab barracks",
+                  "factory",
+                  "commandcenter",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule"
+                ]
+              },
+              "counts": {
+                "supplydepot": 5,
+                "marauder": 2,
+                "techlab barracks": 1,
+                "factory": 1,
+                "commandcenter": 1,
+                "scv": 15,
+                "mule": 6
+              }
+            },
+            {
+              "step_index": 5,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 1\n- scv x 1\n- factory x 1\n- commandcenter x 1\n- techlab barracks x 1\n- marine x 1\n- mule x 1\n</answer>",
+              "prompt_sha256": "e6b630e4e6dc5da6b406c4c4ce127107a0f596a2bd590296b76c116fc5f214c1",
+              "prompt_game_time": "08:20",
+              "queue": {
+                "line": 6477,
+                "iteration": 2803,
+                "actions": [
+                  "marauder",
+                  "supplydepot",
+                  "scv",
+                  "factory",
+                  "commandcenter",
+                  "techlab barracks",
+                  "marine",
+                  "mule"
+                ]
+              },
+              "counts": {
+                "marauder": 1,
+                "supplydepot": 1,
+                "scv": 1,
+                "factory": 1,
+                "commandcenter": 1,
+                "techlab barracks": 1,
+                "marine": 1,
+                "mule": 1
+              }
+            },
+            {
+              "step_index": 6,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- scv x 15\n- supplydepot x 4\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- mule x 6\n- marine x 50\n</answer>",
+              "prompt_sha256": "612d592fa893dfb9df88fac5c0b223465619ff8e551a12387e97ceb3abdd444e",
+              "prompt_game_time": "09:00",
+              "queue": {
+                "line": 6979,
+                "iteration": 3024,
+                "actions": [
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "marauder",
+                  "marauder",
+                  "marauder",
+                  "marauder",
+                  "commandcenter",
+                  "commandcenter",
+                  "factory",
+                  "techlab barracks",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ]
+              },
+              "counts": {
+                "scv": 15,
+                "supplydepot": 4,
+                "marauder": 4,
+                "commandcenter": 2,
+                "factory": 1,
+                "techlab barracks": 1,
+                "mule": 6,
+                "marine": 50
+              }
+            },
+            {
+              "step_index": 7,
+              "valid": true,
+              "failure": "",
+              "answer": "Here are the Build Orders with attack instructions:\n- commandcenter x 2\n- marauder x 2\n- mule x 2\n</answer>",
+              "prompt_sha256": "0e2015b89dce12247aa20b26ce5f1a9415570cf9aa3ae21f593dd2c2d29ee014",
+              "prompt_game_time": "11:44",
+              "queue": {
+                "line": 9166,
+                "iteration": 3946,
+                "actions": [
+                  "commandcenter",
+                  "commandcenter",
+                  "marauder",
+                  "marauder",
+                  "mule",
+                  "mule"
+                ]
+              },
+              "counts": {
+                "commandcenter": 2,
+                "marauder": 2,
+                "mule": 2
+              }
+            },
+            {
+              "step_index": 8,
+              "valid": true,
+              "failure": "",
+              "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 4\n- mule x 6\n- marine x 50\n- techlab barracks x 1\n</answer>",
+              "prompt_sha256": "e71540b3b3d19405a28fd277f5fe19fb59ffa235adcf7f8a9e1cbb640e3bac7f",
+              "prompt_game_time": "12:24",
+              "queue": {
+                "line": 9677,
+                "iteration": 4169,
+                "actions": [
+                  "marauder",
+                  "marauder",
+                  "marauder",
+                  "marauder",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "mule",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "techlab barracks"
+                ]
+              },
+              "counts": {
+                "marauder": 4,
+                "mule": 6,
+                "marine": 50,
+                "techlab barracks": 1
+              }
+            }
+          ],
+          "reward_events": [
+            {
+              "step_index": 0,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 1,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 2,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": false
+            },
+            {
+              "step_index": 3,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 4,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 5,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 6,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 7,
+              "reward": 0,
+              "done": false,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            },
+            {
+              "step_index": 8,
+              "reward": -49.5,
+              "done": true,
+              "policy_action_applied": true,
+              "is_action_valid": true
+            }
+          ],
+          "executor_log": "sc2-logs/game-3984479/default_player/Flat128_Harder_Air/Qwen3-30B/2026-09-12_01-01-19/default_player_Qwen3-30B_20260912.log"
+        }
+      ],
+      "missing_answer_close": 4,
+      "hashes": {
+        "manifest.json": "79ffe7390f131e57eddb5e3d062202798d0b4df5e1078c32e33c684c841b1044",
+        "effective_config.json": "029a5fadb86ddf13cfa0238be91b6d3860a427ca8fd41d8bff97ef9b3e553a16",
+        "result.json": "fdcf5f626d23971a24d4208e664bb6711bc064f6cb76d70cc8c5c3399068a3e8",
+        ".done": "fdcf5f626d23971a24d4208e664bb6711bc064f6cb76d70cc8c5c3399068a3e8",
+        "prompt_response.jsonl": "1ad196f680b7c424d9fd81ff03762db2736267389ca8df01facec236a247377a",
+        "episode_outcomes.jsonl": "0bb9a55488e768cb50851964a73aea17a044448b1aeb15293674c9c3b68a3a31",
+        "evaluation_seeds.jsonl": "70e253b2ad8eb6ed8aaae1106cd385cdebcbc90149acec25dea577fd3483a9f1",
+        "checkpoint_evaluation.json": "8eb8ce9342a0f255142138ebe7770770ca0ca6dc18e3d48c2a3310a5c4ddfc00"
+      }
+    }
+  },
+  "limits": "One independent game seed. Queue is dispatched intent, not proof of birth. Missing answer tag is not an exact generation-budget clipping metric."
+}

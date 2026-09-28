@@ -1,0 +1,60 @@
+{
+  "status": "queued_not_training",
+  "verified_at": "2026-09-10T14:58:20Z",
+  "source_commit": "f3803883bb4727b2f372c82b0d05b0f2ff81ea70",
+  "node": "sc2-a100-44",
+  "gpu_selection": "0,1,2,3,4,5,6,7",
+  "deployment": "/root/new-scii-spb-fsdp-20260910/code-f380388",
+  "tmux_session": "sc2_gamma_ab_r1",
+  "queue_control": "/root/new-scii-spb-fsdp-20260910/gamma-queue-r1",
+  "training_control": "/root/new-scii-spb-fsdp-20260910/gamma-ab-r1",
+  "queued_at": "2026-09-10T14:58:00Z",
+  "queue_deadline": "2026-09-10T15:28:00Z",
+  "queue_budget_seconds": 1800,
+  "training_pair_budget_seconds": 28800,
+  "run_ids": [
+    "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r1",
+    "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r1"
+  ],
+  "resource_snapshot": {
+    "free_gpus": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "occupied_gpus": [
+      0,
+      1
+    ],
+    "ownership": "external cjy vllm; not terminated"
+  },
+  "tests": {
+    "node44": "CUDA hidden; test_gamma_ab: 3 passed, 2.138 seconds",
+    "local": "3 tests: config passed; 2 Torch tests skipped because local Torch is unavailable",
+    "actual_checkpoint_cpu": "same Torch RandomSampler, 8 workers: restored epoch lengths [0,1,1,1,1,1,1,1]; experiment hook closes the exhausted tail, with regression coverage",
+    "dependencies": [
+      "torch 2.7.1+cu128",
+      "transformers 4.55.2",
+      "ray 2.48.0",
+      "gymnasium 1.2.3"
+    ]
+  },
+  "private_backups": [
+    {
+      "path": "/root/new-scii-spb-fsdp-20260910/source-eda516c.bundle",
+      "sha256": "7d398c4ffbc5b45c7098a1c8fe0ea62e9a3fe488c7db72bbf0988a4b5676a0ad"
+    },
+    {
+      "path": "/root/new-scii-spb-fsdp-20260910/source-f380388.bundle",
+      "sha256": "d9fc09a37345deb968168edafc1a528183d11499e4e37a8c7225611ff3d2323d"
+    }
+  ],
+  "existing_runs_unchanged": [
+    "node43 Level6 long train",
+    "completed refinery-order evaluation"
+  ],
+  "command": "set -euo pipefail\ncontrol=/root/new-scii-spb-fsdp-20260910/gamma-queue-r1\nexec > >(tee \"${control}/console.log\") 2>&1\ntrap 'status=$?; printf \"EXIT_CODE=%s\\n\" \"$status\" > \"${control}/.done\"; date -u +%FT%TZ > \"${control}/ended_at.txt\"' EXIT\ndate -u +%FT%TZ | tee \"${control}/queued_at.txt\"\nqueue_deadline=$(( $(date +%s) + 1800 ))\nwhile true; do\n    gpu_processes=$(timeout 10s nvidia-smi -i 0,1,2,3,4,5,6,7 --query-compute-apps=pid --format=csv,noheader)\n    if [[ -z \"${gpu_processes}\" ]]; then break; fi\n    if [[ $(date +%s) -ge ${queue_deadline} ]]; then echo \"QUEUE_TIMEOUT: no idle eight-GPU slot; no experiment started\"; exit 124; fi\n    sleep 15\ndone\ndate -u +%FT%TZ | tee \"${control}/resources_available_at.txt\"\ntimeout 20s python3 -c 'import os; p=\"/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs\"; s=os.statvfs(p); f=s.f_bavail*s.f_frsize; print(\"shared_free_bytes\",f); assert f>2.5*1024**4'\nexport SOURCE_SHA=f3803883bb4727b2f372c82b0d05b0f2ff81ea70\nexport SC2_GAMMA_AB_AUTHORIZED=1 PYTHON_BIN=/usr/bin/python3\nbash /root/new-scii-spb-fsdp-20260910/code-f380388/experiments/records/20260910-spb-fsdp-layer-wrap-v1/run_gamma_pair_node44.sh\n"
+}

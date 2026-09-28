@@ -1,0 +1,405 @@
+{
+  "at_utc": "2026-09-07T10:10:23.620343+00:00",
+  "run_path": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-r4-step2-first-update-8gpu-node47-r1",
+  "manifest": {
+    "run_id": "20260906-integrated-fixes-v1-r4-step2-first-update-8gpu-node47-r1",
+    "status": "starting",
+    "started_at": "2026-09-07T10:04:25.227067+00:00",
+    "diagnostic_commit": "6e809293d6c458a2f58c5cd4302b67828344894d",
+    "runtime_commit": "ca7885d886aaaafb39fc105b1d5d46cddf4bcc5a",
+    "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8",
+    "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "node": "sc2-a100-47",
+    "max_gpu_seconds": 1800,
+    "max_optimizer_updates": 1,
+    "samples_updated": 8,
+    "samples_checked": 184,
+    "authorization": "2026-09-07: eight GPUs / 30 minutes / one update; user subsequently permits an idle other node in parallel without disrupting r4",
+    "sc2_started": false,
+    "numerical_or_loss_changes": false
+  },
+  "done": {
+    "status": "failed",
+    "process_exit_code": 1,
+    "ended_at": "2026-09-07T10:06:05.488999+00:00",
+    "rank_tails": {
+      "rank-07.jsonl": "restored",
+      "rank-02.jsonl": "restored",
+      "rank-01.jsonl": "restored",
+      "rank-00.jsonl": "restored",
+      "rank-04.jsonl": "restored",
+      "rank-05.jsonl": "restored",
+      "rank-03.jsonl": "restored",
+      "rank-06.jsonl": "restored"
+    },
+    "sc2_started": false,
+    "diagnostic_only": true,
+    "max_optimizer_updates": 1
+  },
+  "rank_evidence": {
+    "rank-00.jsonl": [
+      {
+        "event": "input",
+        "rank": 0,
+        "time": "2026-09-07T10:04:38.932322+00:00",
+        "sha256": "3393d53d576c459bb75fa384f58c9bbacab257bc468c845aa0030cc04df096fd",
+        "samples": 23,
+        "selected_offsets": [
+          0
+        ],
+        "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor"
+      },
+      {
+        "event": "restored",
+        "rank": 0,
+        "time": "2026-09-07T10:05:55.133649+00:00",
+        "optimizer_steps": [
+          22
+        ],
+        "scheduler": {
+          "base_lrs": [
+            0.000001
+          ],
+          "last_epoch": 1,
+          "_step_count": 2,
+          "_get_lr_called_within_step": false,
+          "_last_lr": [
+            0.000001
+          ],
+          "lr_lambdas": [
+            null
+          ]
+        },
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "attention_dropout": 0,
+        "rng_note": "Restored checkpoint RNG; historical post-rollout RNG was not saved. No shuffle; Qwen dropout=0."
+      }
+    ],
+    "rank-01.jsonl": [
+      {
+        "event": "input",
+        "rank": 1,
+        "time": "2026-09-07T10:04:38.536259+00:00",
+        "sha256": "29e13a8db0931f074c925c2268a3235032873eac8e360438ce59bb6d9e56d07f",
+        "samples": 23,
+        "selected_offsets": [
+          0
+        ],
+        "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor"
+      },
+      {
+        "event": "restored",
+        "rank": 1,
+        "time": "2026-09-07T10:05:54.982268+00:00",
+        "optimizer_steps": [
+          22
+        ],
+        "scheduler": {
+          "base_lrs": [
+            0.000001
+          ],
+          "last_epoch": 1,
+          "_step_count": 2,
+          "_get_lr_called_within_step": false,
+          "_last_lr": [
+            0.000001
+          ],
+          "lr_lambdas": [
+            null
+          ]
+        },
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "attention_dropout": 0,
+        "rng_note": "Restored checkpoint RNG; historical post-rollout RNG was not saved. No shuffle; Qwen dropout=0."
+      }
+    ],
+    "rank-02.jsonl": [
+      {
+        "event": "input",
+        "rank": 2,
+        "time": "2026-09-07T10:04:38.521649+00:00",
+        "sha256": "b82fd39a4fa64a8e8a1b89ab2ba1537f6137099fc78b0c140c2c661cb18c3792",
+        "samples": 23,
+        "selected_offsets": [
+          0
+        ],
+        "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor"
+      },
+      {
+        "event": "restored",
+        "rank": 2,
+        "time": "2026-09-07T10:05:55.648310+00:00",
+        "optimizer_steps": [
+          22
+        ],
+        "scheduler": {
+          "base_lrs": [
+            0.000001
+          ],
+          "last_epoch": 1,
+          "_step_count": 2,
+          "_get_lr_called_within_step": false,
+          "_last_lr": [
+            0.000001
+          ],
+          "lr_lambdas": [
+            null
+          ]
+        },
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "attention_dropout": 0,
+        "rng_note": "Restored checkpoint RNG; historical post-rollout RNG was not saved. No shuffle; Qwen dropout=0."
+      }
+    ],
+    "rank-03.jsonl": [
+      {
+        "event": "input",
+        "rank": 3,
+        "time": "2026-09-07T10:04:39.003219+00:00",
+        "sha256": "960501e1f68af0ace39c57933b6ce179594ae63aaee075f251728f741ce3afbc",
+        "samples": 23,
+        "selected_offsets": [
+          0
+        ],
+        "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor"
+      },
+      {
+        "event": "restored",
+        "rank": 3,
+        "time": "2026-09-07T10:05:54.472293+00:00",
+        "optimizer_steps": [
+          22
+        ],
+        "scheduler": {
+          "base_lrs": [
+            0.000001
+          ],
+          "last_epoch": 1,
+          "_step_count": 2,
+          "_get_lr_called_within_step": false,
+          "_last_lr": [
+            0.000001
+          ],
+          "lr_lambdas": [
+            null
+          ]
+        },
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "attention_dropout": 0,
+        "rng_note": "Restored checkpoint RNG; historical post-rollout RNG was not saved. No shuffle; Qwen dropout=0."
+      }
+    ],
+    "rank-04.jsonl": [
+      {
+        "event": "input",
+        "rank": 4,
+        "time": "2026-09-07T10:04:38.911206+00:00",
+        "sha256": "d94669370dcaf70693ebc712941a40c4d017c52854b4219f0af70184126b8aee",
+        "samples": 23,
+        "selected_offsets": [
+          0
+        ],
+        "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor"
+      },
+      {
+        "event": "restored",
+        "rank": 4,
+        "time": "2026-09-07T10:05:55.611800+00:00",
+        "optimizer_steps": [
+          22
+        ],
+        "scheduler": {
+          "base_lrs": [
+            0.000001
+          ],
+          "last_epoch": 1,
+          "_step_count": 2,
+          "_get_lr_called_within_step": false,
+          "_last_lr": [
+            0.000001
+          ],
+          "lr_lambdas": [
+            null
+          ]
+        },
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "attention_dropout": 0,
+        "rng_note": "Restored checkpoint RNG; historical post-rollout RNG was not saved. No shuffle; Qwen dropout=0."
+      }
+    ],
+    "rank-05.jsonl": [
+      {
+        "event": "input",
+        "rank": 5,
+        "time": "2026-09-07T10:04:38.922187+00:00",
+        "sha256": "dc68407c4b9c3cdf1cbc07f663e25da7271feeff70c910b0b59a5536aec651b5",
+        "samples": 23,
+        "selected_offsets": [
+          0
+        ],
+        "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor"
+      },
+      {
+        "event": "restored",
+        "rank": 5,
+        "time": "2026-09-07T10:05:54.826513+00:00",
+        "optimizer_steps": [
+          22
+        ],
+        "scheduler": {
+          "base_lrs": [
+            0.000001
+          ],
+          "last_epoch": 1,
+          "_step_count": 2,
+          "_get_lr_called_within_step": false,
+          "_last_lr": [
+            0.000001
+          ],
+          "lr_lambdas": [
+            null
+          ]
+        },
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "attention_dropout": 0,
+        "rng_note": "Restored checkpoint RNG; historical post-rollout RNG was not saved. No shuffle; Qwen dropout=0."
+      }
+    ],
+    "rank-06.jsonl": [
+      {
+        "event": "input",
+        "rank": 6,
+        "time": "2026-09-07T10:04:39.016324+00:00",
+        "sha256": "bd2949c2ecbed77e2ca2da6d12f4d3d07253222020cf8cb8975dc6c3301082f0",
+        "samples": 23,
+        "selected_offsets": [
+          0
+        ],
+        "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor"
+      },
+      {
+        "event": "restored",
+        "rank": 6,
+        "time": "2026-09-07T10:05:55.912646+00:00",
+        "optimizer_steps": [
+          22
+        ],
+        "scheduler": {
+          "base_lrs": [
+            0.000001
+          ],
+          "last_epoch": 1,
+          "_step_count": 2,
+          "_get_lr_called_within_step": false,
+          "_last_lr": [
+            0.000001
+          ],
+          "lr_lambdas": [
+            null
+          ]
+        },
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "attention_dropout": 0,
+        "rng_note": "Restored checkpoint RNG; historical post-rollout RNG was not saved. No shuffle; Qwen dropout=0."
+      }
+    ],
+    "rank-07.jsonl": [
+      {
+        "event": "input",
+        "rank": 7,
+        "time": "2026-09-07T10:04:37.873106+00:00",
+        "sha256": "a50378ccde60431110f9ec51d267658adbea5921de3eae1e9b7c092d9c405740",
+        "samples": 23,
+        "selected_offsets": [
+          0
+        ],
+        "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-integrated-fixes-v1/runs/20260906-integrated-fixes-v1-qwen-instruct2507-l6-8gpu-fp32-rl96-gate8-s0-r4-train8/checkpoints/global_step_1/actor"
+      },
+      {
+        "event": "restored",
+        "rank": 7,
+        "time": "2026-09-07T10:05:55.913471+00:00",
+        "optimizer_steps": [
+          22
+        ],
+        "scheduler": {
+          "base_lrs": [
+            0.000001
+          ],
+          "last_epoch": 1,
+          "_step_count": 2,
+          "_get_lr_called_within_step": false,
+          "_last_lr": [
+            0.000001
+          ],
+          "lr_lambdas": [
+            null
+          ]
+        },
+        "parameter_dtypes": [
+          "torch.float32"
+        ],
+        "attention_dropout": 0,
+        "rng_note": "Restored checkpoint RNG; historical post-rollout RNG was not saved. No shuffle; Qwen dropout=0."
+      }
+    ]
+  },
+  "probability_rows": {
+    "full-batch-rank-03.jsonl": 0,
+    "full-batch-rank-05.jsonl": 0,
+    "full-batch-rank-01.jsonl": 0,
+    "full-batch-rank-00.jsonl": 0,
+    "full-batch-rank-04.jsonl": 0,
+    "full-batch-rank-02.jsonl": 0,
+    "full-batch-rank-06.jsonl": 0,
+    "full-batch-rank-07.jsonl": 0
+  },
+  "parameter_chain_files": [],
+  "first_compiler_error": "/dev/shm/sc2_r4_first_update_node47_r1/tmp4qx8pei0/main.c:5:10: fatal error: Python.h: No such file or directory",
+  "artifact_sha256": {
+    "launcher.sh": "e2d777f4d5b302b13b60deb2791304265e702d7bad0f8bd901db80976a01ec87",
+    "manifest.json": "12eeb746f3b53cee374dcc399387d2a17e43a1e83dc1af132b8b36d04367839e",
+    "console.log": "3a91fb9f5b7692f97acce48eb88a21415fd7d49f4c1a56818701133c4acd1886",
+    "rank-07.jsonl": "26ca49b9b44713bebee72210aba9dcd56605b24e57fe8fda82583304ad03e3aa",
+    "rank-02.jsonl": "6b5ef6ff528909ed049920bc0d7471ddb06b61a596c8f942cbb9017417c23aad",
+    "rank-01.jsonl": "136efc4974f44abf4c2d2eb0a2a0ce306ad17d4f946f5aadf917cf3437eeeb1e",
+    "rank-00.jsonl": "5354d6825a1947baef544f3e9124eeb4d084fddc02c0508c1f52ec631ea3cca8",
+    "rank-04.jsonl": "97cbcf243fa6da3af6afd8de98a95984dd8130cfd90f7abc53a39b7ad3a0c454",
+    "rank-05.jsonl": "d8c0b807f181d79b3d402fdebffbe9ff2c5e39e8aba5fd4202cf022f134a60e5",
+    "rank-03.jsonl": "bce04cac9096293ac2e82d2106bff0f5c577cd86daba03d2769965554b5b6b10",
+    "rank-06.jsonl": "a97cf50a4f4034ad05a57e34b15901ad89cd972a913440df116199137e1ec5dd",
+    "full-batch-rank-03.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "full-batch-rank-05.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "full-batch-rank-01.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "full-batch-rank-00.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "full-batch-rank-04.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "full-batch-rank-02.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "full-batch-rank-06.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "full-batch-rank-07.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result.json": "f14bcfda26fdb4f5151bf8236347b196497aee8a01c5b198f17c8b24a457ca58",
+    ".done": "f14bcfda26fdb4f5151bf8236347b196497aee8a01c5b198f17c8b24a457ca58"
+  },
+  "gpu_apps": "",
+  "header_exists": true,
+  "cpu_header_probe": {
+    "command": "CPATH=/dev/shm/spb-unitid-20260906/include/python3.12:/dev/shm/spb-unitid-20260906/include gcc -x c -fsyntax-only -",
+    "stdin": "#include <Python.h>\n",
+    "exit_code": 0,
+    "gpu_used": false
+  }
+}

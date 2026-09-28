@@ -1,0 +1,1350 @@
+{
+  "scope": "CPU only; recorded feedback, not all possible blocking events",
+  "runtime_sha": "937ae3cfcbf7340208a8f86c0abf680d733c0484",
+  "authority_sha256": "cb919002c443782e81133d7dd2442a1e3501f6fa770c11c93eb1480c7447be35",
+  "input_snapshot": "/private/tmp/sc2-feedback-second-plan.1KHcXh",
+  "verified_input_files": 66,
+  "games": 24,
+  "defeats": 14,
+  "feedback_counts": {
+    "A4/Defeat/other": 1,
+    "A4/Defeat/vespene": 2,
+    "A4/Victory/supply_blocked": 1,
+    "A4/Victory/vespene": 1,
+    "B4/Defeat/other": 7,
+    "B4/Defeat/vespene": 22,
+    "B4/Victory/vespene": 6,
+    "original/Defeat/other": 4,
+    "original/Defeat/vespene": 10,
+    "original/Victory/vespene": 4
+  },
+  "paired_second_answers": [
+    {
+      "seed": 42613,
+      "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+      "A4_marine": 42,
+      "B4_marine": 8,
+      "A4_result": "Defeat",
+      "B4_result": "Defeat"
+    },
+    {
+      "seed": 52620,
+      "prompt_sha256": "6cb764517e84739ba08dd25179416905ae9a6918bed6d3d8f1c94246854413c0",
+      "A4_marine": 8,
+      "B4_marine": 4,
+      "A4_result": "Victory",
+      "B4_result": "Victory"
+    },
+    {
+      "seed": 17089,
+      "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+      "A4_marine": 42,
+      "B4_marine": 4,
+      "A4_result": "Defeat",
+      "B4_result": "Defeat"
+    },
+    {
+      "seed": 4018390961,
+      "prompt_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+      "A4_marine": 42,
+      "B4_marine": 4,
+      "A4_result": "Victory",
+      "B4_result": "Defeat"
+    },
+    {
+      "seed": 3236598124,
+      "prompt_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+      "A4_marine": 42,
+      "B4_marine": 4,
+      "A4_result": "Defeat",
+      "B4_result": "Defeat"
+    },
+    {
+      "seed": 3297512220,
+      "prompt_sha256": "cac6c40bc389f9407327d42f69fe7d14165a76208abc7570accda64c09af7343",
+      "A4_marine": 42,
+      "B4_marine": 4,
+      "A4_result": "Victory",
+      "B4_result": "Victory"
+    },
+    {
+      "seed": 773351930,
+      "prompt_sha256": "f5e74799f0e26edd25bf175603c5899370b5fe22457e1d78d20c045a10088dd3",
+      "A4_marine": 42,
+      "B4_marine": 4,
+      "A4_result": "Victory",
+      "B4_result": "Defeat"
+    },
+    {
+      "seed": 1098341402,
+      "prompt_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+      "A4_marine": 42,
+      "B4_marine": 8,
+      "A4_result": "Victory",
+      "B4_result": "Defeat"
+    }
+  ],
+  "episodes": [
+    {
+      "arm": "original",
+      "env": 0,
+      "seed": 42613,
+      "result": "Defeat",
+      "reward": -49.431,
+      "calls": 13,
+      "feedback": [
+        {
+          "raw_line": 41,
+          "game_time": "05:56",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "92a1659e459209f5e7d536fe704c96dc231e64a9575523b9bb77c05b5972d431",
+          "answer": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags. Do not repeat actions just to fill that target. Once this near-term segment is complete, close </answer> and stop; do not restart the list. Repeated names and `x N` remain allowed within the cumulative quota.**\n\n<answer>\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n</answer>",
+          "valid": false
+        },
+        {
+          "raw_line": 49,
+          "game_time": "06:41",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (40/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "6ec9ba75cfde5af6201f716f8037992795ede31ebc059259285f31ce5cb6d773",
+          "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 65,
+          "game_time": "07:21",
+          "category": "other",
+          "failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "683605c4b98d09254ce5e62c260747449163f5cf3543cf5d35a826b94ffc8f0c",
+          "answer": "Here are the Build Orders with attack instructions:\n- marine x 5\n- supplydepot x 2\n- mule x 1\n- scv x 10\n- marauder x 3\n- commandcenter x 1\n- techlab barracks x 1\n- factory x 1\n- techlab starport x 1\n- reactor starport x 1\n- starport x 1\n- starport with reactor x 1\n- starport with techlab x 1\n- supplydepot x 9\n- barracks with reactor x 1\n- barracks with techlab x 1\n- barracks x 1\n- barracks x 1\n- barracks x 1\n- barracks x 1\n- barracks x 1\n- barracks x 1\n- barracks x 1\n- barracks x 1\n- barracks x 1\n- barracks x",
+          "valid": false
+        },
+        {
+          "raw_line": 81,
+          "game_time": "09:48",
+          "category": "other",
+          "failed": {
+            "action": "commandcenter",
+            "reason": "timeout: **Action Failed**: Insufficient Minerals (290/400).\n**Suggestion**: Wait for resources.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": true
+          },
+          "prompt_sha256": "9650a7c67e8e1b6675ee8f0d0e9d24b0a3fcd5419ff36a2090a72ae5ac2fdb1c",
+          "answer": "<answer>\n- supplydepot x 6\n- marauder x 4\n- siege tank x 9\n- commandcenter x 2\n</answer>",
+          "valid": false
+        },
+        {
+          "raw_line": 97,
+          "game_time": "11:48",
+          "category": "other",
+          "failed": {
+            "action": "siegetank",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No FACTORY with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "fbb767b54e716cc5a67e954d5a9796d8252515da0f11983889e1789899b3b732",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- siegetank x 2\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 9,
+        "game_second": 107,
+        "prompt_sha256": "d0ea43625d37b690bcb94a793e6995eb88f5ae86d4907ebcdba0ed70bc1f386c",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 2
+      }
+    },
+    {
+      "arm": "original",
+      "env": 1,
+      "seed": 52620,
+      "result": "Defeat",
+      "reward": -49.95,
+      "calls": 12,
+      "feedback": [
+        {
+          "raw_line": 42,
+          "game_time": "05:16",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "0a08f1fc69c1ffba26f92c1312e7556a34da9a964e033350c5b40622da4f13d8",
+          "answer": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags. Do not repeat actions just to fill that target. Once this near-term segment is complete, close </answer> and stop; do not restart the list. Repeated names and `x N` remain allowed within the cumulative quota.**\n\n<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 1\n- barracks x 1\n- marine x 40\n</answer>",
+          "valid": false
+        }
+      ],
+      "second_answer": {
+        "raw_line": 10,
+        "game_second": 107,
+        "prompt_sha256": "96d0bf643bd5d6b144ef9ca410df5b64238b97f841d47fe6f55a1ec88e62f5ef",
+        "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 2
+      }
+    },
+    {
+      "arm": "original",
+      "env": 2,
+      "seed": 17089,
+      "result": "Defeat",
+      "reward": -49.5,
+      "calls": 7,
+      "feedback": [
+        {
+          "raw_line": 27,
+          "game_time": "10:36",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "a0800afa846e8c6e0e1753c4ae8ae3ca22b3db89196d8b0af7653e9cbd34de2c",
+          "answer": "<answer>\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 35,
+          "game_time": "11:15",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "4f587820f4456b0b7f611e35014c39a2d612dc1e4e82d27ce86c4a7377539c3c",
+          "answer": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nExecution feedback for the previous segment (not owned units/buildings):\n{\"source_policy_action_id\": 4, \"phase_index\": 1, \"processed_prefix_count\": 0, \"queue_source\": \"parsed_answer_plus_existing_rules\", \"failed\": {\"action\": \"reactor barracks\", \"reason\": \"timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\\n**Suggestion**: Build a Refinery.\", \"target_command_submitted\": false, \"pre_move_command_attempted\": false}, \"unsubmitted_suffix\": [\"reactor barracks\", \"scv\", \"scv\", \"refinery\"], \"restored_selectable_quota\": {\"reactor barracks\": 2, \"scv\": 2}, \"replan_scheduled\": true}\nThe failed target and unsubmitted suffix",
+          "valid": false
+        },
+        {
+          "raw_line": 43,
+          "game_time": "11:55",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (28/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "ff86e60b1eae69f1938c631fd68648b661a90585e7066db915984ab685854811",
+          "answer": "- scv x 2\n- reactor barracks x 2\n- supplydepot x 1\n- barracks x 1",
+          "valid": false
+        }
+      ],
+      "second_answer": {
+        "raw_line": 11,
+        "game_second": 249,
+        "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 4
+      }
+    },
+    {
+      "arm": "original",
+      "env": 3,
+      "seed": 4018390961,
+      "result": "Defeat",
+      "reward": -49.401,
+      "calls": 15,
+      "feedback": [
+        {
+          "raw_line": 68,
+          "game_time": "07:24",
+          "category": "other",
+          "failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "85639530c14e7e84c4dbe46ff3c4426ec75df59ed7ee7916974f111b8a3bbcd1",
+          "answer": "<answer>\n- supplydepot x 1\n- mule x 1\n- techlab barracks x 1\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 12,
+        "game_second": 107,
+        "prompt_sha256": "2ac62ddf51026721976fcd651c4f8747c6588d2d3f9930a4c6df45063599cc33",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 2
+      }
+    },
+    {
+      "arm": "original",
+      "env": 4,
+      "seed": 3236598124,
+      "result": "Defeat",
+      "reward": -49.474,
+      "calls": 7,
+      "feedback": [
+        {
+          "raw_line": 21,
+          "game_time": "05:49",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "b0cb2736c2e8664a09b98ad2b21df012c36d539c32b2cd58d87a44d4f8dc6b94",
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 37,
+          "game_time": "10:28",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "7121a67943ea538125069c04a94ca710dafa42cf2593e2f2c35bce6999823176",
+          "answer": "<answer>\n- reactor barracks x 1\n- refinery x 1\n- scv x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 45,
+          "game_time": "11:07",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "80ff3cd124f7ed98e6f77a053db2ed2ffa991683048b14e9907e8e91e0e8fcf7",
+          "answer": "Here are the Build Orders with attack instructions:\n- reactor barracks x 1\n- scv x 1\n- refinery x 1",
+          "valid": true
+        },
+        {
+          "raw_line": 53,
+          "game_time": "11:47",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "e4331b1374acbe36727b607eb5cf9961f02e949422f5ca475db3121b20a41e52",
+          "answer": "<answer>\n- reactor barracks x 1\n- scv x 1\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 13,
+        "game_second": 253,
+        "prompt_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 4
+      }
+    },
+    {
+      "arm": "original",
+      "env": 5,
+      "seed": 3297512220,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 10,
+      "feedback": [
+        {
+          "raw_line": 54,
+          "game_time": "05:56",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "9f4b7a059a6402392cb701c0ffc52de5167fcc038685904712112f1f418615b0",
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 62,
+          "game_time": "06:53",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "d47f710ba7064b42f7cd6f046cdc16e36256393dbb6caf8a010639349c7a762c",
+          "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n- scv x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 70,
+          "game_time": "07:32",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "56e8be10748514f52d1c2748122f0141a6e5c98441d611f3b6a1352444ea03b0",
+          "answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 78,
+          "game_time": "08:13",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "77b48e5fddfd84c302705b4b4d501036214670c8bd88e280ca7ed528bf6ed72b",
+          "answer": "<answer>\n- supplydepot x 1\n- reactor barracks x 2\n- scv x 3\n- marine x 33\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 14,
+        "game_second": 107,
+        "prompt_sha256": "29d534d902fb0bf5803444bbe327008819a1f07cc6806abab3c4e0a7bc95f51a",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 2
+      }
+    },
+    {
+      "arm": "original",
+      "env": 6,
+      "seed": 773351930,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 6,
+      "feedback": [],
+      "second_answer": {
+        "raw_line": 15,
+        "game_second": 107,
+        "prompt_sha256": "69eb9c5fd0acb537fc172d50d79281c4adf51b366a6abea0e33fe6cc54857eb7",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 2
+      }
+    },
+    {
+      "arm": "original",
+      "env": 7,
+      "seed": 1098341402,
+      "result": "Victory",
+      "reward": 20.0,
+      "calls": 8,
+      "feedback": [],
+      "second_answer": {
+        "raw_line": 16,
+        "game_second": 107,
+        "prompt_sha256": "aeede875cb9bf92aa083e393a000897a4e3d0298bfdc61563906b803885a1762",
+        "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 2
+      }
+    },
+    {
+      "arm": "A4",
+      "env": 0,
+      "seed": 42613,
+      "result": "Defeat",
+      "reward": -49.382,
+      "calls": 2,
+      "feedback": [],
+      "second_answer": {
+        "raw_line": 9,
+        "game_second": 249,
+        "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 42
+      }
+    },
+    {
+      "arm": "A4",
+      "env": 1,
+      "seed": 52620,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 3,
+      "feedback": [
+        {
+          "raw_line": 18,
+          "game_time": "07:52",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "e8b56d3e867d126683015bfc6d8f560b4f7734965b069c4739084b501747d814",
+          "answer": "<answer>\n- marine x 34\n- reactor barracks x 2\n- scv x 2\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 10,
+        "game_second": 265,
+        "prompt_sha256": "6cb764517e84739ba08dd25179416905ae9a6918bed6d3d8f1c94246854413c0",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 8
+      }
+    },
+    {
+      "arm": "A4",
+      "env": 2,
+      "seed": 17089,
+      "result": "Defeat",
+      "reward": -49.45,
+      "calls": 2,
+      "feedback": [],
+      "second_answer": {
+        "raw_line": 11,
+        "game_second": 249,
+        "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 42
+      }
+    },
+    {
+      "arm": "A4",
+      "env": 3,
+      "seed": 4018390961,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "feedback": [],
+      "second_answer": {
+        "raw_line": 12,
+        "game_second": 249,
+        "prompt_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 42
+      }
+    },
+    {
+      "arm": "A4",
+      "env": 4,
+      "seed": 3236598124,
+      "result": "Defeat",
+      "reward": -49.394,
+      "calls": 7,
+      "feedback": [
+        {
+          "raw_line": 21,
+          "game_time": "10:24",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "2ea085d0332805261784b9f3a22f08bdbb928bfef1d990d958f0420a9008ab01",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 29,
+          "game_time": "11:03",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "71eb4e8dc6d5a05ec4ab499e92da42b4507f8fc3f348588497dbd6a430e8c639",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 53,
+          "game_time": "12:36",
+          "category": "other",
+          "failed": {
+            "action": "commandcenter",
+            "reason": "timeout: **Action Failed**: Insufficient Minerals (380/400).\n**Suggestion**: Wait for resources.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": true
+          },
+          "prompt_sha256": "1e7171299ab1b0cf1632adb6e820663e58485476738e6b46ed8cb115876cdb1d",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- factory x 1\n- marine x 48\n- supplydepot x 8\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 13,
+        "game_second": 253,
+        "prompt_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 42
+      }
+    },
+    {
+      "arm": "A4",
+      "env": 5,
+      "seed": 3297512220,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "feedback": [],
+      "second_answer": {
+        "raw_line": 14,
+        "game_second": 265,
+        "prompt_sha256": "cac6c40bc389f9407327d42f69fe7d14165a76208abc7570accda64c09af7343",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 42
+      }
+    },
+    {
+      "arm": "A4",
+      "env": 6,
+      "seed": 773351930,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 2,
+      "feedback": [],
+      "second_answer": {
+        "raw_line": 15,
+        "game_second": 253,
+        "prompt_sha256": "f5e74799f0e26edd25bf175603c5899370b5fe22457e1d78d20c045a10088dd3",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 42
+      }
+    },
+    {
+      "arm": "A4",
+      "env": 7,
+      "seed": 1098341402,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 3,
+      "feedback": [
+        {
+          "raw_line": 24,
+          "game_time": "07:02",
+          "category": "supply_blocked",
+          "failed": {
+            "action": "marine",
+            "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "87c7283d29489f8d767d5817c12b44b70e6d21301149f3a162c48a1c3b9f799e",
+          "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 19\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 16,
+        "game_second": 261,
+        "prompt_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+        "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 42
+      }
+    },
+    {
+      "arm": "B4",
+      "env": 0,
+      "seed": 42613,
+      "result": "Defeat",
+      "reward": -49.45,
+      "calls": 8,
+      "feedback": [
+        {
+          "raw_line": 17,
+          "game_time": "07:41",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "7a145a2b1f99dfefea22c57f8cb3ff4732cded4bf127741ed5a59f03e4996cd4",
+          "answer": "<answer>\n- marine x 34\n- reactor barracks x 3\n- scv x 3\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 25,
+          "game_time": "10:32",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "6b34d851b822e9271aeccc3782751f5a46f369a91219c11768dfa38d66175198",
+          "answer": "<answer>\n- reactor barracks x 1\n- scv x 3\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 33,
+          "game_time": "11:11",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "cbb536ebc8da25e2f97e0a3b2bae570ee6158975415b455f4998129891ae7c65",
+          "answer": "<answer>\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 9,
+        "game_second": 249,
+        "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+        "answer": "<answer>\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 8
+      }
+    },
+    {
+      "arm": "B4",
+      "env": 1,
+      "seed": 52620,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 7,
+      "feedback": [
+        {
+          "raw_line": 18,
+          "game_time": "05:45",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "1b26a13f46672d713f4f0e17086ea49a8df1514e2a8672774267a25cdb07143c",
+          "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 26,
+          "game_time": "06:25",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "df99e834b84ddafd080a89ef3ed15e15f78d904dfd6b20e5dfe9fbc27a9fd1dd",
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 34,
+          "game_time": "07:05",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "1f8d9a44447ca6b865f90e8d5d56ceb2b358ffa5376005e8df144e4c0cfea002",
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 42,
+          "game_time": "07:45",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "45b690d473b8ef74cf837b29bef499c24274a4e7295c8183bb64cb203d969b02",
+          "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 50,
+          "game_time": "08:26",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "dc343cd96c669cacb5398adb926c6cd2071210a7f7c570af8c62ad403f3509d6",
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 2\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 10,
+        "game_second": 265,
+        "prompt_sha256": "6cb764517e84739ba08dd25179416905ae9a6918bed6d3d8f1c94246854413c0",
+        "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 4
+      }
+    },
+    {
+      "arm": "B4",
+      "env": 2,
+      "seed": 17089,
+      "result": "Defeat",
+      "reward": -49.401,
+      "calls": 7,
+      "feedback": [
+        {
+          "raw_line": 19,
+          "game_time": "05:41",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "3993965090e72bc878b5fc2e017f23b520e33d5671d14f17c9baeacd87b517f4",
+          "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 27,
+          "game_time": "06:21",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "057bf5e2e1a34c0458d3307e9e49a39795a59d5d4f348ed724fa794df3f1ba79",
+          "answer": "<answer>\n- marine x 37\n- supplydepot x 5\n- barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 43,
+          "game_time": "10:40",
+          "category": "other",
+          "failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "2294010b442bbb929038b189ab9e134ed82fe268342165b9a9e5d017aeba581b",
+          "answer": "<answer>\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 51,
+          "game_time": "11:20",
+          "category": "other",
+          "failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "f4e950644c739135b31683d3cd1c3c3691fbb9390787efc3ee27ceacc0651df9",
+          "answer": "<answer>\n- marine x 50\n- supplydepot x 8\n- mule x 5\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 11,
+        "game_second": 249,
+        "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+        "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 4
+      }
+    },
+    {
+      "arm": "B4",
+      "env": 3,
+      "seed": 4018390961,
+      "result": "Defeat",
+      "reward": -49.451,
+      "calls": 7,
+      "feedback": [
+        {
+          "raw_line": 28,
+          "game_time": "07:09",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "63a98f3030ca07ba3264e108d3d626eb8a5bcdc553ff245328aed9670e4b2845",
+          "answer": "<answer>\n- marine x 32\n- supplydepot x 4\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 52,
+          "game_time": "12:23",
+          "category": "other",
+          "failed": {
+            "action": "commandcenter",
+            "reason": "timeout: **Action Failed**: Insufficient Minerals (290/400).\n**Suggestion**: Wait for resources.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": true
+          },
+          "prompt_sha256": "c113182185083aa11b73f33cb7f2a6fc2ba8d9273298b2d34b9f4c651ba03939",
+          "answer": "<answer>\n- marine x 48\n- supplydepot x 8\n- commandcenter x 2\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 12,
+        "game_second": 249,
+        "prompt_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+        "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 4
+      }
+    },
+    {
+      "arm": "B4",
+      "env": 4,
+      "seed": 3236598124,
+      "result": "Defeat",
+      "reward": -49.5,
+      "calls": 9,
+      "feedback": [
+        {
+          "raw_line": 21,
+          "game_time": "05:49",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "9ab3889dff25ab4b627849b50496e2ddc78b16fc8f3d0d87a290d39bf7e37a48",
+          "answer": "<answer>\n- marine x 3\n- supplydepot x 2\n- barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 37,
+          "game_time": "07:17",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "0129c887ea04ab2011613eaa4494fd0e9a0cfb6255a189111bba5524a1787b02",
+          "answer": "<answer>\n- marine x 32\n- supplydepot x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 45,
+          "game_time": "10:28",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "0644989b97fc57c39fee71deb7cd28e3d44aa70a5eb6170653a117fe3e283286",
+          "answer": "<answer>\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 53,
+          "game_time": "11:08",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "a5778fb6891164be6abd89e8cbc01f30a2ab2f41139c27230da6c26a70838264",
+          "answer": "<answer>\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 61,
+          "game_time": "11:47",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "03c0a1d71d584e26680ca24067428eea1880a1e809b9a6c32d552512dee8ee5b",
+          "answer": "<answer>\n- refinery x 1\n- reactor barracks x 1\n- scv x 2\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 69,
+          "game_time": "12:27",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (4/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "51f7607b4012b8896f1ffbcdc80a1e69e36f2409cd59d34eca0a8bf5e5bb76d5",
+          "answer": "<answer>\n- scv x 2\n- reactor barracks\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 13,
+        "game_second": 253,
+        "prompt_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+        "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 4
+      }
+    },
+    {
+      "arm": "B4",
+      "env": 5,
+      "seed": 3297512220,
+      "result": "Victory",
+      "reward": 20.5,
+      "calls": 5,
+      "feedback": [
+        {
+          "raw_line": 22,
+          "game_time": "05:33",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "3d595ad7d0fd7ace9d1975ba56b0737f8acec940a554ca1545edb96c953e564d",
+          "answer": "<answer>\n- marine x 8\n- supplydepot x 1\n- barracks x 1\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 14,
+        "game_second": 265,
+        "prompt_sha256": "cac6c40bc389f9407327d42f69fe7d14165a76208abc7570accda64c09af7343",
+        "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 4
+      }
+    },
+    {
+      "arm": "B4",
+      "env": 6,
+      "seed": 773351930,
+      "result": "Defeat",
+      "reward": -49.401,
+      "calls": 14,
+      "feedback": [
+        {
+          "raw_line": 31,
+          "game_time": "07:01",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "9180f0f9a517cc7b5940c92763bae5c1243ba9e9f649a290057e08df2f9ee962",
+          "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 39,
+          "game_time": "07:40",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "4ce105c177fe3a5284ea4cec3568f74c3b05b6e535d5a05ba81510fed5be5735",
+          "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 47,
+          "game_time": "08:20",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "c88c1565ee18d68252f22094bfb6b53fecac875b6279b2ebcf3260610137b417",
+          "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 55,
+          "game_time": "09:00",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "9d27129867f71a40a619953236f3bbe331fa16e9ab9b7a7d46e25503b40ebd64",
+          "answer": "<answer>\n- marine x 31\n- supplydepot x 1\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 63,
+          "game_time": "11:04",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "4c9cb470e8a545a8a0139022f5f9168cdcebcc832679845d2720aa50de73ea09",
+          "answer": "<answer>\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 71,
+          "game_time": "11:43",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "6d8c5c6405aa917e06a6248318e49f1ca873271cef0630c0394a9eb28a1848ea",
+          "answer": "<answer>\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 87,
+          "game_time": "12:23",
+          "category": "other",
+          "failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "32d1c4d2568ee28234199d968ffcf0a20214f5960881c314b2608a3a34c00ac7",
+          "answer": "<answer>\n- marine x 5\n- marauder x 4\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- commandcenter x 2\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 95,
+          "game_time": "13:03",
+          "category": "other",
+          "failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "1d3e9c2f5775d58c18f7835a75545871f042ec366fc2b188a730bf47002f9df9",
+          "answer": "<answer>\n- supplydepot x 9\n- marauder x 4\n- marine x 4\n- scv x 15\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 103,
+          "game_time": "13:45",
+          "category": "other",
+          "failed": {
+            "action": "marauder",
+            "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "af80e9091882abc09e4e4e8f89545d2791f247361be5a627e9f0ef030072e473",
+          "answer": "<answer>\n- marine x 2\n- mule x 2\n- commandcenter x 2\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 111,
+          "game_time": "14:25",
+          "category": "other",
+          "failed": {
+            "action": "commandcenter",
+            "reason": "timeout: **Action Failed**: Insufficient Minerals (345/400).\n**Suggestion**: Wait for resources.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": true
+          },
+          "prompt_sha256": "529148076d6fbb335243aa6b4851af0e2d2e4bfd479b7eb01475943fff312dc6",
+          "answer": "<answer>\n- marine x 2\n- mule x 2\n- refinery x 1\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 15,
+        "game_second": 253,
+        "prompt_sha256": "f5e74799f0e26edd25bf175603c5899370b5fe22457e1d78d20c045a10088dd3",
+        "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 4
+      }
+    },
+    {
+      "arm": "B4",
+      "env": 7,
+      "seed": 1098341402,
+      "result": "Defeat",
+      "reward": -49.375,
+      "calls": 6,
+      "feedback": [
+        {
+          "raw_line": 24,
+          "game_time": "06:45",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "0ef9702b7bb4f7b7f665475abfb08b6830f2ae44b736f4e4430cb483d62d89c8",
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 32,
+          "game_time": "07:25",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "b202f14d00b027d01b64c9843e62b1cdf4048095d07be9743a2fb2219bdf33eb",
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 40,
+          "game_time": "08:05",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "14639a61fa0f0a4dafd80ee34577aec81bb12b5883806f941c11df81ff056308",
+          "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 2\n</answer>",
+          "valid": true
+        },
+        {
+          "raw_line": 48,
+          "game_time": "08:45",
+          "category": "vespene",
+          "failed": {
+            "action": "reactor barracks",
+            "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+            "target_command_submitted": false,
+            "pre_move_command_attempted": false
+          },
+          "prompt_sha256": "60770f0ec94e8eb18a29bd518b25e06c24b82e659cd0090f927824407fe65ae1",
+          "answer": "<answer>\n- marine x 28\n- supplydepot x 3\n</answer>",
+          "valid": true
+        }
+      ],
+      "second_answer": {
+        "raw_line": 16,
+        "game_second": 261,
+        "prompt_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+        "answer": "<answer>\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+        "valid": true,
+        "feedback": null,
+        "marine_count": 8
+      }
+    }
+  ]
+}

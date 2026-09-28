@@ -1,0 +1,3113 @@
+{
+  "A": {
+    "source_sha": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+    "source_snapshot": "/private/tmp/sc2-feedback-r2-audit.IKrMQp/A",
+    "artifacts": {
+      "manifest.json": "2f1a57f79618ca9b8ccbe03ec2ed58bd048048b9325e52fe1ec20f098eae97cb",
+      "effective_config.json": "ced409b215955c236d92c509d9173744156af3853f727a6afb8efc2f6d9f39d2",
+      "prompt_response.jsonl": "a3a25c83b8a47e0317325cfb25aca611622435271a4d9f2e2b4ed2def908688d",
+      "episode_outcomes.jsonl": "97c55a574e2ee8f0b5821e1d497878d11596edc653dd7840db8c58b9f08b5ab5",
+      "training_seeds.jsonl": "1dae68405d186881e1740df9e4f30de3e443bb348b3c62ea5088169a1ff9e3fb",
+      "console.log": "021dbee4cf23ddcf0e560d44365c833ba4f055866abc48c632df65e816814efa"
+    },
+    "completed_global_steps": 4,
+    "batches": [
+      {
+        "global_step": 1,
+        "wins": 8,
+        "mean_reward": 20.375,
+        "distinct_logged_returns": 2,
+        "reward_spread": 0.5,
+        "trajectory_bullet_variants": 8,
+        "feedback_answers": 0,
+        "valid_answers": 37,
+        "decisions": 49,
+        "logged_advantage": [
+          -3.52,
+          2.737
+        ],
+        "logged_pg_loss": 0.007,
+        "logged_grad_norm": 9.54,
+        "logged_ppo_k1": 0.026,
+        "logged_reference_kl": 0.072,
+        "episodes": [
+          {
+            "env": 0,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.0,
+            "decisions": 7,
+            "answers": [
+              {
+                "source_line": 1,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 9,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 17,
+                "prompt_sha256": "1c5456d3cd1e224b642b7969028278cbd9d7a6758b50601588999f31616de5d5",
+                "answer": "- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+                "projected_action": "- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 25,
+                "prompt_sha256": "0c3c182130452927af1c69ef2f248b104fe3aa53d147c4f46d44c75a2c26403c",
+                "answer": "- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x ",
+                "projected_action": "- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x ",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 33,
+                "prompt_sha256": "1117f9db7ff96e74679e9c20a2d8db76c22fc243eff0c0d5d9969f0f81c20658",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 14\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 14\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 41,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 49,
+                "prompt_sha256": "50bf61874aeb7f7c7f25b91a4542c5b375a5617993a9b534447c11c6aef2bff3",
+                "answer": "<answer>\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- commandcenter x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n",
+                "projected_action": "<answer>\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- commandcenter x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n",
+                "valid": false,
+                "credited_reward": 20.0,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 9,
+            "answers": [
+              {
+                "source_line": 2,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 10,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 18,
+                "prompt_sha256": "1c5456d3cd1e224b642b7969028278cbd9d7a6758b50601588999f31616de5d5",
+                "answer": "- marine x 2\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n",
+                "projected_action": "- marine x 2\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 26,
+                "prompt_sha256": "0c3c182130452927af1c69ef2f248b104fe3aa53d147c4f46d44c75a2c26403c",
+                "answer": "- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x ",
+                "projected_action": "- marine x 2\n- supplydepot x 1\n- barracks x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x 1\n- marine x ",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 34,
+                "prompt_sha256": "1117f9db7ff96e74679e9c20a2d8db76c22fc243eff0c0d5d9969f0f81c20658",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 42,
+                "prompt_sha256": "cf07ffc670e482a12197b5e33bdb9c737ed6080a48b3ed0070b237431f66e01d",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 50,
+                "prompt_sha256": "d52bf2543c9072b5dedd12a79e4886c33500c585f3d018c8e9658ebfe48fc63d",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 9\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 9\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 58,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 66,
+                "prompt_sha256": "8d53554a4863fad46d93df3da67b61a2e811b5ff23c45ad38f5ff87c9a746f0d",
+                "answer": "<answer>\n- marine x 8\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 8\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 2,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.0,
+            "decisions": 4,
+            "answers": [
+              {
+                "source_line": 3,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 11,
+                "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 19,
+                "prompt_sha256": "41e79166a70107282ea293c9bc40db26ba107f32ff169059af357804c0700811",
+                "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- mule x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 1\n- supplydepot x 1\n- mule x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 27,
+                "prompt_sha256": "9e3bc60ac9bb18a1bdfc0aa021110946c5b48a65ebf15e5f707c7602cacf37f1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- marauder x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- marauder x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supply",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- marauder x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- marauder x 1\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supply",
+                "valid": false,
+                "credited_reward": 20.0,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 3,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 11,
+            "answers": [
+              {
+                "source_line": 4,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 12,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 20,
+                "prompt_sha256": "1c5456d3cd1e224b642b7969028278cbd9d7a6758b50601588999f31616de5d5",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 28,
+                "prompt_sha256": "3a4eb67aa23d999e7b1b0ab9ae0e5d48cc1325e1d9e3765156880b0cc9b7fec1",
+                "answer": "<answer>\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 36,
+                "prompt_sha256": "d7e167894a96cfaab93fc2c789db3d7c3e4462df0ef5ff1e814a33c9df17da13",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 16\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 16\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 44,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 52,
+                "prompt_sha256": "1ff782169f3279972235904679370a46863a87a0a98656e619a952332e4d2290",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 9\n- mule x 6\n- marauder x 4\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n- techlab x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 9\n- mule x 6\n- marauder x 4\n- commandcenter x 2\n- refinery x 1\n- techlab barracks x 1\n- factory x 1\n- techlab x 1\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 60,
+                "prompt_sha256": "bac07f393659fa359f570ccab0e2e3bdad6df3251c6cdf347c6b6ad173291c76",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- mule x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- mule x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 68,
+                "prompt_sha256": "9266d79f422c306911d712928075b12ae7b21364e14bc72f2d25a91e80ef01be",
+                "answer": "<answer>\n- marauder x 3\n- supplydepot x 6\n- mule x 4\n- marauder x 3\n- marine x 8\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supply",
+                "projected_action": "<answer>\n- marauder x 3\n- supplydepot x 6\n- mule x 4\n- marauder x 3\n- marine x 8\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supplydepot x 6\n- mule x 4\n- supply",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 76,
+                "prompt_sha256": "5677c3175ed0a77cbbfd5fae1af6b044ccef79731690808b3c631ce9218475a3",
+                "answer": "<answer>\n- supplydepot x 5\n- marauder x 2\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 44\n- scv x 15\n- mule x 4\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 5\n- marauder x 2\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n- techlab x 1\n- marine x 44\n- scv x 15\n- mule x 4\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 84,
+                "prompt_sha256": "c6a159628176d2253beb1083cba06a937eeb7df340dcfe0a397a36a865b3d0e3",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 4\n- mule x 4\n- siegetank x 9\n- scv x 15\n- marauder x 1\n- commandcenter x 2\n- starport x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 4\n- mule x 4\n- siegetank x 9\n- scv x 15\n- marauder x 1\n- commandcenter x 2\n- starport x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 4,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 3,
+            "answers": [
+              {
+                "source_line": 5,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 13,
+                "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 21,
+                "prompt_sha256": "25c56e5c119df29603987d4bf457002e34a9cbf915563f07bd6c7c6466f83df3",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 38\n- supplydepot x 7\n- barracks x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 38\n- supplydepot x 7\n- barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 5,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 4,
+            "answers": [
+              {
+                "source_line": 6,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 14,
+                "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 22,
+                "prompt_sha256": "07a849ba1002c84e971d44a1325fd3c2c35b4c6c080325abcfa5270dc8a81ca2",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n- orbitalcommand x 1\n- factory x 1\n- techlab x 1\n- starport x 1\n- starport with techlab x 1\n- supplydepot x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n- orbitalcommand x 1\n- factory x 1\n- techlab x 1\n- starport x 1\n- starport with techlab x 1\n- supplydepot x 1\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 30,
+                "prompt_sha256": "e89fc1db29e2559585c915cdb6b70425d072ff3d46b81ff91e6b7d9d7c5007cf",
+                "answer": "<answer>\n- supplydepot x 1\n- marauder x 1\n- mule x 1\n- techlab barracks x 1\n- factory x 1\n- commandcenter x 1\n- marine x 1\n- marine x 1\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 1\n- marauder x 1\n- mule x 1\n- techlab barracks x 1\n- factory x 1\n- commandcenter x 1\n- marine x 1\n- marine x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 6,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 7,
+            "answers": [
+              {
+                "source_line": 7,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 15,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 23,
+                "prompt_sha256": "1c5456d3cd1e224b642b7969028278cbd9d7a6758b50601588999f31616de5d5",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 31,
+                "prompt_sha256": "3a4eb67aa23d999e7b1b0ab9ae0e5d48cc1325e1d9e3765156880b0cc9b7fec1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- commandcenter x 1\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- commandcenter x 1\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 39,
+                "prompt_sha256": "3158995ebb2f3dfb68cb58cd367c0ade7f2756697d01ace0e0701c9879bab2f7",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 15\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 15\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 47,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 55,
+                "prompt_sha256": "c4e885ef5bd7585fca8c6c282ec85a9579c21d31255c8c52a1b7a77807dd6b67",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 40\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 3\n- scv x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 40\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 3\n- scv x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 7,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 4,
+            "answers": [
+              {
+                "source_line": 8,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 16,
+                "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 24,
+                "prompt_sha256": "ce6fd2a5635fa2402b34bcb7c896def92c552681713023b81bb3ceba30ebe569",
+                "answer": "<answer>\n- marine x 5\n- supplydepot x 1\n- mule x 6\n</answer>",
+                "projected_action": "<answer>\n- marine x 5\n- supplydepot x 1\n- mule x 6\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 32,
+                "prompt_sha256": "a3a15dafc9dd891ea47a7ef63d325b4dc1a004604d56330750f7d872305de17c",
+                "answer": "<answer>\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- supplydepot x 8\n- scv x 15\n- marine x 45\n- techlab barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- supplydepot x 8\n- scv x 15\n- marine x 45\n- techlab barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "global_step": 2,
+        "wins": 8,
+        "mean_reward": 20.625,
+        "distinct_logged_returns": 2,
+        "reward_spread": 0.5,
+        "trajectory_bullet_variants": 8,
+        "feedback_answers": 0,
+        "valid_answers": 25,
+        "decisions": 27,
+        "logged_advantage": [
+          -1.616,
+          1.124
+        ],
+        "logged_pg_loss": -0.001,
+        "logged_grad_norm": 5.192,
+        "logged_ppo_k1": -0.0,
+        "logged_reference_kl": 0.013,
+        "episodes": [
+          {
+            "env": 0,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 5,
+            "answers": [
+              {
+                "source_line": 89,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "- supplydepot x 2\n- barracks x 2\n- marine x 2",
+                "projected_action": "- supplydepot x 2\n- barracks x 2\n- marine x 2",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 97,
+                "prompt_sha256": "7682ba1b5409cb88f58fe4a1e44fd2701b8af6e31910c0730555893ba44ccfc3",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 105,
+                "prompt_sha256": "b69f8e1da7caced5ec84faa9b7b0ee92d623adedb2ccc8bfdd9b59f814f106a3",
+                "answer": "- marine x 20\n- supplydepot x 2\n- barracks x 2\n- commandcenter x 1\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine",
+                "projected_action": "- marine x 20\n- supplydepot x 2\n- barracks x 2\n- commandcenter x 1\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 113,
+                "prompt_sha256": "e079c6362a519c40e3f00f366cb7e357e1d210c3f1e73c5a5e5d8671bd00cee4",
+                "answer": "- marine x 15\n</answer>",
+                "projected_action": "- marine x 15\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 121,
+                "prompt_sha256": "cb3da9707602f5527f52fd0850979de8c99706b5be02b86633d7d88c3cc87b51",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 21.0,
+            "decisions": 4,
+            "answers": [
+              {
+                "source_line": 90,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 98,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 2\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 2\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+                "valid": true,
+                "credited_reward": 0.5,
+                "feedback": null
+              },
+              {
+                "source_line": 106,
+                "prompt_sha256": "042430fba5f40e85ec24fe1772085656614638e03fe409c124cd57270d00c080",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 114,
+                "prompt_sha256": "090cebf030270046979b7f3d7d5db1c39331fbb57d5b0deb2c8987587aad2632",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 36\n- supplydepot x 5\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 36\n- supplydepot x 5\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 2,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 4,
+            "answers": [
+              {
+                "source_line": 91,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 99,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 107,
+                "prompt_sha256": "4ce8c416f2be547750caca7aa5fbae17ff00f9723384e423489d2a650789818b",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 115,
+                "prompt_sha256": "e68a56fb2e4a5570ab8bc07a63c843f8a1a892d8ddc63753a2477495f60ee8b1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 40\n- supplydepot x 6\n- reactor barracks x 2\n- scv x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 40\n- supplydepot x 6\n- reactor barracks x 2\n- scv x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 3,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 3,
+            "answers": [
+              {
+                "source_line": 92,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "Here are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "Here are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 100,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 108,
+                "prompt_sha256": "11797242c665cde2905a02646637aee0f8b411037bc7627fe2ed50eb2b57d523",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 4,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 93,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 101,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 5,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 21.0,
+            "decisions": 4,
+            "answers": [
+              {
+                "source_line": 94,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 102,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 110,
+                "prompt_sha256": "b67cc8ff7050e337e50090d9d46b328704ae520dc404cb1dc3b110e68eca175c",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+                "valid": true,
+                "credited_reward": 0.5,
+                "feedback": null
+              },
+              {
+                "source_line": 118,
+                "prompt_sha256": "054b40d2add2fe56e5259aab95a8df0f4e335c2a69b7966898155cfeed291401",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 37\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 37\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 6,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 95,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 103,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 7,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 3,
+            "answers": [
+              {
+                "source_line": 96,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 104,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 112,
+                "prompt_sha256": "b67cc8ff7050e337e50090d9d46b328704ae520dc404cb1dc3b110e68eca175c",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 38\n- supplydepot x 7\n- barracks x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 38\n- supplydepot x 7\n- barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "global_step": 3,
+        "wins": 0,
+        "mean_reward": -49.382,
+        "distinct_logged_returns": 1,
+        "reward_spread": 0.0,
+        "trajectory_bullet_variants": 1,
+        "feedback_answers": 0,
+        "valid_answers": 16,
+        "decisions": 16,
+        "logged_advantage": [
+          -0.0,
+          -0.0
+        ],
+        "logged_pg_loss": 0.0,
+        "logged_grad_norm": 0.021,
+        "logged_ppo_k1": -0.0,
+        "logged_reference_kl": 0.01,
+        "episodes": [
+          {
+            "env": 0,
+            "seed": 42613,
+            "result": "Defeat",
+            "reward": -49.382,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 129,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 137,
+                "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": -49.382,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "seed": 42613,
+            "result": "Defeat",
+            "reward": -49.382,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 130,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 138,
+                "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": -49.382,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 2,
+            "seed": 42613,
+            "result": "Defeat",
+            "reward": -49.382,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 131,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 139,
+                "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": -49.382,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 3,
+            "seed": 42613,
+            "result": "Defeat",
+            "reward": -49.382,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 132,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 140,
+                "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": -49.382,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 4,
+            "seed": 42613,
+            "result": "Defeat",
+            "reward": -49.382,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 133,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 141,
+                "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": -49.382,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 5,
+            "seed": 42613,
+            "result": "Defeat",
+            "reward": -49.382,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 134,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 142,
+                "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": -49.382,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 6,
+            "seed": 42613,
+            "result": "Defeat",
+            "reward": -49.382,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 135,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 143,
+                "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": -49.382,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 7,
+            "seed": 42613,
+            "result": "Defeat",
+            "reward": -49.382,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 136,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 144,
+                "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": -49.382,
+                "feedback": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "global_step": 4,
+        "wins": 8,
+        "mean_reward": 20.5,
+        "distinct_logged_returns": 1,
+        "reward_spread": 0.0,
+        "trajectory_bullet_variants": 3,
+        "feedback_answers": 0,
+        "valid_answers": 16,
+        "decisions": 16,
+        "logged_advantage": [
+          0.0,
+          0.0
+        ],
+        "logged_pg_loss": 0.0,
+        "logged_grad_norm": 0.025,
+        "logged_ppo_k1": -0.001,
+        "logged_reference_kl": 0.011,
+        "episodes": [
+          {
+            "env": 0,
+            "seed": 52416,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 145,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 153,
+                "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "seed": 52416,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 146,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 154,
+                "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 2,
+            "seed": 52416,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 147,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 155,
+                "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 3,
+            "seed": 52416,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 148,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 156,
+                "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 4,
+            "seed": 52416,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 149,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 157,
+                "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 5,
+            "seed": 52416,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 150,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 158,
+                "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 6,
+            "seed": 52416,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 151,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 159,
+                "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 7,
+            "seed": 52416,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 2,
+            "answers": [
+              {
+                "source_line": 152,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 160,
+                "prompt_sha256": "4a2700256277b31bfdf5d3c83abe1a062ce7dc7da147069143127265b32d5519",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pending_games_excluded": 0,
+    "scope": "Completed training batches only; logged reward/text audit, not exact PPO tensors or execution quality"
+  },
+  "B": {
+    "source_sha": "361cb7ae7fd86fe8811d6fcb6946d0241bf93e11",
+    "source_snapshot": "/private/tmp/sc2-feedback-r2-audit.IKrMQp/B",
+    "artifacts": {
+      "manifest.json": "89d745c970e987b838b54e1dd36bc039b8ef54ce67b8bbae8614217be92ce421",
+      "effective_config.json": "b3dbd43c2236f2ae05dce10364ed8afadda80be675a94ab5f7b1d1f3e3e62b8c",
+      "prompt_response.jsonl": "5f775253c183395752a7ff270d75bf6b7837e90021ac8d59dbf9ea86f1393fc5",
+      "episode_outcomes.jsonl": "dee32b52a18164107052ae2ae18aeb6e49decd211e83f4ad0ee7beeebc90ae45",
+      "training_seeds.jsonl": "4091e8c1befaf26a3af19c7695202ce85fb1c0d2aa5fb097b67754be2b91ad69",
+      "console.log": "100cc746813901d4860e4f87e97ae3307f25f53f6987fce2d1b8f478cd8cff9b"
+    },
+    "completed_global_steps": 2,
+    "batches": [
+      {
+        "global_step": 1,
+        "wins": 8,
+        "mean_reward": 20.4375,
+        "distinct_logged_returns": 3,
+        "reward_spread": 1.0,
+        "trajectory_bullet_variants": 8,
+        "feedback_answers": 17,
+        "valid_answers": 49,
+        "decisions": 60,
+        "logged_advantage": [
+          -3.109,
+          2.252
+        ],
+        "logged_pg_loss": 0.002,
+        "logged_grad_norm": 7.879,
+        "logged_ppo_k1": 0.009,
+        "logged_reference_kl": 0.021,
+        "episodes": [
+          {
+            "env": 0,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.0,
+            "decisions": 10,
+            "answers": [
+              {
+                "source_line": 1,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "- supplydepot x 2\n- barracks x 2\n- marine x 2",
+                "projected_action": "- supplydepot x 2\n- barracks x 2\n- marine x 2",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 9,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 17,
+                "prompt_sha256": "1c5456d3cd1e224b642b7969028278cbd9d7a6758b50601588999f31616de5d5",
+                "answer": "- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+                "projected_action": "- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 25,
+                "prompt_sha256": "0c3c182130452927af1c69ef2f248b104fe3aa53d147c4f46d44c75a2c26403c",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 33,
+                "prompt_sha256": "3158995ebb2f3dfb68cb58cd367c0ade7f2756697d01ace0e0701c9879bab2f7",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 15\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 15\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 41,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 49,
+                "prompt_sha256": "99f37d1fc105527fba72ac6ed331aca924860e5f7ac39ac1724c1765340afbd5",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 57,
+                "prompt_sha256": "efc20df4680f5ca27a887c89a03d862b1fb3980e9b65845255f0869303dfd176",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 7,
+                  "phase_index": 1,
+                  "processed_prefix_count": 3,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (36/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "marine",
+                    "supplydepot"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1,
+                    "marine": 1,
+                    "supplydepot": 1
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 65,
+                "prompt_sha256": "2fec0fd35c57203e36a94907b37a585e9030c0c0ed9599b1c85686821bcf909b",
+                "answer": "<answer>\n- supplydepot x 1\n- marauder x 1\n- techlab barracks x 1\n- factory x 1\n- commandcenter x 1\n- mule x 1\n- scv x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- marine x 1\n- siege tank x 1",
+                "projected_action": "<answer>\n- supplydepot x 1\n- marauder x 1\n- techlab barracks x 1\n- factory x 1\n- commandcenter x 1\n- mule x 1\n- scv x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- marine x 1\n- siege tank x 1\n- mule x 1\n- supplydepot x 1\n- mule x 1\n- scv x 1\n- marine x 1\n- siege tank x 1",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 73,
+                "prompt_sha256": "17bb1f234d355da93ae2d240783c24daa578a2b5db505dd5b4d995b640e4cb7e",
+                "answer": "<answer>\n- supplydepot x 2\n- marauder x 3\n- mule x 6\n- scv x 15\n- commandcenter x 2\n- factory x 1\n- barracks x 7\n- marine x 48\n- launch OFFENSE\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- marauder x 3\n- mule x 6\n- scv x 15\n- commandcenter x 2\n- factory x 1\n- barracks x 7\n- marine x 48\n- launch OFFENSE\n</answer>",
+                "valid": false,
+                "credited_reward": 20.0,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 5,
+            "answers": [
+              {
+                "source_line": 2,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 10,
+                "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 18,
+                "prompt_sha256": "6828ff7339e61667b458489484e3e68d759c9e7ce49fae7c7664afacd791d81b",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 2,
+                  "phase_index": 1,
+                  "processed_prefix_count": 8,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 26,
+                "prompt_sha256": "6268b086b579ad589dd04cea2249071b651b3a370c347428e5d5d3d624c32f10",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n- marine x 36\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n- marine x 36\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 34,
+                "prompt_sha256": "9679e774abea3ec9110e98607811a67c63fe5ed7bdcf4e2e88f4541b643e677b",
+                "answer": "<answer>\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 1\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": {
+                  "source_policy_action_id": 4,
+                  "phase_index": 1,
+                  "processed_prefix_count": 3,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (36/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "marine",
+                    "supplydepot"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1,
+                    "marine": 1,
+                    "supplydepot": 1
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 2,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.0,
+            "decisions": 7,
+            "answers": [
+              {
+                "source_line": 3,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 11,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 19,
+                "prompt_sha256": "1c5456d3cd1e224b642b7969028278cbd9d7a6758b50601588999f31616de5d5",
+                "answer": "- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+                "projected_action": "- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 27,
+                "prompt_sha256": "0c3c182130452927af1c69ef2f248b104fe3aa53d147c4f46d44c75a2c26403c",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 17\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 17\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 35,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 43,
+                "prompt_sha256": "81bd424563a5f67c11a6966e0e92fd94a8257246d994ce3067be078c227d0f0d",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- scv x 2\n- reactor barracks x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- scv x 2\n- reactor barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 5,
+                  "phase_index": 1,
+                  "processed_prefix_count": 9,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "reactor barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 3
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 51,
+                "prompt_sha256": "5214ba4cd67d4399f32d9d878d5501ff1585233da488e0b3c0cecda991bc1e23",
+                "answer": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nExecution feedback for the previous segment (not owned units/buildings):\n{\"source_policy_action_id\": 6, \"phase_index\": 1, \"processed_prefix_count\": 6, \"queue_source\": \"parsed_answer_plus_existing_rules\", \"failed\": {\"action\": \"reactor barracks\", \"reason\": \"timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\\n**Suggestion**: Build a Refinery.\", \"target_command_submitted\": false, \"pre_move_command_attempted\": false}, \"unsubmitted_suffix\": [], \"restored_selectable quota\": {\"reactor barracks\": 1}, \"replan_scheduled\": true}\nThe failed target and unsubmitted suffix were not submitted as production commands. Only recorded selection quotas were released; previously processed commands are not cancelled. These are",
+                "projected_action": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nExecution feedback for the previous segment (not owned units/buildings):\n{\"source_policy_action_id\": 6, \"phase_index\": 1, \"processed_prefix_count\": 6, \"queue_source\": \"parsed_answer_plus_existing_rules\", \"failed\": {\"action\": \"reactor barracks\", \"reason\": \"timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\\n**Suggestion**: Build a Refinery.\", \"target_command_submitted\": false, \"pre_move_command_attempted\": false}, \"unsubmitted_suffix\": [], \"restored_selectable quota\": {\"reactor barracks\": 1}, \"replan_scheduled\": true}\nThe failed target and unsubmitted suffix were not submitted as production commands. Only recorded selection quotas were released; previously processed commands are not cancelled. These are",
+                "valid": false,
+                "credited_reward": 20.0,
+                "feedback": {
+                  "source_policy_action_id": 6,
+                  "phase_index": 1,
+                  "processed_prefix_count": 6,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 3,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 21.0,
+            "decisions": 9,
+            "answers": [
+              {
+                "source_line": 4,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 12,
+                "prompt_sha256": "fcf8262f9a0bc1606a437ea2d315bbbd00f436723a8dc3f7063e2aa326baf872",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n- Launch OFFENSE with 8 marine\n</answer>",
+                "valid": true,
+                "credited_reward": 0.5,
+                "feedback": null
+              },
+              {
+                "source_line": 20,
+                "prompt_sha256": "51560b8244f34cbbeff92d1f6635cd5006633e1078ff81e42f070527b97dea1c",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 2,
+                  "phase_index": 1,
+                  "processed_prefix_count": 6,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "scv",
+                    "scv",
+                    "refinery",
+                    "Attacking Instruction: Launch OFFENSE with 8 marine"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2,
+                    "scv": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 28,
+                "prompt_sha256": "f7899bca829afa65dae94ac73e2da1eccffc89866e7a052e169aef3a69f9c40d",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 36,
+                "prompt_sha256": "fb1399b2f703990fbc9bc238187b6f5438da9aecca08fc8a18ddcffc8c82b19c",
+                "answer": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags. Do not submit any actions that have been previously failed or unsubmitted.**\n\n<answer>\n- marine x 36\n- supplydepot x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags. Do not submit any actions that have been previously failed or unsubmitted.**\n\n<answer>\n- marine x 36\n- supplydepot x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 4,
+                  "phase_index": 1,
+                  "processed_prefix_count": 4,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "scv",
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2,
+                    "scv": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 44,
+                "prompt_sha256": "62ca252db9adf776852294a17aabb6ea7996f6da1f352e8a954147fdf72783f5",
+                "answer": "<answer>\n- marine x 1\n- reactor barracks x 1\n- scv x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 1\n- reactor barracks x 1\n- scv x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 5,
+                  "phase_index": 1,
+                  "processed_prefix_count": 3,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (24/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "marine",
+                    "supplydepot"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1,
+                    "marine": 1,
+                    "supplydepot": 1
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 52,
+                "prompt_sha256": "f5c20ee5335bc18b5f37e7e68c8728a812ff631e02be7acb85c259e6e5af965a",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 1\n- mule x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marauder x 1\n- supplydepot x 1\n- mule x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 60,
+                "prompt_sha256": "df15ce4584cb22632c2bb740ae850785f9df8c6d440f45cc2193e0f62a367bed",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 10\n- supplydepot x 1\n- mule x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 10\n- supplydepot x 1\n- mule x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 7,
+                  "phase_index": 2,
+                  "processed_prefix_count": 0,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "marauder",
+                    "reason": "timeout: **Action Failed**: Tech Lab required.\n**Reason**: No BARRACKS with Tech Lab available.\n**Suggestion**: Check if need Build a Tech Lab.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "supplydepot",
+                    "mule"
+                  ],
+                  "restored_selectable_quota": {
+                    "marauder": 1,
+                    "supplydepot": 1,
+                    "mule": 1
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 68,
+                "prompt_sha256": "5c30c0d17ec4424a23dcba258b215b340d67a79b4d3b9ffbf4293e3893e89cff",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- mule x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 4,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 5,
+            "answers": [
+              {
+                "source_line": 5,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 13,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 21,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 29,
+                "prompt_sha256": "aff9e8acfc6b7d0470d270d7c39143e6d13e952c6c5c6ce71470369b7fee8bc4",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 3,
+                  "phase_index": 1,
+                  "processed_prefix_count": 8,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1,
+                    "scv": 1
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 37,
+                "prompt_sha256": "6f0a03e73a780bac2f4545d8e1fa49e5e7ef806a910f760ab10603042e56f549",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 5,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 12,
+            "answers": [
+              {
+                "source_line": 6,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 14,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 22,
+                "prompt_sha256": "1c5456d3cd1e224b642b7969028278cbd9d7a6758b50601588999f31616de5d5",
+                "answer": "<answer>\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 30,
+                "prompt_sha256": "3a4eb67aa23d999e7b1b0ab9ae0e5d48cc1325e1d9e3765156880b0cc9b7fec1",
+                "answer": "- marine x 18\n- supplydepot x 1\n- barracks x 1\n- commandcenter x 1\n- refinery x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research",
+                "projected_action": "- marine x 18\n- supplydepot x 1\n- barracks x 1\n- commandcenter x 1\n- refinery x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research x 1\n- research",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 38,
+                "prompt_sha256": "3158995ebb2f3dfb68cb58cd367c0ade7f2756697d01ace0e0701c9879bab2f7",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 46,
+                "prompt_sha256": "1ad010e12025b5974c2debb01785d1686009a25e3ce50c3e8ec1ff996fcef886",
+                "answer": "- marine x 11\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "projected_action": "- marine x 11\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 54,
+                "prompt_sha256": "b21aad099ef610ed83e5288c5f11f3704465a5a9b6c986eba336f8f98525ceea",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 10\n- SupplyDepot x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 10\n- SupplyDepot x 1\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 62,
+                "prompt_sha256": "a831febf6d74b7647d254c634d40b1b7390ddab804777b4ca55fd58bbab2fb9c",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 7\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 7\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 70,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 78,
+                "prompt_sha256": "ed1d2750c0848ffd31d6cc7227aebee21f060b78030f970cb3caee41293ad50f",
+                "answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "projected_action": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 9,
+                  "phase_index": 1,
+                  "processed_prefix_count": 22,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "marine",
+                    "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "barracks",
+                    "barracks",
+                    "barracks",
+                    "reactor barracks",
+                    "reactor barracks",
+                    "reactor barracks",
+                    "scv",
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "marine": 20,
+                    "supplydepot": 8,
+                    "barracks": 3,
+                    "reactor barracks": 3,
+                    "scv": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 86,
+                "prompt_sha256": "1a8bf89ea8314f086a4774c41da77439528271ea00445221cc19671123eac42f",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 10,
+                  "phase_index": 1,
+                  "processed_prefix_count": 0,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "marine",
+                    "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "marine",
+                    "supplydepot",
+                    "supplydepot",
+                    "barracks",
+                    "barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "marine": 2,
+                    "supplydepot": 2,
+                    "barracks": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 94,
+                "prompt_sha256": "2f9f9e26bd4ec77b61b173a2e378e12d1d00fef36d3a7b2a62aea044c4fce257",
+                "answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+                "projected_action": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": {
+                  "source_policy_action_id": 11,
+                  "phase_index": 1,
+                  "processed_prefix_count": 0,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "marine",
+                    "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "marine",
+                    "supplydepot",
+                    "barracks",
+                    "reactor barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "marine": 2,
+                    "supplydepot": 1,
+                    "barracks": 1,
+                    "reactor barracks": 1
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 6,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 7,
+            "answers": [
+              {
+                "source_line": 7,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 15,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 23,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 31,
+                "prompt_sha256": "383f5e2825e1693eda9166f8750c94f995fe24aa5fae0e5ade4efafa7acf1bb8",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 2\n- scv x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 2\n- scv x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 3,
+                  "phase_index": 1,
+                  "processed_prefix_count": 6,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "scv",
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2,
+                    "scv": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 39,
+                "prompt_sha256": "2dbf86dfe7f4a75dbc07f8d2fffb87468f63df8dc23850c944812f082a12210f",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 4,
+                  "phase_index": 1,
+                  "processed_prefix_count": 5,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "scv",
+                    "scv"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2,
+                    "scv": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 47,
+                "prompt_sha256": "daef4f50919e38f06dfc622d26ef2d88d144b701cf50cd9c6914263856a6f7ab",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 5,
+                  "phase_index": 1,
+                  "processed_prefix_count": 4,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 55,
+                "prompt_sha256": "28f9bdf4a57199debf56da8c1c13b86a3cba2c19181ec82306b122785174697f",
+                "answer": "<answer>\n- marine x 34\n- reactor barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 34\n- reactor barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": {
+                  "source_policy_action_id": 6,
+                  "phase_index": 1,
+                  "processed_prefix_count": 4,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 7,
+            "seed": 2732,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 5,
+            "answers": [
+              {
+                "source_line": 8,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 16,
+                "prompt_sha256": "822399ff7463f7452bdd0a0c327cbe2f7a4dfb3d4ac7f7aa50e8e3f0aee508ba",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 22\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 24,
+                "prompt_sha256": "13ade82bcc54aac04359840bcb446e9c1b8339fe0f08b07cba961799a78918a6",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 32,
+                "prompt_sha256": "cc147b241f78b66113ea1ef3fdd5ce4096e5035f6635535439ddd51048741690",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 40,
+                "prompt_sha256": "a66c43618b94cda5d76186945238de19774eca8c416e4aba64885f44ebc28195",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "global_step": 2,
+        "wins": 8,
+        "mean_reward": 20.5,
+        "distinct_logged_returns": 1,
+        "reward_spread": 0.0,
+        "trajectory_bullet_variants": 8,
+        "feedback_answers": 11,
+        "valid_answers": 39,
+        "decisions": 41,
+        "logged_advantage": [
+          -2.32,
+          1.865
+        ],
+        "logged_pg_loss": 0.002,
+        "logged_grad_norm": 5.82,
+        "logged_ppo_k1": 0.001,
+        "logged_reference_kl": 0.03,
+        "episodes": [
+          {
+            "env": 0,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 4,
+            "answers": [
+              {
+                "source_line": 97,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 105,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 113,
+                "prompt_sha256": "4ce8c416f2be547750caca7aa5fbae17ff00f9723384e423489d2a650789818b",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 121,
+                "prompt_sha256": "396c82998b71d23439d99dcbb03438e6c5b0fb1fba10f8aaee03f3d2d1e91d28",
+                "answer": "<answer>\n- marine x 3\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- commandcenter x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 3\n- supplydepot x 1\n- mule x 1\n- marauder x 1\n- commandcenter x 1\n- techlab barracks x 1\n- factory x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 3,
+            "answers": [
+              {
+                "source_line": 98,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 106,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 114,
+                "prompt_sha256": "88b5c87ccb009cbaee571ca8e690a5c846904aa03f35ee68d597a5f932d94cc9",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 38\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 38\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": {
+                  "source_policy_action_id": 2,
+                  "phase_index": 1,
+                  "processed_prefix_count": 7,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 2,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 6,
+            "answers": [
+              {
+                "source_line": 99,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 107,
+                "prompt_sha256": "7682ba1b5409cb88f58fe4a1e44fd2701b8af6e31910c0730555893ba44ccfc3",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 115,
+                "prompt_sha256": "b69f8e1da7caced5ec84faa9b7b0ee92d623adedb2ccc8bfdd9b59f814f106a3",
+                "answer": "<answer>\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x",
+                "projected_action": "<answer>\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x 2\n- marine x",
+                "valid": false,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 123,
+                "prompt_sha256": "e079c6362a519c40e3f00f366cb7e357e1d210c3f1e73c5a5e5d8671bd00cee4",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 17\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 17\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 131,
+                "prompt_sha256": "f29bd16dfb5fb762d8c8fd496c4b664d7d6f16913d660f86f36d1747f892629f",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 139,
+                "prompt_sha256": "0900a91b7dd80cde5e667603b872a870cc15e8851482c77f1ad2e251922f4d6a",
+                "answer": "<answer>\n- marine x 38\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 3\n</answer>",
+                "projected_action": "<answer>\n- marine x 38\n- supplydepot x 6\n- barracks x 1\n- reactor barracks x 3\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": {
+                  "source_policy_action_id": 5,
+                  "phase_index": 1,
+                  "processed_prefix_count": 8,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "scv",
+                    "scv",
+                    "scv"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2,
+                    "scv": 3
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 3,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 4,
+            "answers": [
+              {
+                "source_line": 100,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 108,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 116,
+                "prompt_sha256": "f7109e2d6de7a708c9cfafb48201756234585ee1ef86e1f7cf9222754ab0b11c",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 124,
+                "prompt_sha256": "5eab4e7f427e925e9fb11ba5fd1a65b01e5faa19502c4b794174fdc9b50033c2",
+                "answer": "<answer>\n- marine x 36\n- supplydepot x 4\n- reactor barracks x 3\n</answer>",
+                "projected_action": "<answer>\n- marine x 36\n- supplydepot x 4\n- reactor barracks x 3\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": {
+                  "source_policy_action_id": 3,
+                  "phase_index": 1,
+                  "processed_prefix_count": 5,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1,
+                    "scv": 1
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 4,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 6,
+            "answers": [
+              {
+                "source_line": 101,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 12\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 12\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 109,
+                "prompt_sha256": "d877538288f6b2db040656a48a4c0f7b29c2cf035118b7e24528c994f5997b0a",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 12\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 12\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 117,
+                "prompt_sha256": "328cd105e94eaa1c114b88ac11ae5c1a806ee6fd4493b223b4441143a893bd87",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 125,
+                "prompt_sha256": "a4d261e5a903deb77a0afdf5f5e179316b3294960a5180e2ffe842097820a464",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 3,
+                  "phase_index": 1,
+                  "processed_prefix_count": 8,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "scv",
+                    "scv",
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2,
+                    "scv": 3
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 133,
+                "prompt_sha256": "39b87d1f9630ae5f26ffe483457850e6bab10db2fb96754765ba1c7a3de36ed6",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 141,
+                "prompt_sha256": "61a2b2c52f9d2ca6b2df01c82075c1ed253365d5e3e219d1e48cef760399bd3e",
+                "answer": "<answer>\n- marine x 34\n- supplydepot x 3\n- reactor barracks x 3\n</answer>",
+                "projected_action": "<answer>\n- marine x 34\n- supplydepot x 3\n- reactor barracks x 3\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": {
+                  "source_policy_action_id": 5,
+                  "phase_index": 1,
+                  "processed_prefix_count": 4,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 2
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 5,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 8,
+            "answers": [
+              {
+                "source_line": 102,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 12\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 12\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 110,
+                "prompt_sha256": "d877538288f6b2db040656a48a4c0f7b29c2cf035118b7e24528c994f5997b0a",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 12\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 12\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 118,
+                "prompt_sha256": "328cd105e94eaa1c114b88ac11ae5c1a806ee6fd4493b223b4441143a893bd87",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 126,
+                "prompt_sha256": "56f7f33caa39aff3456cf044f546ba685e2760c4146d7d8f2289693ddd395115",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- scv x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 1\n- scv x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 3,
+                  "phase_index": 1,
+                  "processed_prefix_count": 9,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "reactor barracks",
+                    "scv",
+                    "scv",
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 3,
+                    "scv": 3
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 134,
+                "prompt_sha256": "01c8bd2cf090cd244c611b9dcea36169bf68fe687e6080b234e135a3ebf20ad6",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 1\n- reactor barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 142,
+                "prompt_sha256": "381f04670f91239154cccde08b3edc7988f2ca0305f2d44e4ceb0df476583df2",
+                "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n- supplydepot x 2\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 5,
+                  "phase_index": 1,
+                  "processed_prefix_count": 3,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 150,
+                "prompt_sha256": "bda9d78d4c0d7688db4ce2f6b9d88b10b3ebed8c4f4147afef35408f95c32a8f",
+                "answer": "<answer>\n- marine x 32\n- supplydepot x 2\n- reactor barracks x 3\n</answer>",
+                "projected_action": "<answer>\n- marine x 32\n- supplydepot x 2\n- reactor barracks x 3\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 6,
+                  "phase_index": 1,
+                  "processed_prefix_count": 4,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1,
+                    "scv": 1
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 158,
+                "prompt_sha256": "98a459a32b7bb4685de2739e0346a183eaa867eabbdbd1e72cc9d8102a30b03d",
+                "answer": "<answer>\n- scv x 2\n- reactor barracks x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- scv x 2\n- reactor barracks x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": {
+                  "source_policy_action_id": 7,
+                  "phase_index": 1,
+                  "processed_prefix_count": 34,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "reactor barracks",
+                    "reactor barracks"
+                  ],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 3
+                  },
+                  "replan_scheduled": true
+                }
+              }
+            ]
+          },
+          {
+            "env": 6,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 5,
+            "answers": [
+              {
+                "source_line": 103,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 111,
+                "prompt_sha256": "8db7fd748078555d337d3fc3177af711e6d19e0751a0b0d0427d380b4bbacb18",
+                "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 119,
+                "prompt_sha256": "e63c9b0fa28aeacc57c9be701a0236fb589e8e01e3a96ab154c2bec2eade0ae0",
+                "answer": "<answer>\n- marine x 38\n- supplydepot x 7\n- barracks x 2\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 38\n- supplydepot x 7\n- barracks x 2\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 2,
+                  "phase_index": 1,
+                  "processed_prefix_count": 6,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "reactor barracks",
+                    "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [],
+                  "restored_selectable_quota": {
+                    "reactor barracks": 1
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 127,
+                "prompt_sha256": "4dc224b02cd6ecb4b49b22bf459cd27baead381565fe8c83b0175e98fa0fca36",
+                "answer": "<answer>\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 1\n- barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": {
+                  "source_policy_action_id": 3,
+                  "phase_index": 1,
+                  "processed_prefix_count": 17,
+                  "queue_source": "parsed_answer_plus_existing_rules",
+                  "failed": {
+                    "action": "marine",
+                    "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+                    "target_command_submitted": false,
+                    "pre_move_command_attempted": false
+                  },
+                  "unsubmitted_suffix": [
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "marine",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "supplydepot",
+                    "barracks",
+                    "barracks",
+                    "reactor barracks",
+                    "reactor barracks",
+                    "reactor barracks",
+                    "scv",
+                    "scv",
+                    "refinery"
+                  ],
+                  "restored_selectable_quota": {
+                    "marine": 21,
+                    "supplydepot": 7,
+                    "barracks": 2,
+                    "reactor barracks": 3,
+                    "scv": 2
+                  },
+                  "replan_scheduled": true
+                }
+              },
+              {
+                "source_line": 135,
+                "prompt_sha256": "0325da98c1bc743020a74627f930619a25a010cff563298a453aab88fb86c92b",
+                "answer": "<answer>\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 9\n- mule x 6\n- scv x 15\n- marauder x 4\n- commandcenter x 2\n- factory x 1\n- techlab barracks x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          },
+          {
+            "env": 7,
+            "seed": 43567,
+            "result": "Victory",
+            "reward": 20.5,
+            "decisions": 5,
+            "answers": [
+              {
+                "source_line": 104,
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 112,
+                "prompt_sha256": "7682ba1b5409cb88f58fe4a1e44fd2701b8af6e31910c0730555893ba44ccfc3",
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 120,
+                "prompt_sha256": "b69f8e1da7caced5ec84faa9b7b0ee92d623adedb2ccc8bfdd9b59f814f106a3",
+                "answer": "<answer>\n- marine x 2\n</answer>",
+                "projected_action": "<answer>\n- marine x 2\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 128,
+                "prompt_sha256": "779cff7b99bdc2dab38996c1f77aced7fa639a92dc03aa5b75e2fa3a219a4f0c",
+                "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 18\n</answer>",
+                "projected_action": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 18\n</answer>",
+                "valid": true,
+                "credited_reward": 0.0,
+                "feedback": null
+              },
+              {
+                "source_line": 136,
+                "prompt_sha256": "f29bd16dfb5fb762d8c8fd496c4b664d7d6f16913d660f86f36d1747f892629f",
+                "answer": "<answer>\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "projected_action": "<answer>\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+                "valid": true,
+                "credited_reward": 20.5,
+                "feedback": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pending_games_excluded": 8,
+    "scope": "Completed training batches only; logged reward/text audit, not exact PPO tensors or execution quality"
+  }
+}

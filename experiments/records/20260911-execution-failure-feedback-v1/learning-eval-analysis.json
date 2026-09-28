@@ -1,0 +1,2422 @@
+{
+  "runtime_sha": "937ae3cfcbf7340208a8f86c0abf680d733c0484",
+  "snapshot": "/private/tmp/sc2-feedback-second-plan.1KHcXh",
+  "full_report_sha256": "de44dec3b1f16613c1b92290e2cb5b94e36d6226be7d2a718ef3262cb26e372d",
+  "second_prompts_equal": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "tracker_prefix_equal_through_second_query_integer_second": {
+    "1": true,
+    "3": true,
+    "7": true
+  },
+  "groups": {
+    "original": {
+      "ended_at": "2026-09-11T12:45:44.035547+00:00",
+      "exit_code": 0,
+      "training_updates": 0,
+      "wins": 3,
+      "mean_reward": -23.3445,
+      "valid_answers": 57,
+      "answers": 78,
+      "input_hashes": {
+        "episode_outcomes.jsonl": "b5c68766e633a0a7711fade81c7ed8915357649724c7645658680ed1e14c10f9",
+        "game-3829607-boundaries.jsonl": "eb126ee7295bf2a20cb8fa333c5557acc44aa09c86d6c7a3e7f4957db0e04d86",
+        "result.json": "e61760e7e2df1960de30c69eddc1f0363d4c86858ab1e56f1c80f3c6e7ce70f1",
+        "game-3829603-boundaries.jsonl": "276369e34609e048920cad619e4fa058749b35ecd30674fa8c9c48ff9fda8ceb",
+        "game_worker_mapping.jsonl": "738699fe4a7f78ac9e3347bf0c5c9cf15a9e369dee743a1999b8c50551c1d3c4",
+        "sampling-rank1.json": "c8bbf4c0b42796490c9226f1f0e6b7c0f49674e3541016eab00458ac97332e7c",
+        "game-3829606-boundaries.jsonl": "a914cfcfef53b25bbb47facc9895fc0fb983756c1d1d66ca5a2976c88f84fda4",
+        "model_preparation.json": "186f6f42469b690c7994703ced2cdd8833dc66405495a091e793efacb506f2fa",
+        "effective_config.json": "cf755e9c2457169e1bae3ed9af46f61ba58c3e016e45f4aaeb7e00cd32eeab13",
+        "game-3829602-boundaries.jsonl": "397a794c5f8e38edc948fff95570cab056d6bb11c841e54734223f411a892237",
+        "sampling-rank0.json": "80b6b935aa13af7e044623b3ba1115fc83f24076a6686677f6f9d96ed1c66adb",
+        "checkpoint_evaluation.json": "98e8857fe87116f4251cf6c141e5941a047a5eebddf91d652dc87f7380e2f412",
+        "sampling-rank3.json": "92f0eb10a64c89092841cd07ce7e00617998a96995a77f489090c3bacce05cf2",
+        "prompt_response.jsonl": "1dd6ece7d502a68b12d4af4d6669b63e326a47c976a19709a0b99d7aa32037d2",
+        "game-3829605-boundaries.jsonl": "425918e028411f54ac72fb58a604c975c73dbfcd60c15ef0ce3fd79523935944",
+        "game-3829601-boundaries.jsonl": "09c420ae4d58e6667c7beebbff63ada543a2e4a6a1b43e8cebeff18ebad97e2c",
+        "paired_seed_selection.json": "e68650baeb4f984a61cfdb36d35694eb03380554a5e699995b7d14c0fde8589f",
+        "manifest.json": "6d4be2b2400efb37cb40df9d1fcf225196dbaa35a8f315c47fef4e7211ac578d",
+        "sampling-rank2.json": "feb94399e1615700502b7c4ae7e8c00ae2104cfe6d85977cf918aadeb85b8921",
+        "game-3829604-boundaries.jsonl": "2e73f13ac7b18a817aa7627c7754e4d9a6b248ffa2980c0c0244b81acfae7d06",
+        "evaluation_seeds.jsonl": "ca7799d7ca9aa4bee392546c0370618f24e73544f2f543bcf28523bd46cd029c",
+        "game-3829600-boundaries.jsonl": "372321c506d641bef9de9699d446fed2345b5d7ce1943508be327107e96edcc5"
+      },
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 42613,
+          "reward": -49.431,
+          "valid": 10,
+          "result": "Defeat",
+          "calls": 13,
+          "second_answer": {
+            "raw_line": 9,
+            "game_second": 107,
+            "prompt_sha256": "d0ea43625d37b690bcb94a793e6995eb88f5ae86d4907ebcdba0ed70bc1f386c",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 5
+        },
+        {
+          "env": 1,
+          "seed": 52620,
+          "reward": -49.95,
+          "valid": 6,
+          "result": "Defeat",
+          "calls": 12,
+          "second_answer": {
+            "raw_line": 10,
+            "game_second": 107,
+            "prompt_sha256": "96d0bf643bd5d6b144ef9ca410df5b64238b97f841d47fe6f55a1ec88e62f5ef",
+            "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 1
+        },
+        {
+          "env": 2,
+          "seed": 17089,
+          "reward": -49.5,
+          "valid": 5,
+          "result": "Defeat",
+          "calls": 7,
+          "second_answer": {
+            "raw_line": 11,
+            "game_second": 249,
+            "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 3
+        },
+        {
+          "env": 3,
+          "seed": 4018390961,
+          "reward": -49.401,
+          "valid": 10,
+          "result": "Defeat",
+          "calls": 15,
+          "second_answer": {
+            "raw_line": 12,
+            "game_second": 107,
+            "prompt_sha256": "2ac62ddf51026721976fcd651c4f8747c6588d2d3f9930a4c6df45063599cc33",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 1
+        },
+        {
+          "env": 4,
+          "seed": 3236598124,
+          "reward": -49.474,
+          "valid": 7,
+          "result": "Defeat",
+          "calls": 7,
+          "second_answer": {
+            "raw_line": 13,
+            "game_second": 253,
+            "prompt_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 3\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 4
+        },
+        {
+          "env": 5,
+          "seed": 3297512220,
+          "reward": 20.5,
+          "valid": 9,
+          "result": "Victory",
+          "calls": 10,
+          "second_answer": {
+            "raw_line": 14,
+            "game_second": 107,
+            "prompt_sha256": "29d534d902fb0bf5803444bbe327008819a1f07cc6806abab3c4e0a7bc95f51a",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 4
+        },
+        {
+          "env": 6,
+          "seed": 773351930,
+          "reward": 20.5,
+          "valid": 5,
+          "result": "Victory",
+          "calls": 6,
+          "second_answer": {
+            "raw_line": 15,
+            "game_second": 107,
+            "prompt_sha256": "69eb9c5fd0acb537fc172d50d79281c4adf51b366a6abea0e33fe6cc54857eb7",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 0
+        },
+        {
+          "env": 7,
+          "seed": 1098341402,
+          "reward": 20.0,
+          "valid": 5,
+          "result": "Victory",
+          "calls": 8,
+          "second_answer": {
+            "raw_line": 16,
+            "game_second": 107,
+            "prompt_sha256": "aeede875cb9bf92aa083e393a000897a4e3d0298bfdc61563906b803885a1762",
+            "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 0
+        }
+      ]
+    },
+    "A4": {
+      "ended_at": "2026-09-11T13:00:01.853778+00:00",
+      "exit_code": 0,
+      "training_updates": 0,
+      "wins": 5,
+      "mean_reward": -5.71575,
+      "valid_answers": 22,
+      "answers": 23,
+      "input_hashes": {
+        "episode_outcomes.jsonl": "1c28188a1f3b8a2025cdebb02aa5c6ac46a740b58ed4a51b682acf848ac1b8c7",
+        "game-3848810-boundaries.jsonl": "a036a9ec34506d1f6fe4eb9c22424f2e8f7ddf5a4c5fbb817c044d6eefd64df7",
+        "result.json": "6033a8107c17d995dffaaa9f7c5d56cf878d53e10efce44fbab4ac567574e6ac",
+        "game-3848814-boundaries.jsonl": "2a4024a6f980367080eb4a330ccd73ff9e267a736109671316fbf4a87bc456c7",
+        "game-3848811-boundaries.jsonl": "9831571c4872281ed558fb48cb9a05d0c487ec7b2899b0488ce674ce3da87f93",
+        "game_worker_mapping.jsonl": "d47a03711fdec1662b3625b496fe547221b2300cd9ebe7ef1f8b2b856d3bf654",
+        "sampling-rank1.json": "53f61a9f8bcb050d360823a6dc05a45ef78709ea6cee9238ec5f8c58a866e5de",
+        "model_preparation.json": "7bbb5d39482b438d411f7826c20bbdbd401ee4f286c7e49a8b07700d266f4621",
+        "effective_config.json": "ec7925ddfc9175fad122aa8658bd92be9f579b5ea71d24b7bd99586f7c09f5fe",
+        "sampling-rank0.json": "a0d2df27cc68435fe1853a98884bf0a2ccbeaf2b0563d307da2b6d6d74bb00f2",
+        "checkpoint_evaluation.json": "70fac8d40a3a905ccd25c4a93d85deabb40b22f7854fd09e72a64dcae54a1446",
+        "sampling-rank3.json": "59575af2d19408eebd5b9371d44ccf1c211713f2b217005b49192ba4559ccdeb",
+        "prompt_response.jsonl": "ab211cad2e28f800498f121101f61e6ef3ce6159413fbc83c6ce40bc8d042ced",
+        "game-3848812-boundaries.jsonl": "df01a5855c129e52eaf6daa8b996a845badb78d19cd220f1d80bcb9eea56db42",
+        "game-3848809-boundaries.jsonl": "580731646de4dacbed4f438071fa374ec790994d2a34c7896e4de792e8b6c09c",
+        "paired_seed_selection.json": "e68650baeb4f984a61cfdb36d35694eb03380554a5e699995b7d14c0fde8589f",
+        "manifest.json": "98e61a4d6185835261ebf5488bf79b970c4b8e5ba21c7ac07aa98f49f3229238",
+        "sampling-rank2.json": "dc769047e1de84c213439bd2fbaf399714b0b01cc2d605dd760866c28749b496",
+        "game-3848807-boundaries.jsonl": "968624023402221e3a5e33dde63a741167fafef3ba098137e90d39e11df2437a",
+        "evaluation_seeds.jsonl": "ca7799d7ca9aa4bee392546c0370618f24e73544f2f543bcf28523bd46cd029c",
+        "game-3848813-boundaries.jsonl": "96a61035ee11b40158233fc83a0dd5f982e1592885c13b04b63d8d2e98c1affd",
+        "game-3848808-boundaries.jsonl": "1bae886706e29565028ac508e30ce243b3255d42a9e5de362a57bab1ad7f5283"
+      },
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 42613,
+          "reward": -49.382,
+          "valid": 2,
+          "result": "Defeat",
+          "calls": 2,
+          "second_answer": {
+            "raw_line": 9,
+            "game_second": 249,
+            "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 0
+        },
+        {
+          "env": 1,
+          "seed": 52620,
+          "reward": 20.5,
+          "valid": 3,
+          "result": "Victory",
+          "calls": 3,
+          "second_answer": {
+            "raw_line": 10,
+            "game_second": 265,
+            "prompt_sha256": "6cb764517e84739ba08dd25179416905ae9a6918bed6d3d8f1c94246854413c0",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 1,
+          "execution": {
+            "game_pid": 3848809,
+            "artifact_hashes": {
+              "trace.json": "5620772ad7ad718cde068a54ad3c6da4eb7a2d829ab737015a079c461cc06953",
+              "default_player_Qwen3-30B_20260911.log": "a223e0e0f6b0ecd3e89e61444b035589b269e39964ae52881567637a12aa5ad8",
+              "replay.SC2Replay": "6ade11df8e143bd1cdda9f38b312e74ca814992f939cdfeeb447bc154cbd1876"
+            },
+            "seconds": 514.1071428571429,
+            "own_deaths": {
+              "Marine": 11
+            },
+            "failures": [
+              {
+                "second": 472.67857142857144,
+                "iteration": "2647",
+                "source_policy_action_id": 2,
+                "phase_index": 1,
+                "processed_prefix_count": 19,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ],
+                "restored_selectable_quota": {
+                  "reactor barracks": 3,
+                  "scv": 2
+                },
+                "replan_scheduled": true
+              }
+            ],
+            "windows": [
+              {
+                "seconds": [
+                  0,
+                  265
+                ],
+                "own_born": {
+                  "BeaconArmy": 1,
+                  "BeaconDefend": 1,
+                  "BeaconAttack": 1,
+                  "BeaconHarass": 1,
+                  "BeaconIdle": 1,
+                  "BeaconAuto": 1,
+                  "BeaconDetect": 1,
+                  "BeaconScout": 1,
+                  "BeaconClaim": 1,
+                  "BeaconExpand": 1,
+                  "BeaconRally": 1,
+                  "BeaconCustom1": 1,
+                  "BeaconCustom2": 1,
+                  "BeaconCustom3": 1,
+                  "BeaconCustom4": 1,
+                  "CommandCenter": 1,
+                  "SCV": 12,
+                  "Marine": 20
+                },
+                "own_started": {
+                  "SupplyDepot": 4,
+                  "Barracks": 4
+                },
+                "own_deaths": {},
+                "enemy_deaths": {
+                  "MULE": 2
+                },
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  265,
+                  300
+                ],
+                "own_born": {
+                  "Marine": 7
+                },
+                "own_started": {},
+                "own_deaths": {},
+                "enemy_deaths": {},
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  300,
+                  360
+                ],
+                "own_born": {
+                  "Marine": 5
+                },
+                "own_started": {
+                  "SupplyDepot": 6
+                },
+                "own_deaths": {
+                  "Marine": 10
+                },
+                "enemy_deaths": {
+                  "Marine": 7,
+                  "MULE": 2,
+                  "VikingFighter": 3,
+                  "SCV": 37,
+                  "Liberator": 1
+                },
+                "marine_killers": {
+                  "VikingAssault": 6,
+                  "SCV": 3,
+                  "Marine": 1
+                }
+              },
+              {
+                "seconds": [
+                  360,
+                  420
+                ],
+                "own_born": {},
+                "own_started": {
+                  "SupplyDepot": 2,
+                  "Barracks": 1
+                },
+                "own_deaths": {},
+                "enemy_deaths": {
+                  "Medivac": 1,
+                  "MULE": 2,
+                  "Starport": 1,
+                  "SCV": 8,
+                  "SupplyDepot": 6,
+                  "Factory": 1,
+                  "Armory": 2,
+                  "Marine": 2
+                },
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  420,
+                  480
+                ],
+                "own_born": {},
+                "own_started": {
+                  "Barracks": 2
+                },
+                "own_deaths": {
+                  "Marine": 1
+                },
+                "enemy_deaths": {
+                  "SCV": 14,
+                  "CommandCenter": 2,
+                  "Refinery": 3,
+                  "Starport": 1,
+                  "MULE": 3,
+                  "Barracks": 1,
+                  "BarracksTechLab": 1,
+                  "SupplyDepot": 1,
+                  "Marine": 2
+                },
+                "marine_killers": {
+                  "Marine": 1
+                }
+              },
+              {
+                "seconds": [
+                  480,
+                  515
+                ],
+                "own_born": {
+                  "Marine": 10
+                },
+                "own_started": {},
+                "own_deaths": {},
+                "enemy_deaths": {
+                  "SCV": 6,
+                  "BarracksTechLab": 1,
+                  "Marine": 1,
+                  "Barracks": 2,
+                  "SupplyDepot": 2,
+                  "Refinery": 1
+                },
+                "marine_killers": {}
+              }
+            ],
+            "attack_events": [
+              {
+                "line": 3293,
+                "second": 262.3214285714286,
+                "text": "launch_total_attack: 已创建总攻波次 1，状态: GATHERING，集结点: (79, 78)，最低出击: 5。"
+              },
+              {
+                "line": 3582,
+                "second": 285.17857142857144,
+                "text": "manage_total_attack_groups: 总攻波次 1: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 4083,
+                "second": 315.17857142857144,
+                "text": "launch_total_attack: 已创建总攻波次 2，状态: GATHERING，集结点: (79, 77)，最低出击: 5。"
+              },
+              {
+                "line": 4578,
+                "second": 339.4642857142857,
+                "text": "manage_total_attack_groups: 总攻波次 2: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 7682,
+                "second": 511.6071428571429,
+                "text": "launch_total_attack: 已创建总攻波次 3，状态: GATHERING，集结点: (30, 77)，最低出击: 5。"
+              }
+            ],
+            "own_born": {
+              "CommandCenter": 1,
+              "SCV": 12,
+              "Marine": 42
+            },
+            "largest_marine_birth_gap_after_second_query": [
+              167.321,
+              323.393,
+              490.714
+            ],
+            "marine_alive_at_6_minutes": 22,
+            "marine_intent_count": 46
+          }
+        },
+        {
+          "env": 2,
+          "seed": 17089,
+          "reward": -49.45,
+          "valid": 2,
+          "result": "Defeat",
+          "calls": 2,
+          "second_answer": {
+            "raw_line": 11,
+            "game_second": 249,
+            "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 0
+        },
+        {
+          "env": 3,
+          "seed": 4018390961,
+          "reward": 20.5,
+          "valid": 2,
+          "result": "Victory",
+          "calls": 2,
+          "second_answer": {
+            "raw_line": 12,
+            "game_second": 249,
+            "prompt_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 0,
+          "execution": {
+            "game_pid": 3848808,
+            "artifact_hashes": {
+              "trace.json": "6a2fc7a660c0f44e27612991d7c8229e14a4df4fb80ad851aa1e7a81573d2614",
+              "default_player_Qwen3-30B_20260911.log": "ba07756aead4ad78ff4d2fe3b4f07d9cf62373b5cabfd9c0465dd53a0be1a5fa",
+              "replay.SC2Replay": "b4ea21e09f300d9b2a54e01e7466e4422efb6f7e266ac91890bd800138941abe"
+            },
+            "seconds": 521.9642857142858,
+            "own_deaths": {
+              "SCV": 1,
+              "Marine": 36
+            },
+            "failures": [],
+            "windows": [
+              {
+                "seconds": [
+                  0,
+                  249
+                ],
+                "own_born": {
+                  "BeaconArmy": 1,
+                  "BeaconDefend": 1,
+                  "BeaconAttack": 1,
+                  "BeaconHarass": 1,
+                  "BeaconIdle": 1,
+                  "BeaconAuto": 1,
+                  "BeaconDetect": 1,
+                  "BeaconScout": 1,
+                  "BeaconClaim": 1,
+                  "BeaconExpand": 1,
+                  "BeaconRally": 1,
+                  "BeaconCustom1": 1,
+                  "BeaconCustom2": 1,
+                  "BeaconCustom3": 1,
+                  "BeaconCustom4": 1,
+                  "CommandCenter": 1,
+                  "SCV": 12,
+                  "Marine": 20
+                },
+                "own_started": {
+                  "SupplyDepot": 4,
+                  "Barracks": 4
+                },
+                "own_deaths": {
+                  "SCV": 1
+                },
+                "enemy_deaths": {
+                  "MULE": 1
+                },
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  249,
+                  300
+                ],
+                "own_born": {
+                  "Marine": 9
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "Marine": 18
+                },
+                "enemy_deaths": {
+                  "MULE": 1,
+                  "SCV": 9,
+                  "Marine": 5
+                },
+                "marine_killers": {
+                  "Banshee": 17,
+                  "Marine": 1
+                }
+              },
+              {
+                "seconds": [
+                  300,
+                  360
+                ],
+                "own_born": {
+                  "Marine": 12
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "Marine": 9
+                },
+                "enemy_deaths": {
+                  "SCV": 2,
+                  "MULE": 1,
+                  "Banshee": 2,
+                  "Marine": 2,
+                  "VikingFighter": 1
+                },
+                "marine_killers": {
+                  "Banshee": 8,
+                  "None": 1
+                }
+              },
+              {
+                "seconds": [
+                  360,
+                  420
+                ],
+                "own_born": {
+                  "Marine": 12
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "Marine": 6
+                },
+                "enemy_deaths": {
+                  "SCV": 10,
+                  "VikingFighter": 3,
+                  "MULE": 1,
+                  "Banshee": 1,
+                  "CommandCenter": 1
+                },
+                "marine_killers": {
+                  "VikingAssault": 3,
+                  "Banshee": 3
+                }
+              },
+              {
+                "seconds": [
+                  420,
+                  480
+                ],
+                "own_born": {
+                  "Marine": 12
+                },
+                "own_started": {
+                  "SupplyDepot": 3
+                },
+                "own_deaths": {
+                  "Marine": 2
+                },
+                "enemy_deaths": {
+                  "SCV": 13,
+                  "VikingFighter": 3,
+                  "MULE": 2,
+                  "StarportTechLab": 1,
+                  "Starport": 1,
+                  "SupplyDepot": 4,
+                  "Barracks": 1
+                },
+                "marine_killers": {
+                  "VikingAssault": 2
+                }
+              },
+              {
+                "seconds": [
+                  480,
+                  522
+                ],
+                "own_born": {
+                  "Marine": 1
+                },
+                "own_started": {
+                  "SupplyDepot": 3
+                },
+                "own_deaths": {
+                  "Marine": 1
+                },
+                "enemy_deaths": {
+                  "SCV": 3,
+                  "Refinery": 2,
+                  "Starport": 1,
+                  "StarportTechLab": 1,
+                  "CommandCenter": 1,
+                  "Factory": 1,
+                  "SupplyDepot": 1
+                },
+                "marine_killers": {
+                  "SCV": 1
+                }
+              }
+            ],
+            "attack_events": [
+              {
+                "line": 3136,
+                "second": 250.71428571428572,
+                "text": "launch_total_attack: 已创建总攻波次 1，状态: GATHERING，集结点: (27, 78)，最低出击: 5。"
+              },
+              {
+                "line": 3355,
+                "second": 269.1071428571429,
+                "text": "manage_total_attack_groups: 总攻波次 1: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 4028,
+                "second": 307.67857142857144,
+                "text": "launch_total_attack: 已创建总攻波次 2，状态: GATHERING，集结点: (26, 66)，最低出击: 5。"
+              },
+              {
+                "line": 4083,
+                "second": 311.7857142857143,
+                "text": "manage_total_attack_groups: 总攻波次 1 已全灭。"
+              },
+              {
+                "line": 4236,
+                "second": 324.1071428571429,
+                "text": "manage_total_attack_groups: 总攻波次 2: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 4795,
+                "second": 364.4642857142857,
+                "text": "launch_total_attack: 已创建总攻波次 3，状态: GATHERING，集结点: (28, 65)，最低出击: 5。"
+              },
+              {
+                "line": 4842,
+                "second": 368.03571428571433,
+                "text": "manage_total_attack_groups: 总攻波次 2 已全灭。"
+              },
+              {
+                "line": 4958,
+                "second": 378.03571428571433,
+                "text": "manage_total_attack_groups: 总攻波次 3: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 5438,
+                "second": 409.4642857142857,
+                "text": "launch_total_attack: 已创建总攻波次 4，状态: GATHERING，集结点: (27, 66)，最低出击: 5。"
+              },
+              {
+                "line": 5689,
+                "second": 425.17857142857144,
+                "text": "manage_total_attack_groups: 总攻波次 4: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 6404,
+                "second": 470.3571428571429,
+                "text": "launch_total_attack: 已创建总攻波次 5，状态: GATHERING，集结点: (27, 78)，最低出击: 5。"
+              },
+              {
+                "line": 6828,
+                "second": 487.67857142857144,
+                "text": "manage_total_attack_groups: 总攻波次 5: 集结完毕，发动进攻！"
+              }
+            ],
+            "own_born": {
+              "CommandCenter": 1,
+              "SCV": 12,
+              "Marine": 66
+            },
+            "largest_marine_birth_gap_after_second_query": [
+              11.964,
+              474.643,
+              486.607
+            ],
+            "marine_alive_at_6_minutes": 14,
+            "marine_intent_count": 66
+          }
+        },
+        {
+          "env": 4,
+          "seed": 3236598124,
+          "reward": -49.394,
+          "valid": 6,
+          "result": "Defeat",
+          "calls": 7,
+          "second_answer": {
+            "raw_line": 13,
+            "game_second": 253,
+            "prompt_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 3
+        },
+        {
+          "env": 5,
+          "seed": 3297512220,
+          "reward": 20.5,
+          "valid": 2,
+          "result": "Victory",
+          "calls": 2,
+          "second_answer": {
+            "raw_line": 14,
+            "game_second": 265,
+            "prompt_sha256": "cac6c40bc389f9407327d42f69fe7d14165a76208abc7570accda64c09af7343",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 0
+        },
+        {
+          "env": 6,
+          "seed": 773351930,
+          "reward": 20.5,
+          "valid": 2,
+          "result": "Victory",
+          "calls": 2,
+          "second_answer": {
+            "raw_line": 15,
+            "game_second": 253,
+            "prompt_sha256": "f5e74799f0e26edd25bf175603c5899370b5fe22457e1d78d20c045a10088dd3",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 0
+        },
+        {
+          "env": 7,
+          "seed": 1098341402,
+          "reward": 20.5,
+          "valid": 3,
+          "result": "Victory",
+          "calls": 3,
+          "second_answer": {
+            "raw_line": 16,
+            "game_second": 261,
+            "prompt_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+            "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 1,
+          "execution": {
+            "game_pid": 3848813,
+            "artifact_hashes": {
+              "trace.json": "525b158c3b6fccbed1f38781c0fb6e8527ea8fed05cb383931e9896819002040",
+              "default_player_Qwen3-30B_20260911.log": "43400b38d048660fe819c855b1db7a25e9e5935a10f113c9967b6c8dddcbd035",
+              "replay.SC2Replay": "a7a8b7e5f48cb07c9438cc7d030017b3ab616347768ed7266897eef0cc9b2648"
+            },
+            "seconds": 460.00000000000006,
+            "own_deaths": {
+              "Marine": 14
+            },
+            "failures": [
+              {
+                "second": 422.3214285714286,
+                "iteration": "2365",
+                "source_policy_action_id": 2,
+                "phase_index": 1,
+                "processed_prefix_count": 23,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "marine",
+                  "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "barracks",
+                  "barracks",
+                  "barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ],
+                "restored_selectable_quota": {
+                  "marine": 19,
+                  "supplydepot": 8,
+                  "barracks": 3,
+                  "reactor barracks": 3,
+                  "scv": 2
+                },
+                "replan_scheduled": true
+              }
+            ],
+            "windows": [
+              {
+                "seconds": [
+                  0,
+                  261
+                ],
+                "own_born": {
+                  "BeaconArmy": 1,
+                  "BeaconDefend": 1,
+                  "BeaconAttack": 1,
+                  "BeaconHarass": 1,
+                  "BeaconIdle": 1,
+                  "BeaconAuto": 1,
+                  "BeaconDetect": 1,
+                  "BeaconScout": 1,
+                  "BeaconClaim": 1,
+                  "BeaconExpand": 1,
+                  "BeaconRally": 1,
+                  "BeaconCustom1": 1,
+                  "BeaconCustom2": 1,
+                  "BeaconCustom3": 1,
+                  "BeaconCustom4": 1,
+                  "CommandCenter": 1,
+                  "SCV": 12,
+                  "Marine": 21
+                },
+                "own_started": {
+                  "SupplyDepot": 4,
+                  "Barracks": 4
+                },
+                "own_deaths": {
+                  "Marine": 2
+                },
+                "enemy_deaths": {
+                  "SCV": 2,
+                  "MULE": 2
+                },
+                "marine_killers": {
+                  "Marine": 1,
+                  "Hellion": 1
+                }
+              },
+              {
+                "seconds": [
+                  261,
+                  300
+                ],
+                "own_born": {
+                  "Marine": 8
+                },
+                "own_started": {},
+                "own_deaths": {},
+                "enemy_deaths": {},
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  300,
+                  360
+                ],
+                "own_born": {
+                  "Marine": 9
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "Marine": 10
+                },
+                "enemy_deaths": {
+                  "Marine": 6,
+                  "SCV": 40,
+                  "Hellion": 2,
+                  "MULE": 3,
+                  "VikingFighter": 3,
+                  "Medivac": 1,
+                  "Liberator": 1,
+                  "Armory": 1,
+                  "Barracks": 1,
+                  "SupplyDepot": 1
+                },
+                "marine_killers": {
+                  "Marine": 3,
+                  "Hellion": 1,
+                  "VikingAssault": 5,
+                  "SCV": 1
+                }
+              },
+              {
+                "seconds": [
+                  360,
+                  420
+                ],
+                "own_born": {
+                  "Marine": 9
+                },
+                "own_started": {},
+                "own_deaths": {},
+                "enemy_deaths": {
+                  "SCV": 4,
+                  "MULE": 1,
+                  "SupplyDepot": 3,
+                  "CommandCenter": 1,
+                  "Factory": 1,
+                  "Refinery": 3,
+                  "Starport": 2
+                },
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  420,
+                  461
+                ],
+                "own_born": {
+                  "Marine": 2
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "Marine": 2
+                },
+                "enemy_deaths": {
+                  "SupplyDepot": 1,
+                  "SCV": 7,
+                  "MULE": 1,
+                  "CommandCenter": 1
+                },
+                "marine_killers": {
+                  "SCV": 2
+                }
+              }
+            ],
+            "attack_events": [
+              {
+                "line": 3440,
+                "second": 270.5357142857143,
+                "text": "launch_total_attack: 已创建总攻波次 1，状态: GATHERING，集结点: (71, 25)，最低出击: 5。"
+              },
+              {
+                "line": 3667,
+                "second": 289.1071428571429,
+                "text": "manage_total_attack_groups: 总攻波次 1: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 4237,
+                "second": 319.4642857142857,
+                "text": "launch_total_attack: 已创建总攻波次 2，状态: GATHERING，集结点: (74, 25)，最低出击: 5。"
+              },
+              {
+                "line": 4614,
+                "second": 338.2142857142857,
+                "text": "manage_total_attack_groups: 总攻波次 2: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 5153,
+                "second": 372.3214285714286,
+                "text": "launch_total_attack: 已创建总攻波次 3，状态: GATHERING，集结点: (70, 25)，最低出击: 5。"
+              },
+              {
+                "line": 5370,
+                "second": 387.67857142857144,
+                "text": "manage_total_attack_groups: 总攻波次 3: 集结完毕，发动进攻！"
+              }
+            ],
+            "own_born": {
+              "CommandCenter": 1,
+              "SCV": 12,
+              "Marine": 49
+            },
+            "largest_marine_birth_gap_after_second_query": [
+              43.571,
+              400.714,
+              444.286
+            ],
+            "marine_alive_at_6_minutes": 27,
+            "marine_intent_count": 49
+          }
+        }
+      ]
+    },
+    "B4": {
+      "ended_at": "2026-09-11T13:26:49.790649+00:00",
+      "exit_code": 0,
+      "training_updates": 0,
+      "wins": 2,
+      "mean_reward": -31.94725,
+      "valid_answers": 61,
+      "answers": 63,
+      "input_hashes": {
+        "episode_outcomes.jsonl": "4aae4508791f989a5b1f6638d829d9b15dbcaa499cb496c2ffa1f82845eb5572",
+        "game-3863145-boundaries.jsonl": "21a51170a5d29d1796cdca70259f7abeb61b7b35dee32b017c6c011ae7998cb0",
+        "result.json": "cc64857da8311c675f0a7e2fd969a1f1b2c2aba193fec2cb07d29fdd11655fdd",
+        "game-3863151-boundaries.jsonl": "c5bc3afa30d253ad1fc7bf013108621b9dd770c8e0ea76b646b8a3942405ec63",
+        "game_worker_mapping.jsonl": "834f810cb40b4e8582d54fa7a024d82a1f8e074d640fb25ffceb8097f2d7ab1b",
+        "sampling-rank1.json": "ef76618252c13d326b0612d895239bf346199ee1db5649047d884989f82973dd",
+        "model_preparation.json": "f6cb1a01af42c3b8c1eb16efcc815bcb9c413aa1a7440f8981e757f256566f8e",
+        "effective_config.json": "19925a63776363653d813ce567046af4545353287f4dc2117ca6fe02711eef52",
+        "game-3863150-boundaries.jsonl": "4d8653ff2d08c37ba91441a877ecd41bab1180e750f3447382a5ddaa9291dcbd",
+        "sampling-rank0.json": "e2514fdd8224f6d3b16bd10d7cd8fcb39caf0aec84c443297e441af2f3752d6b",
+        "checkpoint_evaluation.json": "851ff477a1d7354ccfd83902a09bce69512ab31d80d680ad54184bfb6510885b",
+        "sampling-rank3.json": "a86f8b57279655bb9bf61f8e78361a4b40941e8c5c1dd46afcbb2992bd84a7a7",
+        "prompt_response.jsonl": "a8dfbfec675bb405de9cc1564add2bee4e85accd55f39bd07d3f03c6da8821ac",
+        "game-3863148-boundaries.jsonl": "b4fa4db023533b3aaf179d28382b9904d5c5da013e6998133a5ad336f712cb49",
+        "paired_seed_selection.json": "e68650baeb4f984a61cfdb36d35694eb03380554a5e699995b7d14c0fde8589f",
+        "manifest.json": "9b426029f69ffe974f72e33bbd91821b359e43e44226981e4911e6ec6b1cfbec",
+        "sampling-rank2.json": "57468aa99352cd03f8a86883c88e833882b05e3bbbec9c385f99ded3b63212a2",
+        "game-3863147-boundaries.jsonl": "03fe570a04e628a7d0280fe232f73c9fa0e8b2571e8877438f45956806c7f7a6",
+        "game-3863149-boundaries.jsonl": "17ef0ac8c4bc15ea47ed6b970d81f16a3d2074e97394579ec1ac6723bffb9455",
+        "evaluation_seeds.jsonl": "ca7799d7ca9aa4bee392546c0370618f24e73544f2f543bcf28523bd46cd029c",
+        "game-3863152-boundaries.jsonl": "7754212bcc1672574cc8de7e1fe8914632e2d55d8b70650cbf8889926a874501",
+        "game-3863146-boundaries.jsonl": "146419454b80e4179709cd57fdca9a470141def602406f87ab8bd42c02d891a3"
+      },
+      "episodes": [
+        {
+          "env": 0,
+          "seed": 42613,
+          "reward": -49.45,
+          "valid": 7,
+          "result": "Defeat",
+          "calls": 8,
+          "second_answer": {
+            "raw_line": 9,
+            "game_second": 249,
+            "prompt_sha256": "b6ede1fcb6b45e98eaddc9bc5711a6bdd99be33823fc03f25e53b816dd36f5a1",
+            "answer": "<answer>\n- marine x 8\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 3\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 3
+        },
+        {
+          "env": 1,
+          "seed": 52620,
+          "reward": 20.5,
+          "valid": 7,
+          "result": "Victory",
+          "calls": 7,
+          "second_answer": {
+            "raw_line": 10,
+            "game_second": 265,
+            "prompt_sha256": "6cb764517e84739ba08dd25179416905ae9a6918bed6d3d8f1c94246854413c0",
+            "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 5,
+          "execution": {
+            "game_pid": 3863145,
+            "artifact_hashes": {
+              "trace.json": "4c41f9173619c364d5933882fae714e36e1550690a812987e98a2237bb8db7f7",
+              "default_player_Qwen3-30B_20260911.log": "eced0b60a744826078986c2b038c914d87c76be068e6588a26fd4d42990ea6a7",
+              "replay.SC2Replay": "ede27779670ffb3671ce2587a21db9c4b1aa6a212b3654bf13a15fd95f013a63"
+            },
+            "seconds": 519.4642857142858,
+            "own_deaths": {
+              "Marine": 11
+            },
+            "failures": [
+              {
+                "second": 344.8214285714286,
+                "iteration": "1931",
+                "source_policy_action_id": 2,
+                "phase_index": 1,
+                "processed_prefix_count": 7,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [],
+                "restored_selectable_quota": {
+                  "reactor barracks": 1
+                },
+                "replan_scheduled": true
+              },
+              {
+                "second": 384.8214285714286,
+                "iteration": "2155",
+                "source_policy_action_id": 3,
+                "phase_index": 1,
+                "processed_prefix_count": 3,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [],
+                "restored_selectable_quota": {
+                  "reactor barracks": 1
+                },
+                "replan_scheduled": true
+              },
+              {
+                "second": 425.17857142857144,
+                "iteration": "2381",
+                "source_policy_action_id": 4,
+                "phase_index": 1,
+                "processed_prefix_count": 5,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [
+                  "scv",
+                  "refinery"
+                ],
+                "restored_selectable_quota": {
+                  "reactor barracks": 1,
+                  "scv": 1
+                },
+                "replan_scheduled": true
+              },
+              {
+                "second": 465.53571428571433,
+                "iteration": "2607",
+                "source_policy_action_id": 5,
+                "phase_index": 1,
+                "processed_prefix_count": 5,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [
+                  "scv",
+                  "refinery"
+                ],
+                "restored_selectable_quota": {
+                  "reactor barracks": 1,
+                  "scv": 1
+                },
+                "replan_scheduled": true
+              },
+              {
+                "second": 505.89285714285717,
+                "iteration": "2833",
+                "source_policy_action_id": 6,
+                "phase_index": 1,
+                "processed_prefix_count": 5,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [],
+                "restored_selectable_quota": {
+                  "reactor barracks": 1
+                },
+                "replan_scheduled": true
+              }
+            ],
+            "windows": [
+              {
+                "seconds": [
+                  0,
+                  265
+                ],
+                "own_born": {
+                  "BeaconArmy": 1,
+                  "BeaconDefend": 1,
+                  "BeaconAttack": 1,
+                  "BeaconHarass": 1,
+                  "BeaconIdle": 1,
+                  "BeaconAuto": 1,
+                  "BeaconDetect": 1,
+                  "BeaconScout": 1,
+                  "BeaconClaim": 1,
+                  "BeaconExpand": 1,
+                  "BeaconRally": 1,
+                  "BeaconCustom1": 1,
+                  "BeaconCustom2": 1,
+                  "BeaconCustom3": 1,
+                  "BeaconCustom4": 1,
+                  "CommandCenter": 1,
+                  "SCV": 12,
+                  "Marine": 20
+                },
+                "own_started": {
+                  "SupplyDepot": 4,
+                  "Barracks": 4
+                },
+                "own_deaths": {},
+                "enemy_deaths": {
+                  "MULE": 2
+                },
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  265,
+                  300
+                ],
+                "own_born": {
+                  "Marine": 7
+                },
+                "own_started": {
+                  "SupplyDepot": 2
+                },
+                "own_deaths": {},
+                "enemy_deaths": {},
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  300,
+                  360
+                ],
+                "own_born": {
+                  "Marine": 1
+                },
+                "own_started": {
+                  "Barracks": 1,
+                  "SupplyDepot": 1
+                },
+                "own_deaths": {
+                  "Marine": 9
+                },
+                "enemy_deaths": {
+                  "Marine": 7,
+                  "MULE": 2,
+                  "VikingFighter": 3,
+                  "Liberator": 1,
+                  "SCV": 45,
+                  "Medivac": 1
+                },
+                "marine_killers": {
+                  "Marine": 2,
+                  "VikingAssault": 5,
+                  "SCV": 2
+                }
+              },
+              {
+                "seconds": [
+                  360,
+                  420
+                ],
+                "own_born": {
+                  "Marine": 3
+                },
+                "own_started": {
+                  "Barracks": 2,
+                  "SupplyDepot": 2
+                },
+                "own_deaths": {
+                  "Marine": 2
+                },
+                "enemy_deaths": {
+                  "SCV": 15,
+                  "Starport": 1,
+                  "MULE": 3,
+                  "SupplyDepot": 3,
+                  "Marine": 2,
+                  "Factory": 1,
+                  "Armory": 2
+                },
+                "marine_killers": {
+                  "SCV": 2
+                }
+              },
+              {
+                "seconds": [
+                  420,
+                  480
+                ],
+                "own_born": {
+                  "Marine": 4
+                },
+                "own_started": {
+                  "SupplyDepot": 2
+                },
+                "own_deaths": {},
+                "enemy_deaths": {
+                  "MULE": 1,
+                  "SCV": 4,
+                  "SupplyDepot": 3,
+                  "Refinery": 2,
+                  "CommandCenter": 2
+                },
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  480,
+                  520
+                ],
+                "own_born": {
+                  "Marine": 4
+                },
+                "own_started": {
+                  "SupplyDepot": 1
+                },
+                "own_deaths": {},
+                "enemy_deaths": {
+                  "Barracks": 1,
+                  "Starport": 1,
+                  "MULE": 1,
+                  "SupplyDepot": 2,
+                  "Refinery": 2,
+                  "SCV": 5
+                },
+                "marine_killers": {}
+              }
+            ],
+            "attack_events": [
+              {
+                "line": 3293,
+                "second": 262.3214285714286,
+                "text": "launch_total_attack: 已创建总攻波次 1，状态: GATHERING，集结点: (79, 78)，最低出击: 5。"
+              },
+              {
+                "line": 3582,
+                "second": 285.17857142857144,
+                "text": "manage_total_attack_groups: 总攻波次 1: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 5557,
+                "second": 402.8571428571429,
+                "text": "launch_total_attack: 已创建总攻波次 2，状态: GATHERING，集结点: (78, 66)，最低出击: 5。"
+              },
+              {
+                "line": 5883,
+                "second": 425.0,
+                "text": "manage_total_attack_groups: 总攻波次 2: 集结完毕，发动进攻！"
+              }
+            ],
+            "own_born": {
+              "CommandCenter": 1,
+              "SCV": 12,
+              "Marine": 39
+            },
+            "largest_marine_birth_gap_after_second_query": [
+              59.821,
+              303.036,
+              362.857
+            ],
+            "marine_alive_at_6_minutes": 19,
+            "marine_intent_count": 41
+          }
+        },
+        {
+          "env": 2,
+          "seed": 17089,
+          "reward": -49.401,
+          "valid": 7,
+          "result": "Defeat",
+          "calls": 7,
+          "second_answer": {
+            "raw_line": 11,
+            "game_second": 249,
+            "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+            "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 4
+        },
+        {
+          "env": 3,
+          "seed": 4018390961,
+          "reward": -49.451,
+          "valid": 6,
+          "result": "Defeat",
+          "calls": 7,
+          "second_answer": {
+            "raw_line": 12,
+            "game_second": 249,
+            "prompt_sha256": "f0008229d7c4aa2fe4f6eb3785078021d6b636f6201404e2b217a3abeaa780a4",
+            "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 2,
+          "execution": {
+            "game_pid": 3863151,
+            "artifact_hashes": {
+              "trace.json": "c8024197caf017b7c079332b4c191e47f91c7ad95e4658ed36c396eacee607aa",
+              "default_player_Qwen3-30B_20260911.log": "7fb82d16a811a1ca176699dd3f55c2c8610f4af38b5c6caca17b9c5ac71605a2",
+              "replay.SC2Replay": "235a81bce6c7da8dea3593ce6e955d77b3e0b15a598c5c461954630a8a0e8772"
+            },
+            "seconds": 1172.6785714285716,
+            "own_deaths": {
+              "SCV": 12,
+              "Marine": 115,
+              "Marauder": 4,
+              "SupplyDepot": 20,
+              "Barracks": 7,
+              "CommandCenter": 1,
+              "Refinery": 1,
+              "BarracksTechLab": 1
+            },
+            "failures": [
+              {
+                "second": 429.1071428571429,
+                "iteration": "2403",
+                "source_policy_action_id": 3,
+                "phase_index": 1,
+                "processed_prefix_count": 10,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ],
+                "restored_selectable_quota": {
+                  "reactor barracks": 3,
+                  "scv": 3
+                },
+                "replan_scheduled": true
+              },
+              {
+                "second": 743.75,
+                "iteration": "4165",
+                "source_policy_action_id": 6,
+                "phase_index": 2,
+                "processed_prefix_count": 3,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "commandcenter",
+                  "reason": "timeout: **Action Failed**: Insufficient Minerals (290/400).\n**Suggestion**: Wait for resources.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": true
+                },
+                "unsubmitted_suffix": [
+                  "factory",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "supplydepot",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine",
+                  "marine"
+                ],
+                "restored_selectable_quota": {
+                  "commandcenter": 1,
+                  "supplydepot": 8,
+                  "marine": 48
+                },
+                "replan_scheduled": true
+              }
+            ],
+            "windows": [
+              {
+                "seconds": [
+                  0,
+                  249
+                ],
+                "own_born": {
+                  "BeaconArmy": 1,
+                  "BeaconDefend": 1,
+                  "BeaconAttack": 1,
+                  "BeaconHarass": 1,
+                  "BeaconIdle": 1,
+                  "BeaconAuto": 1,
+                  "BeaconDetect": 1,
+                  "BeaconScout": 1,
+                  "BeaconClaim": 1,
+                  "BeaconExpand": 1,
+                  "BeaconRally": 1,
+                  "BeaconCustom1": 1,
+                  "BeaconCustom2": 1,
+                  "BeaconCustom3": 1,
+                  "BeaconCustom4": 1,
+                  "CommandCenter": 1,
+                  "SCV": 12,
+                  "Marine": 20
+                },
+                "own_started": {
+                  "SupplyDepot": 4,
+                  "Barracks": 4
+                },
+                "own_deaths": {
+                  "SCV": 1
+                },
+                "enemy_deaths": {
+                  "MULE": 1
+                },
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  249,
+                  300
+                ],
+                "own_born": {
+                  "Marine": 8
+                },
+                "own_started": {
+                  "SupplyDepot": 2
+                },
+                "own_deaths": {
+                  "Marine": 17
+                },
+                "enemy_deaths": {
+                  "MULE": 1,
+                  "SCV": 7,
+                  "Marine": 5,
+                  "CommandCenter": 1
+                },
+                "marine_killers": {
+                  "Banshee": 17
+                }
+              },
+              {
+                "seconds": [
+                  300,
+                  360
+                ],
+                "own_born": {
+                  "Marine": 6
+                },
+                "own_started": {
+                  "Barracks": 1,
+                  "SupplyDepot": 2
+                },
+                "own_deaths": {
+                  "Marine": 5
+                },
+                "enemy_deaths": {
+                  "Marine": 1,
+                  "MULE": 1
+                },
+                "marine_killers": {
+                  "Banshee": 5
+                }
+              },
+              {
+                "seconds": [
+                  360,
+                  420
+                ],
+                "own_born": {},
+                "own_started": {
+                  "Barracks": 2
+                },
+                "own_deaths": {
+                  "Marine": 10
+                },
+                "enemy_deaths": {
+                  "Marine": 2,
+                  "MULE": 1,
+                  "VikingFighter": 2,
+                  "SCV": 4
+                },
+                "marine_killers": {
+                  "Banshee": 8,
+                  "SCV": 1,
+                  "VikingAssault": 1
+                }
+              },
+              {
+                "seconds": [
+                  420,
+                  480
+                ],
+                "own_born": {
+                  "Marine": 13
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "Marine": 1
+                },
+                "enemy_deaths": {
+                  "MULE": 2,
+                  "SCV": 1
+                },
+                "marine_killers": {
+                  "VikingAssault": 1
+                }
+              },
+              {
+                "seconds": [
+                  480,
+                  540
+                ],
+                "own_born": {
+                  "Marine": 13
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "Marine": 11
+                },
+                "enemy_deaths": {
+                  "SCV": 1,
+                  "VikingFighter": 2
+                },
+                "marine_killers": {
+                  "Banshee": 6,
+                  "VikingAssault": 5
+                }
+              },
+              {
+                "seconds": [
+                  540,
+                  600
+                ],
+                "own_born": {
+                  "Marine": 6
+                },
+                "own_started": {
+                  "SupplyDepot": 3
+                },
+                "own_deaths": {
+                  "Marine": 21
+                },
+                "enemy_deaths": {
+                  "VikingFighter": 3,
+                  "Marine": 2
+                },
+                "marine_killers": {
+                  "Banshee": 8,
+                  "VikingAssault": 11,
+                  "Marine": 2
+                }
+              },
+              {
+                "seconds": [
+                  600,
+                  720
+                ],
+                "own_born": {
+                  "Marine": 2,
+                  "Marauder": 2
+                },
+                "own_started": {
+                  "SupplyDepot": 2,
+                  "Refinery": 1,
+                  "BarracksTechLab": 1
+                },
+                "own_deaths": {
+                  "Marine": 1
+                },
+                "enemy_deaths": {
+                  "MULE": 3
+                },
+                "marine_killers": {
+                  "Banshee": 1
+                }
+              },
+              {
+                "seconds": [
+                  720,
+                  900
+                ],
+                "own_born": {
+                  "Marauder": 2,
+                  "Marine": 26
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "Marine": 20,
+                  "Marauder": 4
+                },
+                "enemy_deaths": {
+                  "MULE": 7,
+                  "SCV": 2,
+                  "Marine": 3,
+                  "VikingFighter": 2,
+                  "AutoTurret": 2
+                },
+                "marine_killers": {
+                  "Banshee": 3,
+                  "VikingAssault": 2,
+                  "Battlecruiser": 8,
+                  "AutoTurret": 2,
+                  "Marine": 4,
+                  "PlanetaryFortress": 1
+                }
+              },
+              {
+                "seconds": [
+                  900,
+                  1173
+                ],
+                "own_born": {
+                  "Marine": 22
+                },
+                "own_started": {
+                  "SupplyDepot": 7
+                },
+                "own_deaths": {
+                  "Marine": 29,
+                  "SCV": 11,
+                  "SupplyDepot": 20,
+                  "Barracks": 7,
+                  "CommandCenter": 1,
+                  "Refinery": 1,
+                  "BarracksTechLab": 1
+                },
+                "enemy_deaths": {
+                  "MULE": 13,
+                  "Marine": 1,
+                  "SCV": 4,
+                  "AutoTurret": 9
+                },
+                "marine_killers": {
+                  "Battlecruiser": 14,
+                  "Banshee": 5,
+                  "Marauder": 4,
+                  "Marine": 2,
+                  "AutoTurret": 2,
+                  "VikingAssault": 1,
+                  "SCV": 1
+                }
+              }
+            ],
+            "attack_events": [
+              {
+                "line": 3136,
+                "second": 250.71428571428572,
+                "text": "launch_total_attack: 已创建总攻波次 1，状态: GATHERING，集结点: (27, 78)，最低出击: 5。"
+              },
+              {
+                "line": 3355,
+                "second": 269.1071428571429,
+                "text": "manage_total_attack_groups: 总攻波次 1: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 3941,
+                "second": 303.39285714285717,
+                "text": "manage_total_attack_groups: 总攻波次 1 已全灭。"
+              },
+              {
+                "line": 4525,
+                "second": 347.67857142857144,
+                "text": "launch_total_attack: 已创建总攻波次 2，状态: GATHERING，集结点: (27, 78)，最低出击: 5。"
+              },
+              {
+                "line": 4769,
+                "second": 366.42857142857144,
+                "text": "manage_total_attack_groups: 总攻波次 2: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 5213,
+                "second": 394.28571428571433,
+                "text": "manage_total_attack_groups: 总攻波次 2 已全灭。"
+              },
+              {
+                "line": 6165,
+                "second": 468.39285714285717,
+                "text": "launch_total_attack: 已创建总攻波次 3，状态: GATHERING，集结点: (25, 72)，最低出击: 5。"
+              },
+              {
+                "line": 6370,
+                "second": 484.64285714285717,
+                "text": "manage_total_attack_groups: 总攻波次 3: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 6611,
+                "second": 497.8571428571429,
+                "text": "manage_total_attack_groups: 总攻波次 3 已全灭。"
+              },
+              {
+                "line": 6772,
+                "second": 509.4642857142857,
+                "text": "launch_total_attack: 已创建总攻波次 4，状态: GATHERING，集结点: (27, 66)，最低出击: 5。"
+              },
+              {
+                "line": 7024,
+                "second": 529.8214285714286,
+                "text": "manage_total_attack_groups: 总攻波次 4: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 7231,
+                "second": 544.6428571428572,
+                "text": "manage_total_attack_groups: 总攻波次 4 已全灭。"
+              },
+              {
+                "line": 7415,
+                "second": 558.3928571428572,
+                "text": "launch_total_attack: 已创建总攻波次 5，状态: GATHERING，集结点: (27, 66)，最低出击: 5。"
+              },
+              {
+                "line": 7579,
+                "second": 571.4285714285714,
+                "text": "manage_total_attack_groups: 总攻波次 5: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 7745,
+                "second": 583.3928571428572,
+                "text": "manage_total_attack_groups: 总攻波次 5 已全灭。"
+              },
+              {
+                "line": 9954,
+                "second": 762.5,
+                "text": "launch_total_attack: 已创建总攻波次 6，状态: GATHERING，集结点: (26, 64)，最低出击: 5。"
+              },
+              {
+                "line": 10172,
+                "second": 777.8571428571429,
+                "text": "manage_total_attack_groups: 总攻波次 6: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 10354,
+                "second": 789.8214285714287,
+                "text": "manage_total_attack_groups: 总攻波次 6 已全灭。"
+              },
+              {
+                "line": 10991,
+                "second": 839.4642857142858,
+                "text": "launch_total_attack: 已创建总攻波次 7，状态: GATHERING，集结点: (27, 66)，最低出击: 5。"
+              },
+              {
+                "line": 11147,
+                "second": 852.3214285714287,
+                "text": "manage_total_attack_groups: 总攻波次 7: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 11266,
+                "second": 859.6428571428572,
+                "text": "manage_total_attack_groups: 总攻波次 7 已全灭。"
+              },
+              {
+                "line": 11936,
+                "second": 912.1428571428572,
+                "text": "launch_total_attack: 已创建总攻波次 8，状态: GATHERING，集结点: (27, 65)，最低出击: 5。"
+              },
+              {
+                "line": 12139,
+                "second": 926.6071428571429,
+                "text": "manage_total_attack_groups: 总攻波次 8: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 12287,
+                "second": 935.1785714285714,
+                "text": "manage_total_attack_groups: 总攻波次 8 已全灭。"
+              },
+              {
+                "line": 12967,
+                "second": 988.9285714285714,
+                "text": "launch_total_attack: 已创建总攻波次 9，状态: GATHERING，集结点: (27, 67)，最低出击: 5。"
+              },
+              {
+                "line": 13146,
+                "second": 1001.9642857142858,
+                "text": "manage_total_attack_groups: 总攻波次 9: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 13261,
+                "second": 1008.3928571428572,
+                "text": "manage_total_attack_groups: 总攻波次 9 已全灭。"
+              }
+            ],
+            "own_born": {
+              "CommandCenter": 1,
+              "SCV": 12,
+              "Marine": 116,
+              "Marauder": 4
+            },
+            "largest_marine_birth_gap_after_second_query": [
+              95.357,
+              351.786,
+              447.143
+            ],
+            "marine_alive_at_6_minutes": 12,
+            "marine_intent_count": 116
+          }
+        },
+        {
+          "env": 4,
+          "seed": 3236598124,
+          "reward": -49.5,
+          "valid": 9,
+          "result": "Defeat",
+          "calls": 9,
+          "second_answer": {
+            "raw_line": 13,
+            "game_second": 253,
+            "prompt_sha256": "a77d172d79a433b4ca4f1035260ee41bd95d07ef35dd4f602610cd120e92b170",
+            "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 1\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 6
+        },
+        {
+          "env": 5,
+          "seed": 3297512220,
+          "reward": 20.5,
+          "valid": 5,
+          "result": "Victory",
+          "calls": 5,
+          "second_answer": {
+            "raw_line": 14,
+            "game_second": 265,
+            "prompt_sha256": "cac6c40bc389f9407327d42f69fe7d14165a76208abc7570accda64c09af7343",
+            "answer": "<answer>\n- marine x 4\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n- scv x 1\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 1
+        },
+        {
+          "env": 6,
+          "seed": 773351930,
+          "reward": -49.401,
+          "valid": 14,
+          "result": "Defeat",
+          "calls": 14,
+          "second_answer": {
+            "raw_line": 15,
+            "game_second": 253,
+            "prompt_sha256": "f5e74799f0e26edd25bf175603c5899370b5fe22457e1d78d20c045a10088dd3",
+            "answer": "<answer>\n- marine x 4\n- supplydepot x 2\n- barracks x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 10
+        },
+        {
+          "env": 7,
+          "seed": 1098341402,
+          "reward": -49.375,
+          "valid": 6,
+          "result": "Defeat",
+          "calls": 6,
+          "second_answer": {
+            "raw_line": 16,
+            "game_second": 261,
+            "prompt_sha256": "4c3972dca2ed9c0665934414648b868741a493c494c6cad57119f022f8ac3765",
+            "answer": "<answer>\n- marine x 8\n- supplydepot x 2\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+            "valid": true,
+            "feedback": null
+          },
+          "feedback_count": 4,
+          "execution": {
+            "game_pid": 3863150,
+            "artifact_hashes": {
+              "trace.json": "e3407d529e27c0c9d5b0fc78d098d2de03f168fd63d025c3a690dc7d053527db",
+              "default_player_Qwen3-30B_20260911.log": "db087d340e81b8f0666a4aaa4a95c8c052968fa70cbf81a3726b9888708bad05",
+              "replay.SC2Replay": "78f6b0351cd48bed853678675b9da3005d8ffe57fdd84429ca74d47fd6956e26"
+            },
+            "seconds": 598.3928571428572,
+            "own_deaths": {
+              "Marine": 44,
+              "SCV": 8,
+              "CommandCenter": 1,
+              "Barracks": 7,
+              "SupplyDepot": 9
+            },
+            "failures": [
+              {
+                "second": 404.8214285714286,
+                "iteration": "2267",
+                "source_policy_action_id": 2,
+                "phase_index": 1,
+                "processed_prefix_count": 13,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [
+                  "reactor barracks",
+                  "reactor barracks",
+                  "scv",
+                  "scv",
+                  "refinery"
+                ],
+                "restored_selectable_quota": {
+                  "reactor barracks": 3,
+                  "scv": 2
+                },
+                "replan_scheduled": true
+              },
+              {
+                "second": 444.8214285714286,
+                "iteration": "2491",
+                "source_policy_action_id": 3,
+                "phase_index": 1,
+                "processed_prefix_count": 3,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [
+                  "scv",
+                  "refinery"
+                ],
+                "restored_selectable_quota": {
+                  "reactor barracks": 1,
+                  "scv": 1
+                },
+                "replan_scheduled": true
+              },
+              {
+                "second": 484.8214285714286,
+                "iteration": "2715",
+                "source_policy_action_id": 4,
+                "phase_index": 1,
+                "processed_prefix_count": 3,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [],
+                "restored_selectable_quota": {
+                  "reactor barracks": 1
+                },
+                "replan_scheduled": true
+              },
+              {
+                "second": 524.8214285714286,
+                "iteration": "2939",
+                "source_policy_action_id": 5,
+                "phase_index": 1,
+                "processed_prefix_count": 3,
+                "queue_source": "parsed_answer_plus_existing_rules",
+                "failed": {
+                  "action": "reactor barracks",
+                  "reason": "timeout: **Action Failed**: Insufficient Vespene Gas (0/50).\n**Suggestion**: Build a Refinery.",
+                  "target_command_submitted": false,
+                  "pre_move_command_attempted": false
+                },
+                "unsubmitted_suffix": [
+                  "reactor barracks"
+                ],
+                "restored_selectable_quota": {
+                  "reactor barracks": 2
+                },
+                "replan_scheduled": true
+              }
+            ],
+            "windows": [
+              {
+                "seconds": [
+                  0,
+                  261
+                ],
+                "own_born": {
+                  "BeaconArmy": 1,
+                  "BeaconDefend": 1,
+                  "BeaconAttack": 1,
+                  "BeaconHarass": 1,
+                  "BeaconIdle": 1,
+                  "BeaconAuto": 1,
+                  "BeaconDetect": 1,
+                  "BeaconScout": 1,
+                  "BeaconClaim": 1,
+                  "BeaconExpand": 1,
+                  "BeaconRally": 1,
+                  "BeaconCustom1": 1,
+                  "BeaconCustom2": 1,
+                  "BeaconCustom3": 1,
+                  "BeaconCustom4": 1,
+                  "CommandCenter": 1,
+                  "SCV": 12,
+                  "Marine": 21
+                },
+                "own_started": {
+                  "SupplyDepot": 4,
+                  "Barracks": 4
+                },
+                "own_deaths": {
+                  "Marine": 2
+                },
+                "enemy_deaths": {
+                  "SCV": 2,
+                  "MULE": 2
+                },
+                "marine_killers": {
+                  "Marine": 1,
+                  "Hellion": 1
+                }
+              },
+              {
+                "seconds": [
+                  261,
+                  300
+                ],
+                "own_born": {
+                  "Marine": 8
+                },
+                "own_started": {},
+                "own_deaths": {},
+                "enemy_deaths": {},
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  300,
+                  360
+                ],
+                "own_born": {
+                  "Marine": 3
+                },
+                "own_started": {
+                  "SupplyDepot": 2,
+                  "Barracks": 2
+                },
+                "own_deaths": {
+                  "Marine": 26,
+                  "SCV": 1
+                },
+                "enemy_deaths": {
+                  "Marine": 4,
+                  "SCV": 23,
+                  "Hellion": 2,
+                  "MULE": 2,
+                  "VikingFighter": 1
+                },
+                "marine_killers": {
+                  "Marine": 8,
+                  "Hellion": 1,
+                  "VikingAssault": 17
+                }
+              },
+              {
+                "seconds": [
+                  360,
+                  420
+                ],
+                "own_born": {},
+                "own_started": {
+                  "Barracks": 1,
+                  "SupplyDepot": 1
+                },
+                "own_deaths": {
+                  "Marine": 4
+                },
+                "enemy_deaths": {
+                  "SCV": 1,
+                  "MULE": 2
+                },
+                "marine_killers": {
+                  "VikingAssault": 2,
+                  "LiberatorAG": 2
+                }
+              },
+              {
+                "seconds": [
+                  420,
+                  480
+                ],
+                "own_born": {
+                  "Marine": 4
+                },
+                "own_started": {
+                  "SupplyDepot": 1
+                },
+                "own_deaths": {},
+                "enemy_deaths": {
+                  "MULE": 2
+                },
+                "marine_killers": {}
+              },
+              {
+                "seconds": [
+                  480,
+                  540
+                ],
+                "own_born": {
+                  "Marine": 2
+                },
+                "own_started": {
+                  "SupplyDepot": 1
+                },
+                "own_deaths": {
+                  "Marine": 5
+                },
+                "enemy_deaths": {
+                  "Liberator": 1
+                },
+                "marine_killers": {
+                  "VikingAssault": 5
+                }
+              },
+              {
+                "seconds": [
+                  540,
+                  599
+                ],
+                "own_born": {
+                  "Marine": 6
+                },
+                "own_started": {},
+                "own_deaths": {
+                  "SCV": 7,
+                  "CommandCenter": 1,
+                  "Barracks": 7,
+                  "Marine": 7,
+                  "SupplyDepot": 9
+                },
+                "enemy_deaths": {},
+                "marine_killers": {
+                  "VikingAssault": 5,
+                  "Marine": 2
+                }
+              }
+            ],
+            "attack_events": [
+              {
+                "line": 3440,
+                "second": 270.5357142857143,
+                "text": "launch_total_attack: 已创建总攻波次 1，状态: GATHERING，集结点: (71, 25)，最低出击: 5。"
+              },
+              {
+                "line": 3667,
+                "second": 289.1071428571429,
+                "text": "manage_total_attack_groups: 总攻波次 1: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 4237,
+                "second": 319.4642857142857,
+                "text": "launch_total_attack: 已创建总攻波次 2，状态: GATHERING，集结点: (73, 26)，最低出击: 5。"
+              },
+              {
+                "line": 4334,
+                "second": 323.75,
+                "text": "manage_total_attack_groups: 总攻波次 1 已全灭。"
+              },
+              {
+                "line": 4513,
+                "second": 339.1071428571429,
+                "text": "manage_total_attack_groups: 总攻波次 2: 集结完毕，发动进攻！"
+              },
+              {
+                "line": 4906,
+                "second": 363.2142857142857,
+                "text": "manage_total_attack_groups: 总攻波次 2 已全灭。"
+              }
+            ],
+            "own_born": {
+              "CommandCenter": 1,
+              "SCV": 12,
+              "Marine": 44
+            },
+            "largest_marine_birth_gap_after_second_query": [
+              103.393,
+              319.464,
+              422.857
+            ],
+            "marine_alive_at_6_minutes": 4,
+            "marine_intent_count": 45
+          }
+        }
+      ]
+    }
+  }
+}

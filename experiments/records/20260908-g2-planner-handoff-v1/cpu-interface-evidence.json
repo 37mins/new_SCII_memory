@@ -1,0 +1,176 @@
+[
+  {
+    "evidence_type": "synthetic CPU observation and hand-written answer; no model/game",
+    "observation": "It is now 06:53 in the game. In terms of our military forces, we have 15 marine, 40 SCV. In terms of the structures, we have 2 bases in the form of orbitalcommand, 8 barracks, 5 barracks with techlab, 3 factory, 1 factory with techlab, 2 refinery, 11 supplydepot. For the visible enemy presence, there are no enemy units currently.",
+    "raw_phase": {
+      "phase_summary": "Siege Tank Power Spike and All-in Commitment",
+      "timing": "(06:07 onwards)",
+      "instruction": "Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.",
+      "attack_instruction": "Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.",
+      "bo todo": {
+        "marine": 50,
+        "supplydepot": 9,
+        "mule": 6,
+        "siegetank": 9,
+        "SCV": 15,
+        "marauder": 4,
+        "commandcenter": 2,
+        "refinery": 1,
+        "starport": 1,
+        "vikingfighter": 8
+      }
+    },
+    "selected_strategy": {
+      "phase_summary": "Siege Tank Power Spike and All-in Commitment",
+      "timing": "(06:07 onwards)",
+      "instruction": "Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.",
+      "attack_instruction": "Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.",
+      "bo todo": {
+        "marine": 50,
+        "supplydepot": 9,
+        "mule": 6,
+        "siegetank": 9,
+        "marauder": 4,
+        "commandcenter": 1,
+        "starport": 1,
+        "vikingfighter": 8
+      },
+      "_phase_index": 2,
+      "_phase_start_seconds": null,
+      "_phase_end_seconds": null,
+      "_terminal_phase": true
+    },
+    "waiting_before_answer": {
+      "marine": 50,
+      "supplydepot": 9,
+      "mule": 6,
+      "siegetank": 9,
+      "marauder": 4,
+      "commandcenter": 1,
+      "starport": 1,
+      "vikingfighter": 8
+    },
+    "query": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 06:53 in the game. In terms of our military forces, we have 15 marine, 40 SCV. In terms of the structures, we have 2 bases in the form of orbitalcommand, 8 barracks, 5 barracks with techlab, 3 factory, 1 factory with techlab, 2 refinery, 11 supplydepot. For the visible enemy presence, there are no enemy units currently.\nThe remaining BO list in this phase:\n- marine x 50\n- supplydepot x 9\n- mule x 6\n- siegetank x 9\n- marauder x 4\n- commandcenter x 1\n- starport x 1\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+    "answer": "- marine\n- marine\n- marine\n- marine\n- marine\n- marine",
+    "strict_valid": true,
+    "validation_reason": "",
+    "executor_queue": [
+      {
+        "action": "marine",
+        "intent": "Train Marine"
+      },
+      {
+        "action": "marine",
+        "intent": "Train Marine"
+      },
+      {
+        "action": "marine",
+        "intent": "Train Marine"
+      },
+      {
+        "action": "marine",
+        "intent": "Train Marine"
+      },
+      {
+        "action": "marine",
+        "intent": "Train Marine"
+      },
+      {
+        "action": "marine",
+        "intent": "Train Marine"
+      }
+    ],
+    "waiting_after_answer": {
+      "marine": 44,
+      "supplydepot": 9,
+      "mule": 6,
+      "siegetank": 9,
+      "marauder": 4,
+      "commandcenter": 1,
+      "starport": 1,
+      "vikingfighter": 8
+    },
+    "selected_counts": {
+      "marine": 6
+    }
+  },
+  {
+    "evidence_type": "synthetic CPU observation and hand-written answer; no model/game",
+    "observation": "It is now 06:53 in the game. In terms of our military forces, we have 15 marine, 40 SCV. In terms of the structures, we have 2 bases in the form of orbitalcommand, 8 barracks, 5 barracks with techlab, 3 factory, 1 factory with techlab, 2 refinery, 11 supplydepot. For the visible enemy presence, there are no enemy units currently.",
+    "raw_phase": {
+      "phase_summary": "Siege Tank Power Spike and All-in Commitment",
+      "timing": "(06:07 onwards)",
+      "instruction": "Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.",
+      "attack_instruction": "Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.",
+      "bo todo": {
+        "marine": 50,
+        "supplydepot": 9,
+        "mule": 6,
+        "siegetank": 9,
+        "SCV": 15,
+        "marauder": 4,
+        "commandcenter": 2,
+        "refinery": 1,
+        "starport": 1,
+        "vikingfighter": 8
+      }
+    },
+    "selected_strategy": {
+      "phase_summary": "Siege Tank Power Spike and All-in Commitment",
+      "timing": "(06:07 onwards)",
+      "instruction": "Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.",
+      "attack_instruction": "Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.",
+      "bo todo": {
+        "marine": 50,
+        "supplydepot": 9,
+        "mule": 6,
+        "siegetank": 9,
+        "marauder": 4,
+        "commandcenter": 1,
+        "starport": 1,
+        "vikingfighter": 8
+      },
+      "_phase_index": 2,
+      "_phase_start_seconds": null,
+      "_phase_end_seconds": null,
+      "_terminal_phase": true
+    },
+    "waiting_before_answer": {
+      "marine": 50,
+      "supplydepot": 9,
+      "mule": 6,
+      "siegetank": 9,
+      "marauder": 4,
+      "commandcenter": 1,
+      "starport": 1,
+      "vikingfighter": 8
+    },
+    "query": "You are an expert in StarCraft II. Select the next near-term build-order actions from the current remaining BO list.\nOutput at most 6 action bullets. Every build bullet must be exactly `- canonicalname`, where `canonicalname` is copied verbatim from the current remaining BO list.\nFor repeated actions, repeat the complete bullet line. Do not use `x N` in the answer.\nDo not add timing, quantities, verbs, explanations, arrows, commas, aliases, plurals, upgrades, or multiple actions to one bullet.\nDo not output an action merely because it appears in the global canonical table: it must also appear in the current remaining BO list.\nAn attack bullet is allowed only when an exact `Launch OFFENSE ...` entry appears in the current remaining BO list; otherwise output no attack.\n\n## Optional Operations/Units:\nThese are the only canonical build-action names. Spelling is exact:\nscv, supplydepot, barracks, commandcenter, marine, orbitalcommand, refinery, engineeringbay, planetaryfortress, factory, techlab factory, siegetank, liberator, raven, missileturret, techlab barracks, terraninfantryweaponslevel1, widowmine, fusioncore, terranstructurearmorupgrade, thor, marauder, concussiveshells, hi-secautotracking, mule, starport, reactor barracks, vikingfighter, techlab starport, combatshield, stimpack, armory, ghostacademy, terraninfantryarmorlevel1, ghost, terraninfantryweaponslevel2, personalcloaking, banshee, bansheecloakingfield, terraninfantryarmorlevel2, medivac, terraninfantryweaponslevel3, terraninfantryarmorlevel3, turret, bunker, reaper, hellion, battlecruiser, reactor starport.\n\nNow the phased strategic instructions are:\n- Current Stage: Siege Tank Power Spike and All-in Commitment (06:07 onwards)\n- Detailed Instruction: Maintain Marine production, add Siege Tanks and Marauders, and avoid over-investing in economy once the attack window is open.\n- Attacking Instruction: Launch game-ending attacks starting at 06:07 with a bio-mech deathball supported by SCVs for repairs and forward buildings.\n\nCurrent observations are:\nIt is now 06:53 in the game. In terms of our military forces, we have 15 marine, 40 SCV. In terms of the structures, we have 2 bases in the form of orbitalcommand, 8 barracks, 5 barracks with techlab, 3 factory, 1 factory with techlab, 2 refinery, 11 supplydepot. For the visible enemy presence, there are no enemy units currently.\nThe remaining BO list in this phase:\n- marine x 50\n- supplydepot x 9\n- mule x 6\n- siegetank x 9\n- marauder x 4\n- commandcenter x 1\n- starport x 1\nUse only exact canonical names that occur in the remaining BO list above.\nThe example below is generated from that same current list. Follow its shape exactly:\n\n<answer>\nHere are the Build Orders with attack instructions:\n- marine\n- supplydepot\n- mule\n</answer>\n\n**The output format is not optional and must be followed precisely. Do not add any other text outside of these tags.**\n\nAdditional constraint: output at most 6 bullet lines for this single near-term segment. Output at most 6 executable actions in total. Each bullet must contain only one exact current-list name; repeat bullets for repeated actions. Do not use `x N` or try to finish the whole phase in one answer.\n",
+    "answer": "- marine\n- starport",
+    "strict_valid": true,
+    "validation_reason": "",
+    "executor_queue": [
+      {
+        "action": "marine",
+        "intent": "Train Marine"
+      },
+      {
+        "action": "starport",
+        "intent": "Build Starport"
+      }
+    ],
+    "waiting_after_answer": {
+      "marine": 49,
+      "supplydepot": 9,
+      "mule": 6,
+      "siegetank": 9,
+      "marauder": 4,
+      "commandcenter": 1,
+      "vikingfighter": 8
+    },
+    "selected_counts": {
+      "marine": 1,
+      "starport": 1
+    }
+  }
+]

@@ -1,0 +1,216 @@
+{
+  "status": "incomplete_candidate_failed",
+  "source_commit": "ba9b93b35ef40e445ef2782175680b7111d612b0",
+  "sole_variable": "shadow FP32 output projection observation, no forward mutation",
+  "worker_config_equal_all_ranks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "all_original_probability_arrays_unchanged": null,
+  "input_hashes_equal": true,
+  "cpu_tests_passed": 90,
+  "cpu_tests_seconds": 8.178,
+  "production_defaults_changed": false,
+  "runs": [
+    {
+      "manifest": {
+        "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-head-control-opt0-r22",
+        "mode": "head-control",
+        "status": "preflight",
+        "started_at": "2026-09-06T12:29:27.688729+00:00",
+        "source_commit": "ba9b93b35ef40e445ef2782175680b7111d612b0",
+        "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+        "gpu_selection": "0,1,2,3",
+        "world_size": 4,
+        "max_optimizer_updates": 0,
+        "max_gpu_seconds": 1800,
+        "param_dtype": "fp32",
+        "fp32_normalization": true,
+        "recompute_start": false,
+        "hf_full_precision": false,
+        "observe_fp32_head": false,
+        "user_authorization": "2026-09-06: approved temperature precision A/B and bounded drift diagnosis",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_path": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "project_sft": false,
+        "resumed_checkpoint": false,
+        "sc2_started": false
+      },
+      "result": {
+        "status": "completed",
+        "process_exit_code": 0,
+        "completed_ranks": {
+          "rank-00.jsonl": "completed",
+          "rank-03.jsonl": "completed",
+          "rank-02.jsonl": "completed",
+          "rank-01.jsonl": "completed"
+        },
+        "ended_at": "2026-09-06T12:30:24.158165+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "stats": {
+        "actor_vs_old": {
+          "tokens": 135,
+          "abs_mean": 0.06120718469481171,
+          "abs_max": 2.9016265869140625,
+          "finite": true
+        },
+        "normalization": {
+          "tokens": 135,
+          "abs_mean": 1.2790841236875605e-7,
+          "abs_max": 0.0000028043286874890327,
+          "finite": true
+        },
+        "parameter_precision_path": {
+          "tokens": 135,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "finite": true
+        },
+        "cached_vs_full": {
+          "tokens": 135,
+          "abs_mean": 0.0076416924265371505,
+          "abs_max": 0.8087818622589111,
+          "finite": true
+        },
+        "cached_vs_recorded_generate": {
+          "tokens": 135,
+          "abs_mean": 0.012977043508995381,
+          "abs_max": 1.073228359222412,
+          "finite": true
+        },
+        "cached_vs_actor": {
+          "tokens": 135,
+          "abs_mean": 0.007641704646004899,
+          "abs_max": 0.8087832927703857,
+          "finite": true
+        }
+      },
+      "input_sha256": [
+        "1a902ff0261290a19ba0d3fe975856a1e464a2e1587652df89deffe63bd99a85",
+        "3a29f838da6a54afd5aea0a9d20e8a286a79c852dbedabc0acb34db926ce3152",
+        "227de0dbf65677add116e95d31c1248762d1bb912b3274e428df476219ded552",
+        "36ba1c1fceedc6dc6d6aa60bc2e7a8bbac9cd3644bd2ce3537e563a5132928e9"
+      ],
+      "artifact_sha256": {
+        "rank-00.jsonl": "37ee2101489c6d17ebc89c8be9ef619db228d8504bedc93f011ab6865334ddac",
+        "rank-01.jsonl": "a15ce16d2f0771ed500d2cd591e8a357b63fb5b2f4edb3a30979b46d7f9b793e",
+        "rank-02.jsonl": "8ade8f56c3520f2d5954917d288f4bf93cd70cc13f1f277f584b90026e8e634d",
+        "rank-03.jsonl": "f810e6681e39c63df95db64b294f406eb85086368b7526c57fdec8c2cc789074"
+      }
+    },
+    {
+      "manifest": {
+        "run_id": "20260906-qwen-kl-metric-v1-qwen-instruct2507-fixedtokens-4gpu-head-observe-opt0-r23",
+        "mode": "head-observe",
+        "status": "preflight",
+        "started_at": "2026-09-06T12:29:27.701602+00:00",
+        "source_commit": "ba9b93b35ef40e445ef2782175680b7111d612b0",
+        "historical_run": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260906-qwen-kl-metric-v1/runs/20260906-qwen-kl-metric-v1-qwen-instruct2507-l6-4gpu-integrated-trace-rl1-s0-r7",
+        "gpu_selection": "4,5,6,7",
+        "world_size": 4,
+        "max_optimizer_updates": 0,
+        "max_gpu_seconds": 1800,
+        "param_dtype": "fp32",
+        "fp32_normalization": true,
+        "recompute_start": false,
+        "hf_full_precision": false,
+        "observe_fp32_head": true,
+        "user_authorization": "2026-09-06: approved temperature precision A/B and bounded drift diagnosis",
+        "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "model_path": "/mnt/data0601/yangjinyue/new_SCII/assets/Qwen3-4B-Instruct-2507-cdbee75",
+        "project_sft": false,
+        "resumed_checkpoint": false,
+        "sc2_started": false
+      },
+      "result": {
+        "status": "failed",
+        "process_exit_code": 1,
+        "completed_ranks": {
+          "rank-00.jsonl": "probability_paths",
+          "rank-01.jsonl": "input",
+          "rank-02.jsonl": "probability_paths",
+          "rank-03.jsonl": "input"
+        },
+        "ended_at": "2026-09-06T12:30:19.823459+00:00",
+        "sc2_started": false,
+        "resumable_checkpoint": false
+      },
+      "stats": {
+        "actor_vs_old": {
+          "tokens": 54,
+          "abs_mean": 0.0004029450657867528,
+          "abs_max": 0.0217437744140625,
+          "finite": true
+        },
+        "normalization": {
+          "tokens": 54,
+          "abs_mean": 5.356279331181213e-8,
+          "abs_max": 0.000001430214979336597,
+          "finite": true
+        },
+        "parameter_precision_path": {
+          "tokens": 54,
+          "abs_mean": 0,
+          "abs_max": 0,
+          "finite": true
+        },
+        "cached_vs_full": {
+          "tokens": 54,
+          "abs_mean": 0.0003662268954087722,
+          "abs_max": 0.019754556939005852,
+          "finite": true
+        },
+        "cached_vs_recorded_generate": {
+          "tokens": 54,
+          "abs_mean": 0.0006719377124682069,
+          "abs_max": 0.036284636706113815,
+          "finite": true
+        },
+        "cached_vs_actor": {
+          "tokens": 54,
+          "abs_mean": 0.00036624837500198737,
+          "abs_max": 0.019754286855459213,
+          "finite": true
+        },
+        "cached_vs_full_fp32_head": {
+          "tokens": 54,
+          "abs_mean": 0.00008524477664195729,
+          "abs_max": 0.004589151591062546,
+          "finite": true
+        },
+        "fp32_head_effect_full": {
+          "tokens": 54,
+          "abs_mean": 0.00024678513576148475,
+          "abs_max": 0.013323536142706871,
+          "finite": true
+        },
+        "fp32_head_effect_cached": {
+          "tokens": 54,
+          "abs_mean": 0.00020417439049680297,
+          "abs_max": 0.011020172387361526,
+          "finite": true
+        }
+      },
+      "input_sha256": [
+        "1a902ff0261290a19ba0d3fe975856a1e464a2e1587652df89deffe63bd99a85",
+        "3a29f838da6a54afd5aea0a9d20e8a286a79c852dbedabc0acb34db926ce3152",
+        "227de0dbf65677add116e95d31c1248762d1bb912b3274e428df476219ded552",
+        "36ba1c1fceedc6dc6d6aa60bc2e7a8bbac9cd3644bd2ce3537e563a5132928e9"
+      ],
+      "artifact_sha256": {
+        "rank-00.jsonl": "226411303a6a1c143b6d42cfacb358721be660460f5497f8d1ebcc9aec5d5acf",
+        "rank-01.jsonl": "387b39f077ed79744371838f70cc2171d191d1cc013eb750409d5eed040b08cd",
+        "rank-02.jsonl": "4501fc19399dcdcf1b478443d5ecd60468beedb9c733854314d0fc04fbbd95e0",
+        "rank-03.jsonl": "c82549e5dc6707203bd4d8e3ee8aa9ca798f28e2804c5b6759ae6028ce84793d"
+      }
+    }
+  ],
+  "comparison_gate": "not evaluated: candidate stopped after 54/135 valid tokens",
+  "failure": "diagnostic shadow head counted synchronized post-EOS forwards; 27 observations assigned to 3 valid tokens"
+}

@@ -1,0 +1,5131 @@
+{
+  "parent": {
+    "run_id": "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1",
+    "source_sha": "6a1657f7e045dcf998495a3d0adfb331572bf60d",
+    "status": "failed",
+    "exit_code": 1,
+    "ended_at": "2026-09-10T19:43:36.163336+00:00",
+    "games": 504,
+    "wins": 390,
+    "mean_reward": 4.649307539682539,
+    "decisions": 1767,
+    "invalid": 101,
+    "zero_supply_queries": 1,
+    "execution_feedback_queries": 0,
+    "checkpoint_pairing": null,
+    "logged_zero_batches": [
+      15,
+      16,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      29,
+      30,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      46,
+      47,
+      48,
+      49,
+      51,
+      52,
+      53,
+      55,
+      56,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "exact_replay_batches": 41,
+    "cpu_exact_zero_batches": [
+      15,
+      16,
+      18,
+      19,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      30,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      44,
+      46,
+      47,
+      48,
+      49,
+      51,
+      52,
+      53,
+      55,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "zero_batch_optimizer_updates": 88,
+    "inferred_optimizer_updates": 230,
+    "batches": [
+      {
+        "global_step": 1,
+        "seed": 2732,
+        "wins": 7,
+        "rewards": [
+          21,
+          20,
+          20.5,
+          20.5,
+          20.5,
+          -49.451,
+          21,
+          20
+        ],
+        "calls": [
+          5,
+          3,
+          2,
+          6,
+          3,
+          8,
+          6,
+          3
+        ],
+        "decisions": 36,
+        "invalid": 6,
+        "copies": 4,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 4
+          },
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 4
+          }
+        ],
+        "advantage_logged": [
+          -53.198,
+          16.621
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 169.239,
+        "entropy": 0.103,
+        "pg_loss": 0.045,
+        "ppo_k1": -0.003,
+        "reference_kl": 0.007,
+        "clipfrac": 0.012
+      },
+      {
+        "global_step": 2,
+        "seed": 43567,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          21,
+          20,
+          20.5,
+          20.5,
+          20.5,
+          20
+        ],
+        "calls": [
+          8,
+          5,
+          6,
+          4,
+          4,
+          3,
+          5,
+          3
+        ],
+        "decisions": 38,
+        "invalid": 5,
+        "copies": 2,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 7,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 4
+          },
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 4
+          }
+        ],
+        "advantage_logged": [
+          -2.582,
+          1.613
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 13.081,
+        "entropy": 0.084,
+        "pg_loss": 0.001,
+        "ppo_k1": 0.003,
+        "reference_kl": 0.007,
+        "clipfrac": 0.006
+      },
+      {
+        "global_step": 3,
+        "seed": 42613,
+        "wins": 0,
+        "rewards": [
+          -49.5,
+          -49.481,
+          -49.401,
+          -49.475,
+          -49.382,
+          -49.5,
+          -49.432,
+          -49.425
+        ],
+        "calls": [
+          5,
+          7,
+          8,
+          6,
+          8,
+          5,
+          9,
+          4
+        ],
+        "decisions": 52,
+        "invalid": 11,
+        "copies": 4,
+        "inferred_optimizer_updates": 7,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 3
+          }
+        ],
+        "advantage_logged": [
+          -7.13,
+          4.423
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 28.587,
+        "entropy": 0.108,
+        "pg_loss": 0.009,
+        "ppo_k1": -0.006,
+        "reference_kl": 0.015,
+        "clipfrac": 0.02
+      },
+      {
+        "global_step": 4,
+        "seed": 52416,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          21,
+          20,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          5,
+          7,
+          4,
+          9,
+          4,
+          3,
+          8,
+          7
+        ],
+        "decisions": 47,
+        "invalid": 7,
+        "copies": 1,
+        "inferred_optimizer_updates": 6,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 6
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 2
+          }
+        ],
+        "advantage_logged": [
+          -2.708,
+          2.468
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 5.752,
+        "entropy": 0.094,
+        "pg_loss": 0.002,
+        "ppo_k1": -0.001,
+        "reference_kl": 0.026,
+        "clipfrac": 0.015
+      },
+      {
+        "global_step": 5,
+        "seed": 45891,
+        "wins": 6,
+        "rewards": [
+          -49.45,
+          20.5,
+          20.5,
+          20.5,
+          20,
+          20.5,
+          -49.5,
+          20.5
+        ],
+        "calls": [
+          4,
+          9,
+          3,
+          2,
+          5,
+          4,
+          3,
+          4
+        ],
+        "decisions": 34,
+        "invalid": 3,
+        "copies": 6,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 4
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 4
+          }
+        ],
+        "advantage_logged": [
+          -64.148,
+          42.198
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 178.278,
+        "entropy": 0.102,
+        "pg_loss": 0.002,
+        "ppo_k1": 0,
+        "reference_kl": 0.05,
+        "clipfrac": 0.01
+      },
+      {
+        "global_step": 6,
+        "seed": 21243,
+        "wins": 7,
+        "rewards": [
+          20,
+          20.5,
+          20.5,
+          20.5,
+          -49.349,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          4,
+          4,
+          6,
+          6,
+          2,
+          5,
+          6,
+          5
+        ],
+        "decisions": 38,
+        "invalid": 2,
+        "copies": 2,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 7
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 24"
+            ],
+            "count": 1
+          }
+        ],
+        "advantage_logged": [
+          -86.905,
+          10.275
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 111.625,
+        "entropy": 0.098,
+        "pg_loss": 0.008,
+        "ppo_k1": 0,
+        "reference_kl": 0.06,
+        "clipfrac": 0.008
+      },
+      {
+        "global_step": 7,
+        "seed": 30403,
+        "wins": 1,
+        "rewards": [
+          -49.481,
+          -49.481,
+          -49.401,
+          20.5,
+          -49.481,
+          -49.462,
+          -49.901,
+          -49.481
+        ],
+        "calls": [
+          6,
+          11,
+          10,
+          8,
+          7,
+          8,
+          10,
+          6
+        ],
+        "decisions": 66,
+        "invalid": 5,
+        "copies": 6,
+        "inferred_optimizer_updates": 9,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -23.299,
+          58.624
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 94.723,
+        "entropy": 0.095,
+        "pg_loss": 0.071,
+        "ppo_k1": 0.009,
+        "reference_kl": 0.083,
+        "clipfrac": 0.019
+      },
+      {
+        "global_step": 8,
+        "seed": 32103,
+        "wins": 0,
+        "rewards": [
+          -49.981,
+          -49.5,
+          -49.5,
+          -49.95,
+          -49.431,
+          -49.5,
+          -49.45,
+          -50
+        ],
+        "calls": [
+          12,
+          13,
+          11,
+          13,
+          15,
+          17,
+          14,
+          17
+        ],
+        "decisions": 112,
+        "invalid": 29,
+        "copies": 0,
+        "inferred_optimizer_updates": 14,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -4.659,
+          4.501
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 13.491,
+        "entropy": 0.095,
+        "pg_loss": 0.007,
+        "ppo_k1": 0.005,
+        "reference_kl": 0.091,
+        "clipfrac": 0.011
+      },
+      {
+        "global_step": 9,
+        "seed": 41993,
+        "wins": 8,
+        "rewards": [
+          20,
+          20,
+          20,
+          20.5,
+          20,
+          20,
+          20.5,
+          20
+        ],
+        "calls": [
+          7,
+          15,
+          10,
+          7,
+          15,
+          11,
+          7,
+          11
+        ],
+        "decisions": 83,
+        "invalid": 9,
+        "copies": 5,
+        "inferred_optimizer_updates": 11,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -3.261,
+          3.002
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 8.383,
+        "entropy": 0.043,
+        "pg_loss": 0.004,
+        "ppo_k1": 0.009,
+        "reference_kl": 0.078,
+        "clipfrac": 0.012
+      },
+      {
+        "global_step": 10,
+        "seed": 57043,
+        "wins": 8,
+        "rewards": [
+          20,
+          20.5,
+          20,
+          20,
+          20.5,
+          20,
+          20,
+          20
+        ],
+        "calls": [
+          7,
+          7,
+          8,
+          11,
+          7,
+          8,
+          14,
+          8
+        ],
+        "decisions": 70,
+        "invalid": 6,
+        "copies": 2,
+        "inferred_optimizer_updates": 9,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 7,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -3.922,
+          1.743
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 3.267,
+        "entropy": 0.024,
+        "pg_loss": -0.003,
+        "ppo_k1": 0.003,
+        "reference_kl": 0.064,
+        "clipfrac": 0.01
+      },
+      {
+        "global_step": 11,
+        "seed": 20757,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          8
+        ],
+        "decisions": 57,
+        "invalid": 0,
+        "copies": 7,
+        "inferred_optimizer_updates": 8,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 5,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -0.852,
+          0.228
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 1.23,
+        "entropy": 0.022,
+        "pg_loss": 0.001,
+        "ppo_k1": 0.004,
+        "reference_kl": 0.079,
+        "clipfrac": 0.004
+      },
+      {
+        "global_step": 12,
+        "seed": 55026,
+        "wins": 8,
+        "rewards": [
+          20,
+          20.5,
+          20.5,
+          20,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          9,
+          5,
+          7,
+          10,
+          7,
+          6,
+          6,
+          7
+        ],
+        "decisions": 57,
+        "invalid": 4,
+        "copies": 7,
+        "inferred_optimizer_updates": 8,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 6,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -2.924,
+          2.17
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 3.927,
+        "entropy": 0.038,
+        "pg_loss": -0.001,
+        "ppo_k1": 0.002,
+        "reference_kl": 0.1,
+        "clipfrac": 0.009
+      },
+      {
+        "global_step": 13,
+        "seed": 46884,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          5,
+          5,
+          5,
+          7,
+          5,
+          5,
+          6,
+          5
+        ],
+        "decisions": 43,
+        "invalid": 0,
+        "copies": 5,
+        "inferred_optimizer_updates": 6,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 4,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -1.621,
+          0.513
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 1.264,
+        "entropy": 0.017,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.072,
+        "clipfrac": 0.003
+      },
+      {
+        "global_step": 14,
+        "seed": 14935,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          5,
+          6,
+          5,
+          5,
+          5,
+          7,
+          6,
+          6
+        ],
+        "decisions": 45,
+        "invalid": 0,
+        "copies": 3,
+        "inferred_optimizer_updates": 6,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 4,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -1.365,
+          0.634
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 0.51,
+        "entropy": 0.014,
+        "pg_loss": -0.001,
+        "ppo_k1": 0.005,
+        "reference_kl": 0.096,
+        "clipfrac": 0.004
+      },
+      {
+        "global_step": 15,
+        "seed": 15430,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "decisions": 40,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.004,
+        "entropy": 0.004,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.089,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 16,
+        "seed": 48600,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "decisions": 40,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.005,
+        "entropy": 0.005,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.085,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 17,
+        "seed": 39512,
+        "wins": 1,
+        "rewards": [
+          -49.5,
+          20.5,
+          -49.5,
+          -49.5,
+          -50,
+          -49.5,
+          -49.5,
+          -49.5
+        ],
+        "calls": [
+          7,
+          2,
+          6,
+          8,
+          6,
+          8,
+          6,
+          7
+        ],
+        "decisions": 50,
+        "invalid": 1,
+        "copies": 6,
+        "inferred_optimizer_updates": 7,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 7
+          },
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 1
+          }
+        ],
+        "advantage_logged": [
+          -9.332,
+          80.801
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 6.95,
+        "entropy": 0.031,
+        "pg_loss": -0.02,
+        "ppo_k1": 0.001,
+        "reference_kl": 0.107,
+        "clipfrac": 0.017
+      },
+      {
+        "global_step": 18,
+        "seed": 52620,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.006,
+        "entropy": 0.005,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.109,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 19,
+        "seed": 14650,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.003,
+        "entropy": 0.003,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.127,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 20,
+        "seed": 17089,
+        "wins": 0,
+        "rewards": [
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0.0000057220458984375,
+          "max": 0.0000057220458984375,
+          "absmax": 0.0000057220458984375
+        },
+        "grad_norm": 0.002,
+        "entropy": 0.003,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.118,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 21,
+        "seed": 32230,
+        "wins": 0,
+        "rewards": [
+          -49.5,
+          -49.5,
+          -49.401,
+          -49.455,
+          -49.5,
+          -49.401,
+          -49.45,
+          -49.5
+        ],
+        "calls": [
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          5,
+          3
+        ],
+        "decisions": 27,
+        "invalid": 1,
+        "copies": 5,
+        "inferred_optimizer_updates": 4,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 4,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -0.944,
+          3.949
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 6.927,
+        "entropy": 0.028,
+        "pg_loss": 0.005,
+        "ppo_k1": 0.005,
+        "reference_kl": 0.109,
+        "clipfrac": 0.006
+      },
+      {
+        "global_step": 22,
+        "seed": 18983,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.003,
+        "entropy": 0.003,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.115,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 23,
+        "seed": 43095,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.003,
+        "entropy": 0.002,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.101,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 24,
+        "seed": 51374,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.003,
+        "entropy": 0.002,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.099,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 25,
+        "seed": 24152,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.004,
+        "entropy": 0.002,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.118,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 26,
+        "seed": 35665,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.004,
+        "entropy": 0.003,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.132,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 27,
+        "seed": 59045,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.004,
+        "entropy": 0.003,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.129,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 28,
+        "seed": 16921,
+        "wins": 0,
+        "rewards": [
+          -50,
+          -49.45,
+          -50,
+          -49.5,
+          -49.45,
+          -49.5,
+          -49.45,
+          -49.5
+        ],
+        "calls": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "decisions": 24,
+        "invalid": 2,
+        "copies": 0,
+        "inferred_optimizer_updates": 3,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 6,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -0.6,
+          0.233
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 1.792,
+        "entropy": 0.031,
+        "pg_loss": 0,
+        "ppo_k1": 0.002,
+        "reference_kl": 0.156,
+        "clipfrac": 0.001
+      },
+      {
+        "global_step": 29,
+        "seed": 27469,
+        "wins": 0,
+        "rewards": [
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0.0000057220458984375,
+          "max": 0.0000057220458984375,
+          "absmax": 0.0000057220458984375
+        },
+        "grad_norm": 0.007,
+        "entropy": 0.004,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.116,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 30,
+        "seed": 38984,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.007,
+        "entropy": 0.004,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.118,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 31,
+        "seed": 6921,
+        "wins": 0,
+        "rewards": [
+          -49.382,
+          -49.436,
+          -49.5,
+          -49.382,
+          -49.462,
+          -49.406,
+          -49.436,
+          -49.444
+        ],
+        "calls": [
+          3,
+          4,
+          6,
+          3,
+          8,
+          3,
+          4,
+          4
+        ],
+        "decisions": 35,
+        "invalid": 0,
+        "copies": 5,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 7,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -3.297,
+          8.03
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 14.868,
+        "entropy": 0.046,
+        "pg_loss": 0.013,
+        "ppo_k1": 0.009,
+        "reference_kl": 0.154,
+        "clipfrac": 0.017
+      },
+      {
+        "global_step": 32,
+        "seed": 38804,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.009,
+        "entropy": 0.006,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.095,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 33,
+        "seed": 2163,
+        "wins": 0,
+        "rewards": [
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.45
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0.0000057220458984375,
+          "max": 0.0000057220458984375,
+          "absmax": 0.0000057220458984375
+        },
+        "grad_norm": 0.005,
+        "entropy": 0.004,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.089,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 34,
+        "seed": 5072,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.004,
+        "entropy": 0.004,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.095,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 35,
+        "seed": 37619,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.004,
+        "entropy": 0.004,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.093,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 36,
+        "seed": 7877,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.006,
+        "entropy": 0.004,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.103,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 37,
+        "seed": 18430,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.007,
+        "entropy": 0.005,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.111,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 38,
+        "seed": 1871,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.007,
+        "entropy": 0.005,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.104,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 39,
+        "seed": 7599,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.006,
+        "entropy": 0.005,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.093,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 40,
+        "seed": 2496,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.011,
+        "entropy": 0.007,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.124,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 41,
+        "seed": 47954,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.008,
+        "entropy": 0.006,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.094,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 42,
+        "seed": 24675,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.01,
+        "entropy": 0.007,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.089,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 43,
+        "seed": 42968,
+        "wins": 0,
+        "rewards": [
+          -49.324,
+          -49.324,
+          -49.324,
+          -49.324,
+          -49.324,
+          -49.324,
+          -49.324,
+          -49.324
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": -0.000003814697265625,
+          "max": 0,
+          "absmax": 0.000003814697265625
+        },
+        "grad_norm": 0.011,
+        "entropy": 0.008,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.106,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 44,
+        "seed": 31921,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.018,
+        "entropy": 0.01,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.117,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 45,
+        "seed": 33523,
+        "wins": 0,
+        "rewards": [
+          -49.5,
+          -49.5,
+          -49.45,
+          -49.5,
+          -49.45,
+          -49.45,
+          -49.481,
+          -49.5
+        ],
+        "calls": [
+          7,
+          5,
+          5,
+          3,
+          7,
+          8,
+          7,
+          6
+        ],
+        "decisions": 48,
+        "invalid": 6,
+        "copies": 0,
+        "inferred_optimizer_updates": 6,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -6.605,
+          4.065
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 11.537,
+        "entropy": 0.076,
+        "pg_loss": 0.001,
+        "ppo_k1": 0.017,
+        "reference_kl": 0.237,
+        "clipfrac": 0.017
+      },
+      {
+        "global_step": 46,
+        "seed": 797,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.007,
+        "entropy": 0.005,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.09,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 47,
+        "seed": 49811,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.008,
+        "entropy": 0.006,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.097,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 48,
+        "seed": 3219,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.006,
+        "entropy": 0.006,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.089,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 49,
+        "seed": 15246,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.006,
+        "entropy": 0.005,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.111,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 50,
+        "seed": 24999,
+        "wins": 8,
+        "rewards": [
+          20,
+          20,
+          20.5,
+          20.5,
+          20,
+          20.5,
+          20.5,
+          20
+        ],
+        "calls": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "decisions": 24,
+        "invalid": 4,
+        "copies": 0,
+        "inferred_optimizer_updates": 3,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 7,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -0.408,
+          0.392
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 1.92,
+        "entropy": 0.045,
+        "pg_loss": 0.001,
+        "ppo_k1": 0.006,
+        "reference_kl": 0.129,
+        "clipfrac": 0.002
+      },
+      {
+        "global_step": 51,
+        "seed": 56608,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.01,
+        "entropy": 0.008,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.129,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 52,
+        "seed": 16321,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.009,
+        "entropy": 0.007,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.093,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 53,
+        "seed": 52489,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.012,
+        "entropy": 0.008,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.115,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 54,
+        "seed": 19129,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          9,
+          2,
+          2,
+          2,
+          2,
+          9
+        ],
+        "decisions": 30,
+        "invalid": 0,
+        "copies": 2,
+        "inferred_optimizer_updates": 4,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 2,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 6
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 2
+          }
+        ],
+        "advantage_logged": [
+          -4.406,
+          1.469
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 3.535,
+        "entropy": 0.012,
+        "pg_loss": -0.001,
+        "ppo_k1": 0.005,
+        "reference_kl": 0.103,
+        "clipfrac": 0.001
+      },
+      {
+        "global_step": 55,
+        "seed": 53887,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.001,
+        "entropy": 0.002,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.097,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 56,
+        "seed": 41504,
+        "wins": 0,
+        "rewards": [
+          -49.5,
+          -49.5,
+          -49.5,
+          -49.5,
+          -49.5,
+          -49.5,
+          -49.5,
+          -49.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": -0.000003814697265625,
+          "max": 0,
+          "absmax": 0.000003814697265625
+        },
+        "grad_norm": 0.001,
+        "entropy": 0.001,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.131,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 57,
+        "seed": 55839,
+        "wins": 0,
+        "rewards": [
+          -49.401,
+          -49.5,
+          -49.5,
+          -49.425,
+          -49.481,
+          -49.493,
+          -49.493,
+          -49.382
+        ],
+        "calls": [
+          8,
+          6,
+          4,
+          6,
+          7,
+          5,
+          5,
+          6
+        ],
+        "decisions": 47,
+        "invalid": 0,
+        "copies": 1,
+        "inferred_optimizer_updates": 6,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -4.544,
+          4.536
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 7.425,
+        "entropy": 0.048,
+        "pg_loss": 0.002,
+        "ppo_k1": 0.012,
+        "reference_kl": 0.155,
+        "clipfrac": 0.013
+      },
+      {
+        "global_step": 58,
+        "seed": 49866,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.002,
+        "entropy": 0.002,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.096,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 59,
+        "seed": 18676,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 1,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.004,
+        "entropy": 0.005,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.129,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 60,
+        "seed": 57495,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 2,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.017,
+        "entropy": 0.006,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.088,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 61,
+        "seed": 60067,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 2,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.033,
+        "entropy": 0.007,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.125,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 62,
+        "seed": 31230,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 2,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.017,
+        "entropy": 0.007,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.095,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 63,
+        "seed": 11723,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "decisions": 16,
+        "invalid": 0,
+        "copies": 0,
+        "inferred_optimizer_updates": 2,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 2,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "CPU scalar; valid, no copied padding",
+          "min": 0,
+          "max": 0,
+          "absmax": 0
+        },
+        "grad_norm": 0.032,
+        "entropy": 0.008,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.135,
+        "clipfrac": 0
+      }
+    ],
+    "examples": [
+      {
+        "global_step": 16,
+        "trajectories": [
+          {
+            "env": 0,
+            "result": "Victory",
+            "reward": 20.5,
+            "answers": [
+              {
+                "source_line": 1145,
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1153,
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "prompt_sha256": "b244f0e17b218de92dd25909280e2b467d3a29f617f1ba2c52d494a9d6827293",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1161,
+                "answer": "<answer>\n- marine x 2\n</answer>",
+                "prompt_sha256": "ea3e5d2eab859ca48e9436cb38ae5bb2003d23c8cf702e199b383b340fb467e0",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1169,
+                "answer": "<answer>\n- marine x 18\n</answer>",
+                "prompt_sha256": "00c3a89da62a97d811ebd010758e8062f94f957bad3b01320b30da9a80d155fd",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1177,
+                "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "prompt_sha256": "5aeb22da3ad3f50117c58bc81062aa688cb08417ad65a4520d1302ed12a7ac1e",
+                "reward": 20.5,
+                "valid": true
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "result": "Victory",
+            "reward": 20.5,
+            "answers": [
+              {
+                "source_line": 1146,
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1154,
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "prompt_sha256": "b244f0e17b218de92dd25909280e2b467d3a29f617f1ba2c52d494a9d6827293",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1162,
+                "answer": "<answer>\n- marine x 2\n</answer>",
+                "prompt_sha256": "ea3e5d2eab859ca48e9436cb38ae5bb2003d23c8cf702e199b383b340fb467e0",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1170,
+                "answer": "<answer>\n- marine x 18\n</answer>",
+                "prompt_sha256": "00c3a89da62a97d811ebd010758e8062f94f957bad3b01320b30da9a80d155fd",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1178,
+                "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "prompt_sha256": "5aeb22da3ad3f50117c58bc81062aa688cb08417ad65a4520d1302ed12a7ac1e",
+                "reward": 20.5,
+                "valid": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "global_step": 17,
+        "trajectories": [
+          {
+            "env": 0,
+            "result": "Defeat",
+            "reward": -49.5,
+            "answers": [
+              {
+                "source_line": 1185,
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1193,
+                "answer": "<answer>\n- supplydepot x 2\n- barracks x 2\n- marine x 2\n</answer>",
+                "prompt_sha256": "53dd579a200223428e150446438ba869099cd943e92273fd7f2f9a66382c864b",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1201,
+                "answer": "<answer>\n- marine x 2\n</answer>",
+                "prompt_sha256": "1c2b014f0de319f9e7084cba3e9b31aa468ebdacbe563336048981c4feb811c5",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1209,
+                "answer": "<answer>\n- marine x 2\n</answer>",
+                "prompt_sha256": "28bfdd68ec6a654c4a5e4d1e3a07d0ba8c914f4f1de7c7df380690dfea41193b",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1217,
+                "answer": "<answer>\n- marine x 16\n</answer>",
+                "prompt_sha256": "066839a90566185493f38e41b9d01aa6612a6b241f3c0fdc608b9ad4c1b8b576",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1225,
+                "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "prompt_sha256": "faca97205700bb55c536b0886976b74f184c9955f71f94f519c6d36f345cfdcf",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1233,
+                "answer": "<answer>\n- marauder x 2\n- marauder x 2\n</answer>",
+                "prompt_sha256": "b35dc556efa4b54f65d0655b161b533e4fee0ce7e0a63243d17fc9ddaf31a837",
+                "reward": -49.5,
+                "valid": true
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "result": "Victory",
+            "reward": 20.5,
+            "answers": [
+              {
+                "source_line": 1186,
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1194,
+                "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "prompt_sha256": "22603ae59db50b0bdbc00359abbf385a5998ff5a8fcd69cccf3500057247460a",
+                "reward": 20.5,
+                "valid": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "global_step": 18,
+        "trajectories": [
+          {
+            "env": 0,
+            "result": "Victory",
+            "reward": 20.5,
+            "answers": [
+              {
+                "source_line": 1249,
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1257,
+                "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "prompt_sha256": "6cb764517e84739ba08dd25179416905ae9a6918bed6d3d8f1c94246854413c0",
+                "reward": 20.5,
+                "valid": true
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "result": "Victory",
+            "reward": 20.5,
+            "answers": [
+              {
+                "source_line": 1250,
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1258,
+                "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "prompt_sha256": "6cb764517e84739ba08dd25179416905ae9a6918bed6d3d8f1c94246854413c0",
+                "reward": 20.5,
+                "valid": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "global_step": 20,
+        "trajectories": [
+          {
+            "env": 0,
+            "result": "Defeat",
+            "reward": -49.45,
+            "answers": [
+              {
+                "source_line": 1281,
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1289,
+                "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+                "reward": -49.45,
+                "valid": true
+              }
+            ]
+          },
+          {
+            "env": 1,
+            "result": "Defeat",
+            "reward": -49.45,
+            "answers": [
+              {
+                "source_line": 1282,
+                "answer": "<answer>\n- supplydepot x 4\n- barracks x 4\n- marine x 24\n</answer>",
+                "prompt_sha256": "95f4e1650fe0f587aba982557916cbb0e59d9bcbf1c10092fd40664578a5d424",
+                "reward": 0,
+                "valid": true
+              },
+              {
+                "source_line": 1290,
+                "answer": "<answer>\n- marine x 42\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n</answer>",
+                "prompt_sha256": "8d4d419e666c5f0e8f1996895386ac4d003fca13ea5dca84a6c5497006f51c59",
+                "reward": -49.45,
+                "valid": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "artifacts": {
+      "manifest.json": "875739e63a2462c1970508df3f73da217cb87d9161e2508ed1c60a83baa6976b",
+      "effective_config.json": "5a6116b330929da6f63b917e115dc1d860278fa974fe269541c0cb655dcf5391",
+      "result.json": "e8f83762c8601a801cab81f6b9d270043da8a8556055ddfc47de1c9008e4d7c6",
+      "prompt_response.jsonl": "bc3ac938b6d9129fdf086215a2034f98beba74760baf25e0970c5c55bed87030",
+      "episode_outcomes.jsonl": "17643ff41b221b0f9c7025c2dd62d826513d90e87a7110e1618ca27715d250c9",
+      "training_seeds.jsonl": "2a73f29dce10005f6443cea3cefef62e6959b4c81fb69458e5607a34d12e70ce"
+    },
+    "console_sha256": "98bb4b2cad1b626503e593d64f8ba6545c469de867d37d0cf29ca8c0f8917a0b"
+  },
+  "A": {
+    "run_id": "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2",
+    "source_sha": "5ba3f2111dc5bd576d1e67c7da5fdeaffba9f24f",
+    "status": "completed",
+    "exit_code": 0,
+    "ended_at": "2026-09-11T03:09:23.652495+00:00",
+    "games": 64,
+    "wins": 39,
+    "mean_reward": -6.977890625,
+    "decisions": 231,
+    "invalid": 27,
+    "zero_supply_queries": 0,
+    "execution_feedback_queries": 0,
+    "checkpoint_pairing": {
+      "loaded_global_step": 4,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_4",
+      "model_optimizer_load_returned": true,
+      "sc2_state_restored": false,
+      "exhausted_saved_epoch_closed_without_new_sample": true,
+      "driver_seed": 0,
+      "game_reset_index": 0,
+      "game_seed_per_new_step": [
+        2732,
+        43567,
+        42613,
+        52416,
+        45891,
+        21243,
+        30403,
+        32103
+      ],
+      "note": "New paired experiment; not an uninterrupted historical continuation. Per-rank RNG is restored by the existing checkpoint loader."
+    },
+    "logged_zero_batches": [],
+    "exact_replay_batches": 0,
+    "cpu_exact_zero_batches": [],
+    "zero_batch_optimizer_updates": 0,
+    "inferred_optimizer_updates": 32,
+    "batches": [
+      {
+        "global_step": 5,
+        "seed": 2732,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20,
+          20
+        ],
+        "calls": [
+          6,
+          8,
+          3,
+          2,
+          3,
+          3,
+          3,
+          4
+        ],
+        "decisions": 32,
+        "invalid": 3,
+        "copies": 0,
+        "inferred_optimizer_updates": 4,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 3
+          }
+        ],
+        "advantage_logged": [
+          -3.573,
+          2.068
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 9.484,
+        "entropy": 0.091,
+        "pg_loss": -0.001,
+        "ppo_k1": -0.002,
+        "reference_kl": 0.056,
+        "clipfrac": 0.013
+      },
+      {
+        "global_step": 6,
+        "seed": 43567,
+        "wins": 7,
+        "rewards": [
+          20.5,
+          20.5,
+          20,
+          20.5,
+          20.5,
+          20.5,
+          -49.5,
+          20.5
+        ],
+        "calls": [
+          3,
+          3,
+          3,
+          7,
+          3,
+          3,
+          10,
+          3
+        ],
+        "decisions": 35,
+        "invalid": 2,
+        "copies": 5,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 3,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 2
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 12"
+            ],
+            "count": 1
+          }
+        ],
+        "advantage_logged": [
+          -44.076,
+          13.27
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 110.36,
+        "entropy": 0.102,
+        "pg_loss": 0.009,
+        "ppo_k1": 0.002,
+        "reference_kl": 0.049,
+        "clipfrac": 0.008
+      },
+      {
+        "global_step": 7,
+        "seed": 42613,
+        "wins": 0,
+        "rewards": [
+          -49.451,
+          -49.425,
+          -49.382,
+          -49.312,
+          -49.855,
+          -49.444,
+          -49.5,
+          -49.382
+        ],
+        "calls": [
+          8,
+          10,
+          2,
+          5,
+          8,
+          5,
+          6,
+          2
+        ],
+        "decisions": 46,
+        "invalid": 3,
+        "copies": 2,
+        "inferred_optimizer_updates": 6,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 7,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 6
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 2
+          }
+        ],
+        "advantage_logged": [
+          -7.736,
+          7.987
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 22.181,
+        "entropy": 0.102,
+        "pg_loss": 0.003,
+        "ppo_k1": 0.002,
+        "reference_kl": 0.041,
+        "clipfrac": 0.006
+      },
+      {
+        "global_step": 8,
+        "seed": 52416,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20
+        ],
+        "calls": [
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          4,
+          9
+        ],
+        "decisions": 27,
+        "invalid": 5,
+        "copies": 5,
+        "inferred_optimizer_updates": 4,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 6,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 6
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 2
+          }
+        ],
+        "advantage_logged": [
+          -4.624,
+          2.19
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 10.746,
+        "entropy": 0.06,
+        "pg_loss": -0.001,
+        "ppo_k1": -0.001,
+        "reference_kl": 0.052,
+        "clipfrac": 0.007
+      },
+      {
+        "global_step": 9,
+        "seed": 45891,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          3,
+          3,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "decisions": 22,
+        "invalid": 0,
+        "copies": 2,
+        "inferred_optimizer_updates": 3,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 5,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 3
+          }
+        ],
+        "advantage_logged": [
+          -1.255,
+          0.644
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 4.049,
+        "entropy": 0.052,
+        "pg_loss": 0.001,
+        "ppo_k1": 0.008,
+        "reference_kl": 0.069,
+        "clipfrac": 0.005
+      },
+      {
+        "global_step": 10,
+        "seed": 21243,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          3,
+          2,
+          2,
+          2,
+          2,
+          3,
+          2,
+          3
+        ],
+        "decisions": 19,
+        "invalid": 0,
+        "copies": 5,
+        "inferred_optimizer_updates": 3,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 2,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 3
+          }
+        ],
+        "advantage_logged": [
+          -0.62,
+          0.354
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 1.765,
+        "entropy": 0.038,
+        "pg_loss": -0.001,
+        "ppo_k1": 0.006,
+        "reference_kl": 0.054,
+        "clipfrac": 0.01
+      },
+      {
+        "global_step": 11,
+        "seed": 30403,
+        "wins": 0,
+        "rewards": [
+          -50,
+          -50,
+          -50,
+          -50,
+          -50,
+          -49.48,
+          -50,
+          -50
+        ],
+        "calls": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "decisions": 24,
+        "invalid": 7,
+        "copies": 0,
+        "inferred_optimizer_updates": 3,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -0.12,
+          0.707
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 3.581,
+        "entropy": 0.037,
+        "pg_loss": 0,
+        "ppo_k1": 0.003,
+        "reference_kl": 0.045,
+        "clipfrac": 0.004
+      },
+      {
+        "global_step": 12,
+        "seed": 32103,
+        "wins": 0,
+        "rewards": [
+          -49.474,
+          -49.5,
+          -49.98,
+          -49.98,
+          -49.98,
+          -49.98,
+          -49.98,
+          -49.98
+        ],
+        "calls": [
+          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "decisions": 26,
+        "invalid": 7,
+        "copies": 6,
+        "inferred_optimizer_updates": 4,
+        "opening_bullet_variants": 1,
+        "trajectory_bullet_variants": 7,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 8
+          }
+        ],
+        "advantage_logged": [
+          -1.028,
+          4.238
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 10.057,
+        "entropy": 0.035,
+        "pg_loss": -0.004,
+        "ppo_k1": 0,
+        "reference_kl": 0.037,
+        "clipfrac": 0.012
+      }
+    ],
+    "examples": [],
+    "artifacts": {
+      "manifest.json": "de4ba7bd74ec006b4713376778c49461cd5ef48ce10e92ea0c27fee6c0a60262",
+      "effective_config.json": "dd89555612446b9e82b1ef9ef167df0603805c94b668fb4122516863719ee096",
+      "result.json": "486283f42878bde515e8d87c983aaec115ccf35d218b12d11937cdef760f4e4b",
+      "prompt_response.jsonl": "6ba929a949d8f3943b83269fc998ceeb5e150ecf316b24ec45115e0f47c48583",
+      "episode_outcomes.jsonl": "503352ac8ec124ec69c45eef5f196fb4a82c908b8c57c0e43829687ff79d96e7",
+      "training_seeds.jsonl": "5fd89b38a666da234f2add000131a4ef432b95b0ca6cfe2c18bc50849479291f"
+    },
+    "console_sha256": "960e4244d69e5ce07fb696a3cf37f9495c0097651a89d2941f590217f8dc492f"
+  },
+  "B": {
+    "run_id": "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2",
+    "source_sha": "5ba3f2111dc5bd576d1e67c7da5fdeaffba9f24f",
+    "status": "completed",
+    "exit_code": 0,
+    "ended_at": "2026-09-11T05:34:28.731763+00:00",
+    "games": 64,
+    "wins": 39,
+    "mean_reward": -6.84596875,
+    "decisions": 290,
+    "invalid": 19,
+    "zero_supply_queries": 2,
+    "execution_feedback_queries": 0,
+    "checkpoint_pairing": {
+      "loaded_global_step": 4,
+      "checkpoint": "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-opening-quota-rl96-8gpu-s0-r1/checkpoints/global_step_4",
+      "model_optimizer_load_returned": true,
+      "sc2_state_restored": false,
+      "exhausted_saved_epoch_closed_without_new_sample": true,
+      "driver_seed": 0,
+      "game_reset_index": 0,
+      "game_seed_per_new_step": [
+        2732,
+        43567,
+        42613,
+        52416,
+        45891,
+        21243,
+        30403,
+        32103
+      ],
+      "note": "New paired experiment; not an uninterrupted historical continuation. Per-rank RNG is restored by the existing checkpoint loader."
+    },
+    "logged_zero_batches": [
+      6
+    ],
+    "exact_replay_batches": 0,
+    "cpu_exact_zero_batches": [],
+    "zero_batch_optimizer_updates": 5,
+    "inferred_optimizer_updates": 40,
+    "batches": [
+      {
+        "global_step": 5,
+        "seed": 2732,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20,
+          20
+        ],
+        "calls": [
+          2,
+          8,
+          2,
+          2,
+          4,
+          3,
+          3,
+          4
+        ],
+        "decisions": 28,
+        "invalid": 2,
+        "copies": 4,
+        "inferred_optimizer_updates": 4,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 7,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 3
+          }
+        ],
+        "advantage_logged": [
+          -0.494,
+          0.342
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 2.986,
+        "entropy": 0.093,
+        "pg_loss": 0.001,
+        "ppo_k1": -0.003,
+        "reference_kl": 0.044,
+        "clipfrac": 0.01
+      },
+      {
+        "global_step": 6,
+        "seed": 43567,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          5,
+          3,
+          3,
+          7,
+          3,
+          3,
+          5,
+          6
+        ],
+        "decisions": 35,
+        "invalid": 0,
+        "copies": 5,
+        "inferred_optimizer_updates": 5,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 6
+          },
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 2
+          }
+        ],
+        "advantage_logged": [
+          0,
+          0
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 0.099,
+        "entropy": 0.08,
+        "pg_loss": 0,
+        "ppo_k1": 0.004,
+        "reference_kl": 0.04,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 7,
+        "seed": 42613,
+        "wins": 0,
+        "rewards": [
+          -49.5,
+          -49.399,
+          -49.463,
+          -49.5,
+          -49.493,
+          -49.432,
+          -49.5,
+          -49.394
+        ],
+        "calls": [
+          9,
+          5,
+          8,
+          9,
+          4,
+          7,
+          5,
+          11
+        ],
+        "decisions": 58,
+        "invalid": 11,
+        "copies": 6,
+        "inferred_optimizer_updates": 8,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 3
+          }
+        ],
+        "advantage_logged": [
+          -0.115,
+          0.084
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 0.339,
+        "entropy": 0.096,
+        "pg_loss": 0,
+        "ppo_k1": 0.007,
+        "reference_kl": 0.031,
+        "clipfrac": 0.012
+      },
+      {
+        "global_step": 8,
+        "seed": 52416,
+        "wins": 8,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          5,
+          2,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2
+        ],
+        "decisions": 24,
+        "invalid": 1,
+        "copies": 0,
+        "inferred_optimizer_updates": 3,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 7,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 7
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 1
+          }
+        ],
+        "advantage_logged": [
+          -0.05,
+          0.05
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 0.111,
+        "entropy": 0.073,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.026,
+        "clipfrac": 0
+      },
+      {
+        "global_step": 9,
+        "seed": 45891,
+        "wins": 6,
+        "rewards": [
+          20.5,
+          20,
+          20.5,
+          20.5,
+          -49.45,
+          -49.45,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          3,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2
+        ],
+        "decisions": 26,
+        "invalid": 2,
+        "copies": 6,
+        "inferred_optimizer_updates": 4,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 6,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 7
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 1
+          }
+        ],
+        "advantage_logged": [
+          -74.649,
+          23.342
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 177.809,
+        "entropy": 0.072,
+        "pg_loss": -0.033,
+        "ppo_k1": 0.004,
+        "reference_kl": 0.022,
+        "clipfrac": 0.009
+      },
+      {
+        "global_step": 10,
+        "seed": 21243,
+        "wins": 7,
+        "rewards": [
+          20.5,
+          20.5,
+          20.5,
+          -49.275,
+          20.5,
+          20.5,
+          20.5,
+          20.5
+        ],
+        "calls": [
+          2,
+          2,
+          3,
+          2,
+          2,
+          2,
+          4,
+          2
+        ],
+        "decisions": 19,
+        "invalid": 0,
+        "copies": 5,
+        "inferred_optimizer_updates": 3,
+        "opening_bullet_variants": 3,
+        "trajectory_bullet_variants": 5,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 6
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 24"
+            ],
+            "count": 1
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 12"
+            ],
+            "count": 1
+          }
+        ],
+        "advantage_logged": [
+          -76.171,
+          18.316
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 174.602,
+        "entropy": 0.044,
+        "pg_loss": -0.04,
+        "ppo_k1": 0,
+        "reference_kl": 0.017,
+        "clipfrac": 0.002
+      },
+      {
+        "global_step": 11,
+        "seed": 30403,
+        "wins": 2,
+        "rewards": [
+          20.5,
+          -49.45,
+          20.5,
+          -49.5,
+          -49.45,
+          -49.48,
+          -49.364,
+          -49.45
+        ],
+        "calls": [
+          3,
+          6,
+          4,
+          2,
+          3,
+          3,
+          4,
+          3
+        ],
+        "decisions": 28,
+        "invalid": 1,
+        "copies": 4,
+        "inferred_optimizer_updates": 4,
+        "opening_bullet_variants": 3,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 2
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 24"
+            ],
+            "count": 1
+          }
+        ],
+        "advantage_logged": [
+          -24.358,
+          71.896
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 145.902,
+        "entropy": 0.062,
+        "pg_loss": 0.011,
+        "ppo_k1": -0.001,
+        "reference_kl": 0.022,
+        "clipfrac": 0.005
+      },
+      {
+        "global_step": 12,
+        "seed": 32103,
+        "wins": 0,
+        "rewards": [
+          -49.45,
+          -49.45,
+          -49.45,
+          -49.417,
+          -49.375,
+          -49.5,
+          -49.5,
+          -49.45
+        ],
+        "calls": [
+          9,
+          5,
+          10,
+          10,
+          10,
+          9,
+          6,
+          13
+        ],
+        "decisions": 72,
+        "invalid": 2,
+        "copies": 0,
+        "inferred_optimizer_updates": 9,
+        "opening_bullet_variants": 2,
+        "trajectory_bullet_variants": 8,
+        "opening_modes": [
+          {
+            "bullets": [
+              "- supplydepot x 4",
+              "- barracks x 4",
+              "- marine x 24"
+            ],
+            "count": 5
+          },
+          {
+            "bullets": [
+              "- supplydepot x 2",
+              "- barracks x 2",
+              "- marine x 2"
+            ],
+            "count": 3
+          }
+        ],
+        "advantage_logged": [
+          -0.07,
+          0.081
+        ],
+        "cpu_joint": {
+          "status": "not_exact: invalid penalties or unlogged copy/order"
+        },
+        "grad_norm": 0.193,
+        "entropy": 0.09,
+        "pg_loss": 0,
+        "ppo_k1": 0,
+        "reference_kl": 0.027,
+        "clipfrac": 0.005
+      }
+    ],
+    "examples": [],
+    "artifacts": {
+      "manifest.json": "d1b84259fea72777cc3a6bfd9d111510c4b962ab03e4fd2c1434dc5057559f70",
+      "effective_config.json": "0cffdeff8f3b958c40060f5b8c01ca655cff01b7fd4d9f680319be0b01db3f4e",
+      "result.json": "db600329e578a2e53a744aa3c22bd11f2e4258828079af7695bc2386a813eb38",
+      "prompt_response.jsonl": "419978d3a04728f884056e533c4d8bc35179cd6bcf1eedb2583056361f18dee0",
+      "episode_outcomes.jsonl": "c438942aaf3696a468d364fb0f6e5207b2022f6d310cd8eb2817f9cfea69c5fd",
+      "training_seeds.jsonl": "5fd89b38a666da234f2add000131a4ef432b95b0ca6cfe2c18bc50849479291f"
+    },
+    "console_sha256": "63155cdab987d4d6cb246a5630c99f61f1ae4835603a21ae436cdbec06f3cd23"
+  },
+  "config_difference_raw": {
+    "+env.prompt_response_log_path": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2/prompt_response.jsonl",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2/prompt_response.jsonl"
+    ],
+    "+ray_init._temp_dir": [
+      "/dev/shm/sc2_gamma_A_0911_r2",
+      "/dev/shm/sc2_gamma_B_0911_r2"
+    ],
+    "+ray_init.runtime_env.env_vars.RAY_TMPDIR": [
+      "/dev/shm/sc2_gamma_A_0911_r2",
+      "/dev/shm/sc2_gamma_B_0911_r2"
+    ],
+    "+ray_init.runtime_env.env_vars.SC2_EPISODE_OUTCOME_LOG": [
+      "'/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2/episode_outcomes.jsonl'",
+      "'/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2/episode_outcomes.jsonl'"
+    ],
+    "+ray_init.runtime_env.env_vars.SC2_RUNTIME_LOG_ROOT": [
+      "'/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2/sc2-logs'",
+      "'/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2/sc2-logs'"
+    ],
+    "+ray_init.runtime_env.env_vars.SC2_TRAIN_SEEDS_LOG_PATH": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2/training_seeds.jsonl",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2/training_seeds.jsonl"
+    ],
+    "+ray_init.runtime_env.env_vars.TMPDIR": [
+      "/dev/shm/sc2_gamma_A_0911_r2",
+      "/dev/shm/sc2_gamma_B_0911_r2"
+    ],
+    "actor_rollout_ref.model.path": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2/model",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2/model"
+    ],
+    "algorithm.gamma": [
+      "0.95",
+      "1.0"
+    ],
+    "hydra.run.dir": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2/hydra",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2/hydra"
+    ],
+    "trainer.default_local_dir": [
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2/checkpoints",
+      "/mnt/data0601/yangjinyue/new_SCII/experiments/20260910-spb-fsdp-layer-wrap-v1/runs/20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2/checkpoints"
+    ],
+    "trainer.experiment_name": [
+      "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma0.95-s4plus8-8gpu-s0-r2",
+      "20260910-spb-fsdp-layer-wrap-v1-spb2-l6-g2-gamma1.0-s4plus8-8gpu-s0-r2"
+    ]
+  },
+  "normalized_method_difference": {
+    "algorithm.gamma": [
+      "0.95",
+      "1.0"
+    ]
+  },
+  "scope": "Level6 only; scalar replay, not saved PPO tensors or parameter gradients",
+  "gigpo_sha256": "f135bd272518b49a58762da3474e2d4bc90906b053f1ae820d8fb05c2064148b",
+  "cuda_initialized": false
+}

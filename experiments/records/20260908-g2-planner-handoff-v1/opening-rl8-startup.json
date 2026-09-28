@@ -1,0 +1,122 @@
+{
+  "manifest": {
+    "schema_version": 1,
+    "status": "running",
+    "started_at": "2026-09-09T05:19:08.281212+00:00",
+    "source_commit": "e3ffac9e2da577679b9b980d66678e4cc72b06aa",
+    "dirty": false,
+    "formal": true,
+    "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+    "model_revision": "sha256:de52e8ef993afc763f9d4fb498e8d8302ef0bc13bd7dfd53c6ae5f77f43698b5",
+    "model_source": "/mnt/data0601/yangjinyue/sc2-verl-agent-experiments/assets/models/Panyuqi/SpikingBrain-2.0-instruct",
+    "model_manifest_sha256": "40d6f1417568d5fda1107cdafd66c7441a679b03fb148851c8f226ecc9cf884c",
+    "bo_profile": "canonical",
+    "episode_api": "gymnasium-v0.26",
+    "bo_path": "/root/new-scii-g2-planner-handoff-20260909/code-e3ffac9/agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/knowledge/BO/replay_observations_Flat128_d4_TvT_Macro_g2_Result.Victory_twobase.json",
+    "bo_sha256": "304b1f4ff12fe30c5e6d5f7b8eaef8ed6823ca65afed3a3706cae10e3639c494",
+    "mode": "training",
+    "source_files_sha256": {
+      "configs/spikingbrain2-level5.env": "b34497add5894a01d87338686ba28a9cc7ea9ef86dd62e1d98814b1e898e021e",
+      "configs/system-v1.env": "f99583a73de679b3c11845e7037bbee5629750126241dd8b156206d2734f61a7",
+      "scripts/train_sc2.sh": "297105b0b736df9573748b70be69a4982dd4ef3faf42c688f4f30d81d9bbcf33",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/agents/planner.py": "b6994c43da70ab21407e3ec20fb4538f1dbd2923172e8a5051a51e0e0944f305",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/script_player.py": "89ed4006cf35af238b0962409bd5a183780d8676af5a49af35422d3077030069",
+      "agent_system/environments/env_package/sc2_online_restored/SC2ArenaDyStrategy/players/llm_player.py": "fa9942f702a01774cae33b13c64c7bbc657141a8e63da8cf0fde0f1e0aeba7e2",
+      "agent_system/sc2_episode.py": "882aa88c609100a70892e6479d2e1c48e71c039073b4dbec7267a46e306fff27",
+      "agent_system/environments/env_package/sc2_online_restored/envSC2.py": "6b5d474f90b1a3a9d7a641c92f3379b9d936e14aa7102d1f1717545093056704",
+      "agent_system/environments/strategic_sc2_env_manager_v2.py": "e1cc55a8daa298656b545942fa0964c737ea0d9101dc77410b5258ccefca5ff2"
+    },
+    "target_steps": 8,
+    "training_goal_global_steps": 96,
+    "resume_from_path": null,
+    "host": "hpc",
+    "python": "3.12.3",
+    "gpu_selection": "0,1,2,3,4,5,6,7",
+    "world_size": 8,
+    "container_image_id": null,
+    "versions": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.55.2",
+      "ray": "2.48.0",
+      "gymnasium": "1.2.3",
+      "flash-attn": "2.6.3",
+      "flash-linear-attention": "0.4.0",
+      "moba": null
+    }
+  },
+  "checked_config": {
+    "+ray_init.runtime_env.env_vars.SC2_DIFFICULTY": "'Harder'",
+    "+ray_init.runtime_env.env_vars.SC2_FIXED_BO_PREFIX_LIMIT": "'-1'",
+    "actor_rollout_ref.actor.optim.lr": "1e-6",
+    "actor_rollout_ref.actor.ppo_mini_batch_size": "8",
+    "actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu": "1",
+    "actor_rollout_ref.rollout.name": "hf",
+    "env.rollout.n": "8",
+    "env.history_length": "0",
+    "+env.sc2_memory_mode": "off",
+    "trainer.n_gpus_per_node": "8",
+    "trainer.save_freq": "1",
+    "trainer.total_epochs": "8",
+    "trainer.val_before_train": "False",
+    "trainer.val_only": "False",
+    "trainer.resume_mode": "disable",
+    "+actor_rollout_ref.model.override_config.swa_dropout": "0.0",
+    "+ray_init.runtime_env.env_vars.SC2_RESET_RETRIES": "'1'",
+    "+ray_init.runtime_env.env_vars.SC2_PRESERVE_VALID_BO": "'1'",
+    "+ray_init.runtime_env.env_vars.SC2_ENABLE_AIR_OPTIONS": "'1'",
+    "+actor_rollout_ref.actor.fsdp_config.mixed_precision.param_dtype": "fp32",
+    "+actor_rollout_ref.actor.fp32_normalization": "True",
+    "+actor_rollout_ref.ref.fp32_normalization": "True",
+    "trainer.total_training_steps": "96"
+  },
+  "done_exists": false,
+  "training_seeds.jsonl": "{\"base_seed\": 0, \"reset_index\": 0, \"seeds\": [2732, 2732, 2732, 2732, 2732, 2732, 2732, 2732]}\n",
+  "episode_outcomes.jsonl": null,
+  "node": "sc2-a100-44",
+  "orchestration_commit": "34c90a49ca8fdd641f75cdbacabb30df06c41de3",
+  "control_start_beijing": "2026-09-09 13:18:42",
+  "control_session": "sc2_spb_opening_rl8_r1",
+  "control_pid": 998163,
+  "actual_sc2_verified_beijing": "2026-09-09 13:22:44",
+  "actual_sc2_pids": [
+    1003781,
+    1003782,
+    1003783,
+    1003784,
+    1003785,
+    1003786,
+    1003787,
+    1003788
+  ],
+  "actual_sc2_process_name": "Main_Thread",
+  "progress": "First training rollout; real Planner output consumed and BARRACKSTRAIN_MARINE command observed at game02:23. No completed PPO update at verification.",
+  "consumed_answers": {
+    "first_consumed_answers": [
+      {
+        "time": "2026-09-09 05:21:43",
+        "env_idx": 0,
+        "step_index": 0,
+        "llm_response": "- supplydepot\n- barracks\n- marine",
+        "is_action_valid": true,
+        "policy_action_applied": true,
+        "policy_action_id": 1
+      },
+      {
+        "time": "2026-09-09 05:21:43",
+        "env_idx": 1,
+        "step_index": 0,
+        "llm_response": "- supplydepot\n- barracks\n- marine",
+        "is_action_valid": true,
+        "policy_action_applied": true,
+        "policy_action_id": 1
+      }
+    ],
+    "done_exists": false
+  },
+  "model_load_verified": {
+    "shards": "11/11",
+    "swa_dropout": 0,
+    "use_cache": true
+  },
+  "bundle_sha256": "f4a7f9076d4dfce339be03db3002f088ebe2b7b0552e82cd8c186e77be60b1bb"
+}

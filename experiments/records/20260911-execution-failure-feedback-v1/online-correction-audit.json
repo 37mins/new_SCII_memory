@@ -1,0 +1,1016 @@
+{
+  "summary": {
+    "runtime_sha": "95f6e2185acb37d792970010429e8828e0c40164",
+    "games": 8,
+    "independent_scenarios": 1,
+    "discarded_third_answers": 8,
+    "discarded_third_valid": 8,
+    "discarded_third_depot_first": 2,
+    "online_answers": 4,
+    "online_depot_first": 2,
+    "online_depot_starts": 2,
+    "online_depot_completions": 0,
+    "online_boundary_verdicts": {
+      "unfinished_at_natural_game_end": 2,
+      "no_attributed_depot_start": 2
+    },
+    "online_failure_origins": {
+      "historical_replay": 4
+    },
+    "online_reward_values": [
+      20.5
+    ],
+    "b4_supply_feedback": 4,
+    "b4_depot_first": 1,
+    "new_gpu_runs": 0,
+    "reward_enabled": false,
+    "conclusion": "No new implementation bug established; proposed recovery bonus remains unaccepted."
+  },
+  "r3_input_sha256": {
+    "game-4133253-boundaries.jsonl": "57f85d878b4943880702d4e712ad4d249e82cbe9b150364d1cf1ee2e72429eca",
+    "game-4133253-supply-events.jsonl": "45314e4af6db5e8f6fc303fac0356b06a34f90bf2465d7748dccfb50214c9785",
+    "episode_outcomes.jsonl": "420000a7bec3ea82db23456fb88957c77f1dec554cca97ec9781265c9a289b2e",
+    "game-4133258-boundaries.jsonl": "7f237307189909a3ae0d6e89f1006071c40f4bb8991ff7ad2f89d1fe98416d88",
+    "sampling-rank7.json": "d0f66df2e757e3f306e69a92d53e570fd43a8bfc20631497789a7fdb4fb8cbf7",
+    "game-4133256-supply-events.jsonl": "45355d8c88996eb69dcd61b068053ee156401ca4999246f35bc00cab268a7c29",
+    "sampling-rank6.json": "154f60c860590e96687c4f53c9be93c53e6bbeec8a4d85ef0b62286db1e9352e",
+    "game-4133257-supply-events.jsonl": "f85cf8e489884bcb4430432ea82c96f08304eb25682617b11d51592385c60017",
+    "intervention_coverage.json": "a2b325a041a8fb17200c81f5da5f9d42c8b873ccc6646f5476ab8eac5c62ec37",
+    "result.json": "86fa671a5c18e3a4b5aee9e86a3b34a2cb1c96ae82e9993b163778f5c17a8e2a",
+    "game-4133254-supply-events.jsonl": "8de5427bad4b73252a7798e07424eeb8320bd6d004dd5b66f758c6334cbc833c",
+    "interventions.jsonl": "3abe2946e23b03aa7864e246d2de48dc00cbebae5ea7f1ca60d6f34d9dfa7acb",
+    "game-4133257-859da9577db84d71a6de66f41c11feff-command-trace.jsonl": "4d84251579a589f59768f78fd15112236fbff8863b8b671b5ad31b5bac4d9b12",
+    "game-4133255-supply-events.jsonl": "eafbe83807932143f8f4d73b4403461185fdd48eb83eec78dcd35d8ea11a0bc6",
+    "game-4133257-boundaries.jsonl": "e49b620526cf1fdec9979b375430f0e76126be89acce186028757ad53c417521",
+    "game-4133260-0502e444705b4a5b8402257652c0db78-command-trace.jsonl": "5595eba7f788e59a8b8f959621ea2adee044e306d66637ca754194f572ef88fc",
+    "game_worker_mapping.jsonl": "c9bfc15463acd8ea505fb55511a604c58f1bbede5f0d329940eecb9edc9cfd8b",
+    "game-4133258-supply-events.jsonl": "900855ff56a2ed8ed01d6d89cae34c30dab6853bd2a1a5d907a6f0bd74a6aae7",
+    "sampling-rank1.json": "fcc0d6a534012e74aab73d53a905cfad9ff3e4e16bb6ef610e62d2cc7ab201b4",
+    "game-4133259-supply-events.jsonl": "bffff7d2f30fb99df8c6f75361f7d41df5c6b161932e3b309f3a46966707b22b",
+    "game-4133259-boundaries.jsonl": "66b9d4dc54cc8ade9f183e2e56ef13f99d17387a1acba8541bb0246069fb153a",
+    "model_preparation.json": "702cbe07a8b51115f7d0697ed93fdf8269d2e7acc3dedea913e76c833a706a14",
+    "effective_config.json": "ff4f22ad4a3bc6ba4b5fa8d745761ab093ef7ac1acda679ec89d0c007a922ece",
+    "game-4133256-boundaries.jsonl": "5025122a95db9f3e2b5ca54010e45df51527b23b0e1644a7c4f31dae87110290",
+    "sampling-rank0.json": "6d47163a30d12f466e76a491cdf74f60971ea4918151741e93ebb15f1d394429",
+    "game-4133253-8794a502ae07452dbb7d82819da237d8-command-trace.jsonl": "405ec1d9ab8b3dd8e4624fbe364612af6616a26691d778d2ee9b074e5b2d7912",
+    "sampling-rank3.json": "b8f64c4a1b175915e2cff4e992a169aa05fb1c8f2ad411bb391604a7040e1e3d",
+    "game-4133256-58192dc4efbb45d38caeaa20ef91bfc7-command-trace.jsonl": "9b1cd2c617ed1af35495a5f8997ed7ab23d224f8063fe934785184ef1c76509f",
+    "prompt_response.jsonl": "84e0f1152b6a9b47da457b9c621a2a66e264aa9c4ec77bb61f65d50b1238d2b1",
+    "game-4133254-6d9224b2053b461482ddf9baf1bae951-command-trace.jsonl": "8fe5be7c0d9eaa6d7606001dcadae837719c279fb45f6542cb54130b685a949e",
+    "game-4133255-boundaries.jsonl": "f6a7922393e5f3916b0a2826e40518b5d60d55d77df6c84a69bfd561afe8982b",
+    "manifest.json": "c5eb59226321242ee3c14e77475c937265a6451e5cf5c46a51b246fe946d022d",
+    "game-4133260-boundaries.jsonl": "13198e45ec308b2c88aa2455b4cf2cd89d9934438a24d7bc46423255c97b0231",
+    "sampling-rank2.json": "d92d7cf81889a7f4bcf6975fa6995345209d79968fc1946cb8084cc34e06a1db",
+    "game-4133259-4dea4ce09616470db5abcb43723f0363-command-trace.jsonl": "fd7f9818b5b20e3ef98348515420b6b5512bcb04faf7f411780f1a8fc1c6c15f",
+    "game-4133255-9ebc971eb6e04ea4b340755d25ff7376-command-trace.jsonl": "df47c73d28982207b642dc80c68534ad91ea88f327c97e46d5852cd3bf27d54a",
+    "sampling-rank5.json": "d5dc992f393bc7a1a0ed73bfb170643cda79343f57f2f0e4c772153c849c7d56",
+    "supply_evaluation.json": "b8fa0391562f23004cf00416c2f115d5e6b7d7a7d3d82fc6decdc9945ca93c7b",
+    "evaluation_seeds.jsonl": "a580800e0d95649d247266f26c0d99bbbdf416a2676b21fea8dc6c8d48c1fec9",
+    "game-4133260-supply-events.jsonl": "ecd76da4093e86edf76cc438e2c0ca3652ee9a9ac2a62e288d94e55b14a42e9e",
+    "sampling-rank4.json": "1a5fb97addfe114a66820d880b50f21201503fcd58bd6a129d253fb32dd885ff",
+    "game-4133254-boundaries.jsonl": "4a3c09b95b074d580b1dfd6048e6a37741309bbee5e0db54b0bac80b14a521c6",
+    "game-4133258-60c208725fe04597847b57788240bd3e-command-trace.jsonl": "c40f8d00bc51caa68d3077f557282fae5fdfc0b918669e2bd4ccf3d7ee153891"
+  },
+  "b4_input_sha256": {
+    "manifest.json": "89d745c970e987b838b54e1dd36bc039b8ef54ce67b8bbae8614217be92ce421",
+    "effective_config.json": "b3dbd43c2236f2ae05dce10364ed8afadda80be675a94ab5f7b1d1f3e3e62b8c",
+    "prompt_response.jsonl": "bea4e96e7a421c2785c542c23ee71f9996097c797d1a36b042ea33dbb12bc63c",
+    "episode_outcomes.jsonl": "c726631ea6ce1c32ea11456acd9de407fe44566e1b9edb5e9479881ae88dd3cf",
+    "training_seeds.jsonl": "1dae68405d186881e1740df9e4f30de3e443bb348b3c62ea5088169a1ff9e3fb",
+    "console.log": "0a1612e90be4ca75c471583760af79d760066e9e71101287cb995958b26071ba",
+    "result.json": "a675284c79a1adc0027b2000b6b03232aeb7e7a1da82076d4a4cb1e7c9c7f12d"
+  },
+  "discarded_third_answers": [
+    {
+      "env": 0,
+      "source_line": 17,
+      "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+      "forwarded": "<answer>\n- marine x 29\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "first_bullet": "- marine x 2",
+      "executed": false
+    },
+    {
+      "env": 1,
+      "source_line": 18,
+      "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 8\n- marine x 29\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "first_bullet": "- marine x 2",
+      "executed": false
+    },
+    {
+      "env": 2,
+      "source_line": 19,
+      "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+      "forwarded": "<answer>\n- marine x 29\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "first_bullet": "- marine x 2",
+      "executed": false
+    },
+    {
+      "env": 3,
+      "source_line": 20,
+      "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 8\n- marine x 29\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "first_bullet": "- marine x 2",
+      "executed": false
+    },
+    {
+      "env": 4,
+      "source_line": 21,
+      "answer": "<answer>\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n</answer>",
+      "forwarded": "<answer>\n- marine x 29\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "first_bullet": "- supplydepot x 1",
+      "executed": false
+    },
+    {
+      "env": 5,
+      "source_line": 22,
+      "answer": "<answer>\n- supplydepot x 1\n- barracks x 1\n- marine x 2\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 8\n- marine x 29\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "first_bullet": "- supplydepot x 1",
+      "executed": false
+    },
+    {
+      "env": 6,
+      "source_line": 23,
+      "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n</answer>",
+      "forwarded": "<answer>\n- marine x 29\n- supplydepot x 8\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "first_bullet": "- marine x 1",
+      "executed": false
+    },
+    {
+      "env": 7,
+      "source_line": 24,
+      "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 1\n- supplydepot x 1\n- barracks x 1\n</answer>",
+      "forwarded": "<answer>\n- supplydepot x 8\n- marine x 29\n- barracks x 3\n- reactor barracks x 3\n- scv x 2\n- refinery x 1\n</answer>",
+      "valid": true,
+      "reason": "",
+      "first_bullet": "- marine x 1",
+      "executed": false
+    }
+  ],
+  "online_answers": [
+    {
+      "env": 0,
+      "game_pid": 4133253,
+      "trace_file": "game-4133253-8794a502ae07452dbb7d82819da237d8-command-trace.jsonl",
+      "source_line": 25,
+      "received_event": 181,
+      "query_sha256": "45f6664d8ca8e4079b360c5ac69fcba97ddf4745b19d7a30e1067ca00e3f849f",
+      "received_seconds": 413.03571428571433,
+      "failure": {
+        "source_policy_action_id": 3,
+        "phase_index": 1,
+        "processed_prefix_count": 0,
+        "queue_source": "parsed_answer_plus_existing_rules",
+        "failed": {
+          "action": "marine",
+          "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+          "target_command_submitted": false,
+          "pre_move_command_attempted": false
+        },
+        "unsubmitted_suffix": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "barracks",
+          "barracks",
+          "barracks",
+          "reactor barracks",
+          "reactor barracks",
+          "reactor barracks",
+          "scv",
+          "scv",
+          "refinery"
+        ],
+        "restored_selectable_quota": {
+          "marine": 29,
+          "supplydepot": 8,
+          "barracks": 3,
+          "reactor barracks": 3,
+          "scv": 2
+        },
+        "replan_scheduled": true
+      },
+      "failure_origin": "historical_replay",
+      "answer": "<answer>\n- supplydepot x 1\n- barracks x 1\n- marine x 1\n</answer>",
+      "valid": true,
+      "executor_queue": [
+        "supplydepot",
+        "barracks",
+        "marine"
+      ],
+      "command_events": [
+        {
+          "event_id": 184,
+          "event": "local_command",
+          "game_loop": 9252,
+          "time_seconds": 413.03571428571433,
+          "supply_cap": 47,
+          "supply_used": 47,
+          "minerals": 1060,
+          "vespene": 0,
+          "latest_policy_action_id": 4,
+          "ability": "TERRANBUILD_SUPPLYDEPOT",
+          "ability_id": 319,
+          "issuer_tag": 4345036801,
+          "target_position": [
+            26.5,
+            26.5
+          ],
+          "target_tag": null,
+          "queue": false,
+          "locally_queued": true,
+          "origin": {
+            "action": "supplydepot",
+            "selection_source": "validated_answer",
+            "parsed_index": 0,
+            "policy_action_id": 4,
+            "transport_origin": "online_model_transport",
+            "queue_index": 0,
+            "phase_index": 1
+          },
+          "orders_before": [
+            {
+              "ability": 3794,
+              "progress": 0.0
+            }
+          ],
+          "source_line": 184
+        }
+      ],
+      "start_events": [
+        {
+          "event_id": 187,
+          "event": "depot_started",
+          "game_loop": 9468,
+          "time_seconds": 422.67857142857144,
+          "supply_cap": 47,
+          "supply_used": 47,
+          "minerals": 915,
+          "vespene": 0,
+          "latest_policy_action_id": 4,
+          "tag": 4369940484,
+          "position": [
+            27.0,
+            27.0
+          ],
+          "command_id": 184,
+          "candidate_command_ids": [
+            184
+          ],
+          "match_kind": "unique_accepted_issuer_order_after_completed_history",
+          "origin": {
+            "action": "supplydepot",
+            "selection_source": "validated_answer",
+            "parsed_index": 0,
+            "policy_action_id": 4,
+            "transport_origin": "online_model_transport",
+            "queue_index": 0,
+            "phase_index": 1
+          },
+          "issuer_observations": [
+            {
+              "issuer_tag": 4347920385,
+              "command_ids": [
+                5,
+                18
+              ],
+              "observed": true,
+              "position": [
+                21.572265625,
+                16.37451171875
+              ],
+              "orders": [
+                {
+                  "ability_id": 296,
+                  "progress": 0.0,
+                  "target_kind": null,
+                  "target_position": null,
+                  "target_tag": null
+                }
+              ]
+            },
+            {
+              "issuer_tag": 4346085377,
+              "command_ids": [
+                9
+              ],
+              "observed": true,
+              "position": [
+                19.356689453125,
+                22.492431640625
+              ],
+              "orders": [
+                {
+                  "ability_id": 296,
+                  "progress": 0.0,
+                  "target_kind": null,
+                  "target_position": null,
+                  "target_tag": null
+                }
+              ]
+            },
+            {
+              "issuer_tag": 4345823233,
+              "command_ids": [
+                13
+              ],
+              "observed": true,
+              "position": [
+                24.927978515625,
+                17.338623046875
+              ],
+              "orders": [
+                {
+                  "ability_id": 295,
+                  "progress": 0.0,
+                  "target_kind": "target_unit_tag",
+                  "target_position": null,
+                  "target_tag": 4334026753
+                }
+              ]
+            },
+            {
+              "issuer_tag": 4345036801,
+              "command_ids": [
+                184
+              ],
+              "observed": true,
+              "position": [
+                27.565673828125,
+                28.0107421875
+              ],
+              "orders": [
+                {
+                  "ability_id": 319,
+                  "progress": 0.0,
+                  "target_kind": "target_world_space_pos",
+                  "target_position": [
+                    27.0,
+                    27.0
+                  ],
+                  "target_tag": null
+                }
+              ]
+            }
+          ],
+          "source_line": 187
+        }
+      ],
+      "completion_events": [],
+      "final_time": "07:20",
+      "final_bo_index": 2,
+      "final_depots": [
+        {
+          "tag": 4352376833,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4352901121,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4351852545,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4353425409,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4369940484,
+          "name": "SUPPLYDEPOT",
+          "progress": 0.824999988079071,
+          "add_on_tag": 0
+        }
+      ],
+      "new_marine_births": 0,
+      "boundary_verdict": "unfinished_at_natural_game_end",
+      "cumulative_reward": 20.5,
+      "response_reward": 20.5
+    },
+    {
+      "env": 2,
+      "game_pid": 4133254,
+      "trace_file": "game-4133254-6d9224b2053b461482ddf9baf1bae951-command-trace.jsonl",
+      "source_line": 27,
+      "received_event": 181,
+      "query_sha256": "45f6664d8ca8e4079b360c5ac69fcba97ddf4745b19d7a30e1067ca00e3f849f",
+      "received_seconds": 413.03571428571433,
+      "failure": {
+        "source_policy_action_id": 3,
+        "phase_index": 1,
+        "processed_prefix_count": 0,
+        "queue_source": "parsed_answer_plus_existing_rules",
+        "failed": {
+          "action": "marine",
+          "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+          "target_command_submitted": false,
+          "pre_move_command_attempted": false
+        },
+        "unsubmitted_suffix": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "barracks",
+          "barracks",
+          "barracks",
+          "reactor barracks",
+          "reactor barracks",
+          "reactor barracks",
+          "scv",
+          "scv",
+          "refinery"
+        ],
+        "restored_selectable_quota": {
+          "marine": 29,
+          "supplydepot": 8,
+          "barracks": 3,
+          "reactor barracks": 3,
+          "scv": 2
+        },
+        "replan_scheduled": true
+      },
+      "failure_origin": "historical_replay",
+      "answer": "<answer>\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+      "valid": true,
+      "executor_queue": [
+        "marine",
+        "marine",
+        "supplydepot",
+        "supplydepot",
+        "barracks",
+        "barracks"
+      ],
+      "command_events": [],
+      "start_events": [],
+      "completion_events": [],
+      "final_time": "07:17",
+      "final_bo_index": 0,
+      "final_depots": [
+        {
+          "tag": 4352376833,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4351852545,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4353425409,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4352901121,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        }
+      ],
+      "new_marine_births": 0,
+      "boundary_verdict": "no_attributed_depot_start",
+      "cumulative_reward": 20.5,
+      "response_reward": 20.5
+    },
+    {
+      "env": 4,
+      "game_pid": 4133258,
+      "trace_file": "game-4133258-60c208725fe04597847b57788240bd3e-command-trace.jsonl",
+      "source_line": 29,
+      "received_event": 181,
+      "query_sha256": "45f6664d8ca8e4079b360c5ac69fcba97ddf4745b19d7a30e1067ca00e3f849f",
+      "received_seconds": 413.03571428571433,
+      "failure": {
+        "source_policy_action_id": 3,
+        "phase_index": 1,
+        "processed_prefix_count": 0,
+        "queue_source": "parsed_answer_plus_existing_rules",
+        "failed": {
+          "action": "marine",
+          "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+          "target_command_submitted": false,
+          "pre_move_command_attempted": false
+        },
+        "unsubmitted_suffix": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "barracks",
+          "barracks",
+          "barracks",
+          "reactor barracks",
+          "reactor barracks",
+          "reactor barracks",
+          "scv",
+          "scv",
+          "refinery"
+        ],
+        "restored_selectable_quota": {
+          "marine": 29,
+          "supplydepot": 8,
+          "barracks": 3,
+          "reactor barracks": 3,
+          "scv": 2
+        },
+        "replan_scheduled": true
+      },
+      "failure_origin": "historical_replay",
+      "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n- reactor barracks x 2\n- scv x 2\n</answer>",
+      "valid": true,
+      "executor_queue": [
+        "marine",
+        "marine",
+        "supplydepot",
+        "supplydepot",
+        "barracks",
+        "barracks",
+        "reactor barracks",
+        "reactor barracks",
+        "scv",
+        "scv"
+      ],
+      "command_events": [],
+      "start_events": [],
+      "completion_events": [],
+      "final_time": "07:17",
+      "final_bo_index": 0,
+      "final_depots": [
+        {
+          "tag": 4352376833,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4351852545,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4353425409,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4352901121,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        }
+      ],
+      "new_marine_births": 0,
+      "boundary_verdict": "no_attributed_depot_start",
+      "cumulative_reward": 20.5,
+      "response_reward": 20.5
+    },
+    {
+      "env": 6,
+      "game_pid": 4133257,
+      "trace_file": "game-4133257-859da9577db84d71a6de66f41c11feff-command-trace.jsonl",
+      "source_line": 31,
+      "received_event": 181,
+      "query_sha256": "45f6664d8ca8e4079b360c5ac69fcba97ddf4745b19d7a30e1067ca00e3f849f",
+      "received_seconds": 413.03571428571433,
+      "failure": {
+        "source_policy_action_id": 3,
+        "phase_index": 1,
+        "processed_prefix_count": 0,
+        "queue_source": "parsed_answer_plus_existing_rules",
+        "failed": {
+          "action": "marine",
+          "reason": "timeout: **Action Failed**: Supply blocked (Available: 0 < Required: 1.0).\n**Suggestion**: Construct a SupplyDepot immediately.",
+          "target_command_submitted": false,
+          "pre_move_command_attempted": false
+        },
+        "unsubmitted_suffix": [
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "marine",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "supplydepot",
+          "barracks",
+          "barracks",
+          "barracks",
+          "reactor barracks",
+          "reactor barracks",
+          "reactor barracks",
+          "scv",
+          "scv",
+          "refinery"
+        ],
+        "restored_selectable_quota": {
+          "marine": 29,
+          "supplydepot": 8,
+          "barracks": 3,
+          "reactor barracks": 3,
+          "scv": 2
+        },
+        "replan_scheduled": true
+      },
+      "failure_origin": "historical_replay",
+      "answer": "<answer>\nHere are the Build Orders with attack instructions:\n- supplydepot x 1\n- barracks x 1\n- marine x 1\n- reactor barracks x 1\n</answer>",
+      "valid": true,
+      "executor_queue": [
+        "supplydepot",
+        "barracks",
+        "marine",
+        "reactor barracks"
+      ],
+      "command_events": [
+        {
+          "event_id": 184,
+          "event": "local_command",
+          "game_loop": 9252,
+          "time_seconds": 413.03571428571433,
+          "supply_cap": 47,
+          "supply_used": 47,
+          "minerals": 1060,
+          "vespene": 0,
+          "latest_policy_action_id": 4,
+          "ability": "TERRANBUILD_SUPPLYDEPOT",
+          "ability_id": 319,
+          "issuer_tag": 4345036801,
+          "target_position": [
+            26.5,
+            26.5
+          ],
+          "target_tag": null,
+          "queue": false,
+          "locally_queued": true,
+          "origin": {
+            "action": "supplydepot",
+            "selection_source": "validated_answer",
+            "parsed_index": 0,
+            "policy_action_id": 4,
+            "transport_origin": "online_model_transport",
+            "queue_index": 0,
+            "phase_index": 1
+          },
+          "orders_before": [
+            {
+              "ability": 3794,
+              "progress": 0.0
+            }
+          ],
+          "source_line": 184
+        }
+      ],
+      "start_events": [
+        {
+          "event_id": 187,
+          "event": "depot_started",
+          "game_loop": 9468,
+          "time_seconds": 422.67857142857144,
+          "supply_cap": 47,
+          "supply_used": 47,
+          "minerals": 915,
+          "vespene": 0,
+          "latest_policy_action_id": 4,
+          "tag": 4369940484,
+          "position": [
+            27.0,
+            27.0
+          ],
+          "command_id": 184,
+          "candidate_command_ids": [
+            184
+          ],
+          "match_kind": "unique_accepted_issuer_order_after_completed_history",
+          "origin": {
+            "action": "supplydepot",
+            "selection_source": "validated_answer",
+            "parsed_index": 0,
+            "policy_action_id": 4,
+            "transport_origin": "online_model_transport",
+            "queue_index": 0,
+            "phase_index": 1
+          },
+          "issuer_observations": [
+            {
+              "issuer_tag": 4347920385,
+              "command_ids": [
+                5,
+                18
+              ],
+              "observed": true,
+              "position": [
+                21.572265625,
+                16.37451171875
+              ],
+              "orders": [
+                {
+                  "ability_id": 296,
+                  "progress": 0.0,
+                  "target_kind": null,
+                  "target_position": null,
+                  "target_tag": null
+                }
+              ]
+            },
+            {
+              "issuer_tag": 4346085377,
+              "command_ids": [
+                9
+              ],
+              "observed": true,
+              "position": [
+                19.356689453125,
+                22.492431640625
+              ],
+              "orders": [
+                {
+                  "ability_id": 296,
+                  "progress": 0.0,
+                  "target_kind": null,
+                  "target_position": null,
+                  "target_tag": null
+                }
+              ]
+            },
+            {
+              "issuer_tag": 4345823233,
+              "command_ids": [
+                13
+              ],
+              "observed": true,
+              "position": [
+                24.927978515625,
+                17.338623046875
+              ],
+              "orders": [
+                {
+                  "ability_id": 295,
+                  "progress": 0.0,
+                  "target_kind": "target_unit_tag",
+                  "target_position": null,
+                  "target_tag": 4334026753
+                }
+              ]
+            },
+            {
+              "issuer_tag": 4345036801,
+              "command_ids": [
+                184
+              ],
+              "observed": true,
+              "position": [
+                27.565673828125,
+                28.0107421875
+              ],
+              "orders": [
+                {
+                  "ability_id": 319,
+                  "progress": 0.0,
+                  "target_kind": "target_world_space_pos",
+                  "target_position": [
+                    27.0,
+                    27.0
+                  ],
+                  "target_tag": null
+                }
+              ]
+            }
+          ],
+          "source_line": 187
+        }
+      ],
+      "completion_events": [],
+      "final_time": "07:20",
+      "final_bo_index": 2,
+      "final_depots": [
+        {
+          "tag": 4352376833,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4352901121,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4351852545,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4353425409,
+          "name": "SUPPLYDEPOT",
+          "progress": 1.0,
+          "add_on_tag": 0
+        },
+        {
+          "tag": 4369940484,
+          "name": "SUPPLYDEPOT",
+          "progress": 0.824999988079071,
+          "add_on_tag": 0
+        }
+      ],
+      "new_marine_births": 0,
+      "boundary_verdict": "unfinished_at_natural_game_end",
+      "cumulative_reward": 20.5,
+      "response_reward": 20.5
+    }
+  ],
+  "b4_supply_feedback": [
+    {
+      "source_line": 78,
+      "global_step": 1,
+      "env": 5,
+      "answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 2\n- barracks x 2\n</answer>",
+      "reward": 20.5,
+      "depot_first": false,
+      "completion_evidence": "historical_prompt_logs_do_not_establish_command_owned_completion"
+    },
+    {
+      "source_line": 86,
+      "global_step": 1,
+      "env": 5,
+      "answer": "<answer>\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+      "reward": 20.5,
+      "depot_first": false,
+      "completion_evidence": "historical_prompt_logs_do_not_establish_command_owned_completion"
+    },
+    {
+      "source_line": 94,
+      "global_step": 1,
+      "env": 5,
+      "answer": "Here are the Build Orders with attack instructions:\n- marine x 2\n- supplydepot x 1\n- barracks x 1\n- reactor barracks x 1\n</answer>",
+      "reward": 20.5,
+      "depot_first": false,
+      "completion_evidence": "historical_prompt_logs_do_not_establish_command_owned_completion"
+    },
+    {
+      "source_line": 127,
+      "global_step": 2,
+      "env": 6,
+      "answer": "<answer>\n- supplydepot x 1\n- barracks x 1\n</answer>",
+      "reward": 20.5,
+      "depot_first": true,
+      "completion_evidence": "historical_prompt_logs_do_not_establish_command_owned_completion"
+    }
+  ]
+}

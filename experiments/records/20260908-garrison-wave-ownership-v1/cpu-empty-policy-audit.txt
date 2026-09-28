@@ -1,0 +1,19 @@
+test_collector_carries_consumption_metadata_without_hiding_game_outcome (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_delayed_terminal_reward_is_attached_once_to_last_real_action (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_gather_filters_before_collation_and_keeps_all_game_successes (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}, {"traj_uid": "game", "environment_reward": -49.5, "environment_interactions": 2, "policy_decisions": 1, "excluded_terminal_rows": 1}]
+SC2 policy credit: [{"traj_uid": "game", "environment_reward": 20.0, "environment_interactions": 1, "policy_decisions": 0, "excluded_terminal_rows": 1}]
+ok
+test_no_decision_victory_or_defeat_has_no_policy_sample (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_only_get_action_consumes_action_id_not_terminal_ack_loop (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... Terminal received ACTION after done; resending terminal data.
+Terminal ack received.
+ok
+test_other_environments_keep_existing_active_mask_contract (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_real_last_action_keeps_terminal_reward_even_if_invalid (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_reset_caches_and_acknowledges_initial_terminal_without_action (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_transport_reports_consumption_not_just_socket_success (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+test_unconsumed_nonterminal_is_not_silently_discarded (test_r6_terminal_policy_credit.TerminalPolicyCreditTest) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.020s
+
+OK

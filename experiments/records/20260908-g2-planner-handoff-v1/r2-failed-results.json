@@ -1,0 +1,48 @@
+{
+  "A": {
+    "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-g2-A-eval4-s0-r2",
+    "manifest": {
+      "source_commit": "a34e539274b4a976863e90a47c503d89ce9f35e9",
+      "dirty": false,
+      "formal": true,
+      "mode": "evaluation",
+      "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+      "gpu_selection": "0,1,2,3",
+      "world_size": 4,
+      "started_at": "2026-09-08T15:57:11.786987+00:00"
+    },
+    "result": {
+      "status": "failed",
+      "ended_at": "2026-09-08T15:59:26.721846+00:00",
+      "process_exit_code": 1,
+      "training_updates": 0,
+      "response_record_count": 0,
+      "console_sha256": "8df33cc7fd3f76739a51efc1d6d5267a747f3b37e23037af83a8ccf1d44a2aca"
+    },
+    "trajectories": 0,
+    "effective_config_sha256": "37c9ffb430e5292b97379329e873325f13f2a4f8e5ad38f201fae6084f325fa6"
+  },
+  "B": {
+    "run_id": "20260908-g2-planner-handoff-v1-spb2-l6-g2-B-eval4-s0-r2",
+    "manifest": {
+      "source_commit": "a34e539274b4a976863e90a47c503d89ce9f35e9",
+      "dirty": false,
+      "formal": true,
+      "mode": "evaluation",
+      "model_id": "Panyuqi/SpikingBrain-2.0-instruct",
+      "gpu_selection": "4,5,6,7",
+      "world_size": 4,
+      "started_at": "2026-09-08T15:57:11.920879+00:00"
+    },
+    "result": {
+      "status": "failed",
+      "ended_at": "2026-09-08T15:59:29.689042+00:00",
+      "process_exit_code": 1,
+      "training_updates": 0,
+      "response_record_count": 0,
+      "console_sha256": "cf97eb8d09cf7ef5402b1249f4c5fcaa0af2bbf35ab5b9a9320b9e5460ec5637"
+    },
+    "trajectories": 0,
+    "effective_config_sha256": "afd3849514c84da3d441010fcef0bb28b8e6c0925afaa9e1f18ef6ece04ead9d"
+  }
+}
