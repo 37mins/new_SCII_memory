@@ -19,7 +19,7 @@ from agent_system.memory.sc2_tool_asset_memory import (
     parse_sc2_memory_tool_call,
 )
 from agent_system.memory.strategic_memory_v2 import StrategicMemoryV2, infer_failure_reason
-
+from agent_system.memory.sc2_long_loop_memory import SC2LongLoopMemory
 
 def _as_bool(value: Any) -> bool:
     if isinstance(value, str):
@@ -49,6 +49,7 @@ def _normalize_memory_mode(value: Any) -> str:
         "biagent_assets": "compact_asset",
         "strategic": "strategic_v2",
         "v2": "strategic_v2",
+        "long_loop": "long_loop",
         "none": "off",
         "false": "off",
         "0": "off",
@@ -107,11 +108,13 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
             )
         elif self.sc2_memory_mode == "strategic_v2":
             self.memory = StrategicMemoryV2()
+        elif self.sc2_memory_mode == "long_loop":
+            self.memory = SC2LongLoopMemory()
         elif self.sc2_memory_mode == "off":
             self.memory = None
         else:
             raise ValueError(
-                "env.sc2_memory_mode should be one of natural_tool_call_asset, tool_call_asset, compact_asset, strategic_v2, off; "
+                "env.sc2_memory_mode should be one of natural_tool_call_asset, tool_call_asset, compact_asset, strategic_v2, long_loop, off; "
                 f"got {self.sc2_memory_mode}"
             )
         self.use_tool_call_memory = self.sc2_memory_mode in {"tool_call_asset", "natural_tool_call_asset"}
@@ -173,6 +176,7 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
                 os.makedirs(os.path.dirname(self._prompt_response_log_path) or ".", exist_ok=True)
         if self.use_tool_call_memory and self._tool_call_log_path and self.is_train:
             os.makedirs(os.path.dirname(self._tool_call_log_path) or ".", exist_ok=True)
+        self.use_long_loop_memory = self.sc2_memory_mode == "long_loop"
         super().__init__(envs, projection_f, config)
 
     def reset(self, kwargs) -> Tuple[Dict[str, Any], List[Dict]]:
@@ -456,6 +460,16 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
             else:
                 prompts = list(text_obs)
                 self._mark_memory_router_skipped(len(text_obs))
+        elif self.use_long_loop_memory:
+            memory_contexts, _ = self.memory.fetch(
+                self.config.env.history_length,
+                current_obs=text_obs,
+                action_key="action",
+            )
+            prompts = [
+                f"{memory_contexts[i]}\nCurrent observation:\n{text_obs[i]}"
+                for i in range(len(text_obs))
+            ]
         elif self.memory is None:
             memory_contexts = ["" for _ in text_obs]
             prompts = list(text_obs)
