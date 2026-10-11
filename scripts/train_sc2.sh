@@ -10,6 +10,10 @@ case "${SC2_STEP_SHAPING_MODE}" in
     legacy|off) ;;
     *) echo "SC2_STEP_SHAPING_MODE must be legacy or off" >&2; exit 2 ;;
 esac
+case "${SC2_MEMORY_MODE}" in
+    off|natural_tool_call_asset|tool_call_asset|compact_asset|strategic_v2|long_loop) ;;
+    *) echo "SC2_MEMORY_MODE must be off, natural_tool_call_asset, tool_call_asset, compact_asset, strategic_v2, or long_loop" >&2; exit 2 ;;
+esac
 PYTHON_BIN=${PYTHON_BIN:-python3}
 MODEL_PATH=${MODEL_PATH:?set MODEL_PATH to the registered original model snapshot}
 SC2PATH=${SC2PATH:?set SC2PATH to the StarCraftII directory}
@@ -225,7 +229,8 @@ command=("${PYTHON_BIN}" -m verl.trainer.main_ppo \
     env.max_steps="${SC2_MAX_STEPS}" \
     env.rollout.n="${SC2_ROLLOUT_N}" \
     env.history_length=0 \
-    +env.sc2_memory_mode=off \
+    +env.sc2_memory_mode="${SC2_MEMORY_MODE}" \
+    +env.sc2_long_loop_memory_path="${OUTPUT_DIR}/long_loop_memory.json" \
     +env.forbid_thinking_output=True \
     +env.strict_legacy_plan_contract=True \
     +env.enable_prompt_response_log=True \

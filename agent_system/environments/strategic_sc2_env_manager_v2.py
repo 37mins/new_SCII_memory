@@ -109,7 +109,12 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
         elif self.sc2_memory_mode == "strategic_v2":
             self.memory = StrategicMemoryV2()
         elif self.sc2_memory_mode == "long_loop":
-            self.memory = SC2LongLoopMemory()
+            memory_path = str(config.env.get("sc2_long_loop_memory_path", "") or "")
+            if not memory_path:
+                checkpoint_dir = str(config.trainer.get("default_local_dir", "") or "")
+                if checkpoint_dir:
+                    memory_path = os.path.join(checkpoint_dir, "long_loop_memory.json")
+            self.memory = SC2LongLoopMemory(memory_path=memory_path or None)
         elif self.sc2_memory_mode == "off":
             self.memory = None
         else:
@@ -194,7 +199,10 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
         self._terminal_by_env = [False for _ in text_obs]
         self.pre_text_obs = text_obs
         observations = {
-            "text": self.build_text_obs(text_obs),
+            "text": self.build_text_obs(
+                text_obs,
+                telemetry=[info.get("telemetry") for info in infos],
+            ),
             "image": None,
             "anchor": text_obs.copy(),
         }
@@ -332,8 +340,10 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
             "projection_action_valid": projection_valids,
             "executor_action_valid": executor_valids,
             "failure_reason": failure_reasons,
+            "telemetry": [info.get("telemetry", {}) for info in infos],
+            "truncated": [bool(value) for value in truncateds],
         }
-        if self.memory is not None:
+        if self.memory is not None and (not self.use_long_loop_memory or self.is_train):
             self.memory.store(memory_record)
         self._write_prompt_response_log(
             text_actions=[raw_text_actions[i] if thinking_invalids[i] else response
@@ -369,13 +379,20 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
 
         self.pre_text_obs = text_obs
         next_observations = {
-            "text": self.build_text_obs(text_obs),
+            "text": self.build_text_obs(
+                text_obs,
+                telemetry=[info.get("telemetry") for info in infos],
+            ),
             "image": None,
             "anchor": text_obs.copy(),
         }
         return next_observations, to_numpy(rewards), to_numpy(dones), infos
 
-    def build_text_obs(self, text_obs: List[str]) -> List[str]:
+    def build_text_obs(
+        self,
+        text_obs: List[str],
+        telemetry: Optional[List[Optional[Dict[str, Any]]]] = None,
+    ) -> List[str]:
         if self.use_natural_tool_call_memory:
             if self.sc2_tool_memory_phase in {"write_only", "collect_only", "phase1", "learn_only"}:
                 memory_contexts = ["" for _ in text_obs]
@@ -465,6 +482,7 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
                 self.config.env.history_length,
                 current_obs=text_obs,
                 action_key="action",
+                telemetry=telemetry,
             )
             prompts = [
                 f"{memory_contexts[i]}\nCurrent observation:\n{text_obs[i]}"
@@ -489,6 +507,11 @@ class StrategicSC2EnvironmentManagerV2(EnvironmentManagerBase):
 
     def needs_memory_tool_query(self) -> bool:
         return bool(self.use_tool_call_memory and not self.use_natural_tool_call_memory and self._memory_tool_step_required)
+
+    def finalize_long_loop_memory_batch(self, llm_generate=None) -> Dict[str, Dict[str, Any]]:
+        if not self.is_train or not self.use_long_loop_memory:
+            return {}
+        return self.memory.finalize_batch(llm_generate=llm_generate)
 
     def needs_training_model_reflection(self, force: bool = False) -> bool:
         if not self.is_train or not self.use_tool_call_memory:

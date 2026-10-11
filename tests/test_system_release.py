@@ -101,7 +101,19 @@ class LauncherTest(unittest.TestCase):
             self.assertEqual(config["data.max_response_length"], "96")
             self.assertEqual(config["+ray_init.runtime_env.env_vars.SC2_PLAN_SEGMENT_MAX"], "'6'")
             self.assertEqual(config["+ray_init.runtime_env.env_vars.SC2_FIXED_BO_PREFIX_LIMIT"], "'0'")
+            self.assertEqual(config["+env.sc2_memory_mode"], "off")
             self.assertNotIn("+actor_rollout_ref.actor.ppo_diagnostics_dir", config)
+
+    def test_long_loop_memory_mode_is_forwarded_to_environment_config(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            result = self.launch(tmp, "train_sc2.sh", SC2_MEMORY_MODE="long_loop")
+            self.assertEqual(result.returncode, 0, result.stdout)
+            config = json.loads((Path(tmp) / "run/effective_config.json").read_text())["overrides"]
+            self.assertEqual(config["+env.sc2_memory_mode"], "long_loop")
+            self.assertEqual(
+                config["+env.sc2_long_loop_memory_path"],
+                str(Path(tmp) / "run" / "long_loop_memory.json"),
+            )
 
     def test_integrated_spb_default_disables_only_swa_dropout(self):
         with tempfile.TemporaryDirectory() as tmp:

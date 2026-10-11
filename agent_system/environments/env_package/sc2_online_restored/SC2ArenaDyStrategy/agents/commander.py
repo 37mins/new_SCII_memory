@@ -279,7 +279,7 @@ class SC2Commander:
         return min(1.0, max(0.0, final_reward))
 
 
-    def renew_bo(self, obs, execution_feedback=None):
+    def renew_bo(self, obs, execution_feedback=None, telemetry=None):
         # A failed segment gets one replan in its original phase. Normal segment
         # exhaustion still uses the existing time/quota phase transition below.
         force_renew_by_time = (execution_feedback is None
@@ -321,11 +321,14 @@ class SC2Commander:
             done_test = False
 
         if execution_feedback is None:
-            self.current_bo = self.planner.generate_plan(obs, self.waiting_bo, self.strategy, reward, done_test, self.attack_ct)
+            self.current_bo = self.planner.generate_plan(
+                obs, self.waiting_bo, self.strategy, reward, done_test,
+                self.attack_ct, telemetry=telemetry,
+            )
         else:
             self.current_bo = self.planner.generate_plan(
                 obs, self.waiting_bo, self.strategy, reward, done_test, self.attack_ct,
-                execution_feedback=execution_feedback,
+                execution_feedback=execution_feedback, telemetry=telemetry,
             )
         self.ensure_opening_marine(obs)
         trace = getattr(self, "command_trace", None)

@@ -182,6 +182,7 @@ class EnvironmentA():
             final_obs,
             game_result,
             attack_ct=getattr(ai_player.commander, "attack_ct", 0),
+            telemetry=ai_player.get_long_loop_telemetry(),
         )
 
 class SC2Env(gym.Env):

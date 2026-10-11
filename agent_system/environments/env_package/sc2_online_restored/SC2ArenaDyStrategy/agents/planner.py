@@ -1074,7 +1074,7 @@ class SC2Planner():
             bytes_recvd += len(chunk)
         return b''.join(chunks)
 
-    def game_end(self, obs, result, attack_ct=0):
+    def game_end(self, obs, result, attack_ct=0, telemetry=None):
         from agent_system.sc2_episode import outcome_fields
         reward = 0
 
@@ -1096,6 +1096,8 @@ class SC2Planner():
         from agent_system.sc2_combat_reward import consume_combat_reward
         reward += consume_combat_reward(self, "terminal")
         terminal_data = {"obs": obs, "reward": reward, "done": True, "success": result=='Victory', "attack_ct": attack_ct, "correct_format":self.correct_format, "exceed":self.exceed}
+        if telemetry is not None:
+            terminal_data["telemetry"] = telemetry
         terminal_data.update(outcome)
         terminal_data["last_consumed_policy_action_id"] = self.last_consumed_policy_action_id
         self._send(terminal_data)
@@ -1132,7 +1134,7 @@ class SC2Planner():
         finally:
             self.client_socket.settimeout(previous_timeout)
 
-    def get_action(self, obs, reward=0.0, done=False, attack_ct=0):
+    def get_action(self, obs, reward=0.0, done=False, attack_ct=0, telemetry=None):
         """这就是信号发送/接收端 B"""
 
         # if done:
@@ -1149,8 +1151,11 @@ class SC2Planner():
 
         from agent_system.sc2_combat_reward import consume_combat_reward
         reward += consume_combat_reward(self, "planner")
-        self._send({"obs": obs, "reward": reward, "done": done, "success": False, "attack_ct": attack_ct, "correct_format":self.correct_format, "exceed":self.exceed,
-                    "last_consumed_policy_action_id": self.last_consumed_policy_action_id})
+        data = {"obs": obs, "reward": reward, "done": done, "success": False, "attack_ct": attack_ct, "correct_format":self.correct_format, "exceed":self.exceed,
+            "last_consumed_policy_action_id": self.last_consumed_policy_action_id}
+        if telemetry is not None:
+            data["telemetry"] = telemetry
+        self._send(data)
         response = self._recv()
 
         if response and response["msg"] == "ACTION":
@@ -1177,7 +1182,7 @@ class SC2Planner():
                 if i == 99: break
 
     def generate_plan(self, obs, bo_todo, strategy, reward, done=False, attack_ct=0,
-                      execution_feedback=None):
+                      execution_feedback=None, telemetry=None):
         segment_max = get_plan_segment_max()
         bullet_max = get_plan_bullet_max()
         attack_allowed = attack_instruction_allows_attack(strategy.get("attack_instruction", ""))
@@ -1254,7 +1259,9 @@ class SC2Planner():
             )
         print(f"Generate new plan... [{self.ct}]")
         self.ct += 1
-        bo_ori = self.get_action(query, reward=reward, done=done, attack_ct=attack_ct)
+        bo_ori = self.get_action(
+            query, reward=reward, done=done, attack_ct=attack_ct, telemetry=telemetry
+        )
 
         def check_format(text):
             """

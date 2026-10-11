@@ -58,6 +58,8 @@ def step_info(data, action_valid):
         info.update({key: data[key] for key in (
             "policy_action_applied", "policy_action_id", "last_consumed_policy_action_id",
         )})
+    if "telemetry" in data:
+        info["telemetry"] = data["telemetry"]
     return info
 
 

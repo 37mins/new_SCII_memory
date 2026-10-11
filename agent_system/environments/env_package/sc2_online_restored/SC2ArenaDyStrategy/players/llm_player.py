@@ -700,6 +700,41 @@ while our current supply is {self.supply_used}, of which {self.supply_army} is a
 \nAs for the visible enemy presence, there are {enemy_unit_string}. As for the visible enemy structures, there are {enemy_structure_string}."
         return obs_text
 
+    def get_long_loop_telemetry(self):
+        score = getattr(getattr(self, "state", None), "score", None)
+
+        def unit_counts(units):
+            counts = defaultdict(int)
+            for unit in units:
+                counts[str(unit.name)] += 1
+            return dict(sorted(counts.items()))
+
+        game_time_seconds = float(self.time)
+        resource_cost = float(getattr(self, "resource_cost", 0.0))
+        return {
+            "game_time_seconds": game_time_seconds,
+            "minerals": float(self.minerals),
+            "vespene": float(self.vespene),
+            "cumulative_minerals_collected": getattr(score, "collected_minerals", None),
+            "cumulative_vespene_collected": getattr(score, "collected_vespene", None),
+            "cumulative_minerals_spent": getattr(score, "spent_minerals", None),
+            "cumulative_vespene_spent": getattr(score, "spent_vespene", None),
+            "cumulative_action_resource_cost": resource_cost,
+            "cumulative_action_resource_cost_per_game_minute": (
+                resource_cost / (game_time_seconds / 60.0)
+                if game_time_seconds > 0
+                else None
+            ),
+            "supply_used": int(self.supply_used),
+            "supply_cap": int(self.supply_cap),
+            "supply_workers": int(self.supply_workers),
+            "supply_army": int(self.supply_army),
+            "own_units": unit_counts(self.units),
+            "own_structures": unit_counts(self.structures),
+            "visible_enemy_units": unit_counts(self.enemy_units),
+            "visible_enemy_structures": unit_counts(self.enemy_structures),
+        }
+
     # async def on_end(self, game_result):
     #     game_result = game_result.name
     #     self.logging("game_result", game_result, save_trace=True)
@@ -782,7 +817,9 @@ while our current supply is {self.supply_used}, of which {self.supply_army} is a
 
         if self.pending_execution_feedback is not None:
             self.bo_data = self.commander.renew_bo(
-                self.get_obs(), execution_feedback=self.pending_execution_feedback,
+                self.get_obs(),
+                execution_feedback=self.pending_execution_feedback,
+                telemetry=self.get_long_loop_telemetry(),
             )
             self.pending_execution_feedback = None
             self.current_bo_index = 0
@@ -792,7 +829,9 @@ while our current supply is {self.supply_used}, of which {self.supply_army} is a
             self.last_bo_check_time = -999
             self.logging('refresh build order', ', '.join([p['action'] for p in self.bo_data]))
         elif self.current_bo_index >= len(self.bo_data):
-            self.bo_data = self.commander.renew_bo(self.get_obs())
+            self.bo_data = self.commander.renew_bo(
+                self.get_obs(), telemetry=self.get_long_loop_telemetry()
+            )
             self.current_bo_index = 0
             self.planner_queue_active = True
             self.logging('refresh build order', ', '.join([p['action'] for p in self.bo_data]))

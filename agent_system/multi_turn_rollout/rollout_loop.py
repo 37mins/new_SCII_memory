@@ -672,6 +672,24 @@ class TrajectoryCollector:
         assert len(total_batch_list) == len(total_traj_uid)
         assert len(total_batch_list) == len(totoal_tool_callings)
 
+        if is_train and getattr(envs, "use_long_loop_memory", False):
+            def generate_memory_summary(prompt: str) -> str:
+                summary_batch = gen_batch.select_idxs([0])
+                summary_obs = {
+                    "text": [prompt],
+                    "image": None,
+                    "anchor": [None],
+                }
+                _, outputs = self.generate_text_from_obs(
+                    gen_batch=summary_batch,
+                    obs=summary_obs,
+                    actor_rollout_wg=actor_rollout_wg,
+                    debug_label="long_loop_memory_update",
+                )
+                return outputs[0]
+
+            envs.finalize_long_loop_memory_batch(llm_generate=generate_memory_summary)
+
         # Standalone SC2 evaluation counts games, not PPO transitions. Keep the
         # training collector and its empty-policy rejection unchanged.
         if not is_train and self.config.trainer.val_only and self.config.env.env_name == "SC2":
