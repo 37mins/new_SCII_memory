@@ -2934,7 +2934,7 @@ class ScriptPlayer(BasePlayer):
 
         # 3. 如果所有点都侦察过了, 重置侦察列表, 重新侦察敌方基地
         if self.enemy_start_locations:
-            print("所有侦察点已完成, 循环重置。")
+            print("All scouting points completed; restarting scout cycle.")
             self.scouted_locations.clear()
             return self.enemy_start_locations[0]
 
