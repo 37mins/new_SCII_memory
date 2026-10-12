@@ -746,9 +746,11 @@ class BasePlayer(BotAI):
                 action["is_valid"] = False
                 action["error"] = str(e)
 
-            print("## action_condition")
-            print(json.dumps(action, indent=4))
-                # self.logging("action_error", str(e), level="error")
+            if not action.get("is_valid", True):
+                print(
+                    f"SC2 action failed: {action.get('action', 'unknown')}: "
+                    f"{action.get('error', 'unknown error')}"
+                )
 
         # --- 7. 更新历史动作 ---
         valid_actions = [action for action in actions if action.get("is_valid", True)]
