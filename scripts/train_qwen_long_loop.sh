@@ -4,10 +4,12 @@ repo_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
 export CONFIG_PATH="${repo_dir}/configs/qwen3-4b-instruct-2507-level5.env"
 export SC2_DIFFICULTY=Harder
 export SC2_MEMORY_MODE=long_loop
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+export N_GPUS_PER_NODE=4
 export MODEL_PATH="${MODEL_PATH:-${repo_dir}/assets/Qwen3-4B-Instruct-2507}"
 export SC2PATH="${SC2PATH:-/raid/ghf/StarCraftII}"
 
-wait_for_eight_free_gpus() {
+wait_for_selected_gpus() {
 	if [[ "${DRY_RUN:-0}" == 1 ]]; then
 		printf 'DRY_RUN=1; skipping GPU memory wait.\n'
 		return
@@ -18,14 +20,15 @@ wait_for_eight_free_gpus() {
 	fi
 
 	local visible_gpus="${CUDA_VISIBLE_DEVICES:-0,1,2,3,4,5,6,7}"
+	local expected_gpus="${N_GPUS_PER_NODE:-8}"
 	local -a gpu_ids
 	IFS=',' read -r -a gpu_ids <<< "${visible_gpus}"
-	if [[ "${#gpu_ids[@]}" != 8 ]]; then
-		printf 'Expected 8 CUDA_VISIBLE_DEVICES entries, got %s: %s\n' "${#gpu_ids[@]}" "${visible_gpus}" >&2
+	if [[ "${#gpu_ids[@]}" != "${expected_gpus}" ]]; then
+		printf 'Expected %s CUDA_VISIBLE_DEVICES entries, got %s: %s\n' "${expected_gpus}" "${#gpu_ids[@]}" "${visible_gpus}" >&2
 		return 2
 	fi
 
-	local threshold_mib=30000
+	local threshold_mib=35840
 	local all_ready free_mib gpu_id
 	while true; do
 		all_ready=1
@@ -47,7 +50,7 @@ wait_for_eight_free_gpus() {
 		done
 
 		if (( all_ready )); then
-			printf 'All 8 selected GPUs have more than 35 GiB free. Starting training.\n'
+			printf 'All %s selected GPUs have more than 35 GiB free. Starting training.\n' "${expected_gpus}"
 			return 0
 		fi
 		printf 'Waiting 30 minutes before checking GPU memory again.\n'
@@ -55,5 +58,5 @@ wait_for_eight_free_gpus() {
 	done
 }
 
-wait_for_eight_free_gpus
+wait_for_selected_gpus
 exec bash "${repo_dir}/scripts/train_sc2.sh" "$@"
