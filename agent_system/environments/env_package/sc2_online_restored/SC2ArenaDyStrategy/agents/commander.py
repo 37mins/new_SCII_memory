@@ -341,7 +341,7 @@ class SC2Commander:
 
         self.renew_waiting_bo()
 
-        print("===== waiting bo =====\n", self.waiting_bo)
+        print("===== waiting bo =====", self.waiting_bo)
 
         bo = []
         for i in self.current_bo:

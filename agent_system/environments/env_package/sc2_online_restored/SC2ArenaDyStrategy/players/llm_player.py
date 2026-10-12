@@ -496,7 +496,7 @@ class LLMPlayer(ScriptPlayer):
                     f"**Suggestion**: Wait.")
 
     def _finish_current_bo(self):
-        print(f"[{self.time_formatted}] >>> BO #{self.current_bo_index} Completed/Skipped. <<<\n")
+        print(f"[{self.time_formatted}] >>> BO #{self.current_bo_index} Completed/Skipped. <<<")
         self.current_bo_index += 1
         self.current_bo_parsed_state = None
         self.current_bo_wait_count = 0
@@ -579,7 +579,7 @@ class LLMPlayer(ScriptPlayer):
 
     def _switch_build_order(self, new_bo_address: str):
         """用于中途动态切换 BO"""
-        print(f"\n[{self.time_formatted}] 🔄 TopAgent initiated BO Switch! Old: {self.bo_address} -> New: {new_bo_address}")
+        print(f"[{self.time_formatted}] 🔄 TopAgent initiated BO Switch! Old: {self.bo_address} -> New: {new_bo_address}")
         try:
             self.bo_address = new_bo_address
             self.bo_data = load_bo_data(self.bo_address)
@@ -856,7 +856,7 @@ while our current supply is {self.supply_used}, of which {self.supply_army} is a
 
             # --- Phase A: Parsing ---
             if self.current_bo_parsed_state is None:
-                print(f"\n[{self.time_formatted}] >>> Start Processing BO #{self.current_bo_index}: {bo_command_str} <<<")
+                print(f"[{self.time_formatted}] >>> Start Processing BO #{self.current_bo_index}: {bo_command_str} <<<")
 
                 parsed_state = {
                     "type": "OPERATION",
@@ -1123,7 +1123,7 @@ while our current supply is {self.supply_used}, of which {self.supply_army} is a
                     self.last_bo_block_reason = "No available executor for " + target_ability_name
 
                 if actions:
-                    print(f"[{self.time_formatted}] >>> BO #{bo_command_str} action condition <<<\n")
+                    print(f"[{self.time_formatted}] >>> BO #{bo_command_str} action condition <<<")
                     await self.run_actions(actions)
                     self._check_bo_delay(current_bo_item, False)
                     self._finish_current_bo()
