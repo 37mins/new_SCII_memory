@@ -36,7 +36,10 @@ The run directory is created atomically and must not already exist. Real
 training requires a clean commit and verified assets. Before the trainer
 starts, `manifest.json` captures provenance and `effective_config.json`
 captures the full argument vector and Hydra overrides. Existing seed and raw
-prompt/response logging is unchanged; SC2 logs live inside the run.
+prompt/response logging is unchanged; SC2 logs live inside the run. SC2
+controller diagnostics, Ray environment-worker output, game-agent stdout/stderr,
+and rollout audit/debug logs are separated under `sc2-logs/worker-output/`;
+trainer progress continues to be written to the run's `console.log`.
 
 On normal shell exit, `run_record.py` extracts the metric rows and writes
 `metrics.json`, `result.json` and `.done`. Completed means the process

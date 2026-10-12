@@ -44,7 +44,6 @@ def run_ppo(config) -> None:
 
         runtime_env = OmegaConf.merge(default_runtime_env, runtime_env_kwargs)
         ray_init_kwargs = OmegaConf.create({**ray_init_kwargs, "runtime_env": runtime_env})
-        print(f"ray init kwargs: {ray_init_kwargs}")
         ray.init(**OmegaConf.to_container(ray_init_kwargs))
 
     runner = TaskRunner.remote()
@@ -54,14 +53,10 @@ def run_ppo(config) -> None:
 @ray.remote(num_cpus=1)  # please make sure main_task is not scheduled on head
 class TaskRunner:
     def run(self, config):
-        # print initial config
-        from pprint import pprint
-
         from omegaconf import OmegaConf
 
         from verl.utils.fs import copy_to_local
 
-        pprint(OmegaConf.to_container(config, resolve=True))  # resolve=True will eval symbol values
         OmegaConf.resolve(config)
 
         # download the checkpoint from hdfs
@@ -211,8 +206,6 @@ def create_rl_dataset(data_paths, data_config, tokenizer, processor):
             raise TypeError(f"The custom dataset class '{data_config.custom_cls.name}' from '{data_config.custom_cls.path}' must inherit from torch.utils.data.Dataset")
     else:
         dataset_cls = RLHFDataset
-    print(f"Using dataset class: {dataset_cls.__name__}")
-
     dataset = dataset_cls(
         data_files=data_paths,
         tokenizer=tokenizer,

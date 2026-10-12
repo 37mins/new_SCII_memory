@@ -2594,9 +2594,9 @@ class ScriptPlayer(BasePlayer):
 
                     # *** (3) 按照您的要求，发送通知 ***
                     message = (
-                        f"已更新集结点: {structure.type_id.name} [Tag:{structure.tag}] "
+                        f"Updated rally point: {structure.type_id.name} [tag:{structure.tag}] "
                         f"-> {target_rally_point.rounded} "
-                        f"(基于 {closest_center.type_id.name} [Tag:{closest_center.tag}])"
+                        f"(based on {closest_center.type_id.name} [tag:{closest_center.tag}])"
                     )
                     print(message)
                     await self.chat_send(message)
@@ -2789,12 +2789,9 @@ class ScriptPlayer(BasePlayer):
             for tag in new_tags:
                 unit = self.enemy_units.find_by_tag(tag)
                 if unit:
-                    info = f"发现 {unit.type_id.name} (Tag: {unit.tag}) 位于 {unit.position.rounded}"
+                    info = f"Detected {unit.type_id.name} (tag {unit.tag}) at {unit.position.rounded}"
                     if unit.is_structure:
-                        info += " (建筑)"
-
-                    # [V3] 侦察报告只打印新发现的单位
-                    print(f"[侦察信息] {info}")
+                        info += " (structure)"
 
                     # 添加到我们的信息字典中
                     self.scouting_information[current_time_int].append(info)
@@ -2824,13 +2821,13 @@ class ScriptPlayer(BasePlayer):
 
             # 侦察单位死亡或消失
             if not scout_unit:
-                print(f"侦察单位 (Tag: {self.active_scout_unit_tag}) 丢失 (判定为死亡).")
+                print(f"Scout unit tag {self.active_scout_unit_tag} is missing; treating it as dead.")
                 self.active_scout_unit_tag = None
                 self.scout_target_location = None
 
             # [V3 修改] 侦察单位变为空闲 (已到达目的地), 立即派遣到下一个最近的地点
             elif scout_unit.is_idle:
-                print(f"侦察单位 {scout_unit.type_id.name} (Tag: {self.active_scout_unit_tag}) 已变为空闲, 寻找下一个目标...")
+                print(f"Scout {scout_unit.type_id.name} (tag {self.active_scout_unit_tag}) is idle; selecting the next target.")
 
                 # [V3 新] 寻找离侦察兵 *当前位置* 最近的下一个目标
                 next_target = self._get_scout_target(from_position=scout_unit.position)
@@ -2840,7 +2837,7 @@ class ScriptPlayer(BasePlayer):
                     self._send_scout(scout_unit, next_target)
                 else:
                     # [V3 新] 找不到目标, 释放侦察兵
-                    print(f"侦察单位 {scout_unit.type_id.name} (Tag: {self.active_scout_unit_tag}) 已完成所有任务, 释放。")
+                    print(f"Scout {scout_unit.type_id.name} (tag {self.active_scout_unit_tag}) has no remaining targets; releasing it.")
                     self.active_scout_unit_tag = None
                     self.scout_target_location = None
 
@@ -2870,8 +2867,7 @@ class ScriptPlayer(BasePlayer):
         idle_aircraft = self.units.filter(lambda u: u.type_id in air_types and not any(u.tag in group["unit_tags"] for group in self.total_attack_groups.values()) and u.is_idle)
         if idle_aircraft.exists:
             scout_unit = idle_aircraft.random
-            print(f"派遣 [飞机]{scout_unit.name} 执行侦察任务。")
-            await self.chat_send(f"派遣 [飞机]{scout_unit.name} 执行侦察任务。")
+            await self.chat_send(f"Dispatching aircraft {scout_unit.name} to scout.")
 
         # 优先级 2: Marine/Reaper (如果没有可用的飞机)
         army_types = {UnitTypeId.MARINE, UnitTypeId.REAPER}
@@ -2879,8 +2875,7 @@ class ScriptPlayer(BasePlayer):
             idle_army = self.units.filter(lambda u: u.type_id in army_types and not any(u.tag in group["unit_tags"] for group in self.total_attack_groups.values()) and u.is_idle)
             if idle_army.exists:
                 scout_unit = idle_army.random
-                print(f"派遣 [{scout_unit.name}] 执行侦察任务。")
-                await self.chat_send(f"派遣 [{scout_unit.name}] 执行侦察任务。")
+                await self.chat_send(f"Dispatching {scout_unit.name} to scout.")
 
         # 优先级 1: SCV (仅限开局一次)
         if not scout_unit and not self.scv_scout_sent and self.time > 15:
@@ -2894,8 +2889,7 @@ class ScriptPlayer(BasePlayer):
             if scv_pool.exists: # <-- 3. 只要池子里有单位 (无论是空闲的还是采矿的)
                 scout_unit = scv_pool.random
                 self.scv_scout_sent = True
-                print("派遣 [SCV] (从工人中抽取)...")
-                await self.chat_send("派遣 [SCV] (从工人中抽取)执行侦察任务。")
+                await self.chat_send("Dispatching an SCV worker to scout.")
 
         # [V3 修正]
         # 统一下发派遣命令 (原代码中此缩进错误, 导致飞机和Marine无法被派遣)
@@ -2952,7 +2946,6 @@ class ScriptPlayer(BasePlayer):
         # 当我们派遣单位时就标记该地点, 防止重复派遣
         self.scouted_locations.add(target)
 
-        print(f"正在派遣 {unit.type_id.name} (Tag: {unit.tag}) 侦察 {target.rounded}")
         self.logging("scouting", f"Dispatching {unit.type_id.name} to {target.rounded}")
 
     # ==========================================
@@ -3108,7 +3101,7 @@ class ScriptPlayer(BasePlayer):
         ...
         """
         # self.logger.info(f"launch_total_attack: 收到总攻发起指令！...")
-        self.logging("launch_total_attack", "收到总攻发起指令！...")
+        self.logging("launch_total_attack", "Received an attack launch request.")
 
         if not units_to_launch.exists:
             return
@@ -3136,7 +3129,7 @@ class ScriptPlayer(BasePlayer):
         else:
             # 备用，防止传入错误类型
             # self.logger.error(f"launch_total_attack 收到未知的目标类型: {type(target)}")
-            self.logging("launch_total_attack", f"收到未知的目标类型: {type(target)}", "error")
+            self.logging("launch_total_attack", f"Unknown target type: {type(target)}", "error")
             final_position = self.enemy_start_locations[0]
         # --- 结束 ---
 
@@ -3191,7 +3184,7 @@ class ScriptPlayer(BasePlayer):
         if units_to_launch.amount < min_units_to_launch:
             self.logging(
                 "launch_total_attack",
-                f"跳过低于最低出击规模的攻击波: {units_to_launch.amount}/{min_units_to_launch}",
+                f"Skipping attack wave below minimum size: {units_to_launch.amount}/{min_units_to_launch}",
                 "warning",
             )
             return
@@ -3219,7 +3212,7 @@ class ScriptPlayer(BasePlayer):
         }
 
         # self.logger.info(f"launch_total_attack: 已创建总攻波次 {wave_id}，状态: GATHERING，集结点: {rally_point.rounded}。")
-        self.logging("launch_total_attack", f"已创建总攻波次 {wave_id}，状态: GATHERING，集结点: {rally_point.rounded}，最低出击: {min_units_to_launch}。")
+        self.logging("launch_total_attack", f"Created attack wave {wave_id}; state=GATHERING, rally={rally_point.rounded}, minimum={min_units_to_launch}.")
 
     async def manage_total_attack_groups(self):
         """
@@ -3256,7 +3249,7 @@ class ScriptPlayer(BasePlayer):
             if not group_unit_tags:
                 waves_to_delete.append(wave_id)
                 # self.logger.info(f"manage_total_attack_groups: 总攻波次 {wave_id} 已全灭。")
-                self.logging("manage_total_attack_groups", f"总攻波次 {wave_id} 已全灭。")
+                self.logging("manage_total_attack_groups", f"Attack wave {wave_id} eliminated.")
                 continue
 
             # --- 3. 状态机逻辑 ---
@@ -3302,14 +3295,14 @@ class ScriptPlayer(BasePlayer):
                         waves_to_delete.append(wave_id)
                         self.logging(
                             "manage_total_attack_groups",
-                            f"总攻波次 {wave_id}: 集结后仅剩 {live_units_in_group.amount} 单位，低于最低出击 {min_units_to_launch}，取消本波等待补兵。",
+                            f"Attack wave {wave_id}: only {live_units_in_group.amount} units remain after gathering, below minimum {min_units_to_launch}; canceling until reinforcements arrive.",
                             "warning",
                         )
                         continue
 
                     # --- (触发) 所有单位都已抵达集结点 ---
                     # self.logger.info(f"总攻波次 {wave_id}: 集结完毕，发动进攻！")
-                    self.logging("manage_total_attack_groups", f"总攻波次 {wave_id}: 集结完毕，发动进攻！")
+                    self.logging("manage_total_attack_groups", f"Attack wave {wave_id}: rally complete; engaging.")
                     attack_data["state"] = "ATTACKING"
 
                     # --- 【V3 修复：Plan B 逻辑】 ---
@@ -3327,7 +3320,7 @@ class ScriptPlayer(BasePlayer):
                             final_target_pos = final_target.position
                         else:
                             # self.logger.info(f"总攻波次 {wave_id}: 目标丢失, A-Move至敌方出生点。")
-                            self.logging("manage_total_attack_groups", f"总攻波次 {wave_id}: 目标丢失, A-Move至敌方出生点。")
+                            self.logging("manage_total_attack_groups", f"Attack wave {wave_id}: target lost; moving to the enemy start location.")
                             final_target_pos = self.enemy_start_locations[0]
 
                     # 统一 A-Move 到最终坐标
@@ -3404,7 +3397,7 @@ class ScriptPlayer(BasePlayer):
 
                         if target_changed:
                             # self.logger.info(f"总攻波次 {wave_id}: 锁定新目标 {new_target.name} (Tag: {new_target.tag})，攻击位置: {new_target.position.rounded}。")
-                            self.logging("manage_total_attack_groups", f"总攻波次 {wave_id}: 锁定新目标 {new_target.name} (Tag: {new_target.tag})，攻击位置: {new_target.position.rounded}。")
+                            self.logging("manage_total_attack_groups", f"Attack wave {wave_id}: new target {new_target.name} (tag {new_target.tag}) at {new_target.position.rounded}.")
 
                         # 【核心修改】: 统一A-Move到新目标的【位置】，而非攻击单位Tag
                         # 这样即使目标移动或进入战争迷雾，单位也会攻击沿途敌人
@@ -3460,7 +3453,7 @@ class ScriptPlayer(BasePlayer):
                             last_fallback_loop = int(attack_data.get("last_fallback_order_loop", 0))
                             if current_iteration - last_fallback_loop >= self.attack_fallback_order_interval:
                                 # self.logger.info(f"总攻波次 {wave_id}: 无视野目标, 闲置单位推进至{final_target_pos.rounded}。")
-                                self.logging("manage_total_attack_groups", f"总攻波次 {wave_id}: 无视野目标, 闲置单位推进至{final_target_pos.rounded}。")
+                                self.logging("manage_total_attack_groups", f"Attack wave {wave_id}: no visible target; idle units advancing to {final_target_pos.rounded}.")
                                 for unit in live_units_in_group.idle:
                                     if unit.tag in self.dodging_tags:
                                         self._record_micro_event("attack_state:preserve_dodge", unit)
@@ -3517,10 +3510,10 @@ class ScriptPlayer(BasePlayer):
                         final_targets.append(Point2((target_pos_data[0], target_pos_data[1])))
                     else:
                         # self.logger.warning(f"无法解析 target_position 数据: {target_pos_data}")
-                        self.logging("resolve_attack_targets", f"无法解析 target_position 数据: {target_pos_data}", "warning")
+                        self.logging("resolve_attack_targets", f"Could not parse target_position data: {target_pos_data}", "warning")
                 except Exception as e:
                     # self.logger.error(f"解析 target_position 时出错: {e}. 数据: {target_pos_data}")
-                    self.logging("resolve_attack_targets", f"解析 target_position 时出错: {e}. 数据: {target_pos_data}", "error")
+                    self.logging("resolve_attack_targets", f"Error parsing target_position: {e}. Data: {target_pos_data}", "error")
 
             # 优先级 2: target_unit (if position was empty)
             elif target_unit_name:
@@ -3546,17 +3539,17 @@ class ScriptPlayer(BasePlayer):
 
                     if best_match_unit:
                         # self.logger.info(f"已解析 target_unit '{target_unit_name}' -> 敌方 {best_match_unit.name} (Tag: {best_match_unit.tag})")
-                        self.logging("resolve_attack_targets", f"已解析 target_unit '{target_unit_name}' -> 敌方 {best_match_unit.name} (Tag: {best_match_unit.tag})")
+                        self.logging("resolve_attack_targets", f"Resolved target_unit '{target_unit_name}' to enemy {best_match_unit.name} (tag {best_match_unit.tag}).")
                         final_targets.append(best_match_unit)
                     else:
                         # self.logger.warning(f"在视野中未找到匹配 '{target_unit_name}' 的敌方单位。")
-                        self.logging("resolve_attack_targets", f"在视野中未找到匹配 '{target_unit_name}' 的敌方单位。", "warning")
+                        self.logging("resolve_attack_targets", f"No visible enemy matches target_unit '{target_unit_name}'.", "warning")
 
             # --- [!! 修改后的备选方案逻辑 !!] ---
             # 备选方案: 如果未找到任何目标...
             if not final_targets:
                 # self.logger.warning(f"未解析到目标 '{target_pos_data}'/'{target_unit_name}'。 尝试寻找备选目标...")
-                self.logging("resolve_attack_targets", f"未解析到目标 '{target_pos_data}'/'{target_unit_name}'。 尝试寻找备选目标...", "warning")
+                self.logging("resolve_attack_targets", f"Could not resolve target '{target_pos_data}'/'{target_unit_name}'; searching for a fallback.", "warning")
 
                 # 1. [新] 备选方案 A: 寻找最近的敌方基地
                 # (使用 __init__ 中定义的 self.enemy_townhall_types)
@@ -3569,18 +3562,18 @@ class ScriptPlayer(BasePlayer):
                     closest_enemy_townhall = enemy_townhalls.closest_to(self.start_location)
                     final_targets.append(closest_enemy_townhall)
                     # self.logger.warning(f"备选方案A: 锁定最近的敌方基地 {closest_enemy_townhall.name} (Tag: {closest_enemy_townhall.tag})。")
-                    self.logging("resolve_attack_targets", f"备选方案A: 锁定最近的敌方基地 {closest_enemy_townhall.name} (Tag: {closest_enemy_townhall.tag})。", "warning")
+                    self.logging("resolve_attack_targets", f"Fallback A: selected nearest enemy base {closest_enemy_townhall.name} (tag {closest_enemy_townhall.tag}).", "warning")
 
                 # 2. [原] 备选方案 B: 寻找敌方出生点
                 elif self.enemy_start_locations:
                     final_targets.append(self.enemy_start_locations[0])
                     # self.logger.warning(f"备选方案B: 未找到敌方基地, 默认攻击敌方出生点。")
-                    self.logging("resolve_attack_targets", f"备选方案B: 未找到敌方基地, 默认攻击敌方出生点。", "warning")
+                    self.logging("resolve_attack_targets", "Fallback B: no enemy base found; targeting the enemy start location.", "warning")
 
                 # 3. 最终失败
                 else:
                     # self.logger.error("无法解析任何目标, 且敌方出生点未知。")
-                    self.logging("resolve_attack_targets", "无法解析任何目标, 且敌方出生点未知。", "error")
+                    self.logging("resolve_attack_targets", "Could not resolve any target; enemy start location is unknown.", "error")
             # --- [!! 修改结束 !!] ---
 
             return final_targets
@@ -3591,7 +3584,7 @@ class ScriptPlayer(BasePlayer):
         统一使用launch_total_attack(集结 -> 进攻)的流程。
         """
         # self.logger.info(f"收到 {len(llm_attack_commands)} 条来自 AdjustAgent 的攻击指令。")
-        self.logging("execute_llm_attacks", f"收到 {len(llm_attack_commands)} 条来自 AdjustAgent 的攻击指令。")
+        self.logging("execute_llm_attacks", f"Received {len(llm_attack_commands)} attack commands from AdjustAgent.")
 
 
         # 1. 获取本轮所有可用的战斗单位
@@ -3654,7 +3647,7 @@ class ScriptPlayer(BasePlayer):
             # 如果本轮已没有可用单位, 停止处理后续攻击指令
             if not available_unit_tags:
                 # self.logger.warning("已无更多可用单位分配, 剩余的 LLM 攻击指令将存储。")
-                self.logging("execute_llm_attacks", "已无更多可用单位分配, 剩余的 LLM 攻击指令将存储。", "warning")
+                self.logging("execute_llm_attacks", "No available units remain; storing the remaining LLM attack commands.", "warning")
                 rein_command = copy.deepcopy(command)
                 rein_command["timer"] = self.TIMER
                 rein_command["min_units_to_launch"] = min_units_to_launch
@@ -3688,11 +3681,11 @@ class ScriptPlayer(BasePlayer):
                     fallback_target = self.enemy_start_locations[0]
                 if fallback_target:
                     target_list = [fallback_target]
-                    self.logging("execute_llm_attacks", f"使用默认攻击目标: {fallback_target}", "warning")
+                    self.logging("execute_llm_attacks", f"Using fallback attack target: {fallback_target}.", "warning")
 
             if not target_list:
                 # self.logger.warning(f"无法解析攻击指令的目标: {command}")
-                self.logging("execute_llm_attacks", f"无法解析攻击指令的目标: {command}", "warning")
+                self.logging("execute_llm_attacks", f"Could not resolve attack command target: {command}.", "warning")
                 continue # 跳过此指令
 
             # --- 3. 统一攻击逻辑(Gather -> Attack) ---
@@ -3706,7 +3699,7 @@ class ScriptPlayer(BasePlayer):
             current_available_units = self.units.filter(lambda u: u.tag in available_unit_tags)
             if not current_available_units.exists:
                 # self.logger.warning("已无更多可用单位分配, 当前 LLM 攻击指令将存储。")
-                self.logging("execute_llm_attacks", "已无更多可用单位分配, 当前 LLM 攻击指令将存储。", "warning")
+                self.logging("execute_llm_attacks", "No available units remain; storing the current LLM attack command.", "warning")
                 rein_command = copy.deepcopy(command)
                 rein_command["timer"] = self.TIMER
                 rein_command["min_units_to_launch"] = min_units_to_launch
@@ -3725,11 +3718,11 @@ class ScriptPlayer(BasePlayer):
                 f"requested={command.get('unit_type_counts') or {'any': unit_count}} selected={selected_type_counts}",
             )
             # self.logger.info(f"指令请求 {unit_count} 单位，执行Attack (投入 {len(units_to_commit)} 单位)。")
-            self.logging("execute_llm_attacks", f"指令请求 {unit_count} 单位，执行Attack (投入 {len(units_to_commit)} 单位)。")
+            self.logging("execute_llm_attacks", f"Command requested {unit_count} units; committing {len(units_to_commit)} units to attack.")
             await self.chat_send(f"@ HQ: Request {unit_count} units to attack, send {len(units_to_commit)} units.")
             if not units_to_commit.exists:
                 # self.logger.warning("未能成功投入兵力, 当前 LLM 攻击指令将存储。")
-                self.logging("execute_llm_attacks", "未能成功投入兵力, 当前 LLM 攻击指令将存储。", "warning")
+                self.logging("execute_llm_attacks", "No units committed; storing the current LLM attack command.", "warning")
                 self._defer_attack_until_ready(command, min_units_to_launch, timer=self.TIMER)
                 continue
             adjusted_min_units = self._newexec_min_units_for_selected_attack(
@@ -3853,7 +3846,7 @@ class ScriptPlayer(BasePlayer):
                     )
             if (not use_all_available) and unit_count > len(units_to_commit):   # 指令要求兵力大于可投入兵力，需要追加
                 # self.logger.warning(f"投入兵力不足, 将存储当前 LLM 攻击指令的剩余部分。仍需投入：{unit_count - len(units_to_commit)} 单位。")
-                self.logging("execute_llm_attacks", f"投入兵力不足, 将存储当前 LLM 攻击指令的剩余部分。仍需投入：{unit_count - len(units_to_commit)} 单位。", "warning")
+                self.logging("execute_llm_attacks", f"Insufficient units; storing the remaining attack command ({unit_count - len(units_to_commit)} units still needed).", "warning")
                 rein_command = copy.deepcopy(command)
                 rein_command["timer"] = self.TIMER
                 rein_command["unit_count"] = unit_count - len(units_to_commit)
@@ -3900,7 +3893,7 @@ class ScriptPlayer(BasePlayer):
 
                     t_str = target.position.rounded if isinstance(target, Unit) else target.rounded
                     # self.logger.info(f" -> 发起进攻波次: 目标 {t_str}，单位数 {len(sub_group)}")
-                    self.logging("execute_llm_attacks", f" -> 发起进攻波次: 目标 {t_str}，单位数 {len(sub_group)}")
+                    self.logging("execute_llm_attacks", f" -> Launched attack wave: target={t_str}, units={len(sub_group)}")
                     await self.chat_send(f"@ Attacking Command from HQ: Attack {t_str} with {len(sub_group)} units! Copy that!")
 
                 curr_idx += units_per_target
@@ -4008,11 +4001,11 @@ class ScriptPlayer(BasePlayer):
                     fallback_target = self.enemy_start_locations[0]
                 if fallback_target:
                     target_list = [fallback_target]
-                    self.logging("execute_reinforcement_attacks", f"使用默认攻击目标: {fallback_target}", "warning")
+                    self.logging("execute_reinforcement_attacks", f"Using fallback attack target: {fallback_target}.", "warning")
 
             if not target_list:
                 # self.logger.warning(f"无法解析攻击指令的目标: {command}")
-                self.logging("execute_reinforcement_attacks", f"无法解析攻击指令的目标: {command}", "warning")
+                self.logging("execute_reinforcement_attacks", f"Could not resolve reinforcement target: {command}.", "warning")
                 continue # 跳过此指令
 
             # --- 3. 统一攻击逻辑(Gather -> Attack) ---
@@ -4026,7 +4019,7 @@ class ScriptPlayer(BasePlayer):
             current_available_units = self.units.filter(lambda u: u.tag in available_unit_tags)
             if not current_available_units.exists:
                 # self.logger.warning("已无更多可用单位分配, 本次的 LLM 追加 攻击指令将重新存储。")
-                self.logging("execute_reinforcement_attacks", "已无更多可用单位分配, 本次的 LLM 追加 攻击指令将重新存储。", "warning")
+                self.logging("execute_reinforcement_attacks", "No available units remain; re-queueing this reinforcement command.", "warning")
                 command["timer"] = self.TIMER
                 self._store_reinforcement_command(command, timer=self.TIMER)
                 continue
@@ -4043,11 +4036,11 @@ class ScriptPlayer(BasePlayer):
                 f"reinforcement requested={command.get('unit_type_counts') or {'any': unit_count}} selected={selected_type_counts}",
             )
             # self.logger.info(f"指令请求 {unit_count} 单位，执行Attack (投入 {len(units_to_commit)} 单位)。")
-            self.logging("execute_reinforcement_attacks", f"指令请求 {unit_count} 单位，执行Attack (投入 {len(units_to_commit)} 单位)。")
+            self.logging("execute_reinforcement_attacks", f"Command requested {unit_count} units; committing {len(units_to_commit)} units to attack.")
             await self.chat_send(f"--- Reinforce: Request {unit_count} units to attack, send {len(units_to_commit)} units.")
             if not units_to_commit.exists:
                 # self.logger.warning("未能成功投入兵力, 本次的 LLM 追加 攻击指令将重新存储。")
-                self.logging("execute_reinforcement_attacks", "未能成功投入兵力, 本次的 LLM 追加 攻击指令将重新存储。", "warning")
+                self.logging("execute_reinforcement_attacks", "No units committed; re-queueing this reinforcement command.", "warning")
                 self._defer_attack_until_ready(command, min_units_to_launch, timer=self.TIMER)
                 continue
             adjusted_min_units = self._newexec_min_units_for_selected_attack(
@@ -4171,7 +4164,7 @@ class ScriptPlayer(BasePlayer):
                     )
             if (not use_all_available) and unit_count > len(units_to_commit):   # 指令要求兵力大于可投入兵力，需要追加
                 # self.logger.warning(f"投入兵力不足, 本次的 LLM 追加 攻击指令将继续存储剩余部分。仍需投入：{unit_count - len(units_to_commit)} 单位。")
-                self.logging("execute_reinforcement_attacks", f"投入兵力不足, 本次的 LLM 追加 攻击指令将继续存储剩余部分。仍需投入：{unit_count - len(units_to_commit)} 单位。", "warning")
+                self.logging("execute_reinforcement_attacks", f"Insufficient units; keeping the remaining reinforcement command queued ({unit_count - len(units_to_commit)} units still needed).", "warning")
                 command["timer"] = self.TIMER
                 command["unit_count"] = unit_count - len(units_to_commit)
                 remaining_counts = self._remaining_unit_type_counts(command, units_to_commit)
@@ -4217,7 +4210,7 @@ class ScriptPlayer(BasePlayer):
 
                     t_str = target.position.rounded if isinstance(target, Unit) else target.rounded
                     # self.logger.info(f" -> 发起进攻波次: 目标 {t_str}，单位数 {len(sub_group)}")
-                    self.logging("execute_reinforcement_attacks", f" -> 发起进攻波次: 目标 {t_str}，单位数 {len(sub_group)}")
+                    self.logging("execute_reinforcement_attacks", f" -> Launched reinforcement wave: target={t_str}, units={len(sub_group)}")
                     await self.chat_send(f"--- Reinforcement Attacking Command: Attack {t_str} with {len(sub_group)} units! Support our comrades!")
 
                 curr_idx += units_per_target
@@ -4261,7 +4254,7 @@ class ScriptPlayer(BasePlayer):
             if available_count >= first_threshold:
                 self.has_launched_first_attack = True
                 units_to_launch = available_combat_units
-                print(f"[Auto-Attack] 首次总攻触发！当前兵力 {available_count} >= {first_threshold}")
+                print(f"[Auto-Attack] First attack triggered: units={available_count}, threshold={first_threshold}")
             else:
                 triggers = self.attack_config["harassment_triggers"]
                 if self.harassment_wave_index < len(triggers):
@@ -4270,14 +4263,14 @@ class ScriptPlayer(BasePlayer):
                         units_to_launch = list(available_combat_units)[:send_amount]
                         self.harassment_wave_index += 1
                         print(
-                            f"[Auto-Attack] 触发第 {self.harassment_wave_index} 波袭扰！"
-                            f"(阈值 {req_threshold}, 派出 {send_amount})"
+                            f"[Auto-Attack] Harassment wave {self.harassment_wave_index} triggered "
+                            f"(threshold={req_threshold}, dispatch={send_amount})"
                         )
         else:
             sub_threshold = self.attack_config["subsequent_attack_threshold"]
             if available_count >= sub_threshold:
                 units_to_launch = available_combat_units
-                print(f"[Auto-Attack] 后续波次触发！当前积累 {available_count} >= {sub_threshold}")
+                print(f"[Auto-Attack] Follow-up wave triggered: units={available_count}, threshold={sub_threshold}")
 
         if units_to_launch and len(units_to_launch) > 0:
             if scout_tag:

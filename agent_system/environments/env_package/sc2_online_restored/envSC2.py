@@ -41,6 +41,20 @@ class TimeoutException(Exception):
 def signal_handler(signum, frame):
     raise TimeoutException("操作超时")
 
+
+def _log_sc2_runtime(*values, sep=" ", end="\n", flush=False):
+    output_dir = os.path.join(
+        os.getenv("SC2_RUNTIME_LOG_ROOT", "logs"), "worker-output"
+    )
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, f"controller-{os.getpid()}.log")
+    message = sep.join(str(value) for value in values)
+    with open(output_path, "a", encoding="utf-8", errors="backslashreplace") as stream:
+        stream.write(message + end)
+        if flush:
+            stream.flush()
+
+
 def get_unused_port(host='127.0.0.1', port=0):
     """
     获取一个未使用的端口
@@ -222,13 +236,13 @@ class SC2Env(gym.Env):
     def _setup_server(self, port):
         """建立 Socket 服务端"""
         if self.server_socket is None:
-            print("Start server...")
+            _log_sc2_runtime("Start server...")
             self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             # 设置 SO_REUSEADDR 允许立即重用端口，防止 reset 时端口被占用
             self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             self.server_socket.bind((self.host, port))
             self.server_socket.listen(1)
-            print("Server listens...")
+            _log_sc2_runtime("Server listens...")
 
     def _cleanup_resources(self, reason='reset_or_close'):
         """清理本轮 reset/step 产生的连接、监听 socket 和子进程。"""
@@ -317,12 +331,12 @@ class SC2Env(gym.Env):
                     fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
                     os.ftruncate(fd, 0)
                     os.write(fd, str(os.getpid()).encode("ascii"))
-                    print(f"Acquired SC2 reset slot {slot}/{self.reset_concurrency}.")
+                    _log_sc2_runtime(f"Acquired SC2 reset slot {slot}/{self.reset_concurrency}.")
                     return fd
                 except BlockingIOError:
                     os.close(fd)
             if time.time() > deadline:
-                print("Timed out waiting for SC2 reset slot.")
+                _log_sc2_runtime("Timed out waiting for SC2 reset slot.")
                 return None
             time.sleep(0.25)
 
@@ -366,7 +380,7 @@ class SC2Env(gym.Env):
                 try:
                     self._setup_server(port)
                 except OSError as exc:
-                    print(f"port already in use or unavailable: {exc}")
+                    _log_sc2_runtime(f"port already in use or unavailable: {exc}")
                     continue
 
                 start_event = mp.Event()
@@ -381,7 +395,7 @@ class SC2Env(gym.Env):
 
                 start_event.set()
                 if not ready_event.wait(timeout=20):
-                    print("SC2 child process was not ready in 20s.")
+                    _log_sc2_runtime("SC2 child process was not ready in 20s.")
                     self._cleanup_resources()
                     continue
 
@@ -390,27 +404,27 @@ class SC2Env(gym.Env):
                     self.conn, addr = self.server_socket.accept()
                 except socket.timeout:
                     self._cleanup_resources()
-                    print("Server timeout")
+                    _log_sc2_runtime("Server timeout")
                     continue
 
                 self._send_to_a({"msg": "RESET"})
                 obs_dict = self._receive_from_a()
                 if not obs_dict or 'obs' not in obs_dict:
-                    print("RESET returned no observation; cleaning up SC2 subprocess.")
+                    _log_sc2_runtime("RESET returned no observation; cleaning up SC2 subprocess.")
                     self._cleanup_resources()
                     continue
                 self.obs = obs_dict['obs']
                 self._mark_terminal_if_done(obs_dict)
             except TimeoutException:
-                print(f"SC2 reset attempt timed out after {self.reset_attempt_timeout}s.")
+                _log_sc2_runtime(f"SC2 reset attempt timed out after {self.reset_attempt_timeout}s.")
                 self._cleanup_resources()
                 continue
             except OSError as exc:
-                print(f"SC2 reset socket error: {exc}")
+                _log_sc2_runtime(f"SC2 reset socket error: {exc}")
                 self._cleanup_resources()
                 continue
             except Exception as exc:
-                print(f"SC2 reset attempt failed: {exc}")
+                _log_sc2_runtime(f"SC2 reset attempt failed: {exc}")
                 self._cleanup_resources()
                 continue
             finally:
@@ -422,7 +436,7 @@ class SC2Env(gym.Env):
             msg = "SC2 reset failed after retries."
             if self.fail_fast_on_env_error:
                 raise RuntimeError(msg)
-            print(f"{msg} returning a failed one-step episode.")
+            _log_sc2_runtime(f"{msg} returning a failed one-step episode.")
             self.reset_failed = True
             self.obs = getattr(self, "obs", "SC2 reset failed.")
 
@@ -471,14 +485,14 @@ class SC2Env(gym.Env):
                     self._mark_terminal_if_done(data)
                     return self._policy_transition(data, True, policy_action_id)
                 if isinstance(exc, (BrokenPipeError, ConnectionResetError)):
-                    print(f"SC2 subprocess socket closed while sending ACTION: {exc}; marking this episode done.")
+                    _log_sc2_runtime(f"SC2 subprocess socket closed while sending ACTION: {exc}; marking this episode done.")
                     data = self.game_end_data if self.game_end_data else self._failed_step_data(self.obs)
                     self.game_end_data = data
                     self.game_end_flag = True
                     return gymnasium_transition(data, False)
                 if self.fail_fast_on_env_error:
                     raise RuntimeError("Failed to send ACTION to SC2 subprocess.") from exc
-                print(f"Failed to send ACTION to SC2 subprocess: {exc}")
+                _log_sc2_runtime(f"Failed to send ACTION to SC2 subprocess: {exc}")
                 data = self._failed_step_data(self.obs)
                 self.game_end_data = data
                 self.game_end_flag = True
@@ -489,7 +503,7 @@ class SC2Env(gym.Env):
             if not data:
                 if self.fail_fast_on_env_error:
                     raise RuntimeError("SC2 subprocess returned no data.")
-                print("SC2 subprocess returned no data; marking episode failed instead of crashing.")
+                _log_sc2_runtime("SC2 subprocess returned no data; marking episode failed instead of crashing.")
                 data = self._failed_step_data(self.obs)
 
             self.obs = data['obs']
@@ -533,13 +547,28 @@ class SC2Env(gym.Env):
         try:
             self._send_to_a({"msg": "TERMINAL_ACK"})
         except (OSError, AttributeError) as exc:
-            print(f"Failed to send TERMINAL_ACK to SC2 subprocess: {exc}")
+            _log_sc2_runtime(f"Failed to send TERMINAL_ACK to SC2 subprocess: {exc}")
 
     def render(self):
         return self.obs
 
     def _start_env_a_process(self, seed, port, start_event, ready_event):
         """子进程运行函数"""
+        output_dir = os.path.join(
+            os.getenv("SC2_RUNTIME_LOG_ROOT", "logs"), "worker-output"
+        )
+        os.makedirs(output_dir, exist_ok=True)
+        output_path = os.path.join(
+            output_dir, f"sc2-env-{port}-{os.getpid()}.log"
+        )
+        output_stream = open(
+            output_path, "a", encoding="utf-8", errors="backslashreplace", buffering=1
+        )
+        os.dup2(output_stream.fileno(), 1)
+        os.dup2(output_stream.fileno(), 2)
+        sys.stdout = output_stream
+        sys.stderr = output_stream
+
         # 等待父进程信号
         start_event.wait()
         time.sleep(0.1)
@@ -565,16 +594,16 @@ class SC2Env(gym.Env):
 
     def _receive_from_a(self):
         if self.conn is None:
-            print("SC2 subprocess socket is not connected while reading.")
+            _log_sc2_runtime("SC2 subprocess socket is not connected while reading.")
             return None
         try:
             self.conn.settimeout(self.socket_timeout)
             header = self.conn.recv(4)
         except socket.timeout:
-            print(f"Timed out waiting for SC2 subprocess after {self.socket_timeout}s.")
+            _log_sc2_runtime(f"Timed out waiting for SC2 subprocess after {self.socket_timeout}s.")
             return None
         except OSError as exc:
-            print(f"Socket error while reading SC2 subprocess: {exc}")
+            _log_sc2_runtime(f"Socket error while reading SC2 subprocess: {exc}")
             return None
         if not header:
             return None
@@ -585,10 +614,10 @@ class SC2Env(gym.Env):
             try:
                 chunk = self.conn.recv(min(length - bytes_recvd, 4096))
             except socket.timeout:
-                print(f"Timed out while reading SC2 payload after {self.socket_timeout}s.")
+                _log_sc2_runtime(f"Timed out while reading SC2 payload after {self.socket_timeout}s.")
                 return None
             except OSError as exc:
-                print(f"Socket error while reading SC2 payload: {exc}")
+                _log_sc2_runtime(f"Socket error while reading SC2 payload: {exc}")
                 return None
             if not chunk:
                 return None
@@ -622,6 +651,21 @@ class SC2Worker:
     Ray remote actor that holds an independent SC2Env instance.
     """
     def __init__(self, config):
+        output_dir = os.path.join(
+            os.getenv("SC2_RUNTIME_LOG_ROOT", "logs"), "worker-output"
+        )
+        os.makedirs(output_dir, exist_ok=True)
+        self._worker_output_stream = open(
+            os.path.join(output_dir, f"sc2-worker-{os.getpid()}.log"),
+            "a",
+            encoding="utf-8",
+            errors="backslashreplace",
+            buffering=1,
+        )
+        os.dup2(self._worker_output_stream.fileno(), 1)
+        os.dup2(self._worker_output_stream.fileno(), 2)
+        sys.stdout = self._worker_output_stream
+        sys.stderr = self._worker_output_stream
         self.env = SC2Env(config)
 
     def step(self, action):
@@ -683,7 +727,7 @@ class SC2MultiProcessEnv(gym.Env):
         self.training_rng = np.random.RandomState(seed)
         np.random.seed(seed)
 
-        print(f"Env num and group n {env_num} {group_n}")
+        _log_sc2_runtime(f"Env num and group n {env_num} {group_n}")
 
         # Create Ray remote actors
         env_worker = ray.remote(**resources_per_worker)(SC2Worker)
@@ -739,7 +783,7 @@ class SC2MultiProcessEnv(gym.Env):
                 "reset_index": self.reset_index,
                 "seeds": seeds,
             }
-            print(f"SC2 training seed record: {seed_record}", flush=True)
+            _log_sc2_runtime(f"SC2 training seed record: {seed_record}", flush=True)
             seed_log_path = os.getenv("SC2_TRAIN_SEEDS_LOG_PATH")
             if seed_log_path:
                 os.makedirs(os.path.dirname(seed_log_path), exist_ok=True)
@@ -753,7 +797,7 @@ class SC2MultiProcessEnv(gym.Env):
                 "reset_index": self.reset_index,
                 "seeds": seeds,
             }
-            print(f"SC2 validation seed record: {seed_record}", flush=True)
+            _log_sc2_runtime(f"SC2 validation seed record: {seed_record}", flush=True)
             seed_log_path = os.getenv("SC2_EVAL_SEEDS_LOG_PATH")
             if seed_log_path:
                 os.makedirs(os.path.dirname(seed_log_path), exist_ok=True)

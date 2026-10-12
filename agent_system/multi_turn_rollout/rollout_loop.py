@@ -28,6 +28,17 @@ from agent_system.sc2_episode import interaction_limit_reached, interaction_step
 from typing import List, Dict
 from verl.protocol import pad_dataproto_to_divisor, unpad_dataproto
 
+
+def _write_sc2_rollout_log(name: str, message: str) -> None:
+    log_dir = os.path.join(
+        os.getenv("SC2_RUNTIME_LOG_ROOT", "logs"), "worker-output"
+    )
+    os.makedirs(log_dir, exist_ok=True)
+    log_path = os.path.join(log_dir, f"{name}-{os.getpid()}.log")
+    with open(log_path, "a", encoding="utf-8", errors="backslashreplace") as stream:
+        stream.write(f"{message}\n")
+
+
 class TrajectoryCollector:
     def __init__(self, config, tokenizer: PreTrainedTokenizer, processor=None):
         """
@@ -88,7 +99,7 @@ class TrajectoryCollector:
         if obs_text is not None:
             obs_content += obs_text
         else:
-            print(f"Warning: No text observation found!")
+            _write_sc2_rollout_log("rollout-diagnostics", "Warning: No text observation found.")
 
 
         chat = np.array([{
@@ -271,7 +282,8 @@ class TrajectoryCollector:
             max_chars = int(os.getenv("SC2_DEBUG_DECODED_ACTIONS_CHARS", "500"))
             for dbg_i, dbg_text in enumerate(text_outputs[:max_items]):
                 response_ids = batch.batch['responses'][dbg_i].detach().cpu().tolist()
-                print(
+                _write_sc2_rollout_log(
+                    "rollout-decoded-actions",
                     "[SC2_DEBUG_DECODED_ACTION]"
                     f" phase={debug_label}"
                     f" idx={dbg_i}"
@@ -279,8 +291,7 @@ class TrajectoryCollector:
                     f" token_count={len(response_ids)}"
                     f" token_head={response_ids[:16]}"
                     f" token_tail={response_ids[-16:]}"
-                    f" text={dbg_text[:max_chars]!r}",
-                    flush=True,
+                    f" text={dbg_text[:max_chars]!r}"
                 )
         return batch, text_outputs
 
@@ -374,7 +385,9 @@ class TrajectoryCollector:
 
         if policy_audit:
             import json
-            print('SC2 policy credit: ' + json.dumps(policy_audit), flush=True)
+            _write_sc2_rollout_log(
+                "rollout-policy-credit", json.dumps(policy_audit, ensure_ascii=False)
+            )
         if not effective_batch:
             raise RuntimeError('No consumed policy actions in this batch; refusing a PPO update')
         # Convert trajectory data to DataProto format
